@@ -1,0 +1,16 @@
+on_yearly_pulse = {
+	events = {
+		sin_loaner_maintenance.31
+	}
+}
+on_death = {
+	events = {
+		sin_loaner_maintenance.0
+		sin_loaner_maintenance.1
+	}
+}
+on_become_imprisoned_any_reason = {
+	events = {
+		sin_loaner_maintenance.3
+	}
+}

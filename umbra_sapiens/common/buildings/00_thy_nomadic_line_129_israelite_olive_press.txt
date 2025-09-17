@@ -1,0 +1,214 @@
+nomad = {
+	thy_wild_olive_stand = {
+		desc = thy_wild_olive_stand_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+		nomad_tax_modifier = 0.222
+	}
+	thy_clay_press_hut = {
+		desc = thy_clay_press_hut_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = thy_wild_olive_stand
+		prerequisites = {
+			thy_wild_olive_stand
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.021
+		clan_sentiment = 1
+	}
+	thy_stone_trough = {
+		desc = thy_stone_trough_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 75
+		upgrades_from = thy_clay_press_hut
+		prerequisites = {
+			thy_clay_press_hut
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.041
+		max_manpower_mult = 0.02
+	}
+	thy_timber_press_pavilion = {
+		desc = thy_timber_press_pavilion_desc
+		gold_cost = 413
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = thy_stone_trough
+		prerequisites = {
+			thy_stone_trough
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.081
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.665
+	}
+	thy_oil_storage_room = {
+		desc = thy_oil_storage_room_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 88
+		upgrades_from = thy_timber_press_pavilion
+		prerequisites = {
+			thy_timber_press_pavilion
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.151
+		max_manpower_mult = 0.02
+		supply_limit = 0.12
+	}
+	thy_expanded_orchard = {
+		desc = thy_expanded_orchard_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = thy_oil_storage_room
+		prerequisites = {
+			thy_oil_storage_room
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.181
+		max_manpower_mult = 0.04
+		supply_limit = 0.2
+		nomad_tax_modifier = 0.421
+	}
+	thy_merchants_olivehouse = {
+		desc = thy_merchants_olivehouse_desc
+		gold_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 96
+		upgrades_from = thy_expanded_orchard
+		prerequisites = {
+			thy_expanded_orchard
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 200
+		population_growth = 0.151
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		supply_limit = 0.3
+	}
+	thy_walled_grove = {
+		desc = thy_walled_grove_desc
+		gold_cost = 7125
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 100
+		upgrades_from = thy_merchants_olivehouse
+		prerequisites = {
+			thy_merchants_olivehouse
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 350
+		population_growth = 0.102
+		max_manpower_mult = 0.26
+		tradevalue = 1.513
+		supply_limit = 0.5
+		clan_sentiment = 1
+	}
+	thy_oil_market_pavilion = {
+		desc = thy_oil_market_pavilion_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 1238
+		ai_creation_factor = 105
+		upgrades_from = thy_walled_grove
+		prerequisites = {
+			thy_walled_grove
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 600
+		population_growth = 0.102
+		max_manpower_mult = 0.15
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.399
+		global_movement_speed = 0.05
+	}
+	thy_israelite_olive_estate = {
+		desc = thy_israelite_olive_estate_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 1688
+		ai_creation_factor = 110
+		upgrades_from = thy_oil_market_pavilion
+		prerequisites = {
+			thy_oil_market_pavilion
+		}
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1200
+		population_growth = 0.102
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.443
+		global_movement_speed = 0.1
+		clan_sentiment = 1
+	}
+}

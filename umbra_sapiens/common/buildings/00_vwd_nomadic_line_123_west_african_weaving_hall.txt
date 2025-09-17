@@ -1,0 +1,190 @@
+nomadic_line_123_west_african_weaving_hall = {
+	vwd_spindle_patch = {
+		desc = vwd_spindle_patch_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.016
+		max_population = 100
+		clan_sentiment = 1
+	}
+	vwd_weavers_tent = {
+		desc = vwd_weavers_tent_desc
+		gold_cost = 94
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 70
+		upgrades_from = vwd_spindle_patch
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.026
+		max_population = 100
+		clan_sentiment = 1
+	}
+	vwd_loom_hut = {
+		desc = vwd_loom_hut_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 80
+		upgrades_from = vwd_weavers_tent
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.046
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	vwd_dye_pavilion = {
+		desc = vwd_dye_pavilion_desc
+		gold_cost = 563
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 90
+		upgrades_from = vwd_loom_hut
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.072
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.222
+	}
+	vwd_patterned_room = {
+		desc = vwd_patterned_room_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 95
+		upgrades_from = vwd_dye_pavilion
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population = 100
+		max_manpower_mult = 0.02
+		liege_prestige = 0.15
+	}
+	vwd_textile_chamber = {
+		desc = vwd_textile_chamber_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 100
+		upgrades_from = vwd_patterned_room
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population = 160
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.576
+		liege_prestige = 0.3
+	}
+	vwd_market_weaver_hall = {
+		desc = vwd_market_weaver_hall_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 105
+		upgrades_from = vwd_textile_chamber
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population = 320
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.842
+		liege_prestige = 0.45
+		tradevalue = 1.513
+	}
+	vwd_guild_pavilion = {
+		desc = vwd_guild_pavilion_desc
+		gold_cost = 9600
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 110
+		upgrades_from = vwd_market_weaver_hall
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population = 640
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.6
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	vwd_master_weavers_room = {
+		desc = vwd_master_weavers_room_desc
+		gold_cost = 19200
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = vwd_guild_pavilion
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		max_population = 1280
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		liege_prestige = 0.9
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	vwd_west_african_weaving_guild = {
+		desc = vwd_west_african_weaving_guild_desc
+		gold_cost = 38400
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 110
+		upgrades_from = vwd_master_weavers_room
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population = 2560
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		liege_prestige = 1.3
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

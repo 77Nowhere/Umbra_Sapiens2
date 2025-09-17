@@ -1,0 +1,197 @@
+nomad = {
+	qdy_totem_stake_1 = {
+		desc = qdy_totem_stake_1_desc
+		extra_tech_building_start = 999
+		piety_cost = 45
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.12
+		clan_sentiment = 1
+	}
+	qdy_ancestor_stone_circle_2 = {
+		desc = qdy_ancestor_stone_circle_2_desc
+		extra_tech_building_start = 999
+		piety_cost = 113
+		build_time = 132
+		ai_creation_factor = 75
+		upgrades_from = qdy_totem_stake_1
+		prerequisites = {
+			qdy_totem_stake_1
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.22
+		clan_sentiment = 1
+		vassal_opinion = 3
+	}
+	qdy_shamans_firepit_3 = {
+		desc = qdy_shamans_firepit_3_desc
+		extra_tech_building_start = 999
+		piety_cost = 300
+		build_time = 225
+		ai_creation_factor = 88
+		upgrades_from = qdy_ancestor_stone_circle_2
+		prerequisites = {
+			qdy_ancestor_stone_circle_2
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.4
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	qdy_sacred_tree_4 = {
+		desc = qdy_sacred_tree_4_desc
+		extra_tech_building_start = 999
+		piety_cost = 675
+		build_time = 375
+		ai_creation_factor = 97
+		upgrades_from = qdy_shamans_firepit_3
+		prerequisites = {
+			qdy_shamans_firepit_3
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.7
+		clan_sentiment = 1
+		vassal_opinion = 5
+	}
+	qdy_spirits_grove_5 = {
+		desc = qdy_spirits_grove_5_desc
+		extra_tech_building_start = 999
+		piety_cost = 1350
+		build_time = 563
+		ai_creation_factor = 105
+		upgrades_from = qdy_sacred_tree_4
+		prerequisites = {
+			qdy_sacred_tree_4
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	qdy_prayer_pavilion_6 = {
+		desc = qdy_prayer_pavilion_6_desc
+		extra_tech_building_start = 999
+		piety_cost = 2475
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = qdy_spirits_grove_5
+		prerequisites = {
+			qdy_spirits_grove_5
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 18
+	}
+	qdy_idol_sanctuary_7 = {
+		desc = qdy_idol_sanctuary_7_desc
+		extra_tech_building_start = 999
+		piety_cost = 3750
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = qdy_prayer_pavilion_6
+		prerequisites = {
+			qdy_prayer_pavilion_6
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		church_opinion = 28
+	}
+	qdy_blessed_yurt_8 = {
+		desc = qdy_blessed_yurt_8_desc
+		extra_tech_building_start = 999
+		piety_cost = 5625
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = qdy_idol_sanctuary_7
+		prerequisites = {
+			qdy_idol_sanctuary_7
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 40
+	}
+	qdy_holy_grounds_9 = {
+		desc = qdy_holy_grounds_9_desc
+		extra_tech_building_start = 999
+		piety_cost = 7500
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = qdy_blessed_yurt_8
+		prerequisites = {
+			qdy_blessed_yurt_8
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 2
+		church_opinion = 60
+	}
+	qdy_steppe_temple_10 = {
+		desc = qdy_steppe_temple_10_desc
+		extra_tech_building_start = 999
+		piety_cost = 11250
+		build_time = 3375
+		ai_creation_factor = 110
+		upgrades_from = qdy_holy_grounds_9
+		prerequisites = {
+			qdy_holy_grounds_9
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 2
+		church_opinion = 90
+	}
+}

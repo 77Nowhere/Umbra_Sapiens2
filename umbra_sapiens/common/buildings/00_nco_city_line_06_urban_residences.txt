@@ -1,0 +1,139 @@
+city = {
+	nco_mudbrick_houses = {
+		desc = nco_mudbrick_houses_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		garrison_size = 0.05
+	}
+	nco_timber_cottages = {
+		desc = nco_timber_cottages_desc
+		gold_cost = 55
+		extra_tech_building_start = 999
+		build_time = 250
+		ai_creation_factor = 66
+		upgrades_from = nco_mudbrick_houses
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.06
+		garrison_size = 0.08
+		levy_size = 0.03
+	}
+	nco_wattle_and_daub_homes = {
+		desc = nco_wattle_and_daub_homes_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 69
+		upgrades_from = nco_timber_cottages
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.1
+		garrison_size = 0.12
+		levy_size = 0.04
+	}
+	nco_stone_dwellings = {
+		desc = nco_stone_dwellings_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 78
+		upgrades_from = nco_wattle_and_daub_homes
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.22
+		garrison_size = 0.22
+	}
+	nco_patrician_villas = {
+		desc = nco_patrician_villas_desc
+		prestige_cost = 260
+		extra_tech_building_start = 999
+		build_time = 1250
+		ai_creation_factor = 98
+		upgrades_from = nco_tenement_blocks
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		city_tax_modifier = 0.22
+		tradevalue = 7
+		vassal_opinion = 2
+	}
+	nco_rowhouses = {
+		desc = nco_rowhouses_desc
+		gold_cost = 420
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 84
+		upgrades_from = nco_stone_dwellings
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.38
+		garrison_size = 0.36
+	}
+	nco_courtyard_estates = {
+		desc = nco_courtyard_estates_desc
+		prestige_cost = 470
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 104
+		upgrades_from = nco_patrician_villas
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		city_tax_modifier = 0.4
+		tradevalue = 13
+		economy_techpoints = 0.25
+	}
+	nco_noble_manors = {
+		desc = nco_noble_manors_desc
+		prestige_cost = 780
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 110
+		upgrades_from = nco_courtyard_estates
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		city_tax_modifier = 0.7
+		tradevalue = 24
+		economy_techpoints = 0.38
+	}
+	nco_tenement_blocks = {
+		desc = nco_tenement_blocks_desc
+		gold_cost = 950
+		extra_tech_building_start = 999
+		build_time = 950
+		ai_creation_factor = 92
+		upgrades_from = nco_rowhouses
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.7
+		garrison_size = 0.52
+		economy_techpoints = 0.1
+	}
+	nco_grand_townhouses = {
+		desc = nco_grand_townhouses_desc
+		prestige_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 120
+		upgrades_from = nco_noble_manors
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		city_tax_modifier = 1.2
+		tradevalue = 35
+		economy_techpoints = 0.6
+		vassal_opinion = 5
+	}
+}

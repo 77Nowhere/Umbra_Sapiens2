@@ -1,0 +1,206 @@
+nomad = {
+	web_magyar_reed_mat = {
+		desc = web_magyar_reed_mat_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.051
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	web_magyar_woven_shelter = {
+		desc = web_magyar_woven_shelter_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = web_magyar_reed_mat
+		prerequisites = {
+			web_magyar_reed_mat
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.111
+		max_population = 100
+		clan_sentiment = 1
+	}
+	web_magyar_wattle_hut = {
+		desc = web_magyar_wattle_hut_desc
+		gold_cost = 132
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 78
+		upgrades_from = web_magyar_woven_shelter
+		prerequisites = {
+			web_magyar_woven_shelter
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.178
+	}
+	web_magyar_thatched_pavilion = {
+		desc = web_magyar_thatched_pavilion_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 84
+		upgrades_from = web_magyar_wattle_hut
+		prerequisites = {
+			web_magyar_wattle_hut
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		supply_limit = 0.07
+	}
+	web_magyar_mudbrick_room = {
+		desc = web_magyar_mudbrick_room_desc
+		gold_cost = 638
+		extra_tech_building_start = 999
+		build_time = 165
+		ai_creation_factor = 89
+		upgrades_from = web_magyar_thatched_pavilion
+		prerequisites = {
+			web_magyar_thatched_pavilion
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population_mult = 0.015
+		supply_limit = 0.13
+		nomad_tax_modifier = 0.443
+	}
+	web_magyar_fenced_yard = {
+		desc = web_magyar_fenced_yard_desc
+		gold_cost = 1275
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 92
+		upgrades_from = web_magyar_mudbrick_room
+		prerequisites = {
+			web_magyar_mudbrick_room
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		supply_limit = 0.21
+		clan_sentiment = 1
+	}
+	web_magyar_family_hall = {
+		desc = web_magyar_family_hall_desc
+		gold_cost = 2475
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 97
+		upgrades_from = web_magyar_fenced_yard
+		prerequisites = {
+			web_magyar_fenced_yard
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		supply_limit = 0.29
+	}
+	web_magyar_village_chamber = {
+		desc = web_magyar_village_chamber_desc
+		gold_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 102
+		upgrades_from = web_magyar_family_hall
+		prerequisites = {
+			web_magyar_family_hall
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.797
+	}
+	web_magyar_chiefs_pavilion = {
+		desc = web_magyar_chiefs_pavilion_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 106
+		upgrades_from = web_magyar_village_chamber
+		prerequisites = {
+			web_magyar_village_chamber
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+	web_magyar_grand_hall = {
+		desc = web_magyar_grand_hall_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 110
+		upgrades_from = web_magyar_chiefs_pavilion
+		prerequisites = {
+			web_magyar_chiefs_pavilion
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.26
+		clan_sentiment = 1
+		liege_prestige = 1
+		supply_limit = 0.45
+	}
+}

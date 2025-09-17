@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+tp_barracks_1;Hilltop Clearing;;;;;x
+tp_barracks_1_desc;A simple clearing on a hilltop, marked by stones and used for outdoor prayer, meditation, and gathering.;;;;;x
+tp_barracks_2;Hillside Hut;;;;;x
+tp_barracks_2_desc;A modest wooden hut for a resident hermit or holy person, offering simple shelter and a place of contemplation.;;;;;x
+tp_barracks_3;Stone Hill Shrine;;;;;x
+tp_barracks_3_desc;A small stone shrine built atop the hillside, attracting pilgrims from nearby villages and increasing spiritual presence.;;;;;x
+tp_barracks_4;Terraced Sanctuary;;;;;x
+tp_barracks_4_desc;A sanctuary with terraced gardens and prayer paths, offering improved facilities for worship and teaching.;;;;;x
+tp_barracks_5;Hillside Chapel;;;;;x
+tp_barracks_5_desc;A modest stone chapel with a bell tower, providing a central place for communal worship and religious instruction.;;;;;x
+tp_barracks_6;Hillside Cloister;;;;;x
+tp_barracks_6_desc;A walled cloister for monks or nuns, featuring scriptoriums and gardens, fostering spiritual learning and defense.;;;;;x
+wpq_hilltop_retreat;Hilltop Retreat;;;;;x
+wpq_hilltop_retreat_desc;A fortified religious retreat, attracting scholars and pilgrims. Features extensive archives and increased fortifications.;;;;;x
+wpq_hillside_monastic_house;Hillside Monastic House;;;;;x
+wpq_hillside_monastic_house_desc;A sprawling monastic complex with living quarters, libraries, and scriptoria. Renowned for its teaching and influence.;;;;;x
+wpq_hillside_pilgrims_hall;Hillside Pilgrims Hall;;;;;x
+wpq_hillside_pilgrims_hall_desc;A grand hall for pilgrims, featuring guest quarters, refectories, and relic displays, strengthening the sites reputation and wealth.;;;;;x
+wpq_hillside_abbey;Hillside Abbey;;;;;x
+wpq_hillside_abbey_desc;A majestic abbey dominating the hillside, with grand halls, defensive works, and renowned centers of learning, piety, and wealth.;;;;;x

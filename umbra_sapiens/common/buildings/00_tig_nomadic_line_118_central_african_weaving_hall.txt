@@ -1,0 +1,184 @@
+nomad = {
+	tig_central_african_spindle_patch = {
+		desc = tig_central_african_spindle_patch_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.067
+	}
+	tig_central_african_weavers_tent = {
+		desc = tig_central_african_weavers_tent_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 72
+		upgrades_from = tig_central_african_spindle_patch
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.178
+		population_growth = 0.011
+	}
+	tig_central_african_loom_hut = {
+		desc = tig_central_african_loom_hut_desc
+		gold_cost = 128
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 78
+		upgrades_from = tig_central_african_weavers_tent
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.333
+		max_manpower_mult = 0.02
+	}
+	tig_central_african_dye_pavilion = {
+		desc = tig_central_african_dye_pavilion_desc
+		gold_cost = 255
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 85
+		upgrades_from = tig_central_african_loom_hut
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.576
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	tig_central_african_patterned_room = {
+		desc = tig_central_african_patterned_room_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 92
+		upgrades_from = tig_central_african_dye_pavilion
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	tig_central_african_textile_chamber = {
+		desc = tig_central_african_textile_chamber_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 99
+		upgrades_from = tig_central_african_patterned_room
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.443
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	tig_central_african_market_weaver_hall = {
+		desc = tig_central_african_market_weaver_hall_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 104
+		upgrades_from = tig_central_african_textile_chamber
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.421
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		population_growth = 0.031
+	}
+	tig_central_african_guild_pavilion = {
+		desc = tig_central_african_guild_pavilion_desc
+		gold_cost = 3450
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 108
+		upgrades_from = tig_central_african_market_weaver_hall
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		nomad_tax_modifier = 0.443
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	tig_central_african_master_weavers_room = {
+		desc = tig_central_african_master_weavers_room_desc
+		gold_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = tig_central_african_guild_pavilion
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.465
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+		liege_prestige = 0.15
+	}
+	tig_central_african_weaving_guild = {
+		desc = tig_central_african_weaving_guild_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = tig_central_african_master_weavers_room
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		nomad_tax_modifier = 0.687
+		max_manpower_mult = 0.18
+		tradevalue = 1.513
+		clan_sentiment = 1
+		liege_prestige = 0.3
+	}
+}

@@ -1,0 +1,219 @@
+city = {
+	ct_shipyard_1 = {
+		desc = ct_shipyard_1_desc
+		gold_cost = 45
+		extra_tech_building_start = 0.2
+		build_time = 320
+		ai_creation_factor = 60
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 1
+		}
+		local_tax_modifier = 0.03
+		tradevalue = 1
+		galleys = 10
+	}
+	ct_shipyard_2 = {
+		desc = ct_shipyard_2_desc
+		gold_cost = 75
+		extra_tech_building_start = 0.2
+		build_time = 430
+		ai_creation_factor = 62
+		upgrades_from = ct_shipyard_1
+		prerequisites = {
+			ct_shipyard_1
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 2
+		}
+		local_tax_modifier = 0.06
+		tradevalue = 2
+		galleys = 10
+	}
+	ct_shipyard_3 = {
+		desc = ct_shipyard_3_desc
+		prestige_cost = 70
+		extra_tech_building_start = 0.2
+		build_time = 600
+		ai_creation_factor = 70
+		upgrades_from = ct_shipyard_2
+		prerequisites = {
+			ct_shipyard_2
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 3
+		}
+		local_tax_modifier = 0.11
+		garrison_size = 0.03
+		tradevalue = 4
+		galleys = 10
+	}
+	ct_shipyard_4 = {
+		desc = ct_shipyard_4_desc
+		gold_cost = 330
+		extra_tech_building_start = 0.2
+		build_time = 1200
+		ai_creation_factor = 85
+		upgrades_from = ct_shipyard_3
+		prerequisites = {
+			ct_shipyard_3
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		local_tax_modifier = 0.18
+		garrison_size = 0.05
+		tradevalue = 8
+		economy_techpoints = 0.05
+		galleys = 10
+	}
+	ct_shipyard_5 = {
+		desc = ct_shipyard_5_desc
+		gold_cost = 800
+		extra_tech_building_start = 0.2
+		build_time = 1700
+		ai_creation_factor = 90
+		upgrades_from = ct_shipyard_4
+		prerequisites = {
+			ct_shipyard_4
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		local_tax_modifier = 0.31
+		garrison_size = 0.08
+		tradevalue = 15
+		economy_techpoints = 0.1
+		galleys = 10
+	}
+	ct_shipyard_6 = {
+		desc = ct_shipyard_6_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 92
+		upgrades_from = ct_shipyard_5
+		prerequisites = {
+			ct_shipyard_5
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 5
+		}
+		local_tax_modifier = 0.41
+		garrison_size = 0.13
+		tradevalue = 22
+		galleys = 10
+	}
+	ct_shipyard_7 = {
+		desc = ct_shipyard_7_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 96
+		upgrades_from = ct_shipyard_6
+		prerequisites = {
+			ct_shipyard_6
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 5
+		}
+		local_tax_modifier = 0.57
+		tradevalue = 35
+		economy_techpoints = 0.18
+		galleys = 10
+	}
+	ct_shipyard_8 = {
+		desc = ct_shipyard_8_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 100
+		upgrades_from = ct_shipyard_7
+		prerequisites = {
+			ct_shipyard_7
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 6
+		}
+		local_tax_modifier = 0.72
+		tradevalue = 50
+		garrison_size = 0.2
+		galleys = 10
+	}
+	ct_shipyard_9 = {
+		desc = ct_shipyard_9_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 105
+		upgrades_from = ct_shipyard_8
+		prerequisites = {
+			ct_shipyard_8
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 7
+		}
+		local_tax_modifier = 0.92
+		tradevalue = 70
+		economy_techpoints = 0.25
+		galleys = 10
+	}
+	ct_shipyard_10 = {
+		desc = ct_shipyard_10_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 5200
+		ai_creation_factor = 110
+		upgrades_from = ct_shipyard_9
+		prerequisites = {
+			ct_shipyard_9
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 8
+		}
+		local_tax_modifier = 1.25
+		tradevalue = 120
+		economy_techpoints = 0.4
+		garrison_size = 0.4
+		galleys = 10
+	}
+}

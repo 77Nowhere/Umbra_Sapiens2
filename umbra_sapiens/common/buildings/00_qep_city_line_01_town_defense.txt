@@ -1,0 +1,176 @@
+city = {
+	ct_wall_1 = {
+		desc = ct_wall_1_desc
+		gold_cost = 60
+		extra_tech_building_start = 1
+		build_time = 180
+		ai_creation_factor = 30
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 0
+		}
+		fort_level = 0.04
+		garrison_size = 0.1
+	}
+	ct_wall_2 = {
+		desc = ct_wall_2_desc
+		gold_cost = 120
+		extra_tech_building_start = 1.5
+		build_time = 240
+		ai_creation_factor = 35
+		upgrades_from = ct_wall_1
+		prerequisites = {
+			ct_wall_1
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.08
+		garrison_size = 0.16
+		local_tax_modifier = 0.01
+	}
+	ct_wall_3 = {
+		desc = ct_wall_3_desc
+		gold_cost = 180
+		extra_tech_building_start = 2
+		build_time = 320
+		ai_creation_factor = 40
+		upgrades_from = ct_wall_2
+		prerequisites = {
+			ct_wall_2
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.12
+		garrison_size = 0.24
+		levy_size = 0.05
+	}
+	ct_wall_4 = {
+		desc = ct_wall_4_desc
+		gold_cost = 400
+		extra_tech_building_start = 1
+		build_time = 500
+		ai_creation_factor = 50
+		upgrades_from = ct_wall_3
+		prerequisites = {
+			ct_wall_3
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.19
+		garrison_size = 0.4
+		levy_size = 0.12
+	}
+	ct_wall_5 = {
+		desc = ct_wall_5_desc
+		gold_cost = 800
+		extra_tech_building_start = 0.2
+		build_time = 800
+		ai_creation_factor = 60
+		upgrades_from = ct_wall_4
+		prerequisites = {
+			ct_wall_4
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.27
+		garrison_size = 0.6
+		levy_size = 0.2
+	}
+	qep_outer_bailey_city_defense_6 = {
+		desc = qep_outer_bailey_city_defense_6_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 70
+		upgrades_from = ct_wall_5
+		prerequisites = {
+			ct_wall_5
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.38
+		garrison_size = 0.8
+		levy_size = 0.3
+		tradevalue = 3
+	}
+	qep_machicolated_walls_city_defense_7 = {
+		desc = qep_machicolated_walls_city_defense_7_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 80
+		upgrades_from = qep_outer_bailey_city_defense_6
+		prerequisites = {
+			qep_outer_bailey_city_defense_6
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.53
+		garrison_size = 1
+		levy_size = 0.45
+		local_tax_modifier = 0.04
+	}
+	qep_inner_curtain_city_defense_8 = {
+		desc = qep_inner_curtain_city_defense_8_desc
+		gold_cost = 6400
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 90
+		upgrades_from = qep_machicolated_walls_city_defense_7
+		prerequisites = {
+			qep_machicolated_walls_city_defense_7
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.72
+		garrison_size = 1.2
+		levy_size = 0.6
+		local_tax_modifier = 0.06
+		economy_techpoints = 0.1
+	}
+	qep_defensive_bastion_city_defense_9 = {
+		desc = qep_defensive_bastion_city_defense_9_desc
+		gold_cost = 12800
+		extra_tech_building_start = 999
+		build_time = 2800
+		ai_creation_factor = 100
+		upgrades_from = qep_inner_curtain_city_defense_8
+		prerequisites = {
+			qep_inner_curtain_city_defense_8
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.94
+		garrison_size = 1.5
+		levy_size = 0.8
+		local_tax_modifier = 0.08
+		military_techpoints = 0.12
+	}
+	qep_fortified_citadel_city_defense_10 = {
+		desc = qep_fortified_citadel_city_defense_10_desc
+		gold_cost = 25600
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 110
+		upgrades_from = qep_defensive_bastion_city_defense_9
+		prerequisites = {
+			qep_defensive_bastion_city_defense_9
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 1.32
+		garrison_size = 2
+		levy_size = 1
+		local_tax_modifier = 0.1
+		military_techpoints = 0.2
+		tradevalue = 10
+	}
+}

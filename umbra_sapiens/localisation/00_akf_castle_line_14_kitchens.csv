@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+akf_cooking_hearth;Cooking Hearth;;;;;x
+akf_cooking_hearth_desc;A simple open fire pit surrounded by stones, serving as the heart of early castle food preparation. Provides basic meals for the garrison and improves morale.;;;;;x
+akf_scullery;Scullery;;;;;x
+akf_scullery_desc;A humble, roofed lean-to for washing utensils and storing basic foodstuffs. Allows more efficient provisioning for defenders and staff.;;;;;x
+akf_outer_kitchen;Outer Kitchen;;;;;x
+akf_outer_kitchen_desc;A wooden kitchen structure built outside the main hall, improving the ability to prepare and store food in greater quantities during sieges.;;;;;x
+akf_stone_kitchen;Stone Kitchen;;;;;x
+akf_stone_kitchen_desc;A sturdier, fireproof kitchen built of stone, equipped with bread ovens and improved storage, making the castle more self-sufficient in times of crisis.;;;;;x
+akf_buttery;Buttery;;;;;x
+akf_buttery_desc;A vaulted storage chamber for ale, wine, and fine foods, improving both the quality and quantity of supplies, and enhancing the lords hospitality.;;;;;x
+akf_smokehouse;Smokehouse;;;;;x
+akf_smokehouse_desc;A dedicated stone smokehouse for preserving meats and fish, ensuring resilience during long sieges and boosting the morale of defenders.;;;;;x
+akf_pantry_hall;Pantry Hall;;;;;x
+akf_pantry_hall_desc;A grand hall lined with shelves and storerooms for grain, cheese, and salted goods, allowing for vast reserves and lavish feasts.;;;;;x
+akf_great_kitchen;Great Kitchen;;;;;x
+akf_great_kitchen_desc;An elaborate, multi-chambered kitchen complex employing skilled cooks and servants, capable of provisioning vast armies and hosting dignitaries.;;;;;x
+akf_banquet_kitchen;Banquet Kitchen;;;;;x
+akf_banquet_kitchen_desc;A prestigious kitchen complex with specialized staff for feasts, tournaments, and visiting nobility, greatly enhancing the grandeur of court life.;;;;;x
+akf_royal_kitchen;Royal Kitchen;;;;;x
+akf_royal_kitchen_desc;A legendary kitchen complex fit for a king, combining the finest architecture with the most skilled staff, hosting legendary feasts and cementing dynastic prestige for generations.;;;;;x

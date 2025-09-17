@@ -1,0 +1,177 @@
+nomad = {
+	uwx_christian_chapel_prayer_alcove = {
+		desc = uwx_prayer_alcove_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	uwx_christian_chapel_stone_shrine = {
+		desc = uwx_stone_shrine_desc
+		piety_cost = 135
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = uwx_christian_chapel_prayer_alcove
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 4
+		liege_piety = 0.06
+	}
+	uwx_christian_chapel_basilica_chamber = {
+		desc = uwx_basilica_chamber_desc
+		piety_cost = 300
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 75
+		upgrades_from = uwx_christian_chapel_stone_shrine
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 7
+		liege_piety = 0.12
+	}
+	uwx_christian_chapel_worship_hall = {
+		desc = uwx_worship_hall_desc
+		piety_cost = 638
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 80
+		upgrades_from = uwx_christian_chapel_basilica_chamber
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 12
+		liege_piety = 0.2
+		church_opinion = 5
+	}
+	uwx_christian_chapel_saints_niche = {
+		desc = uwx_saints_niche_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 85
+		upgrades_from = uwx_christian_chapel_worship_hall
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 16
+		liege_piety = 0.34
+		church_opinion = 11
+	}
+	uwx_christian_chapel_apsidal_chapel = {
+		desc = uwx_apsidal_chapel_desc
+		piety_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 90
+		upgrades_from = uwx_christian_chapel_saints_niche
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 20
+		liege_piety = 0.5
+		church_opinion = 20
+	}
+	uwx_christian_chapel_canopied_altar = {
+		desc = uwx_canopied_altar_desc
+		piety_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 95
+		upgrades_from = uwx_christian_chapel_apsidal_chapel
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 28
+		liege_piety = 0.8
+		church_opinion = 30
+	}
+	uwx_christian_chapel_bishops_sanctuary = {
+		desc = uwx_bishops_sanctuary_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 100
+		upgrades_from = uwx_christian_chapel_canopied_altar
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 36
+		liege_piety = 1.2
+		church_opinion = 42
+	}
+	uwx_christian_chapel_holy_reliquary_room = {
+		desc = uwx_holy_reliquary_room_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 105
+		upgrades_from = uwx_christian_chapel_bishops_sanctuary
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		vassal_opinion = 50
+		liege_piety = 1
+		church_opinion = 60
+	}
+	uwx_christian_chapel_grand_christian_chapel = {
+		desc = uwx_grand_christian_chapel_desc
+		piety_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 110
+		upgrades_from = uwx_christian_chapel_holy_reliquary_room
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		vassal_opinion = 75
+		liege_piety = 1.5
+		church_opinion = 90
+	}
+}

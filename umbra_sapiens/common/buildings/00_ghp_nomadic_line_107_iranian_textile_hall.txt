@@ -1,0 +1,206 @@
+nomad = {
+	ghp_iranian_spindle_stand = {
+		desc = ghp_iranian_spindle_stand_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.011
+		nomad_tax_modifier = 0.089
+	}
+	ghp_iranian_threaders_tent = {
+		desc = ghp_iranian_threaders_tent_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 68
+		upgrades_from = ghp_iranian_spindle_stand
+		prerequisites = {
+			ghp_iranian_spindle_stand
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.016
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.133
+	}
+	ghp_iranian_loom_hut = {
+		desc = ghp_iranian_loom_hut_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 72
+		upgrades_from = ghp_iranian_threaders_tent
+		prerequisites = {
+			ghp_iranian_threaders_tent
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.026
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.222
+	}
+	ghp_iranian_dye_pavilion = {
+		desc = ghp_iranian_dye_pavilion_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 76
+		upgrades_from = ghp_iranian_loom_hut
+		prerequisites = {
+			ghp_iranian_loom_hut
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.039
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	ghp_iranian_patterned_room = {
+		desc = ghp_iranian_patterned_room_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = ghp_iranian_dye_pavilion
+		prerequisites = {
+			ghp_iranian_dye_pavilion
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.051
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	ghp_iranian_carpet_hall = {
+		desc = ghp_iranian_carpet_hall_desc
+		gold_cost = 1440
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 85
+		upgrades_from = ghp_iranian_patterned_room
+		prerequisites = {
+			ghp_iranian_patterned_room
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.072
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.532
+	}
+	ghp_iranian_fine_textile_chamber = {
+		desc = ghp_iranian_fine_textile_chamber_desc
+		gold_cost = 2880
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = ghp_iranian_carpet_hall
+		prerequisites = {
+			ghp_iranian_carpet_hall
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.753
+	}
+	ghp_iranian_guild_pavilion = {
+		desc = ghp_iranian_guild_pavilion_desc
+		gold_cost = 5760
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 98
+		upgrades_from = ghp_iranian_fine_textile_chamber
+		prerequisites = {
+			ghp_iranian_fine_textile_chamber
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		tech_growth_modifier_economy = 0.08
+	}
+	ghp_iranian_master_weavers_room = {
+		desc = ghp_iranian_master_weavers_room_desc
+		gold_cost = 11520
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 105
+		upgrades_from = ghp_iranian_guild_pavilion
+		prerequisites = {
+			ghp_iranian_guild_pavilion
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.192
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		tech_growth_modifier_economy = 0.13
+	}
+	ghp_iranian_textile_guild = {
+		desc = ghp_iranian_textile_guild_desc
+		gold_cost = 23040
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 110
+		upgrades_from = ghp_iranian_master_weavers_room
+		prerequisites = {
+			ghp_iranian_master_weavers_room
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		tech_growth_modifier_economy = 0.2
+		clan_sentiment = 1
+	}
+}

@@ -1,0 +1,198 @@
+nomad = {
+	gyh_stone_marker = {
+		desc = gyh_stone_marker_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	gyh_wicker_fence = {
+		desc = gyh_wicker_fence_desc
+		piety_cost = 75
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 70
+		upgrades_from = gyh_stone_marker
+		prerequisites = {
+			gyh_stone_marker
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.15
+	}
+	gyh_shrine_patch = {
+		desc = gyh_shrine_patch_desc
+		piety_cost = 165
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = gyh_wicker_fence
+		prerequisites = {
+			gyh_wicker_fence
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.3
+		vassal_opinion = 1
+	}
+	gyh_ancestor_pavilion = {
+		desc = gyh_ancestor_pavilion_desc
+		piety_cost = 315
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 90
+		upgrades_from = gyh_shrine_patch
+		prerequisites = {
+			gyh_shrine_patch
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.6
+		vassal_opinion = 2
+	}
+	gyh_spirit_stand = {
+		desc = gyh_spirit_stand_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 95
+		upgrades_from = gyh_ancestor_pavilion
+		prerequisites = {
+			gyh_ancestor_pavilion
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 4
+	}
+	gyh_priests_shelter = {
+		desc = gyh_priests_shelter_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 100
+		upgrades_from = gyh_spirit_stand
+		prerequisites = {
+			gyh_spirit_stand
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 4
+	}
+	gyh_sanctified_ring = {
+		desc = gyh_sanctified_ring_desc
+		piety_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 105
+		upgrades_from = gyh_priests_shelter
+		prerequisites = {
+			gyh_priests_shelter
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 6
+	}
+	gyh_diviners_room = {
+		desc = gyh_diviners_room_desc
+		piety_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 108
+		upgrades_from = gyh_sanctified_ring
+		prerequisites = {
+			gyh_sanctified_ring
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 8
+	}
+	gyh_ritual_chamber = {
+		desc = gyh_ritual_chamber_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 110
+		upgrades_from = gyh_diviners_room
+		prerequisites = {
+			gyh_diviners_room
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 12
+		vassal_opinion = 10
+	}
+	gyh_pagan_ritual_ring = {
+		desc = gyh_pagan_ritual_ring_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 1425
+		ai_creation_factor = 110
+		upgrades_from = gyh_ritual_chamber
+		prerequisites = {
+			gyh_ritual_chamber
+		}
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 3
+		liege_piety = 1
+		church_opinion = 20
+		vassal_opinion = 16
+	}
+}

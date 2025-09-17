@@ -1,0 +1,148 @@
+city = {
+	gbq_clerks_chamber_2 = {
+		desc = gbq_clerks_chamber_2_desc
+		prestige_cost = 30
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		upgrades_from = gbq_scribes_office_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.06
+		economy_techpoints = 0.02
+		tradevalue = 1
+	}
+	gbq_scribes_office_1 = {
+		desc = gbq_scribes_office_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		economy_techpoints = 0.01
+	}
+	gbq_town_hall_3 = {
+		desc = gbq_town_hall_3_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 360
+		ai_creation_factor = 70
+		upgrades_from = gbq_clerks_chamber_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.13
+		economy_techpoints = 0.04
+		tradevalue = 2
+	}
+	gbq_council_hall_4 = {
+		desc = gbq_council_hall_4_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 80
+		upgrades_from = gbq_town_hall_3
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.26
+		economy_techpoints = 0.09
+		tradevalue = 4
+		vassal_opinion = 2
+	}
+	gbq_records_archive_5 = {
+		desc = gbq_records_archive_5_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 90
+		upgrades_from = gbq_council_hall_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.5
+		economy_techpoints = 0.2
+		tradevalue = 7
+		vassal_opinion = 3
+	}
+	gbq_chancery_6 = {
+		desc = gbq_chancery_6_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = gbq_records_archive_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 1
+		economy_techpoints = 0.4
+		tradevalue = 12
+		vassal_opinion = 5
+	}
+	gbq_bailiffs_quarters_7 = {
+		desc = gbq_bailiffs_quarters_7_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 110
+		upgrades_from = gbq_chancery_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 1.8
+		economy_techpoints = 0.7
+		tradevalue = 18
+		vassal_opinion = 7
+		garrison_size = 0.1
+	}
+	gbq_magistrates_court_8 = {
+		desc = gbq_magistrates_court_8_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 110
+		upgrades_from = gbq_bailiffs_quarters_7
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 2.8
+		economy_techpoints = 1
+		tradevalue = 25
+		garrison_size = 0.2
+	}
+	gbq_civic_administration_9 = {
+		desc = gbq_civic_administration_9_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 110
+		upgrades_from = gbq_magistrates_court_8
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 4
+		economy_techpoints = 1.5
+		tradevalue = 35
+		garrison_size = 0.3
+	}
+	gbq_bureau_of_governance_10 = {
+		desc = gbq_bureau_of_governance_10_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = gbq_civic_administration_9
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 5.5
+		economy_techpoints = 2.5
+		tradevalue = 50
+		garrison_size = 0.4
+	}
+}

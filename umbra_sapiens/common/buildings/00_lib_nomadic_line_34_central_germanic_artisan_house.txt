@@ -1,0 +1,171 @@
+nomad = {
+	lib_woodcarvers_bench = {
+		desc = lib_woodcarvers_bench_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	lib_potters_shed = {
+		desc = lib_potters_shed_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 70
+		upgrades_from = lib_woodcarvers_bench
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.178
+	}
+	lib_tanners_tent = {
+		desc = lib_tanners_tent_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 124
+		ai_creation_factor = 75
+		upgrades_from = lib_potters_shed
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.05
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	lib_metalworkers_hut = {
+		desc = lib_metalworkers_hut_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 173
+		ai_creation_factor = 80
+		upgrades_from = lib_tanners_tent
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.03
+		nomad_tax_modifier = 0.244
+	}
+	lib_weavers_pavilion = {
+		desc = lib_weavers_pavilion_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 85
+		upgrades_from = lib_metalworkers_hut
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.08
+		clan_sentiment = 1
+	}
+	lib_fine_smithy = {
+		desc = lib_fine_smithy_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = lib_weavers_pavilion
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.08
+		global_movement_speed = 0.03
+	}
+	lib_guild_workshop = {
+		desc = lib_guild_workshop_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 95
+		upgrades_from = lib_fine_smithy
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.532
+		tech_growth_modifier_economy = 0.03
+	}
+	lib_master_craftsmans_hall = {
+		desc = lib_master_craftsmans_hall_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 100
+		upgrades_from = lib_guild_workshop
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.15
+		clan_sentiment = 1
+	}
+	lib_guildhall = {
+		desc = lib_guildhall_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = lib_master_craftsmans_hall
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		supply_limit = 0.17
+	}
+	lib_great_artisan_guild = {
+		desc = lib_great_artisan_guild_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 110
+		upgrades_from = lib_guildhall
+		potential = {
+			culture_group = central_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		global_movement_speed = 0.07
+	}
+}

@@ -1,0 +1,174 @@
+nomad = {
+	ixk_painted_panel_nook = {
+		desc = ixk_painted_panel_nook_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.2
+		clan_sentiment = 1
+	}
+	ixk_wooden_icon_stand = {
+		desc = ixk_wooden_icon_stand_desc
+		piety_cost = 143
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = ixk_painted_panel_nook
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.4
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	ixk_gold_leaf_shrine = {
+		desc = ixk_gold_leaf_shrine_desc
+		piety_cost = 285
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 75
+		upgrades_from = ixk_wooden_icon_stand
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.8
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	ixk_iconographers_pavilion = {
+		desc = ixk_iconographers_pavilion_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 80
+		upgrades_from = ixk_gold_leaf_shrine
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 6
+	}
+	ixk_sacred_image_room = {
+		desc = ixk_sacred_image_room_desc
+		piety_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 90
+		upgrades_from = ixk_iconographers_pavilion
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 8
+	}
+	ixk_sanctified_hall = {
+		desc = ixk_sanctified_hall_desc
+		piety_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 95
+		upgrades_from = ixk_sacred_image_room
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 12
+	}
+	ixk_altar_of_relics = {
+		desc = ixk_altar_of_relics_desc
+		piety_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 507
+		ai_creation_factor = 100
+		upgrades_from = ixk_sanctified_hall
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 16
+		vassal_opinion = 3
+	}
+	ixk_priests_sanctuary = {
+		desc = ixk_priests_sanctuary_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 105
+		upgrades_from = ixk_altar_of_relics
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 22
+		vassal_opinion = 5
+	}
+	ixk_iconostasis = {
+		desc = ixk_iconostasis_desc
+		piety_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 108
+		upgrades_from = ixk_priests_sanctuary
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 30
+		vassal_opinion = 7
+	}
+	ixk_byzantine_icon_hall = {
+		desc = ixk_byzantine_icon_hall_desc
+		piety_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = ixk_iconostasis
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 45
+		vassal_opinion = 12
+	}
+}

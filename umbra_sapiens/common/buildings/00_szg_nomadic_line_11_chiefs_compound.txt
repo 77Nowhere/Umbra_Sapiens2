@@ -1,0 +1,189 @@
+nomad = {
+	szg_khans_tent_1 = {
+		desc = szg_khans_tent_1_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 63
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.12
+		clan_sentiment = 1
+		fort_level = 0.1
+		global_revolt_risk = -0.01
+		court_size_modifier = 10
+	}
+	no_baghatur_council_2 = {
+		desc = no_baghatur_council_2_desc
+		gold_cost = 150
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = szg_khans_tent_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.25
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		fort_level = 0.1
+		global_revolt_risk = -0.01
+		court_size_modifier = 15
+	}
+	szg_command_yurt_3 = {
+		desc = szg_command_yurt_3_desc
+		gold_cost = 525
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 78
+		upgrades_from = no_baghatur_council_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.5
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		fort_level = 0.1
+		global_revolt_risk = -0.01
+		court_size_modifier = 20
+	}
+	szg_banner_pavilion_4 = {
+		desc = szg_banner_pavilion_4_desc
+		gold_cost = 1500
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 88
+		upgrades_from = szg_command_yurt_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.9
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.03
+		fort_level = 0.1
+		global_revolt_risk = -0.02
+		court_size_modifier = 25
+	}
+	szg_guarded_camp_5 = {
+		desc = szg_guarded_camp_5_desc
+		gold_cost = 4500
+		build_time = 338
+		extra_tech_building_start = 999
+		ai_creation_factor = 97
+		upgrades_from = szg_banner_pavilion_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.7
+		clan_sentiment = 1
+		max_population_mult = 0.01
+		max_manpower_mult = 0.02
+		garrison_size = 0.18
+		fort_level = 0.1
+		global_revolt_risk = -0.02
+		court_size_modifier = 30
+	}
+	szg_stewards_shelter_6 = {
+		desc = szg_stewards_shelter_6_desc
+		gold_cost = 7500
+		build_time = 525
+		extra_tech_building_start = 999
+		ai_creation_factor = 101
+		upgrades_from = szg_guarded_camp_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.7
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		fort_level = 0.1
+		global_revolt_risk = -0.02
+		court_size_modifier = 35
+	}
+	szg_high_council_tent_7 = {
+		desc = szg_high_council_tent_7_desc
+		gold_cost = 11250
+		build_time = 750
+		extra_tech_building_start = 999
+		ai_creation_factor = 108
+		upgrades_from = szg_stewards_shelter_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.5
+		clan_sentiment = 1
+		max_population_mult = 0.02
+		max_manpower_mult = 0.04
+		supply_limit = 0.2
+		fort_level = 0.1
+		global_revolt_risk = -0.03
+		court_size_modifier = 40
+	}
+	szg_chieftains_court_8 = {
+		desc = szg_chieftains_court_8_desc
+		gold_cost = 18750
+		build_time = 1125
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = szg_high_council_tent_7
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 0.35
+		garrison_size = 0.3
+		fort_level = 0.1
+		global_revolt_risk = -0.03
+		court_size_modifier = 45
+	}
+	szg_royal_steppe_hall_9 = {
+		desc = szg_royal_steppe_hall_9_desc
+		gold_cost = 26250
+		build_time = 1500
+		extra_tech_building_start = 999
+		ai_creation_factor = 115
+		upgrades_from = szg_chieftains_court_8
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 2
+		max_population_mult = 0.025
+		max_manpower_mult = 0.18
+		supply_limit = 0.6
+		garrison_size = 0.45
+		fort_level = 0.1
+		global_revolt_risk = -0.03
+		court_size_modifier = 50
+	}
+	szg_grand_khans_encampment_10 = {
+		desc = szg_grand_khans_encampment_10_desc
+		gold_cost = 30000
+		build_time = 2250
+		extra_tech_building_start = 999
+		ai_creation_factor = 120
+		upgrades_from = szg_royal_steppe_hall_9
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 3
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 1
+		garrison_size = 0.7
+		global_movement_speed = 0.07
+		fort_level = 0.1
+		global_revolt_risk = -0.05
+		court_size_modifier = 55
+	}
+}

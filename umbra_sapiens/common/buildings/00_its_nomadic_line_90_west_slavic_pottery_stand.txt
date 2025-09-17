@@ -1,0 +1,206 @@
+nomad = {
+	its_west_slavic_clay_pit = {
+		desc = its_west_slavic_clay_pit_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		nomad_tax_modifier = 0.089
+	}
+	its_west_slavic_potters_wheel = {
+		desc = its_west_slavic_potters_wheel_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 75
+		upgrades_from = its_west_slavic_clay_pit
+		prerequisites = {
+			its_west_slavic_clay_pit
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.178
+	}
+	its_west_slavic_kiln_hut = {
+		desc = its_west_slavic_kiln_hut_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 80
+		upgrades_from = its_west_slavic_potters_wheel
+		prerequisites = {
+			its_west_slavic_potters_wheel
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		supply_limit = 0.04
+	}
+	its_west_slavic_pottery_pavilion = {
+		desc = its_west_slavic_pottery_pavilion_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 87
+		upgrades_from = its_west_slavic_kiln_hut
+		prerequisites = {
+			its_west_slavic_kiln_hut
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	its_west_slavic_glazers_room = {
+		desc = its_west_slavic_glazers_room_desc
+		gold_cost = 825
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 92
+		upgrades_from = its_west_slavic_pottery_pavilion
+		prerequisites = {
+			its_west_slavic_pottery_pavilion
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.576
+		tradevalue = 1.513
+	}
+	its_west_slavic_fine_pottery_hall = {
+		desc = its_west_slavic_fine_pottery_hall_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 97
+		upgrades_from = its_west_slavic_glazers_room
+		prerequisites = {
+			its_west_slavic_glazers_room
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+	}
+	its_west_slavic_market_booth = {
+		desc = its_west_slavic_market_booth_desc
+		gold_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 101
+		upgrades_from = its_west_slavic_fine_pottery_hall
+		prerequisites = {
+			its_west_slavic_fine_pottery_hall
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.443
+	}
+	its_west_slavic_guild_pavillion = {
+		desc = its_west_slavic_guild_pavillion_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 106
+		upgrades_from = its_west_slavic_market_booth
+		prerequisites = {
+			its_west_slavic_market_booth
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	its_west_slavic_master_potters_chamber = {
+		desc = its_west_slavic_master_potters_chamber_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = its_west_slavic_guild_pavillion
+		prerequisites = {
+			its_west_slavic_guild_pavillion
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	its_west_slavic_pottery_guild = {
+		desc = its_west_slavic_pottery_guild_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 110
+		upgrades_from = its_west_slavic_master_potters_chamber
+		prerequisites = {
+			its_west_slavic_master_potters_chamber
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+	}
+}

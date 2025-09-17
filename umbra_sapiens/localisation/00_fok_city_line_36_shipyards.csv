@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ct_shipyard_1;Boat Builders Shed;;;;;x
+ct_shipyard_1_desc;A humble wooden shed by the water, sheltering a handful of craftsmen assembling small fishing boats and ferries. The first spark of maritime industry.;;;;;x
+ct_shipyard_2;Timber Drydock;;;;;x
+ct_shipyard_2_desc;A makeshift drydock of timber and earthworks, allowing more ambitious ship repairs and the assembly of larger hulls for coastal trade.;;;;;x
+ct_shipyard_3;Log Slipway;;;;;x
+ct_shipyard_3_desc;A simple log slipway extends into the water, enabling the construction and launching of modest riverboats and small merchant vessels.;;;;;x
+ct_shipyard_4;Shipwrights Yard;;;;;x
+ct_shipyard_4_desc;A bustling yard with workshops and timber stockpiles, employing skilled carpenters for the construction of merchant cogs and sturdy warships.;;;;;x
+ct_shipyard_5;Mariners' Guild;;;;;x
+ct_shipyard_5_desc;A prestigious guildhall where shipmasters and navigators gather, regulating trade, training sailors, and strengthening the citys maritime influence.;;;;;x
+ct_shipyard_6;Carvel Workshop;;;;;x
+ct_shipyard_6_desc;Large covered slipways and specialized workshops for advanced carvel-built hulls, increasing the ports shipbuilding capacity and prestige.;;;;;x
+ct_shipyard_7;Boat Basin;;;;;x
+ct_shipyard_7_desc;A fortified basin carved from the riverbank, providing safe mooring for both merchant and military ships, drawing bustling trade to the city.;;;;;x
+ct_shipyard_8;Dockside Crane;;;;;x
+ct_shipyard_8_desc;A massive wooden treadwheel crane dominates the docks, facilitating rapid loading and unloading of cargo, and greatly expanding trade volume.;;;;;x
+ct_shipyard_9;Naval Warehouse;;;;;x
+ct_shipyard_9_desc;Expansive stone warehouses line the waterfront, securing goods and naval stores, supporting both commerce and city defense.;;;;;x
+ct_shipyard_10;Grand Shipyard;;;;;x
+ct_shipyard_10_desc;A sprawling complex of stone and steel, the Grand Shipyard is the envy of kingdoms, launching fleets and commanding the seas with unmatched economic might.;;;;;x

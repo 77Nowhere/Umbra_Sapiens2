@@ -1,25 +1,25 @@
 bm_charlemagne = {
-	name = "BM_CHARLEMAGNE_ERA"
-	desc = "BM_CHARLEMAGNE_ERA_INFO"
+	name = BM_CHARLEMAGNE_ERA
+	desc = BM_CHARLEMAGNE_ERA_INFO
 	date = 769.1.1
-	
-	era = yes						## Will be shown on Era screen.
+
+	era = yes ## Will be shown on Era screen.
 	picture = GFX_pick_era_image_1
-	
+
 	selectable_character = {
 		id = 6392 # Charlemagne
 		age = 26
 		name = ERA_CHAR_NAME_6392
 		title = k_france
 		title_name = WEST_FRANCIA
-		
+
 		character = {
 			dna = bcedirmbfcy
 			properties = aj00bc00000
-			religion="catholic"
-			culture="old_frankish"
+			religion = catholic
+			culture = frankish
 			government = feudal_government
-			dynasty=25061
+			dynasty = 25061
 		}
 	}
 
@@ -29,14 +29,14 @@ bm_charlemagne = {
 		name = ERA_CHAR_NAME_144999
 		title = k_lotharingia
 		title_name = k_lotharingia
-		
+
 		character = {
 			dna = bcalbhabgal
 			properties = aj0aca000000
-			religion="catholic"
-			culture="old_frankish"
+			religion = catholic
+			culture = frankish
 			government = feudal_government
-			dynasty=25061
+			dynasty = 25061
 		}
 	}
 
@@ -46,14 +46,14 @@ bm_charlemagne = {
 		name = ERA_CHAR_NAME_190347
 		title = k_lombardy
 		title_name = LOMBARD_KINGDOM
-		
+
 		character = {
 			dna = aldccxlhgaf
 			properties = ai0afa000000
-			religion="catholic"
-			culture="lombard"
+			religion = catholic
+			culture = lombard
 			government = feudal_government
-			dynasty=1044053
+			dynasty = 1044053
 		}
 	}
 
@@ -65,14 +65,14 @@ bm_charlemagne = {
 		title_name = ERA_UMAYYAD_EMPIRE
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = cmedkpffaax
 			properties = mj0afa000000
-			religion="sunni"
-			culture="bedouin_arabic"
+			religion = sunni
+			culture = bedouin_arabic
 			government = muslim_government
-			dynasty=597
+			dynasty = 597
 		}
 	}
 
@@ -81,17 +81,17 @@ bm_charlemagne = {
 		age = 55
 		name = ERA_CHAR_NAME_34002
 		title = e_arabia
-		title_name = d_abbasid	
+		title_name = d_abbasid
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = beegiscaaad
 			properties = ml0ag0000000
-			religion="sunni"
-			culture="bedouin_arabic"
+			religion = sunni
+			culture = bedouin_arabic
 			government = muslim_government
-			dynasty=101727
+			dynasty = 101727
 		}
 	}
 
@@ -103,24 +103,24 @@ bm_charlemagne = {
 		title_name = ERA_RASHTRAKUTA_KINGDOM
 		coa_dynasty = yes
 		dlc = "Rajas of India"
-		
+
 		character = {
 			dna = dhcjffdbaaa
 			properties = ag0aea000000
-			religion="hindu"
-			culture="kannada"
+			religion = hindu
+			culture = kannada
 			government = feudal_government
-			dynasty=1043003
+			dynasty = 1043003
 		}
 	}
 }
 
 bm_the_old_gods = {
-	name = "BM_THE_OLD_GODS_ERA"
-	desc = "BM_THE_OLD_GODS_ERA_INFO"
+	name = BM_THE_OLD_GODS_ERA
+	desc = BM_THE_OLD_GODS_ERA_INFO
 	date = 867.1.1
-	
-	era = yes						## Will be shown on Era screen.
+
+	era = yes ## Will be shown on Era screen.
 	picture = GFX_pick_era_image_2
 
 	selectable_character = {
@@ -129,14 +129,14 @@ bm_the_old_gods = {
 		name = ERA_CHAR_NAME_163112
 		title = d_york
 		title_name = ERA_JORVIK
-		
+
 		character = {
 			dna = tctbpftnsvn
 			properties = tg0djd000000
-			religion="norse_pagan"
-			culture="norse"
+			religion = norse_pagan
+			culture = norse
 			government = feudal_government
-			dynasty=7514
+			dynasty = 7514
 		}
 	}
 
@@ -146,14 +146,14 @@ bm_the_old_gods = {
 		name = ERA_CHAR_NAME_40605
 		title = d_novgorod
 		title_name = ERA_HOLMGARDR
-		
+
 		character = {
 			dna = tczeyfghtom
 			properties = th0ebd000000
-			religion="norse_pagan"
-			culture="norse"
+			religion = norse_pagan
+			culture = norse
 			government = tribal_government
-			dynasty=705
+			dynasty = 705
 		}
 	}
 
@@ -163,14 +163,14 @@ bm_the_old_gods = {
 		name = ERA_CHAR_NAME_90104
 		title = k_france
 		title_name = WEST_FRANCIA
-		
+
 		character = {
 			dna = cjlcjygaaar
 			properties = an0abb000000
-			religion="catholic"
-			culture="frankish"
+			religion = catholic
+			culture = french
 			government = feudal_government
-			dynasty=25061
+			dynasty = 25061
 		}
 	}
 
@@ -180,14 +180,14 @@ bm_the_old_gods = {
 		name = ERA_CHAR_NAME_90107
 		title = k_germany
 		title_name = EAST_FRANCIA
-		
+
 		character = {
 			dna = bagmeomdaai
 			properties = aj0abb000000
-			religion="catholic"
-			culture="german"
+			religion = catholic
+			culture = german
 			government = feudal_government
-			dynasty=25061
+			dynasty = 25061
 		}
 	}
 
@@ -197,14 +197,14 @@ bm_the_old_gods = {
 		name = ERA_CHAR_NAME_1700
 		title = e_byzantium
 		title_name = e_byzantium
-		
+
 		character = {
 			dna = dageigbabbe
 			properties = am0aj0000000
-			religion="orthodox"
-			culture="greek"
-			government = feudal_government
-			dynasty=644
+			religion = orthodox
+			culture = greek
+			government = roman_imperial_government
+			dynasty = 644
 		}
 	}
 
@@ -216,14 +216,14 @@ bm_the_old_gods = {
 		title_name = d_abbasid
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = csdeypeevjm
 			properties = eo0bb0000000
-			religion="sunni"
-			culture="bedouin_arabic"
+			religion = sunni
+			culture = bedouin_arabic
 			government = muslim_government
-			dynasty=101727
+			dynasty = 101727
 		}
 	}
 
@@ -232,19 +232,17 @@ bm_the_old_gods = {
 	selectable_character = {
 		id = 33358 # Æthelred
 	}
-
 	selectable_character = {
-		id = 163111 # Ivar the Boneless	
+		id = 163111 # Ivar the Boneless
 	}
-
 	selectable_character = {
 		id = 45107 # Vandad I
 	}
 }
 
 bm_otto_the_first = {
-	name = "OTTO_THE_FIRST_ERA"
-	desc = "OTTO_THE_FIRST_ERA_INFO"
+	name = OTTO_THE_FIRST_ERA
+	desc = OTTO_THE_FIRST_ERA_INFO
 	date = 936.8.7
 
 	era = yes
@@ -255,14 +253,14 @@ bm_otto_the_first = {
 		age = 24
 		title = k_germany
 		title_name = k_germany
-		name = era_char_name_1282
+		name = ERA_CHAR_NAME_1282
 
 		character = {
 			dna = rcrfdblvsvv
 			properties = aj000a00000000000000000000000000000000
 			religion = catholic
 			culture = german
-			government = feudal_government 
+			government = feudal_government
 			dynasty = 669
 		}
 	}
@@ -272,7 +270,7 @@ bm_otto_the_first = {
 		age = 43
 		title = k_africa
 		title_name = k_africa
-		name = era_char_name_32901
+		name = ERA_CHAR_NAME_32901
 
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
@@ -292,24 +290,24 @@ bm_otto_the_first = {
 		age = 43
 		title = k_england
 		title_name = k_england
-		name = era_char_name_33350
+		name = ERA_CHAR_NAME_33350
 
 		character = {
 			dna = dwuqrcylhrw
 			properties = amq00b00000000000000000000000000000000
 			government = feudal_government
 			religion = catholic
-			culture = saxon
+			culture = anglo-saxon
 			dynasty = 100072
 		}
-	}	
+	}
 
 	selectable_character = {
 		id = 260976 # Abu Tahir of the Jannabid Emirate
 		age = 30
-		title = d_amman
-		title_name = d_amman
-		name = era_char_name_260976
+		title = d_amman #d_al_bahrein
+		title_name = d_amman #d_al_bahrein
+		name = ERA_CHAR_NAME_260976
 
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
@@ -329,7 +327,7 @@ bm_otto_the_first = {
 		age = 56
 		title = k_hungary
 		title_name = k_hungary
-		name = era_char_name_159135
+		name = ERA_CHAR_NAME_159135
 		dlc = "The Old Gods"
 
 		character = {
@@ -347,7 +345,7 @@ bm_otto_the_first = {
 		age = 16
 		title = k_norway
 		title_name = k_norway
-		name = era_char_name_144001
+		name = ERA_CHAR_NAME_144001
 
 		character = {
 			dna = bpjkavjfspx
@@ -364,28 +362,25 @@ bm_otto_the_first = {
 	selectable_character = {
 		id = 3200
 	}
-
 	selectable_character = {
 		id = 166990
 	}
-
 	selectable_character = {
 		id = 102507
 	}
-
 	selectable_character = {
 		id = 600
 	}
 }
 
 bm_fate_of_england = {
-	name = "BM_FATE_OF_ENGLAND_ERA"
-	desc = "BM_FATE_OF_ENGLAND_ERA_INFO"
+	name = BM_FATE_OF_ENGLAND_ERA
+	desc = BM_FATE_OF_ENGLAND_ERA_INFO
 	date = 1066.9.15
-	
-	era = yes						## Will be shown on Era screen.
+
+	era = yes ## Will be shown on Era screen.
 	picture = GFX_pick_era_image_3
-	custom_start = yes				## Choosing "Custom Start" will open this bookmark
+	custom_start = yes ## Choosing "Custom Start" will open this bookmark
 
 	selectable_character = {
 		id = 140 # William the Conqueror
@@ -393,14 +388,14 @@ bm_fate_of_england = {
 		name = ERA_CHAR_NAME_140
 		title = d_normandy
 		title_name = d_normandy
-		
+
 		character = {
 			dna = cagfktibaal
 			properties = fj0dcd000000
-			religion="catholic"
-			culture="norman"
+			religion = catholic
+			culture = norman
 			government = feudal_government
-			dynasty=752
+			dynasty = 752
 		}
 	}
 
@@ -410,14 +405,14 @@ bm_fate_of_england = {
 		name = ERA_CHAR_NAME_1316
 		title = e_hre
 		title_name = e_hre
-		
+
 		character = {
 			dna = ajbgarbifau
 			properties = ae00c0000000
-			religion="catholic"
-			culture="german"
+			religion = catholic
+			culture = german
 			government = feudal_government
-			dynasty=651
+			dynasty = 651
 		}
 	}
 
@@ -427,14 +422,14 @@ bm_fate_of_england = {
 		name = ERA_CHAR_NAME_1128
 		title = d_apulia
 		title_name = d_apulia
-		
+
 		character = {
 			dna = cdbcdogibck
 			properties = 0c0cbd000000
-			religion="catholic"
-			culture="norman"
+			religion = catholic
+			culture = norman
 			government = feudal_government
-			dynasty=678
+			dynasty = 678
 		}
 	}
 
@@ -446,14 +441,14 @@ bm_fate_of_england = {
 		title_name = k_fatimids
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = alhdhmkiaag
 			properties = ak00bc000000
-			religion="shiite"
-			culture="egyptian_arabic"
+			religion = shiite
+			culture = egyptian_arabic
 			government = muslim_government
-			dynasty=589
+			dynasty = 589
 		}
 	}
 
@@ -465,14 +460,14 @@ bm_fate_of_england = {
 		title_name = k_persia
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = bdgeivbbbam
 			properties = fg0aha000000
-			religion="sunni"
-			culture="turkish"
+			religion = sunni
+			culture = turkish
 			government = muslim_government
-			dynasty=613
+			dynasty = 613
 		}
 	}
 
@@ -484,303 +479,1432 @@ bm_fate_of_england = {
 		title_name = ERA_CHALUKYA
 		coa_dynasty = yes
 		dlc = "Rajas of India"
-		
+
 		character = {
 			dna = cgciafbbaaw
 			properties = ah00ac000000
-			religion="hindu"
-			culture="kannada"
+			religion = hindu
+			culture = kannada
 			government = feudal_government
-			dynasty=12319
+			dynasty = 12319
 		}
 	}
-	
+
 	### These are not shown unless the player is viewing custom bookmarks
 
 	selectable_character = {
 		id = 122 # Harold Godwinson
 	}
-
 	selectable_character = {
 		id = 102531 # Harald Hårdråde
 	}
-
 	selectable_character = {
 		id = 20663 # Isaac of Khazaria
 	}
-	
 }
 
 bm_norman_conquest = {
-	name = "BM_NORMAN_CONQUEST"
-	desc = "BM_NORMAN_CONQUEST_DESC"
+	name = BM_NORMAN_CONQUEST
+	desc = BM_NORMAN_CONQUEST_DESC
 	date = 1066.12.26
-	
+
 	selectable_character = {
 		id = 140 # William the Conqueror
 	}
-
 	selectable_character = {
 		id = 101515 # Svend Estridsen, King of Denmark
 	}
-
 	selectable_character = {
 		id = 20663 # Isaac of Khazaria
+	}					  
+}
+
+bm_southern_india = {
+	name = BM_SOUTHERN_INDIA
+	desc = BM_SOUTHERN_INDIA_DESC
+	date = 1070.1.1
+
+	selectable_character = {
+		id = 189108 # Kulottunga I, Chola & Eastern Chalukya
+	}
+	selectable_character = {
+		id = 189029 # Vijayabahu I, leader of Sinhalese Revolt
+	}
+	selectable_character = {
+		id = 189115 # Pandya Dynasty, ally of Vikramaditya VI & revolting against Kulottunga I
+	}
+	selectable_character = {
+		id = 189055 # Chera Dynasty, ally of Pandya Dynasty
+	}
+	selectable_character = {
+		id = 74443 # Vikramaditya VI, Western Chalukya
+	}
+	selectable_character = {
+		id = 74442 # Someshvara II, Western Chalukya
+	}
+	selectable_character = {
+		id = 74444 # Jayasimha, younger brother & ally of Vikramaditya VI
+	}
+	selectable_character = {
+		id = 74573 # Hoysala Dynasty, ally of Vikramaditya VI
+	}
+	selectable_character = {
+		id = 74785 # Hangal Kadamba Dynasty, ally of Vikramaditya VI
+	}
+	selectable_character = {
+		id = 74645 # Seuna (Yadava) Dynasty, ally of Vikramaditya VI
+	}
+	selectable_character = {
+		id = 74544 # Goa Kadamba Dynasty, ally of Someshvara II
+	}
+	selectable_character = {
+		id = 189104 # Vijayaditya III, paternal uncle of Kulottunga I
+	}
+	selectable_character = {
+		id = 189182 # Eastern Ganga, one of Kalinga kingdoms
+	}
+	selectable_character = {
+		id = 191252 # Nagavamsi, one of Kalinga kingdoms
+	}
+	selectable_character = {
+		id = 189196 # Somavamsi, one of Kalinga kingdoms
+	}
+}
+
+bm_castille = {
+	name = BM_CASTILLE
+	desc = BM_CASTILLE_DESC
+	date = 1073.1.1
+
+	selectable_character = {
+		id = 108500 # Alfonso VI the Brave of Leon and Castile
+	}
+	selectable_character = {
+		id = 108501 # Urraca, sister of Alfonso
+	}
+	selectable_character = {
+		id = 32965 # Yusuf ibn Tashfin, Amir of the Almoravids
+	}
+	selectable_character = {
+		id = 161002 # Kambine Diaresso of Ghana
+	}
+	selectable_character = {
+		id = 3901 # Aftasid Dynasty
+	}
+	selectable_character = {
+		id = 3214 # Abbadid Dynasty
+	}
+	selectable_character = {
+		id = 32951 # Abbadid Dynasty
+	}
+	selectable_character = {
+		id = 3924 # Dhunnunid Dynasty
+	}
+	selectable_character = {
+		id = 3934 # Hudid Dynasty
+	}
+	selectable_character = {
+		id = 20869 # Amirid Dynasty
+	}
+	selectable_character = {
+		id = 3910 # Tahirid Dynasty
+	}
+}
+
+bm_rum = {
+	name = BM_RUM
+	desc = BM_RUM_DESC
+	date = 1077.1.1
+
+	selectable_character = {
+		id = 3042 # Malik-Shah I, the Seljuks
+	}
+	selectable_character = {
+		id = 3016 # Kara-Khanids
+	}
+	selectable_character = {
+		id = 144133 # Ibrahim of Ghazna
+	}
+	selectable_character = {
+		id = 3096 # al-Mustansir Billah, the Fatimids
+	}
+	selectable_character = {
+		id = 220820 # Arwa al-Sulayhi, Yemeni Queen
+	}
+	selectable_character = {
+		id = 3046 # Suleiman Shah I of Rum
+	}
+	selectable_character = {
+		id = 1740 # Nikephoros III Botaneiates, future Byzantium ruler
+	}
+	selectable_character = {
+		id = 1736 # Michael VII of Byzantium
 	}
 }
 
 bm_komnenos_dynasty = {
-	name = "BM_KOMNENOS_DYNASTY"
-	desc = "BM_KOMNENOS_DYNASTY_DESC"
+	name = BM_KOMNENOS_DYNASTY
+	desc = BM_KOMNENOS_DYNASTY_DESC
 	date = 1081.4.1
-	
+
 	selectable_character = {
 		id = 1742 # Alexios I Komnenos
 	}
-
 	selectable_character = {
 		id = 3046 # Suleyman I of Rum
 	}
 }
 
+bm_hungary = {
+	name = BM_HUNGARY
+	desc = BM_HUNGARY_DESC
+	date = 1091.1.1
+
+	selectable_character = {
+		id = 474 # Laszlo I of Hungary
+	}
+	selectable_character = {
+		id = 32965 # Yusuf I of Mauretania
+	}
+}
+
+bm_the_isles = {
+	name = BM_THE_ISLES
+	desc = BM_THE_ISLES_DESC
+	date = 1092.7.1
+
+	selectable_character = {
+		id = 5788 # Gudrod I of The Isles
+	}
+	selectable_character = {
+		id = 984 # Malcolm III of Scotland
+	}
+}
+
+bm_edge_of_knife = {
+	name = BM_EDGE_OF_KNIFE
+	desc = BM_EDGE_OF_KNIFE_DESC
+	date = 1094.1.1
+
+	selectable_character = {
+		id = 32965 # Yusuf I of Almoravid Sultanate
+	}
+	selectable_character = {
+		id = 110525 # Berenguer-Ramon II of Barcelona
+	}
+	selectable_character = {
+		id = 110500 # Sancho I of Aragon-Navarra
+	}
+	selectable_character = {
+		id = 108500 # Alfonso VI of Castille-Leon
+	}
+	selectable_character = {
+		id = 1742 # Alexios Komnenos of Byzantium
+	}
+	selectable_character = {
+		id = 41701 # Kilij Arslan of Rum
+	}
+	selectable_character = {
+		id = 216517 # Davit of Georgia
+	}
+}
+
+bm_norway_1 = {
+	name = BM_NORWAY_1
+	desc = BM_NORWAY_1_DESC
+	date = 1099.1.1
+
+	selectable_character = {
+		id = 202511 # Magnus III of Norway
+	}
+	selectable_character = {
+		id = 202968 # Edgar I of Scotland
+	}
+}
+
+bm_liubech = {
+	name = BM_LIUBECH
+	desc = BM_LIUBECH_DESC
+	date = 1100.8.1
+
+	selectable_character = {
+		id = 666 # Vladimir Vsevolodovich Monomakh of Pereyaslav
+	}
+	selectable_character = {
+		id = 652 # Svyatopolk Izyaslavich Izyaslavich-Turovsky of Kiev
+	}
+	selectable_character = {
+		id = 660 # Oleg Sviatoslavich of Bryansk
+	}
+	selectable_character = {
+		id = 650 # Vseslav Bryachislavich Rogvolodovich of Polotsk
+	}
+	selectable_character = {
+		id = 222574 # Mstislav Vladimirovich Monomakh of Novgorod
+	}
+	selectable_character = {
+		id = 125097 # Sviatoslav Vladimirovich Monomakh of Smolensk
+	}
+	selectable_character = {
+		id = 125101 # Yaropolk Vladimirovich Monomakh of Rostov-Suzdal
+	}
+	selectable_character = {
+		id = 222544 # Yaroslav Sviatopolchich Izyaslavich-Turovsky of Volyn
+	}
+	selectable_character = {
+		id = 125027 # Yaroslav Yaropolchich Izyaslavich-Turovsky of Berestia
+	}
+	selectable_character = {
+		id = 125028 # Vyacheslav Yaropolchich Izyaslavich-Turovsky of Turov
+	}
+	selectable_character = {
+		id = 656 # Davyd Sviatoslavich of Chernigov
+	}
+	selectable_character = {
+		id = 662 # Yaroslav Sviatoslavich of Ryazan
+	}
+}
+
+bm_antioch = {
+	name = BM_ANTIOCH
+	desc = BM_ANTIOCH_DESC
+	date = 1103.1.1
+
+	selectable_character = {
+		id = 232564 # Thoros of Armenia Minor
+	}
+	selectable_character = {
+		id = 1140 # Bohemond of Antioch
+	}
+	selectable_character = {
+		id = 232007 # Baudouin II of Edessa
+	}
+	selectable_character = {
+		id = 144020 # Radwan I Aleppo
+	}
+	selectable_character = {
+		id = 144023 # Duqaq I of Damascus
+	}
+	selectable_character = {
+		id = 32905 # Al-Amir of Egypt
+	}
+	selectable_character = {
+		id = 10073 # Boudouin I of Jerusalem
+	}
+}
+
+bm_jerusalem = {
+	name = BM_JERUSALEM
+	desc = BM_JERUSALEM_DESC
+	date = 1131.10.1
+
+	selectable_character = {
+		id = 223525 # Fulk the Younger of Jerusalem
+	}
+	selectable_character = {
+		id = 144029 # Imad al-Din Zengi of Aleppo
+	}
+	selectable_character = {
+		id = 231013 # Joscelin II of Edessa
+	}
+	selectable_character = {
+		id = 223012 # Leo I of Armenia
+	}
+	selectable_character = {
+		id = 223023 # John II Komnenos
+	}
+}
+
+bm_anarchy = {
+	name = BM_ANARCHY
+	desc = BM_ANARCHY_DESC
+	date = 1144.1.1
+
+	selectable_character = {
+		id = 205851 # Stephen I, King of England
+	}
+	selectable_character = {
+		id = 204506 # Geoffrey I, Duke of Normandy
+	}
+	selectable_character = {
+		id = 203036 # Robert II, Earl of Gwent
+	}
+	selectable_character = {
+		id = 205891 # Theobald II, Count of Champagne
+	}
+	selectable_character = {
+		id = 31128 # William of Ypres, Count of Kent
+	}
+}
+
+bm_almoravid = {
+	name = BM_ALMORAVID
+	desc = BM_ALMORAVID_DESC
+	date = 1145.1.1
+
+	selectable_character = {
+		id = 207500 # Alfonso VII of Castille-Leon
+	}
+	selectable_character = {
+		id = 70233 # Ramiro of Aragon
+	}
+	selectable_character = {
+		id = 215530 # Manuel I of Byzantium
+	}
+	selectable_character = {
+		id = 216516 # Demetre I of Georgia
+	}
+	selectable_character = {
+		id = 231067 # Baudauin III of Jerusalem
+	}
+	selectable_character = {
+		id = 209503 # Afonso the Conqueror of Portugal
+	}
+}
+
+bm_seljuk = {
+	name = BM_SELJUK
+	desc = BM_SELJUK_DESC
+	date = 1157.5.8
+
+	selectable_character = {
+		id = 144120 # Ali I of Khiva
+	}
+	selectable_character = {
+		id = 144062 # Caliph Al-Muqtafi I
+	}
+	selectable_character = {
+		id = 144032 # Qutb I of Edessa
+	}
+	selectable_character = {
+		id = 144051 # Shams I of Azerbaijan
+	}
+	selectable_character = {
+		id = 93026 # Muzaffar I of Derbent
+	}
+	selectable_character = {
+		id = 93200 # Ebu-Tehir I of Kermanshah
+	}
+	selectable_character = {
+		id = 144054 # Muhammed I of Esfahan
+	}
+	selectable_character = {
+		id = 93273 # Tagh II of Sistan
+	}
+	selectable_character = {
+		id = 144036 # Togrul I of Hormuz
+	}
+	selectable_character = {
+		id = 144138 # Khusraw I of Birjand
+	}
+	selectable_character = {
+		id = 93127 # Malik I Shah of Khorasan
+	}
+	selectable_character = {
+		id = 144141 # Ghiyath
+	}
+}
+
+bm_plantagenet_1 = {
+	name = BM_PLANTAGENET_1
+	desc = BM_PLANTAGENET_1_DESC
+	date = 1158.1.1
+
+	selectable_character = {
+		id = 204500 # Henry II, King of England
+	}
+	selectable_character = {
+		id = 7474 # William de Blois, Count of Boulogne
+	}
+	selectable_character = {
+		id = 214710 # Owain ap Gwynedd, King of Wales
+	}
+	selectable_character = {
+		id = 214718 # Madog ap Maredudd, Prince of Powys
+	}
+	selectable_character = {
+		id = 214800 # Rhys ap Gruffydd, Prince of Deheubarth
+	}
+	selectable_character = {
+		id = 205741 # Conan IV, Duke of Brittany
+	}
+	selectable_character = {
+		id = 205530 # Raymond V, Count of Toulouse
+	}
+	selectable_character = {
+		id = 205500 # Louis VII, King of France
+	}
+	selectable_character = {
+		id = 214550 # Diarmait Mac Murchada, King of Leinster
+	}
+	selectable_character = {
+		id = 214510 # Ruaidri Ua Conchobair, King of Connacht
+	}
+	selectable_character = {
+		id = 220027 # Somerled, King of the Isles
+	}
+	selectable_character = {
+		id = 220021 # Gudrod, King of Mann
+	}
+	selectable_character = {
+		id = 203560 # Fergus, Lord of Galloway
+	}
+	selectable_character = {
+		id = 203000 # Malcolm IV, King of Scotland
+	}
+}
+
+bm_komnenos = {
+	name = BM_KOMNENOS
+	desc = BM_KOMNENOS_DESC
+	date = 1165.1.1
+
+	selectable_character = {
+		id = 215530 # Manuel I of Byzantium
+	}
+	selectable_character = {
+		id = 219500 # Bela I of Boznia
+	}
+	selectable_character = {
+		id = 219511 # Istvan III of Hungary
+	}
+}
+
+bm_saladin = {
+	name = BM_SALADIN
+	desc = BM_SALADIN_DESC
+	date = 1171.1.1
+
+	selectable_character = {
+		id = 226000 # Saladin I of Egypt
+	}
+	selectable_character = {
+		id = 223520 # Amaury I of Jerusalem
+	}
+	selectable_character = {
+		id = 144031 # Nur ad-Din I of Damascus
+	}
+	selectable_character = {
+		id = 223750 # Bohemond III of Antioch
+	}
+}
+
+bm_persian_struggle = {
+	name = BM_PERSIAN_STRUGGLE
+	desc = BM_PERSIAN_STRUGGLE_DESC
+	date = 1173.1.1
+
+	selectable_character = {
+		id = 230000 # Ala al-Din Tekish, Shah of Khwarazmian Empire
+	}
+	selectable_character = {
+		id = 144141 # Ghiyath al-Din Muhammad, Sultan of Ghurid Empire
+	}
+	selectable_character = {
+		id = 144142 # Mu'izz ad-Din Muhammad of Ghor
+	}
+	selectable_character = {
+		id = 144055 # Arslan Shah of Iraq
+	}
+	selectable_character = {
+		id = 144139 # Khusrau Malik of Ghaznavid Empire
+	}
+	selectable_character = {
+		id = 188908 # Yelu Pusuwan, Regent of Western Liao dynasty
+	}
+}
+
+bm_serbia = {
+	name = BM_SERBIA
+	desc = BM_SERBIA_DESC
+	date = 1186.1.1
+
+	selectable_character = {
+		id = 218500 # Stefan I of Serbia
+	}
+	selectable_character = {
+		id = 217501 # Petar III of Bulgaria
+	}
+	selectable_character = {
+		id = 215500 # Isaakios II of Byzantium
+	}
+	selectable_character = {
+		id = 215519 # Alexios I of Trebizond
+	}
+	selectable_character = {
+		id = 225000 # Kilij II Arslan of Rum
+	}
+	selectable_character = {
+		id = 219500 # Bela III of Hungary
+	}
+}
+
+bm_iberia = {
+	name = BM_IBERIA
+	desc = BM_IBERIA_DESC
+	date = 1186.1.1
+
+	selectable_character = {
+		id = 209500 # Sancho I of Portugal
+	}
+	selectable_character = {
+		id = 208500 # Fernando II of Leon
+	}
+	selectable_character = {
+		id = 207510 # Alphonso VIII of Castille
+	}
+	selectable_character = {
+		id = 210500 # Alfons II of Aragon
+	}
+	selectable_character = {
+		id = 206500 # Antso VI of Navarra
+	}
+	selectable_character = {
+		id = 32980 # Ya'Qub I of Mauretania
+	}
+}
+
 bm_third_crusade = {
-	name = "BM_THIRD_CRUSADE"
-	desc = "BM_THIRD_CRUSADE_DESC"
+	name = BM_THIRD_CRUSADE
+	desc = BM_THIRD_CRUSADE_DESC
 	date = 1187.1.1
-	
+
 	selectable_character = {
 		id = 204500 # Henry II of England
 	}
-
 	selectable_character = {
 		id = 205506 # Philippe II Auguste of France
 	}
-
 	selectable_character = {
 		id = 223500 # Guy de Lusignan, King of Jerusalem
 	}
-
 	selectable_character = {
 		id = 212501 # Friedrich I of the HRE
 	}
-
 	selectable_character = {
 		id = 219500 # Hungary
 	}
-
 	selectable_character = {
 		id = 215500 # The Byzantine Empire
 	}
-
 	selectable_character = {
 		id = 226000 # Saladin
 	}
 }
 
+bm_battle_of_tarain = {
+	name = BM_BATTLE_OF_TARAIN
+	desc = BM_BATTLE_OF_TARAIN_DESC
+	date = 1191.1.1
+
+	selectable_character = {
+		id = 188142 # Prithviraj III, Chauhan Dynasty
+	}
+	selectable_character = {
+		id = 144142 # Mu'izz ad-Din Muhammad of Ghor
+	}
+	selectable_character = {
+		id = 170190 # Qutb ud-Din Aibak, slave of Mu'izz ad-Din Muhammad
+	}
+	selectable_character = {
+		id = 144141 # Ghiyath al-Din Muhammad, Sultan of Ghurid Empire
+	}
+	selectable_character = {
+		id = 188052 # Paramardi, Chandela Dynasty
+	}
+	selectable_character = {
+		id = 188095 # Bhima II, Solanki Dynasty
+	}
+	selectable_character = {
+		id = 188197 # Paramara Dynasty
+	}
+	selectable_character = {
+		id = 190220 # Jayachandra, Gahadavala Dynasty
+	}
+}
+
+bm_vexin = {
+	name = BM_VEXIN
+	desc = BM_VEXIN_DESC
+	date = 1193.1.1
+
+	selectable_character = {
+		id = 204510 # Richard I 'the Lionheart', King of England
+	}
+	selectable_character = {
+		id = 205506 # Philippe II 'the Auguste', King of France
+	}
+	selectable_character = {
+		id = 204514 # Prince John of England
+	}
+	selectable_character = {
+		id = 205740 # Duchess Constance of Brittany
+	}
+	selectable_character = {
+		id = 202999 # William 'the Lion', King of Scotland
+	}
+	selectable_character = {
+		id = 214800 # Rhys ap Gruffydd, Prince of Deheubarth
+	}
+	selectable_character = {
+		id = 214700 # Dafydd ab Owain Gwynedd, Prince of Gwynedd
+	}
+	selectable_character = {
+		id = 232002 # Rhodri ab Owain Gwynedd, brother of Dafydd
+	}
+	selectable_character = {
+		id = 214724 # Madog
+	}
+	selectable_character = {
+		id = 205960 # Henry II, Count of Champagne & King of Jerusalem
+	}
+}			 
+
 bm_the_latin_empire = {
-	name = "BM_THE_LATIN_EMPIRE"
-	desc = "BM_THE_LATIN_EMPIRE_DESC"
+	name = BM_THE_LATIN_EMPIRE
+	desc = BM_THE_LATIN_EMPIRE_DESC
 	date = 1204.5.16
-	
+
 	selectable_character = {
 		id = 205523 # Baudouin I - Latin Empire
 	}
-
 	selectable_character = {
 		id = 215674 # Theodoros I - Byzantine Empire
 	}
-
 	selectable_character = {
 		id = 204514 # John I of England
 	}
-
 	selectable_character = {
 		id = 205506 # Philippe II of France
 	}
-
 	selectable_character = {
 		id = 209500 # Sancho I of Portugal
 	}
-
 	selectable_character = {
 		id = 34187 # Kilij Arslan III of Rum
 	}
 }
 
+bm_temujin = {
+	name = BM_TEMUJIN
+	desc = BM_TEMUJIN_DESC
+	date = 1206.3.1
+
+	selectable_character = {
+		id = 125501 # Temujin, Mongol Empire
+	}
+	selectable_character = {
+		id = 188912 # Zhilugu, Kara-Khitais
+	}
+	selectable_character = {
+		id = 206660 # Aunquan, Xi Xia
+	}
+	selectable_character = {
+		id = 93052 # Muhammad II, Khwarazm
+	}
+	selectable_character = {
+		id = 166789 # Barchuq, Qocho
+	}
+	selectable_character = {
+		id = 188857 # Kara-Khanids
+	}
+	selectable_character = {
+		id = 194204 # Kirgizs
+	}
+	selectable_character = {
+		id = 194216 # Kimaks
+	}
+	selectable_character = {
+		id = 93093 # Oghuzs
+	}
+	selectable_character = {
+		id = 125403 # Cumans
+	}
+	selectable_character = {
+		id = 125608 # Bolghars
+	}
+}
+
+bm_ghurid = {
+	name = BM_GHURID
+	desc = BM_GHURID_DESC
+	date = 1206.3.15
+	
+	selectable_character = {
+		id = 170190 # Qutb ud-Din Aibak, slave of Mu'izz ad-Din Muhammad
+	}
+	selectable_character = {
+		id = 170193 # Iltutmish, slave and son-in-law of Qutb ud-Din Aibak
+	}
+	selectable_character = {
+		id = 170300 # Nasir ad-Din Qabacha, slave of Mu'izz ad-Din Muhammad and son-in-law of Qutb ud-Din Aibak
+	}
+	selectable_character = {
+		id = 170253 # Muhammad Shiran Khalji, son of a slave of Mu'izz ad-Din Muhammad
+	}
+	selectable_character = {
+		id = 170302 # Taj al-Din Yildiz, slave of Mu'izz ad-Din Muhammad
+	}
+	selectable_character = {
+		id = 144143 # Ghiyath al-Din Mahmud, son of Ghiyath al-Din Muhammad
+	}
+	selectable_character = {
+		id = 93149 # Jalal al-Din Ali, nephew of Ghiyath al-Din Muhammad
+	}
+	selectable_character = {
+		id = 188362 # descendant of Soomra Dynasty
+	}
+	selectable_character = {
+		id = 154006 # descendant of Sena Dynasty
+	}
+	selectable_character = {
+		id = 188145 # one descendant of Chauhan Dynasty
+	}
+	selectable_character = {
+		id = 188462 # another descendant of Chauhan Dynasty
+	}
+	selectable_character = {
+		id = 191745 # 3rd descendant of Chauhan Dynasty
+	}
+	selectable_character = {
+		id = 170290 # descendant of Tomara Dynasty
+	}
+	selectable_character = {
+		id = 191392 # descendant of Khayarwala Dynasty
+	}
+	selectable_character = {
+		id = 188341 # descendant of Bhatti Dynasty
+	}
+}
+
+bm_byzantian_ruins = {
+	name = BM_BYZANTIAN_RUINS
+	desc = BM_BYZANTIAN_RUINS_DESC
+	date = 1206.12.1
+
+	selectable_character = {
+		id = 205525 # Henry I of Flanders - Latin Empire
+	}
+	selectable_character = {
+		id = 215674 # Theodoros I - Nicene Empire
+	}
+	selectable_character = {
+		id = 215517 # Michael I Komnenos Doukas - Epirus
+	}
+	selectable_character = {
+		id = 215519 # Alexios I - Trebizond
+	}
+	selectable_character = {
+		id = 215061 # Theodore Branas
+	}
+	selectable_character = {
+		id = 225002 # Kaykhusraw I - Rum
+	}
+	selectable_character = {
+		id = 219502 # Andrew II - Hungary
+	}
+	selectable_character = {
+		id = 217502 # Kaloyan - Bulgaria
+	}
+}
+
+bm_anushtiginid = {
+	name = BM_ANUSHTIGINID
+	desc = BM_ANUSHTIGINID_DESC
+	date = 1212.1.1
+
+	selectable_character = {
+		id = 93052 # Mohammed I of Persia
+	}
+	selectable_character = {
+		id = 226052 # al-Adil I of Egypt
+	}
+}			  
+
 bm_the_mongols = {
-	name = "BM_THE_MONGOLS_ERA"
-	desc = "BM_THE_MONGOLS_ERA_INFO"
+	name = BM_THE_MONGOLS_ERA
+	desc = BM_THE_MONGOLS_ERA_INFO
 	date = 1220.2.1
-	
-	#era = yes						## Will be shown on Era screen.
-	#picture = GFX_pick_era_image_4
-	
+
 	selectable_character = {
 		id = 457620 # Fernando III of Castille
-		age = 18
-		name = ERA_CHAR_NAME_457620
-		title = k_castille
-		title_name = k_castille
-		
-		character = {
-			dna = bcabiyiccaf
-			properties = ah00ja000000
-			religion="catholic"
-			culture="castillan"
-			government = feudal_government
-			dynasty=681
-		}
 	}
-
 	selectable_character = {
 		id = 212513 # Friedrich II, Holy Roman Emperor
-		age = 25
-		name = ERA_CHAR_NAME_212513
-		title = e_hre
-		title_name = e_hre
-		
-		character = {
-			dna = agbceeccebr
-			properties = aj0bh0000000
-			religion="catholic"
-			culture="german"
-			government = feudal_government
-			dynasty=529
-		}
 	}
-
 	selectable_character = {
 		id = 30809 # Isabelle II of Jerusalem
-		age = 9
-		name = ERA_CHAR_NAME_30809
-		title = k_jerusalem
-		title_name = k_jerusalem
-		
-		character = {
-			female = yes
-			dna = ajgdamibabj
-			properties = aj0bba000000
-			religion="catholic"
-			culture="frankish"
-			government = feudal_government
-			dynasty=80
-		}
 	}
-
 	selectable_character = {
 		id = 93052 # Mohammed Ala ed-Din of Khwarezian Empire
-		age = 50
-		name = ERA_CHAR_NAME_93052
-		title = k_persia
-		title_name = ERA_KHWAREZM
-		coa_dynasty = yes
-		dlc = "The Sword of Islam"
-		
-		character = {
-			dna = cgeeapcdeaf
-			properties = ag0bha000000
-			religion="sunni"
-			culture="turkish"
-			government = muslim_government
-			dynasty=101866
-		}
 	}
-
 	selectable_character = {
 		id = 170193 # Iltutmish, Sultan of Delhi
-		age = 50
-		name = ERA_CHAR_NAME_170193
-		title = e_rajastan
-		title_name = k_delhi
-		coa_dynasty = yes
-		dlc = "The Sword of Islam"
-		
-		character = {
-			dna = aefgiqfbeae
-			properties = ob00b0000000
-			religion="sunni"
-			culture="turkish"
-			government = muslim_government
-			dynasty=1040202
-		}
 	}
-
 	selectable_character = {
 		id = 125501 # Genghis Khan
-		age = 58
-		name = ERA_CHAR_NAME_125501
-		title = e_mongol_empire
-		title_name = e_mongol_empire
-		#coa_dynasty = yes
-		dlc = "Horse Lords"
-		
-		character = {
-			dna = bggmkufdfae
-			properties = k000cd000000
-			religion="tengri_pagan"
-			culture="mongol"
-			government = nomadic_government
-			dynasty=11100
-		}
+	}
+}
+
+bm_mongol_split = {
+	name = BM_MONGOL_SPLIT
+	desc = BM_MONGOL_SPLIT_DESC
+	date = 1227.12.2
+
+	selectable_character = {
+		id = 125503 # Batu of the Golden Horde
+	}
+	selectable_character = {
+		id = 125520 # Tolui of the Ilkhanate
+	}
+	selectable_character = {
+		id = 93062 # Chagatai of Chagatai
+	}
+	selectable_character = {
+		id = 172005 # Ogodei of Mongolia
+	}
+}
+
+bm_sundiata_keita = {
+	name = BM_SUNDIATA_KEITA
+	desc = BM_SUNDIATA_KEITA_DESC
+	date = 1230.1.1
+
+	selectable_character = {
+		id = 161022 # Sundiata Keita, Founder and Emperor of Imperial Mali
+	}
+	selectable_character = {
+		id = 161010 # Soumaoro Kante, King of the Sosso Empire
+	}
+	selectable_character = {
+		id = 161023 # Soumaba Cisse, King of Ghana
+	}
+}
+
+bm_batu = {
+	name = BM_BATU
+	desc = BM_BATU_DESC
+	date = 1235.10.1
+
+	selectable_character = {
+		id = 125503 # Batu
+	}
+	selectable_character = {
+		id = 125608 # Ruler of Volga Bulgaria
+	}
+	selectable_character = {
+		id = 228070 # Ruler of Mordva
+	}
+	selectable_character = {
+		id = 222753 # Yuri Igorevich of Ryazan
+	}
+	selectable_character = {
+		id = 125080 # Yuri Davydovich of Murom
+	}
+	selectable_character = {
+		id = 125184 # Yuri Vsevolodovich of Vladimir
+	}
+	selectable_character = {
+		id = 472885 # Yaroslav Vsevolodovich of Pereslavl-Zalessky
+	}
+	selectable_character = {
+		id = 125192 # Sviatoslav Vsevolodovich of Pereyaslavl
+	}
+	selectable_character = {
+		id = 125170 # Vasilko Konstantinovich of Rostov
+	}
+	selectable_character = {
+		id = 125174 # Vsevolod Konstantinovich of Yaroslav
+	}
+	selectable_character = {
+		id = 125178 # Vladimir Konstantinovich of Uglich
+	}
+	selectable_character = {
+		id = 222654 # Mikhail Vsevolodovich of Halych
+	}
+	selectable_character = {
+		id = 125127 # Vasilko Romanovich of Volhynia		
+	}
+	selectable_character = {
+		id = 125404 # Koten	of Cumania
+	}
+	selectable_character = {
+		id = 221537 # Henry I the Bearded of Poland		
+	}
+	selectable_character = {
+		id = 125944 # Mieszko II the Fat of Opole	
+	}
+	selectable_character = {
+		id = 98003 # Bela IV of Hungary	
+	}
+	selectable_character = {
+		id = 96000 # Vaclav I of Bohemia	
+	}
+	selectable_character = {
+		id = 7698 # Frederick II of Austria	
+	}
+	selectable_character = {
+		id = 7517 # Bernhard of Carinthia	
+	}
+	selectable_character = {
+		id = 31160 # Ivan Asen II of Bulgaria	
+	}
+	selectable_character = {
+		id = 125301 # Mindaugas of Lithuania	
+	}
+}
+
+bm_the_only_able = {
+	name = BM_THE_ONLY_ABLE
+	desc = BM_THE_ONLY_ABLE_DESC
+	date = 1238.1.1
+
+	selectable_character = {
+		id = 170195 # Razia Sultana, Delhi Sultanate
+	}
+	selectable_character = {
+		id = 191212 # Narasingha Deva I, Eastern Ganga
+	}
+	selectable_character = {
+		id = 170267 # Tughral Tughan Khan, Bengal governor
+	}
+	selectable_character = {
+		id = 191355 # Haihaya ruler, brother-in-law of Narasingha Deva I
 	}
 }
 
 bm_rise_of_the_hansa = {
-	name = "BM_RISE_OF_THE_HANSA"
-	desc = "BM_RISE_OF_THE_HANSA_DESC"
+	name = BM_RISE_OF_THE_HANSA
+	desc = BM_RISE_OF_THE_HANSA_DESC
 	date = 1241.5.1
-	
+
 	selectable_character = {
 		id = 457620 # Fernando II of Castile
 	}
-
 	selectable_character = {
 		id = 167219 # Heinrich Vorrade of the Hansa
 	}
-
 	selectable_character = {
 		id = 212513 # Friedrich II of the HRE
 	}
-
 	selectable_character = {
 		id = 98003 # Bela IV of Hungary
 	}
-
 	selectable_character = {
 		id = 478011 # Hulegu Khan of Ilkhanate
 	}
-
 	selectable_character = {
 		id = 74656 # Singhana II of Yadava
 	}
-
 	selectable_character = {
 		id = 125503 # Batu Khan of Golden Horde
 	}
 }
 
+bm_queen_of_the_muslims = {
+	name = BM_QUEEN_OF_THE_MUSLIMS
+	desc = BM_QUEEN_OF_THE_MUSLIMS_DESC
+	date = 1250.1.1
+
+	selectable_character = {
+		id = 32928 # Shajar al-Durr, Sultan of Egypt
+	}
+	selectable_character = {
+		id = 32930 # Aybak, future Sultan of Egypt
+	}
+	selectable_character = {
+		id = 144082 # An-Nasir Yusuf, Emir of Syria
+	}
+	selectable_character = {
+		id = 93422 # al-Muwahhid, son of Al-Muazzam Turanshah
+	}
+	selectable_character = {
+		id = 34029 # al-Musta'sim, Caliph of Baghdad
+	}
+	selectable_character = {
+		id = 455404 # Louis IX 'the Saint', King of France
+	}
+	selectable_character = {
+		id = 478011 # Hulegu Khan of Ilkhanate
+	}
+}
+
+bm_ñarpathians = {
+	name = BM_CARPATHIANS
+	desc = BM_CARPATHIANS_DESC
+	date = 1255.12.1
+
+	selectable_character = {
+		id = 125505 # Sartaq I of the Golden Horde
+	}
+	selectable_character = {
+		id = 125114 # Daniel Romanovich of Galicia
+	}
+	selectable_character = {
+		id = 472844 # Alexander Yaroslavich Nevsky of Vladimir and Kiev
+	}
+	selectable_character = {
+		id = 98015 # Rostislav Mikhailovich of Macso
+	}
+	selectable_character = {
+		id = 98003 # Bela IV of Hungary
+	}
+	selectable_character = {
+		id = 31166 # Michael I Asen of Bulgaria
+	}
+	selectable_character = {
+		id = 31170 # Kaliman Asen of 
+	}
+	selectable_character = {
+		id = 34088 # Stefan Uros I the Great of Serbia
+	}
+	selectable_character = {
+		id = 96001 # Ottokar II of Bohemia
+	}
+	selectable_character = {
+		id = 125301 # Mindaugas of Lithuania
+	}
+}
+
+bm_plantagenet = {
+	name = BM_PLANTAGENET
+	desc = BM_PLANTAGENET_DESC
+	date = 1256.1.28
+
+	selectable_character = {
+		id = 232682 # Richard I of the Holy Roman Empire
+	}
+	selectable_character = {
+		id = 454522 # Henry III of England
+	}
+	selectable_character = {
+		id = 30785 # Konrad II of Sicily
+	}
+	selectable_character = {
+		id = 96001 # Premysl II of Bohemia
+	}
+}
+
+bm_berke_khan = {
+	name = BM_BERKE_KHAN
+	desc = BM_BERKE_KHAN_DESC
+	date = 1261.1.1
+
+	selectable_character = {
+		id = 125504 # Berke Khan of the Golden Horde
+	}
+	selectable_character = {
+		id = 478011 # Hulagu Khan of Ilkhanate
+	}
+	selectable_character = {
+		id = 32933 # Baybars of Egypt
+	}
+	selectable_character = {
+		id = 34192 # Kilij Arslan IV of Rum
+	}
+	selectable_character = {
+		id = 125743 # Michael Palaiologos of Adrianople
+	}
+	selectable_character = {
+		id = 465527 # John IV Laskaris of Nicaea
+	}
+	selectable_character = {
+		id = 31187 # Constantine I Tikh
+	}
+	selectable_character = {
+		id = 461905 # Hugh III of Jerusalem
+	}
+}
+
+bm_heirs = {
+	name = BM_HEIRS
+	desc = BM_HEIRS_DESC
+	date = 1267.5.1
+
+	selectable_character = {
+		id = 125116 # Leo Danilovich of Galicia
+	}
+	selectable_character = {
+		id = 125122 # Shvarn Danilovich of Lithuania
+	}
+	selectable_character = {
+		id = 125312 # Daumantas of Pskov
+	}
+	selectable_character = {
+		id = 125058 # Michael Rostislavich of Bosnia
+	}
+	selectable_character = {
+		id = 455406 # Charles I of Anjou
+	}
+}
+
+bm_hungary_1 = {
+	name = BM_HUNGARY_1
+	desc = BM_HUNGARY_1_DESC
+	date = 1271.10.1
+
+	selectable_character = {
+		id = 98004 # Stephen V of Hungary
+	}
+	selectable_character = {
+		id = 96001 # Ottokar II of Bohemia
+	}
+	selectable_character = {
+		id = 125057 # Bela of Macso
+	}
+}
+
+bm_bulgaria = {
+	name = BM_BULGARIA
+	desc = BM_BULGARIA_DESC
+	date = 1279.1.1
+
+	selectable_character = {
+		id = 31192 # Ivaylo of Bulgaria
+	}
+	selectable_character = {
+		id = 465527 # Michael VIII Palaiologos
+	}
+	selectable_character = {
+		id = 125518 # Nogai Khan
+	}
+}
+
+bm_habsburg = {
+	name = BM_HABSBURG
+	desc = BM_HABSBURG_DESC
+	date = 1282.1.1
+
+	selectable_character = {
+		id = 462023 # Albrecht II of Austria
+	}
+	selectable_character = {
+		id = 462021 # Rudolf I of the Holy Roman Empire
+	}
+	selectable_character = {
+		id = 455406 # Charles I of Sicily
+	}
+}
+
+bm_naples = {
+	name = BM_NAPLES
+	desc = BM_NAPLES_DESC
+	date = 1285.11.11
+
+	selectable_character = {
+		id = 461710 # Charles II of Naples
+	}
+	selectable_character = {
+		id = 460560 # Jaume I of Trinacria
+	}
+	selectable_character = {
+		id = 71739 # Alfons III of Aragon
+	}
+	selectable_character = {
+		id = 455526 # Philippe IV of France
+	}
+}
+
+bm_poland = {
+	name = BM_POLAND
+	desc = BM_POLAND_DESC
+	date = 1300.1.1
+
+	selectable_character = {
+		id = 96002 # Vaclav I of Poland
+	}
+	selectable_character = {
+		id = 462023 # Albrecht I of the Holy Roman Empire
+	}
+}
+
+bm_indian_ambition = {
+	name = BM_INDIAN_AMBITION
+	desc = BM_INDIAN_AMBITION_DESC
+	date = 1300.1.1
+
+	selectable_character = {
+		id = 170246 # Alauddin Khalji, Delhi Sultanate
+	}
+	selectable_character = {
+		id = 170275 # Shamsuddin Firuz Shah, Bengal governor
+	}
+	selectable_character = {
+		id = 188205 # Mahlakadeva, Paramara dynasty
+	}
+	selectable_character = {
+		id = 188163 # Karna, Vaghela (Solanki) dynasty
+	}
+	selectable_character = {
+		id = 74660 # Ramachandra, Seuna dynasty
+	}
+	selectable_character = {
+		id = 191544 # Deva dynasty
+	}
+	selectable_character = {
+		id = 191550 # Deva dynasty
+	}
+	selectable_character = {
+		id = 188227 # Chauhan dynasty
+	}
+	selectable_character = {
+		id = 191752 # Chauhan dynasty
+	}
+	selectable_character = {
+		id = 188502 # Guhito dynasty
+	}
+	selectable_character = {
+		id = 188261 # Chudasama dynasty
+	}
+	selectable_character = {
+		id = 188282 # Jadeja dynasty
+	}
+}
+
+bm_fracture = {
+	name = BM_FRACTURE
+	desc = BM_FRACTURE_DESC
+	date = 1311.1.1
+
+	selectable_character = {
+		id = 465521 # Andronikos II of Byzantium
+	}
+	selectable_character = {
+		id = 476501 # Osman I of Osman Sultanate
+	}
+	selectable_character = {
+		id = 71879 # Han I of Karaman Sultanate
+	}
+	selectable_character = {
+		id = 476350 # Suleyman I of Kandar Sultanate
+	}
+	selectable_character = {
+		id = 71867 # Yakub I of Germiyan Sultanate
+	}
+	selectable_character = {
+		id = 71886 # Yunus I of Tekke Sultanate
+	}
+	selectable_character = {
+		id = 71892 # Mesud I of Mentese Sultanate
+	}
+	selectable_character = {
+		id = 71889 # Mehmed I of Aydin Sultanate
+	}
+	selectable_character = {
+		id = 71870 # Saruhan I of Saruhan Sultanate
+	}
+	selectable_character = {
+		id = 138024 # Henri II of Cyprus
+	}
+	selectable_character = {
+		id = 461803 # Oshim I of Armenia
+	}
+	selectable_character = {
+		id = 31193 # Todor I of Bulgaria
+	}
+	selectable_character = {
+		id = 468505 # Uros II of Serbia
+	}
+	selectable_character = {
+		id = 461700 # Robert I of Naples
+	}
+	selectable_character = {
+		id = 125728 # Thomas I of Epirus
+	}
+	selectable_character = {
+		id = 461733 # Gauthier I of Athens
+	}
+}
+
+bm_gh = {
+	name = BM_GH
+	desc = BM_GH_DESC
+	date = 1313.1.1
+
+	selectable_character = {
+		id = 480000 # Ozbeg I of the Golden Horde
+	}
+}
+
+bm_sweden = {
+	name = BM_SWEDEN
+	desc = BM_SWEDEN_DESC
+	date = 1319.7.8
+
+	selectable_character = {
+		id = 450500 # Magnus IV of Sweden
+	}
+}
+
+bm_italy = {
+	name = BM_ITALY
+	desc = BM_ITALY_DESC
+	date = 1329.3.1
+
+	selectable_character = {
+		id = 461500 # Federigo I of Trinacria
+	}
+	selectable_character = {
+		id = 461700 # Robert I of Naples
+	}
+	selectable_character = {
+		id = 460510 # Alfons IV of Aragon
+	}
+	selectable_character = {
+		id = 462153 # Edouard I of Savoy
+	}
+	selectable_character = {
+		id = 463140 # Azzone I of Lombardy
+	}
+	selectable_character = {
+		id = 412072 # Alberto I of Verona
+	}
+	selectable_character = {
+		id = 463600 # Francesco I of Venice
+	}
+	selectable_character = {
+		id = 70700 # Rinaldo I of Ferrara
+	}
+}
+
+bm_mandate_of_heaven = {
+	name = BM_MANDATE_OF_HEAVEN
+	desc = BM_MANDATE_OF_HEAVEN_DESC
+	date = 1330.1.1
+
+	selectable_character = {
+		id = 170258 # Muhammad bin Tughluq, Delhi Sultanate
+	}
+	selectable_character = {
+		id = 188517 # Hammir Singh, Sisodia Dynasty
+	}
+	selectable_character = {
+		id = 74401 # Harihara, future founder of Vijayanagara Empire
+	}
+}
+
 bm_100_years_war = {
-	name = "BM_100_YEARS_WAR_ERA"
-	desc = "BM_100_YEARS_WAR_ERA_INFO"
+	name = BM_100_YEARS_WAR_ERA
+	desc = BM_100_YEARS_WAR_ERA_INFO
 	date = 1337.1.1
-	
-	era = yes						## Will be shown on Era screen.
+
+	era = yes ## Will be shown on Era screen.
 	picture = GFX_pick_era_image_5
-	
+
 	selectable_character = {
 		id = 454500 # Edward III of England
 		age = 24
 		name = ERA_CHAR_NAME_454500
 		title = k_england
 		title_name = k_england
-		
+
 		character = {
 			dna = cdllaaijgan
 			properties = ad0bcc000000
-			religion="catholic"
-			culture="english"
+			religion = catholic
+			culture = english
 			government = feudal_government
-			dynasty=106
+			dynasty = 106
 		}
 	}
 
@@ -790,14 +1914,14 @@ bm_100_years_war = {
 		name = ERA_CHAR_NAME_455500
 		title = k_france
 		title_name = k_france
-		
+
 		character = {
 			dna = caekgncfabw
 			properties = ad0aha000000
-			religion="catholic"
-			culture="frankish"
+			religion = catholic
+			culture = french
 			government = feudal_government
-			dynasty=101
+			dynasty = 101
 		}
 	}
 
@@ -807,14 +1931,14 @@ bm_100_years_war = {
 		name = ERA_CHAR_NAME_471500
 		title = k_poland
 		title_name = k_poland
-		
+
 		character = {
 			dna = bdlkbriiaaz
 			properties = aj0bbc000000
-			religion="catholic"
-			culture="polish"
+			religion = catholic
+			culture = polish
 			government = feudal_government
-			dynasty=699
+			dynasty = 699
 		}
 	}
 
@@ -826,14 +1950,14 @@ bm_100_years_war = {
 		title_name = k_ottoman
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = djeejhjcaaz
 			properties = ao0bfc000000
-			religion="sunni"
-			culture="turkish"
+			religion = sunni
+			culture = turkish
 			government = muslim_government
-			dynasty=7
+			dynasty = 7
 		}
 	}
 
@@ -845,14 +1969,14 @@ bm_100_years_war = {
 		title_name = e_golden_horde
 		#coa_dynasty = yes
 		dlc = "Horse Lords"
-		
+
 		character = {
 			dna = celmcjidaao
 			properties = fj0bfd000000
-			religion="tengri_pagan"
-			culture="mongol"
+			religion = tengri_pagan
+			culture = mongol
 			government = nomadic_government
-			dynasty=11100
+			dynasty = 11100
 		}
 	}
 
@@ -864,14 +1988,14 @@ bm_100_years_war = {
 		title_name = ERA_TUGHLUQ
 		coa_dynasty = yes
 		dlc = "The Sword of Islam"
-		
+
 		character = {
 			dna = bcheaobceag
 			properties = ac0bh0000000
-			religion="sunni"
-			culture="turkish"
+			religion = sunni
+			culture = turkish
 			government = muslim_government
-			dynasty=1040208
+			dynasty = 1040208
 		}
 	}
 

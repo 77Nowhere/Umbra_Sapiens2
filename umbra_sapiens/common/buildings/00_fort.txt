@@ -1,0 +1,1292 @@
+fort = {
+	royal_donjon = {
+		desc = royal_donjon_desc
+		gold_cost = 96000
+		build_time = 12000
+		ai_creation_factor = 110
+		upgrades_from = bailey_citadel
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 8
+		garrison_size = 56.25
+		levy_size = 4.2
+		heavy_infantry_defensive = 0.6
+		archers_defensive = 0.35
+		liege_prestige = 2
+	}
+	bailey_citadel = {
+		desc = bailey_citadel_desc
+		gold_cost = 48000
+		build_time = 8000
+		ai_creation_factor = 105
+		upgrades_from = fortress_keep
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 6.5
+		garrison_size = 42.75
+		levy_size = 3.2
+		heavy_infantry_defensive = 0.42
+		archers_defensive = 0.25
+	}
+	command_post = {
+		desc = command_post_desc
+		gold_cost = 40000
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = veterans_quarters
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		levy_size = 16
+		garrison_size = 90.00
+		fort_level = 1.25
+		land_morale = 0.15
+		military_techpoints = 0.12
+		commander_limit = 1
+	}
+	marksman_bastion = {
+		desc = marksman_bastion_desc
+		gold_cost = 35840
+		build_time = 8000
+		ai_creation_factor = 24
+		upgrades_from = crossfire_platform
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 8
+		garrison_size = 67.50
+		archers_offensive = 1.6
+		archers_defensive = 1.4
+		archers_morale = 0.4
+		levy_size = 0.55
+	}
+	master_engineers_forge = {
+		desc = master_engineers_forge_desc
+		gold_cost = 30000
+		build_time = 1400
+		ai_creation_factor = 110
+		upgrades_from = advanced_siege_works
+		levy_size = 14
+		garrison_size = 56.25
+		levy_reinforce_rate = 0.6
+		archers_offensive = 1.2
+		fort_level = 1.25
+		military_techpoints = 0.15
+	}
+	veterans_quarters = {
+		desc = veterans_quarters_desc
+		gold_cost = 25000
+		build_time = 3000
+		ai_creation_factor = 108
+		upgrades_from = armored_garrison
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		levy_size = 10
+		garrison_size = 67.50
+		fort_level = 1.25
+		commander_limit = 1
+		monthly_character_prestige = 0.5
+	}
+	fortress_keep = {
+		desc = fortress_keep_desc
+		gold_cost = 24000
+		build_time = 6000
+		ai_creation_factor = 100
+		upgrades_from = round_keep
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 4.5
+		garrison_size = 28.13
+		levy_size = 2.1
+		heavy_infantry_defensive = 0.3
+		archers_offensive = 0.1
+	}
+	grand_gatehouse = {
+		desc = grand_gatehouse_desc
+		gold_cost = 18000
+		build_time = 2300
+		ai_creation_factor = 110
+		upgrades_from = fortified_entrance
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 3
+		garrison_size = 30.38
+		levy_size = 1.05
+		archers_offensive = 0.3
+		heavy_infantry_defensive = 0.3
+		land_morale = 0.08
+	}
+	crossfire_platform = {
+		desc = crossfire_platform_desc
+		gold_cost = 17920
+		build_time = 6000
+		ai_creation_factor = 28
+		upgrades_from = shooting_turret
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 7.3
+		garrison_size = 51.75
+		archers_offensive = 1.15
+		archers_defensive = 1.09
+		levy_size = 0.4
+	}
+	advanced_siege_works = {
+		desc = advanced_siege_works_desc
+		gold_cost = 15000
+		build_time = 1000
+		ai_creation_factor = 105
+		upgrades_from = siege_engine_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 7
+		garrison_size = 31.50
+		levy_reinforce_rate = 0.47
+		archers_offensive = 0.8
+		fort_level = 1.25
+	}
+	armored_garrison = {
+		desc = armored_garrison_desc
+		gold_cost = 15000
+		build_time = 2000
+		ai_creation_factor = 105
+		upgrades_from = drill_yard
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 6
+		garrison_size = 45.00
+		fort_level = 1.25
+		heavy_infantry_defensive = 0.18
+		land_morale = 0.08
+	}
+	round_keep = {
+		desc = round_keep_desc
+		gold_cost = 12000
+		build_time = 4200
+		ai_creation_factor = 90
+		upgrades_from = square_keep
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 3
+		garrison_size = 18.00
+		levy_size = 1.45
+		heavy_infantry_defensive = 0.2
+		levy_reinforce_rate = 0.15
+	}
+	fortified_entrance = {
+		desc = fortified_entrance_desc
+		gold_cost = 11500
+		build_time = 1700
+		ai_creation_factor = 110
+		upgrades_from = barbican_entry
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 2.75
+		garrison_size = 22.50
+		levy_size = 0.8
+		heavy_infantry_defensive = 0.2
+		archers_defensive = 0.2
+	}
+	shooting_turret = {
+		desc = shooting_turret_desc
+		gold_cost = 8960
+		build_time = 4800
+		ai_creation_factor = 32
+		upgrades_from = covered_gallery
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 6
+		garrison_size = 33.75
+		archers_offensive = 0.85
+		archers_defensive = 0.87
+		archers_morale = 0.28
+	}
+	siege_engine_hall = {
+		desc = siege_engine_hall_desc
+		gold_cost = 8200
+		build_time = 800
+		ai_creation_factor = 100
+		upgrades_from = trebuchet_workshop
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 3.8
+		garrison_size = 14.63
+		levy_reinforce_rate = 0.33
+		archers_offensive = 0.5
+		fort_level = 1.1
+	}
+	drill_yard = {
+		desc = drill_yard_desc
+		gold_cost = 7000
+		build_time = 1500
+		ai_creation_factor = 100
+		upgrades_from = troop_dormitory
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 4
+		garrison_size = 33.75
+		fort_level = 1.25
+		heavy_infantry_morale = 0.15
+	}
+	barbican_entry = {
+		desc = barbican_entry_desc
+		gold_cost = 7000
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = double_gatehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 2.25
+		garrison_size = 16.88
+		levy_size = 0.6
+		archers_offensive = 0.18
+		land_morale = 0.04
+	}
+	sentinel_keep = {
+		desc = sentinel_keep_desc
+		gold_cost = 6500
+		build_time = 4800
+		ai_creation_factor = 110
+		upgrades_from = observation_tower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 8
+		garrison_size = 39.38
+		levy_size = 2.7
+		archers_offensive = 1.1
+		archers_defensive = 0.75
+		land_morale = 0.42
+		levy_reinforce_rate = 0.23
+		military_techpoints = 0.18
+	}
+	square_keep = {
+		desc = square_keep_desc
+		gold_cost = 6000
+		build_time = 3000
+		ai_creation_factor = 85
+		upgrades_from = moated_keep
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 2.1
+		garrison_size = 12.95
+		levy_size = 1.05
+		heavy_infantry_defensive = 0.1
+	}
+	covered_gallery = {
+		desc = covered_gallery_desc
+		gold_cost = 4480
+		build_time = 3600
+		ai_creation_factor = 36
+		upgrades_from = defended_parapet
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 4.5
+		garrison_size = 24.75
+		archers_offensive = 0.6
+		archers_defensive = 0.62
+		levy_size = 0.2
+	}
+	observation_tower = {
+		desc = observation_tower_desc
+		gold_cost = 4200
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = beacon_tower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 2.7
+		garrison_size = 22.50
+		levy_size = 1.7
+		archers_offensive = 0.68
+		archers_defensive = 0.52
+		land_morale = 0.29
+		levy_reinforce_rate = 0.18
+		military_techpoints = 0.11
+	}
+	trebuchet_workshop = {
+		desc = trebuchet_workshop_desc
+		gold_cost = 4200
+		build_time = 640
+		ai_creation_factor = 95
+		upgrades_from = catapult_yard
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 2
+		garrison_size = 10.13
+		levy_reinforce_rate = 0.25
+		archers_offensive = 0.32
+	}
+	double_gatehouse = {
+		desc = double_gatehouse_desc
+		gold_cost = 4100
+		build_time = 900
+		ai_creation_factor = 104
+		upgrades_from = drawbridge_gate
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 1.8
+		garrison_size = 12.38
+		levy_size = 0.45
+		heavy_infantry_defensive = 0.12
+	}
+	troop_dormitory = {
+		desc = troop_dormitory_desc
+		gold_cost = 4000
+		build_time = 1200
+		ai_creation_factor = 95
+		upgrades_from = barracks_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 2.8
+		garrison_size = 22.50
+		fort_level = 1.25
+		levy_reinforce_rate = 0.2
+	}
+	beacon_tower = {
+		desc = beacon_tower_desc
+		gold_cost = 3000
+		build_time = 2600
+		ai_creation_factor = 105
+		upgrades_from = high_watchtower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 2.3
+		garrison_size = 16.88
+		levy_size = 1.3
+		archers_offensive = 0.56
+		archers_defensive = 0.41
+		land_morale = 0.22
+		levy_reinforce_rate = 0.15
+		military_techpoints = 0.06
+	}
+	moated_keep = {
+		desc = moated_keep_desc
+		gold_cost = 3000
+		build_time = 2200
+		ai_creation_factor = 80
+		upgrades_from = gatehouse_keep
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 1.7
+		garrison_size = 9.57
+		levy_size = 0.75
+		archers_defensive = 0.15
+		levy_reinforce_rate = 0.1
+	}
+	fortress_warehouse = {
+		desc = fortress_warehouse_desc
+		gold_cost = 2500
+		build_time = 1400
+		ai_creation_factor = 98
+		upgrades_from = quartermaster_depot
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		garrison_size = 20.25
+		levy_reinforce_rate = 0.72
+		levy_size = 0.38
+		fort_level = 1.25
+	}
+	drawbridge_gate = {
+		desc = drawbridge_gate_desc
+		gold_cost = 2500
+		build_time = 650
+		ai_creation_factor = 98
+		upgrades_from = murder_hole_gatehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 1.5
+		garrison_size = 9.00
+		levy_size = 0.32
+		archers_defensive = 0.15
+	}
+	defended_parapet = {
+		desc = defended_parapet_desc
+		gold_cost = 2240
+		build_time = 2700
+		ai_creation_factor = 40
+		upgrades_from = machicolation_wall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 3.3
+		garrison_size = 16.88
+		archers_defensive = 0.46
+		archers_morale = 0.19
+		levy_reinforce_rate = 0.1
+	}
+	catapult_yard = {
+		desc = catapult_yard_desc
+		gold_cost = 2200
+		build_time = 560
+		ai_creation_factor = 90
+		upgrades_from = ballista_shed
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 1.1
+		garrison_size = 6.75
+		levy_reinforce_rate = 0.18
+		archers_offensive = 0.18
+	}
+	high_watchtower = {
+		desc = high_watchtower_desc
+		gold_cost = 2100
+		build_time = 2000
+		ai_creation_factor = 99
+		upgrades_from = enclosed_watchtower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 1.85
+		garrison_size = 12.38
+		levy_size = 1.01
+		archers_offensive = 0.44
+		archers_defensive = 0.32
+		land_morale = 0.16
+		levy_reinforce_rate = 0.12
+	}
+	barracks_hall = {
+		desc = barracks_hall_desc
+		gold_cost = 2000
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = garrison_lodge
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 1.6
+		garrison_size = 13.50
+		fort_level = 1.25
+		heavy_infantry_offensive = 0.12
+	}
+	ceremonial_courtyard_1 = {
+		desc = ceremonial_courtyard_1_desc
+		gold_cost = 1800
+		build_time = 1700
+		ai_creation_factor = 92
+		upgrades_from = great_hall_court_1
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 1
+		fort_level = 1.25
+		monthly_character_prestige = 0.4
+		vassal_opinion = 5
+	}
+	stockade_redoubt = {
+		desc = stockade_redoubt_desc
+		prestige_cost = 1600
+		build_time = 2200
+		ai_creation_factor = 110
+		upgrades_from = timber_curtain
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		levy_size = 4
+		garrison_size = 78.75
+		archers_defensive = 1.5
+		fort_level = 3
+		land_morale = 0.33
+	}
+	gatehouse_keep = {
+		desc = gatehouse_keep_desc
+		gold_cost = 1500
+		build_time = 1600
+		ai_creation_factor = 75
+		upgrades_from = curtain_wall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 1.4
+		garrison_size = 6.75
+		levy_size = 0.54
+		archers_defensive = 0.1
+	}
+	murder_hole_gatehouse = {
+		desc = murder_hole_gatehouse_desc
+		gold_cost = 1300
+		build_time = 500
+		ai_creation_factor = 92
+		upgrades_from = portcullis_gate
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 1.25
+		garrison_size = 6.75
+		levy_size = 0.22
+		archers_offensive = 0.1
+	}
+	quartermaster_depot = {
+		desc = quartermaster_depot_desc
+		gold_cost = 1300
+		build_time = 800
+		ai_creation_factor = 88
+		upgrades_from = siege_supplies
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		garrison_size = 9.93
+		levy_reinforce_rate = 0.36
+		levy_size = 0.19
+		fort_level = 1.25
+	}
+	ballista_shed = {
+		desc = ballista_shed_desc
+		gold_cost = 1200
+		build_time = 480
+		ai_creation_factor = 85
+		upgrades_from = weapon_workshop
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.62
+		garrison_size = 4.50
+		levy_reinforce_rate = 0.13
+		archers_offensive = 0.1
+	}
+	enclosed_watchtower = {
+		desc = enclosed_watchtower_desc
+		gold_cost = 1200
+		build_time = 1500
+		ai_creation_factor = 93
+		upgrades_from = patrol_tower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 1.5
+		garrison_size = 9.00
+		levy_size = 0.72
+		archers_offensive = 0.34
+		archers_defensive = 0.26
+		land_morale = 0.11
+	}
+	machicolation_wall = {
+		desc = machicolation_wall_desc
+		gold_cost = 1120
+		build_time = 1800
+		ai_creation_factor = 44
+		upgrades_from = stone_battlement
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 2.4
+		garrison_size = 10.13
+		archers_defensive = 0.32
+		archers_offensive = 0.25
+		levy_size = 0.12
+	}
+	cold_storage = {
+		desc = cold_storage_desc
+		gold_cost = 1080
+		build_time = 900
+		ai_creation_factor = 91
+		upgrades_from = smokehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		garrison_size = 14.42
+		levy_size = 0.28
+		global_winter_supply = 0.23
+		fort_level = 1.25
+	}
+	great_hall_court_1 = {
+		desc = great_hall_court_1_desc
+		gold_cost = 1000
+		build_time = 1250
+		ai_creation_factor = 87
+		upgrades_from = assembly_plaza_1
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.7
+		liege_prestige = 1.5
+		fort_level = 1.2
+	}
+	timber_curtain = {
+		desc = timber_curtain_desc
+		prestige_cost = 950
+		build_time = 1700
+		ai_creation_factor = 105
+		upgrades_from = earthwork_rampart
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 2.6
+		garrison_size = 50.63
+		archers_defensive = 1.1
+		fort_level = 2.65
+		land_morale = 0.24
+	}
+	drawbridge_moat = {
+		desc = drawbridge_moat_desc
+		gold_cost = 950
+		build_time = 780
+		ai_creation_factor = 92
+		upgrades_from = lined_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 1.25
+		garrison_size = 4.50
+		levy_size = 0.36
+		archers_defensive = 0.22
+		land_morale = 0.09
+	}
+	garrison_lodge = {
+		desc = garrison_lodge_desc
+		gold_cost = 900
+		build_time = 600
+		ai_creation_factor = 80
+		upgrades_from = guardhouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.8
+		garrison_size = 6.75
+		fort_level = 1
+	}
+	curtain_wall = {
+		desc = curtain_wall_desc
+		gold_cost = 750
+		build_time = 1100
+		ai_creation_factor = 70
+		upgrades_from = stone_tower
+		fort_level = 1.2
+		garrison_size = 4.28
+		levy_size = 0.34
+	}
+	portcullis_gate = {
+		desc = portcullis_gate_desc
+		gold_cost = 660
+		build_time = 350
+		ai_creation_factor = 85
+		upgrades_from = guarded_gatehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 1.1
+		garrison_size = 5.07
+		levy_size = 0.15
+		heavy_infantry_defensive = 0.05
+	}
+	siege_supplies = {
+		desc = siege_supplies_desc
+		gold_cost = 650
+		build_time = 500
+		ai_creation_factor = 80
+		upgrades_from = armory_store
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		garrison_size = 4.85
+		levy_reinforce_rate = 0.18
+		levy_size = 0.1
+	}
+	earthwork_rampart = {
+		desc = earthwork_rampart_desc
+		piety_cost = 630
+		build_time = 1300
+		ai_creation_factor = 98
+		upgrades_from = fortified_palisade
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 1.8
+		garrison_size = 33.75
+		archers_defensive = 0.85
+		fort_level = 2.2
+		land_morale = 0.18
+	}
+	assembly_plaza_1 = {
+		desc = assembly_plaza_1_desc
+		gold_cost = 620
+		build_time = 960
+		ai_creation_factor = 83
+		upgrades_from = paved_courtyard_1
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.5
+		vassal_opinion = 3
+		monthly_character_prestige = 0.18
+	}
+	weapon_workshop = {
+		desc = weapon_workshop_desc
+		gold_cost = 600
+		build_time = 400
+		ai_creation_factor = 80
+		upgrades_from = engineers_hut
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		levy_size = 0.38
+		garrison_size = 3.16
+		levy_reinforce_rate = 0.09
+	}
+	stone_battlement = {
+		desc = stone_battlement_desc
+		gold_cost = 560
+		build_time = 1200
+		ai_creation_factor = 48
+		upgrades_from = wooden_hoarding
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 1.7
+		garrison_size = 6.20
+		archers_offensive = 0.19
+		archers_morale = 0.08
+	}
+	smokehouse = {
+		desc = smokehouse_desc
+		gold_cost = 540
+		build_time = 560
+		ai_creation_factor = 82
+		upgrades_from = root_cellar
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		garrison_size = 7.10
+		levy_size = 0.19
+		local_tax_modifier = 0.07
+	}
+	stone_watchtower = {
+		desc = stone_watchtower_desc
+		gold_cost = 500
+		build_time = 700
+		ai_creation_factor = 74
+		upgrades_from = wooden_watchtower
+		scouting = yes
+		fort_level = 0.85
+		garrison_size = 4.06
+		levy_size = 0.24
+		archers_offensive = 0.12
+		archers_defensive = 0.08
+	}
+	fortified_palisade = {
+		desc = fortified_palisade_desc
+		piety_cost = 430
+		build_time = 1000
+		ai_creation_factor = 95
+		upgrades_from = watchtower_palisade
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 1.3
+		garrison_size = 24.75
+		archers_defensive = 0.55
+		fort_level = 1.8
+		land_morale = 0.1
+	}
+	stone_lined_moat = {
+		desc = stone_lined_moat_desc
+		prestige_cost = 420
+		build_time = 540
+		ai_creation_factor = 89
+		upgrades_from = inner_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 1.15
+		garrison_size = 3.28
+		levy_size = 0.18
+		heavy_infantry_defensive = 0.14
+	}
+	paved_courtyard_1 = {
+		desc = paved_courtyard_1_desc
+		gold_cost = 420
+		build_time = 800
+		ai_creation_factor = 80
+		upgrades_from = garden_court_1
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		levy_size = 0.28
+		garrison_size = 2.03
+		global_movement_speed = 0.03
+	}
+	guardhouse = {
+		desc = guardhouse_desc
+		gold_cost = 400
+		build_time = 400
+		ai_creation_factor = 70
+		upgrades_from = barracks_shed
+		levy_size = 0.48
+		garrison_size = 3.86
+		fort_level = 0.6
+	}
+	inner_moat = {
+		desc = inner_moat_desc
+		gold_cost = 370
+		build_time = 360
+		ai_creation_factor = 75
+		upgrades_from = spiked_ditch
+		fort_level = 0.65
+		garrison_size = 1.94
+		levy_size = 0.09
+		heavy_infantry_defensive = 0.06
+	}
+	stone_tower = {
+		desc = stone_tower_desc
+		gold_cost = 350
+		build_time = 700
+		ai_creation_factor = 65
+		upgrades_from = motte_tower
+		fort_level = 0.9
+		garrison_size = 2.51
+		levy_size = 0.16
+	}
+	water_filled_moat = {
+		desc = water_filled_moat_desc
+		prestige_cost = 350
+		build_time = 475
+		ai_creation_factor = 78
+		upgrades_from = defensive_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 1
+		garrison_size = 2.37
+		levy_size = 0.18
+		archers_defensive = 0.08
+	}
+	patrol_tower = {
+		desc = patrol_tower_desc
+		piety_cost = 350
+		build_time = 1200
+		ai_creation_factor = 87
+		upgrades_from = signal_tower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 1.25
+		garrison_size = 7.32
+		levy_size = 0.52
+		archers_offensive = 0.26
+		archers_defensive = 0.19
+		light_cavalry_offensive = 0.09
+		levy_reinforce_rate = 0.08
+	}
+	guarded_gatehouse = {
+		desc = guarded_gatehouse_desc
+		gold_cost = 340
+		build_time = 240
+		ai_creation_factor = 74
+		upgrades_from = reinforced_gate
+		fort_level = 0.8
+		garrison_size = 3.38
+		levy_size = 0.1
+		archers_defensive = 0.05
+	}
+	defensive_moat = {
+		desc = defensive_moat_desc
+		gold_cost = 320
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = earthen_trench
+		fort_level = 0.75
+		garrison_size = 1.70
+		levy_size = 0.12
+	}
+	armory_store = {
+		desc = armory_store_desc
+		gold_cost = 320
+		build_time = 330
+		ai_creation_factor = 70
+		upgrades_from = provision_depot
+		garrison_size = 2.51
+		levy_reinforce_rate = 0.09
+		levy_size = 0.05
+	}
+	double_palisade = {
+		desc = double_palisade_desc
+		prestige_cost = 310
+		build_time = 600
+		ai_creation_factor = 82
+		upgrades_from = ditch_and_palisade
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.6
+		garrison_size = 12.38
+		archers_defensive = 0.28
+		fort_level = 1.25
+	}
+	flooded_ditch = {
+		desc = flooded_ditch_desc
+		piety_cost = 310
+		build_time = 410
+		ai_creation_factor = 76
+		upgrades_from = stone_lined_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.9
+		garrison_size = 2.15
+		levy_reinforce_rate = 0.09
+	}
+	engineers_hut = {
+		desc = engineers_hut_desc
+		gold_cost = 300
+		build_time = 320
+		ai_creation_factor = 75
+		upgrades_from = workshop_tent
+		levy_size = 0.22
+		garrison_size = 1.82
+		levy_reinforce_rate = 0.05
+	}
+	wooden_hoarding = {
+		desc = wooden_hoarding_desc
+		gold_cost = 280
+		build_time = 700
+		ai_creation_factor = 54
+		upgrades_from = firing_platform
+		fort_level = 1.1
+		garrison_size = 3.62
+		archers_defensive = 0.13
+		levy_size = 0.05
+	}
+	root_cellar = {
+		desc = root_cellar_desc
+		gold_cost = 270
+		build_time = 360
+		ai_creation_factor = 75
+		upgrades_from = granary_store
+		garrison_size = 3.86
+		levy_size = 0.13
+		global_winter_supply = 0.11
+	}
+	wooden_watchtower = {
+		desc = wooden_watchtower_desc
+		gold_cost = 250
+		build_time = 420
+		ai_creation_factor = 68
+		upgrades_from = lookout_post
+		scouting = yes
+		fort_level = 0.45
+		garrison_size = 2.03
+		levy_size = 0.12
+		archers_offensive = 0.06
+	}
+	lined_moat = {
+		desc = lined_moat_desc
+		piety_cost = 220
+		build_time = 590
+		ai_creation_factor = 84
+		upgrades_from = water_filled_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 1.15
+		garrison_size = 3.62
+		levy_size = 0.24
+		archers_defensive = 0.16
+	}
+	signal_tower = {
+		desc = signal_tower_desc
+		prestige_cost = 200
+		build_time = 950
+		ai_creation_factor = 81
+		upgrades_from = stone_watchtower
+		scouting = yes
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 1.15
+		garrison_size = 5.40
+		levy_size = 0.38
+		archers_offensive = 0.18
+		archers_defensive = 0.14
+		land_morale = 0.06
+	}
+	garden_court_1 = {
+		desc = garden_court_1_desc
+		gold_cost = 200
+		build_time = 600
+		ai_creation_factor = 76
+		upgrades_from = chapel_court_1
+		fertility = 0.07
+		tax_income = 0.5
+		levy_reinforce_rate = 0.1
+	}
+	watchtower_palisade = {
+		desc = watchtower_palisade_desc
+		piety_cost = 200
+		build_time = 700
+		ai_creation_factor = 90
+		upgrades_from = double_palisade
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.85
+		garrison_size = 18.00
+		archers_defensive = 0.38
+		fort_level = 1.5
+		commander_limit = 1
+	}
+	guarded_palisade = {
+		desc = guarded_palisade_desc
+		gold_cost = 200
+		build_time = 350
+		ai_creation_factor = 75
+		upgrades_from = reinforced_palisade
+		levy_size = 0.22
+		garrison_size = 4.50
+		archers_defensive = 0.1
+		fort_level = 0.8
+	}
+	barracks_shed = {
+		desc = barracks_shed_desc
+		gold_cost = 180
+		build_time = 280
+		ai_creation_factor = 65
+		upgrades_from = militia_hut
+		levy_size = 0.24
+		garrison_size = 2.03
+		fort_level = 0.3
+	}
+	provision_depot = {
+		desc = provision_depot_desc
+		gold_cost = 160
+		build_time = 180
+		ai_creation_factor = 66
+		upgrades_from = cold_storage
+		garrison_size = 1.28
+		levy_reinforce_rate = 0.04
+	}
+	earthen_trench = {
+		desc = earthen_trench_desc
+		gold_cost = 160
+		build_time = 250
+		ai_creation_factor = 66
+		upgrades_from = shallow_ditch
+		fort_level = 0.45
+		garrison_size = 1.13
+		levy_size = 0.06
+	}
+	reinforced_gate = {
+		desc = reinforced_gate_desc
+		gold_cost = 160
+		build_time = 180
+		ai_creation_factor = 66
+		upgrades_from = simple_gate
+		fort_level = 0.5
+		garrison_size = 2.25
+		levy_size = 0.05
+	}
+	workshop_tent = {
+		desc = workshop_tent_desc
+		gold_cost = 150
+		build_time = 240
+		ai_creation_factor = 70
+		upgrades_from = tool_shed
+		levy_size = 0.1
+		garrison_size = 1.13
+		levy_reinforce_rate = 0.03
+	}
+	motte_tower = {
+		desc = motte_tower_desc
+		gold_cost = 150
+		build_time = 400
+		ai_creation_factor = 60
+		fort_level = 0.5
+		garrison_size = 1.13
+		levy_size = 0.08
+	}
+	chapel_court_1 = {
+		desc = chapel_court_1_desc
+		piety_cost = 150
+		build_time = 520
+		ai_creation_factor = 73
+		upgrades_from = well_house_1
+		monthly_character_piety = 0.12
+		church_opinion = 2
+		garrison_size = 0.92
+	}
+	ditch_and_palisade = {
+		desc = ditch_and_palisade_desc
+		prestige_cost = 145
+		build_time = 420
+		ai_creation_factor = 78
+		upgrades_from = guarded_palisade
+		levy_size = 0.35
+		garrison_size = 6.75
+		archers_defensive = 0.18
+		fort_level = 1.05
+	}
+	firing_platform = {
+		desc = firing_platform_desc
+		gold_cost = 140
+		build_time = 480
+		ai_creation_factor = 56
+		upgrades_from = arrow_slit_wall
+		fort_level = 0.7
+		garrison_size = 2.03
+		archers_offensive = 0.07
+	}
+	granary_store = {
+		desc = granary_store_desc
+		gold_cost = 130
+		build_time = 210
+		ai_creation_factor = 68
+		upgrades_from = food_shed
+		garrison_size = 1.94
+		levy_size = 0.08
+		local_tax_modifier = 0.03
+	}
+	training_square_1 = {
+		desc = training_square_1_desc
+		gold_cost = 130
+		build_time = 420
+		ai_creation_factor = 68
+		upgrades_from = stable_yard_1
+		levy_size = 0.2
+		heavy_infantry_offensive = 0.1
+		levy_reinforce_rate = 0.1
+	}
+	spiked_ditch = {
+		desc = spiked_ditch_desc
+		gold_cost = 120
+		build_time = 210
+		ai_creation_factor = 68
+		upgrades_from = drawbridge_moat
+		fort_level = 0.35
+		garrison_size = 1.35
+		levy_size = 0.05
+	}
+	lookout_post = {
+		desc = lookout_post_desc
+		gold_cost = 120
+		build_time = 300
+		ai_creation_factor = 62
+		scouting = yes
+		fort_level = 0.25
+		garrison_size = 0.92
+		levy_size = 0.06
+	}
+	well_house_1 = {
+		desc = well_house_1_desc
+		prestige_cost = 110
+		build_time = 500
+		ai_creation_factor = 70
+		upgrades_from = training_square_1
+		garrison_size = 2.51
+		fort_level = 0.75
+	}
+	reinforced_palisade = {
+		desc = reinforced_palisade_desc
+		gold_cost = 100
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = wooden_fence
+		levy_size = 0.12
+		garrison_size = 2.82
+		fort_level = 0.55
+	}
+	stable_yard_1 = {
+		desc = stable_yard_1_desc
+		gold_cost = 90
+		build_time = 320
+		ai_creation_factor = 65
+		upgrades_from = courtyard_clearing_1
+		levy_size = 0.12
+		light_cavalry_offensive = 0.08
+		light_cavalry_morale = 0.06
+	}
+	shallow_ditch = {
+		desc = shallow_ditch_desc
+		gold_cost = 80
+		build_time = 180
+		ai_creation_factor = 62
+		fort_level = 0.25
+		garrison_size = 0.58
+	}
+	militia_hut = {
+		desc = militia_hut_desc
+		gold_cost = 75
+		build_time = 180
+		ai_creation_factor = 60
+		levy_size = 0.1
+		garrison_size = 1.13
+	}
+	arrow_slit_wall = {
+		desc = arrow_slit_wall_desc
+		gold_cost = 70
+		build_time = 320
+		ai_creation_factor = 60
+		fort_level = 0.35
+		garrison_size = 1.13
+		archers_defensive = 0.05
+	}
+	tool_shed = {
+		desc = tool_shed_desc
+		gold_cost = 70
+		build_time = 180
+		ai_creation_factor = 65
+		levy_size = 0.04
+		garrison_size = 0.68
+	}
+	simple_gate = {
+		desc = simple_gate_desc
+		gold_cost = 70
+		build_time = 120
+		ai_creation_factor = 62
+		fort_level = 0.25
+		garrison_size = 1.13
+	}
+	courtyard_clearing_1 = {
+		desc = courtyard_clearing_1_desc
+		gold_cost = 60
+		build_time = 240
+		ai_creation_factor = 62
+		levy_size = 0.15
+		garrison_size = 1.35
+	}
+	food_shed = {
+		desc = food_shed_desc
+		gold_cost = 60
+		build_time = 120
+		ai_creation_factor = 62
+		garrison_size = 0.92
+		levy_size = 0.04
+	}
+	wooden_fence = {
+		desc = wooden_fence_desc
+		gold_cost = 40
+		build_time = 180
+		ai_creation_factor = 65
+		levy_size = 0.05
+		garrison_size = 1.13
+		fort_level = 0.3
+	}
+}

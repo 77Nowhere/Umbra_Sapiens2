@@ -1,0 +1,203 @@
+castle = {
+	pxe_gem_locker = {
+		desc = pxe_gem_locker_desc
+		prestige_cost = 55
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 65
+		upgrades_from = pxe_coin_room
+		prerequisites = {
+			pxe_coin_room
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.10
+		garrison_size = 0.04
+		vassal_opinion = 1
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_coin_room = {
+		desc = pxe_coin_room_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.15
+		garrison_size = 0.03
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_stone_vault = {
+		desc = pxe_stone_vault_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 68
+		upgrades_from = pxe_gem_locker
+		prerequisites = {
+			pxe_gem_locker
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.20
+		garrison_size = 0.06
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_guarded_treasury = {
+		desc = pxe_guarded_treasury_desc
+		gold_cost = 260
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 72
+		upgrades_from = pxe_stone_vault
+		prerequisites = {
+			pxe_stone_vault
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		tax_income = 0.30
+		garrison_size = 0.08
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_treasure_gallery = {
+		desc = pxe_treasure_gallery_desc
+		gold_cost = 620
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 80
+		upgrades_from = pxe_guarded_treasury
+		prerequisites = {
+			pxe_guarded_treasury
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		tax_income = 0.40
+		garrison_size = 0.13
+		vassal_opinion = 2
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_gold_chamber = {
+		desc = pxe_gold_chamber_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 86
+		upgrades_from = pxe_treasure_gallery
+		prerequisites = {
+			pxe_treasure_gallery
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		tax_income = 0.50
+		garrison_size = 0.22
+		levy_size = 0.02
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_royal_treasury = {
+		desc = pxe_royal_treasury_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 1850
+		ai_creation_factor = 93
+		upgrades_from = pxe_gold_chamber
+		prerequisites = {
+			pxe_gold_chamber
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		tax_income = 0.60
+		garrison_size = 0.34
+		levy_size = 0.04
+		liege_prestige = 1
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_jewel_house = {
+		desc = pxe_jewel_house_desc
+		gold_cost = 6400
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 99
+		upgrades_from = pxe_royal_treasury
+		prerequisites = {
+			pxe_royal_treasury
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		tax_income = 0.70
+		garrison_size = 0.51
+		levy_size = 0.06
+		liege_prestige = 2
+		vassal_opinion = 3
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_imperial_treasury = {
+		desc = pxe_imperial_treasury_desc
+		gold_cost = 12800
+		extra_tech_building_start = 999
+		build_time = 2800
+		ai_creation_factor = 105
+		upgrades_from = pxe_jewel_house
+		prerequisites = {
+			pxe_jewel_house
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		tax_income = 0.80
+		garrison_size = 0.77
+		levy_size = 0.07
+		liege_prestige = 3
+		local_tax_modifier = 0.05
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	pxe_palace_treasure_hall = {
+		desc = pxe_palace_treasure_hall_desc
+		gold_cost = 25600
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 110
+		upgrades_from = pxe_imperial_treasury
+		prerequisites = {
+			pxe_imperial_treasury
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		tax_income = 0.90
+		garrison_size = 1.07
+		levy_size = 0.10
+		liege_prestige = 5
+		local_tax_modifier = 0.1
+		vassal_opinion = 5
+		potential = {
+			religion_group = indian_group
+		}
+	}
+}

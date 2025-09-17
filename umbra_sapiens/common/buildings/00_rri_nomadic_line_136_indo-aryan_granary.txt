@@ -1,0 +1,178 @@
+nomad = {
+	rri_earthen_pit_indo_aryan = {
+		desc = rri_earthen_pit_indo_aryan_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.05
+	}
+	rri_woven_basket_indo_aryan = {
+		desc = rri_woven_basket_indo_aryan_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 78
+		upgrades_from = rri_earthen_pit_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.08
+		nomad_tax_modifier = 0.133
+	}
+	rri_mudbrick_hut_indo_aryan = {
+		desc = rri_mudbrick_hut_indo_aryan_desc
+		gold_cost = 195
+		extra_tech_building_start = 999
+		build_time = 117
+		ai_creation_factor = 82
+		upgrades_from = rri_woven_basket_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.16
+		max_manpower_mult = 0.02
+	}
+	rri_raised_silo_indo_aryan = {
+		desc = rri_raised_silo_indo_aryan_desc
+		gold_cost = 390
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 89
+		upgrades_from = rri_mudbrick_hut_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		supply_limit = 0.23
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.266
+	}
+	rri_guarded_storehouse_indo_aryan = {
+		desc = rri_guarded_storehouse_indo_aryan_desc
+		gold_cost = 788
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 94
+		upgrades_from = rri_raised_silo_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		supply_limit = 0.28
+		max_manpower_mult = 0.02
+		garrison_size = 0.1
+	}
+	rri_rodent_proof_hut_indo_aryan = {
+		desc = rri_rodent_proof_hut_indo_aryan_desc
+		gold_cost = 1388
+		extra_tech_building_start = 999
+		build_time = 255
+		ai_creation_factor = 98
+		upgrades_from = rri_guarded_storehouse_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		supply_limit = 0.35
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.576
+	}
+	rri_expanded_store_indo_aryan = {
+		desc = rri_expanded_store_indo_aryan_desc
+		gold_cost = 2475
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 101
+		upgrades_from = rri_rodent_proof_hut_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		supply_limit = 0.47
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+	}
+	rri_market_pavilion_indo_aryan = {
+		desc = rri_market_pavilion_indo_aryan_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 104
+		upgrades_from = rri_expanded_store_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 0.58
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+	}
+	rri_grain_exchange_hall_indo_aryan = {
+		desc = rri_grain_exchange_hall_indo_aryan_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 107
+		upgrades_from = rri_market_pavilion_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 0.7
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+	}
+	rri_indo_aryan_granary = {
+		desc = rri_indo_aryan_granary_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 110
+		upgrades_from = rri_grain_exchange_hall_indo_aryan
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 1
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+}

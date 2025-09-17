@@ -1,0 +1,182 @@
+nomad = {
+	bic_tethered_foal = {
+		desc = bic_tethered_foal_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+		nomad_tax_modifier = 0.133
+	}
+	bic_open_paddock = {
+		desc = bic_open_paddock_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = bic_tethered_foal
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.060
+		max_manpower_mult = 0.02
+	}
+	bic_corral_hut = {
+		desc = bic_corral_hut_desc
+		gold_cost = 195
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = bic_open_paddock
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.060
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.266
+	}
+	bic_breeder_tent = {
+		desc = bic_breeder_tent_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = bic_corral_hut
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		supply_limit = 0.08
+	}
+	bic_grazing_yard = {
+		desc = bic_grazing_yard_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 95
+		upgrades_from = bic_breeder_tent
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		supply_limit = 0.15
+		nomad_tax_modifier = 0.399
+	}
+	bic_stallion_pavilion = {
+		desc = bic_stallion_pavilion_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 100
+		upgrades_from = bic_grazing_yard
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		supply_limit = 0.25
+		liege_prestige = 0.15
+	}
+	bic_mares_room = {
+		desc = bic_mares_room_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = bic_stallion_pavilion
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 0.4
+		liege_prestige = 0.3
+	}
+	bic_stud_hall = {
+		desc = bic_stud_hall_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = bic_mares_room
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		supply_limit = 0.6
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.5
+	}
+	bic_champion_stable = {
+		desc = bic_champion_stable_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 115
+		upgrades_from = bic_stud_hall
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 1
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+	bic_magyar_grand_ranch = {
+		desc = bic_magyar_grand_ranch_desc
+		gold_cost = 52500
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 120
+		upgrades_from = bic_champion_stable
+		potential = {
+			culture_group = magyar_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		supply_limit = 2
+		liege_prestige = 1
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+	}
+}

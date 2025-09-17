@@ -1,0 +1,177 @@
+nomad = {
+	lew_clearing_patch_caforest = {
+		desc = lew_clearing_patch_caforest_desc
+		gold_cost = 19
+		extra_tech_building_start = 999
+		build_time = 38
+		ai_creation_factor = 70
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.021
+	}
+	lew_leaf_hut_caforest = {
+		desc = lew_leaf_hut_caforest_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 75
+		upgrades_from = lew_clearing_patch_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.036
+		supply_limit = 0.05
+	}
+	lew_wooden_shelter_caforest = {
+		desc = lew_wooden_shelter_caforest_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 80
+		upgrades_from = lew_leaf_hut_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.072
+		supply_limit = 0.09
+	}
+	lew_rain_pavilion_caforest = {
+		desc = lew_rain_pavilion_caforest_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 85
+		upgrades_from = lew_wooden_shelter_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		population_growth = 0.121
+		supply_limit = 0.15
+		nomad_tax_modifier = 0.266
+	}
+	lew_guarded_camp_caforest = {
+		desc = lew_guarded_camp_caforest_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 282
+		ai_creation_factor = 90
+		upgrades_from = lew_rain_pavilion_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		garrison_size = 0.12
+		supply_limit = 0.23
+	}
+	lew_hunters_room_caforest = {
+		desc = lew_hunters_room_caforest_desc
+		gold_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 95
+		upgrades_from = lew_guarded_camp_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		levy_size = 0.08
+		population_growth = 0.151
+	}
+	lew_family_hall_caforest = {
+		desc = lew_family_hall_caforest_desc
+		gold_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 100
+		upgrades_from = lew_hunters_room_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		population_growth = 0.121
+	}
+	lew_community_pavilion_caforest = {
+		desc = lew_community_pavilion_caforest_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 105
+		upgrades_from = lew_family_hall_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		clan_sentiment = 1
+		levy_size = 0.16
+	}
+	lew_chiefs_chamber_caforest = {
+		desc = lew_chiefs_chamber_caforest_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = lew_community_pavilion_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		liege_prestige = 0.8
+		clan_sentiment = 1
+	}
+	lew_central_african_forest_camp = {
+		desc = lew_central_african_forest_camp_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 120
+		upgrades_from = lew_chiefs_chamber_caforest
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.22
+		liege_prestige = 1
+		levy_size = 0.3
+		supply_limit = 0.37
+		clan_sentiment = 1
+	}
+}

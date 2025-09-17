@@ -1,0 +1,177 @@
+nomad = {
+	nao_finno_ugric_sauna_steam_pit = {
+		desc = nao_finno_ugric_sauna_steam_pit_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 70
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	nao_finno_ugric_sauna_smoke_tent = {
+		desc = nao_finno_ugric_sauna_smoke_tent_desc
+		gold_cost = 64
+		extra_tech_building_start = 999
+		build_time = 53
+		ai_creation_factor = 75
+		upgrades_from = nao_finno_ugric_sauna_steam_pit
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.03
+	}
+	nao_finno_ugric_sauna_hot_stone_hut = {
+		desc = nao_finno_ugric_sauna_hot_stone_hut_desc
+		gold_cost = 158
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 80
+		upgrades_from = nao_finno_ugric_sauna_smoke_tent
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.07
+	}
+	nao_finno_ugric_sauna_wooden_bathhouse = {
+		desc = nao_finno_ugric_sauna_wooden_bathhouse_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 85
+		upgrades_from = nao_finno_ugric_sauna_hot_stone_hut
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		supply_limit = 0.12
+		liege_prestige = 0.1
+	}
+	nao_finno_ugric_sauna_birch_switch_pavilion = {
+		desc = nao_finno_ugric_sauna_birch_switch_pavilion_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 90
+		upgrades_from = nao_finno_ugric_sauna_wooden_bathhouse
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		supply_limit = 0.23
+		liege_prestige = 0.2
+	}
+	nao_finno_ugric_sauna_heated_room = {
+		desc = nao_finno_ugric_sauna_heated_room_desc
+		gold_cost = 1763
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 95
+		upgrades_from = nao_finno_ugric_sauna_birch_switch_pavilion
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		supply_limit = 0.4
+		liege_prestige = 0.3
+	}
+	nao_finno_ugric_sauna_sweat_lodge = {
+		desc = nao_finno_ugric_sauna_sweat_lodge_desc
+		gold_cost = 3300
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 100
+		upgrades_from = nao_finno_ugric_sauna_heated_room
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		supply_limit = 0.7
+		liege_prestige = 0.5
+	}
+	nao_finno_ugric_sauna_family_sauna = {
+		desc = nao_finno_ugric_sauna_family_sauna_desc
+		gold_cost = 6150
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 105
+		upgrades_from = nao_finno_ugric_sauna_sweat_lodge
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		clan_sentiment = 1
+		supply_limit = 1.1
+		liege_prestige = 0.8
+	}
+	nao_finno_ugric_sauna_community_bath = {
+		desc = nao_finno_ugric_sauna_community_bath_desc
+		gold_cost = 11700
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 108
+		upgrades_from = nao_finno_ugric_sauna_family_sauna
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		clan_sentiment = 1
+		supply_limit = 1.8
+		liege_prestige = 1.2
+	}
+	nao_finno_ugric_sauna_grand_sauna = {
+		desc = nao_finno_ugric_sauna_grand_sauna_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = nao_finno_ugric_sauna_community_bath
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		supply_limit = 3
+		liege_prestige = 1
+	}
+}

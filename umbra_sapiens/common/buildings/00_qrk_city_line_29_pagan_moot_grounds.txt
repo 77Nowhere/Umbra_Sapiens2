@@ -1,0 +1,150 @@
+city = {
+	qrk_moot_line_1 = {
+		desc = qrk_moot_line_1_desc
+		gold_cost = 100
+		build_time = 100
+		ai_creation_factor = 10
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.01
+		tradevalue = 1
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_2 = {
+		desc = qrk_moot_line_2_desc
+		gold_cost = 200
+		build_time = 120
+		ai_creation_factor = 12
+		upgrades_from = qrk_moot_line_1
+		prerequisites = { qrk_moot_line_1 }
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.015
+		tradevalue = 1
+		culture_techpoints = 0.01
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_3 = {
+		desc = qrk_moot_line_3_desc
+		gold_cost = 300
+		build_time = 140
+		ai_creation_factor = 14
+		upgrades_from = qrk_moot_line_2
+		prerequisites = { qrk_moot_line_2 }
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.02
+		tradevalue = 2
+		tech_growth_modifier = 0.01
+		culture_techpoints = 0.01
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_4 = {
+		desc = qrk_moot_line_4_desc
+		gold_cost = 400
+		build_time = 160
+		ai_creation_factor = 16
+		upgrades_from = qrk_moot_line_3
+		prerequisites = { qrk_moot_line_3 }
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.025
+		tradevalue = 2
+		tech_growth_modifier = 0.01
+		culture_techpoints = 0.02
+		vassal_opinion = 1
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_5 = {
+		desc = qrk_moot_line_5_desc
+		gold_cost = 500
+		build_time = 180
+		ai_creation_factor = 18
+		upgrades_from = qrk_moot_line_4
+		prerequisites = { qrk_moot_line_4 }
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.03
+		tradevalue = 3
+		tech_growth_modifier = 0.02
+		culture_techpoints = 0.02
+		vassal_opinion = 1
+		liege_prestige =0.5
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_6 = {
+		desc = qrk_moot_line_6_desc
+		gold_cost = 600
+		build_time = 200
+		ai_creation_factor = 20
+		upgrades_from = qrk_moot_line_5
+		prerequisites = { qrk_moot_line_5 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		local_tax_modifier = 0.035
+		tradevalue = 3
+		tech_growth_modifier = 0.02
+		culture_techpoints = 0.03
+		vassal_opinion = 1
+		liege_prestige =0.5
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_7 = {
+		desc = qrk_moot_line_7_desc
+		gold_cost = 700
+		build_time = 220
+		ai_creation_factor = 22
+		upgrades_from = qrk_moot_line_6
+		prerequisites = { qrk_moot_line_6 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		local_tax_modifier = 0.04
+		tradevalue = 4
+		tech_growth_modifier = 0.03
+		culture_techpoints = 0.03
+		vassal_opinion = 2
+		liege_prestige =1
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_8 = {
+		desc = qrk_moot_line_8_desc
+		gold_cost = 800
+		build_time = 240
+		ai_creation_factor = 24
+		upgrades_from = qrk_moot_line_7
+		prerequisites = { qrk_moot_line_7 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		local_tax_modifier = 0.045
+		tradevalue = 4
+		tech_growth_modifier = 0.03
+		culture_techpoints = 0.04
+		vassal_opinion = 2
+		liege_prestige =1
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_9 = {
+		desc = qrk_moot_line_9_desc
+		gold_cost = 900
+		build_time = 260
+		ai_creation_factor = 26
+		upgrades_from = qrk_moot_line_8
+		prerequisites = { qrk_moot_line_8 }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		local_tax_modifier = 0.05
+		tradevalue = 5
+		tech_growth_modifier = 0.04
+		culture_techpoints = 0.05
+		vassal_opinion = 2
+		liege_prestige =1.5
+		potential = { religion_group = pagan_group }
+	}
+	qrk_moot_line_10 = {
+		desc = qrk_moot_line_10_desc
+		gold_cost = 1000
+		build_time = 280
+		ai_creation_factor = 28
+		upgrades_from = qrk_moot_line_9
+		prerequisites = { qrk_moot_line_9 }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		local_tax_modifier = 0.06
+		tradevalue = 6
+		tech_growth_modifier = 0.05
+		culture_techpoints = 0.06
+		vassal_opinion = 3
+		liege_prestige =2
+		potential = { religion_group = pagan_group }
+	}
+}

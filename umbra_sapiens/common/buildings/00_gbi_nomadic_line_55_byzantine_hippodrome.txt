@@ -1,0 +1,209 @@
+nomad = {
+	gbi_byz_hippodrome_racing_patch = {
+		desc = gbi_byz_hippodrome_racing_patch_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	gbi_byz_hippodrome_wooden_track = {
+		desc = gbi_byz_hippodrome_wooden_track_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 65
+		upgrades_from = gbi_byz_hippodrome_racing_patch
+		prerequisites = {
+			gbi_byz_hippodrome_racing_patch
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.02
+	}
+	gbi_byz_hippodrome_spectator_stand = {
+		desc = gbi_byz_hippodrome_spectator_stand_desc
+		gold_cost = 158
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 73
+		upgrades_from = gbi_byz_hippodrome_wooden_track
+		prerequisites = {
+			gbi_byz_hippodrome_wooden_track
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	gbi_byz_hippodrome_chariot_yard = {
+		desc = gbi_byz_hippodrome_chariot_yard_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 82
+		upgrades_from = gbi_byz_hippodrome_spectator_stand
+		prerequisites = {
+			gbi_byz_hippodrome_spectator_stand
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.08
+	}
+	gbi_byz_hippodrome_stone_track = {
+		desc = gbi_byz_hippodrome_stone_track_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 93
+		upgrades_from = gbi_byz_hippodrome_chariot_yard
+		prerequisites = {
+			gbi_byz_hippodrome_chariot_yard
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		supply_limit = 0.06
+		clan_sentiment = 1
+	}
+	gbi_byz_hippodrome_mosaic_finish_line = {
+		desc = gbi_byz_hippodrome_mosaic_finish_line_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 98
+		upgrades_from = gbi_byz_hippodrome_stone_track
+		prerequisites = {
+			gbi_byz_hippodrome_stone_track
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.15
+	}
+	gbi_byz_hippodrome_circus_pavilion = {
+		desc = gbi_byz_hippodrome_circus_pavilion_desc
+		gold_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 104
+		upgrades_from = gbi_byz_hippodrome_mosaic_finish_line
+		prerequisites = {
+			gbi_byz_hippodrome_mosaic_finish_line
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.18
+		nomad_tax_modifier = 0.333
+	}
+	gbi_byz_hippodrome_imperial_racing_hall = {
+		desc = gbi_byz_hippodrome_imperial_racing_hall_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 109
+		upgrades_from = gbi_byz_hippodrome_circus_pavilion
+		prerequisites = {
+			gbi_byz_hippodrome_circus_pavilion
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.25
+		supply_limit = 0.12
+	}
+	gbi_byz_hippodrome_grandstand = {
+		desc = gbi_byz_hippodrome_grandstand_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 112
+		upgrades_from = gbi_byz_hippodrome_imperial_racing_hall
+		prerequisites = {
+			gbi_byz_hippodrome_imperial_racing_hall
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.4
+		nomad_tax_modifier = 0.487
+	}
+	gbi_byz_hippodrome_byzantine_hippodrome = {
+		desc = gbi_byz_hippodrome_byzantine_hippodrome_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 115
+		upgrades_from = gbi_byz_hippodrome_grandstand
+		prerequisites = {
+			gbi_byz_hippodrome_grandstand
+		}
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		liege_prestige = 0.65
+		nomad_tax_modifier = 0.797
+		retinuesize = 2
+	}
+}

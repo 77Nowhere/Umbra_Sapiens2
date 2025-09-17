@@ -1,0 +1,159 @@
+nomad = {
+	fdq_gatherers_shelter_1 = {
+		desc = fdq_gatherers_shelter_1_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 38
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		max_population = 100
+		supply_limit = 0.005
+	}
+	fdq_gatherers_shelter_2 = {
+		desc = fdq_gatherers_shelter_2_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 62
+		upgrades_from = fdq_gatherers_shelter_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		max_population = 100
+		supply_limit = 0.01
+		max_manpower_mult = 0.02
+	}
+	fdq_gatherers_shelter_3 = {
+		desc = fdq_gatherers_shelter_3_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 65
+		upgrades_from = fdq_gatherers_shelter_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		max_population = 100
+		supply_limit = 0.01
+	}
+	fdq_gatherers_shelter_4 = {
+		desc = fdq_gatherers_shelter_4_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = fdq_gatherers_shelter_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.061
+		max_population = 100
+		supply_limit = 0.02
+		max_manpower_mult = 0.02
+	}
+	fdq_gatherers_shelter_5 = {
+		desc = fdq_gatherers_shelter_5_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = fdq_gatherers_shelter_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population = 100
+		supply_limit = 0.04
+		max_manpower_mult = 0.02
+		disease_defence = 0.01
+	}
+	fdq_gatherers_shelter_6 = {
+		desc = fdq_gatherers_shelter_6_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 80
+		upgrades_from = fdq_gatherers_shelter_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		max_population = 100
+		supply_limit = 0.08
+		max_manpower_mult = 0.02
+		disease_defence = 0.02
+	}
+	fdq_gatherers_shelter_7 = {
+		desc = fdq_gatherers_shelter_7_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 85
+		upgrades_from = fdq_gatherers_shelter_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population = 100
+		supply_limit = 0.16
+		max_manpower_mult = 0.02
+		disease_defence = 0.04
+		clan_sentiment = 1
+	}
+	fdq_gatherers_shelter_8 = {
+		desc = fdq_gatherers_shelter_8_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 4800
+		ai_creation_factor = 90
+		upgrades_from = fdq_gatherers_shelter_7
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		max_population = 100
+		supply_limit = 0.32
+		max_manpower_mult = 0.02
+		disease_defence = 0.08
+		clan_sentiment = 1
+	}
+	fdq_gatherers_shelter_9 = {
+		desc = fdq_gatherers_shelter_9_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 9600
+		ai_creation_factor = 95
+		upgrades_from = fdq_gatherers_shelter_8
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population = 128
+		supply_limit = 0.64
+		max_manpower_mult = 0.02
+		disease_defence = 0.16
+		clan_sentiment = 1
+	}
+	fdq_gatherers_shelter_10 = {
+		desc = fdq_gatherers_shelter_10_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 19200
+		ai_creation_factor = 100
+		upgrades_from = fdq_gatherers_shelter_9
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		max_population = 256
+		supply_limit = 1.28
+		max_manpower_mult = 0.04
+		disease_defence = 0.32
+		clan_sentiment = 1
+	}
+}

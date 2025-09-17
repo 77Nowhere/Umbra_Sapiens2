@@ -1,0 +1,213 @@
+nomad = {
+	utj_wild_olive_stand_ib_olive = {
+		desc = utj_wild_olive_stand_ib_olive_desc
+		gold_cost = 49
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 65
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		nomad_tax_modifier = 0.222
+	}
+	utj_cleared_orchard_ib_olive = {
+		desc = utj_cleared_orchard_ib_olive_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 72
+		upgrades_from = utj_wild_olive_stand_ib_olive
+		prerequisites = {
+			utj_wild_olive_stand_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.046
+		nomad_tax_modifier = 0.355
+	}
+	utj_young_grove_ib_olive = {
+		desc = utj_young_grove_ib_olive_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = utj_cleared_orchard_ib_olive
+		prerequisites = {
+			utj_cleared_orchard_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.665
+		manpower_growth = 0.030
+	}
+	utj_stone_press_shelter_ib_olive = {
+		desc = utj_stone_press_shelter_ib_olive_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 88
+		upgrades_from = utj_young_grove_ib_olive
+		prerequisites = {
+			utj_young_grove_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.421
+		manpower_growth = 0.030
+	}
+	utj_cured_oil_hut_ib_olive = {
+		desc = utj_cured_oil_hut_ib_olive_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 95
+		upgrades_from = utj_stone_press_shelter_ib_olive
+		prerequisites = {
+			utj_stone_press_shelter_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		manpower_growth = 0.030
+		supply_limit = 0.1
+	}
+	utj_expanded_orchard_ib_olive = {
+		desc = utj_expanded_orchard_ib_olive_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 102
+		upgrades_from = utj_cured_oil_hut_ib_olive
+		prerequisites = {
+			utj_cured_oil_hut_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.443
+		population_growth = 0.081
+		manpower_growth = 0.042
+	}
+	utj_walled_grove_ib_olive = {
+		desc = utj_walled_grove_ib_olive_desc
+		gold_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 110
+		upgrades_from = utj_expanded_orchard_ib_olive
+		prerequisites = {
+			utj_expanded_orchard_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.399
+		garrison_size = 0.15
+		manpower_growth = 0.030
+	}
+	utj_olive_press_house_ib_olive = {
+		desc = utj_olive_press_house_ib_olive_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 1088
+		ai_creation_factor = 106
+		upgrades_from = utj_walled_grove_ib_olive
+		prerequisites = {
+			utj_walled_grove_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.443
+		supply_limit = 0.2
+		manpower_growth = 0.030
+	}
+	utj_trade_oil_pavilion_ib_olive = {
+		desc = utj_trade_oil_pavilion_ib_olive_desc
+		gold_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 109
+		upgrades_from = utj_olive_press_house_ib_olive
+		prerequisites = {
+			utj_olive_press_house_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		max_population_mult = 0.020
+		nomad_tax_modifier = 0.598
+		tradevalue = 1.513
+		manpower_growth = 0.030
+	}
+	utj_iberian_olive_estate_ib_olive = {
+		desc = utj_iberian_olive_estate_ib_olive_desc
+		gold_cost = 8250
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = utj_trade_oil_pavilion_ib_olive
+		prerequisites = {
+			utj_trade_oil_pavilion_ib_olive
+		}
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 220
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		manpower_growth = 0.060
+		clan_sentiment = 1
+	}
+}

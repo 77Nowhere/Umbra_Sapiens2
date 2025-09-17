@@ -1,0 +1,199 @@
+nomad = {
+	krf_stone_bath = {
+		desc = krf_stone_bath_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 65
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		supply_limit = 0.03
+	}
+	krf_water_storage = {
+		desc = krf_water_storage_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 68
+		upgrades_from = krf_stone_bath
+		prerequisites = {
+			krf_stone_bath
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.04
+	}
+	krf_ritual_pool = {
+		desc = krf_ritual_pool_desc
+		gold_cost = 255
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 70
+		upgrades_from = krf_water_storage
+		prerequisites = {
+			krf_water_storage
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		supply_limit = 0.07
+	}
+	krf_heated_chamber = {
+		desc = krf_heated_chamber_desc
+		gold_cost = 510
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 74
+		upgrades_from = krf_ritual_pool
+		prerequisites = {
+			krf_ritual_pool
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.13
+		population_growth = 0.041
+	}
+	krf_changing_room = {
+		desc = krf_changing_room_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 81
+		upgrades_from = krf_heated_chamber
+		prerequisites = {
+			krf_heated_chamber
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		supply_limit = 0.19
+	}
+	krf_private_bath_pavilion = {
+		desc = krf_private_bath_pavilion_desc
+		gold_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 87
+		upgrades_from = krf_changing_room
+		prerequisites = {
+			krf_changing_room
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		supply_limit = 0.27
+	}
+	krf_community_bathhouse = {
+		desc = krf_community_bathhouse_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 92
+		upgrades_from = krf_private_bath_pavilion
+		prerequisites = {
+			krf_private_bath_pavilion
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	krf_family_bath_hall = {
+		desc = krf_family_bath_hall_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 98
+		upgrades_from = krf_community_bathhouse
+		prerequisites = {
+			krf_community_bathhouse
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		population_growth = 0.081
+	}
+	krf_sanctified_bath_room = {
+		desc = krf_sanctified_bath_room_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 104
+		upgrades_from = krf_family_bath_hall
+		prerequisites = {
+			krf_family_bath_hall
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		population_growth = 0.111
+	}
+	krf_indian_ritual_bath = {
+		desc = krf_indian_ritual_bath_desc
+		piety_cost = 19500
+		extra_tech_building_start = 999
+		build_time = 4500
+		ai_creation_factor = 110
+		upgrades_from = krf_sanctified_bath_room
+		prerequisites = {
+			krf_sanctified_bath_room
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		liege_piety = 0.7
+	}
+}

@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+tp_monastery_1;Scribes Desk;;;;;x
+tp_monastery_1_desc;A makeshift desk where a lone scribe copies sacred texts, marking the humble beginnings of written record in the temple.;;;;;x
+tp_monastery_2;Copyists Corner;;;;;x
+tp_monastery_2_desc;A sheltered alcove for a small group of copyists, improving the output and accuracy of religious manuscripts.;;;;;x
+tp_monastery_3;Scriptorium Room;;;;;x
+tp_monastery_3_desc;A dedicated wooden room with benches and tools for several scribes, greatly enhancing the copying of religious texts.;;;;;x
+tp_monastery_4;Illuminators Studio;;;;;x
+tp_monastery_4_desc;A sturdy stone chamber where skilled artists embellish manuscripts with gold and color, adding beauty and prestige to the temples works.;;;;;x
+tp_monastery_5;Scriptorium Library;;;;;x
+tp_monastery_5_desc;A well-stocked library adjoining the scriptorium, housing precious scrolls and codices, and attracting learned visitors.;;;;;x
+bpq_scribes_guildhall;Scribes Guildhall;;;;;x
+bpq_scribes_guildhall_desc;An imposing guildhall where master scribes train apprentices and safeguard traditions, increasing religious influence and learning.;;;;;x
+tp_monastery_6;Vaulted Scriptorium;;;;;x
+tp_monastery_6_desc;A grand, stone-vaulted scriptorium built for security and splendor, its works known throughout the realm.;;;;;x
+bpq_scriptorium_archive;Scriptorium Archive;;;;;x
+bpq_scriptorium_archive_desc;A fortified archive, fireproofed and guarded, where rarest manuscripts and records are secured for generations.;;;;;x
+bpq_royal_scriptorium;Royal Scriptorium;;;;;x
+bpq_royal_scriptorium_desc;A prestigious royal scriptorium, patronized by monarchs, producing illuminated codices and attracting scholars from distant lands.;;;;;x
+bpq_great_library_of_manuscripts;Great Library of Manuscripts;;;;;x
+bpq_great_library_of_manuscripts_desc;The ultimate center for preservation and creation of sacred texts, this legendary repository draws pilgrims, scholars, and the faithful from across the world.;;;;;x

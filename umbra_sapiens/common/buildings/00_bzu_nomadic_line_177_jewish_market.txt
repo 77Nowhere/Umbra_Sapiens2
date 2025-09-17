@@ -1,0 +1,178 @@
+nomad = {
+	bzu_jewish_market_open_table = {
+		desc = bzu_jewish_market_open_table_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		population_growth = 0.031
+	}
+	bzu_jewish_market_barter_patch = {
+		desc = bzu_jewish_market_barter_patch_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = bzu_jewish_market_open_table
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.797
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	bzu_jewish_market_traders_tent = {
+		desc = bzu_jewish_market_traders_tent_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 73
+		upgrades_from = bzu_jewish_market_barter_patch
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	bzu_jewish_market_merchants_pavilion = {
+		desc = bzu_jewish_market_merchants_pavilion_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 78
+		upgrades_from = bzu_jewish_market_traders_tent
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	bzu_jewish_market_market_stand = {
+		desc = bzu_jewish_market_market_stand_desc
+		gold_cost = 713
+		extra_tech_building_start = 999
+		build_time = 173
+		ai_creation_factor = 85
+		upgrades_from = bzu_jewish_market_merchants_pavilion
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_piety = 0.5
+	}
+	bzu_jewish_market_exchange_room = {
+		desc = bzu_jewish_market_exchange_room_desc
+		gold_cost = 1425
+		extra_tech_building_start = 999
+		build_time = 207
+		ai_creation_factor = 93
+		upgrades_from = bzu_jewish_market_market_stand
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		trade_route_value = 5
+	}
+	bzu_jewish_market_market_hall = {
+		desc = bzu_jewish_market_market_hall_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 100
+		upgrades_from = bzu_jewish_market_exchange_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.642
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		trade_route_wealth = 8
+	}
+	bzu_jewish_market_guild_pavilion = {
+		desc = bzu_jewish_market_guild_pavilion_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 108
+		upgrades_from = bzu_jewish_market_market_hall
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		trade_route_wealth = 15
+	}
+	bzu_jewish_market_grand_market_room = {
+		desc = bzu_jewish_market_grand_market_room_desc
+		gold_cost = 7125
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 112
+		upgrades_from = bzu_jewish_market_guild_pavilion
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.709
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		trade_route_wealth = 25
+		liege_piety = 1
+	}
+	bzu_jewish_market_jewish_grand_market = {
+		desc = bzu_jewish_market_jewish_grand_market_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 120
+		upgrades_from = bzu_jewish_market_grand_market_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.665
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		trade_route_wealth = 40
+		liege_piety = 1
+	}
+}

@@ -1,0 +1,146 @@
+nomad = {
+	eay_warrior_gathering_ring_1 = {
+		desc = eay_warrior_gathering_ring_1_desc
+		gold_cost = 53
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	eay_practice_circle_1 = {
+		desc = eay_practice_circle_1_desc
+		gold_cost = 150
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 63
+		upgrades_from = eay_warrior_gathering_ring_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.06
+	}
+	eay_mounted_drill_yard_1 = {
+		desc = eay_mounted_drill_yard_1_desc
+		gold_cost = 525
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = eay_practice_circle_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.09
+		global_movement_speed = 0.02
+	}
+	eay_weapons_rack_camp_1 = {
+		desc = eay_weapons_rack_camp_1_desc
+		gold_cost = 1500
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 77
+		upgrades_from = eay_mounted_drill_yard_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.15
+		garrison_size = 0.18
+		max_population_mult = 0.005
+	}
+	eay_raiders_pavilion_1 = {
+		desc = eay_raiders_pavilion_1_desc
+		gold_cost = 4500
+		build_time = 338
+		extra_tech_building_start = 999
+		ai_creation_factor = 85
+		upgrades_from = eay_weapons_rack_camp_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.22
+		liege_prestige = 0.8
+	}
+	eay_trained_riders_field_1 = {
+		desc = eay_trained_riders_field_1_desc
+		gold_cost = 6750
+		build_time = 488
+		extra_tech_building_start = 999
+		ai_creation_factor = 93
+		upgrades_from = eay_raiders_pavilion_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		light_cavalry_offensive = 0.18
+		global_movement_speed = 0.05
+		nomad_tax_modifier = 0.532
+	}
+	eay_battle_ready_arena_1 = {
+		desc = eay_battle_ready_arena_1_desc
+		gold_cost = 9000
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 101
+		upgrades_from = eay_trained_riders_field_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		levy_size = 0.32
+		clan_sentiment = 1
+		morale_of_armies = 0.04
+	}
+	eay_commanders_stand_1 = {
+		desc = eay_commanders_stand_1_desc
+		gold_cost = 13500
+		build_time = 900
+		extra_tech_building_start = 999
+		ai_creation_factor = 106
+		upgrades_from = eay_battle_ready_arena_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.55
+		commander_limit = 1
+		land_morale = 0.12
+		liege_prestige = 1.2
+	}
+	eay_elite_muster_ground_1 = {
+		desc = eay_elite_muster_ground_1_desc
+		gold_cost = 18750
+		build_time = 1200
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = eay_commanders_stand_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		levy_size = 0.8
+		garrison_size = 0.4
+		liege_prestige = 1
+		morale_of_armies = 0.08
+	}
+	eay_khans_rally_square_1 = {
+		desc = eay_khans_rally_square_1_desc
+		gold_cost = 27750
+		build_time = 1500
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = eay_elite_muster_ground_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		levy_size = 1.2
+		clan_sentiment = 1
+		morale_of_armies = 0.15
+		liege_prestige = 1
+	}
+}

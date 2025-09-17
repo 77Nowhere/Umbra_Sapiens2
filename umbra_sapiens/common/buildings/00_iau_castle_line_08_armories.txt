@@ -1,0 +1,166 @@
+castle = {
+	iau_weapon_shed = {
+		desc = iau_weapon_shed_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.25
+		garrison_size = 0.25
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_arms_locker = {
+		desc = iau_arms_locker_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		upgrades_from = iau_weapon_shed
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.35
+		garrison_size = 0.35
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_smithy_store = {
+		desc = iau_smithy_store_desc
+		prestige_cost = 80
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = iau_arms_locker
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.05
+		garrison_size = 0.04
+		heavy_infantry_offensive = 0.04
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_armament_room = {
+		desc = iau_armament_room_desc
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 76
+		upgrades_from = iau_smithy_store
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.08
+		garrison_size = 0.06
+		heavy_infantry_offensive = 0.08
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_stone_armory = {
+		desc = iau_stone_armory_desc
+		gold_cost = 480
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 83
+		upgrades_from = iau_armament_room
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.12
+		garrison_size = 0.1
+		heavy_infantry_offensive = 0.12
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_secure_armory = {
+		desc = iau_secure_armory_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 93
+		upgrades_from = iau_stone_armory
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.19
+		garrison_size = 0.13
+		heavy_infantry_offensive = 0.18
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_expanded_armory = {
+		desc = iau_expanded_armory_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 99
+		upgrades_from = iau_secure_armory
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 0.32
+		garrison_size = 0.21
+		heavy_infantry_offensive = 0.25
+		land_morale = 0.05
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_ordnance_depot = {
+		desc = iau_ordnance_depot_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 105
+		upgrades_from = iau_expanded_armory
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 0.46
+		garrison_size = 0.26
+		heavy_infantry_offensive = 0.35
+		military_techpoints = 0.1
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_grand_arsenal = {
+		desc = iau_grand_arsenal_desc
+		gold_cost = 8000
+		extra_tech_building_start = 999
+		build_time = 3300
+		ai_creation_factor = 108
+		upgrades_from = iau_ordnance_depot
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		levy_size = 0.63
+		garrison_size = 0.34
+		heavy_infantry_offensive = 0.5
+		military_techpoints = 0.16
+		land_morale = 0.1
+		pikemen = 11
+		retinuesize = 100
+	}
+	iau_royal_armory = {
+		desc = iau_royal_armory_desc
+		gold_cost = 16000
+		extra_tech_building_start = 999
+		build_time = 4800
+		ai_creation_factor = 110
+		upgrades_from = iau_grand_arsenal
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		levy_size = 0.85
+		garrison_size = 0.46
+		heavy_infantry_offensive = 0.75
+		military_techpoints = 0.25
+		land_morale = 0.18
+		liege_prestige = 2
+		pikemen = 11
+		retinuesize = 100
+	}
+}

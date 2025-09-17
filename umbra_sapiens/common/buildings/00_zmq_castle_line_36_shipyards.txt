@@ -1,0 +1,201 @@
+castle = {
+	ca_shipyard_1 = {
+		desc = ca_shipyard_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 27
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.01
+		tax_income = 0.10
+		galleys = 68
+	}
+	ca_shipyard_2 = {
+		desc = ca_shipyard_2_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 22
+		upgrades_from = ca_shipyard_1
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		garrison_size = 0.02
+		tax_income = 0.15
+		galleys = 68
+	}
+	ca_shipyard_3 = {
+		desc = ca_shipyard_3_desc
+		prestige_cost = 50
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 19
+		upgrades_from = ca_shipyard_2
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.04
+		garrison_size = 0.04
+		tax_income = 0.20
+		galleys = 68
+	}
+	ca_shipyard_4 = {
+		desc = ca_shipyard_4_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 35
+		upgrades_from = ca_shipyard_3
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 1
+		}
+		levy_size = 0.06
+		garrison_size = 0.06
+		tax_income = 0.25
+		galleys = 68
+	}
+	ca_shipyard_5 = {
+		desc = ca_shipyard_5_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 40
+		upgrades_from = ca_shipyard_4
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 2
+		}
+		levy_size = 0.10
+		garrison_size = 0.09
+		tax_income = 0.30
+		fort_level = 0.06
+		galleys = 68
+	}
+	ca_shipyard_6 = {
+		desc = ca_shipyard_6_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 48
+		upgrades_from = ca_shipyard_5
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 3
+		}
+		levy_size = 0.17
+		garrison_size = 0.16
+		tax_income = 0.35
+		fort_level = 0.08
+		galleys = 68
+	}
+	ca_shipyard_7 = {
+		desc = ca_shipyard_7_desc
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 53
+		upgrades_from = ca_shipyard_6
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		levy_size = 0.26
+		garrison_size = 0.26
+		tax_income = 0.40
+		fort_level = 0.13
+		galleys = 68
+	}
+	ca_shipyard_8 = {
+		desc = ca_shipyard_8_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 58
+		upgrades_from = ca_shipyard_7
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 5
+		}
+		levy_size = 0.46
+		garrison_size = 0.43
+		tax_income = 0.45
+		fort_level = 0.19
+		tradevalue = 1.5
+		galleys = 68
+	}
+	ca_shipyard_9 = {
+		desc = ca_shipyard_9_desc
+		gold_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 60
+		upgrades_from = ca_shipyard_8
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 6
+		}
+		levy_size = 0.74
+		garrison_size = 0.68
+		tax_income = 0.50
+		fort_level = 0.26
+		tradevalue = 2.5
+		tech_growth_modifier = 0.07
+		galleys = 68
+	}
+	ca_shipyard_10 = {
+		desc = ca_shipyard_10_desc
+		gold_cost = 11000
+		extra_tech_building_start = 999
+		build_time = 3650
+		ai_creation_factor = 60
+		upgrades_from = ca_shipyard_9
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 7
+		}
+		levy_size = 1.27
+		garrison_size = 1.07
+		tax_income = 0.56
+		fort_level = 0.34
+		tradevalue = 5
+		tech_growth_modifier = 0.15
+		galleys = 68
+	}
+}

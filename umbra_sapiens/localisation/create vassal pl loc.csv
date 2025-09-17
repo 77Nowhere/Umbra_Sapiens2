@@ -1,0 +1,4 @@
+create_vassal_pl;Create New Vassal;;;;;;;;;;;;;x
+create_vassal_pl_desc;Grant the §Y[This.GetFullBaseName]§! and all lower titles to a new vassal.;;;;;;;;;;;;;x
+crvalidcountywithin;A valid county in §Y[This.GetName]§! can be given as a capital;;;;;;;;;;;;;x
+crvalidcounty;A valid holding in §Y[This.GetName]§! can be given as a capital;;;;;;;;;;;;;x

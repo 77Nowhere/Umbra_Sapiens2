@@ -1,0 +1,179 @@
+nomad = {
+	oce_hideworkers_leanto = {
+		desc = oce_hideworkers_leanto_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.089
+	}
+	oce_tinkers_tent = {
+		desc = oce_tinkers_tent_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 70
+		upgrades_from = oce_hideworkers_leanto
+		prerequisites = {
+			oce_hideworkers_leanto
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		population_growth = 0.011
+	}
+	oce_basic_smithy = {
+		desc = oce_basic_smithy_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 123
+		ai_creation_factor = 75
+		upgrades_from = oce_tinkers_tent
+		prerequisites = {
+			oce_tinkers_tent
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		levy_size = 0.03
+	}
+	oce_leatherworkers_yurt = {
+		desc = oce_leatherworkers_yurt_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 165
+		ai_creation_factor = 80
+		upgrades_from = oce_basic_smithy
+		prerequisites = {
+			oce_basic_smithy
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		horde_maintenence_cost = -0.018
+	}
+	oce_carpenters_shelter = {
+		desc = oce_carpenters_shelter_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 233
+		ai_creation_factor = 85
+		upgrades_from = oce_leatherworkers_yurt
+		prerequisites = {
+			oce_leatherworkers_yurt
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		levy_size = 0.08
+		global_movement_speed = 0.02
+	}
+	oce_armorers_pavilion = {
+		desc = oce_armorers_pavilion_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 312
+		ai_creation_factor = 90
+		upgrades_from = oce_carpenters_shelter
+		prerequisites = {
+			oce_carpenters_shelter
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		levy_size = 0.16
+		garrison_size = 0.07
+	}
+	oce_fine_tool_shop = {
+		desc = oce_fine_tool_shop_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 95
+		upgrades_from = oce_armorers_pavilion
+		prerequisites = {
+			oce_armorers_pavilion
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		levy_size = 0.29
+		global_movement_speed = 0.04
+		tech_growth_modifier_economy = 0.03
+	}
+	oce_artisan_enclosure = {
+		desc = oce_artisan_enclosure_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 98
+		upgrades_from = oce_fine_tool_shop
+		prerequisites = {
+			oce_fine_tool_shop
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		levy_size = 0.45
+		garrison_size = 0.13
+		horde_maintenence_cost = -0.04
+	}
+	oce_masterwork_workshop = {
+		desc = oce_masterwork_workshop_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 844
+		ai_creation_factor = 105
+		upgrades_from = oce_artisan_enclosure
+		prerequisites = {
+			oce_artisan_enclosure
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 0.7
+		garrison_size = 0.22
+		tech_growth_modifier = 0.07
+		global_movement_speed = 0.06
+	}
+	oce_steppe_artisan_guild = {
+		desc = oce_steppe_artisan_guild_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 110
+		upgrades_from = oce_masterwork_workshop
+		prerequisites = {
+			oce_masterwork_workshop
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.24
+		levy_size = 1.1
+		garrison_size = 0.34
+		horde_maintenence_cost = -0.08
+		tech_growth_modifier = 0.15
+		clan_sentiment = 1
+	}
+}

@@ -1,0 +1,202 @@
+city = {
+	kso_stone_outcrop = {
+		desc = kso_stone_outcrop_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		economy_techpoints = 0.02
+	}
+	kso_quarry_shelter = {
+		desc = kso_quarry_shelter_desc
+		piety_cost = 50
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 65
+		upgrades_from = kso_hillside_pit
+		prerequisites = {
+			kso_hillside_pit
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.12
+		economy_techpoints = 0.08
+		garrison_size = 0.06
+	}
+	kso_hillside_pit = {
+		desc = kso_hillside_pit_desc
+		prestige_cost = 60
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 62
+		upgrades_from = kso_stone_outcrop
+		prerequisites = {
+			kso_stone_outcrop
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.07
+		economy_techpoints = 0.04
+		garrison_size = 0.03
+	}
+	kso_block_cutters_shed = {
+		desc = kso_block_cutters_shed_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 68
+		upgrades_from = kso_quarry_shelter
+		prerequisites = {
+			kso_quarry_shelter
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.22
+		tradevalue = 1.5
+		economy_techpoints = 0.16
+	}
+	kso_hillsmens_lodge = {
+		desc = kso_hillsmens_lodge_desc
+		gold_cost = 340
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 72
+		upgrades_from = kso_block_cutters_shed
+		prerequisites = {
+			kso_block_cutters_shed
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.37
+		tradevalue = 2.5
+		economy_techpoints = 0.26
+	}
+	kso_stone_hoist = {
+		desc = kso_stone_hoist_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 78
+		upgrades_from = kso_hillsmens_lodge
+		prerequisites = {
+			kso_hillsmens_lodge
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.6
+		tradevalue = 4
+		economy_techpoints = 0.42
+		garrison_size = 0.08
+	}
+	kso_hills_guild = {
+		desc = kso_hills_guild_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 85
+		upgrades_from = kso_stone_hoist
+		prerequisites = {
+			kso_stone_hoist
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.97
+		tradevalue = 7
+		economy_techpoints = 0.63
+		garrison_size = 0.12
+	}
+	kso_rock_cart_track = {
+		desc = kso_rock_cart_track_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 92
+		upgrades_from = kso_hills_guild
+		prerequisites = {
+			kso_hills_guild
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 1.6
+		tradevalue = 12
+		economy_techpoints = 1
+		garrison_size = 0.18
+	}
+	kso_hillmans_keep = {
+		desc = kso_hillmans_keep_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 100
+		upgrades_from = kso_rock_cart_track
+		prerequisites = {
+			kso_rock_cart_track
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 2.7
+		tradevalue = 18
+		economy_techpoints = 1.7
+		garrison_size = 0.24
+	}
+	kso_highland_quarryworks = {
+		desc = kso_highland_quarryworks_desc
+		gold_cost = 10000
+		extra_tech_building_start = 999
+		build_time = 4400
+		ai_creation_factor = 110
+		upgrades_from = kso_hillmans_keep
+		prerequisites = {
+			kso_hillmans_keep
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 4
+		tradevalue = 32
+		economy_techpoints = 2.6
+		garrison_size = 0.33
+	}
+}

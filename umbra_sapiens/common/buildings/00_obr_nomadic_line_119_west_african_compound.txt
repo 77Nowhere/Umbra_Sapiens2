@@ -1,0 +1,186 @@
+nomad = {
+	obr_mudbrick_hut = {
+		desc = obr_mudbrick_hut_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		nomad_tax_modifier = 0.222
+	}
+	obr_wattle_shelter = {
+		desc = obr_wattle_shelter_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = obr_mudbrick_hut
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.061
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	obr_courtyard_pavilion = {
+		desc = obr_courtyard_pavilion_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 75
+		upgrades_from = obr_wattle_shelter
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.111
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	obr_thatched_room = {
+		desc = obr_thatched_room_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 165
+		ai_creation_factor = 80
+		upgrades_from = obr_courtyard_pavilion
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		garrison_size = 0.03
+	}
+	obr_fenced_yard = {
+		desc = obr_fenced_yard_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 85
+		upgrades_from = obr_thatched_room
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		garrison_size = 0.07
+		supply_limit = 0.06
+	}
+	obr_guarded_pavilion = {
+		desc = obr_guarded_pavilion_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = obr_fenced_yard
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		garrison_size = 0.14
+		levy_size = 0.08
+		clan_sentiment = 1
+	}
+	obr_family_hall = {
+		desc = obr_family_hall_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = obr_guarded_pavilion
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		max_manpower_mult = 0.06
+		garrison_size = 0.21
+		levy_size = 0.17
+		clan_sentiment = 1
+	}
+	obr_community_room = {
+		desc = obr_community_room_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = obr_family_hall
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		max_manpower_mult = 0.06
+		garrison_size = 0.32
+		levy_size = 0.34
+		clan_sentiment = 1
+	}
+	obr_chiefs_chamber = {
+		desc = obr_chiefs_chamber_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 105
+		upgrades_from = obr_community_room
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		max_manpower_mult = 0.06
+		garrison_size = 0.5
+		levy_size = 0.6
+		clan_sentiment = 1
+	}
+	obr_west_african_compound = {
+		desc = obr_west_african_compound_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = obr_chiefs_chamber
+		potential = {
+			culture_group = west_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1024
+		max_manpower_mult = 0.06
+		garrison_size = 0.8
+		levy_size = 1
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.665
+	}
+}

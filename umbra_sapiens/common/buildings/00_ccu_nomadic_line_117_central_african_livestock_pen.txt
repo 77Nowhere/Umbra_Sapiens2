@@ -1,0 +1,188 @@
+nomad = {
+	ccu_stick_corral_caf = {
+		desc = ccu_stick_corral_caf_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 62
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		population_growth = 0.011
+	}
+	ccu_wooden_pen_caf = {
+		desc = ccu_wooden_pen_caf_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 65
+		upgrades_from = ccu_stick_corral_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.111
+	}
+	ccu_wattle_shelter_caf = {
+		desc = ccu_wattle_shelter_caf_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 75
+		upgrades_from = ccu_wooden_pen_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	ccu_cattle_pavilion_caf = {
+		desc = ccu_cattle_pavilion_caf_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 80
+		upgrades_from = ccu_wattle_shelter_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.333
+		clan_sentiment = 1
+	}
+	ccu_expanded_pen_caf = {
+		desc = ccu_expanded_pen_caf_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 90
+		upgrades_from = ccu_cattle_pavilion_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.709
+		clan_sentiment = 1
+		levy_size = 0.03
+	}
+	ccu_guarded_yard_caf = {
+		desc = ccu_guarded_yard_caf_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 95
+		upgrades_from = ccu_expanded_pen_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		garrison_size = 0.1
+	}
+	ccu_village_pen_caf = {
+		desc = ccu_village_pen_caf_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 100
+		upgrades_from = ccu_guarded_yard_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.10
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		levy_size = 0.06
+	}
+	ccu_community_pavilion_caf = {
+		desc = ccu_community_pavilion_caf_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = ccu_village_pen_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 110
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.443
+		clan_sentiment = 1
+		levy_size = 0.09
+		retinuesize = 1
+	}
+	ccu_chiefs_pen_caf = {
+		desc = ccu_chiefs_pen_caf_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = ccu_community_pavilion_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 180
+		max_manpower_mult = 0.10
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		levy_size = 0.14
+		retinuesize = 2
+	}
+	ccu_grand_pen_caf = {
+		desc = ccu_grand_pen_caf_desc
+		gold_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 112
+		upgrades_from = ccu_chiefs_pen_caf
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 300
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+		levy_size = 0.2
+		retinuesize = 3
+		liege_prestige = 0.5
+	}
+}

@@ -1,0 +1,214 @@
+nomad = {
+	zrg_ale_barrel_rack = {
+		desc = zrg_ale_barrel_rack_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.05
+		clan_sentiment = 1
+	}
+	zrg_grain_mash_shed = {
+		desc = zrg_grain_mash_shed_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 68
+		upgrades_from = zrg_ale_barrel_rack
+		prerequisites = {
+			zrg_ale_barrel_rack
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	zrg_simple_brew_hut = {
+		desc = zrg_simple_brew_hut_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 71
+		upgrades_from = zrg_grain_mash_shed
+		prerequisites = {
+			zrg_grain_mash_shed
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		population_growth = 0.011
+	}
+	zrg_brewmaster_pavilion = {
+		desc = zrg_brewmaster_pavilion_desc
+		gold_cost = 244
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 75
+		upgrades_from = zrg_simple_brew_hut
+		prerequisites = {
+			zrg_simple_brew_hut
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.08
+	}
+	zrg_feasting_tent = {
+		desc = zrg_feasting_tent_desc
+		gold_cost = 488
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 80
+		upgrades_from = zrg_brewmaster_pavilion
+		prerequisites = {
+			zrg_brewmaster_pavilion
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.13
+		liege_prestige = 0.5
+	}
+	zrg_public_house = {
+		desc = zrg_public_house_desc
+		gold_cost = 975
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 88
+		upgrades_from = zrg_feasting_tent
+		prerequisites = {
+			zrg_feasting_tent
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_prestige = 1
+		supply_limit = 0.18
+	}
+	zrg_alehouse = {
+		desc = zrg_alehouse_desc
+		gold_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 95
+		upgrades_from = zrg_public_house
+		prerequisites = {
+			zrg_public_house
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		supply_limit = 0.25
+		liege_prestige = 1.5
+	}
+	zrg_brewery_hall = {
+		desc = zrg_brewery_hall_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 100
+		upgrades_from = zrg_alehouse
+		prerequisites = {
+			zrg_alehouse
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		supply_limit = 0.35
+	}
+	zrg_merchant_tavern = {
+		desc = zrg_merchant_tavern_desc
+		gold_cost = 7800
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 105
+		upgrades_from = zrg_brewery_hall
+		prerequisites = {
+			zrg_brewery_hall
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 200
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1
+		supply_limit = 0.48
+		tradevalue = 1.513
+	}
+	zrg_grand_brew_house = {
+		desc = zrg_grand_brew_house_desc
+		gold_cost = 15600
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = zrg_merchant_tavern
+		prerequisites = {
+			zrg_merchant_tavern
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 300
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		supply_limit = 0.65
+		tradevalue = 1.513
+	}
+}

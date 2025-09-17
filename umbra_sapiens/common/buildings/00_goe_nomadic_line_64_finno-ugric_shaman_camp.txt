@@ -1,0 +1,210 @@
+nomad = {
+	goe_finno_ugric_spirit_post = {
+		desc = goe_finno_ugric_spirit_post_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 60
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	goe_finno_ugric_bone_rattle_hut = {
+		desc = goe_finno_ugric_bone_rattle_hut_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 65
+		upgrades_from = goe_finno_ugric_spirit_post
+		prerequisites = {
+			goe_finno_ugric_spirit_post
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.1
+	}
+	goe_finno_ugric_drum_circle = {
+		desc = goe_finno_ugric_drum_circle_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 70
+		upgrades_from = goe_finno_ugric_bone_rattle_hut
+		prerequisites = {
+			goe_finno_ugric_bone_rattle_hut
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.2
+	}
+	goe_finno_ugric_sacred_fire_tent = {
+		desc = goe_finno_ugric_sacred_fire_tent_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = goe_finno_ugric_drum_circle
+		prerequisites = {
+			goe_finno_ugric_drum_circle
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.3
+		nomad_tax_modifier = 0.133
+	}
+	goe_finno_ugric_ancestor_shelter = {
+		desc = goe_finno_ugric_ancestor_shelter_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 85
+		upgrades_from = goe_finno_ugric_sacred_fire_tent
+		prerequisites = {
+			goe_finno_ugric_sacred_fire_tent
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.5
+		nomad_tax_modifier = 0.333
+	}
+	goe_finno_ugric_totem_pavilion = {
+		desc = goe_finno_ugric_totem_pavilion_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = goe_finno_ugric_ancestor_shelter
+		prerequisites = {
+			goe_finno_ugric_ancestor_shelter
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_piety = 0.8
+		nomad_tax_modifier = 0.532
+	}
+	goe_finno_ugric_vision_yurt = {
+		desc = goe_finno_ugric_vision_yurt_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 95
+		upgrades_from = goe_finno_ugric_totem_pavilion
+		prerequisites = {
+			goe_finno_ugric_totem_pavilion
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_piety = 1
+		nomad_tax_modifier = 0.797
+		commander_limit = 1
+	}
+	goe_finno_ugric_seers_room = {
+		desc = goe_finno_ugric_seers_room_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 100
+		upgrades_from = goe_finno_ugric_vision_yurt
+		prerequisites = {
+			goe_finno_ugric_vision_yurt
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		liege_piety = 1
+		nomad_tax_modifier = 0.421
+		retinuesize_perc = 0.05
+	}
+	goe_finno_ugric_spirit_chamber = {
+		desc = goe_finno_ugric_spirit_chamber_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = goe_finno_ugric_seers_room
+		prerequisites = {
+			goe_finno_ugric_seers_room
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		max_population_mult = 0.025
+		liege_piety = 1
+		nomad_tax_modifier = 0.421
+		retinuesize_perc = 0.1
+		commander_limit = 1
+	}
+	goe_finno_ugric_high_shaman_camp = {
+		desc = goe_finno_ugric_high_shaman_camp_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = goe_finno_ugric_spirit_chamber
+		prerequisites = {
+			goe_finno_ugric_spirit_chamber
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		max_population_mult = 0.025
+		liege_piety = 1
+		nomad_tax_modifier = 0.399
+		retinuesize_perc = 0.2
+		commander_limit = 2
+	}
+}

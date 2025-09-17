@@ -1,0 +1,184 @@
+nomadic_line_173_indian_market_hall = {
+	dwu_open_table = {
+		desc = dwu_open_table_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 30
+		ai_creation_factor = 62
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.133
+	}
+	dwu_barter_patch = {
+		desc = dwu_barter_patch_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		upgrades_from = dwu_open_table
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.266
+		clan_sentiment = 1
+	}
+	dwu_traders_tent = {
+		desc = dwu_traders_tent_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 68
+		upgrades_from = dwu_barter_patch
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.532
+		tradevalue = 1.513
+	}
+	dwu_merchants_pavilion = {
+		desc = dwu_merchants_pavilion_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 74
+		upgrades_from = dwu_traders_tent
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	dwu_market_stand = {
+		desc = dwu_market_stand_desc
+		gold_cost = 540
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 80
+		upgrades_from = dwu_merchants_pavilion
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+	}
+	dwu_exchange_room = {
+		desc = dwu_exchange_room_desc
+		gold_cost = 1080
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 86
+		upgrades_from = dwu_market_stand
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	dwu_market_hall = {
+		desc = dwu_market_hall_desc
+		gold_cost = 2160
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 92
+		upgrades_from = dwu_exchange_room
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		nomad_tax_modifier = 0.554
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+		retinuesize_perc = 0.04
+	}
+	dwu_guild_pavilion = {
+		desc = dwu_guild_pavilion_desc
+		gold_cost = 4320
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 98
+		upgrades_from = dwu_market_hall
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	dwu_grand_market_room = {
+		desc = dwu_grand_market_room_desc
+		gold_cost = 8625
+		extra_tech_building_start = 999
+		build_time = 237
+		ai_creation_factor = 104
+		upgrades_from = dwu_guild_pavilion
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		nomad_tax_modifier = 0.665
+		tradevalue = 1.513
+		max_manpower_mult = 0.06
+		retinuesize_perc = 0.08
+		clan_sentiment = 1
+	}
+	dwu_indian_grand_market = {
+		desc = dwu_indian_grand_market_desc
+		gold_cost = 16875
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 110
+		upgrades_from = dwu_grand_market_room
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1024
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		max_manpower_mult = 0.06
+		retinuesize_perc = 0.16
+		clan_sentiment = 1
+	}
+}

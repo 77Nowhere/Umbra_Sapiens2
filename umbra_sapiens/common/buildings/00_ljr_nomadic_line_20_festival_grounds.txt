@@ -1,0 +1,172 @@
+nomad = {
+	ljr_festival_grounds_1 = {
+		desc = ljr_festival_grounds_1_desc
+		gold_cost = 38
+		build_time = 8
+		extra_tech_building_start = 999
+		ai_creation_factor = 50
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.01
+	}
+	ljr_festival_grounds_2 = {
+		desc = ljr_festival_grounds_2_desc
+		gold_cost = 113
+		build_time = 12
+		extra_tech_building_start = 999
+		ai_creation_factor = 55
+		upgrades_from = ljr_festival_grounds_1
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		prestige = 0.1
+	}
+	ljr_festival_grounds_3 = {
+		desc = ljr_festival_grounds_3_desc
+		gold_cost = 375
+		build_time = 23
+		extra_tech_building_start = 999
+		ai_creation_factor = 60
+		upgrades_from = ljr_festival_grounds_2
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.07
+		manpower = 500
+		prestige = 0.2
+	}
+	ljr_festival_grounds_4 = {
+		desc = ljr_festival_grounds_4_desc
+		gold_cost = 1125
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		upgrades_from = ljr_festival_grounds_3
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.13
+		manpower = 1000
+		prestige = 0.3
+		morale_of_armies = 0.01
+	}
+	ljr_festival_grounds_5 = {
+		desc = ljr_festival_grounds_5_desc
+		gold_cost = 3000
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = ljr_festival_grounds_4
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.2
+		manpower = 2000
+		prestige = 0.5
+		morale_of_armies = 0.02
+		vassal_opinion = 1
+	}
+	ljr_festival_grounds_6 = {
+		desc = ljr_festival_grounds_6_desc
+		gold_cost = 6000
+		build_time = 113
+		extra_tech_building_start = 999
+		ai_creation_factor = 75
+		upgrades_from = ljr_festival_grounds_5
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.3
+		manpower = 4000
+		prestige = 0.7
+		morale_of_armies = 0.03
+		vassal_opinion = 2
+		horde_reinforcement_rate = 0.05
+	}
+	ljr_festival_grounds_7 = {
+		desc = ljr_festival_grounds_7_desc
+		gold_cost = 7500
+		build_time = 150
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = ljr_festival_grounds_6
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.45
+		manpower = 7000
+		prestige = 1
+		morale_of_armies = 0.05
+		vassal_opinion = 3
+		horde_reinforcement_rate = 0.1
+		global_tax_modifier = 0.01
+	}
+	ljr_festival_grounds_8 = {
+		desc = ljr_festival_grounds_8_desc
+		gold_cost = 9000
+		build_time = 188
+		extra_tech_building_start = 999
+		ai_creation_factor = 85
+		upgrades_from = ljr_festival_grounds_7
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.65
+		manpower = 12000
+		prestige = 1.5
+		morale_of_armies = 0.07
+		vassal_opinion = 4
+		horde_reinforcement_rate = 0.15
+		global_tax_modifier = 0.02
+	}
+	ljr_festival_grounds_9 = {
+		desc = ljr_festival_grounds_9_desc
+		gold_cost = 11250
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 90
+		upgrades_from = ljr_festival_grounds_8
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.9
+		manpower = 20000
+		prestige = 2
+		morale_of_armies = 0.1
+		vassal_opinion = 6
+		horde_reinforcement_rate = 0.2
+		global_tax_modifier = 0.03
+		horde_maintenance_cost = -0.05
+	}
+	ljr_festival_grounds_10 = {
+		desc = ljr_festival_grounds_10_desc
+		gold_cost = 24000
+		build_time = 300
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = ljr_festival_grounds_9
+		add_number_to_name = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 1.2
+		manpower = 35000
+		prestige = 3
+		morale_of_armies = 0.15
+		vassal_opinion = 10
+		horde_reinforcement_rate = 0.25
+		global_tax_modifier = 0.05
+		horde_maintenance_cost = -0.1
+	}
+}

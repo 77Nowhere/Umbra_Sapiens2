@@ -1,0 +1,170 @@
+nomad = {
+	lut_prayer_stand = {
+		desc = lut_prayer_stand_desc
+		piety_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.15
+	}
+	lut_carved_post = {
+		desc = lut_carved_post_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = lut_prayer_stand
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.3
+	}
+	lut_stone_minbar = {
+		desc = lut_stone_minbar_desc
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 75
+		upgrades_from = lut_carved_post
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.6
+		church_opinion = 2
+	}
+	lut_small_minaret = {
+		desc = lut_small_minaret_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = lut_stone_minbar
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.2
+		church_opinion = 4
+	}
+	lut_timber_minaret = {
+		desc = lut_timber_minaret_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 88
+		upgrades_from = lut_small_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		church_opinion = 7
+	}
+	lut_walled_minaret = {
+		desc = lut_walled_minaret_desc
+		piety_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 95
+		upgrades_from = lut_timber_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		church_opinion = 12
+	}
+	lut_high_minaret = {
+		desc = lut_high_minaret_desc
+		piety_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 102
+		upgrades_from = lut_walled_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		church_opinion = 20
+	}
+	lut_decorated_minaret = {
+		desc = lut_decorated_minaret_desc
+		piety_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 108
+		upgrades_from = lut_high_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 30
+	}
+	lut_sanctified_minaret = {
+		desc = lut_sanctified_minaret_desc
+		piety_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = lut_decorated_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 45
+	}
+	lut_muslim_minbar_tower = {
+		desc = lut_muslim_minbar_tower_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = lut_sanctified_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 70
+		vassal_opinion = 8
+	}
+}

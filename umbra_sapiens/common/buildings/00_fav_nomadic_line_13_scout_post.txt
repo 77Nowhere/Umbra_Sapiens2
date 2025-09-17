@@ -1,0 +1,182 @@
+nomad = {
+	fav_lookout_mound = {
+		desc = fav_lookout_mound_desc
+		gold_cost = 38
+		build_time = 38
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.06
+	}
+	fav_raised_watchstand = {
+		desc = fav_raised_watchstand_desc
+		gold_cost = 113
+		build_time = 68
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = fav_lookout_mound
+		prerequisites = {
+			fav_lookout_mound
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.12
+		clan_sentiment = 1
+	}
+	fav_signal_fire_ring = {
+		desc = fav_signal_fire_ring_desc
+		gold_cost = 375
+		build_time = 113
+		extra_tech_building_start = 999
+		ai_creation_factor = 75
+		upgrades_from = fav_raised_watchstand
+		prerequisites = {
+			fav_raised_watchstand
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.25
+		clan_sentiment = 1
+	}
+	fav_hilltop_perch = {
+		desc = fav_hilltop_perch_desc
+		gold_cost = 1500
+		build_time = 188
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = fav_signal_fire_ring
+		prerequisites = {
+			fav_signal_fire_ring
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		supply_limit = 0.45
+		clan_sentiment = 1
+	}
+	fav_alert_tower = {
+		desc = fav_alert_tower_desc
+		gold_cost = 4500
+		build_time = 300
+		extra_tech_building_start = 999
+		ai_creation_factor = 87
+		upgrades_from = fav_hilltop_perch
+		prerequisites = {
+			fav_hilltop_perch
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		supply_limit = 0.9
+		clan_sentiment = 1
+	}
+	fav_messengers_hut = {
+		desc = fav_messengers_hut_desc
+		gold_cost = 6000
+		build_time = 450
+		extra_tech_building_start = 999
+		ai_creation_factor = 90
+		upgrades_from = fav_alert_tower
+		prerequisites = {
+			fav_alert_tower
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		supply_limit = 1.3
+		clan_sentiment = 1
+		global_movement_speed = 0.02
+	}
+	fav_scout_outpost = {
+		desc = fav_scout_outpost_desc
+		gold_cost = 9750
+		build_time = 600
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = fav_messengers_hut
+		prerequisites = {
+			fav_messengers_hut
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		supply_limit = 2
+		clan_sentiment = 1
+		global_movement_speed = 0.04
+	}
+	fav_falconers_pavilion = {
+		desc = fav_falconers_pavilion_desc
+		gold_cost = 13500
+		build_time = 825
+		extra_tech_building_start = 999
+		ai_creation_factor = 100
+		upgrades_from = fav_scout_outpost
+		prerequisites = {
+			fav_scout_outpost
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 2.8
+		clan_sentiment = 1
+		global_movement_speed = 0.07
+	}
+	fav_riders_lookout = {
+		desc = fav_riders_lookout_desc
+		gold_cost = 16500
+		build_time = 1125
+		extra_tech_building_start = 999
+		ai_creation_factor = 105
+		upgrades_from = fav_falconers_pavilion
+		prerequisites = {
+			fav_falconers_pavilion
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 4
+		clan_sentiment = 1
+		global_movement_speed = 0.1
+	}
+	fav_grand_steppe_watch = {
+		desc = fav_grand_steppe_watch_desc
+		gold_cost = 19500
+		build_time = 1500
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = fav_riders_lookout
+		prerequisites = {
+			fav_riders_lookout
+		}
+		scouting = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		supply_limit = 7
+		clan_sentiment = 1
+		global_movement_speed = 0.15
+	}
+}

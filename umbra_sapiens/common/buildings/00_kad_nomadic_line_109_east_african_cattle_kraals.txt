@@ -1,0 +1,214 @@
+nomad = {
+	kad_stick_fence_pen = {
+		desc = kad_stick_fence_pen_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 60
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.016
+	}
+	kad_wooden_kraal = {
+		desc = kad_wooden_kraal_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 64
+		upgrades_from = kad_stick_fence_pen
+		prerequisites = {
+			kad_stick_fence_pen
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		garrison_size = 0.03
+	}
+	kad_wattle_enclosure = {
+		desc = kad_wattle_enclosure_desc
+		gold_cost = 105
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 68
+		upgrades_from = kad_wooden_kraal
+		prerequisites = {
+			kad_wooden_kraal
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		garrison_size = 0.07
+		nomad_tax_modifier = 0.178
+	}
+	kad_cattle_shelter = {
+		desc = kad_cattle_shelter_desc
+		gold_cost = 203
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 73
+		upgrades_from = kad_wattle_enclosure
+		prerequisites = {
+			kad_wattle_enclosure
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		garrison_size = 0.14
+		nomad_tax_modifier = 0.355
+	}
+	kad_expanded_kraal = {
+		desc = kad_expanded_kraal_desc
+		gold_cost = 405
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 80
+		upgrades_from = kad_cattle_shelter
+		prerequisites = {
+			kad_cattle_shelter
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		garrison_size = 0.22
+		nomad_tax_modifier = 0.642
+		levy_size = 0.05
+	}
+	kad_guarded_yard = {
+		desc = kad_guarded_yard_desc
+		gold_cost = 825
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = kad_expanded_kraal
+		prerequisites = {
+			kad_expanded_kraal
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		garrison_size = 0.36
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	kad_village_kraal = {
+		desc = kad_village_kraal_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 90
+		upgrades_from = kad_guarded_yard
+		prerequisites = {
+			kad_guarded_yard
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.15
+		garrison_size = 0.56
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	kad_elders_pen = {
+		desc = kad_elders_pen_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 96
+		upgrades_from = kad_village_kraal
+		prerequisites = {
+			kad_village_kraal
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.15
+		garrison_size = 0.76
+		nomad_tax_modifier = 0.443
+		clan_sentiment = 1
+		liege_prestige = 0.25
+	}
+	kad_chiefs_kraal = {
+		desc = kad_chiefs_kraal_desc
+		gold_cost = 4125
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 103
+		upgrades_from = kad_elders_pen
+		prerequisites = {
+			kad_elders_pen
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.22
+		garrison_size = 1.1
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		liege_prestige = 0.6
+	}
+	kad_east_african_grand_kraal = {
+		desc = kad_east_african_grand_kraal_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = kad_chiefs_kraal
+		prerequisites = {
+			kad_chiefs_kraal
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		garrison_size = 1.8
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		liege_prestige = 1.2
+	}
+}

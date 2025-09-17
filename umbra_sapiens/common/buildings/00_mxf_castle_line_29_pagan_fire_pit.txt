@@ -1,0 +1,199 @@
+castle = {
+	mxf_kindling_circle = {
+		desc = mxf_kindling_circle_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.02
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_fire_pit = {
+		desc = mxf_fire_pit_desc
+		prestige_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		upgrades_from = mxf_kindling_circle
+		prerequisites = {
+			mxf_kindling_circle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.03
+		levy_size = 0.01
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_burning_mound = {
+		desc = mxf_burning_mound_desc
+		piety_cost = 55
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 68
+		upgrades_from = mxf_fire_pit
+		prerequisites = {
+			mxf_fire_pit
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.05
+		levy_size = 0.02
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_charcoal_hearth = {
+		desc = mxf_charcoal_hearth_desc
+		gold_cost = 160
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 72
+		upgrades_from = mxf_burning_mound
+		prerequisites = {
+			mxf_burning_mound
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		garrison_size = 0.09
+		levy_size = 0.04
+		land_morale = 0.03
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_ceremonial_bonfire = {
+		desc = mxf_ceremonial_bonfire_desc
+		gold_cost = 420
+		extra_tech_building_start = 999
+		build_time = 440
+		ai_creation_factor = 78
+		upgrades_from = mxf_charcoal_hearth
+		prerequisites = {
+			mxf_charcoal_hearth
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		garrison_size = 0.14
+		levy_size = 0.07
+		land_morale = 0.05
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_ember_altar = {
+		desc = mxf_ember_altar_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 580
+		ai_creation_factor = 85
+		upgrades_from = mxf_ceremonial_bonfire
+		prerequisites = {
+			mxf_ceremonial_bonfire
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		garrison_size = 0.22
+		levy_size = 0.11
+		land_morale = 0.09
+		vassal_opinion = 2
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_flame_hearth = {
+		desc = mxf_flame_hearth_desc
+		gold_cost = 1700
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 92
+		upgrades_from = mxf_ember_altar
+		prerequisites = {
+			mxf_ember_altar
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		garrison_size = 0.34
+		levy_size = 0.14
+		land_morale = 0.13
+		vassal_opinion = 3
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_torch_ring = {
+		desc = mxf_torch_ring_desc
+		gold_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 98
+		upgrades_from = mxf_flame_hearth
+		prerequisites = {
+			mxf_flame_hearth
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		garrison_size = 0.51
+		levy_size = 0.18
+		land_morale = 0.18
+		vassal_opinion = 4
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_beacon_mound = {
+		desc = mxf_beacon_mound_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 105
+		upgrades_from = mxf_torch_ring
+		prerequisites = {
+			mxf_torch_ring
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		garrison_size = 0.73
+		levy_size = 0.23
+		land_morale = 0.25
+		vassal_opinion = 5
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+	mxf_everflame = {
+		desc = mxf_everflame_desc
+		gold_cost = 16000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = mxf_beacon_mound
+		prerequisites = {
+			mxf_beacon_mound
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		garrison_size = 1.07
+		levy_size = 0.29
+		land_morale = 0.4
+		vassal_opinion = 8
+		potential = {
+			religion_group = pagan_group
+		}
+	}
+}

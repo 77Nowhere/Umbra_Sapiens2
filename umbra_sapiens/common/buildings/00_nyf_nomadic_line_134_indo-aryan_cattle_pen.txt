@@ -1,0 +1,176 @@
+nomad = {
+	nyf_indo_aryan_stick_fence_pen = {
+		desc = nyf_indo_aryan_stick_fence_pen_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 64
+		ai_creation_factor = 65
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.045
+	}
+	nyf_indo_aryan_wooden_kraal = {
+		desc = nyf_indo_aryan_wooden_kraal_desc
+		gold_cost = 72
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 68
+		upgrades_from = nyf_indo_aryan_stick_fence_pen
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.067
+	}
+	nyf_indo_aryan_wattle_enclosure = {
+		desc = nyf_indo_aryan_wattle_enclosure_desc
+		gold_cost = 158
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 74
+		upgrades_from = nyf_indo_aryan_wooden_kraal
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.133
+	}
+	nyf_indo_aryan_cattle_shelter = {
+		desc = nyf_indo_aryan_cattle_shelter_desc
+		gold_cost = 319
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 82
+		upgrades_from = nyf_indo_aryan_wattle_enclosure
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	nyf_indo_aryan_expanded_kraal = {
+		desc = nyf_indo_aryan_expanded_kraal_desc
+		gold_cost = 713
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 88
+		upgrades_from = nyf_indo_aryan_cattle_shelter
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		supply_limit = 0.075
+	}
+	nyf_indo_aryan_guarded_yard = {
+		desc = nyf_indo_aryan_guarded_yard_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 93
+		upgrades_from = nyf_indo_aryan_expanded_kraal
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		supply_limit = 0.15
+		clan_sentiment = 1
+	}
+	nyf_indo_aryan_village_kraal = {
+		desc = nyf_indo_aryan_village_kraal_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 100
+		upgrades_from = nyf_indo_aryan_guarded_yard
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		supply_limit = 0.3
+		clan_sentiment = 1
+	}
+	nyf_indo_aryan_elders_pen = {
+		desc = nyf_indo_aryan_elders_pen_desc
+		gold_cost = 4050
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 106
+		upgrades_from = nyf_indo_aryan_village_kraal
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		supply_limit = 0.42
+		clan_sentiment = 1
+	}
+	nyf_indo_aryan_chiefs_kraal = {
+		desc = nyf_indo_aryan_chiefs_kraal_desc
+		gold_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = nyf_indo_aryan_elders_pen
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 0.55
+		clan_sentiment = 1
+	}
+	nyf_indo_aryan_grand_kraal = {
+		desc = nyf_indo_aryan_grand_kraal_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 115
+		upgrades_from = nyf_indo_aryan_chiefs_kraal
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.32
+		supply_limit = 0.75
+		clan_sentiment = 1
+	}
+}

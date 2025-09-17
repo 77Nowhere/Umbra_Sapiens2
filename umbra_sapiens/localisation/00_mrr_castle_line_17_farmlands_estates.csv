@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+mrr_field_hut;Field Hut;;;;;x
+mrr_field_hut_desc;A humble thatched shelter where the earliest settlers rest, store tools, and oversee the first furrows of land.;;;;;x
+mrr_irrigation_ditch;Irrigation Ditch;;;;;x
+mrr_irrigation_ditch_desc;Simple hand-dug channels bringing water to crops, increasing yield and resilience against drought.;;;;;x
+mrr_crop_plot;Crop Plot;;;;;x
+mrr_crop_plot_desc;Well-marked plots with primitive fences, more organized planting, and the beginnings of surplus.;;;;;x
+mrr_vineyard_patch;Vineyard Patch;;;;;x
+mrr_vineyard_patch_desc;Rows of hardy vines, tended by serfs, producing wine for both profit and hospitality.;;;;;x
+mrr_dairy_farm;Dairy Farm;;;;;x
+mrr_dairy_farm_desc;A cluster of timber sheds and enclosed pastures for cattle and goats, providing milk and cheese to the estate and boosting food security.;;;;;x
+mrr_threshing_barn;Threshing Barn;;;;;x
+mrr_threshing_barn_desc;A large timber barn for processing grain, ensuring better storage and reducing losses to rot or theft.;;;;;x
+mrr_market_farm;Market Farm;;;;;x
+mrr_market_farm_desc;A productive estate with a bustling market green, attracting merchants and increasing commerce across the region.;;;;;x
+mrr_tenant_village;Tenant Village;;;;;x
+mrr_tenant_village_desc;A sizable settlement of tenant farmers, with stone cottages and communal facilities, providing stability and a larger pool for levies and duties.;;;;;x
+mrr_estate_granary;Estate Granary;;;;;x
+mrr_estate_granary_desc;A massive stone granary with guards, providing for the estate in times of famine and enabling the lord to support a substantial garrison.;;;;;x
+mrr_lords_grange;Lords Grange;;;;;x
+mrr_lords_grange_desc;A grand, fortified grange at the heart of the demesne, overseeing all production, securing the estate’s wealth, and symbolizing the lord’s authority.;;;;;x

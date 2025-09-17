@@ -1,0 +1,175 @@
+city = {
+	kvr_totem_glade = {
+		desc = kvr_totem_glade_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 42
+		upgrades_from = kvr_stone_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.16
+		tradevalue = 6
+	}
+	kvr_stone_circle = {
+		desc = kvr_stone_circle_desc
+		prestige_cost = 70
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 38
+		upgrades_from = kvr_shrine_clearing
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.08
+		tradevalue = 3
+		garrison_size = 0.05
+	}
+	kvr_shrine_clearing = {
+		desc = kvr_shrine_clearing_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 35
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.04
+		tradevalue = 1
+	}
+	kvr_ritual_hearth = {
+		desc = kvr_ritual_hearth_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 48
+		upgrades_from = kvr_totem_glade
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.32
+		tradevalue = 12
+		city_tax_modifier = 0.08
+	}
+	kvr_ancestral_oak = {
+		desc = kvr_ancestral_oak_desc
+		gold_cost = 950
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 53
+		upgrades_from = kvr_ritual_hearth
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.6
+		tradevalue = 24
+		city_tax_modifier = 0.16
+		economy_techpoints = 0.03
+	}
+	kvr_sacred_pool = {
+		desc = kvr_sacred_pool_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 58
+		upgrades_from = kvr_ancestral_oak
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 1.1
+		tradevalue = 40
+		city_tax_modifier = 0.26
+		economy_techpoints = 0.08
+	}
+	kvr_druidic_grove = {
+		desc = kvr_druidic_grove_desc
+		gold_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 62
+		upgrades_from = kvr_sacred_pool
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 2.1
+		tradevalue = 70
+		city_tax_modifier = 0.41
+		economy_techpoints = 0.16
+	}
+	kvr_spirit_thicket = {
+		desc = kvr_spirit_thicket_desc
+		gold_cost = 6400
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 68
+		upgrades_from = kvr_druidic_grove
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 4
+		tradevalue = 110
+		city_tax_modifier = 0.7
+		economy_techpoints = 0.32
+	}
+	kvr_hidden_sanctuary = {
+		desc = kvr_hidden_sanctuary_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 73
+		upgrades_from = kvr_spirit_thicket
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 7
+		tradevalue = 180
+		city_tax_modifier = 1.1
+		economy_techpoints = 0.6
+	}
+	kvr_great_grove = {
+		desc = kvr_great_grove_desc
+		gold_cost = 25000
+		extra_tech_building_start = 999
+		build_time = 6000
+		ai_creation_factor = 78
+		upgrades_from = kvr_hidden_sanctuary
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 13
+		tradevalue = 300
+		city_tax_modifier = 2
+		economy_techpoints = 1.2
+	}
+}

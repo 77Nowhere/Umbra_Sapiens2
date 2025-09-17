@@ -1,0 +1,169 @@
+castle = {
+	ijf_yurt_camp_1 = {
+		desc = ijf_yurt_camp_1_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.04
+		levy_size = 0.02
+	}
+	ijf_pasture_pen_3 = {
+		desc = ijf_pasture_pen_3_desc
+		prestige_cost = 45
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 68
+		upgrades_from = ijf_timber_palisade_2
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.05
+		local_tax_modifier = 0.08
+	}
+	ijf_timber_palisade_2 = {
+		desc = ijf_timber_palisade_2_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = ijf_yurt_camp_1
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.07
+	}
+	ijf_stock_enclosure_5 = {
+		desc = ijf_stock_enclosure_5_desc
+		prestige_cost = 90
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 80
+		upgrades_from = ijf_steppe_watchpost_4
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.08
+		local_tax_modifier = 0.15
+		garrison_size = 0.14
+	}
+	ijf_steppe_watchpost_4 = {
+		desc = ijf_steppe_watchpost_4_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = ijf_pasture_pen_3
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.11
+		garrison_size = 0.10
+		levy_reinforce_rate = 0.07
+	}
+	ijf_horse_herding_ground_6 = {
+		desc = ijf_horse_herding_ground_6_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 85
+		upgrades_from = ijf_stock_enclosure_5
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.12
+		light_cavalry_offensive = 0.18
+		garrison_size = 0.17
+	}
+	ijf_steppe_village_7 = {
+		desc = ijf_steppe_village_7_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 90
+		upgrades_from = ijf_horse_herding_ground_6
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.28
+		levy_size = 0.17
+		garrison_size = 0.22
+	}
+	ijf_trading_post_8 = {
+		desc = ijf_trading_post_8_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 95
+		upgrades_from = ijf_steppe_village_7
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 3
+		}
+		tradevalue = 2.5
+		local_tax_modifier = 0.43
+		levy_size = 0.24
+	}
+	ijf_steppe_fort_9 = {
+		desc = ijf_steppe_fort_9_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 105
+		upgrades_from = ijf_trading_post_8
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.21
+		garrison_size = 0.33
+		levy_size = 0.32
+	}
+	ijf_nomad_bastion_10 = {
+		desc = ijf_nomad_bastion_10_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 110
+		upgrades_from = ijf_steppe_fort_9
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.41
+		garrison_size = 0.56
+		levy_size = 0.57
+		liege_prestige = 1.5
+	}
+}

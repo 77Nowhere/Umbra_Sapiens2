@@ -1,0 +1,174 @@
+nomad = {
+	yby_steppe_brush_fence = {
+		desc = yby_steppe_brush_fence_desc
+		gold_cost = 42
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.1
+		nomad_tax_modifier = 0.222
+	}
+	yby_steppe_reed_palisade = {
+		desc = yby_steppe_reed_palisade_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 70
+		upgrades_from = yby_steppe_brush_fence
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.2
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	yby_steppe_earthwork_rampart = {
+		desc = yby_steppe_earthwork_rampart_desc
+		gold_cost = 169
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 75
+		upgrades_from = yby_steppe_reed_palisade
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.35
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	yby_steppe_timber_wall = {
+		desc = yby_steppe_timber_wall_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 83
+		upgrades_from = yby_steppe_earthwork_rampart
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.6
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	yby_steppe_watchtower_gate = {
+		desc = yby_steppe_watchtower_gate_desc
+		gold_cost = 563
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 89
+		upgrades_from = yby_steppe_timber_wall
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.9
+		max_population_mult = 0.005
+		global_movement_speed = 0.03
+	}
+	yby_steppe_double_palisade = {
+		desc = yby_steppe_double_palisade_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 95
+		upgrades_from = yby_steppe_watchtower_gate
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 1.4
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	yby_steppe_moated_park = {
+		desc = yby_steppe_moated_park_desc
+		gold_cost = 1988
+		extra_tech_building_start = 999
+		build_time = 248
+		ai_creation_factor = 98
+		upgrades_from = yby_steppe_double_palisade
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 2.1
+		max_population_mult = 0.010
+		clan_sentiment = 1
+	}
+	yby_steppe_defended_outwork = {
+		desc = yby_steppe_defended_outwork_desc
+		gold_cost = 3825
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 102
+		upgrades_from = yby_steppe_moated_park
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 2.9
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.05
+	}
+	yby_steppe_fortress_enclosure = {
+		desc = yby_steppe_fortress_enclosure_desc
+		gold_cost = 7125
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 107
+		upgrades_from = yby_steppe_defended_outwork
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 4
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	yby_steppe_grand_steppe_redoubt = {
+		desc = yby_steppe_grand_steppe_redoubt_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = yby_steppe_fortress_enclosure
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 6
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		clan_sentiment = 1
+		global_movement_speed = 0.08
+	}
+}

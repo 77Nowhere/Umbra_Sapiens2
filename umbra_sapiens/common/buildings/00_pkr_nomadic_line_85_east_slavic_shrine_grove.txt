@@ -1,0 +1,176 @@
+nomad = {
+	pkr_east_slavic_prayer_stone = {
+		desc = pkr_east_slavic_prayer_stone_desc
+		piety_cost = 57
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+	}
+	pkr_east_slavic_wooden_idol = {
+		desc = pkr_east_slavic_wooden_idol_desc
+		piety_cost = 135
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 68
+		upgrades_from = pkr_east_slavic_prayer_stone
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.25
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	pkr_east_slavic_ancestor_grove = {
+		desc = pkr_east_slavic_ancestor_grove_desc
+		piety_cost = 270
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 75
+		upgrades_from = pkr_east_slavic_wooden_idol
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.55
+		clan_sentiment = 1
+		vassal_opinion = 1
+	}
+	pkr_east_slavic_spirit_hut = {
+		desc = pkr_east_slavic_spirit_hut_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 81
+		upgrades_from = pkr_east_slavic_ancestor_grove
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		church_opinion = 3
+	}
+	pkr_east_slavic_sanctuary_pavilion = {
+		desc = pkr_east_slavic_sanctuary_pavilion_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 89
+		upgrades_from = pkr_east_slavic_spirit_hut
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 6
+		vassal_opinion = 2
+	}
+	pkr_east_slavic_blessed_glade = {
+		desc = pkr_east_slavic_blessed_glade_desc
+		piety_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 97
+		upgrades_from = pkr_east_slavic_sanctuary_pavilion
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 10
+		vassal_opinion = 4
+	}
+	pkr_east_slavic_priests_hall = {
+		desc = pkr_east_slavic_priests_hall_desc
+		piety_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 103
+		upgrades_from = pkr_east_slavic_blessed_glade
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 16
+		vassal_opinion = 6
+	}
+	pkr_east_slavic_diviners_chamber = {
+		desc = pkr_east_slavic_diviners_chamber_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 110
+		upgrades_from = pkr_east_slavic_priests_hall
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 25
+		vassal_opinion = 10
+	}
+	pkr_east_slavic_shrine_hall = {
+		desc = pkr_east_slavic_shrine_hall_desc
+		piety_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 115
+		upgrades_from = pkr_east_slavic_diviners_chamber
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 40
+		vassal_opinion = 14
+	}
+	pkr_east_slavic_sacred_grove = {
+		desc = pkr_east_slavic_sacred_grove_desc
+		piety_cost = 30000
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 120
+		upgrades_from = pkr_east_slavic_shrine_hall
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 70
+		vassal_opinion = 20
+	}
+}

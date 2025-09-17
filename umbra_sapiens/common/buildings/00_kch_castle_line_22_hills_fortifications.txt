@@ -1,0 +1,209 @@
+castle = {
+	kch_hill_camp = {
+		desc = kch_hill_camp_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 30
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		levy_size = 0.02
+	}
+	kch_earthwork_bank = {
+		desc = kch_earthwork_bank_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 35
+		upgrades_from = kch_hill_camp
+		prerequisites = {
+			kch_hill_camp
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.04
+		levy_size = 0.03
+	}
+	kch_hilltop_palisade = {
+		desc = kch_hilltop_palisade_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 38
+		upgrades_from = kch_earthwork_bank
+		prerequisites = {
+			kch_earthwork_bank
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.11
+		garrison_size = 0.06
+		levy_size = 0.04
+	}
+	kch_stone_ringfort = {
+		desc = kch_stone_ringfort_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 45
+		upgrades_from = kch_hilltop_palisade
+		prerequisites = {
+			kch_hilltop_palisade
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.21
+		garrison_size = 0.09
+		levy_size = 0.06
+		land_morale = 0.03
+	}
+	kch_guarded_hillfort = {
+		desc = kch_guarded_hillfort_desc
+		prestige_cost = 360
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 55
+		upgrades_from = kch_stone_ringfort
+		prerequisites = {
+			kch_stone_ringfort
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.34
+		garrison_size = 0.13
+		levy_size = 0.09
+		heavy_infantry_defensive = 0.04
+	}
+	kch_wooded_bastion = {
+		desc = kch_wooded_bastion_desc
+		piety_cost = 480
+		extra_tech_building_start = 999
+		build_time = 1250
+		ai_creation_factor = 60
+		upgrades_from = kch_guarded_hillfort
+		prerequisites = {
+			kch_guarded_hillfort
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.47
+		garrison_size = 0.17
+		levy_size = 0.12
+		archers_defensive = 0.06
+	}
+	kch_hilltop_tower = {
+		desc = kch_hilltop_tower_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 65
+		upgrades_from = kch_wooded_bastion
+		prerequisites = {
+			kch_wooded_bastion
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.60
+		garrison_size = 0.24
+		levy_size = 0.17
+		land_morale = 0.08
+	}
+	kch_hillside_keep = {
+		desc = kch_hillside_keep_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 80
+		upgrades_from = kch_hilltop_tower
+		prerequisites = {
+			kch_hilltop_tower
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.80
+		garrison_size = 0.30
+		levy_size = 0.22
+		heavy_infantry_defensive = 0.1
+		tax_income = 0.25
+	}
+	kch_hill_citadel = {
+		desc = kch_hill_citadel_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 3300
+		ai_creation_factor = 100
+		upgrades_from = kch_hillside_keep
+		prerequisites = {
+			kch_hillside_keep
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 1.06
+		garrison_size = 0.41
+		levy_size = 0.29
+		archers_offensive = 0.12
+		tax_income = 0.50
+	}
+	kch_cairn_fortress = {
+		desc = kch_cairn_fortress_desc
+		gold_cost = 7200
+		extra_tech_building_start = 999
+		build_time = 4400
+		ai_creation_factor = 110
+		upgrades_from = kch_hill_citadel
+		prerequisites = {
+			kch_hill_citadel
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.45
+		garrison_size = 0.60
+		levy_size = 0.37
+		heavy_infantry_defensive = 0.2
+		archers_defensive = 0.2
+		liege_prestige = 2
+		tax_income = 0.75
+	}
+}

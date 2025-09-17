@@ -1,0 +1,188 @@
+nomad = {
+	omg_singing_stone = {
+		desc = omg_singing_stone_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.15
+		clan_sentiment = 1
+	}
+	omg_bards_tent = {
+		desc = omg_bards_tent_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 69
+		upgrades_from = omg_singing_stone
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.3
+		max_population = 100
+		clan_sentiment = 1
+	}
+	omg_musicians_pavilion = {
+		desc = omg_musicians_pavilion_desc
+		gold_cost = 244
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 78
+		upgrades_from = omg_bards_tent
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 0.6
+		clan_sentiment = 1
+		max_population = 100
+	}
+	omg_recitation_room = {
+		desc = omg_recitation_room_desc
+		gold_cost = 563
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 88
+		upgrades_from = omg_musicians_pavilion
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.2
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	omg_lyricists_hall = {
+		desc = omg_lyricists_hall_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 97
+		upgrades_from = omg_recitation_room
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.5
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	omg_poets_chamber = {
+		desc = omg_poets_chamber_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 102
+		upgrades_from = omg_lyricists_hall
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.5
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	omg_minstrel_gallery = {
+		desc = omg_minstrel_gallery_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 107
+		upgrades_from = omg_poets_chamber
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1.5
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	omg_eisteddfod_hall = {
+		desc = omg_eisteddfod_hall_desc
+		gold_cost = 8250
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 111
+		upgrades_from = omg_minstrel_gallery
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		levy_size = 0.05
+	}
+	omg_high_bards_den = {
+		desc = omg_high_bards_den_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 115
+		upgrades_from = omg_eisteddfod_hall
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		levy_size = 0.1
+	}
+	omg_celtic_bardic_court = {
+		desc = omg_celtic_bardic_court_desc
+		gold_cost = 30000
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 120
+		upgrades_from = omg_high_bards_den
+		potential = {
+			culture_group = celtic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_prestige = 1
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		levy_size = 0.18
+		liege_prestige = 1
+	}
+}

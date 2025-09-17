@@ -1,0 +1,170 @@
+nomad = {
+	qrm_wooden_reliquary_box = {
+		desc = qrm_wooden_reliquary_box_desc
+		piety_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.2
+		clan_sentiment = 1
+	}
+	qrm_stone_chest = {
+		desc = qrm_stone_chest_desc
+		piety_cost = 94
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 70
+		upgrades_from = qrm_wooden_reliquary_box
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.5
+		clan_sentiment = 1
+	}
+	qrm_guarded_shrine = {
+		desc = qrm_guarded_shrine_desc
+		piety_cost = 263
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 80
+		upgrades_from = qrm_stone_chest
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	qrm_chamber_of_relics = {
+		desc = qrm_chamber_of_relics_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 85
+		upgrades_from = qrm_guarded_shrine
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.8
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	qrm_sanctified_room = {
+		desc = qrm_sanctified_room_desc
+		piety_cost = 975
+		extra_tech_building_start = 999
+		build_time = 293
+		ai_creation_factor = 90
+		upgrades_from = qrm_chamber_of_relics
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 6
+	}
+	qrm_protected_pavilion = {
+		desc = qrm_protected_pavilion_desc
+		piety_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = qrm_sanctified_room
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	qrm_priests_chamber = {
+		desc = qrm_priests_chamber_desc
+		piety_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = qrm_protected_pavilion
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 14
+	}
+	qrm_holy_hall = {
+		desc = qrm_holy_hall_desc
+		piety_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 105
+		upgrades_from = qrm_priests_chamber
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 18
+	}
+	qrm_canopied_sanctuary = {
+		desc = qrm_canopied_sanctuary_desc
+		piety_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 108
+		upgrades_from = qrm_holy_hall
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 24
+	}
+	qrm_grand_reliquary = {
+		desc = qrm_grand_reliquary_desc
+		piety_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 1688
+		ai_creation_factor = 110
+		upgrades_from = qrm_canopied_sanctuary
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 36
+		vassal_opinion = 6
+	}
+}

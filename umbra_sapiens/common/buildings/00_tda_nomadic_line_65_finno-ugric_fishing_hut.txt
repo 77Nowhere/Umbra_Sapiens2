@@ -1,0 +1,177 @@
+nomad = {
+	tda_finno_ugric_reed_mat = {
+		desc = tda_finno_ugric_reed_mat_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 62
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.016
+	}
+	tda_finno_ugric_fish_net_stand = {
+		desc = tda_finno_ugric_fish_net_stand_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 65
+		upgrades_from = tda_finno_ugric_reed_mat
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.133
+	}
+	tda_finno_ugric_riverside_tent = {
+		desc = tda_finno_ugric_riverside_tent_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 71
+		upgrades_from = tda_finno_ugric_fish_net_stand
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	tda_finno_ugric_boat_shelter = {
+		desc = tda_finno_ugric_boat_shelter_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 78
+		upgrades_from = tda_finno_ugric_riverside_tent
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.04
+	}
+	tda_finno_ugric_fish_smokehouse = {
+		desc = tda_finno_ugric_fish_smokehouse_desc
+		gold_cost = 510
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 84
+		upgrades_from = tda_finno_ugric_boat_shelter
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		supply_limit = 0.1
+		nomad_tax_modifier = 0.266
+	}
+	tda_finno_ugric_fish_drying_pavilion = {
+		desc = tda_finno_ugric_fish_drying_pavilion_desc
+		gold_cost = 1013
+		extra_tech_building_start = 999
+		build_time = 657
+		ai_creation_factor = 88
+		upgrades_from = tda_finno_ugric_fish_smokehouse
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.487
+		retinuesize_perc = 0.06
+	}
+	tda_finno_ugric_hunters_lean_to = {
+		desc = tda_finno_ugric_hunters_lean_to_desc
+		gold_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 93
+		upgrades_from = tda_finno_ugric_fish_drying_pavilion
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		global_movement_speed = 0.08
+		levy_size = 0.07
+	}
+	tda_finno_ugric_boathouse = {
+		desc = tda_finno_ugric_boathouse_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 1032
+		ai_creation_factor = 98
+		upgrades_from = tda_finno_ugric_hunters_lean_to
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.04
+		global_movement_speed = 0.12
+		retinuesize_perc = 0.13
+	}
+	tda_finno_ugric_ice_fishing_house = {
+		desc = tda_finno_ugric_ice_fishing_house_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 104
+		upgrades_from = tda_finno_ugric_boathouse
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		global_winter_supply = 0.17
+		supply_limit = 0.18
+	}
+	tda_finno_ugric_fisher_hall = {
+		desc = tda_finno_ugric_fisher_hall_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 1725
+		ai_creation_factor = 110
+		upgrades_from = tda_finno_ugric_ice_fishing_house
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.26
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.797
+		retinuesize_perc = 0.22
+	}
+}

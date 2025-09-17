@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+tp_elite_barracks_1;Wooden Workshop;;;;;x
+tp_elite_barracks_1_desc;A simple timber-framed shack where monks and novices craft religious tools and repair vestments. Provides basic support for temple activities.;;;;;x
+tp_elite_barracks_2;Stone Workshop;;;;;x
+tp_elite_barracks_2_desc;A sturdier stone building fitted with workbenches for masons, woodworkers, and metal artisans. Enables improved repairs and sacred object production.;;;;;x
+tp_elite_barracks_3;Craftsmens Shed;;;;;x
+tp_elite_barracks_3_desc;A cluster of sheds and lean-tos where skilled craftsmen aid in the repair and creation of sacred relics, icons, and temple furnishings.;;;;;x
+tp_elite_barracks_4;Artisan Studio;;;;;x
+tp_elite_barracks_4_desc;A refined building with dedicated workrooms for master artisans producing intricate reliquaries, illuminated manuscripts, and ceremonial regalia for temple use.;;;;;x
+tp_elite_barracks_5;Guild Workshop;;;;;x
+tp_elite_barracks_5_desc;A large, stone-built workshop officially recognized by craft guilds, attracting renowned artisans and generating significant temple wealth and innovation.;;;;;x
+tp_elite_barracks_6;Toolmakers Hall;;;;;x
+tp_elite_barracks_6_desc;Hall for specialist toolmakers producing advanced instruments for both temple artisans and religious ceremonies, greatly enhancing productivity and learning.;;;;;x
+vzb_artificers_chamber;Artificers Chamber;;;;;x
+vzb_artificers_chamber_desc;Chamber of master artificers producing unique relics and complex mechanisms for temple defense and prestige, drawing pilgrims and enhancing temple fame.;;;;;x
+vzb_masters_workshop;Masters Workshop;;;;;x
+vzb_masters_workshop_desc;A prestigious workshop for the temples greatest craftsmen, producing legendary works, sacred objects, and awe-inspiring ornamentation admired across realms.;;;;;x
+vzb_guildhall_workshop;Guildhall Workshop;;;;;x
+vzb_guildhall_workshop_desc;The central guildhall for temple artisans, hosting workshops, archives, and schools for training the next generation of religious craftsmen and scholars.;;;;;x
+vzb_sanctuary_workshop_complex;Sanctuary Workshop Complex;;;;;x
+vzb_sanctuary_workshop_complex_desc;A grand complex housing all temple crafts: reliquary vaults, scriptoria, forges, and schools. It is a beacon of religious learning, wealth, and innovation for the faith.;;;;;x

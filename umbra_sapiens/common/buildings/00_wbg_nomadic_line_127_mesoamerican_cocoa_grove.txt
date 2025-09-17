@@ -1,0 +1,172 @@
+nomad = {
+	wbg_wild_cocoa_stand = {
+		desc = wbg_wild_cocoa_stand_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		max_population = 100
+		nomad_tax_modifier = 0.133
+	}
+	wbg_planted_grove = {
+		desc = wbg_planted_grove_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 68
+		upgrades_from = wbg_wild_cocoa_stand
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.051
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	wbg_fenced_orchard = {
+		desc = wbg_fenced_orchard_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 72
+		upgrades_from = wbg_planted_grove
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population = 100
+		garrison_size = 0.1
+	}
+	wbg_fermentation_hut = {
+		desc = wbg_fermentation_hut_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 76
+		upgrades_from = wbg_fenced_orchard
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		max_population = 100
+		liege_prestige = 0.1
+	}
+	wbg_expanded_grove = {
+		desc = wbg_expanded_grove_desc
+		gold_cost = 713
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 84
+		upgrades_from = wbg_fermentation_hut
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	wbg_walled_orchard = {
+		desc = wbg_walled_orchard_desc
+		gold_cost = 1388
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 92
+		upgrades_from = wbg_expanded_grove
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		max_population = 100
+		garrison_size = 0.2
+	}
+	wbg_cocoa_market_pavilion = {
+		desc = wbg_cocoa_market_pavilion_desc
+		gold_cost = 2775
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 98
+		upgrades_from = wbg_walled_orchard
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		supply_limit = 0.1
+	}
+	wbg_syrup_hall = {
+		desc = wbg_syrup_hall_desc
+		gold_cost = 5550
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 105
+		upgrades_from = wbg_cocoa_market_pavilion
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		liege_prestige = 0.25
+	}
+	wbg_merchants_grove = {
+		desc = wbg_merchants_grove_desc
+		gold_cost = 9750
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 108
+		upgrades_from = wbg_syrup_hall
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		global_movement_speed = 0.06
+	}
+	wbg_mesoamerican_cocoa_estate = {
+		desc = wbg_mesoamerican_cocoa_estate_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1238
+		ai_creation_factor = 110
+		upgrades_from = wbg_merchants_grove
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+}

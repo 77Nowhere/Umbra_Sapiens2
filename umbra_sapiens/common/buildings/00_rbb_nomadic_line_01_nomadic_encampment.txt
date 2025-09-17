@@ -1,0 +1,150 @@
+nomad = {
+	rbb_wagon_circle = {
+		desc = rbb_wagon_circle_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.12
+	}
+	rbb_hide_tent_cluster = {
+		desc = rbb_hide_tent_cluster_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 70
+		upgrades_from = rbb_wagon_circle
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.24
+		clan_sentiment = 1
+	}
+	rbb_yurt_hamlet = {
+		desc = rbb_yurt_hamlet_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 78
+		upgrades_from = rbb_hide_tent_cluster
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	rbb_leather_pavilion_camp = {
+		desc = rbb_leather_pavilion_camp_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 86
+		upgrades_from = rbb_yurt_hamlet
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	rbb_wooden_yurt_village = {
+		desc = rbb_wooden_yurt_village_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 92
+		upgrades_from = rbb_leather_pavilion_camp
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		levy_size = 0.18
+	}
+	rbb_reinforced_tent_settlement = {
+		desc = rbb_reinforced_tent_settlement_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 97
+		upgrades_from = rbb_wooden_yurt_village
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		levy_size = 0.36
+		supply_limit = 0.3
+	}
+	rbb_timber_framed_yurt_town = {
+		desc = rbb_timber_framed_yurt_town_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 101
+		upgrades_from = rbb_reinforced_tent_settlement
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 0.62
+		clan_sentiment = 1
+	}
+	rbb_palisaded_nomad_village = {
+		desc = rbb_palisaded_nomad_village_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = rbb_timber_framed_yurt_town
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.18
+		levy_size = 1.1
+		garrison_size = 0.5
+	}
+	rbb_defended_encampment = {
+		desc = rbb_defended_encampment_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 108
+		upgrades_from = rbb_palisaded_nomad_village
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 1.6
+		garrison_size = 0.8
+		supply_limit = 0.5
+	}
+	rbb_fortified_caravanserai = {
+		desc = rbb_fortified_caravanserai_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = rbb_defended_encampment
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		levy_size = 2.5
+		garrison_size = 1.2
+		supply_limit = 1
+		clan_sentiment = 1
+	}
+}

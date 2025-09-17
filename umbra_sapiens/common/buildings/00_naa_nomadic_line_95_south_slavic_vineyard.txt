@@ -1,0 +1,211 @@
+nomad = {
+	naa_wild_vine_patch = {
+		desc = naa_wild_vine_patch_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+		clan_sentiment = 1
+	}
+	naa_trellised_vineyard = {
+		desc = naa_trellised_vineyard_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 70
+		upgrades_from = naa_wild_vine_patch
+		prerequisites = {
+			naa_wild_vine_patch
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.133
+	}
+	naa_harvest_hut = {
+		desc = naa_harvest_hut_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 75
+		upgrades_from = naa_trellised_vineyard
+		prerequisites = {
+			naa_trellised_vineyard
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.04
+	}
+	naa_wine_press_pavilion = {
+		desc = naa_wine_press_pavilion_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 80
+		upgrades_from = naa_harvest_hut
+		prerequisites = {
+			naa_harvest_hut
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.266
+		clan_sentiment = 1
+	}
+	naa_barrel_room = {
+		desc = naa_barrel_room_desc
+		gold_cost = 713
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 90
+		upgrades_from = naa_wine_press_pavilion
+		prerequisites = {
+			naa_wine_press_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.532
+		tradevalue = 1.513
+	}
+	naa_walled_vineyard = {
+		desc = naa_walled_vineyard_desc
+		gold_cost = 1425
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 95
+		upgrades_from = naa_barrel_room
+		prerequisites = {
+			naa_barrel_room
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.399
+		supply_limit = 0.1
+		tradevalue = 1.513
+	}
+	naa_vintners_hall = {
+		desc = naa_vintners_hall_desc
+		gold_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 100
+		upgrades_from = naa_walled_vineyard
+		prerequisites = {
+			naa_walled_vineyard
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.443
+		clan_sentiment = 1
+		tradevalue = 1.513
+	}
+	naa_wine_cellar = {
+		desc = naa_wine_cellar_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 105
+		upgrades_from = naa_vintners_hall
+		prerequisites = {
+			naa_vintners_hall
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 120
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		liege_prestige = 0.15
+	}
+	naa_merchants_pavilion = {
+		desc = naa_merchants_pavilion_desc
+		gold_cost = 9750
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 108
+		upgrades_from = naa_wine_cellar
+		prerequisites = {
+			naa_wine_cellar
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 180
+		max_manpower_mult = 0.22
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		liege_prestige = 0.3
+	}
+	naa_south_slavic_grand_winery = {
+		desc = naa_south_slavic_grand_winery_desc
+		gold_cost = 19500
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = naa_merchants_pavilion
+		prerequisites = {
+			naa_merchants_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 300
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		liege_prestige = 0.6
+		clan_sentiment = 1
+	}
+}

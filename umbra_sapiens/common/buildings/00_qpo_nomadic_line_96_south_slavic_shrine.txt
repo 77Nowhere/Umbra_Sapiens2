@@ -1,0 +1,200 @@
+nomad = {
+	qpo_south_slavic_shrine_wicker_stand = {
+		desc = qpo_south_slavic_shrine_wicker_stand_desc
+		piety_cost = 34
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 60
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.05
+		clan_sentiment = 1
+	}
+	qpo_south_slavic_shrine_prayer_hut = {
+		desc = qpo_south_slavic_shrine_prayer_hut_desc
+		piety_cost = 68
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		upgrades_from = qpo_south_slavic_shrine_wicker_stand
+		prerequisites = {
+			qpo_south_slavic_shrine_wicker_stand
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	qpo_south_slavic_shrine_ancestors_pavilion = {
+		desc = qpo_south_slavic_shrine_ancestors_pavilion_desc
+		piety_cost = 150
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = qpo_south_slavic_shrine_prayer_hut
+		prerequisites = {
+			qpo_south_slavic_shrine_prayer_hut
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.16
+		clan_sentiment = 1
+		vassal_opinion = 3
+	}
+	qpo_south_slavic_shrine_spirit_shelter = {
+		desc = qpo_south_slavic_shrine_spirit_shelter_desc
+		piety_cost = 300
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = qpo_south_slavic_shrine_ancestors_pavilion
+		prerequisites = {
+			qpo_south_slavic_shrine_ancestors_pavilion
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.25
+		clan_sentiment = 1
+		vassal_opinion = 4
+	}
+	qpo_south_slavic_shrine_priests_room = {
+		desc = qpo_south_slavic_shrine_priests_room_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = qpo_south_slavic_shrine_spirit_shelter
+		prerequisites = {
+			qpo_south_slavic_shrine_spirit_shelter
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.38
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	qpo_south_slavic_shrine_blessed_glade = {
+		desc = qpo_south_slavic_shrine_blessed_glade_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 90
+		upgrades_from = qpo_south_slavic_shrine_priests_room
+		prerequisites = {
+			qpo_south_slavic_shrine_priests_room
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.55
+		clan_sentiment = 1
+		church_opinion = 7
+	}
+	qpo_south_slavic_shrine_sanctified_hall = {
+		desc = qpo_south_slavic_shrine_sanctified_hall_desc
+		piety_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 95
+		upgrades_from = qpo_south_slavic_shrine_blessed_glade
+		prerequisites = {
+			qpo_south_slavic_shrine_blessed_glade
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.8
+		clan_sentiment = 1
+		church_opinion = 10
+		vassal_opinion = 6
+	}
+	qpo_south_slavic_shrine_diviners_chamber = {
+		desc = qpo_south_slavic_shrine_diviners_chamber_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 100
+		upgrades_from = qpo_south_slavic_shrine_sanctified_hall
+		prerequisites = {
+			qpo_south_slavic_shrine_sanctified_hall
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		church_opinion = 15
+	}
+	qpo_south_slavic_shrine_shrine_pavilion = {
+		desc = qpo_south_slavic_shrine_shrine_pavilion_desc
+		piety_cost = 5625
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 105
+		upgrades_from = qpo_south_slavic_shrine_diviners_chamber
+		prerequisites = {
+			qpo_south_slavic_shrine_diviners_chamber
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.7
+		clan_sentiment = 1
+		church_opinion = 20
+		vassal_opinion = 10
+	}
+	qpo_south_slavic_shrine_south_slavic_sanctuary = {
+		desc = qpo_south_slavic_shrine_south_slavic_sanctuary_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = qpo_south_slavic_shrine_shrine_pavilion
+		prerequisites = {
+			qpo_south_slavic_shrine_shrine_pavilion
+		}
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 30
+		vassal_opinion = 15
+	}
+}

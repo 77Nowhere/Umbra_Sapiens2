@@ -1,0 +1,156 @@
+nomad = {
+	sct_stone_tool_shed = {
+		desc = sct_stone_tool_shed_desc
+		gold_cost = 45
+		build_time = 57
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		manpower_growth = 0.030
+		nomad_tax_modifier = 0.178
+	}
+	sct_wooden_weapons_bench = {
+		desc = sct_wooden_weapons_bench_desc
+		gold_cost = 135
+		build_time = 94
+		extra_tech_building_start = 999
+		ai_creation_factor = 68
+		upgrades_from = sct_stone_tool_shed
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		manpower_growth = 0.030
+		archers_offensive = 0.05
+	}
+	sct_basic_forge = {
+		desc = sct_basic_forge_desc
+		gold_cost = 525
+		build_time = 150
+		extra_tech_building_start = 999
+		ai_creation_factor = 73
+		upgrades_from = sct_wooden_weapons_bench
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		manpower_growth = 0.037
+		archers_offensive = 0.1
+		light_cavalry_offensive = 0.07
+	}
+	sct_iron_weapons_stand = {
+		desc = sct_iron_weapons_stand_desc
+		gold_cost = 1500
+		build_time = 263
+		extra_tech_building_start = 999
+		ai_creation_factor = 82
+		upgrades_from = sct_basic_forge
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		manpower_growth = 0.030
+		archers_offensive = 0.18
+		light_cavalry_offensive = 0.15
+	}
+	sct_composite_bow_workshop = {
+		desc = sct_composite_bow_workshop_desc
+		gold_cost = 4500
+		build_time = 413
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = sct_iron_weapons_stand
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		manpower_growth = 0.030
+		archers_offensive = 0.3
+		archers_morale = 0.15
+	}
+	sct_lance_makers_tent = {
+		desc = sct_lance_makers_tent_desc
+		gold_cost = 6000
+		build_time = 638
+		extra_tech_building_start = 999
+		ai_creation_factor = 104
+		upgrades_from = sct_composite_bow_workshop
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.22
+		manpower_growth = 0.030
+		light_cavalry_offensive = 0.4
+		light_cavalry_morale = 0.22
+	}
+	sct_fine_blade_smithy = {
+		desc = sct_fine_blade_smithy_desc
+		gold_cost = 7500
+		build_time = 938
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = sct_lance_makers_tent
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.34
+		manpower_growth = 0.030
+		heavy_infantry_offensive = 0.25
+		levy_size = 0.15
+	}
+	sct_ornamented_armory = {
+		desc = sct_ornamented_armory_desc
+		gold_cost = 9000
+		build_time = 1313
+		extra_tech_building_start = 999
+		ai_creation_factor = 115
+		upgrades_from = sct_fine_blade_smithy
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.22
+		manpower_growth = 0.060
+		heavy_infantry_offensive = 0.45
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+	sct_master_weapons_pavilion = {
+		desc = sct_master_weapons_pavilion_desc
+		gold_cost = 11250
+		build_time = 1875
+		extra_tech_building_start = 999
+		ai_creation_factor = 120
+		upgrades_from = sct_ornamented_armory
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.06
+		manpower_growth = 0.060
+		heavy_infantry_offensive = 0.8
+		levy_size = 0.3
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+	sct_steppe_arsenal = {
+		desc = sct_steppe_arsenal_desc
+		gold_cost = 15000
+		build_time = 3000
+		extra_tech_building_start = 999
+		ai_creation_factor = 125
+		upgrades_from = sct_master_weapons_pavilion
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.06
+		manpower_growth = 0.060
+		heavy_infantry_offensive = 1.5
+		archers_offensive = 0.8
+		light_cavalry_offensive = 0.8
+		levy_size = 0.6
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+}

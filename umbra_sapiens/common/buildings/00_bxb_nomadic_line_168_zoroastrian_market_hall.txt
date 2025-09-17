@@ -1,0 +1,184 @@
+nomad = {
+	bxb_open_table = {
+		desc = bxb_open_table_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.178
+		max_population_mult = 0.005
+	}
+	bxb_barter_patch = {
+		desc = bxb_barter_patch_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = bxb_open_table
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.355
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	bxb_traders_tent = {
+		desc = bxb_traders_tent_desc
+		gold_cost = 139
+		extra_tech_building_start = 999
+		build_time = 119
+		ai_creation_factor = 75
+		upgrades_from = bxb_barter_patch
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	bxb_merchants_pavilion = {
+		desc = bxb_merchants_pavilion_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 80
+		upgrades_from = bxb_traders_tent
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	bxb_market_stand = {
+		desc = bxb_market_stand_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 273
+		ai_creation_factor = 85
+		upgrades_from = bxb_merchants_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		tradevalue = 0.757
+	}
+	bxb_exchange_room = {
+		desc = bxb_exchange_room_desc
+		gold_cost = 1163
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 90
+		upgrades_from = bxb_market_stand
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	bxb_market_hall = {
+		desc = bxb_market_hall_desc
+		gold_cost = 2325
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 95
+		upgrades_from = bxb_exchange_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	bxb_zoroastrian_grand_market = {
+		desc = bxb_zoroastrian_grand_market_desc
+		piety_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = bxb_grand_market_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	bxb_guild_pavilion = {
+		desc = bxb_guild_pavilion_desc
+		gold_cost = 4650
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 100
+		upgrades_from = bxb_market_hall
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	bxb_grand_market_room = {
+		desc = bxb_grand_market_room_desc
+		gold_cost = 9375
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = bxb_guild_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		clan_sentiment = 1
+		global_movement_speed = 0.04
+	}
+}

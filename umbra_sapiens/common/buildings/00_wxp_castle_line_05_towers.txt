@@ -1,0 +1,165 @@
+castle = {
+	wxp_watch_post_1 = {
+		desc = wxp_watch_post_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 22
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.5
+		levy_size = 0.02
+		archers = 10
+	}
+	wxp_signal_tower_3 = {
+		desc = wxp_signal_tower_3_desc
+		prestige_cost = 85
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 32
+		upgrades_from = wxp_guard_tower_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		levy_size = 0.05
+		garrison_size = 0.04
+		archers = 10
+	}
+	wxp_guard_tower_2 = {
+		desc = wxp_guard_tower_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 280
+		ai_creation_factor = 28
+		upgrades_from = wxp_watch_post_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		levy_size = 0.03
+		garrison_size = 0.02
+		archers = 10
+	}
+	wxp_flanking_tower_4 = {
+		desc = wxp_flanking_tower_4_desc
+		gold_cost = 230
+		extra_tech_building_start = 999
+		build_time = 620
+		ai_creation_factor = 38
+		upgrades_from = wxp_signal_tower_3
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.15
+		levy_size = 0.09
+		garrison_size = 0.07
+		archers = 10
+	}
+	wxp_arrow_tower_5 = {
+		desc = wxp_arrow_tower_5_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 950
+		ai_creation_factor = 44
+		upgrades_from = wxp_flanking_tower_4
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.25
+		levy_size = 0.15
+		garrison_size = 0.11
+		archers_defensive = 0.1
+		archers = 10
+	}
+	wxp_round_tower_6 = {
+		desc = wxp_round_tower_6_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 52
+		upgrades_from = wxp_arrow_tower_5
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.41
+		levy_size = 0.29
+		garrison_size = 0.22
+		archers_defensive = 0.18
+		heavy_infantry_defensive = 0.08
+		archers = 10
+	}
+	wxp_holed_tower_7 = {
+		desc = wxp_holed_tower_7_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 60
+		upgrades_from = wxp_round_tower_6
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.6
+		levy_size = 0.49
+		garrison_size = 0.33
+		archers_defensive = 0.25
+		heavy_infantry_defensive = 0.17
+		archers = 10
+	}
+	wxp_high_keep_tower_8 = {
+		desc = wxp_high_keep_tower_8_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 70
+		upgrades_from = wxp_holed_tower_7
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.86
+		levy_size = 0.71
+		garrison_size = 0.48
+		archers_defensive = 0.33
+		heavy_infantry_defensive = 0.28
+		liege_prestige = 0.5
+		archers = 10
+	}
+	wxp_bastion_tower_9 = {
+		desc = wxp_bastion_tower_9_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 4100
+		ai_creation_factor = 85
+		upgrades_from = wxp_high_keep_tower_8
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 1.19
+		levy_size = 1.05
+		garrison_size = 0.68
+		archers_defensive = 0.42
+		heavy_infantry_defensive = 0.38
+		liege_prestige = 0.9
+		archers = 10
+	}
+	wxp_grand_turret_10 = {
+		desc = wxp_grand_turret_10_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 6000
+		ai_creation_factor = 110
+		upgrades_from = wxp_bastion_tower_9
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.71
+		levy_size = 1.53
+		garrison_size = 1.02
+		archers_defensive = 0.55
+		heavy_infantry_defensive = 0.51
+		liege_prestige = 1.5
+		land_morale = 0.1
+		archers = 10
+	}
+}

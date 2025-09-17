@@ -1,0 +1,170 @@
+nomad = {
+	zxs_nomad_stone_platform = {
+		desc = zxs_nomad_stone_platform_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 70
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+	}
+	zxs_nomad_walled_stand = {
+		desc = zxs_nomad_walled_stand_desc
+		gold_cost = 98
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 75
+		upgrades_from = zxs_nomad_stone_platform
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.2
+		clan_sentiment = 1
+	}
+	zxs_nomad_circular_pavilion = {
+		desc = zxs_nomad_circular_pavilion_desc
+		gold_cost = 218
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 80
+		upgrades_from = zxs_nomad_walled_stand
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.4
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	zxs_nomad_raised_chamber = {
+		desc = zxs_nomad_raised_chamber_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 85
+		upgrades_from = zxs_nomad_circular_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.7
+		clan_sentiment = 1
+		church_opinion = 3
+	}
+	zxs_nomad_priests_room = {
+		desc = zxs_nomad_priests_room_desc
+		piety_cost = 488
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 90
+		upgrades_from = zxs_nomad_raised_chamber
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	zxs_nomad_blessed_hall = {
+		desc = zxs_nomad_blessed_hall_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 95
+		upgrades_from = zxs_nomad_priests_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 7
+	}
+	zxs_nomad_sanctified_room = {
+		desc = zxs_nomad_sanctified_room_desc
+		piety_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 98
+		upgrades_from = zxs_nomad_blessed_hall
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	zxs_nomad_holy_tower = {
+		desc = zxs_nomad_holy_tower_desc
+		piety_cost = 3075
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 102
+		upgrades_from = zxs_nomad_sanctified_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 14
+	}
+	zxs_nomad_sanctuary_pavilion = {
+		desc = zxs_nomad_sanctuary_pavilion_desc
+		piety_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 106
+		upgrades_from = zxs_nomad_holy_tower
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 18
+	}
+	zxs_nomad_zoroastrian_tower_of_silence = {
+		desc = zxs_nomad_zoroastrian_tower_of_silence_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 110
+		upgrades_from = zxs_nomad_sanctuary_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 28
+		vassal_opinion = 7
+	}
+}

@@ -1,0 +1,212 @@
+nomad = {
+	hsl_dravidian_earthen_pit = {
+		desc = hsl_dravidian_earthen_pit_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.222
+	}
+	hsl_dravidian_woven_basket = {
+		desc = hsl_dravidian_woven_basket_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = hsl_dravidian_earthen_pit
+		prerequisites = {
+			hsl_dravidian_earthen_pit
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.02
+	}
+	hsl_dravidian_mudbrick_silo = {
+		desc = hsl_dravidian_mudbrick_silo_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 78
+		upgrades_from = hsl_dravidian_woven_basket
+		prerequisites = {
+			hsl_dravidian_woven_basket
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.443
+		garrison_size = 0.03
+	}
+	hsl_dravidian_raised_granary = {
+		desc = hsl_dravidian_raised_granary_desc
+		gold_cost = 195
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 84
+		upgrades_from = hsl_dravidian_mudbrick_silo
+		prerequisites = {
+			hsl_dravidian_mudbrick_silo
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		max_population_mult = 0.005
+		garrison_size = 0.06
+	}
+	hsl_dravidian_guarded_storehouse = {
+		desc = hsl_dravidian_guarded_storehouse_desc
+		gold_cost = 390
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 91
+		upgrades_from = hsl_dravidian_raised_granary
+		prerequisites = {
+			hsl_dravidian_raised_granary
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		garrison_size = 0.12
+		clan_sentiment = 1
+	}
+	hsl_dravidian_rodent_proof_hut = {
+		desc = hsl_dravidian_rodent_proof_hut_desc
+		gold_cost = 780
+		extra_tech_building_start = 999
+		build_time = 259
+		ai_creation_factor = 97
+		upgrades_from = hsl_dravidian_guarded_storehouse
+		prerequisites = {
+			hsl_dravidian_guarded_storehouse
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		garrison_size = 0.16
+		nomad_tax_modifier = 0.709
+	}
+	hsl_dravidian_expanded_store = {
+		desc = hsl_dravidian_expanded_store_desc
+		gold_cost = 1560
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 102
+		upgrades_from = hsl_dravidian_rodent_proof_hut
+		prerequisites = {
+			hsl_dravidian_rodent_proof_hut
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 120
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		levy_size = 0.07
+		clan_sentiment = 1
+	}
+	hsl_dravidian_market_pavilion = {
+		desc = hsl_dravidian_market_pavilion_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 106
+		upgrades_from = hsl_dravidian_expanded_store
+		prerequisites = {
+			hsl_dravidian_expanded_store
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 180
+		max_manpower_mult = 0.02
+		liege_prestige = 0.9
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+	}
+	hsl_dravidian_grain_exchange_hall = {
+		desc = hsl_dravidian_grain_exchange_hall_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 109
+		upgrades_from = hsl_dravidian_market_pavilion
+		prerequisites = {
+			hsl_dravidian_market_pavilion
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 280
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	hsl_dravidian_rice_granary = {
+		desc = hsl_dravidian_rice_granary_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = hsl_dravidian_grain_exchange_hall
+		prerequisites = {
+			hsl_dravidian_grain_exchange_hall
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 500
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		levy_size = 0.2
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

@@ -1,0 +1,173 @@
+castle = {
+	hlv_grain_store = {
+		desc = hlv_grain_store_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 30
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.1
+		garrison_size = 0.02
+	}
+	hlv_wooden_granary = {
+		desc = hlv_wooden_granary_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 325
+		ai_creation_factor = 35
+		upgrades_from = hlv_grain_store
+		prerequisites = {
+			hlv_grain_store
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.2
+		garrison_size = 0.04
+		levy_size = 0.01
+	}
+	hlv_raised_granary = {
+		desc = hlv_raised_granary_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 38
+		upgrades_from = hlv_wooden_granary
+		prerequisites = {
+			hlv_wooden_granary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.3
+		garrison_size = 0.07
+		levy_size = 0.02
+	}
+	hlv_stone_granary = {
+		desc = hlv_stone_granary_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 45
+		upgrades_from = hlv_raised_granary
+		prerequisites = {
+			hlv_raised_granary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		tax_income = 0.4
+		garrison_size = 0.13
+		levy_size = 0.04
+	}
+	hlv_ventilated_storehouse = {
+		desc = hlv_ventilated_storehouse_desc
+		gold_cost = 660
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 48
+		upgrades_from = hlv_stone_granary
+		prerequisites = {
+			hlv_stone_granary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		tax_income = 0.5
+		garrison_size = 0.2
+		levy_size = 0.07
+	}
+	hlv_guarded_granary = {
+		desc = hlv_guarded_granary_desc
+		prestige_cost = 600
+		extra_tech_building_start = 999
+		build_time = 1150
+		ai_creation_factor = 53
+		upgrades_from = hlv_ventilated_storehouse
+		prerequisites = {
+			hlv_ventilated_storehouse
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		tax_income = 0.55
+		garrison_size = 0.3
+		levy_size = 0.1
+	}
+	hlv_expanded_storehouse = {
+		desc = hlv_expanded_storehouse_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 56
+		upgrades_from = hlv_guarded_granary
+		prerequisites = {
+			hlv_guarded_granary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		tax_income = 0.56
+		garrison_size = 0.56
+		levy_size = 0.13
+		local_tax_modifier = 0.025
+	}
+	hlv_silo_complex = {
+		desc = hlv_silo_complex_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 60
+		upgrades_from = hlv_expanded_storehouse
+		prerequisites = {
+			hlv_expanded_storehouse
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 5
+		}
+		tax_income = 0.6
+		garrison_size = 1.07
+		levy_size = 0.23
+		local_tax_modifier = 0.05
+	}
+	hlv_secured_granary = {
+		desc = hlv_secured_granary_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 62
+		upgrades_from = hlv_silo_complex
+		prerequisites = {
+			hlv_silo_complex
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
+		}
+		tax_income = 0.65
+		garrison_size = 1.62
+		levy_size = 0.34
+		local_tax_modifier = 0.08
+		liege_prestige = 0.5
+	}
+	hlv_grand_granary = {
+		desc = hlv_grand_granary_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 3600
+		ai_creation_factor = 65
+		upgrades_from = hlv_secured_granary
+		prerequisites = {
+			hlv_secured_granary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 7
+		}
+		tax_income = 0.7
+		garrison_size = 2.55
+		levy_size = 0.57
+		local_tax_modifier = 0.12
+		liege_prestige = 1
+	}
+}

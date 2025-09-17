@@ -1,0 +1,174 @@
+city = {
+	mvs_church_green_1 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_green_1_desc
+		extra_tech_building_start = 999
+		piety_cost = 25
+		build_time = 60
+		ai_creation_factor = 50
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.01
+		vassal_opinion = 1
+		liege_piety = 0.1
+	}
+	mvs_church_cloister_2 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_cloister_2_desc
+		extra_tech_building_start = 999
+		prestige_cost = 30
+		build_time = 80
+		ai_creation_factor = 55
+		upgrades_from = mvs_church_green_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		city_tax_modifier = 0.01
+		culture_techpoints = 0.005
+		liege_piety = 0.2
+	}
+	mvs_church_court_3 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_court_3_desc
+		extra_tech_building_start = 999
+		gold_cost = 100
+		build_time = 100
+		ai_creation_factor = 60
+		upgrades_from = mvs_church_cloister_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.02
+		garrison_size = 0.01
+		liege_piety = 0.3
+	}
+	mvs_church_almonry_4 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_almonry_4_desc
+		extra_tech_building_start = 999
+		piety_cost = 50
+		build_time = 120
+		ai_creation_factor = 65
+		upgrades_from = mvs_church_court_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		vassal_opinion = 2
+		city_tax_modifier = 0.01
+		liege_piety = 0.4
+	}
+	mvs_church_plaza_5 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_plaza_5_desc
+		extra_tech_building_start = 999
+		gold_cost = 200
+		build_time = 140
+		ai_creation_factor = 70
+		upgrades_from = mvs_church_almonry_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		tradevalue = 0.5
+		local_tax_modifier = 0.02
+		liege_piety = 0.4
+	}
+	mvs_church_precinct_6 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_precinct_6_desc
+		extra_tech_building_start = 999
+		prestige_cost = 60
+		build_time = 160
+		ai_creation_factor = 75
+		upgrades_from = mvs_church_plaza_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		garrison_size = 0.02
+		liege_piety = 0.4
+	}
+	mvs_church_procession_7 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_procession_7_desc
+		extra_tech_building_start = 999
+		gold_cost = 300
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = mvs_church_precinct_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		liege_prestige = 0.5
+		tradevalue = 1
+		liege_piety = 0.5
+	}
+	mvs_church_belltower_8 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_belltower_8_desc
+		extra_tech_building_start = 999
+		piety_cost = 80
+		build_time = 200
+		ai_creation_factor = 85
+		upgrades_from = mvs_church_procession_7
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.03
+		garrison_size = 0.03
+		liege_piety = 0.5
+	}
+	mvs_church_crosswalk_9 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_church_crosswalk_9_desc
+		extra_tech_building_start = 999
+		gold_cost = 500
+		build_time = 220
+		ai_creation_factor = 90
+		upgrades_from = mvs_church_belltower_8
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		supply_limit = 0.03
+		tradevalue = 2
+		liege_piety = 0.5
+	}
+	mvs_cathedral_10 = {
+		potential = {
+			religion_group = christian
+		}
+		desc = mvs_cathedral_10_desc
+		extra_tech_building_start = 999
+		gold_cost = 1000
+		build_time = 300
+		ai_creation_factor = 100
+		upgrades_from = mvs_church_crosswalk_9
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		garrison_size = 0.05
+		city_tax_modifier = 0.05
+		local_tax_modifier = 0.05
+		tradevalue = 5
+		liege_prestige = 2
+		vassal_opinion = 5
+		liege_piety = 1
+	}
+}

@@ -1,0 +1,169 @@
+castle = {
+	mrr_field_hut = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_field_hut_desc
+		gold_cost = 12
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.05
+	}
+	mrr_irrigation_ditch = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_irrigation_ditch_desc
+		gold_cost = 18
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 67
+		upgrades_from = mrr_field_hut
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.11
+		levy_size = 0.01
+	}
+	mrr_crop_plot = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_crop_plot_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 74
+		upgrades_from = mrr_irrigation_ditch
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.25
+		levy_size = 0.01
+		garrison_size = 0.01
+	}
+	mrr_vineyard_patch = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_vineyard_patch_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 83
+		upgrades_from = mrr_crop_plot
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		tax_income = 0.30
+		levy_size = 0.02
+		local_tax_modifier = 0.05
+	}
+	mrr_dairy_farm = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_dairy_farm_desc
+		gold_cost = 210
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 91
+		upgrades_from = mrr_vineyard_patch
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		tax_income = 0.50
+		levy_size = 0.04
+	}
+	mrr_threshing_barn = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_threshing_barn_desc
+		gold_cost = 470
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 98
+		upgrades_from = mrr_dairy_farm
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		tax_income = 0.60
+		levy_size = 0.07
+		garrison_size = 0.04
+	}
+	mrr_market_farm = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_market_farm_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = mrr_threshing_barn
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		tax_income = 0.65
+		levy_size = 0.12
+		local_tax_modifier = 0.1
+	}
+	mrr_tenant_village = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_tenant_village_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 110
+		upgrades_from = mrr_market_farm
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		tax_income = 0.70
+		levy_size = 0.23
+		garrison_size = 0.07
+		liege_prestige = 0.8
+	}
+	mrr_estate_granary = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_estate_granary_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 110
+		upgrades_from = mrr_tenant_village
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		tax_income = 0.75
+		levy_size = 0.40
+		garrison_size = 0.14
+	}
+	mrr_lords_grange = {
+		potential = {
+			terrain = farmlands
+		}
+		desc = mrr_lords_grange_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = mrr_estate_granary
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		tax_income = 0.80
+		levy_size = 0.71
+		garrison_size = 0.26
+		liege_prestige = 2
+	}
+}

@@ -1,0 +1,210 @@
+nomad = {
+	jql_spindle_stand = {
+		desc = jql_spindle_stand_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		nomad_tax_modifier = 0.133
+	}
+	jql_weavers_bench = {
+		desc = jql_weavers_bench_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = jql_spindle_stand
+		prerequisites = {
+			jql_spindle_stand
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+		nomad_tax_modifier = 0.222
+		clan_sentiment = 1
+	}
+	jql_loom_hut = {
+		desc = jql_loom_hut_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 78
+		upgrades_from = jql_weavers_bench
+		prerequisites = {
+			jql_weavers_bench
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.081
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.005
+	}
+	jql_threading_pavilion = {
+		desc = jql_threading_pavilion_desc
+		gold_cost = 413
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 83
+		upgrades_from = jql_loom_hut
+		prerequisites = {
+			jql_loom_hut
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.842
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	jql_dyehouse = {
+		desc = jql_dyehouse_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 89
+		upgrades_from = jql_threading_pavilion
+		prerequisites = {
+			jql_threading_pavilion
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		tradevalue = 1.513
+	}
+	jql_patterned_loom_room = {
+		desc = jql_patterned_loom_room_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = jql_dyehouse
+		prerequisites = {
+			jql_dyehouse
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		tradevalue = 1.513
+	}
+	jql_fine_weavers_hall = {
+		desc = jql_fine_weavers_hall_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 102
+		upgrades_from = jql_patterned_loom_room
+		prerequisites = {
+			jql_patterned_loom_room
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		tradevalue = 1.513
+		liege_prestige = 0.2
+	}
+	jql_textile_chamber = {
+		desc = jql_textile_chamber_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 107
+		upgrades_from = jql_fine_weavers_hall
+		prerequisites = {
+			jql_fine_weavers_hall
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.010
+		tradevalue = 1.513
+		liege_prestige = 0.4
+	}
+	jql_cloth_guildhall = {
+		desc = jql_cloth_guildhall_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = jql_textile_chamber
+		prerequisites = {
+			jql_textile_chamber
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.532
+		max_population_mult = 0.015
+		tradevalue = 1.513
+		liege_prestige = 0.7
+		clan_sentiment = 1
+	}
+	jql_indian_weaver_guild = {
+		desc = jql_indian_weaver_guild_desc
+		gold_cost = 27000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = jql_cloth_guildhall
+		prerequisites = {
+			jql_cloth_guildhall
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.731
+		max_population_mult = 0.020
+		tradevalue = 1.513
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+}

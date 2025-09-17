@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ca_barracks_1;Soldiers Hut;;;;;x
+ca_barracks_1_desc;A basic shelter of wood, thatch, and earth for a small number of soldiers. The first step toward a permanent garrison.;;;;;x
+ca_barracks_2;Guard Quarters;;;;;x
+ca_barracks_2_desc;Simple wooden barracks and a central fire-pit, these quarters allow a small guard unit to rest, drill, and organize patrols.;;;;;x
+ca_barracks_3;Timber Barracks;;;;;x
+ca_barracks_3_desc;Wooden barracks with a crude mess hall and armory. These provide shelter and discipline for a modest garrison.;;;;;x
+ca_barracks_4;Stone Barracks;;;;;x
+ca_barracks_4_desc;Solid stone barracks with reinforced doors and walls, providing protection and permanence to the castles defenders.;;;;;x
+ca_barracks_5;Expanded Barracks;;;;;x
+ca_barracks_5_desc;A substantial expansion with multiple stone wings, proper bunks for men-at-arms, and improved command facilities.;;;;;x
+ca_barracks_6;Training Yard;;;;;x
+ca_barracks_6_desc;An open yard with targets, dummies, and obstacle courses where troops drill, improving discipline and morale.;;;;;x
+jtp_drill_hall;Drill Hall;;;;;x
+jtp_drill_hall_desc;A covered hall for year-round drills and advanced tactics, fostering a core of professional soldiers.;;;;;x
+jtp_garrison_house;Garrison House;;;;;x
+jtp_garrison_house_desc;A fortified living complex for elite guards, with ample stores and command posts for rapid deployment.;;;;;x
+jtp_warriors_dormitory;Warriors Dormitory;;;;;x
+jtp_warriors_dormitory_desc;Large dormitories with armories and mess halls, supporting a standing force and swift mobilization in times of siege.;;;;;x
+jtp_grand_garrison;Grand Garrison;;;;;x
+jtp_grand_garrison_desc;A vast, multi-level military complex with barracks, armories, drill halls, and officer quarters for a true fortress garrison.;;;;;x

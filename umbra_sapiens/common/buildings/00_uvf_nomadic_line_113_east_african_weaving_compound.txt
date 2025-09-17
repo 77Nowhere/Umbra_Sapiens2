@@ -1,0 +1,204 @@
+nomad = {
+	uvf_spindle_patch = {
+		desc = uvf_spindle_patch_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 60
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		manpower_growth = 0.060
+	}
+	uvf_weavers_tent = {
+		desc = uvf_weavers_tent_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 65
+		upgrades_from = uvf_spindle_patch
+		prerequisites = {
+			uvf_spindle_patch
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.04
+		population_growth = 0.011
+	}
+	uvf_loom_hut = {
+		desc = uvf_loom_hut_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 72
+		upgrades_from = uvf_weavers_tent
+		prerequisites = {
+			uvf_weavers_tent
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.07
+	}
+	uvf_dye_pavilion = {
+		desc = uvf_dye_pavilion_desc
+		gold_cost = 338
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 80
+		upgrades_from = uvf_loom_hut
+		prerequisites = {
+			uvf_loom_hut
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	uvf_patterned_room = {
+		desc = uvf_patterned_room_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 87
+		upgrades_from = uvf_dye_pavilion
+		prerequisites = {
+			uvf_dye_pavilion
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	uvf_textile_chamber = {
+		desc = uvf_textile_chamber_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 93
+		upgrades_from = uvf_patterned_room
+		prerequisites = {
+			uvf_patterned_room
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.266
+		clan_sentiment = 1
+	}
+	uvf_market_weaver_hall = {
+		desc = uvf_market_weaver_hall_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 97
+		upgrades_from = uvf_textile_chamber
+		prerequisites = {
+			uvf_textile_chamber
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.665
+		supply_limit = 0.12
+	}
+	uvf_guild_pavilion = {
+		desc = uvf_guild_pavilion_desc
+		gold_cost = 5400
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 102
+		upgrades_from = uvf_market_weaver_hall
+		prerequisites = {
+			uvf_market_weaver_hall
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 130
+		max_manpower_mult = 0.10
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.6
+	}
+	uvf_master_weavers_room = {
+		desc = uvf_master_weavers_room_desc
+		gold_cost = 10800
+		extra_tech_building_start = 999
+		build_time = 732
+		ai_creation_factor = 106
+		upgrades_from = uvf_guild_pavilion
+		prerequisites = {
+			uvf_guild_pavilion
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 260
+		max_manpower_mult = 0.18
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+	}
+	uvf_east_african_weaving_guild = {
+		desc = uvf_east_african_weaving_guild_desc
+		gold_cost = 21600
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = uvf_master_weavers_room
+		prerequisites = {
+			uvf_master_weavers_room
+		}
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 520
+		max_manpower_mult = 0.34
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		liege_prestige = 1.2
+	}
+}

@@ -1,0 +1,203 @@
+nomad = {
+	uqp_indo_aryan_spindle_stand = {
+		desc = uqp_indo_aryan_spindle_stand_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 65
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		clan_sentiment = 1
+	}
+	uqp_indo_aryan_weavers_bench = {
+		desc = uqp_indo_aryan_weavers_bench_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 70
+		upgrades_from = uqp_indo_aryan_spindle_stand
+		prerequisites = {
+			uqp_indo_aryan_spindle_stand
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.051
+		nomad_tax_modifier = 0.178
+	}
+	uqp_indo_aryan_loom_hut = {
+		desc = uqp_indo_aryan_loom_hut_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 218
+		ai_creation_factor = 75
+		upgrades_from = uqp_indo_aryan_weavers_bench
+		prerequisites = {
+			uqp_indo_aryan_weavers_bench
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	uqp_indo_aryan_threading_pavilion = {
+		desc = uqp_indo_aryan_threading_pavilion_desc
+		gold_cost = 488
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 80
+		upgrades_from = uqp_indo_aryan_loom_hut
+		prerequisites = {
+			uqp_indo_aryan_loom_hut
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	uqp_indo_aryan_dyehouse = {
+		desc = uqp_indo_aryan_dyehouse_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 90
+		upgrades_from = uqp_indo_aryan_threading_pavilion
+		prerequisites = {
+			uqp_indo_aryan_threading_pavilion
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.576
+	}
+	uqp_indo_aryan_patterned_loom_room = {
+		desc = uqp_indo_aryan_patterned_loom_room_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 95
+		upgrades_from = uqp_indo_aryan_dyehouse
+		prerequisites = {
+			uqp_indo_aryan_dyehouse
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	uqp_indo_aryan_fine_weavers_hall = {
+		desc = uqp_indo_aryan_fine_weavers_hall_desc
+		gold_cost = 3300
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 100
+		upgrades_from = uqp_indo_aryan_patterned_loom_room
+		prerequisites = {
+			uqp_indo_aryan_patterned_loom_room
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.842
+		liege_prestige = 0.3
+	}
+	uqp_indo_aryan_textile_chamber = {
+		desc = uqp_indo_aryan_textile_chamber_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 1163
+		ai_creation_factor = 105
+		upgrades_from = uqp_indo_aryan_fine_weavers_hall
+		prerequisites = {
+			uqp_indo_aryan_fine_weavers_hall
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		max_manpower_mult = 0.04
+		global_movement_speed = 0.04
+		clan_sentiment = 1
+	}
+	uqp_indo_aryan_cloth_guildhall = {
+		desc = uqp_indo_aryan_cloth_guildhall_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 108
+		upgrades_from = uqp_indo_aryan_textile_chamber
+		prerequisites = {
+			uqp_indo_aryan_textile_chamber
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 210
+		max_manpower_mult = 0.10
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.6
+	}
+	uqp_indo_aryan_weaver_guild = {
+		desc = uqp_indo_aryan_weaver_guild_desc
+		gold_cost = 21000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = uqp_indo_aryan_cloth_guildhall
+		prerequisites = {
+			uqp_indo_aryan_cloth_guildhall
+		}
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 340
+		max_manpower_mult = 0.34
+		nomad_tax_modifier = 0.399
+		liege_prestige = 1.2
+		clan_sentiment = 1
+	}
+}

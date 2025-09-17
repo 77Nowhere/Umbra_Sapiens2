@@ -1,0 +1,172 @@
+nomad = {
+	onp_baltic_fire_shrine_ember_patch = {
+		desc = onp_baltic_fire_shrine_ember_patch_desc
+		piety_cost = 30
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	onp_baltic_fire_shrine_fire_ring = {
+		desc = onp_baltic_fire_shrine_fire_ring_desc
+		piety_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = onp_baltic_fire_shrine_ember_patch
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.2
+	}
+	onp_baltic_fire_shrine_torch_stand = {
+		desc = onp_baltic_fire_shrine_torch_stand_desc
+		piety_cost = 135
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 74
+		upgrades_from = onp_baltic_fire_shrine_fire_ring
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.3
+		vassal_opinion = 2
+	}
+	onp_baltic_fire_shrine_flame_pavilion = {
+		desc = onp_baltic_fire_shrine_flame_pavilion_desc
+		piety_cost = 263
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 82
+		upgrades_from = onp_baltic_fire_shrine_torch_stand
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.5
+		vassal_opinion = 4
+	}
+	onp_baltic_fire_shrine_priests_hut = {
+		desc = onp_baltic_fire_shrine_priests_hut_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 90
+		upgrades_from = onp_baltic_fire_shrine_flame_pavilion
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.8
+		church_opinion = 3
+	}
+	onp_baltic_fire_shrine_sacred_flame_chamber = {
+		desc = onp_baltic_fire_shrine_sacred_flame_chamber_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 405
+		ai_creation_factor = 96
+		upgrades_from = onp_baltic_fire_shrine_priests_hut
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.2
+		church_opinion = 6
+	}
+	onp_baltic_fire_shrine_sanctified_hall = {
+		desc = onp_baltic_fire_shrine_sanctified_hall_desc
+		piety_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 105
+		upgrades_from = onp_baltic_fire_shrine_sacred_flame_chamber
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 10
+	}
+	onp_baltic_fire_shrine_ancestors_shrine = {
+		desc = onp_baltic_fire_shrine_ancestors_shrine_desc
+		piety_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 108
+		upgrades_from = onp_baltic_fire_shrine_sanctified_hall
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 16
+		vassal_opinion = 8
+	}
+	onp_baltic_fire_shrine_holy_fire_room = {
+		desc = onp_baltic_fire_shrine_holy_fire_room_desc
+		piety_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 110
+		upgrades_from = onp_baltic_fire_shrine_ancestors_shrine
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 24
+		vassal_opinion = 12
+	}
+	onp_baltic_fire_shrine_sanctuary = {
+		desc = onp_baltic_fire_shrine_sanctuary_desc
+		piety_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 115
+		upgrades_from = onp_baltic_fire_shrine_holy_fire_room
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 40
+		vassal_opinion = 20
+	}
+}

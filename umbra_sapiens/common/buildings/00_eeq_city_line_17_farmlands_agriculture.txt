@@ -1,0 +1,199 @@
+city = {
+	eeq_cattle_shed = {
+		desc = eeq_cattle_shed_desc
+		prestige_cost = 25
+		extra_tech_building_start = 999
+		build_time = 250
+		ai_creation_factor = 71
+		upgrades_from = eeq_vineyard_patch
+		prerequisites = {
+			eeq_vineyard_patch
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.04
+		supply_limit = 0.07
+	}
+	eeq_fallow_field = {
+		desc = eeq_fallow_field_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		supply_limit = 0.05
+	}
+	eeq_vineyard_patch = {
+		desc = eeq_vineyard_patch_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 68
+		upgrades_from = eeq_fallow_field
+		prerequisites = {
+			eeq_fallow_field
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 0.5
+		local_tax_modifier = 0.02
+	}
+	eeq_orchard_rows = {
+		desc = eeq_orchard_rows_desc
+		prestige_cost = 90
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 85
+		upgrades_from = eeq_farmstead
+		prerequisites = {
+			eeq_farmstead
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.16
+		tradevalue = 3.5
+		economy_techpoints = 0.04
+	}
+	eeq_farmstead = {
+		desc = eeq_farmstead_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 80
+		upgrades_from = eeq_cattle_shed
+		prerequisites = {
+			eeq_cattle_shed
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.09
+		tradevalue = 1.5
+		supply_limit = 0.12
+	}
+	eeq_grape_press = {
+		desc = eeq_grape_press_desc
+		piety_cost = 165
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 99
+		upgrades_from = eeq_farmlands_mill
+		prerequisites = {
+			eeq_farmlands_mill
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		tradevalue = 11
+		local_tax_modifier = 0.36
+		economy_techpoints = 0.19
+	}
+	eeq_farmlands_mill = {
+		desc = eeq_farmlands_mill_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 94
+		upgrades_from = eeq_orchard_rows
+		prerequisites = {
+			eeq_orchard_rows
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.28
+		tradevalue = 6
+		economy_techpoints = 0.13
+		supply_limit = 0.24
+	}
+	eeq_farmers_guild = {
+		desc = eeq_farmers_guild_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 105
+		upgrades_from = eeq_grape_press
+		prerequisites = {
+			eeq_grape_press
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.55
+		tradevalue = 18
+		economy_techpoints = 0.29
+		garrison_size = 0.1
+	}
+	eeq_manor_granary = {
+		desc = eeq_manor_granary_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 110
+		upgrades_from = eeq_farmers_guild
+		prerequisites = {
+			eeq_farmers_guild
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.8
+		tradevalue = 28
+		economy_techpoints = 0.42
+		garrison_size = 0.18
+	}
+	eeq_grand_farmland = {
+		desc = eeq_grand_farmland_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 3300
+		ai_creation_factor = 115
+		upgrades_from = eeq_manor_granary
+		prerequisites = {
+			eeq_manor_granary
+		}
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 1.4
+		tradevalue = 45
+		economy_techpoints = 0.6
+		garrison_size = 0.34
+	}
+}

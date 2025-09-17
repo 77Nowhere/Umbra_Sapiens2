@@ -1,0 +1,194 @@
+nomad = {
+	gub_iberian_reed_net_stand = {
+		desc = gub_iberian_reed_net_stand_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+	}
+	gub_iberian_boat_shelter = {
+		desc = gub_iberian_boat_shelter_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = gub_iberian_reed_net_stand
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.05
+	}
+	gub_iberian_fish_drying_rack = {
+		desc = gub_iberian_fish_drying_rack_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = gub_iberian_boat_shelter
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.178
+		population_growth = 0.051
+	}
+	gub_iberian_canoe_slipway = {
+		desc = gub_iberian_canoe_slipway_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 80
+		upgrades_from = gub_iberian_fish_drying_rack
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.04
+		supply_limit = 0.08
+	}
+	gub_iberian_simple_wharf = {
+		desc = gub_iberian_simple_wharf_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 90
+		upgrades_from = gub_iberian_canoe_slipway
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.443
+		population_growth = 0.091
+		tradevalue = 1.513
+	}
+	gub_iberian_fishermens_hut = {
+		desc = gub_iberian_fishermens_hut_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 95
+		upgrades_from = gub_iberian_simple_wharf
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		supply_limit = 0.15
+	}
+	gub_iberian_fish_market = {
+		desc = gub_iberian_fish_market_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 100
+		upgrades_from = gub_iberian_fishermens_hut
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		max_population_mult = 0.005
+	}
+	gub_iberian_salt_house = {
+		desc = gub_iberian_salt_house_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 105
+		upgrades_from = gub_iberian_fish_market
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+	}
+	gub_iberian_seafood_pavilion = {
+		desc = gub_iberian_seafood_pavilion_desc
+		gold_cost = 8250
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = gub_iberian_salt_house
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		liege_prestige = 0.5
+		tradevalue = 1.513
+	}
+	gub_iberian_harbor = {
+		desc = gub_iberian_harbor_desc
+		gold_cost = 15750
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = gub_iberian_seafood_pavilion
+		port = yes
+		potential = {
+			port = yes
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		global_movement_speed = 0.07
+	}
+}

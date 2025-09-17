@@ -1,0 +1,173 @@
+castle_line_32_indian_court = {
+	ahd_mudbrick_hall = {
+		desc = ahd_mudbrick_hall_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 35
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_wooden_pavilion = {
+		desc = ahd_wooden_pavilion_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 38
+		upgrades_from = ahd_mudbrick_hall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		garrison_size = 0.02
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_open_court = {
+		desc = ahd_open_court_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 48
+		upgrades_from = ahd_stone_audience_chamber
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		levy_size = 0.09
+		garrison_size = 0.08
+		vassal_opinion = 1
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_stone_audience_chamber = {
+		desc = ahd_stone_audience_chamber_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 42
+		upgrades_from = ahd_wooden_pavilion
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.05
+		garrison_size = 0.05
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_pillar_hall = {
+		desc = ahd_pillar_hall_desc
+		piety_cost = 190
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 53
+		upgrades_from = ahd_open_court
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		levy_size = 0.17
+		garrison_size = 0.14
+		vassal_opinion = 2
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_mandapa_hall = {
+		desc = ahd_mandapa_hall_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 60
+		upgrades_from = ahd_pillar_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.32
+		garrison_size = 0.24
+		vassal_opinion = 4
+		local_tax_modifier = 0.05
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_royal_courtroom = {
+		desc = ahd_royal_courtroom_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 65
+		upgrades_from = ahd_mandapa_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.57
+		garrison_size = 0.39
+		vassal_opinion = 6
+		local_tax_modifier = 0.1
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_pillared_audience_hall = {
+		desc = ahd_pillared_audience_hall_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 70
+		upgrades_from = ahd_royal_courtroom
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 0.99
+		garrison_size = 0.64
+		vassal_opinion = 8
+		local_tax_modifier = 0.15
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_kings_durbar = {
+		desc = ahd_kings_durbar_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 80
+		upgrades_from = ahd_pillared_audience_hall
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		levy_size = 1.41
+		garrison_size = 0.90
+		vassal_opinion = 10
+		liege_prestige = 2
+		potential = {
+			religion_group = indian_group
+		}
+	}
+	ahd_imperial_durbar = {
+		desc = ahd_imperial_durbar_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = ahd_kings_durbar
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		levy_size = 2.25
+		garrison_size = 1.36
+		vassal_opinion = 14
+		liege_prestige = 4
+		local_tax_modifier = 0.3
+		potential = {
+			religion_group = indian_group
+		}
+	}
+}

@@ -1,0 +1,198 @@
+nomad = {
+	zuo_indian_prayer_stand = {
+		desc = zuo_indian_prayer_stand_desc
+		piety_cost = 30
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+	}
+	zuo_indian_stone_marker = {
+		desc = zuo_indian_stone_marker_desc
+		piety_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = zuo_indian_prayer_stand
+		prerequisites = {
+			zuo_indian_prayer_stand
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.2
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	zuo_indian_walled_shrine = {
+		desc = zuo_indian_walled_shrine_desc
+		piety_cost = 150
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 72
+		upgrades_from = zuo_indian_stone_marker
+		prerequisites = {
+			zuo_indian_stone_marker
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.5
+		clan_sentiment = 1
+		church_opinion = 3
+	}
+	zuo_indian_pillar_pavilion = {
+		desc = zuo_indian_pillar_pavilion_desc
+		piety_cost = 315
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 77
+		upgrades_from = zuo_indian_walled_shrine
+		prerequisites = {
+			zuo_indian_walled_shrine
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.9
+		clan_sentiment = 1
+		vassal_opinion = 4
+	}
+	zuo_indian_chanting_room = {
+		desc = zuo_indian_chanting_room_desc
+		piety_cost = 675
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 82
+		upgrades_from = zuo_indian_pillar_pavilion
+		prerequisites = {
+			zuo_indian_pillar_pavilion
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.7
+		clan_sentiment = 1
+		church_opinion = 6
+	}
+	zuo_indian_altar_hall = {
+		desc = zuo_indian_altar_hall_desc
+		piety_cost = 1425
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 87
+		upgrades_from = zuo_indian_chanting_room
+		prerequisites = {
+			zuo_indian_chanting_room
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		vassal_opinion = 8
+	}
+	zuo_indian_priests_chamber = {
+		desc = zuo_indian_priests_chamber_desc
+		piety_cost = 2925
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 92
+		upgrades_from = zuo_indian_altar_hall
+		prerequisites = {
+			zuo_indian_altar_hall
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	zuo_indian_diviners_room = {
+		desc = zuo_indian_diviners_room_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 97
+		upgrades_from = zuo_indian_priests_chamber
+		prerequisites = {
+			zuo_indian_priests_chamber
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 12
+	}
+	zuo_indian_sanctified_sanctuary = {
+		desc = zuo_indian_sanctified_sanctuary_desc
+		piety_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 104
+		upgrades_from = zuo_indian_diviners_room
+		prerequisites = {
+			zuo_indian_diviners_room
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 2
+		church_opinion = 15
+	}
+	zuo_indian_grand_mandir = {
+		desc = zuo_indian_grand_mandir_desc
+		piety_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = zuo_indian_sanctified_sanctuary
+		prerequisites = {
+			zuo_indian_sanctified_sanctuary
+		}
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 3
+		church_opinion = 25
+		vassal_opinion = 20
+	}
+}

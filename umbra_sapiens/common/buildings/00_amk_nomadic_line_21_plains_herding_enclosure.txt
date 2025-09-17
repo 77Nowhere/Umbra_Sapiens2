@@ -1,0 +1,201 @@
+nomad = {
+	amk_grassland_pen = {
+		desc = amk_grassland_pen_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.021
+	}
+	amk_open_range = {
+		desc = amk_open_range_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 70
+		upgrades_from = amk_grassland_pen
+		prerequisites = {
+			amk_grassland_pen
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.041
+		supply_limit = 0.05
+	}
+	amk_plains_corral = {
+		desc = amk_plains_corral_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = amk_open_range
+		prerequisites = {
+			amk_open_range
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.081
+		max_manpower_mult = 0.02
+	}
+	amk_wooden_stockade = {
+		desc = amk_wooden_stockade_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 88
+		upgrades_from = amk_plains_corral
+		prerequisites = {
+			amk_plains_corral
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		garrison_size = 0.1
+	}
+	amk_roving_herd_field = {
+		desc = amk_roving_herd_field_desc
+		gold_cost = 713
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 90
+		upgrades_from = amk_wooden_stockade
+		prerequisites = {
+			amk_wooden_stockade
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.03
+	}
+	amk_fenced_pasture = {
+		desc = amk_fenced_pasture_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = amk_roving_herd_field
+		prerequisites = {
+			amk_roving_herd_field
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	amk_shepherds_hut = {
+		desc = amk_shepherds_hut_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 100
+		upgrades_from = amk_fenced_pasture
+		prerequisites = {
+			amk_fenced_pasture
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	amk_grazing_commons = {
+		desc = amk_grazing_commons_desc
+		gold_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 105
+		upgrades_from = amk_shepherds_hut
+		prerequisites = {
+			amk_shepherds_hut
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.355
+	}
+	amk_plains_livestock_pavilion = {
+		desc = amk_plains_livestock_pavilion_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 108
+		upgrades_from = amk_grazing_commons
+		prerequisites = {
+			amk_grazing_commons
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+	}
+	amk_grand_steppe_grazing_hall = {
+		desc = amk_grand_steppe_grazing_hall_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = amk_plains_livestock_pavilion
+		prerequisites = {
+			amk_plains_livestock_pavilion
+		}
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.16
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+		liege_prestige = 1
+	}
+}

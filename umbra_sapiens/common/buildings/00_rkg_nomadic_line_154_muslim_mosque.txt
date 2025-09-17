@@ -1,0 +1,170 @@
+nomad = {
+	rkg_nomad_prayer_mat_stand = {
+		desc = rkg_nomad_prayer_mat_stand_desc
+		piety_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.2
+		clan_sentiment = 1
+	}
+	rkg_nomad_wooden_mihrab = {
+		desc = rkg_nomad_wooden_mihrab_desc
+		piety_cost = 57
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 68
+		upgrades_from = rkg_nomad_prayer_mat_stand
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.5
+		clan_sentiment = 1
+	}
+	rkg_nomad_stone_niche = {
+		desc = rkg_nomad_stone_niche_desc
+		piety_cost = 113
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 72
+		upgrades_from = rkg_nomad_wooden_mihrab
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	rkg_nomad_minaret_pavilion = {
+		desc = rkg_nomad_minaret_pavilion_desc
+		piety_cost = 225
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 80
+		upgrades_from = rkg_nomad_stone_niche
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	rkg_nomad_imams_room = {
+		desc = rkg_nomad_imams_room_desc
+		piety_cost = 375
+		extra_tech_building_start = 999
+		build_time = 293
+		ai_creation_factor = 88
+		upgrades_from = rkg_nomad_minaret_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 7
+	}
+	rkg_nomad_sanctified_chamber = {
+		desc = rkg_nomad_sanctified_chamber_desc
+		piety_cost = 675
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 95
+		upgrades_from = rkg_nomad_imams_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 4
+	}
+	rkg_nomad_altar_hall = {
+		desc = rkg_nomad_altar_hall_desc
+		piety_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 593
+		ai_creation_factor = 100
+		upgrades_from = rkg_nomad_sanctified_chamber
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 12
+	}
+	rkg_nomad_community_mosque = {
+		desc = rkg_nomad_community_mosque_desc
+		piety_cost = 1725
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 105
+		upgrades_from = rkg_nomad_altar_hall
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 18
+	}
+	rkg_nomad_grand_mosque_room = {
+		desc = rkg_nomad_grand_mosque_room_desc
+		piety_cost = 2775
+		extra_tech_building_start = 999
+		build_time = 1032
+		ai_creation_factor = 110
+		upgrades_from = rkg_nomad_community_mosque
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 23
+	}
+	rkg_nomad_grand_muslim_mosque = {
+		desc = rkg_nomad_grand_muslim_mosque_desc
+		piety_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 115
+		upgrades_from = rkg_nomad_grand_mosque_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 30
+		vassal_opinion = 8
+	}
+}

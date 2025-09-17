@@ -1,0 +1,141 @@
+city = {
+	vqk_dirt_track = {
+		desc = vqk_dirt_track_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.01
+		tradevalue = 0.5
+	}
+	vqk_wooden_bridge = {
+		desc = vqk_wooden_bridge_desc
+		prestige_cost = 40
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 70
+		upgrades_from = vqk_gravel_path
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		tradevalue = 2
+	}
+	vqk_gravel_path = {
+		desc = vqk_gravel_path_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		upgrades_from = vqk_dirt_track
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.02
+		tradevalue = 1
+		supply_limit = 0.01
+	}
+	vqk_stone_causeway = {
+		desc = vqk_stone_causeway_desc
+		gold_cost = 200
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 75
+		upgrades_from = vqk_wooden_bridge
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.07
+		tradevalue = 4
+		supply_limit = 0.02
+	}
+	vqk_paved_road = {
+		desc = vqk_paved_road_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 660
+		ai_creation_factor = 85
+		upgrades_from = vqk_stone_causeway
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.15
+		tradevalue = 8
+		economy_techpoints = 0.03
+	}
+	vqk_market_bridge = {
+		desc = vqk_market_bridge_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = vqk_paved_road
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.25
+		tradevalue = 15
+		economy_techpoints = 0.07
+	}
+	vqk_trade_artery = {
+		desc = vqk_trade_artery_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 95
+		upgrades_from = vqk_market_bridge
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.4
+		tradevalue = 28
+		economy_techpoints = 0.12
+	}
+	vqk_cobblestone_avenue = {
+		desc = vqk_cobblestone_avenue_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 100
+		upgrades_from = vqk_trade_artery
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 0.6
+		tradevalue = 45
+		economy_techpoints = 0.2
+		supply_limit = 0.03
+	}
+	vqk_covered_bridge = {
+		desc = vqk_covered_bridge_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 105
+		upgrades_from = vqk_cobblestone_avenue
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 0.8
+		tradevalue = 65
+		garrison_size = 0.1
+	}
+	vqk_great_roadway = {
+		desc = vqk_great_roadway_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = vqk_covered_bridge
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 1.2
+		tradevalue = 100
+		garrison_size = 0.2
+		economy_techpoints = 0.4
+	}
+}

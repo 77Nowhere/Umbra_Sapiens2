@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+hlv_grain_store;Grain Store;;;;;x
+hlv_grain_store_desc;A simple, makeshift storage of grain sacks under canvas or lean-tos, offering minimal protection but crucial for the first harvests.;;;;;x
+hlv_wooden_granary;Wooden Granary;;;;;x
+hlv_wooden_granary_desc;Crude wooden huts raised on stones, keeping grain away from damp and vermin, improving supply and boosting morale.;;;;;x
+hlv_raised_granary;Raised Granary;;;;;x
+hlv_raised_granary_desc;Sturdier, stilted structures with thatched roofs, these granaries are protected from pests and weather, enhancing both food reserves and security.;;;;;x
+hlv_stone_granary;Stone Granary;;;;;x
+hlv_stone_granary_desc;Solid stone granaries, sealed against the elements and thieves. Provides significant food security for the castle and supports larger garrisons.;;;;;x
+hlv_guarded_granary;Guarded Granary;;;;;x
+hlv_guarded_granary_desc;Well-fortified stone storehouses with armed guards, ensuring food stocks remain secure even during siege.;;;;;x
+hlv_ventilated_storehouse;Ventilated Storehouse;;;;;x
+hlv_ventilated_storehouse_desc;Granaries with improved stonework and venting, reducing spoilage and supporting a sustained levy presence.;;;;;x
+hlv_expanded_storehouse;Expanded Storehouse;;;;;x
+hlv_expanded_storehouse_desc;A sprawling network of granaries, supporting both the castle and the surrounding settlements, with multiple reinforced storage rooms and strong oversight.;;;;;x
+hlv_silo_complex;Silo Complex;;;;;x
+hlv_silo_complex_desc;A sophisticated array of stone silos with advanced ventilation and security, enabling the castle to weather long sieges and expand its influence.;;;;;x
+hlv_secured_granary;Secured Granary;;;;;x
+hlv_secured_granary_desc;The castles grain reserves are protected by walls, heavy doors, and vigilant patrols, ensuring supplies for the largest armies and most trying times.;;;;;x
+hlv_grand_granary;Grand Granary;;;;;x
+hlv_grand_granary_desc;A monumental granary complex, symbolizing the wealth and might of the realm. Ensures unmatched supply, prosperity, and fortitude.;;;;;x

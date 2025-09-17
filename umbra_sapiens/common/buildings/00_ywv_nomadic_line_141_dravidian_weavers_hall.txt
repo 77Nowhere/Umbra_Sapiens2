@@ -1,0 +1,207 @@
+nomad = {
+	ywv_spindle_patch = {
+		desc = ywv_spindle_patch_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 65
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	ywv_weavers_tent = {
+		desc = ywv_weavers_tent_desc
+		gold_cost = 64
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 68
+		upgrades_from = ywv_spindle_patch
+		prerequisites = {
+			ywv_spindle_patch
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.133
+	}
+	ywv_loom_hut = {
+		desc = ywv_loom_hut_desc
+		gold_cost = 139
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = ywv_weavers_tent
+		prerequisites = {
+			ywv_weavers_tent
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.333
+	}
+	ywv_patterned_room = {
+		desc = ywv_patterned_room_desc
+		gold_cost = 289
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = ywv_loom_hut
+		prerequisites = {
+			ywv_loom_hut
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.576
+	}
+	ywv_dye_pavilion = {
+		desc = ywv_dye_pavilion_desc
+		gold_cost = 544
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 85
+		upgrades_from = ywv_patterned_room
+		prerequisites = {
+			ywv_patterned_room
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.842
+		liege_prestige = 0.08
+	}
+	ywv_textile_chamber = {
+		desc = ywv_textile_chamber_desc
+		gold_cost = 990
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 90
+		upgrades_from = ywv_dye_pavilion
+		prerequisites = {
+			ywv_dye_pavilion
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.16
+	}
+	ywv_fine_cloth_hall = {
+		desc = ywv_fine_cloth_hall_desc
+		gold_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 1163
+		ai_creation_factor = 97
+		upgrades_from = ywv_textile_chamber
+		prerequisites = {
+			ywv_textile_chamber
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		liege_prestige = 0.28
+		tradevalue = 1.513
+	}
+	ywv_weavers_guildhall = {
+		desc = ywv_weavers_guildhall_desc
+		gold_cost = 3713
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 102
+		upgrades_from = ywv_fine_cloth_hall
+		prerequisites = {
+			ywv_fine_cloth_hall
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.44
+		tradevalue = 1.513
+	}
+	ywv_master_weavers_room = {
+		desc = ywv_master_weavers_room_desc
+		gold_cost = 6600
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 108
+		upgrades_from = ywv_weavers_guildhall
+		prerequisites = {
+			ywv_weavers_guildhall
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.091.6
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		liege_prestige = 0.75
+		tradevalue = 1.513
+	}
+	ywv_dravidian_weaving_guild = {
+		desc = ywv_dravidian_weaving_guild_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = ywv_master_weavers_room
+		prerequisites = {
+			ywv_master_weavers_room
+		}
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.576
+		liege_prestige = 1.4
+		tradevalue = 1.513
+	}
+}

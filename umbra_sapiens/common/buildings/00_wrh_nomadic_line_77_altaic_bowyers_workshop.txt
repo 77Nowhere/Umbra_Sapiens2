@@ -1,0 +1,214 @@
+nomad = {
+	wrh_altaic_wooden_bow_stand = {
+		desc = wrh_altaic_wooden_bow_stand_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		archers_offensive = 0.06
+	}
+	wrh_altaic_bow_carvers_hut = {
+		desc = wrh_altaic_bow_carvers_hut_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 66
+		upgrades_from = wrh_altaic_wooden_bow_stand
+		prerequisites = {
+			wrh_altaic_wooden_bow_stand
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		archers_offensive = 0.12
+		manpower_growth = 0.030
+	}
+	wrh_altaic_arrowmakers_bench = {
+		desc = wrh_altaic_arrowmakers_bench_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 72
+		upgrades_from = wrh_altaic_bow_carvers_hut
+		prerequisites = {
+			wrh_altaic_bow_carvers_hut
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		archers_offensive = 0.22
+		levy_size = 0.05
+	}
+	wrh_altaic_composite_bow_pavilion = {
+		desc = wrh_altaic_composite_bow_pavilion_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 84
+		upgrades_from = wrh_altaic_arrowmakers_bench
+		prerequisites = {
+			wrh_altaic_arrowmakers_bench
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		archers_offensive = 0.4
+		levy_size = 0.08
+		archers_morale = 0.08
+	}
+	wrh_altaic_fine_bow_workshop = {
+		desc = wrh_altaic_fine_bow_workshop_desc
+		gold_cost = 570
+		extra_tech_building_start = 999
+		build_time = 218
+		ai_creation_factor = 95
+		upgrades_from = wrh_altaic_composite_bow_pavilion
+		prerequisites = {
+			wrh_altaic_composite_bow_pavilion
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		archers_offensive = 0.7
+		levy_size = 0.15
+		archers_morale = 0.15
+		manpower_growth = 0.030
+	}
+	wrh_altaic_fletchers_room = {
+		desc = wrh_altaic_fletchers_room_desc
+		gold_cost = 1140
+		extra_tech_building_start = 999
+		build_time = 308
+		ai_creation_factor = 104
+		upgrades_from = wrh_altaic_fine_bow_workshop
+		prerequisites = {
+			wrh_altaic_fine_bow_workshop
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		archers_offensive = 1.1
+		levy_size = 0.24
+		archers_morale = 0.22
+		levy_reinforce_rate = 0.1
+	}
+	wrh_altaic_master_bowyers_chamber = {
+		desc = wrh_altaic_master_bowyers_chamber_desc
+		gold_cost = 2280
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 110
+		upgrades_from = wrh_altaic_fletchers_room
+		prerequisites = {
+			wrh_altaic_fletchers_room
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		archers_offensive = 1.6
+		levy_size = 0.36
+		archers_morale = 0.32
+		levy_reinforce_rate = 0.2
+		manpower_growth = 0.030
+	}
+	wrh_altaic_bow_guild_hall = {
+		desc = wrh_altaic_bow_guild_hall_desc
+		gold_cost = 4560
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 110
+		upgrades_from = wrh_altaic_master_bowyers_chamber
+		prerequisites = {
+			wrh_altaic_master_bowyers_chamber
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		archers_offensive = 2.3
+		levy_size = 0.52
+		archers_morale = 0.45
+		clan_sentiment = 1
+		manpower_growth = 0.030
+	}
+	wrh_altaic_champions_armory = {
+		desc = wrh_altaic_champions_armory_desc
+		gold_cost = 9120
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = wrh_altaic_bow_guild_hall
+		prerequisites = {
+			wrh_altaic_bow_guild_hall
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		archers_offensive = 3.5
+		levy_size = 0.8
+		archers_morale = 0.65
+		clan_sentiment = 1
+		levy_reinforce_rate = 0.3
+	}
+	wrh_altaic_bowyer_guild = {
+		desc = wrh_altaic_bowyer_guild_desc
+		gold_cost = 18240
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = wrh_altaic_champions_armory
+		prerequisites = {
+			wrh_altaic_champions_armory
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		archers_offensive = 5
+		levy_size = 1.2
+		archers_morale = 1
+		clan_sentiment = 1
+		manpower_growth = 0.045
+	}
+}

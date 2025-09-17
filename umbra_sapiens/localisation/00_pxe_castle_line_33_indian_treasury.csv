@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+pxe_gem_locker;Gem Locker;;;;;x
+pxe_gem_locker_desc;A sturdy wooden chest with iron bands, hidden in a guarded storeroom, used to secure precious stones and minor valuables.;;;;;x
+pxe_coin_room;Coin Room;;;;;x
+pxe_coin_room_desc;A rough chamber for storing basic coin reserves, often little more than a locked chest behind a guard.;;;;;x
+pxe_stone_vault;Stone Vault;;;;;x
+pxe_stone_vault_desc;A secure, stone-lined chamber with a reinforced door, protecting greater wealth and serving as a symbol of growing prosperity.;;;;;x
+pxe_guarded_treasury;Guarded Treasury;;;;;x
+pxe_guarded_treasury_desc;A reinforced treasury chamber with armed guards and basic traps, deterring thieves and boosting the lords authority.;;;;;x
+pxe_treasure_gallery;Treasure Gallery;;;;;x
+pxe_treasure_gallery_desc;A vaulted room displaying the lords wealth, with guards, iron doors, and displays for coin and jewels, impressing guests and vassals alike.;;;;;x
+pxe_gold_chamber;Gold Chamber;;;;;x
+pxe_gold_chamber_desc;An opulent, multi-layered vault of brick and iron, watched day and night, its gold reserves supporting armies and acts of diplomacy.;;;;;x
+pxe_royal_treasury;Royal Treasury;;;;;x
+pxe_royal_treasury_desc;A vast, heavily guarded suite of vaults holding the crowns reserves, with complex locks, alarm devices, and a treasury administrator.;;;;;x
+pxe_jewel_house;Jewel House;;;;;x
+pxe_jewel_house_desc;A secure annex dedicated to the storage and display of royal gems, regalia, and rare artifacts, guarded by elite retainers.;;;;;x
+pxe_imperial_treasury;Imperial Treasury;;;;;x
+pxe_imperial_treasury_desc;The heart of royal finances, with multiple vaults, secret passages, and a permanent staff, symbolizing the might of the realm.;;;;;x
+pxe_palace_treasure_hall;Palace Treasure Hall;;;;;x
+pxe_palace_treasure_hall_desc;A grand, marble-lined hall at the palaces heart, showcasing the realms immense riches; its security is unmatched, and its splendor inspires awe.;;;;;x

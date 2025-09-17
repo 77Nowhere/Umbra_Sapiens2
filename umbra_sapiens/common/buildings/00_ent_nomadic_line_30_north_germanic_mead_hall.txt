@@ -1,0 +1,189 @@
+nomad = {
+	ent_ngmh_ale_bench = {
+		desc = ent_ngmh_ale_bench_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+	}
+	ent_ngmh_wooden_gathering_hut = {
+		desc = ent_ngmh_wooden_gathering_hut_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = ent_ngmh_ale_bench
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.05
+	}
+	ent_ngmh_feast_room = {
+		desc = ent_ngmh_feast_room_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 74
+		upgrades_from = ent_ngmh_wooden_gathering_hut
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.1
+	}
+	ent_ngmh_storytellers_alcove = {
+		desc = ent_ngmh_storytellers_alcove_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 83
+		upgrades_from = ent_ngmh_feast_room
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.15
+		tech_growth_modifier_cultural = 0.07
+	}
+	ent_ngmh_timbered_mead_hall = {
+		desc = ent_ngmh_timbered_mead_hall_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 91
+		upgrades_from = ent_ngmh_storytellers_alcove
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.3
+		tech_growth_modifier_cultural = 0.15
+		max_population_mult = 0.005
+	}
+	ent_ngmh_skalds_platform = {
+		desc = ent_ngmh_skalds_platform_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 98
+		upgrades_from = ent_ngmh_timbered_mead_hall
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.5
+		tech_growth_modifier_cultural = 0.22
+		max_population_mult = 0.005
+	}
+	ent_ngmh_bannered_hall = {
+		desc = ent_ngmh_bannered_hall_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 104
+		upgrades_from = ent_ngmh_skalds_platform
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 0.75
+		tech_growth_modifier_cultural = 0.3
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	ent_ngmh_great_drinking_room = {
+		desc = ent_ngmh_great_drinking_room_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1088
+		ai_creation_factor = 108
+		upgrades_from = ent_ngmh_bannered_hall
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		liege_prestige = 1
+		tech_growth_modifier_cultural = 0.4
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	ent_ngmh_chieftains_longhouse = {
+		desc = ent_ngmh_chieftains_longhouse_desc
+		gold_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 1425
+		ai_creation_factor = 110
+		upgrades_from = ent_ngmh_great_drinking_room
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 170
+		liege_prestige = 1.5
+		tech_growth_modifier_cultural = 0.5
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		demesne_size = 1
+	}
+	ent_ngmh_royal_mead_hall = {
+		desc = ent_ngmh_royal_mead_hall_desc
+		gold_cost = 30000
+		extra_tech_building_start = 999
+		build_time = 2025
+		ai_creation_factor = 110
+		upgrades_from = ent_ngmh_chieftains_longhouse
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 300
+		liege_prestige = 1.5
+		tech_growth_modifier_cultural = 0.8
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		demesne_size = 2
+	}
+}

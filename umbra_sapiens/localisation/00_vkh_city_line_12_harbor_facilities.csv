@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ct_port_1;Fishing Dock;;;;;x
+ct_port_1_desc;A simple timber platform and shacks for local fishermen, with drying racks and makeshift nets.;;;;;x
+ct_port_2;Boat Slip;;;;;x
+ct_port_2_desc;A small sheltered landing for boats, reinforced with logs and earthworks, and a communal shed for storing gear.;;;;;x
+ct_port_5;Harbormasters Hut;;;;;x
+ct_port_5_desc;A modest but permanent building for the harbormaster, overseeing docking rights, levying tolls, and managing basic port records.;;;;;x
+ct_port_3;Pier Wharf;;;;;x
+ct_port_3_desc;A timber pier juts into the water, allowing several fishing vessels to dock simultaneously. The area bustles with baskets and barrels.;;;;;x
+ct_port_4;Cargo Jetty;;;;;x
+ct_port_4_desc;Sturdy stone pilings and a wider dock allow for heavier cargo and merchant vessels to land. Simple cranes and guard posts are present.;;;;;x
+vkh_seafarers_wharf;Seafarers Wharf;;;;;x
+vkh_seafarers_wharf_desc;A broad wharf with stone breakwaters, ship chandlers, and secure bonded warehouses. Caravans and coastal traders crowd the bustling scene.;;;;;x
+vkh_small_quay;Small Quay;;;;;x
+vkh_small_quay_desc;A stone quay with mooring posts and defensive fencing, enabling secure loading and unloading of multiple merchant ships.;;;;;x
+vkh_merchant_harbor;Merchant Harbor;;;;;x
+vkh_merchant_harbor_desc;A bustling center with warehouses, customs officers, and cranes. Merchant guilds operate here, and tolls fill the citys coffers.;;;;;x
+vkh_dockyard;Dockyard;;;;;x
+vkh_dockyard_desc;A fortified dockyard with stone walls, dry docks for ship repair, and a dedicated staff handling both trade and naval logistics.;;;;;x
+vkh_grand_port_complex;Grand Port Complex;;;;;x
+vkh_grand_port_complex_desc;The centerpiece of the city: a massive, stone-walled port with breakwaters, great warehouses, administrative quarters, and a customs house. Merchants from across the world gather here.;;;;;x

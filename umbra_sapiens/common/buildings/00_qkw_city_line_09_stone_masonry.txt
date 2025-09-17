@@ -1,0 +1,142 @@
+city = {
+	qkw_quarry_camp = {
+		desc = qkw_quarry_camp_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.02
+		garrison_size = 0.05
+	}
+	qkw_stonecutters_shed = {
+		desc = qkw_stonecutters_shed_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 70
+		upgrades_from = qkw_quarry_camp
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		garrison_size = 0.1
+		economy_techpoints = 0.01
+	}
+	qkw_masons_lodge = {
+		desc = qkw_masons_lodge_desc
+		gold_cost = 140
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 75
+		upgrades_from = qkw_stonecutters_shed
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.05
+		garrison_size = 0.15
+		economy_techpoints = 0.015
+	}
+	qkw_stone_storehouse = {
+		desc = qkw_stone_storehouse_desc
+		gold_cost = 260
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 80
+		upgrades_from = qkw_masons_lodge
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.09
+		garrison_size = 0.25
+		economy_techpoints = 0.025
+	}
+	qkw_chiselers_workshop = {
+		desc = qkw_chiselers_workshop_desc
+		gold_cost = 480
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 85
+		upgrades_from = qkw_stone_storehouse
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.14
+		garrison_size = 0.35
+		economy_techpoints = 0.035
+	}
+	qkw_masonry_guild = {
+		desc = qkw_masonry_guild_desc
+		gold_cost = 960
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = qkw_chiselers_workshop
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.2
+		garrison_size = 0.5
+		economy_techpoints = 0.05
+	}
+	qkw_stone_vaults = {
+		desc = qkw_stone_vaults_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 95
+		upgrades_from = qkw_masonry_guild
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.28
+		garrison_size = 0.65
+		economy_techpoints = 0.07
+	}
+	qkw_ashlar_works = {
+		desc = qkw_ashlar_works_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 100
+		upgrades_from = qkw_stone_vaults
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.38
+		garrison_size = 0.85
+		economy_techpoints = 0.1
+	}
+	qkw_stonemasons_hall = {
+		desc = qkw_stonemasons_hall_desc
+		gold_cost = 5400
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = qkw_ashlar_works
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.5
+		garrison_size = 1.1
+		economy_techpoints = 0.14
+		tradevalue = 2
+	}
+	qkw_master_masonry_complex = {
+		desc = qkw_master_masonry_complex_desc
+		gold_cost = 10000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = qkw_stonemasons_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.65
+		garrison_size = 1.5
+		economy_techpoints = 0.2
+		tradevalue = 5
+	}
+}

@@ -1,0 +1,173 @@
+nomad = {
+	ouc_iranian_caravanserai_camel_post = {
+		desc = ouc_iranian_caravanserai_camel_post_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.05
+		horde_maintenence_cost = -0.01
+	}
+	ouc_iranian_caravanserai_merchants_tent = {
+		desc = ouc_iranian_caravanserai_merchants_tent_desc
+		gold_cost = 98
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 70
+		upgrades_from = ouc_iranian_caravanserai_camel_post
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tradevalue = 0.757
+		max_population_mult = 0.005
+	}
+	ouc_iranian_caravanserai_pack_animal_shelter = {
+		desc = ouc_iranian_caravanserai_pack_animal_shelter_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 75
+		upgrades_from = ouc_iranian_caravanserai_merchants_tent
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		supply_limit = 0.09
+		horde_maintenence_cost = -0.02
+	}
+	ouc_iranian_caravanserai_walled_pavilion = {
+		desc = ouc_iranian_caravanserai_walled_pavilion_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 80
+		upgrades_from = ouc_iranian_caravanserai_pack_animal_shelter
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		levy_size = 0.1
+		garrison_size = 0.12
+	}
+	ouc_iranian_caravanserai_market_room = {
+		desc = ouc_iranian_caravanserai_market_room_desc
+		gold_cost = 825
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 85
+		upgrades_from = ouc_iranian_caravanserai_walled_pavilion
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.399
+		liege_prestige = 0.15
+	}
+	ouc_iranian_caravanserai_trade_hall = {
+		desc = ouc_iranian_caravanserai_trade_hall_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 88
+		upgrades_from = ouc_iranian_caravanserai_market_room
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		trade_route_wealth = 2
+		max_population_mult = 0.010
+		clan_sentiment = 1
+	}
+	ouc_iranian_caravanserai_camel_stable = {
+		desc = ouc_iranian_caravanserai_camel_stable_desc
+		gold_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 92
+		upgrades_from = ouc_iranian_caravanserai_trade_hall
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		supply_limit = 0.2
+		light_cavalry_offensive = 0.06
+	}
+	ouc_iranian_caravanserai_merchants_house = {
+		desc = ouc_iranian_caravanserai_merchants_house_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 98
+		upgrades_from = ouc_iranian_caravanserai_camel_stable
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		liege_prestige = 0.45
+	}
+	ouc_iranian_caravanserai_storage_pavilion = {
+		desc = ouc_iranian_caravanserai_storage_pavilion_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 104
+		upgrades_from = ouc_iranian_caravanserai_merchants_house
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tradevalue = 1.513
+		garrison_size = 0.3
+		retinuesize_perc = 0.28
+	}
+	ouc_iranian_grand_caravanserai = {
+		desc = ouc_iranian_grand_caravanserai_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 2625
+		ai_creation_factor = 110
+		upgrades_from = ouc_iranian_caravanserai_storage_pavilion
+		potential = {
+			culture_group = iranian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		trade_route_wealth = 7
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+}

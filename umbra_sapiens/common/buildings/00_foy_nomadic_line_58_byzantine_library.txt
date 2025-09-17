@@ -1,0 +1,179 @@
+nomad = {
+	foy_byz_scroll_stand = {
+		desc = foy_byz_scroll_stand_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		tech_growth_modifier_cultural = 0.01
+	}
+	foy_byz_manuscript_desk = {
+		desc = foy_byz_manuscript_desk_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 60
+		ai_creation_factor = 70
+		upgrades_from = foy_byz_scroll_stand
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		tech_growth_modifier_cultural = 0.02
+		clan_sentiment = 1
+	}
+	foy_byz_reading_pavilion = {
+		desc = foy_byz_reading_pavilion_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 80
+		upgrades_from = foy_byz_manuscript_desk
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		tech_growth_modifier_cultural = 0.04
+		clan_sentiment = 1
+	}
+	foy_byz_copyists_room = {
+		desc = foy_byz_copyists_room_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 90
+		upgrades_from = foy_byz_reading_pavilion
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		tech_growth_modifier_cultural = 0.08
+		clan_sentiment = 1
+	}
+	foy_byz_scribes_alcove = {
+		desc = foy_byz_scribes_alcove_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 95
+		upgrades_from = foy_byz_copyists_room
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		tech_growth_modifier_cultural = 0.15
+		clan_sentiment = 1
+	}
+	foy_byz_scriptorium = {
+		desc = foy_byz_scriptorium_desc
+		gold_cost = 1440
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 100
+		upgrades_from = foy_byz_scribes_alcove
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		tech_growth_modifier_cultural = 0.25
+		tech_growth_modifier = 0.08
+		clan_sentiment = 1
+	}
+	foy_byz_book_storage_hall = {
+		desc = foy_byz_book_storage_hall_desc
+		gold_cost = 2880
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 103
+		upgrades_from = foy_byz_scriptorium
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		tech_growth_modifier_cultural = 0.4
+		tech_growth_modifier = 0.15
+		clan_sentiment = 1
+	}
+	foy_byz_scholars_study = {
+		desc = foy_byz_scholars_study_desc
+		gold_cost = 5760
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 106
+		upgrades_from = foy_byz_book_storage_hall
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		tech_growth_modifier_cultural = 0.65
+		tech_growth_modifier = 0.22
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	foy_byz_archivists_chamber = {
+		desc = foy_byz_archivists_chamber_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 109
+		upgrades_from = foy_byz_scholars_study
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		tech_growth_modifier_cultural = 1
+		tech_growth_modifier = 0.4
+		clan_sentiment = 1
+		liege_prestige = 0.4
+	}
+	foy_byz_grand_byzantine_library = {
+		desc = foy_byz_grand_byzantine_library_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = foy_byz_archivists_chamber
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		tech_growth_modifier_cultural = 1.5
+		tech_growth_modifier = 0.6
+		clan_sentiment = 1
+		liege_prestige = 1
+		liege_piety = 0.3
+	}
+}

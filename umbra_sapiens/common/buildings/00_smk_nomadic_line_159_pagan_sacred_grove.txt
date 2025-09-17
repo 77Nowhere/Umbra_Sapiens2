@@ -1,0 +1,170 @@
+nomad = {
+	smk_wicker_idol_stand = {
+		desc = smk_wicker_idol_stand_desc
+		piety_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.15
+		clan_sentiment = 1
+	}
+	smk_ancestor_tree = {
+		desc = smk_ancestor_tree_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 72
+		upgrades_from = smk_wicker_idol_stand
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.3
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	smk_stone_circle = {
+		desc = smk_stone_circle_desc
+		piety_cost = 210
+		extra_tech_building_start = 999
+		build_time = 207
+		ai_creation_factor = 80
+		upgrades_from = smk_ancestor_tree
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.65
+		clan_sentiment = 1
+		vassal_opinion = 3
+	}
+	smk_spirit_clearing = {
+		desc = smk_spirit_clearing_desc
+		piety_cost = 450
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 93
+		upgrades_from = smk_stone_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		vassal_opinion = 4
+	}
+	smk_priests_hut = {
+		desc = smk_priests_hut_desc
+		piety_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 98
+		upgrades_from = smk_spirit_clearing
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.2
+		clan_sentiment = 1
+		vassal_opinion = 6
+	}
+	smk_sanctuary_pavilion = {
+		desc = smk_sanctuary_pavilion_desc
+		piety_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 104
+		upgrades_from = smk_priests_hut
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.8
+		clan_sentiment = 1
+		vassal_opinion = 8
+	}
+	smk_blessed_glade = {
+		desc = smk_blessed_glade_desc
+		piety_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 107
+		upgrades_from = smk_sanctuary_pavilion
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		vassal_opinion = 10
+	}
+	smk_diviners_chamber = {
+		desc = smk_diviners_chamber_desc
+		piety_cost = 5175
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 109
+		upgrades_from = smk_blessed_glade
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 13
+	}
+	smk_holy_sanctuary = {
+		desc = smk_holy_sanctuary_desc
+		piety_cost = 8250
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = smk_diviners_chamber
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 16
+	}
+	smk_pagan_sacred_grove = {
+		desc = smk_pagan_sacred_grove_desc
+		piety_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = smk_holy_sanctuary
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 20
+	}
+}

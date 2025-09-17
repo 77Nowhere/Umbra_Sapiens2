@@ -1,0 +1,177 @@
+nomad = {
+	bhe_students_bench = {
+		desc = bhe_students_bench_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	bhe_reading_room = {
+		desc = bhe_reading_room_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 67
+		upgrades_from = bhe_students_bench
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	bhe_teachers_pavilion = {
+		desc = bhe_teachers_pavilion_desc
+		gold_cost = 195
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 75
+		upgrades_from = bhe_reading_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	bhe_scribes_nook = {
+		desc = bhe_scribes_nook_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 80
+		upgrades_from = bhe_teachers_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.15
+	}
+	bhe_learning_hall = {
+		desc = bhe_learning_hall_desc
+		piety_cost = 413
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 90
+		upgrades_from = bhe_scriptorium
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.35
+		church_opinion = 3
+	}
+	bhe_scriptorium = {
+		desc = bhe_scriptorium_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 88
+		upgrades_from = bhe_scribes_nook
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.22
+		vassal_opinion = 2
+	}
+	bhe_scholars_chamber = {
+		desc = bhe_scholars_chamber_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 95
+		upgrades_from = bhe_learning_hall
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.5
+		church_opinion = 4
+	}
+	bhe_study_room = {
+		desc = bhe_study_room_desc
+		piety_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 100
+		upgrades_from = bhe_scholars_chamber
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.8
+		church_opinion = 5
+	}
+	bhe_lecture_hall = {
+		desc = bhe_lecture_hall_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 105
+		upgrades_from = bhe_study_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 7
+	}
+	bhe_muslim_madrasa = {
+		desc = bhe_muslim_madrasa_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = bhe_lecture_hall
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 200
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 12
+		vassal_opinion = 8
+	}
+}

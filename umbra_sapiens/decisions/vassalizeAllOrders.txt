@@ -1,0 +1,776 @@
+decisions = {
+	vassalize_knights_templar = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+			
+			OR = {
+				religion = catholic
+				religion = cathar
+				religion = fraticelli
+				religion = waldensian
+				religion = lollard
+			}
+			
+			NOT = { has_character_modifier = expelled_d_knights_templar }
+
+			NOT = {
+				d_knights_templar = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+			
+			is_title_active = d_knights_templar
+			
+			has_landed_title = k_jerusalem
+			
+			has_dlc = "Sons of Abraham"
+			
+			d_knights_templar = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_knights_templar }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_knights_templar = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_templar_opinion_TT
+
+					d_knights_templar = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			# custom_tooltip = {
+			# 	text = only_one_vassalized_holy_order_TT
+
+			# 	NOT = {
+			# 		any_realm_lord = {
+			# 			holy_order = yes
+			# 		}
+			# 	}
+			# }
+		}
+		
+		effect = {
+			wealth = -500
+			
+			hidden_tooltip = {
+				d_knights_templar = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoA.1015
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vassalize_knights_hospitaler = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+			OR = {
+				religion = catholic
+				religion = cathar
+				religion = fraticelli
+				religion = waldensian
+				religion = lollard
+			}
+			
+			NOT = { has_character_modifier = expelled_d_knights_hospitaler }
+
+			NOT = {
+				d_knights_hospitaler = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+			
+			is_title_active = d_knights_hospitaler
+			
+			has_landed_title = k_jerusalem
+			
+			d_knights_hospitaler = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_knights_hospitaler }
+				}
+			}
+			
+			has_dlc = "Sons of Abraham"
+			
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_knights_hospitaler = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_hospitaller_opinion_TT
+
+					d_knights_hospitaler = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			# custom_tooltip = {
+			# 	text = only_one_vassalized_holy_order_TT
+
+			# 	NOT = {
+			# 		any_realm_lord = {
+			# 			holy_order = yes
+			# 		}
+			# 	}
+			# }
+		}
+		
+		effect = {
+			wealth = -500
+			
+			hidden_tooltip = {
+				d_knights_hospitaler = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoA.1115
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	vassalize_knights_of_calatrava = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 60
+
+		potential = {
+			is_title_active = d_knights_calatrava
+
+			any_demesne_title = {
+				tier = COUNT
+				NOT = {
+					title = c_calatrava
+				}
+			}
+
+			any_demesne_title = {
+				higher_tier_than = DUKE
+				region = world_europe_west_iberia
+			}
+			OR = {
+				religion = catholic
+				religion = cathar
+				religion = fraticelli
+				religion = waldensian
+				religion = lollard
+			}
+
+			NOT = { has_character_modifier = expelled_d_knights_calatrava }
+
+			d_knights_calatrava = {
+				holder_scope = {
+					independent = yes
+				}
+			}
+
+			NOT = {
+				d_knights_calatrava = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			OR = {
+				has_landed_title = c_calatrava
+				any_realm_lord = {
+					has_landed_title = c_calatrava
+				}
+				d_knights_calatrava = {
+					owner = {
+						has_landed_title = c_calatrava
+					}
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			wealth = 300
+			is_heretic = no
+			culture_group = iberian
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_knights_calatrava = {
+							holder_scope = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_calatrava_opinion_TT
+
+					d_knights_templar = {
+						holder_scope = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				trait = excommunicated
+			}
+
+			# custom_tooltip = {
+			# 	text = only_one_vassalized_holy_order_TT
+
+			# 	NOT = {
+			# 		any_realm_lord = {
+			# 			holy_order = yes
+			# 		}
+			# 	}
+			# }
+		}
+		effect = {
+			wealth = -300
+
+			d_knights_calatrava = {
+				show_scope_change = no
+				holder_scope = {
+					show_scope_change = no
+					grant_title_no_opinion = c_calatrava
+				}
+			}
+
+			hidden_tooltip = {
+				d_knights_calatrava = {
+					save_event_target_as = grandmaster_of_calatrava
+					holder_scope = {
+						wealth = 300
+					}
+					set_defacto_liege = ROOT
+				}
+
+				c_calatrava = {
+					any_direct_de_jure_vassal_title = {
+						limit = {
+							owner = {
+								OR = {
+									character = ROOT
+									any_liege = {
+										character = ROOT
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								owner = {
+									character = ROOT
+								}
+							}
+							if = {
+								limit = {
+									holding_type = CITY
+								}
+								create_random_steward = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							else_if = {
+								limit = {
+									holding_type = TEMPLE
+								}
+								create_random_priest = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							else = {
+								create_random_soldier = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							new_character = {
+								grant_title_no_opinion = PREV
+								set_defacto_liege = event_target:grandmaster_of_calatrava
+							}
+						}
+						else_if = {
+							limit = {
+								owner = {
+									NOT = {
+										character = ROOT
+									}
+								}
+							}
+							owner = {
+								set_defacto_liege = event_target:grandmaster_of_calatrava
+								religion = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	vassalize_knights_of_santiago = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 60
+
+		potential = {
+			is_title_active = d_knights_santiago
+			
+			any_demesne_title = {
+				tier = COUNT
+				NOT = {
+					title = c_calatrava
+				}
+			}
+			
+			any_demesne_title = {
+				higher_tier_than = DUKE
+				region = world_europe_west_iberia
+			}
+			
+			OR = {
+				religion = catholic
+				religion = cathar
+				religion = fraticelli
+				religion = waldensian
+				religion = lollard
+			}
+
+			NOT = { has_character_modifier = expelled_d_knights_santiago }
+
+			d_knights_santiago = {
+				holder_scope = {
+					independent = yes
+				}
+			}
+
+			NOT = {
+				d_knights_santiago = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			OR = {
+				has_landed_title = c_santiago
+				any_realm_lord = {
+					has_landed_title = c_santiago
+				}
+				d_knights_santiago = {
+					holder_scope = {
+						OR = {
+							has_landed_title = c_santiago
+							any_realm_lord = {
+								has_landed_title = c_santiago
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			wealth = 300
+			is_heretic = no
+			culture_group = iberian
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_knights_santiago = {
+							holder_scope = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_santiago_opinion_TT
+
+					d_knights_templar = {
+						holder_scope = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				trait = excommunicated
+			}
+
+			# custom_tooltip = {
+			# 	text = only_one_vassalized_holy_order_TT
+
+			# 	NOT = {
+			# 		any_realm_lord = {
+			# 			holy_order = yes
+			# 		}
+			# 	}
+			# }
+		}
+		effect = {
+			wealth = -300
+
+			d_knights_santiago = {
+				show_scope_change = no
+				holder_scope = {
+					show_scope_change = no
+					grant_title_no_opinion = c_santiago
+				}
+			}
+
+			hidden_tooltip = {
+				d_knights_santiago = {
+					save_event_target_as = grandmaster_of_santiago
+					holder_scope = {
+						wealth = 300
+					}
+					set_defacto_liege = ROOT
+				}
+
+				c_santiago = {
+					any_direct_de_jure_vassal_title = {
+						limit = {
+							owner = {
+								OR = {
+									character = ROOT
+									any_liege = {
+										character = ROOT
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								owner = {
+									character = ROOT
+								}
+							}
+							if = {
+								limit = {
+									holding_type = CITY
+								}
+								create_random_steward = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							else_if = {
+								limit = {
+									holding_type = TEMPLE
+								}
+								create_random_priest = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							else = {
+								create_random_soldier = {
+									random_traits = yes
+									dynasty = random
+								}
+							}
+							new_character = {
+								grant_title_no_opinion = PREV
+								set_defacto_liege = event_target:grandmaster_of_santiago
+							}
+						}
+						else_if = {
+							limit = {
+								owner = {
+									NOT = {
+										character = ROOT
+									}
+								}
+							}
+							owner = {
+								set_defacto_liege = event_target:grandmaster_of_santiago
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	vassalize_holy_sepulchre = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 60
+
+		potential = {
+			any_demesne_title = {
+				higher_tier_than = DUKE
+			}
+			OR = {
+				religion = orthodox
+				religion = bogomilist
+				religion = monothelite
+				religion = iconoclast
+				religion = paulician
+			}
+
+			OR = {
+				has_landed_title = c_jerusalem
+				any_realm_lord = {
+					has_landed_title = c_jerusalem
+				}
+			}			
+
+			independent = yes
+
+			d_holy_sepulchre = {
+				holder_scope = {
+					independent = yes
+				}
+			}
+
+			NOT = {
+				d_holy_sepulchre = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			NOT = { has_character_modifier = expelled_d_holy_sepulchre }
+
+			OR = {
+				has_global_flag = christian_crusades_unlocked #Prevent Army from being created at start.
+				has_global_flag = pagan_ghws_unlocked 
+				has_global_flag = muslim_jihads_unlocked
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			piety = 500
+			wealth = 500
+			is_heretic = no
+			independent = yes
+			NOT = {
+				trait = excommunicated
+			}
+			custom_tooltip = {
+				text = form_holy_sepulchre_jerusalem_TT
+
+				OR = {
+					has_landed_title = c_jerusalem
+					any_realm_lord = {
+						has_landed_title = c_jerusalem
+					}
+				}
+			}
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_holy_sepulchre = {
+							holder_scope = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_holy_sepulchre_TT
+
+					d_holy_sepulchre = {
+						holder_scope = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			# custom_tooltip = {
+			# 	text = only_one_vassalized_holy_order_TT
+
+			# 	NOT = {
+			# 		any_realm_lord = {
+			# 			holy_order = yes
+			# 		}
+			# 	}
+			# }
+		}
+		effect = {
+			wealth = -500
+			piety = -500
+
+			custom_tooltip = {
+				text = form_vassalize_holy_sepulchre_TT
+
+				d_holy_sepulchre = {
+					holder_scope = {
+						set_defacto_liege = ROOT
+					}
+				}
+			}
+		}
+	}
+}

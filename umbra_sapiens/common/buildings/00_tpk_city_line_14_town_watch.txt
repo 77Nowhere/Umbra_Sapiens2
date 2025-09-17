@@ -1,0 +1,185 @@
+city = {
+	ct_barracks_1 = {
+		desc = ct_barracks_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 0.5
+		build_time = 180
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		garrison_size = 0.05
+		local_tax_modifier = 0.01
+		light_infantry = 1
+	}
+	ct_barracks_2 = {
+		desc = ct_barracks_2_desc
+		gold_cost = 65
+		extra_tech_building_start = 1
+		build_time = 250
+		ai_creation_factor = 67
+		upgrades_from = ct_barracks_1
+		prerequisites = {
+			ct_barracks_1
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		garrison_size = 0.1
+		local_tax_modifier = 0.012
+		light_infantry = 2
+	}
+	ct_barracks_3 = {
+		desc = ct_barracks_3_desc
+		gold_cost = 90
+		extra_tech_building_start = 1
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = ct_barracks_2
+		prerequisites = {
+			ct_barracks_2
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		garrison_size = 0.13
+		local_tax_modifier = 0.015
+		levy_size = 0.03
+		light_infantry = 3
+	}
+	ct_barracks_4 = {
+		desc = ct_barracks_4_desc
+		gold_cost = 180
+		extra_tech_building_start = 0.2
+		build_time = 400
+		ai_creation_factor = 80
+		upgrades_from = ct_barracks_3
+		prerequisites = {
+			ct_barracks_3
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		garrison_size = 0.25
+		levy_size = 0.06
+		local_tax_modifier = 0.021
+		light_infantry = 4
+	}
+	ct_barracks_5 = {
+		desc = ct_barracks_5_desc
+		gold_cost = 360
+		extra_tech_building_start = 0.2
+		build_time = 600
+		ai_creation_factor = 93
+		upgrades_from = ct_barracks_4
+		prerequisites = {
+			ct_barracks_4
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		garrison_size = 0.45
+		levy_size = 0.12
+		local_tax_modifier = 0.027
+		military_techpoints = 0.03
+		light_infantry = 5
+	}
+	ct_barracks_6 = {
+		desc = ct_barracks_6_desc
+		gold_cost = 700
+		extra_tech_building_start = 0.2
+		build_time = 950
+		ai_creation_factor = 98
+		upgrades_from = ct_barracks_5
+		prerequisites = {
+			ct_barracks_5
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		garrison_size = 0.8
+		levy_size = 0.17
+		local_tax_modifier = 0.032
+		vassal_opinion = 1
+		light_infantry = 6
+	}
+	tpk_sentinel_barracks = {
+		desc = tpk_sentinel_barracks_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 103
+		upgrades_from = ct_barracks_6
+		prerequisites = {
+			ct_barracks_6
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		garrison_size = 1.5
+		levy_size = 0.27
+		local_tax_modifier = 0.04
+		military_techpoints = 0.06
+		light_infantry = 7
+	}
+	tpk_gatehouse_keep = {
+		desc = tpk_gatehouse_keep_desc
+		gold_cost = 2800
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 106
+		upgrades_from = tpk_sentinel_barracks
+		prerequisites = {
+			tpk_sentinel_barracks
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		garrison_size = 2.7
+		levy_size = 0.45
+		local_tax_modifier = 0.051
+		military_techpoints = 0.09
+		light_infantry = 8
+	}
+	tpk_perimeter_patrol = {
+		desc = tpk_perimeter_patrol_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 108
+		upgrades_from = tpk_gatehouse_keep
+		prerequisites = {
+			tpk_gatehouse_keep
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		garrison_size = 4.9
+		levy_size = 0.62
+		local_tax_modifier = 0.07
+		military_techpoints = 0.14
+		land_morale = 0.03
+		light_infantry = 9
+	}
+	tpk_marshals_headquarters = {
+		desc = tpk_marshals_headquarters_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 111
+		upgrades_from = tpk_perimeter_patrol
+		prerequisites = {
+			tpk_perimeter_patrol
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		garrison_size = 9
+		levy_size = 1.2
+		local_tax_modifier = 0.12
+		military_techpoints = 0.21
+		land_morale = 0.06
+		economy_techpoints = 0.08
+		light_infantry = 10
+	}
+}

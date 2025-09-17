@@ -1,0 +1,199 @@
+city = {
+	zsu_jungle_reed_shelter = {
+		desc = zsu_jungle_reed_shelter_desc
+		prestige_cost = 35
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 38
+		upgrades_from = zsu_jungle_clearing_hut
+		prerequisites = {
+			zsu_jungle_clearing_hut
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.06
+		supply_limit = 0.04
+	}
+	zsu_jungle_clearing_hut = {
+		desc = zsu_jungle_clearing_hut_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 35
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		supply_limit = 0.02
+	}
+	zsu_jungle_palisade = {
+		desc = zsu_jungle_palisade_desc
+		piety_cost = 80
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 44
+		upgrades_from = zsu_jungle_raised_pathway
+		prerequisites = {
+			zsu_jungle_raised_pathway
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		garrison_size = 0.12
+		supply_limit = 0.12
+	}
+	zsu_jungle_raised_pathway = {
+		desc = zsu_jungle_raised_pathway_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 41
+		upgrades_from = zsu_jungle_reed_shelter
+		prerequisites = {
+			zsu_jungle_reed_shelter
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.1
+		supply_limit = 0.08
+		tradevalue = 0.5
+	}
+	zsu_jungle_canopy_platform = {
+		desc = zsu_jungle_canopy_platform_desc
+		gold_cost = 260
+		extra_tech_building_start = 999
+		build_time = 820
+		ai_creation_factor = 50
+		upgrades_from = zsu_jungle_palisade
+		prerequisites = {
+			zsu_jungle_palisade
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		garrison_size = 0.25
+		supply_limit = 0.18
+		military_techpoints = 0.05
+	}
+	zsu_jungle_bamboo_bridge = {
+		desc = zsu_jungle_bamboo_bridge_desc
+		gold_cost = 430
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 55
+		upgrades_from = zsu_jungle_canopy_platform
+		prerequisites = {
+			zsu_jungle_canopy_platform
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		tradevalue = 2
+		supply_limit = 0.27
+		local_tax_modifier = 0.15
+	}
+	zsu_jungle_storehouse = {
+		desc = zsu_jungle_storehouse_desc
+		gold_cost = 950
+		extra_tech_building_start = 999
+		build_time = 1450
+		ai_creation_factor = 60
+		upgrades_from = zsu_jungle_bamboo_bridge
+		prerequisites = {
+			zsu_jungle_bamboo_bridge
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		tradevalue = 4
+		local_tax_modifier = 0.23
+		supply_limit = 0.33
+		economy_techpoints = 0.07
+	}
+	zsu_jungle_watchtower = {
+		desc = zsu_jungle_watchtower_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 70
+		upgrades_from = zsu_jungle_storehouse
+		prerequisites = {
+			zsu_jungle_storehouse
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		garrison_size = 0.35
+		economy_techpoints = 0.12
+		local_tax_modifier = 0.29
+	}
+	zsu_jungle_trading_post = {
+		desc = zsu_jungle_trading_post_desc
+		gold_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 90
+		upgrades_from = zsu_jungle_watchtower
+		prerequisites = {
+			zsu_jungle_watchtower
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 4
+		}
+		tradevalue = 7
+		local_tax_modifier = 0.38
+		economy_techpoints = 0.2
+		supply_limit = 0.4
+	}
+	zsu_grand_jungle_compound = {
+		desc = zsu_grand_jungle_compound_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = zsu_jungle_trading_post
+		prerequisites = {
+			zsu_jungle_trading_post
+		}
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		tradevalue = 15
+		local_tax_modifier = 0.6
+		garrison_size = 0.5
+		economy_techpoints = 0.32
+		supply_limit = 0.55
+	}
+}

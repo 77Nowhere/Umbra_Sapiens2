@@ -1,0 +1,183 @@
+nomad = {
+	kbz_east_slavic_spindle_stand = {
+		desc = kbz_east_slavic_spindle_stand_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_weavers_bench = {
+		desc = kbz_east_slavic_weavers_bench_desc
+		gold_cost = 64
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 68
+		upgrades_from = kbz_east_slavic_spindle_stand
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_loom_hut = {
+		desc = kbz_east_slavic_loom_hut_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = kbz_east_slavic_weavers_bench
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.178
+	}
+	kbz_east_slavic_threading_pavilion = {
+		desc = kbz_east_slavic_threading_pavilion_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = kbz_east_slavic_loom_hut
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_dyehouse = {
+		desc = kbz_east_slavic_dyehouse_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 90
+		upgrades_from = kbz_east_slavic_threading_pavilion
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.842
+		tradevalue = 1.513
+	}
+	kbz_east_slavic_patterned_loom_room = {
+		desc = kbz_east_slavic_patterned_loom_room_desc
+		gold_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 98
+		upgrades_from = kbz_east_slavic_dyehouse
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 105
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_fine_weavers_hall = {
+		desc = kbz_east_slavic_fine_weavers_hall_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 103
+		upgrades_from = kbz_east_slavic_patterned_loom_room
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 210
+		max_manpower_mult = 0.18
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_textile_chamber = {
+		desc = kbz_east_slavic_textile_chamber_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 106
+		upgrades_from = kbz_east_slavic_fine_weavers_hall
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 410
+		max_manpower_mult = 0.26
+		nomad_tax_modifier = 0.510
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_cloth_guildhall = {
+		desc = kbz_east_slavic_cloth_guildhall_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 108
+		upgrades_from = kbz_east_slavic_textile_chamber
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 800
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kbz_east_slavic_grand_weaver_guild = {
+		desc = kbz_east_slavic_grand_weaver_guild_desc
+		gold_cost = 22500
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = kbz_east_slavic_cloth_guildhall
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1600
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.665
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

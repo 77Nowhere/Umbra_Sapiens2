@@ -1,0 +1,220 @@
+nomad = {
+	rwu_boat_dragway_1 = {
+		desc = rwu_boat_dragway_1_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		global_movement_speed = 0.01
+	}
+	rwu_reed_dock_2 = {
+		desc = rwu_reed_dock_2_desc
+		gold_cost = 105
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 68
+		upgrades_from = rwu_boat_dragway_1
+		prerequisites = {
+			rwu_boat_dragway_1
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		global_movement_speed = 0.02
+		supply_limit = 0.03
+	}
+	rwu_wicker_boat_shelter_3 = {
+		desc = rwu_wicker_boat_shelter_3_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 104
+		ai_creation_factor = 72
+		upgrades_from = rwu_reed_dock_2
+		prerequisites = {
+			rwu_reed_dock_2
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		global_movement_speed = 0.03
+		supply_limit = 0.06
+	}
+	rwu_longboat_slipway_4 = {
+		desc = rwu_longboat_slipway_4_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 80
+		upgrades_from = rwu_wicker_boat_shelter_3
+		prerequisites = {
+			rwu_wicker_boat_shelter_3
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.05
+		supply_limit = 0.11
+	}
+	rwu_timber_wharf_5 = {
+		desc = rwu_timber_wharf_5_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 88
+		upgrades_from = rwu_longboat_slipway_4
+		prerequisites = {
+			rwu_longboat_slipway_4
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.09
+		supply_limit = 0.2
+	}
+	rwu_shielded_landing_6 = {
+		desc = rwu_shielded_landing_6_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 96
+		upgrades_from = rwu_timber_wharf_5
+		prerequisites = {
+			rwu_timber_wharf_5
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.14
+		supply_limit = 0.32
+		garrison_size = 0.12
+	}
+	rwu_sailmakers_shed_7 = {
+		desc = rwu_sailmakers_shed_7_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 102
+		upgrades_from = rwu_shielded_landing_6
+		prerequisites = {
+			rwu_shielded_landing_6
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		global_movement_speed = 0.2
+		supply_limit = 0.52
+		nomad_tax_modifier = 0.399
+	}
+	rwu_raiders_hut_8 = {
+		desc = rwu_raiders_hut_8_desc
+		gold_cost = 7875
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 108
+		upgrades_from = rwu_sailmakers_shed_7
+		prerequisites = {
+			rwu_sailmakers_shed_7
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		global_movement_speed = 0.28
+		supply_limit = 0.8
+		clan_sentiment = 1
+	}
+	rwu_viking_shipyard_9 = {
+		desc = rwu_viking_shipyard_9_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 112
+		upgrades_from = rwu_raiders_hut_8
+		prerequisites = {
+			rwu_raiders_hut_8
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.34
+		global_movement_speed = 0.4
+		supply_limit = 1.3
+		retinuesize_perc = 0.1
+	}
+	rwu_north_sea_stronghold_10 = {
+		desc = rwu_north_sea_stronghold_10_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 115
+		upgrades_from = rwu_viking_shipyard_9
+		prerequisites = {
+			rwu_viking_shipyard_9
+		}
+		port = yes
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.38
+		global_movement_speed = 0.6
+		supply_limit = 2.1
+		clan_sentiment = 1
+		retinuesize_perc = 0.17
+	}
+}

@@ -1,0 +1,175 @@
+nomad = {
+	tbn_jewish_synagogue_prayer_stand = {
+		desc = tbn_jewish_synagogue_prayer_stand_desc
+		piety_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	tbn_jewish_synagogue_stone_marker = {
+		desc = tbn_jewish_synagogue_stone_marker_desc
+		piety_cost = 83
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = tbn_jewish_synagogue_prayer_stand
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.09
+		church_opinion = 2
+	}
+	tbn_jewish_synagogue_wooden_pavilion = {
+		desc = tbn_jewish_synagogue_wooden_pavilion_desc
+		piety_cost = 188
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 78
+		upgrades_from = tbn_jewish_synagogue_stone_marker
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.18
+		vassal_opinion = 1
+	}
+	tbn_jewish_synagogue_teaching_room = {
+		desc = tbn_jewish_synagogue_teaching_room_desc
+		piety_cost = 375
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 82
+		upgrades_from = tbn_jewish_synagogue_wooden_pavilion
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.28
+		church_opinion = 3
+	}
+	tbn_jewish_synagogue_torah_chamber = {
+		desc = tbn_jewish_synagogue_torah_chamber_desc
+		piety_cost = 675
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 90
+		upgrades_from = tbn_jewish_synagogue_teaching_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.45
+		church_opinion = 5
+	}
+	tbn_jewish_synagogue_sanctuary_hall = {
+		desc = tbn_jewish_synagogue_sanctuary_hall_desc
+		piety_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 94
+		upgrades_from = tbn_jewish_synagogue_torah_chamber
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.7
+		church_opinion = 7
+		vassal_opinion = 3
+	}
+	tbn_jewish_synagogue_ritual_pavilion = {
+		desc = tbn_jewish_synagogue_ritual_pavilion_desc
+		piety_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 98
+		upgrades_from = tbn_jewish_synagogue_sanctuary_hall
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 10
+		vassal_opinion = 5
+	}
+	tbn_jewish_synagogue_community_synagogue = {
+		desc = tbn_jewish_synagogue_community_synagogue_desc
+		piety_cost = 2775
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 104
+		upgrades_from = tbn_jewish_synagogue_ritual_pavilion
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.4
+		church_opinion = 14
+		vassal_opinion = 7
+	}
+	tbn_jewish_synagogue_scholars_hall = {
+		desc = tbn_jewish_synagogue_scholars_hall_desc
+		piety_cost = 4050
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 108
+		upgrades_from = tbn_jewish_synagogue_community_synagogue
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 20
+		vassal_opinion = 10
+	}
+	tbn_jewish_synagogue_grand_synagogue = {
+		desc = tbn_jewish_synagogue_grand_synagogue_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = tbn_jewish_synagogue_scholars_hall
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1.2
+		church_opinion = 30
+		vassal_opinion = 15
+	}
+}

@@ -1,0 +1,147 @@
+castle = {
+	gmt_moat_ditch_perimeter = {
+		desc = gmt_moat_ditch_perimeter_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.5
+		garrison_size = 0.02
+	}
+	gmt_moat_earthen_trench = {
+		desc = gmt_moat_earthen_trench_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 62
+		upgrades_from = gmt_moat_ditch_perimeter
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.07
+		garrison_size = 0.03
+		levy_size = 0.01
+	}
+	gmt_moat_dry_moat = {
+		desc = gmt_moat_dry_moat_desc
+		prestige_cost = 60
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 65
+		upgrades_from = gmt_moat_earthen_trench
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.1
+		garrison_size = 0.04
+		levy_size = 0.02
+	}
+	gmt_moat_palisaded_moat = {
+		desc = gmt_moat_palisaded_moat_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 70
+		upgrades_from = gmt_moat_dry_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.15
+		garrison_size = 0.06
+		levy_size = 0.03
+	}
+	gmt_moat_water_filled_moat = {
+		desc = gmt_moat_water_filled_moat_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 78
+		upgrades_from = gmt_moat_palisaded_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.24
+		garrison_size = 0.1
+		levy_size = 0.05
+	}
+	gmt_moat_wide_moat = {
+		desc = gmt_moat_wide_moat_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 87
+		upgrades_from = gmt_moat_water_filled_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.34
+		garrison_size = 0.15
+		levy_size = 0.07
+		land_morale = 0.05
+	}
+	gmt_moat_double_moat = {
+		desc = gmt_moat_double_moat_desc
+		gold_cost = 1000
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 95
+		upgrades_from = gmt_moat_wide_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.5
+		garrison_size = 0.22
+		levy_size = 0.1
+		land_morale = 0.1
+	}
+	gmt_moat_stone_lined_moat = {
+		desc = gmt_moat_stone_lined_moat_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 100
+		upgrades_from = gmt_moat_double_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.67
+		garrison_size = 0.3
+		levy_size = 0.12
+		heavy_infantry_defensive = 0.08
+	}
+	gmt_moat_bridged_moat = {
+		desc = gmt_moat_bridged_moat_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 105
+		upgrades_from = gmt_moat_stone_lined_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.86
+		garrison_size = 0.39
+		levy_size = 0.16
+		land_morale = 0.12
+		local_tax_modifier = 0.05
+	}
+	gmt_moat_fortified_moat = {
+		desc = gmt_moat_fortified_moat_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = gmt_moat_bridged_moat
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.12
+		garrison_size = 0.54
+		levy_size = 0.21
+		heavy_infantry_defensive = 0.18
+		land_morale = 0.18
+	}
+}

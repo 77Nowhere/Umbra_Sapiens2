@@ -1,0 +1,174 @@
+nomad = {
+	ont_rope_pen = {
+		desc = ont_rope_pen_desc
+		gold_cost = 45
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	ont_wattle_sheepfold = {
+		desc = ont_wattle_sheepfold_desc
+		gold_cost = 135
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = ont_rope_pen
+		prerequisites = {
+			ont_rope_pen
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		population_growth = 0.021
+	}
+	ont_goat_paddock = {
+		desc = ont_goat_paddock_desc
+		gold_cost = 525
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = ont_wattle_sheepfold
+		prerequisites = {
+			ont_wattle_sheepfold
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		max_population_mult = 0.005
+	}
+	ont_pig_enclosure = {
+		desc = ont_pig_enclosure_desc
+		gold_cost = 1500
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 90
+		upgrades_from = ont_goat_paddock
+		prerequisites = {
+			ont_goat_paddock
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		max_population_mult = 0.005
+	}
+	ont_expanded_livestock_yard = {
+		desc = ont_expanded_livestock_yard_desc
+		gold_cost = 4500
+		build_time = 338
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = ont_pig_enclosure
+		prerequisites = {
+			ont_pig_enclosure
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		max_population_mult = 0.010
+		garrison_size = 0.07
+	}
+	ont_multi_animal_stockade = {
+		desc = ont_multi_animal_stockade_desc
+		gold_cost = 7500
+		build_time = 488
+		extra_tech_building_start = 999
+		ai_creation_factor = 100
+		upgrades_from = ont_expanded_livestock_yard
+		prerequisites = {
+			ont_expanded_livestock_yard
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		max_population_mult = 0.010
+		supply_limit = 0.08
+	}
+	ont_tended_animal_corral = {
+		desc = ont_tended_animal_corral_desc
+		gold_cost = 11250
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 105
+		upgrades_from = ont_multi_animal_stockade
+		prerequisites = {
+			ont_multi_animal_stockade
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 120
+		max_manpower_mult = 0.06
+		max_population_mult = 0.015
+		population_growth = 0.051
+	}
+	ont_breeding_shed = {
+		desc = ont_breeding_shed_desc
+		gold_cost = 13500
+		build_time = 938
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = ont_tended_animal_corral
+		prerequisites = {
+			ont_tended_animal_corral
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 200
+		max_manpower_mult = 0.22
+		max_population_mult = 0.025
+		fertility = 0.20
+	}
+	ont_animal_market_pen = {
+		desc = ont_animal_market_pen_desc
+		gold_cost = 15000
+		build_time = 1313
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = ont_breeding_shed
+		prerequisites = {
+			ont_breeding_shed
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 350
+		max_manpower_mult = 0.10
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.797
+	}
+	ont_nomad_menagerie = {
+		desc = ont_nomad_menagerie_desc
+		gold_cost = 17250
+		build_time = 1875
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = ont_animal_market_pen
+		prerequisites = {
+			ont_animal_market_pen
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 600
+		max_manpower_mult = 0.06
+		max_population_mult = 0.125
+		liege_prestige = 1
+		clan_sentiment = 1
+	}
+}

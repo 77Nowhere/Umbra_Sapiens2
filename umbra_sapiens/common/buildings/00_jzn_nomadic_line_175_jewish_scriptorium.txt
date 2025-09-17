@@ -1,0 +1,205 @@
+nomad = {
+	jzn_scroll_stand = {
+		desc = jzn_scroll_stand_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 60
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	jzn_scribes_desk = {
+		desc = jzn_scribes_desk_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 66
+		upgrades_from = jzn_scroll_stand
+		prerequisites = {
+			jzn_scroll_stand
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.1
+	}
+	jzn_reading_pavilion = {
+		desc = jzn_reading_pavilion_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 75
+		upgrades_from = jzn_scribes_desk
+		prerequisites = {
+			jzn_scribes_desk
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.2
+	}
+	jzn_copyists_room = {
+		desc = jzn_copyists_room_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 82
+		upgrades_from = jzn_reading_pavilion
+		prerequisites = {
+			jzn_reading_pavilion
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.3
+		vassal_opinion = 1
+	}
+	jzn_book_nook = {
+		desc = jzn_book_nook_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 86
+		upgrades_from = jzn_copyists_room
+		prerequisites = {
+			jzn_copyists_room
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.5
+		vassal_opinion = 2
+	}
+	jzn_manuscript_hall = {
+		desc = jzn_manuscript_hall_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = jzn_book_nook
+		prerequisites = {
+			jzn_book_nook
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.8
+		vassal_opinion = 3
+	}
+	jzn_archive_chamber = {
+		desc = jzn_archive_chamber_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 98
+		upgrades_from = jzn_manuscript_hall
+		prerequisites = {
+			jzn_manuscript_hall
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_piety = 1.2
+		vassal_opinion = 4
+	}
+	jzn_scholars_study = {
+		desc = jzn_scholars_study_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 102
+		upgrades_from = jzn_archive_chamber
+		prerequisites = {
+			jzn_archive_chamber
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_piety = 1
+		vassal_opinion = 6
+	}
+	jzn_library_hall = {
+		desc = jzn_library_hall_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1425
+		ai_creation_factor = 107
+		upgrades_from = jzn_scholars_study
+		prerequisites = {
+			jzn_scholars_study
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_piety = 1.5
+		vassal_opinion = 10
+	}
+	jzn_jewish_scriptorium = {
+		desc = jzn_jewish_scriptorium_desc
+		piety_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 2025
+		ai_creation_factor = 110
+		upgrades_from = jzn_library_hall
+		prerequisites = {
+			jzn_library_hall
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		max_population_mult = 0.025
+		liege_piety = 1
+		vassal_opinion = 18
+		church_opinion = 10
+	}
+}

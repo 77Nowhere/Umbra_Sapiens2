@@ -1,0 +1,176 @@
+city = {
+	rrr_jewish_counting_room = {
+		desc = rrr_jewish_counting_room_desc
+		prestige_cost = 35
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 70
+		upgrades_from = rrr_jewish_trade_arcade
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.09
+		tradevalue = 5
+		economy_techpoints = 0.01
+	}
+	rrr_jewish_merchant_booth = {
+		desc = rrr_jewish_merchant_booth_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 60
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.02
+		tradevalue = 1
+	}
+	rrr_jewish_trade_arcade = {
+		desc = rrr_jewish_trade_arcade_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		upgrades_from = rrr_jewish_merchant_booth
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.05
+		tradevalue = 3
+	}
+	rrr_jewish_bookstall_lane = {
+		desc = rrr_jewish_bookstall_lane_desc
+		piety_cost = 130
+		extra_tech_building_start = 999
+		build_time = 820
+		ai_creation_factor = 105
+		upgrades_from = rrr_jewish_cloth_hall
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.66
+		tradevalue = 46
+		economy_techpoints = 0.18
+		culture_techpoints = 0.07
+	}
+	rrr_jewish_moneylenders_office = {
+		desc = rrr_jewish_moneylenders_office_desc
+		gold_cost = 260
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 82
+		upgrades_from = rrr_jewish_counting_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.16
+		tradevalue = 10
+		economy_techpoints = 0.03
+	}
+	rrr_jewish_jewelers_shop = {
+		desc = rrr_jewish_jewelers_shop_desc
+		gold_cost = 540
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 90
+		upgrades_from = rrr_jewish_moneylenders_office
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.28
+		tradevalue = 18
+		economy_techpoints = 0.06
+		liege_prestige = 0.5
+	}
+	rrr_jewish_cloth_hall = {
+		desc = rrr_jewish_cloth_hall_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 100
+		upgrades_from = rrr_jewish_jewelers_shop
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.45
+		tradevalue = 32
+		economy_techpoints = 0.12
+		garrison_size = 0.12
+	}
+	rrr_jewish_market_gallery = {
+		desc = rrr_jewish_market_gallery_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = rrr_jewish_bookstall_lane
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.94
+		tradevalue = 70
+		economy_techpoints = 0.28
+		garrison_size = 0.18
+	}
+	rrr_jewish_commerce_house = {
+		desc = rrr_jewish_commerce_house_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = rrr_jewish_market_gallery
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 1.2
+		tradevalue = 100
+		economy_techpoints = 0.42
+		culture_techpoints = 0.12
+	}
+	rrr_jewish_grand_merchant_quarter = {
+		desc = rrr_jewish_grand_merchant_quarter_desc
+		gold_cost = 8400
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = rrr_jewish_commerce_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 1.8
+		tradevalue = 180
+		economy_techpoints = 0.7
+		garrison_size = 0.25
+		liege_prestige = 2
+	}
+}

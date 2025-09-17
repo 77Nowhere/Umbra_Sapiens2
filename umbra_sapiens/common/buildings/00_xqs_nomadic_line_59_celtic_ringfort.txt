@@ -1,0 +1,209 @@
+nomad = {
+	xqs_celtic_ringfort_brush_fence = {
+		desc = xqs_celtic_ringfort_brush_fence_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	xqs_celtic_ringfort_earthen_bank = {
+		desc = xqs_celtic_ringfort_earthen_bank_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 60
+		ai_creation_factor = 62
+		upgrades_from = xqs_celtic_ringfort_brush_fence
+		prerequisites = {
+			xqs_celtic_ringfort_brush_fence
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		garrison_size = 0.1
+	}
+	xqs_celtic_ringfort_wooden_palisade = {
+		desc = xqs_celtic_ringfort_wooden_palisade_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 70
+		upgrades_from = xqs_celtic_ringfort_earthen_bank
+		prerequisites = {
+			xqs_celtic_ringfort_earthen_bank
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		garrison_size = 0.25
+		levy_size = 0.1
+	}
+	xqs_celtic_ringfort_stone_guard_hut = {
+		desc = xqs_celtic_ringfort_stone_guard_hut_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 80
+		upgrades_from = xqs_celtic_ringfort_wooden_palisade
+		prerequisites = {
+			xqs_celtic_ringfort_wooden_palisade
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		garrison_size = 0.5
+		levy_size = 0.18
+		clan_sentiment = 1
+	}
+	xqs_celtic_ringfort_inner_ditch = {
+		desc = xqs_celtic_ringfort_inner_ditch_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 88
+		upgrades_from = xqs_celtic_ringfort_stone_guard_hut
+		prerequisites = {
+			xqs_celtic_ringfort_stone_guard_hut
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		garrison_size = 0.8
+		levy_size = 0.35
+		supply_limit = 0.05
+	}
+	xqs_celtic_ringfort_outer_rampart = {
+		desc = xqs_celtic_ringfort_outer_rampart_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 95
+		upgrades_from = xqs_celtic_ringfort_inner_ditch
+		prerequisites = {
+			xqs_celtic_ringfort_inner_ditch
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		garrison_size = 1.2
+		levy_size = 0.55
+		clan_sentiment = 1
+	}
+	xqs_celtic_ringfort_gatehouse_pavilion = {
+		desc = xqs_celtic_ringfort_gatehouse_pavilion_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 102
+		upgrades_from = xqs_celtic_ringfort_outer_rampart
+		prerequisites = {
+			xqs_celtic_ringfort_outer_rampart
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 1.8
+		levy_size = 0.8
+		supply_limit = 0.08
+		clan_sentiment = 1
+	}
+	xqs_celtic_ringfort_defended_roundhouse = {
+		desc = xqs_celtic_ringfort_defended_roundhouse_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 108
+		upgrades_from = xqs_celtic_ringfort_gatehouse_pavilion
+		prerequisites = {
+			xqs_celtic_ringfort_gatehouse_pavilion
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 2.5
+		levy_size = 1.1
+		supply_limit = 0.12
+		max_manpower_mult = 0.02
+	}
+	xqs_celtic_ringfort_chiefs_ring = {
+		desc = xqs_celtic_ringfort_chiefs_ring_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 110
+		upgrades_from = xqs_celtic_ringfort_defended_roundhouse
+		prerequisites = {
+			xqs_celtic_ringfort_defended_roundhouse
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 3.5
+		levy_size = 1.6
+		clan_sentiment = 1
+		liege_prestige = 0.25
+	}
+	xqs_celtic_ringfort_high_ringfort = {
+		desc = xqs_celtic_ringfort_high_ringfort_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = xqs_celtic_ringfort_chiefs_ring
+		prerequisites = {
+			xqs_celtic_ringfort_chiefs_ring
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 5
+		levy_size = 2.2
+		clan_sentiment = 1
+		liege_prestige = 0.7
+		supply_limit = 0.2
+	}
+}

@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+tp_town_1;Assembly Narthex;;;;;x
+tp_town_1_desc;A simple earthwork narthex, demarcated by wooden stakes and rough benches, serving as a provisional gathering space for early worship and council.;;;;;x
+tp_town_2;Wooden Gathering Hall;;;;;x
+tp_town_2_desc;A modest timber hall where villagers and clergy assemble for religious rites, decorated with painted icons and basic altar furnishings.;;;;;x
+tp_town_4;Chamber of Rites;;;;;x
+tp_town_4_desc;A dedicated space for the performance of sacred ceremonies, featuring stone floors and modest murals, accessible only to the initiated.;;;;;x
+tp_town_3;Stone Reception Hall;;;;;x
+tp_town_3_desc;A stone-built hall with sturdy pillars and a raised dais, signifying the growing permanence and influence of the local faith.;;;;;x
+tp_town_6;Processional Chamber;;;;;x
+tp_town_6_desc;A vast hall with colonnades and polished floors, designed for grand processions and prominent religious ceremonies, reinforcing the authority of the faith.;;;;;x
+tp_town_5;Decorated Nave;;;;;x
+tp_town_5_desc;An expanded nave adorned with intricate carvings, painted frescoes, and relic alcoves, drawing pilgrims and enhancing the temples prestige.;;;;;x
+bdf_ornate_ceremony_hall;Ornate Ceremony Hall;;;;;x
+bdf_ornate_ceremony_hall_desc;A resplendent hall with gilded altars, stained glass, and marble floors, hosting major festivals and assemblies that project the faiths wealth and learning.;;;;;x
+bdf_grand_nave;Grand Nave;;;;;x
+bdf_grand_nave_desc;A monumental nave, its soaring arches and mosaics inspiring awe in all visitors. The center of theological debate and pilgrimage, symbolizing spiritual unity.;;;;;x
+bdf_sanctified_assembly_hall;Sanctified Assembly Hall;;;;;x
+bdf_sanctified_assembly_hall_desc;A sanctified hall where the highest clergy convene, its relics and sanctuaries protected by ornate gates and guarded alcoves, radiating divine authority.;;;;;x
+bdf_majestic_ceremonial_hall;Majestic Ceremonial Hall;;;;;x
+bdf_majestic_ceremonial_hall_desc;The pinnacle of spiritual architecture: a breathtaking hall with marble pillars, gold-inlaid walls, and monumental sanctuaries, attracting pilgrims and scholars from distant lands.;;;;;x

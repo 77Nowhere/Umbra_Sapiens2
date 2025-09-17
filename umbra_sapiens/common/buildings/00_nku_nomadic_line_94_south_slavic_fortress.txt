@@ -1,0 +1,205 @@
+nomad = {
+	nku_south_slavic_brush_fence = {
+		desc = nku_south_slavic_brush_fence_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.05
+	}
+	nku_south_slavic_wooden_palisade = {
+		desc = nku_south_slavic_wooden_palisade_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 70
+		upgrades_from = nku_south_slavic_brush_fence
+		prerequisites = {
+			nku_south_slavic_brush_fence
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.1
+		garrison_size = 0.1
+	}
+	nku_south_slavic_stone_rampart = {
+		desc = nku_south_slavic_stone_rampart_desc
+		gold_cost = 128
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 80
+		upgrades_from = nku_south_slavic_wooden_palisade
+		prerequisites = {
+			nku_south_slavic_wooden_palisade
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		supply_limit = 0.18
+		garrison_size = 0.18
+		clan_sentiment = 1
+	}
+	nku_south_slavic_gatehouse = {
+		desc = nku_south_slavic_gatehouse_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 90
+		upgrades_from = nku_south_slavic_stone_rampart
+		prerequisites = {
+			nku_south_slavic_stone_rampart
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		garrison_size = 0.27
+		clan_sentiment = 1
+	}
+	nku_south_slavic_defended_hall = {
+		desc = nku_south_slavic_defended_hall_desc
+		gold_cost = 488
+		extra_tech_building_start = 999
+		build_time = 308
+		ai_creation_factor = 100
+		upgrades_from = nku_south_slavic_gatehouse
+		prerequisites = {
+			nku_south_slavic_gatehouse
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		garrison_size = 0.39
+		clan_sentiment = 1
+		manpower_growth = 0.037
+	}
+	nku_south_slavic_watchtower_pavilion = {
+		desc = nku_south_slavic_watchtower_pavilion_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 105
+		upgrades_from = nku_south_slavic_defended_hall
+		prerequisites = {
+			nku_south_slavic_defended_hall
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		garrison_size = 0.54
+		clan_sentiment = 1
+		archers_defensive = 0.1
+	}
+	nku_south_slavic_bastion_room = {
+		desc = nku_south_slavic_bastion_room_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 110
+		upgrades_from = nku_south_slavic_watchtower_pavilion
+		prerequisites = {
+			nku_south_slavic_watchtower_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 0.75
+		clan_sentiment = 1
+		manpower_growth = 0.301
+	}
+	nku_south_slavic_chiefs_chamber = {
+		desc = nku_south_slavic_chiefs_chamber_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = nku_south_slavic_bastion_room
+		prerequisites = {
+			nku_south_slavic_bastion_room
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 1
+		clan_sentiment = 1
+		liege_prestige = 0.3
+	}
+	nku_south_slavic_high_wall_pavilion = {
+		desc = nku_south_slavic_high_wall_pavilion_desc
+		gold_cost = 3675
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 110
+		upgrades_from = nku_south_slavic_chiefs_chamber
+		prerequisites = {
+			nku_south_slavic_chiefs_chamber
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.0909.09098
+		garrison_size = 1.3
+		clan_sentiment = 1
+		manpower_growth = 0.301
+	}
+	nku_south_slavic_fortress = {
+		desc = nku_south_slavic_fortress_desc
+		gold_cost = 5625
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = nku_south_slavic_high_wall_pavilion
+		prerequisites = {
+			nku_south_slavic_high_wall_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		garrison_size = 1.8
+		clan_sentiment = 1
+		manpower_growth = 0.090
+		liege_prestige = 0.6
+	}
+}

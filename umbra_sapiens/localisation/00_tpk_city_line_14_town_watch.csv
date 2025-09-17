@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ct_barracks_1;Watchmans Post;;;;;x
+ct_barracks_1_desc;A rudimentary post of wooden stakes and a canvas shelter, manned by a handful of watchmen keeping an eye on the settlements outskirts.;;;;;x
+ct_barracks_2;Night Bell;;;;;x
+ct_barracks_2_desc;A mounted iron bell and fire basket, tended by townfolk, to sound alarms at night and deter thieves or raiders.;;;;;x
+ct_barracks_3;Patrol Route;;;;;x
+ct_barracks_3_desc;A marked and maintained patrol path, with crude lanterns and posts, allowing regular watch circuits through the growing settlement.;;;;;x
+ct_barracks_4;Guardhouse;;;;;x
+ct_barracks_4_desc;A timber guardhouse, with a lockable store for arms and bunks for watchmen, overseeing the main street and market.;;;;;x
+ct_barracks_5;Signal Tower;;;;;x
+ct_barracks_5_desc;A stone watchtower with signaling fires and horns, providing clear views and quick alerts to the city in times of danger.;;;;;x
+ct_barracks_6;Town Gaol;;;;;x
+ct_barracks_6_desc;A secure stone gaol with barred cells and reinforced doors, housing criminals and maintaining order within the city.;;;;;x
+tpk_sentinel_barracks;Sentinel Barracks;;;;;x
+tpk_sentinel_barracks_desc;A fortified barracks complex with stone walls, armories, and training yards, housing a sizable city watch detachment.;;;;;x
+tpk_gatehouse_keep;Gatehouse Keep;;;;;x
+tpk_gatehouse_keep_desc;A powerful stone gatehouse and keep, anchoring the city walls and controlling all entry and exit, with rooms for officers and guards.;;;;;x
+tpk_perimeter_patrol;Perimeter Patrol;;;;;x
+tpk_perimeter_patrol_desc;A coordinated watch system, with mounted patrols and signal relays, ensuring the entire city perimeter is vigilantly guarded.;;;;;x
+tpk_marshals_headquarters;Marshals Headquarters;;;;;x
+tpk_marshals_headquarters_desc;An imposing headquarters with a command hall, record archives, and war room, from which the citys Marshal and captains direct all security, defense, and emergency measures.;;;;;x

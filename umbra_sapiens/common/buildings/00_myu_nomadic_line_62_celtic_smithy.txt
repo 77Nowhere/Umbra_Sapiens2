@@ -1,0 +1,175 @@
+nomad = {
+	myu_celtic_forge_pit = {
+		desc = myu_celtic_forge_pit_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		horde_maintenence_cost = -0.01
+	}
+	myu_celtic_bellows_shed = {
+		desc = myu_celtic_bellows_shed_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 72
+		ai_creation_factor = 66
+		upgrades_from = myu_celtic_forge_pit
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.03
+		horde_maintenence_cost = -0.015
+	}
+	myu_celtic_simple_anvil = {
+		desc = myu_celtic_simple_anvil_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 74
+		upgrades_from = myu_celtic_bellows_shed
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.05
+		supply_limit = 0.03
+	}
+	myu_celtic_ironworkers_hut = {
+		desc = myu_celtic_ironworkers_hut_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 84
+		upgrades_from = myu_celtic_simple_anvil
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.08
+		supply_limit = 0.07
+	}
+	myu_celtic_weapons_pavilion = {
+		desc = myu_celtic_weapons_pavilion_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 162
+		ai_creation_factor = 90
+		upgrades_from = myu_celtic_ironworkers_hut
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		levy_size = 0.13
+		clan_sentiment = 1
+	}
+	myu_celtic_druids_forge = {
+		desc = myu_celtic_druids_forge_desc
+		prestige_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 108
+		upgrades_from = myu_celtic_artisans_chamber
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.5
+		liege_piety = 0.2
+	}
+	myu_celtic_bronze_hall = {
+		desc = myu_celtic_bronze_hall_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 229
+		ai_creation_factor = 96
+		upgrades_from = myu_celtic_weapons_pavilion
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		levy_size = 0.19
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	myu_celtic_grand_smithy = {
+		desc = myu_celtic_grand_smithy_desc
+		prestige_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = myu_celtic_druids_forge
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.34
+		levy_size = 0.6
+		clan_sentiment = 1
+		liege_prestige = 1
+		retinuesize = 6
+	}
+	myu_celtic_master_smithy = {
+		desc = myu_celtic_master_smithy_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 330
+		ai_creation_factor = 100
+		upgrades_from = myu_celtic_bronze_hall
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		levy_size = 0.28
+		clan_sentiment = 1
+		liege_prestige = 0.4
+	}
+	myu_celtic_artisans_chamber = {
+		desc = myu_celtic_artisans_chamber_desc
+		gold_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 105
+		upgrades_from = myu_celtic_master_smithy
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.06
+		levy_size = 0.4
+		clan_sentiment = 1
+		retinuesize = 3
+	}
+}

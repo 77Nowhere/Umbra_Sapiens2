@@ -1,0 +1,181 @@
+castle = {
+	ca_barracks_1 = {
+		desc = ca_barracks_1_desc
+		gold_cost = 50
+		extra_tech_building_start = 1
+		build_time = 180
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.5
+		garrison_size = 0.5
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	ca_barracks_2 = {
+		desc = ca_barracks_2_desc
+		prestige_cost = 65
+		extra_tech_building_start = 2.2
+		build_time = 270
+		ai_creation_factor = 65
+		upgrades_from = ca_barracks_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.5
+		garrison_size = 0.5
+		liege_prestige = 0.1
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	ca_barracks_3 = {
+		desc = ca_barracks_3_desc
+		piety_cost = 90
+		extra_tech_building_start = 3
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = ca_barracks_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		levy_size = 0.12
+		garrison_size = 0.08
+		heavy_infantry_defensive = 0.05
+		heavy_infantry = 12
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	ca_barracks_4 = {
+		desc = ca_barracks_4_desc
+		gold_cost = 260
+		extra_tech_building_start = 3
+		build_time = 500
+		ai_creation_factor = 80
+		upgrades_from = ca_barracks_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		levy_size = 0.23
+		garrison_size = 0.13
+		heavy_infantry_defensive = 0.05
+		heavy_infantry = 15
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	ca_barracks_5 = {
+		desc = ca_barracks_5_desc
+		gold_cost = 500
+		extra_tech_building_start = 2
+		build_time = 720
+		ai_creation_factor = 90
+		upgrades_from = ca_barracks_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		levy_size = 0.43
+		garrison_size = 0.26
+		heavy_infantry_defensive = 0.12
+		heavy_infantry = 19
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	ca_barracks_6 = {
+		desc = ca_barracks_6_desc
+		gold_cost = 800
+		extra_tech_building_start = 0.2
+		build_time = 850
+		ai_creation_factor = 95
+		upgrades_from = ca_barracks_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		levy_size = 0.74
+		garrison_size = 0.34
+		heavy_infantry_offensive = 0.07
+		land_morale = 0.04
+		heavy_infantry = 23
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	jtp_drill_hall = {
+		desc = jtp_drill_hall_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 100
+		upgrades_from = ca_barracks_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 5
+		}
+		levy_size = 1.13
+		garrison_size = 0.51
+		heavy_infantry_offensive = 0.11
+		land_morale = 0.06
+		heavy_infantry = 27
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	jtp_garrison_house = {
+		desc = jtp_garrison_house_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 105
+		upgrades_from = jtp_drill_hall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
+		}
+		levy_size = 1.97
+		garrison_size = 0.85
+		heavy_infantry_defensive = 0.18
+		heavy_infantry = 30
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	jtp_warriors_dormitory = {
+		desc = jtp_warriors_dormitory_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 108
+		upgrades_from = jtp_garrison_house
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 7
+		}
+		levy_size = 3.37
+		garrison_size = 1.36
+		land_morale = 0.1
+		heavy_infantry = 34
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+	jtp_grand_garrison = {
+		desc = jtp_grand_garrison_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 110
+		upgrades_from = jtp_warriors_dormitory
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 8
+		}
+		levy_size = 6.18
+		garrison_size = 2.13
+		heavy_infantry_offensive = 0.2
+		land_morale = 0.15
+		heavy_infantry = 38
+		pikemen = 11
+		light_infantry = 5
+		retinuesize = 100
+	}
+}

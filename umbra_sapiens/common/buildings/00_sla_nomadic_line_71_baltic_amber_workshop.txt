@@ -1,0 +1,184 @@
+nomad = {
+	sla_amber_gathering_stand = {
+		desc = sla_amber_gathering_stand_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 60
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.222
+		max_population = 100
+	}
+	sla_sorting_hut = {
+		desc = sla_sorting_hut_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 62
+		upgrades_from = sla_amber_gathering_stand
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.355
+		max_population = 100
+		manpower_growth = 0.030
+	}
+	sla_polishing_bench = {
+		desc = sla_polishing_bench_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 68
+		upgrades_from = sla_sorting_hut
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.642
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	sla_bead_stringers_tent = {
+		desc = sla_bead_stringers_tent_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 75
+		upgrades_from = sla_polishing_bench
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_manpower_mult = 0.02
+		levy_size = 0.04
+	}
+	sla_amber_carvers_pavilion = {
+		desc = sla_amber_carvers_pavilion_desc
+		gold_cost = 1388
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 85
+		upgrades_from = sla_bead_stringers_tent
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		max_population = 100
+		max_manpower_mult = 0.02
+		levy_size = 0.09
+	}
+	sla_jewelry_hut = {
+		desc = sla_jewelry_hut_desc
+		gold_cost = 2775
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 92
+		upgrades_from = sla_amber_carvers_pavilion
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		levy_size = 0.13
+		liege_prestige = 0.08
+	}
+	sla_traders_hall = {
+		desc = sla_traders_hall_desc
+		gold_cost = 5550
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 100
+		upgrades_from = sla_jewelry_hut
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		levy_size = 0.2
+		supply_limit = 0.1
+	}
+	sla_merchant_pavilion = {
+		desc = sla_merchant_pavilion_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 106
+		upgrades_from = sla_traders_hall
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		levy_size = 0.28
+		clan_sentiment = 1
+	}
+	sla_amber_guildhouse = {
+		desc = sla_amber_guildhouse_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1950
+		ai_creation_factor = 110
+		upgrades_from = sla_merchant_pavilion
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.487
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		levy_size = 0.34
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	sla_baltic_amber_guild = {
+		desc = sla_baltic_amber_guild_desc
+		gold_cost = 48000
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 110
+		upgrades_from = sla_amber_guildhouse
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.709
+		max_population_mult = 0.020
+		max_manpower_mult = 0.10
+		levy_size = 0.5
+		clan_sentiment = 1
+		liege_prestige = 0.4
+	}
+}

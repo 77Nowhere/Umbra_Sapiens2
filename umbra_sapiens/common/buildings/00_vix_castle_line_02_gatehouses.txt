@@ -1,0 +1,156 @@
+castle = {
+	ca_militia_barracks_1 = {
+		desc = ca_militia_barracks_1_desc
+		gold_cost = 30
+		extra_tech_building_start = 1
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.5
+		garrison_size = 0.15
+		levy_size = 0.15
+		light_infantry = 3
+	}
+	ca_militia_barracks_2 = {
+		desc = ca_militia_barracks_2_desc
+		gold_cost = 60
+		extra_tech_building_start = 2.2
+		build_time = 270
+		ai_creation_factor = 68
+		upgrades_from = ca_militia_barracks_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		fort_level = 0.08
+		garrison_size = 0.15
+		levy_size = 0.15
+		light_infantry = 3
+	}
+	ca_militia_barracks_3 = {
+		desc = ca_militia_barracks_3_desc
+		gold_cost = 120
+		extra_tech_building_start = 1.2
+		build_time = 360
+		ai_creation_factor = 72
+		upgrades_from = ca_militia_barracks_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		fort_level = 0.15
+		garrison_size = 0.09
+		levy_size = 0.04
+		light_infantry = 3
+	}
+	ca_militia_barracks_4 = {
+		desc = ca_militia_barracks_4_desc
+		gold_cost = 240
+		extra_tech_building_start = 0.5
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = ca_militia_barracks_3
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.24
+		garrison_size = 0.13
+		levy_size = 0.05
+		local_tax_modifier = 0.05
+		light_infantry = 3
+	}
+	vix_portcullised_gatehouse = {
+		desc = vix_portcullised_gatehouse_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 90
+		upgrades_from = ca_militia_barracks_4
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.34
+		garrison_size = 0.17
+		levy_size = 0.08
+		levy_reinforce_rate = 0.1
+		light_infantry = 3
+	}
+	vix_flanking_towers = {
+		desc = vix_flanking_towers_desc
+		gold_cost = 1000
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 96
+		upgrades_from = vix_portcullised_gatehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.47
+		garrison_size = 0.26
+		levy_size = 0.12
+		light_infantry = 3
+	}
+	vix_murder_hole_passage = {
+		desc = vix_murder_hole_passage_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 102
+		upgrades_from = vix_flanking_towers
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.6
+		garrison_size = 0.3
+		levy_size = 0.17
+		light_infantry = 3
+	}
+	vix_reinforced_gatehouse = {
+		desc = vix_reinforced_gatehouse_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 106
+		upgrades_from = vix_murder_hole_passage
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.8
+		garrison_size = 0.39
+		levy_size = 0.25
+		heavy_infantry_defensive = 0.1
+		light_infantry = 3
+	}
+	vix_barbican_complex = {
+		desc = vix_barbican_complex_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 108
+		upgrades_from = vix_reinforced_gatehouse
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.99
+		garrison_size = 0.51
+		levy_size = 0.32
+		local_tax_modifier = 0.1
+		light_infantry = 3
+	}
+	vix_fortified_gate_bastion = {
+		desc = vix_fortified_gate_bastion_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = vix_barbican_complex
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 1.32
+		garrison_size = 0.64
+		levy_size = 0.4
+		heavy_infantry_defensive = 0.2
+		light_infantry = 3
+	}
+}

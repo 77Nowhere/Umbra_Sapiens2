@@ -1,0 +1,183 @@
+nomad = {
+	lvc_west_african_stick_corral = {
+		desc = lvc_west_african_stick_corral_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+	}
+	lvc_west_african_wooden_pen = {
+		desc = lvc_west_african_wooden_pen_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = lvc_west_african_stick_corral
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.051
+		nomad_tax_modifier = 0.133
+	}
+	lvc_west_african_wattle_shelter = {
+		desc = lvc_west_african_wattle_shelter_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 74
+		upgrades_from = lvc_west_african_wooden_pen
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.091
+		supply_limit = 0.03
+	}
+	lvc_west_african_cattle_pavilion = {
+		desc = lvc_west_african_cattle_pavilion_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 78
+		upgrades_from = lvc_west_african_wattle_shelter
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.151
+		supply_limit = 0.06
+		clan_sentiment = 1
+	}
+	lvc_west_african_expanded_pen = {
+		desc = lvc_west_african_expanded_pen_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 85
+		upgrades_from = lvc_west_african_cattle_pavilion
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.131
+		supply_limit = 0.1
+	}
+	lvc_west_african_guarded_yard = {
+		desc = lvc_west_african_guarded_yard_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = lvc_west_african_expanded_pen
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.131
+		garrison_size = 0.1
+		clan_sentiment = 1
+	}
+	lvc_west_african_village_pen = {
+		desc = lvc_west_african_village_pen_desc
+		gold_cost = 2025
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 96
+		upgrades_from = lvc_west_african_guarded_yard
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		max_population_mult = 0.010
+		population_growth = 0.151
+		supply_limit = 0.18
+		nomad_tax_modifier = 0.443
+	}
+	lvc_west_african_community_pavilion = {
+		desc = lvc_west_african_community_pavilion_desc
+		gold_cost = 4050
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 102
+		upgrades_from = lvc_west_african_village_pen
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		max_population_mult = 0.010
+		population_growth = 0.102
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.797
+	}
+	lvc_west_african_chiefs_pen = {
+		desc = lvc_west_african_chiefs_pen_desc
+		gold_cost = 8250
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 108
+		upgrades_from = lvc_west_african_community_pavilion
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		max_population_mult = 0.015
+		population_growth = 0.151
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+	lvc_west_african_grand_pen = {
+		desc = lvc_west_african_grand_pen_desc
+		gold_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 1013
+		ai_creation_factor = 115
+		upgrades_from = lvc_west_african_chiefs_pen
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1024
+		max_population_mult = 0.025
+		population_growth = 0.151
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		liege_prestige = 1
+	}
+}

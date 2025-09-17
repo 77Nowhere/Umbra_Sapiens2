@@ -1,0 +1,174 @@
+city = {
+	xby_gathering_room = {
+		desc = xby_gathering_room_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 65
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.03
+		garrison_size = 0.01
+	}
+	xby_reading_alcove = {
+		desc = xby_reading_alcove_desc
+		prestige_cost = 65
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 75
+		upgrades_from = xby_meeting_chamber
+		prerequisites = { xby_meeting_chamber }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.13
+		garrison_size = 0.03
+		culture_techpoints = 0.02
+	}
+	xby_meeting_chamber = {
+		desc = xby_meeting_chamber_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 70
+		upgrades_from = xby_gathering_room
+		prerequisites = { xby_gathering_room }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		local_tax_modifier = 0.07
+		garrison_size = 0.02
+		tradevalue = 0.7
+	}
+	xby_council_niche = {
+		desc = xby_council_niche_desc
+		piety_cost = 210
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 92
+		upgrades_from = xby_elders_court
+		prerequisites = { xby_elders_court }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		local_tax_modifier = 0.45
+		garrison_size = 0.12
+		culture_techpoints = 0.08
+	}
+	xby_elders_court = {
+		desc = xby_elders_court_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 85
+		upgrades_from = xby_reading_alcove
+		prerequisites = { xby_reading_alcove }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		local_tax_modifier = 0.25
+		garrison_size = 0.06
+		culture_techpoints = 0.05
+	}
+	xby_community_archive = {
+		desc = xby_community_archive_desc
+		prestige_cost = 420
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 105
+		upgrades_from = xby_debate_hall
+		prerequisites = { xby_debate_hall }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CONSTRUCTION = 4 }
+		local_tax_modifier = 1.2
+		garrison_size = 0.38
+		culture_techpoints = 0.22
+		economy_techpoints = 0.07
+	}
+	xby_debate_hall = {
+		desc = xby_debate_hall_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = xby_council_niche
+		prerequisites = { xby_council_niche }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		local_tax_modifier = 0.8
+		garrison_size = 0.22
+		culture_techpoints = 0.15
+	}
+	xby_scribes_gallery = {
+		desc = xby_scribes_gallery_desc
+		piety_cost = 920
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 110
+		upgrades_from = xby_judgement_chamber
+		prerequisites = { xby_judgement_chamber }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		local_tax_modifier = 2.5
+		garrison_size = 0.85
+		culture_techpoints = 0.45
+		economy_techpoints = 0.26
+	}
+	xby_judgement_chamber = {
+		desc = xby_judgement_chamber_desc
+		gold_cost = 1850
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = xby_community_archive
+		prerequisites = { xby_community_archive }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CONSTRUCTION = 5 }
+		local_tax_modifier = 1.85
+		garrison_size = 0.6
+		culture_techpoints = 0.32
+		economy_techpoints = 0.14
+	}
+	xby_grand_community_hall = {
+		desc = xby_grand_community_hall_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = xby_scribes_gallery
+		prerequisites = { xby_scribes_gallery }
+		potential = {
+			religion_group = jewish_group
+    }
+
+		trigger = { TECH_CITY_CONSTRUCTION = 6 }
+		local_tax_modifier = 4
+		garrison_size = 1.5
+		culture_techpoints = 0.7
+		economy_techpoints = 0.45
+		tradevalue = 3.5
+	}
+}

@@ -1,0 +1,174 @@
+nomad = {
+	ler_north_germanic_berserker_warrior_firepit = {
+		desc = ler_north_germanic_berserker_warrior_firepit_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+	}
+	ler_north_germanic_berserker_woolen_cloak_hut = {
+		desc = ler_north_germanic_berserker_woolen_cloak_hut_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 68
+		upgrades_from = ler_north_germanic_berserker_warrior_firepit
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.03
+	}
+	ler_north_germanic_berserker_bearskin_pavilion = {
+		desc = ler_north_germanic_berserker_bearskin_pavilion_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 73
+		upgrades_from = ler_north_germanic_berserker_woolen_cloak_hut
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.06
+	}
+	ler_north_germanic_berserker_drinking_circle = {
+		desc = ler_north_germanic_berserker_drinking_circle_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 78
+		upgrades_from = ler_north_germanic_berserker_bearskin_pavilion
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	ler_north_germanic_berserker_initiates_lodge = {
+		desc = ler_north_germanic_berserker_initiates_lodge_desc
+		gold_cost = 975
+		extra_tech_building_start = 999
+		build_time = 285
+		ai_creation_factor = 85
+		upgrades_from = ler_north_germanic_berserker_drinking_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.3
+	}
+	ler_north_germanic_berserker_test_of_strength_ring = {
+		desc = ler_north_germanic_berserker_test_of_strength_ring_desc
+		gold_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 405
+		ai_creation_factor = 92
+		upgrades_from = ler_north_germanic_berserker_initiates_lodge
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		liege_prestige = 0.5
+	}
+	ler_north_germanic_berserker_hall = {
+		desc = ler_north_germanic_berserker_hall_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 630
+		ai_creation_factor = 98
+		upgrades_from = ler_north_germanic_berserker_test_of_strength_ring
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		levy_size = 0.18
+		clan_sentiment = 1
+	}
+	ler_north_germanic_berserker_oathkeepers_chamber = {
+		desc = ler_north_germanic_berserker_oathkeepers_chamber_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 104
+		upgrades_from = ler_north_germanic_berserker_hall
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		levy_size = 0.32
+		clan_sentiment = 1
+	}
+	ler_north_germanic_berserker_champions_den = {
+		desc = ler_north_germanic_berserker_champions_den_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = ler_north_germanic_berserker_oathkeepers_chamber
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		levy_size = 0.48
+		clan_sentiment = 1
+	}
+	ler_north_germanic_berserker_fury_lodge = {
+		desc = ler_north_germanic_berserker_fury_lodge_desc
+		gold_cost = 19500
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 110
+		upgrades_from = ler_north_germanic_berserker_champions_den
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		levy_size = 0.75
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+}

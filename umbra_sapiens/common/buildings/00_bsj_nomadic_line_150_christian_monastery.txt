@@ -1,0 +1,171 @@
+nomad = {
+	bsj_nomad_christian_monastery_hermits_hut = {
+		desc = bsj_nomad_christian_monastery_hermits_hut_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+	}
+	bsj_nomad_christian_monastery_stone_cell = {
+		desc = bsj_nomad_christian_monastery_stone_cell_desc
+		piety_cost = 105
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 66
+		upgrades_from = bsj_nomad_christian_monastery_hermits_hut
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.25
+		clan_sentiment = 1
+		church_opinion = 3
+	}
+	bsj_nomad_christian_monastery_scriptorium = {
+		desc = bsj_nomad_christian_monastery_scriptorium_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 70
+		upgrades_from = bsj_nomad_christian_monastery_stone_cell
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.4
+		clan_sentiment = 1
+		liege_prestige = 0.1
+	}
+	bsj_nomad_christian_monastery_prayer_chamber = {
+		desc = bsj_nomad_christian_monastery_prayer_chamber_desc
+		piety_cost = 488
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 79
+		upgrades_from = bsj_nomad_christian_monastery_scriptorium
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.65
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	bsj_nomad_christian_monastery_cloister_pavilion = {
+		desc = bsj_nomad_christian_monastery_cloister_pavilion_desc
+		piety_cost = 975
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 86
+		upgrades_from = bsj_nomad_christian_monastery_prayer_chamber
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 8
+	}
+	bsj_nomad_christian_monastery_monks_hall = {
+		desc = bsj_nomad_christian_monastery_monks_hall_desc
+		piety_cost = 1950
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = bsj_nomad_christian_monastery_cloister_pavilion
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 12
+	}
+	bsj_nomad_christian_monastery_refectorium = {
+		desc = bsj_nomad_christian_monastery_refectorium_desc
+		piety_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 97
+		upgrades_from = bsj_nomad_christian_monastery_monks_hall
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 18
+	}
+	bsj_nomad_christian_monastery_abbey_room = {
+		desc = bsj_nomad_christian_monastery_abbey_room_desc
+		piety_cost = 7800
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 102
+		upgrades_from = bsj_nomad_christian_monastery_refectorium
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 25
+	}
+	bsj_nomad_christian_monastery_choir_chamber = {
+		desc = bsj_nomad_christian_monastery_choir_chamber_desc
+		piety_cost = 15600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 107
+		upgrades_from = bsj_nomad_christian_monastery_abbey_room
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 2
+		church_opinion = 35
+	}
+	bsj_nomad_christian_monastery_grand_monastery = {
+		desc = bsj_nomad_christian_monastery_grand_monastery_desc
+		piety_cost = 31200
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 112
+		upgrades_from = bsj_nomad_christian_monastery_choir_chamber
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 3
+		church_opinion = 60
+		liege_prestige = 0.6
+	}
+}

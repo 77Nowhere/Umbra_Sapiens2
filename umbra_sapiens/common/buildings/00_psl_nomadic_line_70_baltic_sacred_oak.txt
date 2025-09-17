@@ -1,0 +1,198 @@
+nomad = {
+	psl_baltic_sacred_oak_1 = {
+		desc = psl_oak_sapling_desc
+		piety_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	psl_baltic_sacred_oak_2 = {
+		desc = psl_wicker_fence_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 70
+		upgrades_from = psl_baltic_sacred_oak_1
+		prerequisites = {
+			psl_baltic_sacred_oak_1
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.2
+	}
+	psl_baltic_sacred_oak_3 = {
+		desc = psl_shrine_patch_desc
+		piety_cost = 225
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 75
+		upgrades_from = psl_baltic_sacred_oak_2
+		prerequisites = {
+			psl_baltic_sacred_oak_2
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.4
+		vassal_opinion = 2
+	}
+	psl_baltic_sacred_oak_4 = {
+		desc = psl_blessed_oak_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = psl_baltic_sacred_oak_3
+		prerequisites = {
+			psl_baltic_sacred_oak_3
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.7
+		church_opinion = 3
+	}
+	psl_baltic_sacred_oak_5 = {
+		desc = psl_idol_pavilion_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 85
+		upgrades_from = psl_baltic_sacred_oak_4
+		prerequisites = {
+			psl_baltic_sacred_oak_4
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.2
+		church_opinion = 5
+	}
+	psl_baltic_sacred_oak_6 = {
+		desc = psl_sanctuary_circle_desc
+		piety_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 90
+		upgrades_from = psl_baltic_sacred_oak_5
+		prerequisites = {
+			psl_baltic_sacred_oak_5
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 4
+	}
+	psl_baltic_sacred_oak_7 = {
+		desc = psl_priests_hut_desc
+		piety_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 95
+		upgrades_from = psl_baltic_sacred_oak_6
+		prerequisites = {
+			psl_baltic_sacred_oak_6
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 8
+	}
+	psl_baltic_sacred_oak_8 = {
+		desc = psl_ancestors_hall_desc
+		piety_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 713
+		ai_creation_factor = 100
+		upgrades_from = psl_baltic_sacred_oak_7
+		prerequisites = {
+			psl_baltic_sacred_oak_7
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		vassal_opinion = 7
+	}
+	psl_baltic_sacred_oak_9 = {
+		desc = psl_high_oak_sanctuary_desc
+		piety_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 105
+		upgrades_from = psl_baltic_sacred_oak_8
+		prerequisites = {
+			psl_baltic_sacred_oak_8
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 12
+		vassal_opinion = 10
+	}
+	psl_baltic_sacred_oak_10 = {
+		desc = psl_baltic_sacred_grove_desc
+		piety_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 110
+		upgrades_from = psl_baltic_sacred_oak_9
+		prerequisites = {
+			psl_baltic_sacred_oak_9
+		}
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 18
+		vassal_opinion = 15
+	}
+}

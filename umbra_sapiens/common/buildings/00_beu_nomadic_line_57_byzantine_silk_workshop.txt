@@ -1,0 +1,207 @@
+nomad = {
+	beu_byz_silk_silkworm_box = {
+		desc = beu_byz_silk_silkworm_box_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 60
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.178
+	}
+	beu_byz_silk_spinning_frame = {
+		desc = beu_byz_silk_spinning_frame_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 65
+		upgrades_from = beu_byz_silk_silkworm_box
+		prerequisites = {
+			beu_byz_silk_silkworm_box
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.266
+	}
+	beu_byz_silk_weavers_hut = {
+		desc = beu_byz_silk_weavers_hut_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 70
+		upgrades_from = beu_byz_silk_spinning_frame
+		prerequisites = {
+			beu_byz_silk_spinning_frame
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+	}
+	beu_byz_silk_dye_bath_room = {
+		desc = beu_byz_silk_dye_bath_room_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 75
+		upgrades_from = beu_byz_silk_weavers_hut
+		prerequisites = {
+			beu_byz_silk_weavers_hut
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+	}
+	beu_byz_silk_woven_silk_pavilion = {
+		desc = beu_byz_silk_woven_silk_pavilion_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = beu_byz_silk_dye_bath_room
+		prerequisites = {
+			beu_byz_silk_dye_bath_room
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		manpower_growth = 0.030
+		tradevalue = 1.513
+	}
+	beu_byz_silk_fine_cloth_hall = {
+		desc = beu_byz_silk_fine_cloth_hall_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 90
+		upgrades_from = beu_byz_silk_woven_silk_pavilion
+		prerequisites = {
+			beu_byz_silk_woven_silk_pavilion
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 160
+		max_population_mult = 0.015
+		manpower_growth = 0.030
+		trade_route_wealth = 8
+	}
+	beu_byz_silk_patterned_silk_chamber = {
+		desc = beu_byz_silk_patterned_silk_chamber_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 95
+		upgrades_from = beu_byz_silk_fine_cloth_hall
+		prerequisites = {
+			beu_byz_silk_fine_cloth_hall
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 320
+		max_population_mult = 0.025
+		manpower_growth = 0.030
+		tradevalue = 1.513
+	}
+	beu_byz_silk_master_weavers_room = {
+		desc = beu_byz_silk_master_weavers_room_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 100
+		upgrades_from = beu_byz_silk_patterned_silk_chamber
+		prerequisites = {
+			beu_byz_silk_patterned_silk_chamber
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 640
+		max_population_mult = 0.125
+		manpower_growth = 0.030
+		trade_route_wealth = 25
+	}
+	beu_byz_silk_imperial_silk_hall = {
+		desc = beu_byz_silk_imperial_silk_hall_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 105
+		upgrades_from = beu_byz_silk_master_weavers_room
+		prerequisites = {
+			beu_byz_silk_master_weavers_room
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1280
+		max_population_mult = 0.025
+		manpower_growth = 0.030
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	beu_byz_silk_byzantine_silk_guild = {
+		desc = beu_byz_silk_byzantine_silk_guild_desc
+		gold_cost = 48000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = beu_byz_silk_imperial_silk_hall
+		prerequisites = {
+			beu_byz_silk_imperial_silk_hall
+		}
+		potential = {
+			culture_group = byzantine_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 2560
+		max_population_mult = 0.025
+		manpower_growth = 0.030
+		tradevalue = 1.513
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.443
+	}
+}

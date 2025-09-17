@@ -1,0 +1,215 @@
+nomad = {
+	tes_tibetan_wool_shearing_stand = {
+		desc = tes_tibetan_wool_shearing_stand_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 62
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.031
+		nomad_tax_modifier = 0.222
+	}
+	tes_tibetan_wool_spindle_patch = {
+		desc = tes_tibetan_wool_spindle_patch_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 71
+		upgrades_from = tes_tibetan_wool_shearing_stand
+		prerequisites = {
+			tes_tibetan_wool_shearing_stand
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.051
+		nomad_tax_modifier = 0.355
+	}
+	tes_tibetan_wool_weavers_tent = {
+		desc = tes_tibetan_wool_weavers_tent_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 80
+		upgrades_from = tes_tibetan_wool_spindle_patch
+		prerequisites = {
+			tes_tibetan_wool_spindle_patch
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.091
+		nomad_tax_modifier = 0.576
+		supply_limit = 0.06
+	}
+	tes_tibetan_wool_loom_hut = {
+		desc = tes_tibetan_wool_loom_hut_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 88
+		upgrades_from = tes_tibetan_wool_weavers_tent
+		prerequisites = {
+			tes_tibetan_wool_weavers_tent
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		population_growth = 0.171
+		nomad_tax_modifier = 0.842
+		supply_limit = 0.13
+	}
+	tes_tibetan_wool_dye_pavilion = {
+		desc = tes_tibetan_wool_dye_pavilion_desc
+		gold_cost = 1575
+		extra_tech_building_start = 999
+		build_time = 657
+		ai_creation_factor = 93
+		upgrades_from = tes_tibetan_wool_loom_hut
+		prerequisites = {
+			tes_tibetan_wool_loom_hut
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		population_growth = 0.151
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+	}
+	tes_tibetan_wool_textile_chamber = {
+		desc = tes_tibetan_wool_textile_chamber_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 98
+		upgrades_from = tes_tibetan_wool_dye_pavilion
+		prerequisites = {
+			tes_tibetan_wool_dye_pavilion
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		population_growth = 0.161
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		supply_limit = 0.22
+	}
+	tes_tibetan_wool_fine_cloth_hall = {
+		desc = tes_tibetan_wool_fine_cloth_hall_desc
+		gold_cost = 6600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 103
+		upgrades_from = tes_tibetan_wool_textile_chamber
+		prerequisites = {
+			tes_tibetan_wool_textile_chamber
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.142
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		liege_prestige = 0.15
+	}
+	tes_tibetan_wool_guild_pavilion = {
+		desc = tes_tibetan_wool_guild_pavilion_desc
+		gold_cost = 12600
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 108
+		upgrades_from = tes_tibetan_wool_fine_cloth_hall
+		prerequisites = {
+			tes_tibetan_wool_fine_cloth_hall
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.142
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		liege_prestige = 0.25
+		clan_sentiment = 1
+	}
+	tes_tibetan_wool_master_weavers_room = {
+		desc = tes_tibetan_wool_master_weavers_room_desc
+		gold_cost = 23400
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 110
+		upgrades_from = tes_tibetan_wool_guild_pavilion
+		prerequisites = {
+			tes_tibetan_wool_guild_pavilion
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.102
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		liege_prestige = 0.4
+		clan_sentiment = 1
+	}
+	tes_tibetan_wool_guild = {
+		desc = tes_tibetan_wool_guild_desc
+		gold_cost = 45000
+		extra_tech_building_start = 999
+		build_time = 3075
+		ai_creation_factor = 110
+		upgrades_from = tes_tibetan_wool_master_weavers_room
+		prerequisites = {
+			tes_tibetan_wool_master_weavers_room
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		population_growth = 0.102
+		nomad_tax_modifier = 0.709
+		tradevalue = 1.513
+		liege_prestige = 0.75
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+}

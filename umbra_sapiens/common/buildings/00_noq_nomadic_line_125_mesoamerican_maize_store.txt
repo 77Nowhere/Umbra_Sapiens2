@@ -1,0 +1,172 @@
+nomad = {
+	noq_mesoamerican_maize_earthen_pit = {
+		desc = noq_mesoamerican_maize_earthen_pit_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	noq_mesoamerican_maize_woven_basket = {
+		desc = noq_mesoamerican_maize_woven_basket_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 60
+		ai_creation_factor = 68
+		upgrades_from = noq_mesoamerican_maize_earthen_pit
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.01
+	}
+	noq_mesoamerican_maize_mudbrick_hut = {
+		desc = noq_mesoamerican_maize_mudbrick_hut_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 72
+		upgrades_from = noq_mesoamerican_maize_woven_basket
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		population_growth = 0.021
+	}
+	noq_mesoamerican_maize_thatched_silo = {
+		desc = noq_mesoamerican_maize_thatched_silo_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 80
+		upgrades_from = noq_mesoamerican_maize_mudbrick_hut
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		supply_limit = 0.03
+	}
+	noq_mesoamerican_maize_rodent_proof_store = {
+		desc = noq_mesoamerican_maize_rodent_proof_store_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 92
+		upgrades_from = noq_mesoamerican_maize_thatched_silo
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		population_growth = 0.031
+	}
+	noq_mesoamerican_maize_guarded_pavilion = {
+		desc = noq_mesoamerican_maize_guarded_pavilion_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 98
+		upgrades_from = noq_mesoamerican_maize_rodent_proof_store
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	noq_mesoamerican_maize_market_storehall = {
+		desc = noq_mesoamerican_maize_market_storehall_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 103
+		upgrades_from = noq_mesoamerican_maize_guarded_pavilion
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.443
+	}
+	noq_mesoamerican_maize_expanded_granary = {
+		desc = noq_mesoamerican_maize_expanded_granary_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 108
+		upgrades_from = noq_mesoamerican_maize_market_storehall
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		population_growth = 0.061
+	}
+	noq_mesoamerican_maize_grain_exchange_hall = {
+		desc = noq_mesoamerican_maize_grain_exchange_hall_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 110
+		upgrades_from = noq_mesoamerican_maize_expanded_granary
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.09.093
+		max_manpower_mult = 0.26
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+	}
+	noq_mesoamerican_maize_granary = {
+		desc = noq_mesoamerican_maize_granary_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = noq_mesoamerican_maize_grain_exchange_hall
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.22
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+	}
+}

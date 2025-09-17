@@ -1,0 +1,180 @@
+nomad = {
+	awt_tibetan_salt_lick = {
+		desc = awt_tibetan_salt_lick_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+		max_population_mult = 0.005
+	}
+	awt_tibetan_salt_pit = {
+		desc = awt_tibetan_salt_pit_desc
+		gold_cost = 98
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 68
+		upgrades_from = awt_tibetan_salt_lick
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.072
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.222
+	}
+	awt_tibetan_salt_shed = {
+		desc = awt_tibetan_salt_shed_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 72
+		upgrades_from = awt_tibetan_salt_pit
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.399
+	}
+	awt_tibetan_stone_storage = {
+		desc = awt_tibetan_stone_storage_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 78
+		upgrades_from = awt_tibetan_salt_shed
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.443
+		max_manpower_mult = 0.02
+	}
+	awt_tibetan_salt_pavilion = {
+		desc = awt_tibetan_salt_pavilion_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 85
+		upgrades_from = awt_tibetan_stone_storage
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+	}
+	awt_tibetan_market_stand = {
+		desc = awt_tibetan_market_stand_desc
+		gold_cost = 1725
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 92
+		upgrades_from = awt_tibetan_salt_pavilion
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+	}
+	awt_tibetan_expanded_hall = {
+		desc = awt_tibetan_expanded_hall_desc
+		gold_cost = 3075
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 96
+		upgrades_from = awt_tibetan_market_stand
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	awt_tibetan_traders_pavilion = {
+		desc = awt_tibetan_traders_pavilion_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 101
+		upgrades_from = awt_tibetan_expanded_hall
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		max_population_mult = 0.025
+		tradevalue = 1.513
+		global_movement_speed = 0.08
+	}
+	awt_tibetan_salt_guildhall = {
+		desc = awt_tibetan_salt_guildhall_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 107
+		upgrades_from = awt_tibetan_traders_pavilion
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	awt_tibetan_salt_guild = {
+		desc = awt_tibetan_salt_guild_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = awt_tibetan_salt_guildhall
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.125
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		global_movement_speed = 0.15
+		clan_sentiment = 1
+	}
+}

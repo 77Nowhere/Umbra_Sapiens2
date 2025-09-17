@@ -1,0 +1,7143 @@
+temple = {
+	tp_town_1 = {
+		desc = tp_town_1_desc
+		gold_cost = 45
+		extra_tech_building_start = 0.3
+		build_time = 200
+		tax_income = 2.10
+		ai_creation_factor = 34
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		church_opinion = 1
+		liege_piety = 0.1
+		archers = 8
+		light_infantry = 10
+		levy_size = 0.04
+		local_revolt_risk = -0.01
+		tax_income = 0.88
+	}
+	tp_town_2 = {
+		desc = tp_town_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 0.6
+		build_time = 350
+		tax_income = 2.63
+		ai_creation_factor = 36
+		upgrades_from = tp_town_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.42
+		liege_piety = 0.16
+		archers = 12
+		light_infantry = 14
+		levy_size = 0.06
+		local_revolt_risk = -0.02
+		tax_income = 1.75
+	}
+	tp_town_3 = {
+		desc = tp_town_3_desc
+		gold_cost = 180
+		extra_tech_building_start = 0.2
+		build_time = 600
+		tax_income = 3.33
+		ai_creation_factor = 38
+		upgrades_from = tp_town_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 1
+		fort_level = 0.006
+		liege_piety = 0.28
+		archers = 18
+		light_infantry = 20
+		levy_size = 0.1
+		local_revolt_risk = -0.04
+		tax_income = 2.63
+	}
+	tp_town_4 = {
+		desc = tp_town_4_desc
+		piety_cost = 120
+		extra_tech_building_start = 0.2
+		build_time = 850
+		tax_income = 3.01
+		ai_creation_factor = 42
+		upgrades_from = tp_town_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.07
+		church_opinion = 2
+		garrison_size = 0.15
+		liege_piety = 0.22
+		archers = 16
+		light_infantry = 18
+		levy_size = 0.08
+		local_revolt_risk = -0.03
+		tax_income = 3.50
+	}
+	tp_town_5 = {
+		desc = tp_town_5_desc
+		piety_cost = 280
+		extra_tech_building_start = 0.2
+		build_time = 1300
+		tax_income = 4.38
+		ai_creation_factor = 48
+		upgrades_from = tp_town_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 1.85
+		garrison_size = 0.27
+		tech_growth_modifier = 0.075
+		liege_piety = 0.39
+		archers = 26
+		light_infantry = 28
+		levy_size = 0.16
+		local_revolt_risk = -0.06
+		tax_income = 4.38
+	}
+	tp_town_6 = {
+		desc = tp_town_6_desc
+		prestige_cost = 200
+		extra_tech_building_start = 999
+		build_time = 1800
+		tax_income = 3.89
+		ai_creation_factor = 52
+		upgrades_from = tp_town_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.12
+		garrison_size = 0.37
+		fort_level = 0.014
+		church_opinion = 3
+		liege_piety = 0.33
+		archers = 22
+		light_infantry = 24
+		levy_size = 0.13
+		local_revolt_risk = -0.05
+		tax_income = 5.25
+	}
+	bdf_ornate_ceremony_hall = {
+		desc = bdf_ornate_ceremony_hall_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 2800
+		tax_income = 5.08
+		ai_creation_factor = 56
+		upgrades_from = tp_town_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.2
+		temple_tax_modifier = 3.05
+		church_opinion = 4
+		tech_growth_modifier = 0.16
+		liege_piety = 0.6
+		archers = 32
+		light_infantry = 34
+		levy_size = 0.21
+		local_revolt_risk = -0.07
+		tax_income = 6.13
+	}
+	bdf_grand_nave = {
+		desc = bdf_grand_nave_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 3700
+		tax_income = 5.78
+		ai_creation_factor = 60
+		upgrades_from = bdf_ornate_ceremony_hall
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.09
+		temple_tax_modifier = 4.8
+		garrison_size = 0.63
+		tech_growth_modifier = 0.26
+		liege_piety = 0.8
+		archers = 38
+		light_infantry = 40
+		levy_size = 0.26
+		local_revolt_risk = -0.08
+		tax_income = 7.00
+	}
+	bdf_sanctified_assembly_hall = {
+		desc = bdf_sanctified_assembly_hall_desc
+		gold_cost = 3700
+		extra_tech_building_start = 999
+		build_time = 4800
+		tax_income = 6.48
+		ai_creation_factor = 62
+		upgrades_from = bdf_grand_nave
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.12
+		church_opinion = 7
+		garrison_size = 1.06
+		tech_growth_modifier = 0.37
+		liege_piety = 1.1
+		archers = 44
+		light_infantry = 46
+		levy_size = 0.32
+		local_revolt_risk = -0.09
+		tax_income = 7.88
+	}
+	bdf_majestic_ceremonial_hall = {
+		desc = bdf_majestic_ceremonial_hall_desc
+		gold_cost = 5600
+		extra_tech_building_start = 999
+		build_time = 6500
+		tax_income = 7.18
+		ai_creation_factor = 65
+		upgrades_from = bdf_sanctified_assembly_hall
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.21
+		temple_tax_modifier = 7.2
+		church_opinion = 12
+		garrison_size = 1.85
+		tech_growth_modifier = 0.6
+		liege_piety = 1.3
+		archers = 52
+		light_infantry = 54
+		levy_size = 0.38
+		local_revolt_risk = -0.1
+		tax_income = 8.75
+	}
+	tp_monastery_1 = {
+		desc = tp_monastery_1_desc
+		piety_cost = 25
+		extra_tech_building_start = 0.2
+		build_time = 90
+		tax_income = 2.10
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.012
+		tech_growth_modifier = 0.012
+		levy_size = 0.03
+	}
+	tp_monastery_2 = {
+		desc = tp_monastery_2_desc
+		gold_cost = 55
+		extra_tech_building_start = 0.2
+		build_time = 120
+		tax_income = 2.63
+		ai_creation_factor = 70
+		upgrades_from = tp_monastery_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.018
+		tech_growth_modifier = 0.018
+		levy_size = 0.04
+	}
+	tp_monastery_3 = {
+		desc = tp_monastery_3_desc
+		gold_cost = 110
+		extra_tech_building_start = 0.2
+		build_time = 180
+		tax_income = 3.15
+		ai_creation_factor = 75
+		upgrades_from = tp_monastery_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.025
+		tech_growth_modifier = 0.035
+		church_opinion = 2
+		fort_level = 0.02
+		levy_size = 0.05
+	}
+	tp_monastery_4 = {
+		desc = tp_monastery_4_desc
+		gold_cost = 210
+		extra_tech_building_start = 0.2
+		build_time = 320
+		tax_income = 3.68
+		ai_creation_factor = 85
+		upgrades_from = tp_monastery_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.032
+		tech_growth_modifier = 0.07
+		church_opinion = 4
+		fort_level = 0.03
+		levy_size = 0.06
+	}
+	tp_monastery_5 = {
+		desc = tp_monastery_5_desc
+		gold_cost = 430
+		extra_tech_building_start = 0.2
+		build_time = 500
+		tax_income = 4.38
+		ai_creation_factor = 100
+		upgrades_from = tp_monastery_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		global_tax_modifier = 0.025
+		tech_growth_modifier = 0.13
+		church_opinion = 7
+		culture_techpoints = 0.035
+		fort_level = 0.04
+		levy_size = 0.08
+	}
+	tp_monastery_6 = {
+		desc = tp_monastery_6_desc
+		gold_cost = 980
+		extra_tech_building_start = 0.2
+		build_time = 750
+		tax_income = 5.78
+		ai_creation_factor = 110
+		upgrades_from = tp_monastery_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.08
+		tech_growth_modifier = 0.17
+		church_opinion = 9
+		fort_level = 0.05
+		levy_size = 0.12
+	}
+	bpq_scribes_guildhall = {
+		desc = bpq_scribes_guildhall_desc
+		piety_cost = 950
+		extra_tech_building_start = 999
+		build_time = 950
+		tax_income = 4.90
+		ai_creation_factor = 115
+		upgrades_from = tp_monastery_6
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		global_tax_modifier = 0.035
+		tech_growth_modifier = 0.23
+		church_opinion = 11
+		culture_techpoints = 0.045
+		levy_size = 0.1
+	}
+	bpq_scriptorium_archive = {
+		desc = bpq_scriptorium_archive_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 1200
+		tax_income = 6.65
+		ai_creation_factor = 122
+		upgrades_from = bpq_scribes_guildhall
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.14
+		tech_growth_modifier = 0.33
+		church_opinion = 13
+		garrison_size = 0.3
+		levy_size = 0.14
+	}
+	bpq_royal_scriptorium = {
+		desc = bpq_royal_scriptorium_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1500
+		tax_income = 7.88
+		ai_creation_factor = 130
+		upgrades_from = bpq_scriptorium_archive
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		global_tax_modifier = 0.04
+		tech_growth_modifier = 0.5
+		church_opinion = 17
+		fort_level = 0.07
+		culture_techpoints = 0.06
+		levy_size = 0.15
+	}
+	bpq_great_library_of_manuscripts = {
+		desc = bpq_great_library_of_manuscripts_desc
+		piety_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 2000
+		tax_income = 10.50
+		ai_creation_factor = 145
+		upgrades_from = bpq_royal_scriptorium
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		global_tax_modifier = 0.05
+		tech_growth_modifier = 0.85
+		church_opinion = 23
+		fort_level = 0.09
+		culture_techpoints = 0.08
+		garrison_size = 0.66
+		levy_size = 0.18
+	}
+	caz_straw_guest_hut = {
+		desc = caz_straw_guest_hut_desc
+		piety_cost = 35
+		extra_tech_building_start = 999
+		build_time = 230
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		temple_tax_modifier = 0.12
+		tax_income = 0.18
+		liege_piety = 0.01
+		levy_size = 0.02
+		tax_income = 0.35
+	}
+	caz_wooden_guesthouse = {
+		desc = caz_wooden_guesthouse_desc
+		gold_cost = 95
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 64
+		upgrades_from = caz_straw_guest_hut
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.25
+		garrison_size = 0.05
+		tax_income = 0.35
+		liege_piety = 0.015
+		archers = 4
+		light_infantry = 6
+		levy_size = 0.04
+		tax_income = 0.70
+	}
+	caz_stone_guest_quarters = {
+		desc = caz_stone_guest_quarters_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 460
+		ai_creation_factor = 68
+		upgrades_from = caz_wooden_guesthouse
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.45
+		learning = 0.1
+		tax_income = 1.05
+		liege_piety = 0.02
+		archers = 8
+		light_infantry = 10
+		levy_size = 0.06
+	}
+	caz_courtyard_guesthouse = {
+		desc = caz_courtyard_guesthouse_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 620
+		ai_creation_factor = 72
+		upgrades_from = caz_stone_guest_quarters
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.8
+		learning = 0.2
+		garrison_size = 0.11
+		tax_income = 1.75
+		liege_piety = 0.025
+		archers = 12
+		light_infantry = 14
+		levy_size = 0.09
+	}
+	caz_servants_wing = {
+		desc = caz_servants_wing_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 76
+		upgrades_from = caz_courtyard_guesthouse
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 1.6
+		learning = 0.4
+		church_opinion = 3
+		tax_income = 2.80
+		liege_piety = 0.03
+		archers = 16
+		light_infantry = 18
+		levy_size = 0.12
+	}
+	caz_enclosed_guest_hall = {
+		desc = caz_enclosed_guest_hall_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 82
+		upgrades_from = caz_servants_wing
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 3.2
+		learning = 0.7
+		garrison_size = 0.16
+		fort_level = 0.05
+		tax_income = 4.20
+		liege_piety = 0.045
+		archers = 21
+		light_infantry = 22
+		levy_size = 0.17
+	}
+	caz_furnished_guest_suites = {
+		desc = caz_furnished_guest_suites_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 88
+		upgrades_from = caz_enclosed_guest_hall
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 6.4
+		learning = 1.2
+		tech_growth_modifier = 0.02
+		church_opinion = 7
+		tax_income = 6.30
+		liege_piety = 0.065
+		archers = 28
+		light_infantry = 28
+		levy_size = 0.24
+	}
+	caz_chambered_guest_rooms = {
+		desc = caz_chambered_guest_rooms_desc
+		gold_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 94
+		upgrades_from = caz_furnished_guest_suites
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 12.8
+		learning = 2
+		tech_growth_modifier = 0.06
+		garrison_size = 0.24
+		tax_income = 9.80
+		liege_piety = 0.09
+		archers = 36
+		light_infantry = 36
+		levy_size = 0.32
+	}
+	caz_noble_guest_apartments = {
+		desc = caz_noble_guest_apartments_desc
+		gold_cost = 9500
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 100
+		upgrades_from = caz_chambered_guest_rooms
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 25.6
+		learning = 3.5
+		tech_growth_modifier = 0.12
+		church_opinion = 15
+		fort_level = 0.1
+		tax_income = 10.50
+		liege_piety = 0.12
+		archers = 48
+		light_infantry = 48
+		heavy_infantry = 6
+		levy_size = 0.42
+	}
+	caz_sanctuary_guest_palace = {
+		desc = caz_sanctuary_guest_palace_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 2700
+		ai_creation_factor = 110
+		upgrades_from = caz_noble_guest_apartments
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.12
+		temple_tax_modifier = 51.2
+		learning = 6
+		tech_growth_modifier = 0.23
+		church_opinion = 30
+		garrison_size = 0.45
+		fort_level = 0.18
+		tax_income = 14.00
+		liege_piety = 0.17
+		archers = 70
+		light_infantry = 70
+		heavy_infantry = 12
+		levy_size = 0.6
+	}
+	coq_earthen_storehouse = {
+		desc = coq_earthen_storehouse_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.18
+		culture_techpoints = 0.01
+		tax_income = 0.35
+		levy_size = 0.01
+	}
+	coq_wooden_granary = {
+		desc = coq_wooden_granary_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 160
+		ai_creation_factor = 68
+		upgrades_from = coq_earthen_storehouse
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.32
+		culture_techpoints = 0.015
+		garrison_size = 0.07
+		tax_income = 0.57
+		archers = 2
+		levy_size = 0.02
+	}
+	coq_stone_granary = {
+		desc = coq_stone_granary_desc
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 72
+		upgrades_from = coq_wooden_granary
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.6
+		culture_techpoints = 0.02
+		tax_income = 0.91
+		archers = 3
+		levy_size = 0.03
+	}
+	coq_granary_loft = {
+		desc = coq_granary_loft_desc
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 83
+		upgrades_from = coq_stone_granary
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		temple_tax_modifier = 1.5
+		culture_techpoints = 0.025
+		garrison_size = 0.3
+		tax_income = 1.61
+		archers = 5
+		light_infantry = 4
+		levy_size = 0.08
+	}
+	coq_secured_storehouse = {
+		desc = coq_secured_storehouse_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 440
+		ai_creation_factor = 92
+		upgrades_from = coq_granary_loft
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 2.2
+		culture_techpoints = 0.03
+		garrison_size = 0.47
+		fort_level = 0.025
+		tax_income = 1.97
+		archers = 6
+		light_infantry = 5
+		levy_size = 0.1
+	}
+	coq_grain_drying_shed = {
+		desc = coq_grain_drying_shed_desc
+		piety_cost = 70
+		extra_tech_building_start = 999
+		build_time = 100
+		ai_creation_factor = 55
+		upgrades_from = coq_secured_storehouse
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.25
+		culture_techpoints = 0.01
+		tax_income = 0.35
+		levy_size = 0.01
+	}
+	coq_guarded_granary = {
+		desc = coq_guarded_granary_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 160
+		ai_creation_factor = 65
+		upgrades_from = coq_grain_drying_shed
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.7
+		garrison_size = 0.16
+		fort_level = 0.01
+		tax_income = 0.70
+		archers = 3
+		light_infantry = 2
+		levy_size = 0.04
+	}
+	coq_multi_level_granary = {
+		desc = coq_multi_level_granary_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 78
+		upgrades_from = coq_guarded_granary
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 1.2
+		garrison_size = 0.27
+		fort_level = 0.015
+		tax_income = 1.26
+		archers = 4
+		light_infantry = 3
+		levy_size = 0.06
+	}
+	coq_granary_tower = {
+		desc = coq_granary_tower_desc
+		gold_cost = 480
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 100
+		upgrades_from = coq_multi_level_granary
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		temple_tax_modifier = 2.7
+		garrison_size = 0.63
+		fort_level = 0.03
+		culture_techpoints = 0.03
+		tax_income = 2.45
+		archers = 7
+		light_infantry = 6
+		levy_size = 0.12
+	}
+	coq_sanctuary_granary_complex = {
+		desc = coq_sanctuary_granary_complex_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 115
+		upgrades_from = coq_granary_tower
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		temple_tax_modifier = 4.8
+		garrison_size = 0.99
+		fort_level = 0.04
+		culture_techpoints = 0.035
+		tech_growth_modifier = 0.12
+		tax_income = 3.50
+		archers = 8
+		light_infantry = 7
+		levy_size = 0.15
+	}
+	crt_wooden_minaret = {
+		desc = crt_wooden_minaret_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 62
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.39
+		church_opinion = 1
+	}
+	crt_stone_minaret = {
+		desc = crt_stone_minaret_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 68
+		upgrades_from = crt_wooden_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.92
+		fort_level = 0.005
+	}
+	crt_tall_minaret = {
+		desc = crt_tall_minaret_desc
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 74
+		upgrades_from = crt_stone_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.56
+		global_revolt_risk = -0.005
+	}
+	crt_decorated_minaret = {
+		desc = crt_decorated_minaret_desc
+		piety_cost = 280
+		extra_tech_building_start = 999
+		build_time = 780
+		ai_creation_factor = 83
+		upgrades_from = crt_tall_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 3.12
+		tech_growth_modifier = 0.12
+	}
+	crt_enclosed_minaret = {
+		desc = crt_enclosed_minaret_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 91
+		upgrades_from = crt_decorated_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.3.1
+		temple_tax_modifier = 4.95
+		fort_level = 0.015
+		garrison_size = 0.4
+	}
+	crt_ornate_minaret = {
+		desc = crt_ornate_minaret_desc
+		gold_cost = 1300
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 97
+		upgrades_from = crt_enclosed_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 8.32
+		church_opinion = 4
+	}
+	crt_double_minaret = {
+		desc = crt_double_minaret_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 103
+		upgrades_from = crt_ornate_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 14.3
+		fort_level = 0.025
+		global_revolt_risk = -0.012
+	}
+	crt_grand_minaret = {
+		desc = crt_grand_minaret_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 108
+		upgrades_from = crt_double_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.17
+		temple_tax_modifier = 26
+		tech_growth_modifier = 0.36
+		church_opinion = 6
+		vassal_opinion = 10
+	}
+	crt_sanctified_minaret = {
+		desc = crt_sanctified_minaret_desc
+		piety_cost = 8800
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 110
+		upgrades_from = crt_grand_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 45.5
+		global_revolt_risk = -0.025
+		garrison_size = 0.66
+	}
+	crt_great_mosque_minaret = {
+		desc = crt_great_mosque_minaret_desc
+		gold_cost = 20000
+		extra_tech_building_start = 999
+		build_time = 6200
+		ai_creation_factor = 110
+		upgrades_from = crt_sanctified_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 84.5
+		global_revolt_risk = -0.045
+		fort_level = 0.045
+		tech_growth_modifier = 0.65
+	}
+	dig_sacred_clearing = {
+		desc = dig_sacred_clearing_desc
+		piety_cost = 20
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		church_opinion = 2
+		tax_income = 0.35
+	}
+	dig_wooden_shrine = {
+		desc = dig_wooden_shrine_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 65
+		upgrades_from = dig_sacred_clearing
+		prerequisites = {
+			dig_sacred_clearing
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.78
+	}
+	dig_stone_chapel = {
+		desc = dig_stone_chapel_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 70
+		upgrades_from = dig_wooden_shrine
+		prerequisites = {
+			dig_wooden_shrine
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.56
+		garrison_size = 0.22
+		tax_income = 0.70
+	}
+	dig_chapel_with_reliquary = {
+		desc = dig_chapel_with_reliquary_desc
+		piety_cost = 350
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 85
+		upgrades_from = dig_pilgrims_shelter
+		prerequisites = {
+			dig_pilgrims_shelter
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.3.2
+		temple_tax_modifier = 2.6
+		church_opinion = 5
+		tech_growth_modifier = 0.06
+		tax_income = 1.05
+	}
+	dig_pilgrims_shelter = {
+		desc = dig_pilgrims_shelter_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 250
+		ai_creation_factor = 80
+		upgrades_from = dig_stone_chapel
+		prerequisites = {
+			dig_stone_chapel
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.03
+		garrison_size = 0.43
+		supply_limit = 0.1
+		tax_income = 1.40
+	}
+	dig_sanctuary_walls = {
+		desc = dig_sanctuary_walls_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 90
+		upgrades_from = dig_chapel_with_reliquary
+		prerequisites = {
+			dig_chapel_with_reliquary
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.02
+		garrison_size = 0.8
+		supply_limit = 0.18
+		tax_income = 1.75
+	}
+	dig_ornate_altar = {
+		desc = dig_ornate_altar_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 100
+		upgrades_from = dig_sanctuary_walls
+		prerequisites = {
+			dig_sanctuary_walls
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 4.55
+		church_opinion = 10
+		tax_income = 2.10
+	}
+	dig_sanctuary_cloisters = {
+		desc = dig_sanctuary_cloisters_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 580
+		ai_creation_factor = 105
+		upgrades_from = dig_ornate_altar
+		prerequisites = {
+			dig_ornate_altar
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.06
+		tech_growth_modifier = 0.18
+		temple_tax_modifier = 5.85
+		tax_income = 2.45
+	}
+	dig_grand_sanctuary = {
+		desc = dig_grand_sanctuary_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 110
+		upgrades_from = dig_sanctuary_cloisters
+		prerequisites = {
+			dig_sanctuary_cloisters
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 9.1
+		fort_level = 0.04
+		tech_growth_modifier = 0.3
+		tax_income = 2.80
+	}
+	dig_sanctuary_basilica = {
+		desc = dig_sanctuary_basilica_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 110
+		upgrades_from = dig_grand_sanctuary
+		prerequisites = {
+			dig_grand_sanctuary
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 15.6
+		fort_level = 0.06
+		church_opinion = 25
+		tech_growth_modifier = 0.6
+		tax_income = 3.15
+	}
+	dji_jungle_clearing = {
+		desc = dji_jungle_clearing_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 62
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.2
+		levy_size = 0.04
+	}
+	dji_raised_shelter = {
+		desc = dji_raised_shelter_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 65
+		upgrades_from = dji_jungle_clearing
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.32
+		garrison_size = 0.07
+		levy_size = 0.08
+	}
+	dji_wooden_jungle_shrine = {
+		desc = dji_wooden_jungle_shrine_desc
+		prestige_cost = 50
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 68
+		upgrades_from = dji_raised_shelter
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.5
+		garrison_size = 0.15
+		levy_size = 0.12
+	}
+	dji_enclosed_jungle_hut = {
+		desc = dji_enclosed_jungle_hut_desc
+		gold_cost = 95
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 72
+		upgrades_from = dji_wooden_jungle_shrine
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.035
+		temple_tax_modifier = 0.85
+		garrison_size = 0.24
+		fort_level = 0.01
+		levy_size = 0.18
+	}
+	dji_thatched_sanctuary = {
+		desc = dji_thatched_sanctuary_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 520
+		ai_creation_factor = 78
+		upgrades_from = dji_enclosed_jungle_hut
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.045
+		temple_tax_modifier = 1.45
+		garrison_size = 0.37
+		fort_level = 0.02
+		tech_growth_modifier = 0.012
+		levy_size = 0.24
+	}
+	dji_jungle_palisade = {
+		desc = dji_jungle_palisade_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 670
+		ai_creation_factor = 88
+		upgrades_from = dji_thatched_sanctuary
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.04
+		garrison_size = 0.52
+		temple_tax_modifier = 2.2
+		culture_techpoints = 0.06
+		levy_size = 0.3
+	}
+	dji_jungle_house = {
+		desc = dji_jungle_house_desc
+		piety_cost = 420
+		extra_tech_building_start = 999
+		build_time = 860
+		ai_creation_factor = 98
+		upgrades_from = dji_jungle_palisade
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 3.3
+		garrison_size = 0.73
+		tech_growth_modifier = 0.024
+		fort_level = 0.06
+		levy_size = 0.36
+	}
+	dji_jungle_gathering_hall = {
+		desc = dji_jungle_gathering_hall_desc
+		gold_cost = 780
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 108
+		upgrades_from = dji_jungle_house
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.13
+		temple_tax_modifier = 4.7
+		garrison_size = 0.96
+		fort_level = 0.09
+		tech_growth_modifier = 0.045
+		levy_size = 0.44
+	}
+	dji_jungle_sanctuary = {
+		desc = dji_jungle_sanctuary_desc
+		gold_cost = 1460
+		extra_tech_building_start = 999
+		build_time = 1450
+		ai_creation_factor = 116
+		upgrades_from = dji_jungle_gathering_hall
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.18
+		temple_tax_modifier = 6.7
+		garrison_size = 1.32
+		fort_level = 0.13
+		tech_growth_modifier = 0.072
+		levy_size = 0.52
+	}
+	dji_jungle_temple = {
+		desc = dji_jungle_temple_desc
+		gold_cost = 2790
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 124
+		upgrades_from = dji_jungle_sanctuary
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.24
+		temple_tax_modifier = 9.5
+		garrison_size = 1.72
+		fort_level = 0.18
+		tech_growth_modifier = 0.13
+		levy_size = 0.6
+	}
+	fsb_open_courtyard = {
+		desc = fsb_open_courtyard_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 62
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.65
+	}
+	fsb_decorated_courtyard = {
+		desc = fsb_decorated_courtyard_desc
+		piety_cost = 110
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 68
+		upgrades_from = fsb_stone_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.56
+		garrison_size = 0.22
+	}
+	fsb_stone_courtyard = {
+		desc = fsb_stone_courtyard_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 65
+		upgrades_from = fsb_open_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.04
+		fort_level = 0.006
+	}
+	fsb_cloistered_courtyard = {
+		desc = fsb_cloistered_courtyard_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 72
+		upgrades_from = fsb_decorated_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 2.6
+		garrison_size = 0.48
+		tech_growth_modifier = 0.04
+	}
+	fsb_enclosed_sanctuary_yard = {
+		desc = fsb_enclosed_sanctuary_yard_desc
+		gold_cost = 650
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 80
+		upgrades_from = fsb_cloistered_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.3.6
+		temple_tax_modifier = 4.16
+		garrison_size = 0.85
+		fort_level = 0.016
+		tech_growth_modifier = 0.08
+	}
+	fsb_ornate_sanctuary_yard = {
+		desc = fsb_ornate_sanctuary_yard_desc
+		piety_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 88
+		upgrades_from = fsb_enclosed_sanctuary_yard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 7.02
+		garrison_size = 1.11
+		fort_level = 0.026
+		tech_growth_modifier = 0.14
+	}
+	fsb_blessed_sanctuary_courtyard = {
+		desc = fsb_blessed_sanctuary_courtyard_desc
+		prestige_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 106
+		upgrades_from = fsb_sanctified_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.07
+		temple_tax_modifier = 16.91
+		garrison_size = 2.92
+		fort_level = 0.05
+		tech_growth_modifier = 0.33
+		church_opinion = 4
+	}
+	fsb_sanctified_courtyard = {
+		desc = fsb_sanctified_courtyard_desc
+		piety_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 97
+		upgrades_from = fsb_ornate_sanctuary_yard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.17
+		temple_tax_modifier = 10.4
+		garrison_size = 1.72
+		fort_level = 0.036
+		tech_growth_modifier = 0.21
+		church_opinion = 2
+	}
+	fsb_grand_sanctuary_courtyard = {
+		desc = fsb_grand_sanctuary_courtyard_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = fsb_blessed_sanctuary_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 26
+		garrison_size = 4.23
+		fort_level = 0.08
+		tech_growth_modifier = 0.5
+		church_opinion = 8
+	}
+	fsb_temple_courtyard = {
+		desc = fsb_temple_courtyard_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 4800
+		ai_creation_factor = 110
+		upgrades_from = fsb_grand_sanctuary_courtyard
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.11
+		temple_tax_modifier = 39
+		garrison_size = 6.6
+		fort_level = 0.126
+		tech_growth_modifier = 1
+		church_opinion = 16
+	}
+	fvd_baptismal_basin = {
+		desc = fvd_baptismal_basin_desc
+		potential = {
+			religion_group = christian
+		}
+		piety_cost = 30
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 55
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		church_opinion = 2
+		levy_size = 0.04
+	}
+	fvd_wooden_baptistery = {
+		desc = fvd_wooden_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 62
+		upgrades_from = fvd_baptismal_basin
+		prerequisites = {
+			fvd_baptismal_basin
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		church_opinion = 3
+		garrison_size = 0.07
+		levy_size = 0.06
+	}
+	fvd_stone_baptistery = {
+		desc = fvd_stone_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 170
+		extra_tech_building_start = 999
+		build_time = 280
+		ai_creation_factor = 70
+		upgrades_from = fvd_wooden_baptistery
+		prerequisites = {
+			fvd_wooden_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		church_opinion = 5
+		garrison_size = 0.12
+		levy_size = 0.08
+	}
+	fvd_decorated_baptistery = {
+		desc = fvd_decorated_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 76
+		upgrades_from = fvd_stone_baptistery
+		prerequisites = {
+			fvd_stone_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.025
+		church_opinion = 8
+		garrison_size = 0.17
+		fort_level = 0.03
+		levy_size = 0.1
+	}
+	fvd_baptistery_pool = {
+		desc = fvd_baptistery_pool_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 82
+		upgrades_from = fvd_decorated_baptistery
+		prerequisites = {
+			fvd_decorated_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.03
+		church_opinion = 12
+		garrison_size = 0.22
+		fort_level = 0.05
+		tech_growth_modifier = 0.02
+		levy_size = 0.12
+	}
+	fvd_ornate_baptistery = {
+		desc = fvd_ornate_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 87
+		upgrades_from = fvd_baptistery_pool
+		prerequisites = {
+			fvd_baptistery_pool
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.035
+		church_opinion = 18
+		garrison_size = 0.31
+		fort_level = 0.07
+		tech_growth_modifier = 0.04
+		levy_size = 0.14
+	}
+	fvd_cloistered_baptistery = {
+		desc = fvd_cloistered_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 93
+		upgrades_from = fvd_ornate_baptistery
+		prerequisites = {
+			fvd_ornate_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.04
+		church_opinion = 22
+		garrison_size = 0.41
+		fort_level = 0.09
+		tech_growth_modifier = 0.07
+		levy_size = 0.18
+	}
+	fvd_grand_baptistery = {
+		desc = fvd_grand_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 99
+		upgrades_from = fvd_cloistered_baptistery
+		prerequisites = {
+			fvd_cloistered_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.05
+		church_opinion = 30
+		garrison_size = 0.57
+		fort_level = 0.12
+		tech_growth_modifier = 0.11
+		global_revolt_risk = -0.03
+		levy_size = 0.22
+	}
+	fvd_sanctified_baptistery = {
+		desc = fvd_sanctified_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 8500
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 104
+		upgrades_from = fvd_grand_baptistery
+		prerequisites = {
+			fvd_grand_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.06
+		church_opinion = 45
+		garrison_size = 0.73
+		fort_level = 0.15
+		tech_growth_modifier = 0.15
+		global_revolt_risk = -0.06
+		levy_size = 0.28
+	}
+	fvd_cathedral_baptistery = {
+		desc = fvd_cathedral_baptistery_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 16000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = fvd_sanctified_baptistery
+		prerequisites = {
+			fvd_sanctified_baptistery
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.075
+		church_opinion = 70
+		garrison_size = 0.93
+		fort_level = 0.2
+		tech_growth_modifier = 0.22
+		vassal_opinion = 10
+		learning = 2
+		global_revolt_risk = -0.1
+		levy_size = 0.34
+	}
+	ghn_wooden_study_room = {
+		desc = ghn_wooden_study_room_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		tech_growth_modifier = 0.01
+		levy_size = 0.03
+	}
+	ghn_study_chamber = {
+		desc = ghn_study_chamber_desc
+		piety_cost = 70
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 72
+		upgrades_from = ghn_stone_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		tech_growth_modifier = 0.025
+		temple_tax_modifier = 0.2
+		levy_size = 0.04
+	}
+	ghn_stone_study_house = {
+		desc = ghn_stone_study_house_desc
+		gold_cost = 130
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = ghn_wooden_study_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		tech_growth_modifier = 0.018
+		garrison_size = 0.1
+		levy_size = 0.05
+	}
+	ghn_enclosed_study_hall = {
+		desc = ghn_enclosed_study_hall_desc
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = ghn_study_chamber
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.04
+		tech_growth_modifier = 0.04
+		garrison_size = 0.12
+		fort_level = 0.03
+		levy_size = 0.06
+	}
+	ghn_decorated_study_house = {
+		desc = ghn_decorated_study_house_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 80
+		upgrades_from = ghn_enclosed_study_hall
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.05
+		tech_growth_modifier = 0.07
+		temple_tax_modifier = 0.45
+		church_opinion = 3
+		levy_size = 0.08
+		garrison_size = 0.15
+	}
+	ghn_blessed_study_house = {
+		desc = ghn_blessed_study_house_desc
+		prestige_cost = 450
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 98
+		upgrades_from = ghn_sanctified_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.09
+		tech_growth_modifier = 0.17
+		temple_tax_modifier = 1.15
+		global_revolt_risk = -0.05
+		levy_size = 0.1
+		garrison_size = 0.19
+	}
+	ghn_sanctified_study_house = {
+		desc = ghn_sanctified_study_house_desc
+		piety_cost = 680
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 94
+		upgrades_from = ghn_ornate_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.07
+		tech_growth_modifier = 0.13
+		temple_tax_modifier = 0.8
+		church_opinion = 6
+		levy_size = 0.09
+		garrison_size = 0.17
+	}
+	ghn_ornate_study_house = {
+		desc = ghn_ornate_study_house_desc
+		gold_cost = 850
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 88
+		upgrades_from = ghn_decorated_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.06
+		tech_growth_modifier = 0.1
+		temple_tax_modifier = 0.65
+		fort_level = 0.04
+		levy_size = 0.09
+		garrison_size = 0.16
+	}
+	ghn_grand_study_house = {
+		desc = ghn_grand_study_house_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = ghn_blessed_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.13
+		tech_growth_modifier = 0.27
+		temple_tax_modifier = 2.5
+		global_revolt_risk = -0.08
+		church_opinion = 10
+		levy_size = 0.13
+		garrison_size = 0.24
+	}
+	ghn_great_synagogue_study_house = {
+		desc = ghn_great_synagogue_study_house_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = ghn_grand_study_house
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.18
+		tech_growth_modifier = 0.38
+		temple_tax_modifier = 4.2
+		garrison_size = 0.53
+		vassal_opinion = 10
+		church_opinion = 18
+		levy_size = 0.17
+	}
+	gml_wooden_ark = {
+		desc = gml_wooden_ark_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 60
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.4
+		garrison_size = 0.07
+	}
+	gml_stone_ark = {
+		desc = gml_stone_ark_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 65
+		upgrades_from = gml_wooden_ark
+		prerequisites = {
+			gml_wooden_ark
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.8
+		garrison_size = 0.12
+		fort_level = 0.1
+	}
+	gml_enclosed_ark_sanctuary = {
+		desc = gml_enclosed_ark_sanctuary_desc
+		piety_cost = 180
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 70
+		upgrades_from = gml_stone_ark
+		prerequisites = {
+			gml_stone_ark
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 1.3
+		garrison_size = 0.18
+	}
+	gml_decorated_ark_sanctuary = {
+		desc = gml_decorated_ark_sanctuary_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 75
+		upgrades_from = gml_enclosed_ark_sanctuary
+		prerequisites = {
+			gml_enclosed_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 2.1
+		garrison_size = 0.26
+		tech_growth_modifier = 0.03
+	}
+	gml_ornate_ark_sanctuary = {
+		desc = gml_ornate_ark_sanctuary_desc
+		gold_cost = 950
+		extra_tech_building_start = 999
+		build_time = 950
+		ai_creation_factor = 80
+		upgrades_from = gml_decorated_ark_sanctuary
+		prerequisites = {
+			gml_decorated_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.07
+		temple_tax_modifier = 3.2
+		garrison_size = 0.36
+		tech_growth_modifier = 0.07
+	}
+	gml_ark_sanctuary_hall = {
+		desc = gml_ark_sanctuary_hall_desc
+		piety_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 1450
+		ai_creation_factor = 85
+		upgrades_from = gml_ornate_ark_sanctuary
+		prerequisites = {
+			gml_ornate_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.09
+		temple_tax_modifier = 4.6
+		garrison_size = 0.5
+		tech_growth_modifier = 0.12
+		church_opinion = 7
+	}
+	gml_sanctified_ark_sanctuary = {
+		desc = gml_sanctified_ark_sanctuary_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 90
+		upgrades_from = gml_ark_sanctuary_hall
+		prerequisites = {
+			gml_ark_sanctuary_hall
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.11
+		temple_tax_modifier = 6.3
+		garrison_size = 0.66
+		tech_growth_modifier = 0.18
+		church_opinion = 10
+	}
+	gml_blessed_ark_sanctuary = {
+		desc = gml_blessed_ark_sanctuary_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 2700
+		ai_creation_factor = 95
+		upgrades_from = gml_sanctified_ark_sanctuary
+		prerequisites = {
+			gml_sanctified_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.13
+		temple_tax_modifier = 8.9
+		garrison_size = 0.93
+		tech_growth_modifier = 0.32
+		church_opinion = 15
+	}
+	gml_grand_ark_sanctuary = {
+		desc = gml_grand_ark_sanctuary_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 100
+		upgrades_from = gml_blessed_ark_sanctuary
+		prerequisites = {
+			gml_blessed_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.16
+		temple_tax_modifier = 13.5
+		garrison_size = 1.32
+		fort_level = 0.2
+		tech_growth_modifier = 0.45
+		church_opinion = 20
+	}
+	gml_great_synagogue_ark_sanctuary = {
+		desc = gml_great_synagogue_ark_sanctuary_desc
+		gold_cost = 32000
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = gml_grand_ark_sanctuary
+		prerequisites = {
+			gml_grand_ark_sanctuary
+		}
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.2
+		temple_tax_modifier = 20
+		garrison_size = 1.98
+		fort_level = 0.4
+		tech_growth_modifier = 0.7
+		church_opinion = 30
+	}
+	gpe_wooden_steppe_shrine = {
+		desc = gpe_wooden_steppe_shrine_desc
+		prestige_cost = 25
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 64
+		upgrades_from = gpe_grassy_knoll_altar
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.22
+		church_opinion = 2
+	}
+	gpe_grassy_knoll_altar = {
+		desc = gpe_grassy_knoll_altar_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 60
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		garrison_size = 0.14
+	}
+	gpe_stone_steppe_altar = {
+		desc = gpe_stone_steppe_altar_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 68
+		upgrades_from = gpe_wooden_steppe_shrine
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.4
+	}
+	gpe_turf_sanctuary = {
+		desc = gpe_turf_sanctuary_desc
+		piety_cost = 80
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 72
+		upgrades_from = gpe_stone_steppe_altar
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.8
+		fort_level = 0.01
+	}
+	gpe_steppe_prayer_shelter = {
+		desc = gpe_steppe_prayer_shelter_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 80
+		upgrades_from = gpe_turf_sanctuary
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.03
+		garrison_size = 1.19
+		fort_level = 0.02
+		tech_growth_modifier = 0.04
+	}
+	gpe_steppe_gathering_circle = {
+		desc = gpe_steppe_gathering_circle_desc
+		piety_cost = 250
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 92
+		upgrades_from = gpe_steppe_prayer_shelter
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.3.2
+		garrison_size = 1.85
+		fort_level = 0.03
+		global_revolt_risk = -0.05
+		church_opinion = 8
+	}
+	gpe_enclosed_steppe_shrine = {
+		desc = gpe_enclosed_steppe_shrine_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 104
+		upgrades_from = gpe_steppe_gathering_circle
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.03
+		garrison_size = 3.17
+		fort_level = 0.05
+		tech_growth_modifier = 0.1
+		learning = 1
+	}
+	gpe_raised_steppe_altar = {
+		desc = gpe_raised_steppe_altar_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 1900
+		ai_creation_factor = 110
+		upgrades_from = gpe_enclosed_steppe_shrine
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.1
+		garrison_size = 4.76
+		fort_level = 0.07
+		global_revolt_risk = -0.1
+		learning = 2
+	}
+	gpe_steppe_pilgrims_hall = {
+		desc = gpe_steppe_pilgrims_hall_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 120
+		upgrades_from = gpe_raised_steppe_altar
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.18
+		garrison_size = 6.34
+		fort_level = 0.09
+		tech_growth_modifier = 0.18
+		global_revolt_risk = -0.18
+	}
+	gpe_grand_steppe_sanctuary = {
+		desc = gpe_grand_steppe_sanctuary_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 130
+		upgrades_from = gpe_steppe_pilgrims_hall
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.17
+		garrison_size = 7.92
+		fort_level = 0.12
+		tech_growth_modifier = 0.28
+		vassal_opinion = 10
+		church_opinion = 16
+	}
+	gro_temple_sacred_grove_1 = {
+		desc = temple_sacred_grove_1_desc
+		piety_cost = 35
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		church_opinion = 2
+		levy_size = 0.05
+	}
+	gro_temple_herb_garden_1 = {
+		desc = gro_temple_herb_garden_1_desc
+		gold_cost = 65
+		extra_tech_building_start = 999
+		build_time = 230
+		ai_creation_factor = 68
+		upgrades_from = gro_temple_sacred_grove_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.44
+		culture_techpoints = 0.03
+		levy_size = 0.06
+	}
+	gro_temple_enclosed_garden_1 = {
+		desc = gro_temple_enclosed_garden_1_desc
+		piety_cost = 75
+		extra_tech_building_start = 999
+		build_time = 280
+		ai_creation_factor = 71
+		upgrades_from = gro_temple_orchard_plot_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		learning = 1
+		levy_size = 0.06
+	}
+	gro_temple_orchard_plot_1 = {
+		desc = gro_temple_orchard_plot_1_desc
+		gold_cost = 95
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 70
+		upgrades_from = gro_temple_herb_garden_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.6
+		fertility = 0.012
+		levy_size = 0.07
+	}
+	gro_temple_meditation_grove_1 = {
+		desc = temple_meditation_grove_1_desc
+		piety_cost = 95
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 74
+		upgrades_from = gro_temple_enclosed_garden_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		land_morale = 0.015
+		levy_size = 0.08
+	}
+	gro_temple_stone_fountain_1 = {
+		desc = gro_temple_stone_fountain_1_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 360
+		ai_creation_factor = 78
+		upgrades_from = gro_temple_meditation_grove_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 1.05
+		culture_techpoints = 0.04
+		levy_size = 0.1
+	}
+	gro_temple_sanctuary_arboretum_1 = {
+		desc = gro_temple_sanctuary_arboretum_1_desc
+		piety_cost = 210
+		extra_tech_building_start = 999
+		build_time = 510
+		ai_creation_factor = 92
+		upgrades_from = gro_temple_walled_herbarium_1
+		prerequisites = {
+			gro_temple_walled_herbarium_1
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		garrison_size = 0.47
+		tech_growth_modifier = 0.09
+		culture_techpoints = 0.04
+		levy_size = 0.1
+	}
+	gro_temple_walled_herbarium_1 = {
+		desc = gro_temple_walled_herbarium_1_desc
+		gold_cost = 265
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 88
+		upgrades_from = gro_temple_stone_fountain_1
+		prerequisites = {
+			gro_temple_stone_fountain_1
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		tech_growth_modifier = 0.06
+		temple_tax_modifier = 1.45
+		culture_techpoints = 0.04
+		levy_size = 0.12
+	}
+	gro_temple_blessed_sanctuary_gardens_1 = {
+		desc = gro_temple_blessed_sanctuary_gardens_1_desc
+		gold_cost = 520
+		extra_tech_building_start = 999
+		build_time = 680
+		ai_creation_factor = 104
+		upgrades_from = gro_temple_sanctuary_arboretum_1
+		prerequisites = {
+			gro_temple_sanctuary_arboretum_1
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 2.25
+		garrison_size = 0.7
+		tech_growth_modifier = 0.16
+		church_opinion = 10
+		levy_size = 0.14
+	}
+	gro_temple_divine_garden_estate_1 = {
+		desc = gro_temple_divine_garden_estate_1_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 120
+		upgrades_from = gro_temple_blessed_sanctuary_gardens_1
+		prerequisites = {
+			gro_temple_blessed_sanctuary_gardens_1
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 3.8
+		garrison_size = 1.09
+		tech_growth_modifier = 0.25
+		culture_techpoints = 0.05
+		church_opinion = 18
+		levy_size = 0.17
+	}
+	tp_school_1 = {
+		desc = tp_school_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 0.2
+		build_time = 240
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.02
+		tech_growth_modifier = 0.01
+	}
+	tp_school_2 = {
+		desc = tp_school_2_desc
+		gold_cost = 80
+		extra_tech_building_start = 0.2
+		build_time = 400
+		ai_creation_factor = 65
+		upgrades_from = tp_school_1
+		prerequisites = {
+			tp_school_1
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.02
+		tech_growth_modifier = 0.02
+		church_opinion = 2
+	}
+	hqb_scripture_hall = {
+		desc = hqb_scripture_hall_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 70
+		upgrades_from = tp_school_2
+		prerequisites = {
+			tp_school_2
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.02
+		tech_growth_modifier = 0.04
+		temple_tax_modifier = 0.39
+	}
+	hqb_study_chamber = {
+		desc = hqb_study_chamber_desc
+		piety_cost = 180
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 80
+		upgrades_from = hqb_scripture_hall
+		prerequisites = {
+			hqb_scripture_hall
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.03
+		tech_growth_modifier = 0.08
+		temple_tax_modifier = 0.78
+		garrison_size = 0.14
+	}
+	hqb_expanded_schoolhouse = {
+		desc = hqb_expanded_schoolhouse_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 90
+		upgrades_from = hqb_study_chamber
+		prerequisites = {
+			hqb_study_chamber
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.3.6
+		tech_growth_modifier = 0.16
+		temple_tax_modifier = 1.56
+		garrison_size = 0.27
+	}
+	hqb_scholars_hall = {
+		desc = hqb_scholars_hall_desc
+		gold_cost = 800
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 100
+		upgrades_from = hqb_expanded_schoolhouse
+		prerequisites = {
+			hqb_expanded_schoolhouse
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.1
+		tech_growth_modifier = 0.32
+		temple_tax_modifier = 2.6
+		garrison_size = 0.4
+	}
+	hqb_learning_cloister = {
+		desc = hqb_learning_cloister_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 105
+		upgrades_from = hqb_scholars_hall
+		prerequisites = {
+			hqb_scholars_hall
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.1
+		tech_growth_modifier = 0.5
+		temple_tax_modifier = 4.55
+		garrison_size = 0.53
+		church_opinion = 5
+	}
+	hqb_scripture_academy = {
+		desc = hqb_scripture_academy_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2800
+		ai_creation_factor = 108
+		upgrades_from = hqb_learning_cloister
+		prerequisites = {
+			hqb_learning_cloister
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.17
+		tech_growth_modifier = 0.7
+		temple_tax_modifier = 6.5
+		garrison_size = 0.66
+		church_opinion = 7
+	}
+	hqb_sanctified_school = {
+		desc = hqb_sanctified_school_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 3300
+		ai_creation_factor = 110
+		upgrades_from = hqb_scripture_academy
+		prerequisites = {
+			hqb_scripture_academy
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.06
+		tech_growth_modifier = 1
+		temple_tax_modifier = 9.1
+		garrison_size = 0.93
+		church_opinion = 10
+		global_revolt_risk = -0.05
+	}
+	hqb_cathedral_school = {
+		desc = hqb_cathedral_school_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 110
+		upgrades_from = hqb_sanctified_school
+		prerequisites = {
+			hqb_sanctified_school
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.07
+		tech_growth_modifier = 1.5
+		temple_tax_modifier = 13
+		garrison_size = 1.32
+		church_opinion = 15
+		vassal_opinion = 10
+	}
+	iwa_wooden_mandapa = {
+		desc = iwa_wooden_mandapa_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 70
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		temple_tax_modifier = 0.15
+		levy_size = 0.04
+	}
+	iwa_decorated_mandapa = {
+		desc = iwa_decorated_mandapa_desc
+		piety_cost = 85
+		extra_tech_building_start = 999
+		build_time = 620
+		ai_creation_factor = 82
+		upgrades_from = iwa_stone_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.32
+		church_opinion = 2
+		levy_size = 0.06
+	}
+	iwa_stone_mandapa = {
+		desc = iwa_stone_mandapa_desc
+		gold_cost = 105
+		extra_tech_building_start = 999
+		build_time = 430
+		ai_creation_factor = 75
+		upgrades_from = iwa_wooden_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.19
+		fort_level = 0.01
+		levy_size = 0.05
+	}
+	iwa_mandapa_hall = {
+		desc = iwa_mandapa_hall_desc
+		gold_cost = 325
+		extra_tech_building_start = 999
+		build_time = 980
+		ai_creation_factor = 89
+		upgrades_from = iwa_decorated_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.5
+		garrison_size = 0.11
+		levy_size = 0.08
+		tech_growth_modifier = 0.03
+	}
+	iwa_ornate_mandapa = {
+		desc = iwa_ornate_mandapa_desc
+		gold_cost = 650
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 94
+		upgrades_from = iwa_mandapa_hall
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.78
+		church_opinion = 4
+		tech_growth_modifier = 0.05
+		garrison_size = 0.15
+		levy_size = 0.1
+	}
+	iwa_enclosed_mandapa = {
+		desc = iwa_enclosed_mandapa_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 99
+		upgrades_from = iwa_ornate_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 1.25
+		fort_level = 0.018
+		garrison_size = 0.22
+		levy_size = 0.13
+	}
+	iwa_mandapa_pavilion = {
+		desc = iwa_mandapa_pavilion_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 102
+		upgrades_from = iwa_enclosed_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.037
+		temple_tax_modifier = 2
+		tech_growth_modifier = 0.09
+		church_opinion = 6
+		garrison_size = 0.33
+		levy_size = 0.18
+	}
+	iwa_sanctified_mandapa = {
+		desc = iwa_sanctified_mandapa_desc
+		piety_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 3700
+		ai_creation_factor = 110
+		upgrades_from = iwa_grand_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 3
+		church_opinion = 10
+		tech_growth_modifier = 0.15
+		fort_level = 0.025
+		garrison_size = 0.5
+		levy_size = 0.22
+	}
+	iwa_grand_mandapa = {
+		desc = iwa_grand_mandapa_desc
+		gold_cost = 3100
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 107
+		upgrades_from = iwa_mandapa_pavilion
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.045
+		temple_tax_modifier = 2.3
+		garrison_size = 0.6
+		tech_growth_modifier = 0.12
+		levy_size = 0.2
+	}
+	iwa_temple_mandapa = {
+		desc = iwa_temple_mandapa_desc
+		gold_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 115
+		upgrades_from = iwa_sanctified_mandapa
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 4
+		church_opinion = 16
+		tech_growth_modifier = 0.18
+		garrison_size = 0.86
+		fort_level = 0.03
+		levy_size = 0.28
+	}
+	jts_simple_reliquary = {
+		desc = jts_simple_reliquary_desc
+		piety_cost = 35
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		church_opinion = 2
+		levy_size = 0.04
+	}
+	jts_stone_reliquary_alcove = {
+		desc = jts_stone_reliquary_alcove_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 70
+		upgrades_from = jts_simple_reliquary
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.13
+		church_opinion = 2
+		levy_size = 0.06
+	}
+	jts_guarded_reliquary_room = {
+		desc = jts_guarded_reliquary_room_desc
+		piety_cost = 110
+		extra_tech_building_start = 999
+		build_time = 360
+		ai_creation_factor = 75
+		upgrades_from = jts_stone_reliquary_alcove
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.06
+		garrison_size = 0.09
+		fort_level = 0.01
+		levy_size = 0.08
+	}
+	jts_vaulted_reliquary = {
+		desc = jts_vaulted_reliquary_desc
+		gold_cost = 230
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 80
+		upgrades_from = jts_guarded_reliquary_room
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 0.2
+		garrison_size = 0.16
+		fort_level = 0.015
+		levy_size = 0.1
+	}
+	jts_reinforced_reliquary = {
+		desc = jts_reinforced_reliquary_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 85
+		upgrades_from = jts_vaulted_reliquary
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.1
+		garrison_size = 0.22
+		fort_level = 0.02
+		church_opinion = 3
+		levy_size = 0.13
+	}
+	jts_reliquary_treasury = {
+		desc = jts_reliquary_treasury_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 90
+		upgrades_from = jts_reinforced_reliquary
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.13
+		temple_tax_modifier = 0.4
+		garrison_size = 0.3
+		church_opinion = 4
+		levy_size = 0.17
+	}
+	jts_blessed_reliquary_hall = {
+		desc = jts_blessed_reliquary_hall_desc
+		piety_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 95
+		upgrades_from = jts_reliquary_treasury
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.15
+		temple_tax_modifier = 0.64
+		fort_level = 0.03
+		church_opinion = 6
+		levy_size = 0.2
+	}
+	jts_golden_reliquary_chamber = {
+		desc = jts_golden_reliquary_chamber_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 2700
+		ai_creation_factor = 100
+		upgrades_from = jts_blessed_reliquary_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.18
+		temple_tax_modifier = 0.95
+		garrison_size = 0.47
+		fort_level = 0.04
+		levy_size = 0.24
+	}
+	jts_jeweled_reliquary_vault = {
+		desc = jts_jeweled_reliquary_vault_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 105
+		upgrades_from = jts_golden_reliquary_chamber
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.22
+		temple_tax_modifier = 1.35
+		garrison_size = 0.7
+		fort_level = 0.05
+		church_opinion = 8
+		levy_size = 0.28
+	}
+	jts_sanctified_reliquary_sanctuary = {
+		desc = jts_sanctified_reliquary_sanctuary_desc
+		piety_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = jts_jeweled_reliquary_vault
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.26
+		temple_tax_modifier = 1.8
+		garrison_size = 0.99
+		fort_level = 0.07
+		church_opinion = 10
+		levy_size = 0.33
+	}
+	lmm_wooden_madrasa = {
+		desc = lmm_wooden_madrasa_desc
+		piety_cost = 35
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.2
+		levy_size = 0.05
+	}
+	lmm_stone_madrasa = {
+		desc = lmm_stone_madrasa_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 70
+		upgrades_from = lmm_wooden_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.38
+		garrison_size = 0.07
+		levy_size = 0.07
+	}
+	lmm_teaching_madrasa = {
+		desc = lmm_teaching_madrasa_desc
+		piety_cost = 180
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = lmm_stone_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.68
+		tech_growth_modifier = 0.04
+		levy_size = 0.1
+	}
+	lmm_expanded_madrasa = {
+		desc = lmm_expanded_madrasa_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 85
+		upgrades_from = lmm_teaching_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.035
+		temple_tax_modifier = 1.15
+		tech_growth_modifier = 0.07
+		garrison_size = 0.11
+		levy_size = 0.13
+	}
+	lmm_madrasa_library = {
+		desc = lmm_madrasa_library_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 92
+		upgrades_from = lmm_expanded_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		global_tax_modifier = 0.02
+		tech_growth_modifier = 0.12
+		culture_techpoints = 0.045
+		garrison_size = 0.15
+		levy_size = 0.15
+	}
+	lmm_enclosed_madrasa = {
+		desc = lmm_enclosed_madrasa_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 97
+		upgrades_from = lmm_madrasa_library
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 2.2
+		tech_growth_modifier = 0.19
+		garrison_size = 0.22
+		levy_size = 0.21
+		fort_level = 0.05
+	}
+	lmm_ornate_madrasa = {
+		desc = lmm_ornate_madrasa_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 105
+		upgrades_from = lmm_enclosed_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		global_tax_modifier = 0.03
+		tech_growth_modifier = 0.27
+		culture_techpoints = 0.07
+		church_opinion = 8
+		garrison_size = 0.27
+		levy_size = 0.28
+	}
+	lmm_madrasa_courtyard = {
+		desc = lmm_madrasa_courtyard_desc
+		gold_cost = 5800
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = lmm_ornate_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		global_tax_modifier = 0.04
+		tech_growth_modifier = 0.35
+		culture_techpoints = 0.09
+		garrison_size = 0.37
+		levy_size = 0.35
+	}
+	lmm_grand_madrasa = {
+		desc = lmm_grand_madrasa_desc
+		gold_cost = 9500
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 112
+		upgrades_from = lmm_madrasa_courtyard
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		global_tax_modifier = 0.05
+		tech_growth_modifier = 0.48
+		culture_techpoints = 0.12
+		church_opinion = 16
+		garrison_size = 0.47
+		levy_size = 0.43
+		fort_level = 0.08
+	}
+	lmm_madrasa_complex = {
+		desc = lmm_madrasa_complex_desc
+		gold_cost = 17000
+		extra_tech_building_start = 999
+		build_time = 6000
+		ai_creation_factor = 115
+		upgrades_from = lmm_grand_madrasa
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		global_tax_modifier = 0.06
+		tech_growth_modifier = 0.65
+		culture_techpoints = 0.16
+		fort_level = 0.12
+		church_opinion = 24
+		garrison_size = 0.57
+		levy_size = 0.55
+	}
+	mxe_mud_brick_storehouse = {
+		desc = mxe_mud_brick_storehouse_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.2
+		culture_techpoints = 0.01
+		levy_size = 0.01
+	}
+	mxe_wattle_granary = {
+		desc = mxe_wattle_granary_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 63
+		upgrades_from = mxe_mud_brick_storehouse
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.45
+		culture_techpoints = 0.012
+		levy_size = 0.015
+	}
+	mxe_sunken_grain_pit = {
+		desc = mxe_sunken_grain_pit_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 370
+		ai_creation_factor = 70
+		upgrades_from = mxe_stone_granary_shed
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		temple_tax_modifier = 1
+		culture_techpoints = 0.016
+		tech_growth_modifier = 0.02
+		levy_size = 0.02
+	}
+	mxe_stone_granary_shed = {
+		desc = mxe_stone_granary_shed_desc
+		gold_cost = 160
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 68
+		upgrades_from = mxe_wattle_granary
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.8
+		culture_techpoints = 0.015
+		levy_size = 0.025
+	}
+	mxe_raised_granary = {
+		desc = mxe_raised_granary_desc
+		piety_cost = 210
+		extra_tech_building_start = 999
+		build_time = 430
+		ai_creation_factor = 78
+		upgrades_from = mxe_sunken_grain_pit
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 1.8
+		culture_techpoints = 0.018
+		tech_growth_modifier = 0.035
+		levy_size = 0.03
+	}
+	mxe_ventilated_storehouse = {
+		desc = mxe_ventilated_storehouse_desc
+		gold_cost = 390
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 85
+		upgrades_from = mxe_raised_granary
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		temple_tax_modifier = 2.9
+		culture_techpoints = 0.02
+		levy_size = 0.035
+	}
+	mxe_large_grain_chamber = {
+		desc = mxe_large_grain_chamber_desc
+		gold_cost = 760
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 93
+		upgrades_from = mxe_ventilated_storehouse
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		temple_tax_modifier = 4.1
+		culture_techpoints = 0.023
+		fort_level = 0.02
+		levy_size = 0.045
+	}
+	mxe_fortified_granary = {
+		desc = mxe_fortified_granary_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 100
+		upgrades_from = mxe_large_grain_chamber
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		temple_tax_modifier = 5.8
+		culture_techpoints = 0.026
+		fort_level = 0.035
+		garrison_size = 0.17
+		levy_size = 0.06
+	}
+	mxe_farmlands_grain_tower = {
+		desc = mxe_farmlands_grain_tower_desc
+		gold_cost = 2800
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = mxe_fortified_granary
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		temple_tax_modifier = 8.5
+		culture_techpoints = 0.03
+		fort_level = 0.05
+		garrison_size = 0.27
+		tech_growth_modifier = 0.08
+		levy_size = 0.08
+	}
+	mxe_farmlands_granary_complex = {
+		desc = mxe_farmlands_granary_complex_desc
+		gold_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 115
+		upgrades_from = mxe_farmlands_grain_tower
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		temple_tax_modifier = 13
+		culture_techpoints = 0.04
+		fort_level = 0.08
+		garrison_size = 0.4
+		tech_growth_modifier = 0.12
+		levy_size = 0.12
+	}
+	nbb_open_courtyard_1 = {
+		desc = nbb_open_courtyard_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.18
+		levy_size = 0.02
+	}
+	nbb_paved_walkway_2 = {
+		desc = nbb_paved_walkway_2_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 230
+		ai_creation_factor = 70
+		upgrades_from = nbb_open_courtyard_1
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.28
+		church_opinion = 1
+		levy_size = 0.03
+	}
+	nbb_shaded_cloister_walk_3 = {
+		desc = nbb_shaded_cloister_walk_3_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 75
+		upgrades_from = nbb_paved_walkway_2
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.45
+		tech_growth_modifier = 0.012
+		levy_size = 0.04
+	}
+	nbb_arched_cloister_4 = {
+		desc = nbb_arched_cloister_4_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 85
+		upgrades_from = nbb_shaded_cloister_walk_3
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.7
+		tech_growth_modifier = 0.025
+		fort_level = 0.03
+		levy_size = 0.05
+	}
+	nbb_cloister_gardens_6 = {
+		desc = nbb_cloister_gardens_6_desc
+		piety_cost = 340
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 95
+		upgrades_from = nbb_central_fountain_5
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 1.5
+		tech_growth_modifier = 0.045
+		church_opinion = 3
+		levy_size = 0.07
+	}
+	nbb_central_fountain_5 = {
+		desc = nbb_central_fountain_5_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 90
+		upgrades_from = nbb_arched_cloister_4
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 1
+		tech_growth_modifier = 0.03
+		church_opinion = 2
+		levy_size = 0.06
+	}
+	nbb_covered_walkways_7 = {
+		desc = nbb_covered_walkways_7_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = nbb_cloister_gardens_6
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.07
+		temple_tax_modifier = 2.2
+		tech_growth_modifier = 0.06
+		fort_level = 0.05
+		levy_size = 0.09
+	}
+	nbb_cloistered_quadrangle_8 = {
+		desc = nbb_cloistered_quadrangle_8_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 1450
+		ai_creation_factor = 105
+		upgrades_from = nbb_covered_walkways_7
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 3.6
+		tech_growth_modifier = 0.09
+		fort_level = 0.06
+		levy_size = 0.11
+	}
+	nbb_ornate_cloister_9 = {
+		desc = nbb_ornate_cloister_9_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 1900
+		ai_creation_factor = 110
+		upgrades_from = nbb_cloistered_quadrangle_8
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 6.5
+		tech_growth_modifier = 0.13
+		church_opinion = 6
+		garrison_size = 0.07
+		levy_size = 0.13
+	}
+	nbb_grand_cloister_complex_10 = {
+		desc = nbb_grand_cloister_complex_10_desc
+		gold_cost = 8500
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 115
+		upgrades_from = nbb_ornate_cloister_9
+		trigger = {
+			TECH_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.13
+		temple_tax_modifier = 12
+		tech_growth_modifier = 0.22
+		church_opinion = 12
+		garrison_size = 0.14
+		fort_level = 0.1
+		levy_size = 0.15
+	}
+	nqf_timber_belfry = {
+		desc = nqf_timber_belfry_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 68
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.2
+		levy_size = 0.04
+	}
+	nqf_stone_bell_platform = {
+		desc = nqf_stone_bell_platform_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 370
+		ai_creation_factor = 70
+		upgrades_from = nqf_timber_belfry
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.38
+		fort_level = 0.01
+		levy_size = 0.06
+	}
+	nqf_double_bell_chamber = {
+		desc = nqf_double_bell_chamber_desc
+		piety_cost = 160
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = nqf_single_bell_tower
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 0.72
+		garrison_size = 0.07
+		fort_level = 0.02
+		levy_size = 0.08
+	}
+	nqf_single_bell_tower = {
+		desc = nqf_single_bell_tower_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 520
+		ai_creation_factor = 73
+		upgrades_from = nqf_stone_bell_platform
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 0.54
+		fort_level = 0.015
+		levy_size = 0.1
+	}
+	nqf_reinforced_tower = {
+		desc = nqf_reinforced_tower_desc
+		piety_cost = 320
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 83
+		upgrades_from = nqf_double_bell_chamber
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 1.1
+		garrison_size = 0.14
+		fort_level = 0.03
+		levy_size = 0.13
+	}
+	nqf_clockwork_mechanism = {
+		desc = nqf_clockwork_mechanism_desc
+		prestige_cost = 400
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 90
+		upgrades_from = nqf_reinforced_tower
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.11
+		temple_tax_modifier = 1.9
+		tech_growth_modifier = 0.02
+		fort_level = 0.045
+		garrison_size = 0.19
+		levy_size = 0.17
+	}
+	nqf_triple_bell_array = {
+		desc = nqf_triple_bell_array_desc
+		piety_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 97
+		upgrades_from = nqf_clockwork_mechanism
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.15
+		temple_tax_modifier = 2.8
+		tech_growth_modifier = 0.04
+		fort_level = 0.06
+		garrison_size = 0.27
+		levy_size = 0.22
+	}
+	nqf_carillon_tower = {
+		desc = nqf_carillon_tower_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 102
+		upgrades_from = nqf_triple_bell_array
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.19
+		temple_tax_modifier = 4.2
+		tech_growth_modifier = 0.07
+		fort_level = 0.08
+		garrison_size = 0.37
+		levy_size = 0.28
+	}
+	nqf_cathedral_bell_tower = {
+		desc = nqf_cathedral_bell_tower_desc
+		piety_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 107
+		upgrades_from = nqf_carillon_tower
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.23
+		temple_tax_modifier = 6
+		tech_growth_modifier = 0.12
+		fort_level = 0.11
+		garrison_size = 0.53
+		levy_size = 0.36
+	}
+	nqf_great_resonance_tower = {
+		desc = nqf_great_resonance_tower_desc
+		piety_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 112
+		upgrades_from = nqf_cathedral_bell_tower
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.29
+		temple_tax_modifier = 8.5
+		tech_growth_modifier = 0.18
+		fort_level = 0.16
+		garrison_size = 0.73
+		levy_size = 0.45
+	}
+	oam_hermits_hut = {
+		desc = oam_hermits_hut_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		church_opinion = 2
+		levy_size = 0.05
+	}
+	oam_simple_dormitory = {
+		desc = oam_simple_dormitory_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 68
+		upgrades_from = oam_hermits_hut
+		prerequisites = {
+			oam_hermits_hut
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.025
+		levy_size = 0.08
+	}
+	oam_monastic_cell = {
+		desc = oam_monastic_cell_desc
+		gold_cost = 110
+		extra_tech_building_start = 999
+		build_time = 440
+		ai_creation_factor = 75
+		upgrades_from = oam_simple_dormitory
+		prerequisites = {
+			oam_simple_dormitory
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		church_opinion = 3
+		garrison_size = 0.17
+		levy_size = 0.1
+	}
+	oam_communal_refectory = {
+		desc = oam_communal_refectory_desc
+		piety_cost = 100
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 80
+		upgrades_from = oam_monastic_cell
+		prerequisites = {
+			oam_monastic_cell
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.03
+		church_opinion = 4
+		temple_tax_modifier = 0.25
+		garrison_size = 0.2
+		levy_size = 0.13
+	}
+	oam_scriptorium_annex = {
+		desc = oam_scriptorium_annex_desc
+		piety_cost = 200
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 85
+		upgrades_from = oam_communal_refectory
+		prerequisites = {
+			oam_communal_refectory
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.04
+		tech_growth_modifier = 0.08
+		church_opinion = 6
+		levy_size = 0.16
+	}
+	oam_enclosed_cloister = {
+		desc = oam_enclosed_cloister_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = oam_scriptorium_annex
+		prerequisites = {
+			oam_scriptorium_annex
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.045
+		garrison_size = 0.27
+		fort_level = 0.1
+		levy_size = 0.2
+	}
+	oam_abbots_quarters = {
+		desc = oam_abbots_quarters_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 97
+		upgrades_from = oam_enclosed_cloister
+		prerequisites = {
+			oam_enclosed_cloister
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.06
+		church_opinion = 9
+		temple_tax_modifier = 0.7
+		garrison_size = 0.4
+		levy_size = 0.25
+	}
+	oam_expanded_dormitories = {
+		desc = oam_expanded_dormitories_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = oam_abbots_quarters
+		prerequisites = {
+			oam_abbots_quarters
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.07
+		garrison_size = 0.6
+		temple_tax_modifier = 1.2
+		levy_size = 0.32
+	}
+	oam_grand_refectory = {
+		desc = oam_grand_refectory_desc
+		gold_cost = 2950
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = oam_expanded_dormitories
+		prerequisites = {
+			oam_expanded_dormitories
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.08
+		church_opinion = 14
+		temple_tax_modifier = 2.2
+		fort_level = 0.15
+		garrison_size = 0.73
+		levy_size = 0.4
+	}
+	oam_monastic_palace = {
+		desc = oam_monastic_palace_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 3600
+		ai_creation_factor = 120
+		upgrades_from = oam_grand_refectory
+		prerequisites = {
+			oam_grand_refectory
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.1
+		church_opinion = 22
+		temple_tax_modifier = 3.3
+		tech_growth_modifier = 0.22
+		fort_level = 0.25
+		garrison_size = 0.86
+		levy_size = 0.5
+	}
+	ohm_wooden_idol_post = {
+		desc = ohm_wooden_idol_post_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.65
+	}
+	ohm_stone_idol = {
+		desc = ohm_stone_idol_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 66
+		upgrades_from = ohm_wooden_idol_post
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.04
+	}
+	ohm_idol_grove = {
+		desc = ohm_idol_grove_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 70
+		upgrades_from = ohm_stone_idol
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 1.56
+		garrison_size = 0.14
+	}
+	ohm_decorated_idol_grove = {
+		desc = ohm_decorated_idol_grove_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 670
+		ai_creation_factor = 90
+		upgrades_from = ohm_enclosed_idol_sanctuary
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.3.2
+		temple_tax_modifier = 4.29
+		garrison_size = 0.4
+		global_revolt_risk = -0.01
+	}
+	ohm_enclosed_idol_sanctuary = {
+		desc = ohm_enclosed_idol_sanctuary_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 280
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 82
+		upgrades_from = ohm_idol_grove
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 2.6
+		fort_level = 0.01
+	}
+	ohm_ornate_idol_sanctuary = {
+		desc = ohm_ornate_idol_sanctuary_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 98
+		upgrades_from = ohm_decorated_idol_grove
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 7.15
+		garrison_size = 0.66
+		fort_level = 0.02
+		global_revolt_risk = -0.02
+	}
+	ohm_idol_grove_hall = {
+		desc = ohm_idol_grove_hall_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 104
+		upgrades_from = ohm_ornate_idol_sanctuary
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 11.05
+		garrison_size = 0.93
+		fort_level = 0.03
+		tech_growth_modifier = 0.1
+	}
+	ohm_grand_idol_grove = {
+		desc = ohm_grand_idol_grove_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		piety_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 110
+		upgrades_from = ohm_idol_grove_hall
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.12
+		temple_tax_modifier = 19.5
+		garrison_size = 1.32
+		fort_level = 0.04
+		tech_growth_modifier = 0.18
+		global_revolt_risk = -0.04
+	}
+	ohm_blessed_idol_grove = {
+		desc = ohm_blessed_idol_grove_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 8000
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 110
+		upgrades_from = ohm_grand_idol_grove
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.07
+		temple_tax_modifier = 28.6
+		garrison_size = 1.98
+		fort_level = 0.06
+		tech_growth_modifier = 0.3
+		global_revolt_risk = -0.08
+	}
+	ohm_sanctified_idol_grove = {
+		desc = ohm_sanctified_idol_grove_desc
+		potential = {
+			religion_group = pagan_group
+		}
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 3600
+		ai_creation_factor = 110
+		upgrades_from = ohm_blessed_idol_grove
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.17
+		temple_tax_modifier = 45.5
+		garrison_size = 2.64
+		fort_level = 0.08
+		tech_growth_modifier = 0.5
+		vassal_opinion = 10
+	}
+	omr_wooden_chapter_room = {
+		desc = omr_wooden_chapter_room_desc
+		potential = {
+			religion_group = christian
+		}
+		piety_cost = 50
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.06
+		levy_size = 0.05
+	}
+	omr_stone_chapterhouse = {
+		desc = omr_stone_chapterhouse_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 200
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = omr_wooden_chapter_room
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		garrison_size = 0.12
+		fort_level = 0.02
+		levy_size = 0.07
+	}
+	omr_enclosed_chapter_room = {
+		desc = omr_enclosed_chapter_room_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 75
+		upgrades_from = omr_stone_chapterhouse
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		garrison_size = 0.22
+		fort_level = 0.03
+		levy_size = 0.1
+	}
+	omr_decorated_chapter_hall = {
+		desc = omr_decorated_chapter_hall_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 80
+		upgrades_from = omr_enclosed_chapter_room
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.05
+		garrison_size = 0.33
+		fort_level = 0.04
+		tech_growth_modifier = 0.05
+		levy_size = 0.13
+	}
+	omr_chapterhouse_library = {
+		desc = omr_chapterhouse_library_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 85
+		upgrades_from = omr_decorated_chapter_hall
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.08
+		garrison_size = 0.5
+		tech_growth_modifier = 0.09
+		church_opinion = 4
+		levy_size = 0.15
+	}
+	omr_chapterhouse_chapel = {
+		desc = omr_chapterhouse_chapel_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 90
+		upgrades_from = omr_chapterhouse_library
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.1
+		garrison_size = 0.8
+		fort_level = 0.05
+		church_opinion = 7
+		levy_size = 0.18
+	}
+	omr_chapterhouse_vault = {
+		desc = omr_chapterhouse_vault_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 95
+		upgrades_from = omr_chapterhouse_chapel
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.13
+		garrison_size = 1.19
+		fort_level = 0.06
+		local_tax_modifier = 0.09
+		levy_size = 0.2
+	}
+	omr_ornate_chapterhouse = {
+		desc = omr_ornate_chapterhouse_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 1900
+		ai_creation_factor = 100
+		upgrades_from = omr_chapterhouse_vault
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.15
+		garrison_size = 1.79
+		fort_level = 0.08
+		church_opinion = 12
+		tech_growth_modifier = 0.16
+		levy_size = 0.23
+	}
+	omr_grand_chapterhouse = {
+		desc = omr_grand_chapterhouse_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = omr_ornate_chapterhouse
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.18
+		garrison_size = 2.64
+		fort_level = 0.1
+		tech_growth_modifier = 0.22
+		church_opinion = 18
+		levy_size = 0.28
+	}
+	omr_cathedral_chapterhouse = {
+		desc = omr_cathedral_chapterhouse_desc
+		potential = {
+			religion_group = christian
+		}
+		gold_cost = 20000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = omr_grand_chapterhouse
+		trigger = {
+			TECH_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.22
+		garrison_size = 3.96
+		fort_level = 0.13
+		church_opinion = 30
+		tech_growth_modifier = 0.35
+		local_tax_modifier = 0.15
+		levy_size = 0.33
+	}
+	ppo_rock_shelter = {
+		desc = ppo_rock_shelter_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 30
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		fort_level = 0.006
+	}
+	ppo_mountain_hut = {
+		desc = ppo_mountain_hut_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 34
+		upgrades_from = ppo_rock_shelter
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		fort_level = 0.01
+		garrison_size = 0.14
+	}
+	ppo_stone_hermitage = {
+		desc = ppo_stone_hermitage_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 38
+		upgrades_from = ppo_mountain_hut
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		fort_level = 0.016
+		garrison_size = 0.27
+	}
+	ppo_cliffside_cell = {
+		desc = ppo_cliffside_cell_desc
+		prestige_cost = 80
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 42
+		upgrades_from = ppo_stone_hermitage
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		fort_level = 0.02
+		garrison_size = 0.43
+		church_opinion = 2
+	}
+	ppo_grotto_chapel = {
+		desc = ppo_grotto_chapel_desc
+		gold_cost = 175
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 48
+		upgrades_from = ppo_cliffside_cell
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.3.5
+		fort_level = 0.026
+		garrison_size = 0.64
+		temple_tax_modifier = 0.78
+	}
+	ppo_mountain_shrine = {
+		desc = ppo_mountain_shrine_desc
+		piety_cost = 320
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 55
+		upgrades_from = ppo_grotto_chapel
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.1
+		fort_level = 0.03
+		garrison_size = 0.85
+		global_revolt_risk = -0.01
+	}
+	ppo_high_hermitage = {
+		desc = ppo_high_hermitage_desc
+		gold_cost = 440
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 62
+		upgrades_from = ppo_mountain_shrine
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.15
+		fort_level = 0.04
+		garrison_size = 1.19
+		temple_tax_modifier = 1.3
+		church_opinion = 4
+	}
+	ppo_sanctuary_in_the_heights = {
+		desc = ppo_sanctuary_in_the_heights_desc
+		piety_cost = 750
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 75
+		upgrades_from = ppo_high_hermitage
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.17
+		fort_level = 0.05
+		garrison_size = 1.59
+		temple_tax_modifier = 2.34
+		tech_growth_modifier = 0.05
+	}
+	ppo_mountain_retreat = {
+		desc = ppo_mountain_retreat_desc
+		gold_cost = 1100
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 90
+		upgrades_from = ppo_sanctuary_in_the_heights
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.17
+		fort_level = 0.06
+		garrison_size = 1.98
+		temple_tax_modifier = 2.99
+		tech_growth_modifier = 0.08
+		global_revolt_risk = -0.02
+	}
+	ppo_mountain_monastery = {
+		desc = ppo_mountain_monastery_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = ppo_mountain_retreat
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.07
+		fort_level = 0.08
+		garrison_size = 2.92
+		temple_tax_modifier = 4.29
+		tech_growth_modifier = 0.15
+		global_revolt_risk = -0.04
+		church_opinion = 8
+	}
+	pvy_sand_pit_well = {
+		desc = pvy_sand_pit_well_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.2
+		levy_size = 0.03
+	}
+	pvy_stone_lined_well = {
+		desc = pvy_stone_lined_well_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 63
+		upgrades_from = pvy_sand_pit_well
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.4
+		supply_limit = 0.04
+		levy_size = 0.05
+	}
+	pvy_covered_well = {
+		desc = pvy_covered_well_desc
+		piety_cost = 105
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 66
+		upgrades_from = pvy_stone_lined_well
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.65
+		garrison_size = 0.12
+		levy_size = 0.07
+	}
+	pvy_draw_well = {
+		desc = pvy_draw_well_desc
+		prestige_cost = 155
+		extra_tech_building_start = 999
+		build_time = 850
+		ai_creation_factor = 75
+		upgrades_from = pvy_deep_shaft_well
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 1.25
+		fort_level = 0.04
+		supply_limit = 0.1
+		tech_growth_modifier = 0.02
+		levy_size = 0.1
+	}
+	pvy_oasis_enclosure = {
+		desc = pvy_oasis_enclosure_desc
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 77
+		upgrades_from = pvy_covered_well
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 1.8
+		fort_level = 0.02
+		garrison_size = 0.23
+		levy_size = 0.13
+	}
+	pvy_deep_shaft_well = {
+		desc = pvy_deep_shaft_well_desc
+		gold_cost = 410
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 84
+		upgrades_from = pvy_oasis_enclosure
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 2.6
+		fort_level = 0.03
+		garrison_size = 0.4
+		supply_limit = 0.13
+		levy_size = 0.17
+	}
+	pvy_desert_cistern = {
+		desc = pvy_desert_cistern_desc
+		piety_cost = 480
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 98
+		upgrades_from = pvy_walled_water_source
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.12
+		temple_tax_modifier = 4.5
+		fort_level = 0.06
+		garrison_size = 0.8
+		tech_growth_modifier = 0.07
+		learning = 1
+		levy_size = 0.2
+	}
+	pvy_walled_water_source = {
+		desc = pvy_walled_water_source_desc
+		gold_cost = 820
+		extra_tech_building_start = 999
+		build_time = 1450
+		ai_creation_factor = 94
+		upgrades_from = pvy_draw_well
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.11
+		temple_tax_modifier = 3.7
+		fort_level = 0.05
+		garrison_size = 0.6
+		tech_growth_modifier = 0.05
+		levy_size = 0.19
+	}
+	pvy_shaded_wellhouse = {
+		desc = pvy_shaded_wellhouse_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 104
+		upgrades_from = pvy_desert_cistern
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.15
+		temple_tax_modifier = 6.1
+		fort_level = 0.08
+		garrison_size = 1.06
+		tech_growth_modifier = 0.12
+		learning = 2
+		levy_size = 0.22
+	}
+	pvy_desert_water_sanctuary = {
+		desc = pvy_desert_water_sanctuary_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 2800
+		ai_creation_factor = 110
+		upgrades_from = pvy_shaded_wellhouse
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.18
+		temple_tax_modifier = 8.2
+		fort_level = 0.1
+		garrison_size = 1.39
+		tech_growth_modifier = 0.15
+		learning = 3
+		levy_size = 0.25
+	}
+	sod_stone_strongbox = {
+		desc = sod_stone_strongbox_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.3
+		culture_techpoints = 0.02
+		levy_size = 0.04
+		tax_income = 0.35
+	}
+	sod_guarded_chest_room = {
+		desc = sod_guarded_chest_room_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 250
+		ai_creation_factor = 75
+		upgrades_from = sod_stone_strongbox
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.54
+		culture_techpoints = 0.02
+		garrison_size = 0.1
+		levy_size = 0.06
+		tax_income = 0.70
+	}
+	sod_small_treasury = {
+		desc = sod_small_treasury_desc
+		gold_cost = 140
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 83
+		upgrades_from = sod_guarded_chest_room
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.95
+		culture_techpoints = 0.03
+		fort_level = 0.01
+		levy_size = 0.09
+		tax_income = 0.70
+	}
+	sod_treasury_vault = {
+		desc = sod_treasury_vault_desc
+		gold_cost = 340
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 88
+		upgrades_from = sod_small_treasury
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		temple_tax_modifier = 1.65
+		culture_techpoints = 0.03
+		garrison_size = 0.17
+		fort_level = 0.02
+		levy_size = 0.12
+		tax_income = 1.05
+	}
+	sod_ironbound_vault = {
+		desc = sod_ironbound_vault_desc
+		gold_cost = 760
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 92
+		upgrades_from = sod_treasury_vault
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 2.95
+		culture_techpoints = 0.04
+		garrison_size = 0.27
+		fort_level = 0.03
+		levy_size = 0.16
+		tax_income = 1.40
+	}
+	sod_fortified_treasury = {
+		desc = sod_fortified_treasury_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 97
+		upgrades_from = sod_ironbound_vault
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		temple_tax_modifier = 4.7
+		culture_techpoints = 0.05
+		garrison_size = 0.47
+		fort_level = 0.05
+		levy_size = 0.21
+		tax_income = 1.75
+	}
+	sod_treasure_gallery = {
+		desc = sod_treasure_gallery_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 102
+		upgrades_from = sod_fortified_treasury
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		temple_tax_modifier = 7.8
+		culture_techpoints = 0.08
+		garrison_size = 0.73
+		fort_level = 0.07
+		tech_growth_modifier = 0.06
+		levy_size = 0.27
+		tax_income = 3.50
+	}
+	sod_golden_treasury = {
+		desc = sod_golden_treasury_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 108
+		upgrades_from = sod_treasure_gallery
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		temple_tax_modifier = 12.5
+		culture_techpoints = 0.1
+		garrison_size = 1.06
+		fort_level = 0.1
+		tech_growth_modifier = 0.1
+		levy_size = 0.36
+		tax_income = 5.25
+	}
+	sod_royal_treasury = {
+		desc = sod_royal_treasury_desc
+		gold_cost = 10000
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 115
+		upgrades_from = sod_golden_treasury
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		temple_tax_modifier = 20
+		culture_techpoints = 0.13
+		garrison_size = 1.46
+		fort_level = 0.13
+		tech_growth_modifier = 0.15
+		church_opinion = 10
+		levy_size = 0.48
+		tax_income = 7.00
+	}
+	sod_sanctified_treasury = {
+		desc = sod_sanctified_treasury_desc
+		gold_cost = 20000
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 120
+		upgrades_from = sod_royal_treasury
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		temple_tax_modifier = 32
+		culture_techpoints = 0.18
+		garrison_size = 2.18
+		fort_level = 0.16
+		tech_growth_modifier = 0.22
+		church_opinion = 25
+		levy_size = 0.65
+		tax_income = 8.75
+	}
+	tkp_stone_ring = {
+		desc = tkp_stone_ring_desc
+		gold_cost = 55
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 60
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.22
+		levy_size = 0.03
+	}
+	tkp_wooden_circle = {
+		desc = tkp_wooden_circle_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 66
+		upgrades_from = tkp_stone_ring
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.32
+		garrison_size = 0.08
+		levy_size = 0.04
+	}
+	tkp_enclosed_stone_circle = {
+		desc = tkp_enclosed_stone_circle_desc
+		prestige_cost = 180
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 72
+		upgrades_from = tkp_wooden_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.46
+		fort_level = 0.012
+		levy_size = 0.06
+	}
+	tkp_sacred_fire_ring = {
+		desc = tkp_sacred_fire_ring_desc
+		piety_cost = 320
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 77
+		upgrades_from = tkp_enclosed_stone_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 0.65
+		fort_level = 0.018
+		garrison_size = 0.14
+		levy_size = 0.09
+	}
+	tkp_decorated_circle = {
+		desc = tkp_decorated_circle_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 950
+		ai_creation_factor = 82
+		upgrades_from = tkp_sacred_fire_ring
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.07
+		temple_tax_modifier = 0.93
+		garrison_size = 0.22
+		tech_growth_modifier = 0.04
+		levy_size = 0.13
+	}
+	tkp_sanctuary_circle = {
+		desc = tkp_sanctuary_circle_desc
+		piety_cost = 1300
+		extra_tech_building_start = 999
+		build_time = 1250
+		ai_creation_factor = 88
+		upgrades_from = tkp_decorated_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.09
+		temple_tax_modifier = 1.34
+		fort_level = 0.026
+		garrison_size = 0.33
+		tech_growth_modifier = 0.06
+		levy_size = 0.17
+	}
+	tkp_blessed_circle = {
+		desc = tkp_blessed_circle_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 94
+		upgrades_from = tkp_sanctuary_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.11
+		temple_tax_modifier = 1.85
+		fort_level = 0.033
+		garrison_size = 0.47
+		tech_growth_modifier = 0.09
+		levy_size = 0.22
+	}
+	tkp_grand_sacred_circle = {
+		desc = tkp_grand_sacred_circle_desc
+		piety_cost = 4600
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 98
+		upgrades_from = tkp_blessed_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.13
+		temple_tax_modifier = 2.54
+		fort_level = 0.042
+		garrison_size = 0.63
+		tech_growth_modifier = 0.13
+		levy_size = 0.28
+	}
+	tkp_ornate_sacred_circle = {
+		desc = tkp_ornate_sacred_circle_desc
+		gold_cost = 9800
+		extra_tech_building_start = 999
+		build_time = 2950
+		ai_creation_factor = 103
+		upgrades_from = tkp_grand_sacred_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.16
+		temple_tax_modifier = 3.42
+		fort_level = 0.052
+		garrison_size = 0.83
+		tech_growth_modifier = 0.18
+		church_opinion = 5
+		levy_size = 0.34
+	}
+	tkp_sanctified_sacred_circle = {
+		desc = tkp_sanctified_sacred_circle_desc
+		gold_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 3700
+		ai_creation_factor = 108
+		upgrades_from = tkp_ornate_sacred_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.2
+		temple_tax_modifier = 4.56
+		fort_level = 0.065
+		garrison_size = 1.06
+		tech_growth_modifier = 0.28
+		church_opinion = 10
+		levy_size = 0.4
+	}
+	ufb_zoroastrian_stone_platform = {
+		desc = ufb_zoroastrian_stone_platform_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		temple_tax_modifier = 0.18
+		levy_size = 0.03
+	}
+	ufb_zoroastrian_small_tower_of_silence = {
+		desc = ufb_zoroastrian_small_tower_of_silence_desc
+		piety_cost = 80
+		extra_tech_building_start = 999
+		build_time = 410
+		ai_creation_factor = 72
+		upgrades_from = ufb_zoroastrian_circular_platform
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.32
+		church_opinion = 2
+		levy_size = 0.05
+	}
+	ufb_zoroastrian_circular_platform = {
+		desc = ufb_zoroastrian_circular_platform_desc
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 68
+		upgrades_from = ufb_zoroastrian_stone_platform
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.012
+		temple_tax_modifier = 0.23
+		garrison_size = 0.06
+		levy_size = 0.04
+	}
+	ufb_zoroastrian_enclosed_tower_of_silence = {
+		desc = ufb_zoroastrian_enclosed_tower_of_silence_desc
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 820
+		ai_creation_factor = 83
+		upgrades_from = ufb_zoroastrian_walled_tower
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.68
+		garrison_size = 0.12
+		fort_level = 0.06
+		church_opinion = 3
+		levy_size = 0.07
+	}
+	ufb_zoroastrian_walled_tower = {
+		desc = ufb_zoroastrian_walled_tower_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 78
+		upgrades_from = ufb_zoroastrian_small_tower_of_silence
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.014
+		temple_tax_modifier = 0.45
+		garrison_size = 0.09
+		fort_level = 0.04
+		levy_size = 0.06
+	}
+	ufb_zoroastrian_ornate_tower_of_silence = {
+		desc = ufb_zoroastrian_ornate_tower_of_silence_desc
+		piety_cost = 520
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 92
+		upgrades_from = ufb_zoroastrian_decorated_tower
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.031
+		temple_tax_modifier = 1.18
+		garrison_size = 0.22
+		fort_level = 0.09
+		church_opinion = 5
+		tech_growth_modifier = 0.018
+		levy_size = 0.1
+	}
+	ufb_zoroastrian_decorated_tower = {
+		desc = ufb_zoroastrian_decorated_tower_desc
+		gold_cost = 560
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 88
+		upgrades_from = ufb_zoroastrian_enclosed_tower_of_silence
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.021
+		temple_tax_modifier = 0.77
+		garrison_size = 0.17
+		fort_level = 0.07
+		tech_growth_modifier = 0.011
+		levy_size = 0.08
+	}
+	ufb_zoroastrian_grand_tower_of_silence = {
+		desc = ufb_zoroastrian_grand_tower_of_silence_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 98
+		upgrades_from = ufb_zoroastrian_ornate_tower_of_silence
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.043
+		temple_tax_modifier = 2.1
+		garrison_size = 0.32
+		fort_level = 0.13
+		church_opinion = 7
+		tech_growth_modifier = 0.026
+		levy_size = 0.13
+	}
+	ufb_zoroastrian_sanctified_tower = {
+		desc = ufb_zoroastrian_sanctified_tower_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 104
+		upgrades_from = ufb_zoroastrian_grand_tower_of_silence
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.055
+		temple_tax_modifier = 3.3
+		garrison_size = 0.44
+		fort_level = 0.17
+		church_opinion = 10
+		tech_growth_modifier = 0.036
+		levy_size = 0.16
+	}
+	ufb_zoroastrian_blessed_tower_of_silence = {
+		desc = ufb_zoroastrian_blessed_tower_of_silence_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = ufb_zoroastrian_sanctified_tower
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.072
+		temple_tax_modifier = 5.5
+		garrison_size = 0.59
+		fort_level = 0.22
+		church_opinion = 15
+		tech_growth_modifier = 0.052
+		levy_size = 0.2
+	}
+	vpl_field_clearing = {
+		desc = vpl_field_clearing_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 70
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.18
+		levy_size = 0.05
+	}
+	vpl_plains_garden = {
+		desc = vpl_plains_garden_desc
+		piety_cost = 70
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 73
+		upgrades_from = vpl_field_clearing
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		learning = 0.25
+		temple_tax_modifier = 0.26
+		levy_size = 0.06
+	}
+	vpl_irrigated_plot = {
+		desc = vpl_irrigated_plot_desc
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 76
+		upgrades_from = vpl_plains_garden
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.42
+		supply_limit = 0.05
+		levy_size = 0.07
+	}
+	vpl_crop_storage_shed = {
+		desc = vpl_crop_storage_shed_desc
+		prestige_cost = 110
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 80
+		upgrades_from = vpl_irrigated_plot
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.7
+		culture_techpoints = 0.03
+		garrison_size = 0.08
+		levy_size = 0.09
+	}
+	vpl_enclosed_fields = {
+		desc = vpl_enclosed_fields_desc
+		gold_cost = 280
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 85
+		upgrades_from = vpl_crop_storage_shed
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 1.15
+		culture_techpoints = 0.04
+		fort_level = 0.02
+		levy_size = 0.11
+	}
+	vpl_fertile_plains_farm = {
+		desc = vpl_fertile_plains_farm_desc
+		piety_cost = 320
+		extra_tech_building_start = 999
+		build_time = 550
+		ai_creation_factor = 90
+		upgrades_from = vpl_enclosed_fields
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 1.85
+		culture_techpoints = 0.06
+		tech_growth_modifier = 0.1
+		levy_size = 0.13
+	}
+	vpl_fallow_rotation_fields = {
+		desc = vpl_fallow_rotation_fields_desc
+		prestige_cost = 400
+		extra_tech_building_start = 999
+		build_time = 820
+		ai_creation_factor = 102
+		upgrades_from = vpl_expanded_grain_fields
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 3.9
+		culture_techpoints = 0.09
+		tech_growth_modifier = 0.18
+		supply_limit = 0.1
+		levy_size = 0.16
+	}
+	vpl_expanded_grain_fields = {
+		desc = vpl_expanded_grain_fields_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 97
+		upgrades_from = vpl_fertile_plains_farm
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 2.7
+		culture_techpoints = 0.07
+		tech_growth_modifier = 0.13
+		garrison_size = 0.16
+		levy_size = 0.19
+	}
+	vpl_plains_manor_farm = {
+		desc = vpl_plains_manor_farm_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = vpl_fallow_rotation_fields
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		temple_tax_modifier = 4.6
+		culture_techpoints = 0.13
+		tech_growth_modifier = 0.24
+		fort_level = 0.06
+		garrison_size = 0.22
+		levy_size = 0.23
+	}
+	vpl_plains_agricultural_estate = {
+		desc = vpl_plains_agricultural_estate_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 120
+		upgrades_from = vpl_plains_manor_farm
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		temple_tax_modifier = 7.2
+		culture_techpoints = 0.2
+		tech_growth_modifier = 0.39
+		garrison_size = 0.3
+		global_revolt_risk = -0.03
+		levy_size = 0.28
+	}
+	tp_elite_barracks_1 = {
+		desc = tp_elite_barracks_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 0.5
+		build_time = 220
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.25
+		culture_techpoints = 0.01
+		levy_size = 0.01
+		heavy_infantry = 10
+		light_cavalry = 10
+	}
+	tp_elite_barracks_2 = {
+		desc = tp_elite_barracks_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 1
+		build_time = 350
+		ai_creation_factor = 65
+		upgrades_from = tp_elite_barracks_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		temple_tax_modifier = 0.55
+		tech_growth_modifier = 0.015
+		culture_techpoints = 0.012
+		levy_size = 0.02
+		heavy_infantry = 15
+		light_cavalry = 15
+	}
+	tp_elite_barracks_3 = {
+		desc = tp_elite_barracks_3_desc
+		gold_cost = 160
+		extra_tech_building_start = 0.2
+		build_time = 500
+		ai_creation_factor = 70
+		upgrades_from = tp_elite_barracks_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		temple_tax_modifier = 1.1
+		tech_growth_modifier = 0.03
+		culture_techpoints = 0.014
+		levy_size = 0.03
+		heavy_infantry = 20
+		light_cavalry = 20
+	}
+	tp_elite_barracks_4 = {
+		desc = tp_elite_barracks_4_desc
+		gold_cost = 320
+		extra_tech_building_start = 0.2
+		build_time = 800
+		ai_creation_factor = 75
+		upgrades_from = tp_elite_barracks_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		temple_tax_modifier = 1.9
+		tech_growth_modifier = 0.06
+		culture_techpoints = 0.016
+		church_opinion = 2
+		levy_size = 0.04
+		heavy_infantry = 25
+		light_cavalry = 25
+	}
+	tp_elite_barracks_5 = {
+		desc = tp_elite_barracks_5_desc
+		gold_cost = 700
+		extra_tech_building_start = 0.2
+		build_time = 1300
+		ai_creation_factor = 80
+		upgrades_from = tp_elite_barracks_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		temple_tax_modifier = 3.2
+		tech_growth_modifier = 0.11
+		culture_techpoints = 0.018
+		church_opinion = 4
+		levy_size = 0.05
+		heavy_infantry = 30
+		light_cavalry = 30
+	}
+	tp_elite_barracks_6 = {
+		desc = tp_elite_barracks_6_desc
+		gold_cost = 1400
+		extra_tech_building_start = 0.2
+		build_time = 1850
+		ai_creation_factor = 85
+		upgrades_from = tp_elite_barracks_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		temple_tax_modifier = 5.1
+		tech_growth_modifier = 0.22
+		culture_techpoints = 0.02
+		church_opinion = 5
+		levy_size = 0.06
+		heavy_infantry = 35
+		light_cavalry = 35
+	}
+	vzb_artificers_chamber = {
+		desc = vzb_artificers_chamber_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 90
+		upgrades_from = tp_elite_barracks_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		temple_tax_modifier = 7.5
+		tech_growth_modifier = 0.35
+		culture_techpoints = 0.022
+		church_opinion = 7
+		levy_size = 0.07
+		heavy_infantry = 40
+		light_cavalry = 40
+	}
+	vzb_masters_workshop = {
+		desc = vzb_masters_workshop_desc
+		gold_cost = 4600
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 95
+		upgrades_from = vzb_artificers_chamber
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		temple_tax_modifier = 11
+		tech_growth_modifier = 0.52
+		culture_techpoints = 0.025
+		church_opinion = 10
+		levy_size = 0.09
+		heavy_infantry = 45
+		light_cavalry = 45
+	}
+	vzb_guildhall_workshop = {
+		desc = vzb_guildhall_workshop_desc
+		gold_cost = 8500
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 100
+		upgrades_from = vzb_masters_workshop
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		temple_tax_modifier = 15
+		tech_growth_modifier = 0.8
+		culture_techpoints = 0.027
+		church_opinion = 15
+		levy_size = 0.11
+		heavy_infantry = 50
+		light_cavalry = 50
+	}
+	vzb_sanctuary_workshop_complex = {
+		desc = vzb_sanctuary_workshop_complex_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 6500
+		ai_creation_factor = 110
+		upgrades_from = vzb_guildhall_workshop
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		temple_tax_modifier = 20
+		tech_growth_modifier = 1.1
+		culture_techpoints = 0.03
+		church_opinion = 22
+		global_revolt_risk = -0.05
+		levy_size = 0.14
+		heavy_infantry = 55
+		light_cavalry = 55
+	}
+	wal_pilgrims_path = {
+		desc = wal_pilgrims_path_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 35
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		church_opinion = 1
+		levy_size = 0.05
+		tax_income = 0.35
+	}
+	wal_wooden_shelter = {
+		desc = wal_wooden_shelter_desc
+		piety_cost = 50
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 38
+		upgrades_from = wal_pilgrims_path
+		prerequisites = {
+			wal_pilgrims_path
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		fort_level = 0.15
+		levy_size = 0.07
+		tax_income = 0.70
+	}
+	wal_pilgrims_hostel = {
+		desc = wal_pilgrims_hostel_desc
+		gold_cost = 110
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 42
+		upgrades_from = wal_wooden_shelter
+		prerequisites = {
+			wal_wooden_shelter
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.18
+		church_opinion = 2
+		levy_size = 0.09
+		tax_income = 1.05
+	}
+	wal_pilgrims_infirmary = {
+		desc = wal_pilgrims_infirmary_desc
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 740
+		ai_creation_factor = 57
+		upgrades_from = wal_stone_rest_house
+		prerequisites = {
+			wal_stone_rest_house
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		church_opinion = 3
+		learning = 1
+		levy_size = 0.11
+		tax_income = 1.40
+	}
+	wal_stone_rest_house = {
+		desc = wal_stone_rest_house_desc
+		gold_cost = 280
+		extra_tech_building_start = 999
+		build_time = 520
+		ai_creation_factor = 53
+		upgrades_from = wal_pilgrims_hostel
+		prerequisites = {
+			wal_pilgrims_hostel
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.35
+		fort_level = 0.15
+		levy_size = 0.13
+		tax_income = 1.75
+	}
+	wal_wayfarers_lodge = {
+		desc = wal_wayfarers_lodge_desc
+		piety_cost = 420
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 78
+		upgrades_from = wal_pilgrimage_courtyard
+		prerequisites = {
+			wal_pilgrimage_courtyard
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.08
+		temple_tax_modifier = 0.55
+		garrison_size = 0.12
+		church_opinion = 4
+		levy_size = 0.16
+		tax_income = 2.10
+	}
+	wal_pilgrimage_courtyard = {
+		desc = wal_pilgrimage_courtyard_desc
+		gold_cost = 680
+		extra_tech_building_start = 999
+		build_time = 950
+		ai_creation_factor = 65
+		upgrades_from = wal_pilgrims_infirmary
+		prerequisites = {
+			wal_pilgrims_infirmary
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 0.8
+		fort_level = 0.25
+		levy_size = 0.19
+		tax_income = 2.45
+	}
+	wal_pilgrimage_inn = {
+		desc = wal_pilgrimage_inn_desc
+		piety_cost = 950
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 105
+		upgrades_from = wal_pilgrims_hospice
+		prerequisites = {
+			wal_pilgrims_hospice
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.12
+		temple_tax_modifier = 1.15
+		garrison_size = 0.24
+		tech_growth_modifier = 0.12
+		levy_size = 0.23
+		tax_income = 2.80
+	}
+	wal_pilgrims_hospice = {
+		desc = wal_pilgrims_hospice_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 95
+		upgrades_from = wal_wayfarers_lodge
+		prerequisites = {
+			wal_wayfarers_lodge
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.1
+		temple_tax_modifier = 0.9
+		garrison_size = 0.17
+		learning = 2
+		levy_size = 0.21
+		tax_income = 3.15
+	}
+	wal_grand_pilgrims_hall = {
+		desc = wal_grand_pilgrims_hall_desc
+		gold_cost = 3400
+		extra_tech_building_start = 999
+		build_time = 3800
+		ai_creation_factor = 120
+		upgrades_from = wal_pilgrimage_inn
+		prerequisites = {
+			wal_pilgrimage_inn
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.2
+		temple_tax_modifier = 1.75
+		garrison_size = 0.32
+		church_opinion = 7
+		tech_growth_modifier = 0.18
+		levy_size = 0.28
+		tax_income = 3.50
+	}
+	wgx_arctic_snow_shelter = {
+		desc = wgx_arctic_snow_shelter_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 60
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		garrison_size = 0.12
+		levy_size = 0.03
+	}
+	wgx_arctic_ice_altar = {
+		desc = wgx_arctic_ice_altar_desc
+		piety_cost = 50
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 68
+		upgrades_from = wgx_arctic_snow_shelter
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		learning = 0.7
+		garrison_size = 0.15
+		levy_size = 0.04
+	}
+	wgx_arctic_fur_lined_chapel = {
+		desc = wgx_arctic_fur_lined_chapel_desc
+		gold_cost = 85
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 72
+		upgrades_from = wgx_arctic_ice_altar
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.018
+		garrison_size = 0.22
+		levy_size = 0.06
+		church_opinion = 2
+	}
+	wgx_arctic_snowbank_sanctuary = {
+		desc = wgx_arctic_snowbank_sanctuary_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 370
+		ai_creation_factor = 77
+		upgrades_from = wgx_arctic_fur_lined_chapel
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.33
+		levy_size = 0.09
+		fort_level = 0.03
+		global_revolt_risk = -0.01
+	}
+	wgx_arctic_insulated_chapel = {
+		desc = wgx_arctic_insulated_chapel_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 560
+		ai_creation_factor = 82
+		upgrades_from = wgx_arctic_snowbank_sanctuary
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.025
+		garrison_size = 0.53
+		levy_size = 0.13
+		fort_level = 0.05
+		tech_growth_modifier = 0.05
+	}
+	wgx_arctic_stone_arctic_chapel = {
+		desc = wgx_arctic_stone_arctic_chapel_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 880
+		ai_creation_factor = 86
+		upgrades_from = wgx_arctic_insulated_chapel
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.034
+		garrison_size = 0.8
+		levy_size = 0.18
+		fort_level = 0.07
+		tech_growth_modifier = 0.09
+		church_opinion = 4
+	}
+	wgx_arctic_enclosed_snow_sanctuary = {
+		desc = wgx_arctic_enclosed_snow_sanctuary_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 91
+		upgrades_from = wgx_arctic_stone_arctic_chapel
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.045
+		garrison_size = 1.19
+		levy_size = 0.26
+		fort_level = 0.09
+		tech_growth_modifier = 0.13
+		global_revolt_risk = -0.025
+	}
+	wgx_arctic_heated_sanctuary = {
+		desc = wgx_arctic_heated_sanctuary_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 97
+		upgrades_from = wgx_arctic_enclosed_snow_sanctuary
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.06
+		garrison_size = 1.85
+		levy_size = 0.37
+		fort_level = 0.11
+		tech_growth_modifier = 0.18
+		global_revolt_risk = -0.04
+		learning = 2
+	}
+	wgx_arctic_gathering_hall = {
+		desc = wgx_arctic_gathering_hall_desc
+		gold_cost = 8500
+		extra_tech_building_start = 999
+		build_time = 2900
+		ai_creation_factor = 103
+		upgrades_from = wgx_arctic_heated_sanctuary
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.08
+		garrison_size = 2.97
+		levy_size = 0.53
+		fort_level = 0.14
+		tech_growth_modifier = 0.27
+		global_revolt_risk = -0.07
+		church_opinion = 8
+	}
+	wgx_arctic_temple = {
+		desc = wgx_arctic_temple_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 4100
+		ai_creation_factor = 115
+		upgrades_from = wgx_arctic_gathering_hall
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.12
+		garrison_size = 4.62
+		levy_size = 0.7
+		fort_level = 0.18
+		tech_growth_modifier = 0.4
+		global_revolt_risk = -0.11
+		learning = 5
+		church_opinion = 12
+	}
+	tp_barracks_1 = {
+		desc = tp_barracks_1_desc
+		piety_cost = 40
+		extra_tech_building_start = 0.5
+		build_time = 180
+		ai_creation_factor = 22
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		church_opinion = 1
+		levy_size = 0.02
+		light_infantry = 10
+		archers = 10
+	}
+	tp_barracks_2 = {
+		desc = tp_barracks_2_desc
+		gold_cost = 75
+		extra_tech_building_start = 1
+		build_time = 250
+		ai_creation_factor = 26
+		upgrades_from = tp_barracks_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.015
+		learning = 0.25
+		temple_tax_modifier = 0.2
+		levy_size = 0.03
+		light_infantry = 15
+		archers = 15
+	}
+	tp_barracks_3 = {
+		desc = tp_barracks_3_desc
+		piety_cost = 120
+		extra_tech_building_start = 0.5
+		build_time = 340
+		ai_creation_factor = 29
+		upgrades_from = tp_barracks_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.018
+		temple_tax_modifier = 0.38
+		global_revolt_risk = -0.01
+		levy_size = 0.04
+		light_infantry = 20
+		archers = 20
+	}
+	tp_barracks_4 = {
+		desc = tp_barracks_4_desc
+		gold_cost = 210
+		extra_tech_building_start = 0.2
+		build_time = 600
+		ai_creation_factor = 32
+		upgrades_from = tp_barracks_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.79
+		tech_growth_modifier = 0.02
+		levy_size = 0.06
+		light_infantry = 25
+		archers = 25
+	}
+	tp_barracks_5 = {
+		desc = tp_barracks_5_desc
+		gold_cost = 425
+		extra_tech_building_start = 0.2
+		build_time = 900
+		ai_creation_factor = 36
+		upgrades_from = tp_barracks_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.025
+		temple_tax_modifier = 1.5
+		garrison_size = 0.12
+		learning = 0.5
+		levy_size = 0.08
+		light_infantry = 30
+		archers = 30
+	}
+	tp_barracks_6 = {
+		desc = tp_barracks_6_desc
+		gold_cost = 850
+		extra_tech_building_start = 0.2
+		build_time = 1400
+		ai_creation_factor = 41
+		upgrades_from = tp_barracks_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 2.3
+		garrison_size = 0.22
+		tech_growth_modifier = 0.04
+		fort_level = 0.01
+		levy_size = 0.1
+		light_infantry = 35
+		archers = 35
+	}
+	wpq_hilltop_retreat = {
+		desc = wpq_hilltop_retreat_desc
+		gold_cost = 1750
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 46
+		upgrades_from = tp_barracks_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.035
+		temple_tax_modifier = 3.1
+		garrison_size = 0.3
+		tech_growth_modifier = 0.06
+		fort_level = 0.02
+		learning = 0.75
+		levy_size = 0.12
+		light_infantry = 40
+		archers = 40
+	}
+	wpq_hillside_monastic_house = {
+		desc = wpq_hillside_monastic_house_desc
+		gold_cost = 3500
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 51
+		upgrades_from = wpq_hilltop_retreat
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.04
+		temple_tax_modifier = 4.2
+		garrison_size = 0.4
+		tech_growth_modifier = 0.08
+		fort_level = 0.03
+		learning = 1
+		global_revolt_risk = -0.02
+		levy_size = 0.14
+		light_infantry = 45
+		archers = 45
+	}
+	wpq_hillside_pilgrims_hall = {
+		desc = wpq_hillside_pilgrims_hall_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 4400
+		ai_creation_factor = 56
+		upgrades_from = wpq_hillside_monastic_house
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.045
+		temple_tax_modifier = 5.45
+		garrison_size = 0.5
+		tech_growth_modifier = 0.11
+		fort_level = 0.04
+		learning = 1.4
+		global_revolt_risk = -0.04
+		levy_size = 0.16
+		light_infantry = 50
+		archers = 50
+	}
+	wpq_hillside_abbey = {
+		desc = wpq_hillside_abbey_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 6000
+		ai_creation_factor = 60
+		upgrades_from = wpq_hillside_pilgrims_hall
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		culture_techpoints = 0.05
+		temple_tax_modifier = 7
+		garrison_size = 0.66
+		tech_growth_modifier = 0.15
+		fort_level = 0.05
+		learning = 2
+		global_revolt_risk = -0.06
+		levy_size = 0.18
+	}
+	tp_wall_q_1 = {
+		desc = xdf_temple_defensive_walls_wooden_palisade_desc
+		gold_cost = 60
+		extra_tech_building_start = 0.4
+		build_time = 250
+		ai_creation_factor = 60
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 0
+		}
+		fort_level = 0.01
+		garrison_size = 0.2
+		culture_techpoints = 0.01
+		levy_size = 0.02
+	}
+	tp_wall_q_2 = {
+		desc = xdf_temple_defensive_walls_stone_perimeter_desc
+		piety_cost = 90
+		extra_tech_building_start = 0.8
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = tp_wall_q_1
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.015
+		garrison_size = 0.33
+		culture_techpoints = 0.012
+		temple_tax_modifier = 0.04
+		levy_size = 0.025
+	}
+	tp_wall_q_3 = {
+		desc = xdf_temple_defensive_walls_defended_gatehouse_desc
+		prestige_cost = 70
+		extra_tech_building_start = 0.2
+		build_time = 500
+		ai_creation_factor = 75
+		upgrades_from = tp_wall_q_2
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.02
+		garrison_size = 0.47
+		culture_techpoints = 0.015
+		temple_tax_modifier = 0.08
+		levy_size = 0.03
+	}
+	tp_wall_q_4 = {
+		desc = xdf_temple_defensive_walls_watchtower_addition_desc
+		gold_cost = 180
+		extra_tech_building_start = 0.2
+		build_time = 700
+		ai_creation_factor = 80
+		upgrades_from = tp_wall_q_3
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.03
+		garrison_size = 0.66
+		culture_techpoints = 0.017
+		tech_growth_modifier = 0.01
+		levy_size = 0.04
+	}
+	tp_wall_q_5 = {
+		desc = xdf_temple_defensive_walls_reinforced_walls_desc
+		piety_cost = 300
+		extra_tech_building_start = 0.2
+		build_time = 950
+		ai_creation_factor = 85
+		upgrades_from = tp_wall_q_4
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.04
+		garrison_size = 0.9
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.12
+		levy_size = 0.05
+	}
+	tp_wall_q_6 = {
+		desc = xdf_temple_defensive_walls_battlemented_parapet_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 90
+		upgrades_from = tp_wall_q_5
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.05
+		garrison_size = 1.19
+		culture_techpoints = 0.022
+		tech_growth_modifier = 0.02
+		levy_size = 0.06
+	}
+	tp_wall_q_7 = {
+		desc = xdf_temple_defensive_walls_moat_and_drawbridge_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 95
+		upgrades_from = tp_wall_q_6
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.06
+		garrison_size = 1.59
+		culture_techpoints = 0.025
+		temple_tax_modifier = 0.18
+		levy_size = 0.07
+	}
+	tp_wall_q_8 = {
+		desc = xdf_temple_defensive_walls_multi_layered_walls_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 100
+		upgrades_from = tp_wall_q_7
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 0.07
+		garrison_size = 2.12
+		culture_techpoints = 0.03
+		temple_tax_modifier = 0.26
+		tech_growth_modifier = 0.04
+		levy_size = 0.08
+	}
+	tp_wall_q_9 = {
+		desc = xdf_temple_defensive_walls_fortified_tower_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 105
+		upgrades_from = tp_wall_q_8
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 0.08
+		garrison_size = 2.97
+		culture_techpoints = 0.035
+		temple_tax_modifier = 0.36
+		tech_growth_modifier = 0.06
+		levy_size = 0.09
+	}
+	tp_wall_q_10 = {
+		desc = xdf_temple_defensive_walls_sanctuary_citadel_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 110
+		upgrades_from = tp_wall_q_9
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 0.1
+		garrison_size = 3.96
+		culture_techpoints = 0.04
+		temple_tax_modifier = 0.5
+		tech_growth_modifier = 0.08
+		levy_size = 0.12
+	}
+	xlm_fire_altar = {
+		desc = xlm_fire_altar_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.01
+		garrison_size = 0.17
+		levy_size = 0.04
+	}
+	xlm_mud_brick_fire_sanctuary = {
+		desc = xlm_mud_brick_fire_sanctuary_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 70
+		upgrades_from = xlm_fire_altar
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.015
+		garrison_size = 0.24
+		temple_tax_modifier = 0.25
+		levy_size = 0.06
+	}
+	xlm_stone_fire_temple = {
+		desc = xlm_stone_fire_temple_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 75
+		upgrades_from = xlm_mud_brick_fire_sanctuary
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		culture_techpoints = 0.02
+		garrison_size = 0.47
+		learning = 1
+		temple_tax_modifier = 0.35
+		levy_size = 0.09
+	}
+	xlm_decorated_fire_temple = {
+		desc = xlm_decorated_fire_temple_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 80
+		upgrades_from = xlm_stone_fire_temple
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		culture_techpoints = 0.025
+		garrison_size = 0.66
+		temple_tax_modifier = 0.6
+		church_opinion = 2
+		levy_size = 0.13
+	}
+	xlm_enclosed_fire_chamber = {
+		desc = xlm_enclosed_fire_chamber_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 85
+		upgrades_from = xlm_decorated_fire_temple
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		culture_techpoints = 0.03
+		garrison_size = 0.99
+		learning = 2
+		fort_level = 0.05
+		temple_tax_modifier = 0.85
+		levy_size = 0.18
+	}
+	xlm_sanctified_fire_sanctuary = {
+		desc = xlm_sanctified_fire_sanctuary_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 97
+		upgrades_from = xlm_ornate_fire_temple
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		culture_techpoints = 0.04
+		garrison_size = 1.85
+		learning = 4
+		temple_tax_modifier = 1.3
+		church_opinion = 4
+		levy_size = 0.25
+	}
+	xlm_ornate_fire_temple = {
+		desc = xlm_ornate_fire_temple_desc
+		gold_cost = 1100
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 93
+		upgrades_from = xlm_enclosed_fire_chamber
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		culture_techpoints = 0.05
+		garrison_size = 1.39
+		learning = 3
+		temple_tax_modifier = 1.6
+		tech_growth_modifier = 0.06
+		levy_size = 0.2
+	}
+	xlm_grand_fire_temple = {
+		desc = xlm_grand_fire_temple_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 3300
+		ai_creation_factor = 100
+		upgrades_from = xlm_sanctified_fire_sanctuary
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		culture_techpoints = 0.07
+		garrison_size = 3.44
+		learning = 5
+		temple_tax_modifier = 2.3
+		tech_growth_modifier = 0.11
+		church_opinion = 6
+		levy_size = 0.3
+	}
+	xlm_blessed_fire_temple = {
+		desc = xlm_blessed_fire_temple_desc
+		piety_cost = 3500
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 106
+		upgrades_from = xlm_grand_fire_temple
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		culture_techpoints = 0.09
+		garrison_size = 5.61
+		learning = 7
+		temple_tax_modifier = 3.1
+		church_opinion = 8
+		tech_growth_modifier = 0.18
+		levy_size = 0.37
+	}
+	xlm_atash_behram = {
+		desc = xlm_atash_behram_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 6500
+		ai_creation_factor = 120
+		upgrades_from = xlm_blessed_fire_temple
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		culture_techpoints = 0.2
+		garrison_size = 10.56
+		learning = 10
+		temple_tax_modifier = 10
+		church_opinion = 16
+		tech_growth_modifier = 0.3
+		levy_size = 0.5
+	}
+	tp_shipyard_1 = {
+		desc = tp_shipyard_1_desc
+		gold_cost = 50
+		extra_tech_building_start = 0.4
+		build_time = 300
+		ai_creation_factor = 60
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 1
+		}
+		culture_techpoints = 0.02
+		tradevalue = 5
+		galleys = 8
+	}
+	tp_shipyard_2 = {
+		desc = tp_shipyard_2_desc
+		piety_cost = 75
+		extra_tech_building_start = 0.4
+		build_time = 400
+		ai_creation_factor = 65
+		upgrades_from = tp_shipyard_1
+		prerequisites = {
+			tp_shipyard_1
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 2
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.26
+		tradevalue = 10
+		galleys = 12
+	}
+	tp_shipyard_3 = {
+		desc = tp_shipyard_3_desc
+		gold_cost = 150
+		extra_tech_building_start = 0.4
+		build_time = 600
+		ai_creation_factor = 70
+		upgrades_from = tp_shipyard_2
+		prerequisites = {
+			tp_shipyard_2
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 3
+		}
+		culture_techpoints = 0.02
+		temple_tax_modifier = 0.52
+		tradevalue = 20
+		garrison_size = 0.06
+		galleys = 18
+	}
+	tp_shipyard_4 = {
+		desc = tp_shipyard_4_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 75
+		upgrades_from = tp_shipyard_3
+		prerequisites = {
+			tp_shipyard_3
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 1.04
+		tradevalue = 40
+		garrison_size = 0.14
+		galleys = 26
+	}
+	tp_shipyard_5 = {
+		desc = tp_shipyard_5_desc
+		prestige_cost = 200
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 85
+		upgrades_from = tp_shipyard_4
+		prerequisites = {
+			tp_shipyard_4
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		culture_techpoints = 0.03
+		temple_tax_modifier = 1.56
+		tradevalue = 70
+		garrison_size = 0.22
+		tech_growth_modifier = 0.03
+		galleys = 36
+	}
+	tp_shipyard_6 = {
+		desc = tp_shipyard_6_desc
+		piety_cost = 500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 90
+		upgrades_from = tp_shipyard_5
+		prerequisites = {
+			tp_shipyard_5
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		culture_techpoints = 0.3.2
+		temple_tax_modifier = 2.34
+		tradevalue = 120
+		garrison_size = 0.35
+		tech_growth_modifier = 0.06
+		galleys = 28
+	}
+	tp_shipyard_7 = {
+		desc = tp_shipyard_7_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 95
+		upgrades_from = tp_shipyard_6
+		prerequisites = {
+			tp_shipyard_6
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 4
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 3.65
+		tradevalue = 200
+		garrison_size = 0.56
+		tech_growth_modifier = 0.11
+		galleys = 40
+	}
+	tp_shipyard_8 = {
+		desc = tp_shipyard_8_desc
+		prestige_cost = 800
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 100
+		upgrades_from = tp_shipyard_7
+		prerequisites = {
+			tp_shipyard_7
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 5
+		}
+		culture_techpoints = 0.06
+		temple_tax_modifier = 5.2
+		tradevalue = 350
+		garrison_size = 0.85
+		fort_level = 0.01
+		tech_growth_modifier = 0.16
+		galleys = 60
+	}
+	tp_shipyard_9 = {
+		desc = tp_shipyard_9_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 2700
+		ai_creation_factor = 105
+		upgrades_from = tp_shipyard_8
+		prerequisites = {
+			tp_shipyard_8
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 6
+		}
+		culture_techpoints = 0.16
+		temple_tax_modifier = 7.15
+		tradevalue = 550
+		garrison_size = 1.19
+		fort_level = 0.02
+		tech_growth_modifier = 0.23
+		galleys = 85
+	}
+	tp_shipyard_10 = {
+		desc = tp_shipyard_10_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 3500
+		ai_creation_factor = 110
+		upgrades_from = tp_shipyard_9
+		prerequisites = {
+			tp_shipyard_9
+		}
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_NAVAL = 7
+		}
+		culture_techpoints = 0.12
+		temple_tax_modifier = 10.4
+		tradevalue = 900
+		garrison_size = 1.59
+		fort_level = 0.03
+		tech_growth_modifier = 0.34
+		galleys = 120
+	}
+	# Hellenic Dedicated temples
+	tp_shrine_zeus = {
+		desc = tp_shrine_zeus_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_zeus
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		liege_prestige = 0.15
+	}
+	tp_shrine_poseidon = {
+		desc = tp_shrine_poseidon_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_poseidon
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		local_build_time_modifier = -0.1
+		local_build_cost_modifier = -0.1
+	}
+	tp_shrine_hades = {
+		desc = tp_shrine_hades_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_hades
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		tax_income = 10.50
+	}
+	tp_shrine_hermes = {
+		desc = tp_shrine_hermes_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_hermes
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		tradevalue = 15
+	}
+	tp_shrine_demeter = {
+		desc = tp_shrine_demeter_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_demeter
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		economy_techpoints = 0.05
+	}
+	tp_shrine_athena = {
+		desc = tp_shrine_athena_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_athena
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		military_techpoints = 0.05
+	}
+	tp_shrine_apollo = {
+		desc = tp_shrine_apollo_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_apollo
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		culture_techpoints = 0.05
+	}
+	tp_shrine_arthemis = {
+		desc = tp_shrine_arthemis_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_arthemis
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		liege_piety = 0.1
+	}
+	tp_shrine_ares = {
+		desc = tp_shrine_ares_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_ares
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		levy_reinforce_rate = 0.05
+	}
+	tp_shrine_aphrodite = {
+		desc = tp_shrine_aphrodite_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_aphrodite
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		local_revolt_risk = -0.1
+	}
+	tp_shrine_ephaestus = {
+		desc = tp_shrine_ephaestus_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_ephaestus
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		fort_level = 0.4
+		tech_growth_modifier = 0.15
+	}
+	tp_shrine_hestia = {
+		desc = tp_shrine_hestia_desc
+		potential = {
+			FROMFROM = {
+				has_title_flag = flag_dedicated_to_hestia
+			}
+			FROM = {
+				OR = {
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			}
+		}
+		gold_cost = 500
+		build_time = 50
+		ai_creation_factor = 92
+		add_number_to_name = no
+		land_morale = 0.05
+	}
+	tp_saint_shrine = {
+		desc = tp_saint_shrine
+		potential = {
+			OR = {
+				FROMFROM = {
+					location = {
+						OR = {
+							has_province_modifier = tomb_of_a_saint
+							has_province_modifier = pillaged_tomb_of_a_saint
+						}
+					}
+				}
+				has_building = tp_saint_shrine
+			}
+		}
+		is_active_trigger = {
+			custom_tooltip = {
+				text = tp_saint_shrine_TT
+				FROMFROM = {
+					location = {
+						has_province_modifier = tomb_of_a_saint
+					}
+				}
+			}
+			custom_tooltip = {
+				text = tp_saint_shrine_TT_2
+				FROMFROM = {
+					show_scope_change = no
+					owner = {
+						religion_group = christian
+					}
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 210
+		ai_creation_factor = 92
+		add_number_to_name = no
+		liege_piety = 0.3
+		local_revolt_risk = -0.05
+		tax_income = 7.00
+	}
+	#Monumental Bloodline buildings.
+	tp_monumental_shrines_1 = {
+		#Monumental Shrines
+		desc = tp_monumental_shrines_1_desc
+		potential = {
+			OR = {
+				FROMFROM = {
+					has_building = tp_monumental_shrines_1
+				}
+				#Show the building only if it has been already built or if the owner has the proper bloodline to build it.
+				FROM = {
+					any_owned_bloodline = {
+						has_bloodline_flag = bloodline_monumental
+					}
+				}
+				FROM = {
+					any_liege = {
+						any_owned_bloodline = {
+							has_bloodline_flag = bloodline_monumental
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+			custom_tooltip = {
+				text = tooltip_has_monumental_bloodline
+				hidden_tooltip = {
+					OR = {
+						FROM = {
+							any_owned_bloodline = {
+								has_bloodline_flag = bloodline_monumental
+							}
+						}
+						FROM = {
+							any_liege = {
+								any_owned_bloodline = {
+									has_bloodline_flag = bloodline_monumental
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		is_active_trigger = {
+			FROMFROM = {
+				owner = {
+					NOR = {
+						is_tribal = yes
+						is_nomadic = yes
+					}
+				}
+			}
+		}
+		gold_cost = 125
+		build_time = 365
+		liege_piety = 0.05
+		tax_income = 3.50
+		add_number_to_name = yes
+		ai_creation_factor = 88
+		extra_tech_building_start = 1.2
+	}
+	tp_monumental_shrines_2 = {
+		desc = tp_monumental_shrines_2_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+			custom_tooltip = {
+				text = tooltip_has_monumental_bloodline
+				hidden_tooltip = {
+					OR = {
+						FROM = {
+							any_owned_bloodline = {
+								has_bloodline_flag = bloodline_monumental
+							}
+						}
+						FROM = {
+							any_liege = {
+								any_owned_bloodline = {
+									has_bloodline_flag = bloodline_monumental
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		is_active_trigger = {
+			FROMFROM = {
+				owner = {
+					NOR = {
+						is_tribal = yes
+						is_nomadic = yes
+					}
+				}
+			}
+		}
+		upgrades_from = tp_monumental_shrines_1
+		gold_cost = 250
+		build_time = 560
+		liege_piety = 0.1
+		tax_income = 3.50
+		add_number_to_name = yes
+		ai_creation_factor = 88
+		extra_tech_building_start = 1.2
+	}
+	tp_monumental_shrines_3 = {
+		desc = tp_monumental_shrines_3_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+			custom_tooltip = {
+				text = tooltip_has_monumental_bloodline
+				hidden_tooltip = {
+					OR = {
+						FROM = {
+							any_owned_bloodline = {
+								has_bloodline_flag = bloodline_monumental
+							}
+						}
+						FROM = {
+							any_liege = {
+								any_owned_bloodline = {
+									has_bloodline_flag = bloodline_monumental
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		is_active_trigger = {
+			FROMFROM = {
+				owner = {
+					NOR = {
+						is_tribal = yes
+						is_nomadic = yes
+					}
+				}
+			}
+		}
+		upgrades_from = tp_monumental_shrines_2
+		gold_cost = 250
+		build_time = 560
+		liege_piety = 0.15
+		tax_income = 3.50
+		add_number_to_name = yes
+		ai_creation_factor = 88
+		extra_tech_building_start = 1.2
+	}
+	tp_monumental_shrines_4 = {
+		desc = tp_monumental_shrines_4_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+			custom_tooltip = {
+				text = tooltip_has_monumental_bloodline
+				hidden_tooltip = {
+					OR = {
+						FROM = {
+							any_owned_bloodline = {
+								has_bloodline_flag = bloodline_monumental
+							}
+						}
+						FROM = {
+							any_liege = {
+								any_owned_bloodline = {
+									has_bloodline_flag = bloodline_monumental
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		is_active_trigger = {
+			FROMFROM = {
+				owner = {
+					NOR = {
+						is_tribal = yes
+						is_nomadic = yes
+					}
+				}
+			}
+		}
+		upgrades_from = tp_monumental_shrines_3
+		gold_cost = 250
+		build_time = 560
+		liege_piety = 0.25
+		tax_income = 3.50
+		add_number_to_name = yes
+		ai_creation_factor = 88
+		extra_tech_building_start = 1.2
+	}
+}

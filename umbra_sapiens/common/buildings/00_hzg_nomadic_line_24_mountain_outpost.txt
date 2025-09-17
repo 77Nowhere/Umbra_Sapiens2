@@ -1,0 +1,208 @@
+nomad = {
+	hzg_crag_shelter_1 = {
+		desc = hzg_crag_shelter_1_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 62
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.02
+		clan_sentiment = 1
+	}
+	hzg_rockwall_pen_2 = {
+		desc = hzg_rockwall_pen_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 68
+		upgrades_from = hzg_crag_shelter_1
+		prerequisites = {
+			hzg_crag_shelter_1
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.04
+		population_growth = 0.031
+	}
+	hzg_cairn_lookout_3 = {
+		desc = hzg_cairn_lookout_3_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 74
+		upgrades_from = hzg_rockwall_pen_2
+		prerequisites = {
+			hzg_rockwall_pen_2
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.07
+		garrison_size = 0.08
+	}
+	hzg_goat_herding_ledge_4 = {
+		desc = hzg_goat_herding_ledge_4_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 80
+		upgrades_from = hzg_cairn_lookout_3
+		prerequisites = {
+			hzg_cairn_lookout_3
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.13
+		population_growth = 0.102
+	}
+	hzg_timbered_slope_hut_5 = {
+		desc = hzg_timbered_slope_hut_5_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 88
+		upgrades_from = hzg_goat_herding_ledge_4
+		prerequisites = {
+			hzg_goat_herding_ledge_4
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.23
+		population_growth = 0.161
+		garrison_size = 0.18
+	}
+	hzg_mountain_watchstand_6 = {
+		desc = hzg_mountain_watchstand_6_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 95
+		upgrades_from = hzg_timbered_slope_hut_5
+		prerequisites = {
+			hzg_timbered_slope_hut_5
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.4
+		garrison_size = 0.3
+		clan_sentiment = 1
+	}
+	hzg_guarded_ridge_camp_7 = {
+		desc = hzg_guarded_ridge_camp_7_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 713
+		ai_creation_factor = 100
+		upgrades_from = hzg_mountain_watchstand_6
+		prerequisites = {
+			hzg_mountain_watchstand_6
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 192
+		supply_limit = 0.7
+		garrison_size = 0.54
+		clan_sentiment = 1
+	}
+	hzg_stone_signal_tower_8 = {
+		desc = hzg_stone_signal_tower_8_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 105
+		upgrades_from = hzg_guarded_ridge_camp_7
+		prerequisites = {
+			hzg_guarded_ridge_camp_7
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 384
+		supply_limit = 1.2
+		garrison_size = 0.9
+		clan_sentiment = 1
+		global_movement_speed = 0.04
+	}
+	hzg_mountain_defended_hall_9 = {
+		desc = hzg_mountain_defended_hall_9_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 108
+		upgrades_from = hzg_stone_signal_tower_8
+		prerequisites = {
+			hzg_stone_signal_tower_8
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 768
+		supply_limit = 2
+		garrison_size = 1.6
+		clan_sentiment = 1
+		population_growth = 0.102
+	}
+	hzg_peak_stronghold_10 = {
+		desc = hzg_peak_stronghold_10_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = hzg_mountain_defended_hall_9
+		prerequisites = {
+			hzg_mountain_defended_hall_9
+		}
+		potential = {
+			terrain = mountains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1536
+		supply_limit = 3.5
+		garrison_size = 3
+		clan_sentiment = 1
+		global_movement_speed = 0.08
+		population_growth = 0.121
+	}
+}

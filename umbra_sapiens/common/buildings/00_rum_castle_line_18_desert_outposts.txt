@@ -1,0 +1,175 @@
+castle = {
+	rum_canvas_shelter = {
+		desc = rum_canvas_shelter_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 60
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		garrison_size = 0.02
+	}
+	rum_mudbrick_hut = {
+		desc = rum_mudbrick_hut_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 62
+		upgrades_from = rum_canvas_shelter
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.07
+		garrison_size = 0.03
+		levy_size = 0.02
+	}
+	rum_windbreak_wall = {
+		desc = rum_windbreak_wall_desc
+		gold_cost = 65
+		extra_tech_building_start = 999
+		build_time = 160
+		ai_creation_factor = 65
+		upgrades_from = rum_mudbrick_hut
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.10
+		garrison_size = 0.05
+		levy_size = 0.02
+	}
+	rum_well_house = {
+		desc = rum_well_house_desc
+		prestige_cost = 85
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 74
+		upgrades_from = rum_shaded_compound
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.19
+		garrison_size = 0.11
+		levy_size = 0.06
+	}
+	rum_stone_shelter = {
+		desc = rum_stone_shelter_desc
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 420
+		ai_creation_factor = 80
+		upgrades_from = rum_well_house
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.26
+		garrison_size = 0.14
+		levy_size = 0.08
+	}
+	rum_shaded_compound = {
+		desc = rum_shaded_compound_desc
+		gold_cost = 130
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 70
+		upgrades_from = rum_windbreak_wall
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.15
+		garrison_size = 0.08
+		levy_size = 0.04
+	}
+	rum_sandstone_outpost = {
+		desc = rum_sandstone_outpost_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 550
+		ai_creation_factor = 90
+		upgrades_from = rum_stone_shelter
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.34
+		garrison_size = 0.17
+		levy_size = 0.10
+		heavy_infantry_defensive = 0.06
+	}
+	rum_fortified_camp = {
+		desc = rum_fortified_camp_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 95
+		upgrades_from = rum_sandstone_outpost
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.45
+		garrison_size = 0.25
+		levy_size = 0.15
+		archers_defensive = 0.1
+	}
+	rum_oasis_compound = {
+		desc = rum_oasis_compound_desc
+		gold_cost = 850
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 105
+		upgrades_from = rum_fortified_camp
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.58
+		garrison_size = 0.31
+		levy_size = 0.19
+		knights = 1
+	}
+	rum_desert_fortress = {
+		desc = rum_desert_fortress_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 110
+		upgrades_from = rum_oasis_compound
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.80
+		garrison_size = 0.43
+		levy_size = 0.26
+		knights = 1
+		local_tax_modifier = 0.12
+	}
+}

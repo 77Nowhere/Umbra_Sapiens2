@@ -1,0 +1,7 @@
+# Triggers are in Province scope. The From Scope contains the settlement holder (character)
+# start trigger is in title scope.
+# For nomad capitals, remember than the tech requirement trigger should be applied to the nomad
+# (which means it uses the character's primary tech status, i.e. the nomad capital status
+# for nomads, capital province tech status otherwise). I.e. use the FROM scope for nomad capital buildings.
+nomad = {
+}

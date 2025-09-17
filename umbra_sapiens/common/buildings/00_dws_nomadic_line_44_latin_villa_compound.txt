@@ -1,0 +1,172 @@
+nomad = {
+	dws_latin_villa_mudbrick_hut = {
+		desc = dws_latin_villa_mudbrick_hut_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 138
+		ai_creation_factor = 62
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.05
+		nomad_tax_modifier = 0.089
+	}
+	dws_latin_villa_wattle_shelter = {
+		desc = dws_latin_villa_wattle_shelter_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 64
+		upgrades_from = dws_latin_villa_mudbrick_hut
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.178
+	}
+	dws_latin_villa_stone_foundation_house = {
+		desc = dws_latin_villa_stone_foundation_house_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 68
+		upgrades_from = dws_latin_villa_wattle_shelter
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.1
+	}
+	dws_latin_villa_tile_roof_villa = {
+		desc = dws_latin_villa_tile_roof_villa_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 75
+		upgrades_from = dws_latin_villa_stone_foundation_house
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.15
+	}
+	dws_latin_villa_mediterranean_courtyard = {
+		desc = dws_latin_villa_mediterranean_courtyard_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 83
+		upgrades_from = dws_latin_villa_tile_roof_villa
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.443
+		clan_sentiment = 1
+	}
+	dws_latin_villa_arched_gallery = {
+		desc = dws_latin_villa_arched_gallery_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 91
+		upgrades_from = dws_latin_villa_mediterranean_courtyard
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		global_movement_speed = 0.03
+		clan_sentiment = 1
+	}
+	dws_latin_villa_decorated_portico = {
+		desc = dws_latin_villa_decorated_portico_desc
+		gold_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = dws_latin_villa_arched_gallery
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		liege_prestige = 0.2
+		clan_sentiment = 1
+	}
+	dws_latin_villa_columned_hall = {
+		desc = dws_latin_villa_columned_hall_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 105
+		upgrades_from = dws_latin_villa_decorated_portico
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		supply_limit = 0.25
+		liege_prestige = 0.3
+	}
+	dws_latin_villa_patricians_residence = {
+		desc = dws_latin_villa_patricians_residence_desc
+		gold_cost = 9750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 108
+		upgrades_from = dws_latin_villa_columned_hall
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 230
+		nomad_tax_modifier = 0.797
+		clan_sentiment = 1
+	}
+	dws_latin_villa_grand_latin_villa = {
+		desc = dws_latin_villa_grand_latin_villa_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 110
+		upgrades_from = dws_latin_villa_patricians_residence
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 400
+		clan_sentiment = 1
+		liege_prestige = 0.6
+		nomad_tax_modifier = 0.399
+	}
+}

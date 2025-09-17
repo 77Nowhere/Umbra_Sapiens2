@@ -1,0 +1,180 @@
+nomad = {
+	rmd_mesoamerican_dirt_patch = {
+		desc = rmd_mesoamerican_dirt_patch_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 65
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.016
+		clan_sentiment = 1
+	}
+	rmd_mesoamerican_stone_boundary = {
+		desc = rmd_mesoamerican_stone_boundary_desc
+		gold_cost = 98
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 68
+		upgrades_from = rmd_mesoamerican_dirt_patch
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	rmd_mesoamerican_raised_platform = {
+		desc = rmd_mesoamerican_raised_platform_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 72
+		upgrades_from = rmd_mesoamerican_stone_boundary
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.061
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	rmd_mesoamerican_marker_ring = {
+		desc = rmd_mesoamerican_marker_ring_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 80
+		upgrades_from = rmd_mesoamerican_raised_platform
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	rmd_mesoamerican_spectator_stand = {
+		desc = rmd_mesoamerican_spectator_stand_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 85
+		upgrades_from = rmd_mesoamerican_marker_ring
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		global_movement_speed = 0.015
+	}
+	rmd_mesoamerican_scorers_pavilion = {
+		desc = rmd_mesoamerican_scorers_pavilion_desc
+		gold_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 92
+		upgrades_from = rmd_mesoamerican_spectator_stand
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_prestige = 0.2
+	}
+	rmd_mesoamerican_chieftains_seat = {
+		desc = rmd_mesoamerican_chieftains_seat_desc
+		gold_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 98
+		upgrades_from = rmd_mesoamerican_scorers_pavilion
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.171
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_prestige = 0.4
+	}
+	rmd_mesoamerican_ceremonial_court = {
+		desc = rmd_mesoamerican_ceremonial_court_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 2175
+		ai_creation_factor = 104
+		upgrades_from = rmd_mesoamerican_chieftains_seat
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		liege_prestige = 0.6
+		garrison_size = 0.1
+	}
+	rmd_mesoamerican_high_arena = {
+		desc = rmd_mesoamerican_high_arena_desc
+		gold_cost = 7125
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 108
+		upgrades_from = rmd_mesoamerican_ceremonial_court
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		liege_prestige = 0.95
+		garrison_size = 0.18
+	}
+	rmd_grand_mesoamerican_ballcourt = {
+		desc = rmd_grand_mesoamerican_ballcourt_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 4500
+		ai_creation_factor = 110
+		upgrades_from = rmd_mesoamerican_high_arena
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		liege_prestige = 1.5
+		garrison_size = 0.28
+		global_movement_speed = 0.03
+	}
+}

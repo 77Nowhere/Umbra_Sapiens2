@@ -1,0 +1,206 @@
+nomad = {
+	zyk_earthen_store_pit = {
+		desc = zyk_earthen_store_pit_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		potential = {
+			terrain = farmlands
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.089
+	}
+	zyk_woven_basket_depot = {
+		desc = zyk_woven_basket_depot_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 68
+		upgrades_from = zyk_earthen_store_pit
+		prerequisites = {
+			zyk_earthen_store_pit
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.178
+		supply_limit = 0.03
+	}
+	zyk_thatched_silo = {
+		desc = zyk_thatched_silo_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 72
+		upgrades_from = zyk_woven_basket_depot
+		prerequisites = {
+			zyk_woven_basket_depot
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.355
+		supply_limit = 0.06
+	}
+	zyk_timbered_granary = {
+		desc = zyk_timbered_granary_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 75
+		upgrades_from = zyk_thatched_silo
+		prerequisites = {
+			zyk_thatched_silo
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.665
+		supply_limit = 0.1
+	}
+	zyk_guarded_grain_hut = {
+		desc = zyk_guarded_grain_hut_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 78
+		upgrades_from = zyk_timbered_granary
+		prerequisites = {
+			zyk_timbered_granary
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		supply_limit = 0.17
+	}
+	zyk_raised_storage_loft = {
+		desc = zyk_raised_storage_loft_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 81
+		upgrades_from = zyk_guarded_grain_hut
+		prerequisites = {
+			zyk_guarded_grain_hut
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		supply_limit = 0.26
+	}
+	zyk_rodent_proof_silo = {
+		desc = zyk_rodent_proof_silo_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = zyk_raised_storage_loft
+		prerequisites = {
+			zyk_raised_storage_loft
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		supply_limit = 0.36
+	}
+	zyk_expanded_grain_hall = {
+		desc = zyk_expanded_grain_hall_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 91
+		upgrades_from = zyk_rodent_proof_silo
+		prerequisites = {
+			zyk_rodent_proof_silo
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.443
+		supply_limit = 0.5
+	}
+	zyk_protected_food_vault = {
+		desc = zyk_protected_food_vault_desc
+		gold_cost = 4050
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 99
+		upgrades_from = zyk_expanded_grain_hall
+		prerequisites = {
+			zyk_expanded_grain_hall
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		supply_limit = 0.68
+		garrison_size = 0.08
+	}
+	zyk_fortified_granary_tower = {
+		desc = zyk_fortified_granary_tower_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = zyk_protected_food_vault
+		prerequisites = {
+			zyk_protected_food_vault
+		}
+		potential = {
+			terrain = farmland
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.12
+		nomad_tax_modifier = 0.443
+		supply_limit = 0.9
+		garrison_size = 0.18
+		clan_sentiment = 1
+	}
+}

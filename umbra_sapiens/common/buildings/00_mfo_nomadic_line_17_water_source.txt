@@ -1,0 +1,183 @@
+nomad = {
+	mfo_water_source_hand_dug_pit = {
+		desc = mfo_water_source_hand_dug_pit_desc
+		gold_cost = 45
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.06
+		clan_sentiment = 1
+	}
+	mfo_water_source_leather_water_bag_stand = {
+		desc = mfo_water_source_leather_water_bag_stand_desc
+		gold_cost = 135
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = mfo_water_source_hand_dug_pit
+		prerequisites = {
+			mfo_water_source_hand_dug_pit
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		supply_limit = 0.12
+	}
+	mfo_water_source_wooden_trough = {
+		desc = mfo_water_source_wooden_trough_desc
+		gold_cost = 525
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = mfo_water_source_leather_water_bag_stand
+		prerequisites = {
+			mfo_water_source_leather_water_bag_stand
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		supply_limit = 0.22
+		manpower_growth = 0.060
+	}
+	mfo_water_source_shallow_well = {
+		desc = mfo_water_source_shallow_well_desc
+		gold_cost = 1500
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 90
+		upgrades_from = mfo_water_source_wooden_trough
+		prerequisites = {
+			mfo_water_source_wooden_trough
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		supply_limit = 0.4
+		max_manpower_mult = 0.02
+	}
+	mfo_water_source_animal_watering_hole = {
+		desc = mfo_water_source_animal_watering_hole_desc
+		gold_cost = 4500
+		build_time = 338
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = mfo_water_source_shallow_well
+		prerequisites = {
+			mfo_water_source_shallow_well
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		supply_limit = 0.7
+		max_manpower_mult = 0.02
+		horde_maintenance_cost = -0.04
+	}
+	mfo_water_source_timbered_well = {
+		desc = mfo_water_source_timbered_well_desc
+		gold_cost = 13500
+		build_time = 488
+		extra_tech_building_start = 999
+		ai_creation_factor = 100
+		upgrades_from = mfo_water_source_animal_watering_hole
+		prerequisites = {
+			mfo_water_source_animal_watering_hole
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		supply_limit = 1.4
+		clan_sentiment = 1
+	}
+	mfo_water_source_draw_bucket_station = {
+		desc = mfo_water_source_draw_bucket_station_desc
+		gold_cost = 14250
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 103
+		upgrades_from = mfo_water_source_timbered_well
+		prerequisites = {
+			mfo_water_source_timbered_well
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		supply_limit = 2.8
+		clan_sentiment = 1
+	}
+	mfo_water_source_filtered_spring = {
+		desc = mfo_water_source_filtered_spring_desc
+		gold_cost = 15000
+		build_time = 938
+		extra_tech_building_start = 999
+		ai_creation_factor = 106
+		upgrades_from = mfo_water_source_draw_bucket_station
+		prerequisites = {
+			mfo_water_source_draw_bucket_station
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		max_population_mult = 0.025
+		max_manpower_mult = 0.26
+		supply_limit = 5.6
+		clan_sentiment = 1
+	}
+	mfo_water_source_covered_steppe_well = {
+		desc = mfo_water_source_covered_steppe_well_desc
+		prestige_cost = 3750
+		build_time = 1313
+		extra_tech_building_start = 999
+		ai_creation_factor = 108
+		upgrades_from = mfo_water_source_filtered_spring
+		prerequisites = {
+			mfo_water_source_filtered_spring
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		supply_limit = 11
+		clan_sentiment = 1
+	}
+	mfo_water_source_oasis_pavilion = {
+		desc = mfo_water_source_oasis_pavilion_desc
+		gold_cost = 18750
+		build_time = 1875
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = mfo_water_source_covered_steppe_well
+		prerequisites = {
+			mfo_water_source_covered_steppe_well
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1024
+		max_population_mult = 0.025
+		max_manpower_mult = 0.22
+		supply_limit = 22
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+}

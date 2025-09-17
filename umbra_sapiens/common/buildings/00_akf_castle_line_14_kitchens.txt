@@ -1,0 +1,172 @@
+castle_line_14_kitchens = {
+	akf_cooking_hearth = {
+		desc = akf_cooking_hearth_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 160
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.02
+		levy_size = 0.01
+	}
+	akf_scullery = {
+		desc = akf_scullery_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 68
+		upgrades_from = akf_cooking_hearth
+		prerequisites = {
+			akf_cooking_hearth
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.04
+		levy_size = 0.01
+		local_tax_modifier = 0.01
+	}
+	akf_outer_kitchen = {
+		desc = akf_outer_kitchen_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 72
+		upgrades_from = akf_scullery
+		prerequisites = {
+			akf_scullery
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.06
+		levy_size = 0.02
+	}
+	akf_stone_kitchen = {
+		desc = akf_stone_kitchen_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = akf_outer_kitchen
+		prerequisites = {
+			akf_outer_kitchen
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		garrison_size = 0.09
+		levy_size = 0.04
+		local_tax_modifier = 0.02
+	}
+	akf_buttery = {
+		desc = akf_buttery_desc
+		prestige_cost = 220
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 92
+		upgrades_from = akf_smokehouse
+		prerequisites = {
+			akf_smokehouse
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		garrison_size = 0.23
+		levy_size = 0.09
+		liege_prestige = 0.25
+	}
+	akf_smokehouse = {
+		desc = akf_smokehouse_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 88
+		upgrades_from = akf_stone_kitchen
+		prerequisites = {
+			akf_stone_kitchen
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		garrison_size = 0.16
+		levy_size = 0.07
+		local_tax_modifier = 0.03
+	}
+	akf_pantry_hall = {
+		desc = akf_pantry_hall_desc
+		prestige_cost = 370
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 97
+		upgrades_from = akf_buttery
+		prerequisites = {
+			akf_buttery
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		garrison_size = 0.33
+		levy_size = 0.12
+		liege_prestige = 0.5
+		local_tax_modifier = 0.05
+	}
+	akf_great_kitchen = {
+		desc = akf_great_kitchen_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 102
+		upgrades_from = akf_pantry_hall
+		prerequisites = {
+			akf_pantry_hall
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		garrison_size = 0.51
+		levy_size = 0.17
+		liege_prestige = 1
+		vassal_opinion = 1
+	}
+	akf_banquet_kitchen = {
+		desc = akf_banquet_kitchen_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 1750
+		ai_creation_factor = 108
+		upgrades_from = akf_great_kitchen
+		prerequisites = {
+			akf_great_kitchen
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		garrison_size = 0.77
+		levy_size = 0.23
+		liege_prestige = 1.5
+		vassal_opinion = 2
+		local_tax_modifier = 0.07
+	}
+	akf_royal_kitchen = {
+		desc = akf_royal_kitchen_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 115
+		upgrades_from = akf_banquet_kitchen
+		prerequisites = {
+			akf_banquet_kitchen
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		garrison_size = 1.15
+		levy_size = 0.34
+		liege_prestige = 2.5
+		vassal_opinion = 3
+		local_tax_modifier = 0.12
+	}
+}

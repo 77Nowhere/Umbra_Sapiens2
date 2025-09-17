@@ -1,0 +1,661 @@
+nomad = {
+	yux_cool_cellar_hut_1 = {
+		desc = yux_cool_cellar_hut_1_desc
+		gold_cost = 15
+		extra_tech_building_start = 999
+		build_time = 30
+		ai_creation_factor = 60
+		upgrades_from = yux_oasis_shelter_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.222
+	}
+	yux_sandbreak_pavilion_1 = {
+		desc = yux_sandbreak_pavilion_1_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 30
+		ai_creation_factor = 62
+		upgrades_from = yux_cool_cellar_hut_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		land_morale = 0.01
+	}
+	yux_water_skin_rack_1 = {
+		desc = yux_water_skin_rack_1_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 60
+		upgrades_from = yux_palm_shade_tent_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.07
+	}
+	yux_oasis_shelter_1 = {
+		desc = yux_oasis_shelter_1_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 42
+		ai_creation_factor = 60
+		upgrades_from = yux_camel_tether_post_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		garrison_size = 0.05
+	}
+	yux_camel_tether_post_1 = {
+		desc = yux_camel_tether_post_1_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 38
+		ai_creation_factor = 63
+		upgrades_from = yux_desert_well_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+	}
+	yux_palm_shade_tent_1 = {
+		desc = yux_palm_shade_tent_1_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+	}
+	yux_desert_market_patch_1 = {
+		desc = yux_desert_market_patch_1_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 42
+		ai_creation_factor = 62
+		upgrades_from = yux_date_grove_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.333
+		tradevalue = 1.513
+	}
+	yux_date_grove_1 = {
+		desc = yux_date_grove_1_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 64
+		upgrades_from = yux_sandbreak_pavilion_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+	}
+	yux_cool_cellar_hut_2 = {
+		desc = yux_cool_cellar_hut_2_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 66
+		upgrades_from = yux_cool_cellar_hut_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.532
+		tax_income = 0.4
+	}
+	yux_desert_well_1 = {
+		desc = yux_desert_well_1_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 49
+		ai_creation_factor = 65
+		upgrades_from = yux_water_skin_rack_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.1
+		population_growth = 0.021
+	}
+	yux_water_skin_rack_2 = {
+		desc = yux_water_skin_rack_2_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 53
+		ai_creation_factor = 62
+		upgrades_from = yux_water_skin_rack_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.14
+		max_population_mult = 0.005
+	}
+	yux_sandbreak_pavilion_2 = {
+		desc = yux_sandbreak_pavilion_2_desc
+		gold_cost = 64
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		upgrades_from = yux_sandbreak_pavilion_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		land_morale = 0.03
+		clan_sentiment = 1
+	}
+	yux_oasis_stronghold_1 = {
+		desc = yux_oasis_stronghold_1_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = yux_desert_market_patch_4
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.12
+		clan_sentiment = 1
+	}
+	yux_oasis_shelter_2 = {
+		desc = yux_oasis_shelter_2_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 68
+		upgrades_from = yux_oasis_shelter_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		garrison_size = 0.13
+		levy_size = 0.04
+	}
+	yux_camel_tether_post_2 = {
+		desc = yux_camel_tether_post_2_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 60
+		ai_creation_factor = 66
+		upgrades_from = yux_camel_tether_post_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.015
+	}
+	yux_palm_shade_tent_2 = {
+		desc = yux_palm_shade_tent_2_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = yux_palm_shade_tent_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.061
+		clan_sentiment = 1
+	}
+	yux_desert_market_patch_2 = {
+		desc = yux_desert_market_patch_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 64
+		ai_creation_factor = 70
+		upgrades_from = yux_desert_market_patch_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.753
+		tradevalue = 1.513
+		tax_income = 0.5
+	}
+	yux_date_grove_2 = {
+		desc = yux_date_grove_2_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = yux_date_grove_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.091
+		nomad_tax_modifier = 0.178
+	}
+	yux_desert_well_2 = {
+		desc = yux_desert_well_2_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 72
+		ai_creation_factor = 70
+		upgrades_from = yux_desert_well_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.19
+		population_growth = 0.051
+		max_manpower_mult = 0.02
+	}
+	yux_cool_cellar_hut_3 = {
+		desc = yux_cool_cellar_hut_3_desc
+		gold_cost = 128
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = yux_cool_cellar_hut_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tax_income = 0.5
+		max_population_mult = 0.005
+	}
+	yux_water_skin_rack_3 = {
+		desc = yux_water_skin_rack_3_desc
+		gold_cost = 158
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 72
+		upgrades_from = yux_water_skin_rack_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.28
+		max_population_mult = 0.005
+		global_movement_speed = 0.03
+	}
+	yux_oasis_stronghold_2 = {
+		desc = yux_oasis_stronghold_2_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 80
+		upgrades_from = yux_oasis_stronghold_1
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.26
+		clan_sentiment = 1
+		levy_reinforce_rate = 0.03
+	}
+	yux_oasis_shelter_3 = {
+		desc = yux_oasis_shelter_3_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 78
+		upgrades_from = yux_oasis_shelter_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		garrison_size = 0.23
+		levy_size = 0.09
+	}
+	yux_sandbreak_pavilion_3 = {
+		desc = yux_sandbreak_pavilion_3_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 74
+		upgrades_from = yux_sandbreak_pavilion_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		land_morale = 0.07
+		clan_sentiment = 1
+		commander_limit = 1
+	}
+	yux_palm_shade_tent_3 = {
+		desc = yux_palm_shade_tent_3_desc
+		gold_cost = 195
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 75
+		upgrades_from = yux_palm_shade_tent_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.121
+		clan_sentiment = 1
+	}
+	yux_desert_well_3 = {
+		desc = yux_desert_well_3_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 104
+		ai_creation_factor = 80
+		upgrades_from = yux_desert_well_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.43
+		population_growth = 0.091
+		max_manpower_mult = 0.02
+	}
+	yux_camel_tether_post_3 = {
+		desc = yux_camel_tether_post_3_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 74
+		upgrades_from = yux_camel_tether_post_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.035
+		horde_maintenence_cost = -0.03
+	}
+	yux_desert_market_patch_3 = {
+		desc = yux_desert_market_patch_3_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 80
+		upgrades_from = yux_desert_market_patch_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		tax_income = 0.5
+	}
+	yux_cool_cellar_hut_4 = {
+		desc = yux_cool_cellar_hut_4_desc
+		gold_cost = 255
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 77
+		upgrades_from = yux_cool_cellar_hut_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		tax_income = 0.5
+		max_population_mult = 0.005
+	}
+	yux_date_grove_3 = {
+		desc = yux_date_grove_3_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 78
+		upgrades_from = yux_date_grove_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.192
+		nomad_tax_modifier = 0.399
+		tax_income = 0.5
+	}
+	yux_water_skin_rack_4 = {
+		desc = yux_water_skin_rack_4_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 80
+		upgrades_from = yux_water_skin_rack_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.5
+		max_population_mult = 0.005
+		global_movement_speed = 0.08
+	}
+	yux_palm_shade_tent_4 = {
+		desc = yux_palm_shade_tent_4_desc
+		gold_cost = 345
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 85
+		upgrades_from = yux_palm_shade_tent_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.111
+		clan_sentiment = 1
+	}
+	yux_sandbreak_pavilion_4 = {
+		desc = yux_sandbreak_pavilion_4_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 90
+		upgrades_from = yux_sandbreak_pavilion_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		land_morale = 0.14
+		clan_sentiment = 1
+		commander_limit = 2
+	}
+	yux_oasis_shelter_4 = {
+		desc = yux_oasis_shelter_4_desc
+		gold_cost = 383
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 95
+		upgrades_from = yux_oasis_shelter_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		garrison_size = 0.4
+		levy_size = 0.2
+	}
+	yux_oasis_stronghold_3 = {
+		desc = yux_oasis_stronghold_3_desc
+		gold_cost = 390
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 95
+		upgrades_from = yux_oasis_stronghold_2
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.48
+		clan_sentiment = 1
+		levy_reinforce_rate = 0.09
+	}
+	yux_desert_well_4 = {
+		desc = yux_desert_well_4_desc
+		gold_cost = 435
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 88
+		upgrades_from = yux_desert_well_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.8
+		population_growth = 0.181
+		max_manpower_mult = 0.02
+	}
+	yux_camel_tether_post_4 = {
+		desc = yux_camel_tether_post_4_desc
+		gold_cost = 465
+		extra_tech_building_start = 999
+		build_time = 139
+		ai_creation_factor = 90
+		upgrades_from = yux_camel_tether_post_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		global_movement_speed = 0.08
+		horde_maintenence_cost = -0.08
+	}
+	yux_desert_market_patch_4 = {
+		desc = yux_desert_market_patch_4_desc
+		gold_cost = 488
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 110
+		upgrades_from = yux_desert_market_patch_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		tax_income = 0.5
+	}
+	yux_date_grove_4 = {
+		desc = yux_date_grove_4_desc
+		gold_cost = 563
+		extra_tech_building_start = 999
+		build_time = 162
+		ai_creation_factor = 105
+		upgrades_from = yux_date_grove_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		nomad_tax_modifier = 0.842
+		tax_income = 0.5
+	}
+	yux_oasis_stronghold_4 = {
+		desc = yux_oasis_stronghold_4_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 110
+		upgrades_from = yux_oasis_stronghold_3
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.9
+		clan_sentiment = 1
+		levy_reinforce_rate = 0.2
+	}
+}

@@ -1,0 +1,174 @@
+nomad = {
+	cwx_earthen_pit_nomad = {
+		desc = cwx_earthen_pit_nomad_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	cwx_woven_basket_nomad = {
+		desc = cwx_woven_basket_nomad_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 66
+		upgrades_from = cwx_earthen_pit_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.025
+	}
+	cwx_mudbrick_hut_nomad = {
+		desc = cwx_mudbrick_hut_nomad_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 109
+		ai_creation_factor = 74
+		upgrades_from = cwx_woven_basket_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	cwx_raised_silo_nomad = {
+		desc = cwx_raised_silo_nomad_desc
+		gold_cost = 293
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 82
+		upgrades_from = cwx_mudbrick_hut_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.06
+	}
+	cwx_guarded_storehouse_nomad = {
+		desc = cwx_guarded_storehouse_nomad_desc
+		gold_cost = 638
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 89
+		upgrades_from = cwx_raised_silo_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		garrison_size = 0.08
+	}
+	cwx_rodent_proof_hut_nomad = {
+		desc = cwx_rodent_proof_hut_nomad_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 94
+		upgrades_from = cwx_guarded_storehouse_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	cwx_expanded_store_nomad = {
+		desc = cwx_expanded_store_nomad_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 101
+		upgrades_from = cwx_rodent_proof_hut_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		max_manpower_mult = 0.22
+		levy_size = 0.22
+	}
+	cwx_market_pavilion_nomad = {
+		desc = cwx_market_pavilion_nomad_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 108
+		upgrades_from = cwx_expanded_store_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 240
+		max_manpower_mult = 0.30
+		nomad_tax_modifier = 0.709
+		clan_sentiment = 1
+	}
+	cwx_grain_exchange_hall_nomad = {
+		desc = cwx_grain_exchange_hall_nomad_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 2625
+		ai_creation_factor = 115
+		upgrades_from = cwx_market_pavilion_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 500
+		max_manpower_mult = 0.15
+		supply_limit = 0.15
+		clan_sentiment = 1
+	}
+	cwx_indian_granary_nomad = {
+		desc = cwx_indian_granary_nomad_desc
+		gold_cost = 19500
+		extra_tech_building_start = 999
+		build_time = 4500
+		ai_creation_factor = 124
+		upgrades_from = cwx_grain_exchange_hall_nomad
+		potential = {
+			religion_group = indian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1000
+		max_manpower_mult = 0.06
+		supply_limit = 0.32
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+	}
+}

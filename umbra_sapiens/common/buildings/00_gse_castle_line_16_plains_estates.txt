@@ -1,0 +1,180 @@
+castle = {
+	gse_frontier_hamlet = {
+		desc = gse_frontier_hamlet_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 30
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.10
+		levy_size = 0.01
+	}
+	gse_plains_croft = {
+		desc = gse_plains_croft_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 35
+		upgrades_from = gse_frontier_hamlet
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.20
+		levy_size = 0.02
+		garrison_size = 0.02
+	}
+	gse_fenced_pasture = {
+		desc = gse_fenced_pasture_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 38
+		upgrades_from = gse_plains_croft
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.20
+		levy_size = 0.04
+		garrison_size = 0.03
+	}
+	gse_wheat_field = {
+		desc = gse_wheat_field_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 44
+		upgrades_from = gse_fenced_pasture
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		tax_income = 0.25
+		levy_size = 0.07
+		garrison_size = 0.05
+	}
+	gse_open_field_system = {
+		desc = gse_open_field_system_desc
+		prestige_cost = 250
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 58
+		upgrades_from = gse_farmstead
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		tax_income = 0.25
+		levy_size = 0.51
+		garrison_size = 0.29
+		liege_prestige = 2
+		local_tax_modifier = 0.1
+	}
+	gse_manor_farm = {
+		desc = gse_manor_farm_desc
+		piety_cost = 350
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 60
+		upgrades_from = gse_open_field_system
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		tax_income = 0.30
+		levy_size = 0.91
+		garrison_size = 0.43
+		liege_prestige = 3
+		local_tax_modifier = 0.16
+	}
+	gse_cattle_yard = {
+		desc = gse_cattle_yard_desc
+		gold_cost = 370
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 48
+		upgrades_from = gse_wheat_field
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		tax_income = 0.30
+		levy_size = 0.14
+		garrison_size = 0.09
+		liege_prestige = 0.5
+	}
+	gse_farmstead = {
+		desc = gse_farmstead_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 54
+		upgrades_from = gse_cattle_yard
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		tax_income = 0.38
+		levy_size = 0.26
+		garrison_size = 0.16
+		liege_prestige = 1
+	}
+	gse_plains_estate = {
+		desc = gse_plains_estate_desc
+		prestige_cost = 750
+		extra_tech_building_start = 999
+		build_time = 2800
+		ai_creation_factor = 60
+		upgrades_from = gse_manor_farm
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		tax_income = 0.40
+		levy_size = 1.69
+		garrison_size = 0.77
+		liege_prestige = 6
+		local_tax_modifier = 0.3
+	}
+	gse_barons_demesne = {
+		desc = gse_barons_demesne_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 60
+		upgrades_from = gse_plains_estate
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		tax_income = 0.50
+		levy_size = 3.37
+		garrison_size = 1.28
+		liege_prestige = 13
+		local_tax_modifier = 0.5
+	}
+}

@@ -1,0 +1,196 @@
+nomad = {
+	dwm_clay_basin = {
+		desc = dwm_clay_basin_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	dwm_stone_fountain = {
+		desc = dwm_stone_fountain_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 70
+		upgrades_from = dwm_clay_basin
+		prerequisites = {
+			dwm_clay_basin
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.05
+	}
+	dwm_sanctified_room = {
+		desc = dwm_sanctified_room_desc
+		piety_cost = 263
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 85
+		upgrades_from = dwm_water_pavilion
+		prerequisites = {
+			dwm_water_pavilion
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.15
+	}
+	dwm_water_pavilion = {
+		desc = dwm_water_pavilion_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 80
+		upgrades_from = dwm_stone_fountain
+		prerequisites = {
+			dwm_stone_fountain
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.1
+	}
+	dwm_priests_chamber = {
+		desc = dwm_priests_chamber_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = dwm_sanctified_room
+		prerequisites = {
+			dwm_sanctified_room
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.3
+		church_opinion = 5
+	}
+	dwm_blessed_hall = {
+		desc = dwm_blessed_hall_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 97
+		upgrades_from = dwm_priests_chamber
+		prerequisites = {
+			dwm_priests_chamber
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.5
+		church_opinion = 10
+	}
+	dwm_holy_pavilion = {
+		desc = dwm_holy_pavilion_desc
+		piety_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 104
+		upgrades_from = dwm_blessed_hall
+		prerequisites = {
+			dwm_blessed_hall
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 16
+	}
+	dwm_sanctuary_room = {
+		desc = dwm_sanctuary_room_desc
+		piety_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = dwm_holy_pavilion
+		prerequisites = {
+			dwm_holy_pavilion
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 22
+	}
+	dwm_water_sanctuary = {
+		desc = dwm_water_sanctuary_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1538
+		ai_creation_factor = 110
+		upgrades_from = dwm_sanctuary_room
+		prerequisites = {
+			dwm_sanctuary_room
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 30
+	}
+	dwm_zoroastrian_water_pavilion = {
+		desc = dwm_zoroastrian_water_pavilion_desc
+		piety_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = dwm_water_sanctuary
+		prerequisites = {
+			dwm_water_sanctuary
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 45
+	}
+}

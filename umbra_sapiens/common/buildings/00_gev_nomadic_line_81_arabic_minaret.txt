@@ -1,0 +1,169 @@
+nomad = {
+	gev_arabic_prayer_stand = {
+		desc = gev_arabic_prayer_stand_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	gev_arabic_carved_post = {
+		desc = gev_arabic_carved_post_desc
+		piety_cost = 98
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = gev_arabic_prayer_stand
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.2
+	}
+	gev_arabic_stone_minbar = {
+		desc = gev_arabic_stone_minbar_desc
+		piety_cost = 195
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 69
+		upgrades_from = gev_arabic_carved_post
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.4
+		church_opinion = 2
+	}
+	gev_arabic_small_minaret = {
+		desc = gev_arabic_small_minaret_desc
+		piety_cost = 390
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 74
+		upgrades_from = gev_arabic_stone_minbar
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.7
+		church_opinion = 3
+	}
+	gev_arabic_timber_minaret = {
+		desc = gev_arabic_timber_minaret_desc
+		piety_cost = 825
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 82
+		upgrades_from = gev_arabic_small_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.8
+		church_opinion = 4
+	}
+	gev_arabic_walled_minaret = {
+		desc = gev_arabic_walled_minaret_desc
+		piety_cost = 1575
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 87
+		upgrades_from = gev_arabic_timber_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.9
+		church_opinion = 6
+	}
+	gev_arabic_high_minaret = {
+		desc = gev_arabic_high_minaret_desc
+		piety_cost = 3075
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 94
+		upgrades_from = gev_arabic_walled_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.9
+		church_opinion = 8
+	}
+	gev_arabic_decorated_minaret = {
+		desc = gev_arabic_decorated_minaret_desc
+		piety_cost = 6150
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 101
+		upgrades_from = gev_arabic_high_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 10
+	}
+	gev_arabic_sanctified_minaret = {
+		desc = gev_arabic_sanctified_minaret_desc
+		piety_cost = 12300
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 108
+		upgrades_from = gev_arabic_decorated_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 14
+	}
+	gev_grand_arabic_minaret = {
+		desc = gev_grand_arabic_minaret_desc
+		piety_cost = 24600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 115
+		upgrades_from = gev_arabic_sanctified_minaret
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 20
+	}
+}

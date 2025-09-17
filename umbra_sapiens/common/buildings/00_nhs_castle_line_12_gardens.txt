@@ -1,0 +1,144 @@
+castle = {
+	nhs_herb_patch = {
+		desc = nhs_herb_patch_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.05
+		garrison_size = 0.01
+	}
+	nhs_vegetable_plot = {
+		desc = nhs_vegetable_plot_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 62
+		upgrades_from = nhs_herb_patch
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.1
+		garrison_size = 0.03
+		levy_reinforce_rate = 0.01
+	}
+	nhs_fruit_orchard = {
+		desc = nhs_fruit_orchard_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 65
+		upgrades_from = nhs_vegetable_plot
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.2
+		garrison_size = 0.06
+		levy_reinforce_rate = 0.02
+	}
+	nhs_walled_garden = {
+		desc = nhs_walled_garden_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 75
+		upgrades_from = nhs_fruit_orchard
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		tax_income = 0.4
+		garrison_size = 0.13
+	}
+	nhs_decorative_garden = {
+		desc = nhs_decorative_garden_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = nhs_walled_garden
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		tax_income = 0.45
+		garrison_size = 0.22
+		vassal_opinion = 2
+	}
+	nhs_fountain_terrace = {
+		desc = nhs_fountain_terrace_desc
+		gold_cost = 400
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 87
+		upgrades_from = nhs_decorative_garden
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		tax_income = 0.5
+		garrison_size = 0.37
+		vassal_opinion = 5
+	}
+	nhs_rose_garden = {
+		desc = nhs_rose_garden_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1100
+		ai_creation_factor = 95
+		upgrades_from = nhs_fountain_terrace
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		tax_income = 0.6
+		garrison_size = 0.64
+		sex_appeal_opinion = 6
+		vassal_opinion = 7
+	}
+	nhs_maze_garden = {
+		desc = nhs_maze_garden_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 102
+		upgrades_from = nhs_rose_garden
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		tax_income = 0.7
+		garrison_size = 1.19
+		vassal_opinion = 10
+		levy_size = 0.01
+	}
+	nhs_pavilion_garden = {
+		desc = nhs_pavilion_garden_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 107
+		upgrades_from = nhs_maze_garden
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		tax_income = 0.8
+		garrison_size = 1.7
+		vassal_opinion = 15
+		liege_prestige = 0.5
+	}
+	nhs_royal_courtyard = {
+		desc = nhs_royal_courtyard_desc
+		gold_cost = 3500
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = nhs_pavilion_garden
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		tax_income = 0.9
+		garrison_size = 2.55
+		vassal_opinion = 25
+		levy_size = 0.03
+		liege_prestige = 1.5
+	}
+}

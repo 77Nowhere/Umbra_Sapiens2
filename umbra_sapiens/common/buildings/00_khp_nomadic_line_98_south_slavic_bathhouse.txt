@@ -1,0 +1,184 @@
+nomad = {
+	khp_steam_pit_slavic_bathhouse = {
+		desc = khp_steam_pit_slavic_bathhouse_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	khp_hot_stone_hut_slavic_bathhouse = {
+		desc = khp_hot_stone_hut_slavic_bathhouse_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = khp_steam_pit_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.03
+	}
+	khp_smoke_sauna_slavic_bathhouse = {
+		desc = khp_smoke_sauna_slavic_bathhouse_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 75
+		upgrades_from = khp_hot_stone_hut_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.05
+	}
+	khp_birch_switch_room_slavic_bathhouse = {
+		desc = khp_birch_switch_room_slavic_bathhouse_desc
+		gold_cost = 338
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = khp_smoke_sauna_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		supply_limit = 0.1
+		liege_prestige = 0.2
+	}
+	khp_wooden_bath_pavilion_slavic_bathhouse = {
+		desc = khp_wooden_bath_pavilion_slavic_bathhouse_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 85
+		upgrades_from = khp_birch_switch_room_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		supply_limit = 0.2
+		liege_prestige = 0.4
+	}
+	khp_community_bathhouse_slavic_bathhouse = {
+		desc = khp_community_bathhouse_slavic_bathhouse_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = khp_wooden_bath_pavilion_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		supply_limit = 0.3
+		liege_prestige = 0.6
+	}
+	khp_warmed_hall_slavic_bathhouse = {
+		desc = khp_warmed_hall_slavic_bathhouse_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 95
+		upgrades_from = khp_community_bathhouse_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+		supply_limit = 0.4
+		liege_prestige = 1
+	}
+	khp_heated_room_slavic_bathhouse = {
+		desc = khp_heated_room_slavic_bathhouse_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 100
+		upgrades_from = khp_warmed_hall_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		clan_sentiment = 1
+		supply_limit = 0.6
+		liege_prestige = 1
+	}
+	khp_family_bath_chamber_slavic_bathhouse = {
+		desc = khp_family_bath_chamber_slavic_bathhouse_desc
+		gold_cost = 9750
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 105
+		upgrades_from = khp_heated_room_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.22
+		clan_sentiment = 1
+		supply_limit = 1
+		liege_prestige = 1
+		vassal_opinion = 2
+	}
+	khp_south_slavic_banya_slavic_bathhouse = {
+		desc = khp_south_slavic_banya_slavic_bathhouse_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1875
+		ai_creation_factor = 110
+		upgrades_from = khp_family_bath_chamber_slavic_bathhouse
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.22
+		clan_sentiment = 1
+		supply_limit = 2
+		liege_prestige = 1
+		vassal_opinion = 4
+	}
+}

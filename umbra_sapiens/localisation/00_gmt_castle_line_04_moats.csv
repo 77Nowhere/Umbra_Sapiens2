@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+gmt_moat_ditch_perimeter;Ditch Perimeter;;;;;x
+gmt_moat_ditch_perimeter_desc;A shallow ditch hastily dug around the castle, offering minimal defense but deterring the most basic assaults.;;;;;x
+gmt_moat_earthen_trench;Earthen Trench;;;;;x
+gmt_moat_earthen_trench_desc;A deeper earthwork trench, laboriously excavated, making it more difficult for enemies to approach the walls.;;;;;x
+gmt_moat_dry_moat;Dry Moat;;;;;x
+gmt_moat_dry_moat_desc;A fully dug moat encircling the stronghold, dry but wide enough to impede attackers and siege equipment.;;;;;x
+gmt_moat_palisaded_moat;Palisaded Moat;;;;;x
+gmt_moat_palisaded_moat_desc;A dry moat reinforced with a wooden palisade, effectively deterring ladders and scaling attempts.;;;;;x
+gmt_moat_water_filled_moat;Water-Filled Moat;;;;;x
+gmt_moat_water_filled_moat_desc;A deep moat filled with water, sourced from a nearby river or diverted stream, providing exceptional protection against sappers and siege towers.;;;;;x
+gmt_moat_wide_moat;Wide Moat;;;;;x
+gmt_moat_wide_moat_desc;A greatly widened moat, making the crossing of siege bridges and ladders nearly impossible without specialized equipment.;;;;;x
+gmt_moat_double_moat;Double Moat;;;;;x
+gmt_moat_double_moat_desc;A formidable defense: two concentric moats, one dry and one water-filled, creating a deadly obstacle for any attacker.;;;;;x
+gmt_moat_stone_lined_moat;Stone-Lined Moat;;;;;x
+gmt_moat_stone_lined_moat_desc;A moat lined with stone, preventing collapse and making sapping or draining extremely difficult.;;;;;x
+gmt_moat_bridged_moat;Bridged Moat;;;;;x
+gmt_moat_bridged_moat_desc;Fortified drawbridges and causeways over the moat, allowing defenders to control all access points with deadly precision.;;;;;x
+gmt_moat_fortified_moat;Fortified Moat;;;;;x
+gmt_moat_fortified_moat_desc;The ultimate defensive moat: broad, deep, stone-lined, with multiple drawbridges, machicolations, and fortified gatehouses, virtually impervious to all but the most determined sieges.;;;;;x

@@ -1,0 +1,171 @@
+city = {
+	hix_camel_post = {
+		desc = hix_camel_post_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 200
+		ai_creation_factor = 60
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 1
+		supply_limit = 0.05
+	}
+	hix_shade_pavilion = {
+		desc = hix_shade_pavilion_desc
+		prestige_cost = 50
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = hix_oasis_market
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 4
+		local_tax_modifier = 0.08
+	}
+	hix_oasis_market = {
+		desc = hix_oasis_market_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 64
+		upgrades_from = hix_camel_post
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.04
+		tradevalue = 2
+	}
+	hix_sand_traders_hut = {
+		desc = hix_sand_traders_hut_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 80
+		upgrades_from = hix_shade_pavilion
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 1
+		}
+		tradevalue = 8
+		local_tax_modifier = 0.2
+		supply_limit = 0.12
+	}
+	hix_caravan_stop = {
+		desc = hix_caravan_stop_desc
+		prestige_cost = 350
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 101
+		upgrades_from = hix_salt_exchange
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		tradevalue = 48
+		local_tax_modifier = 1
+		supply_limit = 0.25
+	}
+	hix_desert_storehouse = {
+		desc = hix_desert_storehouse_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 85
+		upgrades_from = hix_sand_traders_hut
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 2
+		}
+		tradevalue = 16
+		local_tax_modifier = 0.35
+		garrison_size = 0.1
+	}
+	hix_salt_exchange = {
+		desc = hix_salt_exchange_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 92
+		upgrades_from = hix_desert_storehouse
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 3
+		}
+		tradevalue = 32
+		local_tax_modifier = 0.7
+		economy_techpoints = 0.1
+	}
+	hix_desert_bazaar = {
+		desc = hix_desert_bazaar_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 107
+		upgrades_from = hix_caravan_stop
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 4
+		}
+		tradevalue = 80
+		local_tax_modifier = 1.7
+		economy_techpoints = 0.2
+		garrison_size = 0.18
+	}
+	hix_dune_market_hall = {
+		desc = hix_dune_market_hall_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 110
+		upgrades_from = hix_desert_bazaar
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 5
+		}
+		tradevalue = 140
+		local_tax_modifier = 2.8
+		economy_techpoints = 0.4
+		supply_limit = 0.4
+	}
+	hix_grand_oasis_caravanserai = {
+		desc = hix_grand_oasis_caravanserai_desc
+		gold_cost = 14000
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = hix_dune_market_hall
+		potential = {
+			terrain = desert
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 6
+		}
+		tradevalue = 260
+		local_tax_modifier = 5
+		economy_techpoints = 0.7
+		garrison_size = 0.3
+	}
+}

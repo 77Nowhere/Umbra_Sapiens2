@@ -1,0 +1,150 @@
+city = {
+	ct_guard_1 = {
+		desc = ct_guard_1_desc
+		gold_cost = 30
+		extra_tech_building_start = 1
+		build_time = 120
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.01
+		garrison_size = 0.02
+	}
+	ct_guard_2 = {
+		desc = ct_guard_2_desc
+		prestige_cost = 25
+		extra_tech_building_start = 1
+		build_time = 160
+		ai_creation_factor = 70
+		upgrades_from = ct_guard_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.02
+		garrison_size = 0.04
+		economy_techpoints = 0.01
+	}
+	ct_guard_3 = {
+		desc = ct_guard_3_desc
+		piety_cost = 35
+		extra_tech_building_start = 0.2
+		build_time = 250
+		ai_creation_factor = 77
+		upgrades_from = ct_guard_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.04
+		garrison_size = 0.07
+		economy_techpoints = 0.02
+	}
+	ct_guard_4 = {
+		desc = ct_guard_4_desc
+		gold_cost = 150
+		extra_tech_building_start = 0.2
+		build_time = 350
+		ai_creation_factor = 82
+		upgrades_from = ct_guard_3
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.09
+		garrison_size = 0.14
+		economy_techpoints = 0.04
+		tradevalue = 1
+	}
+	ct_guard_5 = {
+		desc = ct_guard_5_desc
+		gold_cost = 340
+		extra_tech_building_start = 0.2
+		build_time = 600
+		ai_creation_factor = 90
+		upgrades_from = ct_guard_4
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.19
+		garrison_size = 0.25
+		economy_techpoints = 0.07
+		tradevalue = 2
+	}
+	gbh_armorers_hall = {
+		desc = gbh_armorers_hall_desc
+		prestige_cost = 370
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 94
+		upgrades_from = ct_guard_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.32
+		garrison_size = 0.4
+		economy_techpoints = 0.1
+		tradevalue = 3
+	}
+	gbh_weaponworks = {
+		desc = gbh_weaponworks_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 102
+		upgrades_from = gbh_armorers_hall
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.6
+		garrison_size = 0.65
+		economy_techpoints = 0.15
+		tradevalue = 5
+	}
+	gbh_metalsmith_guild = {
+		desc = gbh_metalsmith_guild_desc
+		prestige_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 108
+		upgrades_from = gbh_weaponworks
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 1.1
+		garrison_size = 0.95
+		economy_techpoints = 0.21
+		tradevalue = 7
+		liege_prestige = 0.5
+	}
+	gbh_foundry_complex = {
+		desc = gbh_foundry_complex_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = gbh_metalsmith_guild
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 2
+		garrison_size = 1.3
+		economy_techpoints = 0.3
+		tradevalue = 10
+		liege_prestige = 1
+	}
+	gbh_master_smithy = {
+		desc = gbh_master_smithy_desc
+		gold_cost = 8200
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = gbh_foundry_complex
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 3.5
+		garrison_size = 2
+		economy_techpoints = 0.45
+		tradevalue = 18
+		liege_prestige = 2
+	}
+}

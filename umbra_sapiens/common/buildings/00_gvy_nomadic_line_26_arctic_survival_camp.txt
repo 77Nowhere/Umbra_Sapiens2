@@ -1,0 +1,178 @@
+nomad = {
+	gvy_arctic_survival_snow_shelter_1 = {
+		desc = gvy_arctic_survival_snow_shelter_1_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.08
+		max_population_mult = 0.005
+	}
+	gvy_arctic_survival_ice_block_hut_2 = {
+		desc = gvy_arctic_survival_ice_block_hut_2_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 75
+		upgrades_from = gvy_arctic_survival_snow_shelter_1
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.12
+		max_population_mult = 0.005
+		garrison_size = 0.05
+	}
+	gvy_arctic_survival_windbreak_tent_3 = {
+		desc = gvy_arctic_survival_windbreak_tent_3_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 80
+		upgrades_from = gvy_arctic_survival_ice_block_hut_2
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.2
+		max_population_mult = 0.005
+		levy_size = 0.06
+	}
+	gvy_arctic_survival_fur_lined_yurt_4 = {
+		desc = gvy_arctic_survival_fur_lined_yurt_4_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 85
+		upgrades_from = gvy_arctic_survival_windbreak_tent_3
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.37
+		max_population_mult = 0.010
+		levy_size = 0.13
+		clan_sentiment = 1
+	}
+	gvy_arctic_survival_frost_storage_5 = {
+		desc = gvy_arctic_survival_frost_storage_5_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 95
+		upgrades_from = gvy_arctic_survival_fur_lined_yurt_4
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.7
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		garrison_size = 0.2
+	}
+	gvy_arctic_survival_seal_oil_lamp_post_6 = {
+		desc = gvy_arctic_survival_seal_oil_lamp_post_6_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 100
+		upgrades_from = gvy_arctic_survival_frost_storage_5
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		liege_prestige = 0.1
+		supply_limit = 1
+	}
+	gvy_arctic_survival_igloo_cluster_7 = {
+		desc = gvy_arctic_survival_igloo_cluster_7_desc
+		gold_cost = 2175
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 104
+		upgrades_from = gvy_arctic_survival_seal_oil_lamp_post_6
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		supply_limit = 2
+		levy_size = 0.3
+	}
+	gvy_arctic_survival_blizzard_refuge_8 = {
+		desc = gvy_arctic_survival_blizzard_refuge_8_desc
+		gold_cost = 3225
+		extra_tech_building_start = 999
+		build_time = 394
+		ai_creation_factor = 108
+		upgrades_from = gvy_arctic_survival_igloo_cluster_7
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.6
+		max_population_mult = 0.025
+		supply_limit = 3.4
+		clan_sentiment = 1
+	}
+	gvy_arctic_survival_tundra_outpost_9 = {
+		desc = gvy_arctic_survival_tundra_outpost_9_desc
+		gold_cost = 5100
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 110
+		upgrades_from = gvy_arctic_survival_blizzard_refuge_8
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.12
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 0.55
+	}
+	gvy_arctic_survival_polar_stronghold_10 = {
+		desc = gvy_arctic_survival_polar_stronghold_10_desc
+		gold_cost = 9375
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = gvy_arctic_survival_tundra_outpost_9
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 5
+		clan_sentiment = 1
+		levy_size = 1
+	}
+}

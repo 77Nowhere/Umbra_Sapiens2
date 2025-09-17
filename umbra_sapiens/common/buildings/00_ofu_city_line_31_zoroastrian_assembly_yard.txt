@@ -1,0 +1,203 @@
+city = {
+	ofu_zoroastrian_assembly_stone_bench = {
+		desc = ofu_zoroastrian_assembly_stone_bench_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 60
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.025
+		garrison_size = 0.02
+	}
+	ofu_zoroastrian_assembly_judgement_shade = {
+		desc = ofu_zoroastrian_assembly_judgement_shade_desc
+		prestige_cost = 55
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 70
+		upgrades_from = ofu_zoroastrian_assembly_meeting_platform
+		prerequisites = {
+			ofu_zoroastrian_assembly_meeting_platform
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.065
+		tradevalue = 1
+		garrison_size = 0.05
+	}
+	ofu_zoroastrian_assembly_meeting_platform = {
+		desc = ofu_zoroastrian_assembly_meeting_platform_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 140
+		ai_creation_factor = 65
+		upgrades_from = ofu_zoroastrian_assembly_stone_bench
+		prerequisites = {
+			ofu_zoroastrian_assembly_stone_bench
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.045
+		tradevalue = 0.5
+	}
+	ofu_zoroastrian_assembly_debate_circle = {
+		desc = ofu_zoroastrian_assembly_debate_circle_desc
+		gold_cost = 210
+		extra_tech_building_start = 999
+		build_time = 280
+		ai_creation_factor = 75
+		upgrades_from = ofu_zoroastrian_assembly_judgement_shade
+		prerequisites = {
+			ofu_zoroastrian_assembly_judgement_shade
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.12
+		tradevalue = 2
+		garrison_size = 0.1
+		economy_techpoints = 0.02
+	}
+	ofu_zoroastrian_assembly_council_terrace = {
+		desc = ofu_zoroastrian_assembly_council_terrace_desc
+		gold_cost = 420
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 80
+		upgrades_from = ofu_zoroastrian_assembly_debate_circle
+		prerequisites = {
+			ofu_zoroastrian_assembly_debate_circle
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.24
+		tradevalue = 4
+		garrison_size = 0.2
+		economy_techpoints = 0.04
+	}
+	ofu_zoroastrian_assembly_verdict_hall = {
+		desc = ofu_zoroastrian_assembly_verdict_hall_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 90
+		upgrades_from = ofu_zoroastrian_assembly_council_terrace
+		prerequisites = {
+			ofu_zoroastrian_assembly_council_terrace
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.45
+		tradevalue = 8
+		garrison_size = 0.4
+		economy_techpoints = 0.09
+	}
+	ofu_zoroastrian_assembly_advisors_gallery = {
+		desc = ofu_zoroastrian_assembly_advisors_gallery_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 95
+		upgrades_from = ofu_zoroastrian_assembly_verdict_hall
+		prerequisites = {
+			ofu_zoroastrian_assembly_verdict_hall
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.8
+		tradevalue = 16
+		garrison_size = 0.7
+		economy_techpoints = 0.13
+	}
+	ofu_zoroastrian_assembly_portico = {
+		desc = ofu_zoroastrian_assembly_portico_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 100
+		upgrades_from = ofu_zoroastrian_assembly_advisors_gallery
+		prerequisites = {
+			ofu_zoroastrian_assembly_advisors_gallery
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 1.2
+		tradevalue = 28
+		garrison_size = 1.2
+		economy_techpoints = 0.2
+	}
+	ofu_zoroastrian_assembly_wise_mens_court = {
+		desc = ofu_zoroastrian_assembly_wise_mens_court_desc
+		gold_cost = 5600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 105
+		upgrades_from = ofu_zoroastrian_assembly_portico
+		prerequisites = {
+			ofu_zoroastrian_assembly_portico
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 2
+		tradevalue = 48
+		garrison_size = 2
+		economy_techpoints = 0.3
+	}
+	ofu_zoroastrian_assembly_grand_assembly_plaza = {
+		desc = ofu_zoroastrian_assembly_grand_assembly_plaza_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 110
+		upgrades_from = ofu_zoroastrian_assembly_wise_mens_court
+		prerequisites = {
+			ofu_zoroastrian_assembly_wise_mens_court
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 3.8
+		tradevalue = 100
+		garrison_size = 3
+		economy_techpoints = 0.45
+	}
+}

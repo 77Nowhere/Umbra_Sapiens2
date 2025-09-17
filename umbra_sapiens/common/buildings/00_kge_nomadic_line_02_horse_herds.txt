@@ -1,0 +1,148 @@
+nomad = {
+	kge_nomad_pasture_patch = {
+		desc = kge_nomad_pasture_patch_desc
+		gold_cost = 45
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+	}
+	kge_nomad_tethered_herd = {
+		desc = kge_nomad_tethered_herd_desc
+		gold_cost = 135
+		build_time = 83
+		extra_tech_building_start = 999
+		ai_creation_factor = 68
+		upgrades_from = kge_nomad_pasture_patch
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+		nomad_tax_modifier = 0.178
+	}
+	kge_nomad_corral = {
+		desc = kge_nomad_corral_desc
+		gold_cost = 525
+		build_time = 150
+		extra_tech_building_start = 999
+		ai_creation_factor = 72
+		upgrades_from = kge_nomad_tethered_herd
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		supply_limit = 0.07
+	}
+	kge_enclosed_grazing_field = {
+		desc = kge_enclosed_grazing_field_desc
+		gold_cost = 1500
+		build_time = 263
+		extra_tech_building_start = 999
+		ai_creation_factor = 78
+		upgrades_from = kge_nomad_corral
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		supply_limit = 0.15
+		liege_prestige = 0.1
+	}
+	kge_horse_training_yard = {
+		desc = kge_horse_training_yard_desc
+		gold_cost = 4500
+		prestige_cost = 45
+		build_time = 413
+		extra_tech_building_start = 999
+		ai_creation_factor = 85
+		upgrades_from = kge_enclosed_grazing_field
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.13
+		global_movement_speed = 0.06
+	}
+	kge_breeders_pen = {
+		desc = kge_breeders_pen_desc
+		gold_cost = 6000
+		build_time = 638
+		extra_tech_building_start = 999
+		ai_creation_factor = 93
+		upgrades_from = kge_horse_training_yard
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		manpower_growth = 0.030
+		light_cavalry_morale = 0.12
+	}
+	kge_stallion_enclosure = {
+		desc = kge_stallion_enclosure_desc
+		gold_cost = 9000
+		build_time = 938
+		extra_tech_building_start = 999
+		ai_creation_factor = 97
+		upgrades_from = kge_breeders_pen
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.15
+		liege_prestige = 0.3
+		horde_maintenance_cost = -0.05
+	}
+	kge_mare_sanctuary = {
+		desc = kge_mare_sanctuary_desc
+		gold_cost = 13500
+		build_time = 1313
+		extra_tech_building_start = 999
+		ai_creation_factor = 103
+		upgrades_from = kge_stallion_enclosure
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.22
+		clan_sentiment = 1
+	}
+	kge_champion_stables = {
+		desc = kge_champion_stables_desc
+		gold_cost = 15000
+		build_time = 1875
+		extra_tech_building_start = 999
+		ai_creation_factor = 107
+		upgrades_from = kge_mare_sanctuary
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		light_cavalry_offensive = 0.3
+		liege_prestige = 0.4
+	}
+	kge_steppe_equestrian_domain = {
+		desc = kge_steppe_equestrian_domain_desc
+		gold_cost = 24000
+		build_time = 2625
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = kge_champion_stables
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		supply_limit = 0.3
+		clan_sentiment = 1
+		global_movement_speed = 0.15
+	}
+}

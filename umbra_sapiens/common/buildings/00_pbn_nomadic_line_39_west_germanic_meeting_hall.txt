@@ -1,0 +1,205 @@
+nomad = {
+	pbn_west_germanic_council_bench = {
+		desc = pbn_west_germanic_council_bench_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+	}
+	pbn_west_germanic_villagers_shelter = {
+		desc = pbn_west_germanic_villagers_shelter_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = pbn_west_germanic_council_bench
+		prerequisites = {
+			pbn_west_germanic_council_bench
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.011
+	}
+	pbn_west_germanic_assembly_hut = {
+		desc = pbn_west_germanic_assembly_hut_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 70
+		upgrades_from = pbn_west_germanic_villagers_shelter
+		prerequisites = {
+			pbn_west_germanic_villagers_shelter
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	pbn_west_germanic_delegate_tent = {
+		desc = pbn_west_germanic_delegate_tent_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 74
+		upgrades_from = pbn_west_germanic_assembly_hut
+		prerequisites = {
+			pbn_west_germanic_assembly_hut
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		liege_prestige = 0.1
+	}
+	pbn_west_germanic_elders_room = {
+		desc = pbn_west_germanic_elders_room_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 80
+		upgrades_from = pbn_west_germanic_delegate_tent
+		prerequisites = {
+			pbn_west_germanic_delegate_tent
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_manpower_mult = 0.02
+		liege_prestige = 0.15
+	}
+	pbn_west_germanic_gathering_house = {
+		desc = pbn_west_germanic_gathering_house_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 89
+		upgrades_from = pbn_west_germanic_elders_room
+		prerequisites = {
+			pbn_west_germanic_elders_room
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		liege_prestige = 0.25
+	}
+	pbn_west_germanic_speakers_hall = {
+		desc = pbn_west_germanic_speakers_hall_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 97
+		upgrades_from = pbn_west_germanic_gathering_house
+		prerequisites = {
+			pbn_west_germanic_gathering_house
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.35
+		max_population = 100
+		levy_size = 0.1
+	}
+	pbn_west_germanic_town_meeting_room = {
+		desc = pbn_west_germanic_town_meeting_room_desc
+		gold_cost = 10125
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 104
+		upgrades_from = pbn_west_germanic_speakers_hall
+		prerequisites = {
+			pbn_west_germanic_speakers_hall
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_prestige = 0.5
+		levy_size = 0.18
+	}
+	pbn_west_germanic_great_assembly_hall = {
+		desc = pbn_west_germanic_great_assembly_hall_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 109
+		upgrades_from = pbn_west_germanic_town_meeting_room
+		prerequisites = {
+			pbn_west_germanic_town_meeting_room
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_manpower_mult = 0.02
+		levy_size = 0.25
+		liege_prestige = 0.7
+	}
+	pbn_west_germanic_west_hall_of_councils = {
+		desc = pbn_west_germanic_west_hall_of_councils_desc
+		gold_cost = 31500
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = pbn_west_germanic_great_assembly_hall
+		prerequisites = {
+			pbn_west_germanic_great_assembly_hall
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		levy_size = 0.4
+		liege_prestige = 1
+	}
+}

@@ -1,0 +1,194 @@
+nomad = {
+	min_steam_pit = {
+		desc = min_steam_pit_desc
+		gold_cost = 42
+		extra_tech_building_start = 999
+		build_time = 60
+		ai_creation_factor = 60
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	min_hot_stone_hut = {
+		desc = min_hot_stone_hut_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 65
+		upgrades_from = min_steam_pit
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.04
+		culture_group = dravidian_group
+	}
+	min_heated_pavilion = {
+		desc = min_heated_pavilion_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 75
+		upgrades_from = min_hot_stone_hut
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.08
+		culture_group = dravidian_group
+	}
+	min_bath_chamber = {
+		desc = min_bath_chamber_desc
+		gold_cost = 353
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 85
+		upgrades_from = min_heated_pavilion
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.16
+		population_growth = 0.041
+		culture_group = dravidian_group
+	}
+	min_changing_room = {
+		desc = min_changing_room_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 90
+		upgrades_from = min_bath_chamber
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.28
+		population_growth = 0.081
+		culture_group = dravidian_group
+	}
+	min_warm_hall = {
+		desc = min_warm_hall_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = min_changing_room
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		supply_limit = 0.42
+		population_growth = 0.121
+		culture_group = dravidian_group
+	}
+	min_scented_room = {
+		desc = min_scented_room_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = min_warm_hall
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 160
+		clan_sentiment = 1
+		supply_limit = 0.6
+		population_growth = 0.102
+		liege_prestige = 0.5
+		culture_group = dravidian_group
+	}
+	min_family_bathhouse = {
+		desc = min_family_bathhouse_desc
+		gold_cost = 5100
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 105
+		upgrades_from = min_scented_room
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 320
+		clan_sentiment = 1
+		supply_limit = 0.8
+		population_growth = 0.121
+		fertility = 0.23
+		liege_prestige = 1.2
+		culture_group = dravidian_group
+	}
+	min_community_bath_hall = {
+		desc = min_community_bath_hall_desc
+		gold_cost = 10125
+		extra_tech_building_start = 999
+		build_time = 1088
+		ai_creation_factor = 108
+		upgrades_from = min_family_bathhouse
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 640
+		clan_sentiment = 1
+		supply_limit = 1.1
+		population_growth = 0.181
+		fertility = 0.20
+		liege_prestige = 1.5
+		culture_group = dravidian_group
+	}
+	min_dravidian_grand_bathhouse = {
+		desc = min_dravidian_grand_bathhouse_desc
+		gold_cost = 19500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = min_community_bath_hall
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1280
+		clan_sentiment = 2
+		supply_limit = 1.6
+		population_growth = 0.181
+		fertility = 0.39
+		liege_prestige = 1
+		vassal_opinion = 10
+		culture_group = dravidian_group
+	}
+}

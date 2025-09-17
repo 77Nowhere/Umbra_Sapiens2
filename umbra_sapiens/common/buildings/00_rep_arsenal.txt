@@ -1,0 +1,231 @@
+city = {
+	ct_rep_arsenal_1 = {
+		desc = ct_rep_arsenal_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 400
+		build_time = 1095
+		fort_level = 1
+		garrison_size = 0.5
+		levy_size = 0.15
+		galleys = 10
+		ai_creation_factor = 95
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_2 = {
+		upgrades_from = ct_rep_arsenal_1
+		desc = ct_rep_arsenal_2_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 600
+		build_time = 1200
+		fort_level = 1.2
+		garrison_size = 0.5
+		levy_size = 0.16
+		galleys = 12
+		ai_creation_factor = 94
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_3 = {
+		upgrades_from = ct_rep_arsenal_2
+		desc = ct_rep_arsenal_3_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 800
+		build_time = 1350
+		fort_level = 1.4
+		garrison_size = 0.54
+		levy_size = 0.18
+		galleys = 14
+		ai_creation_factor = 93
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_4 = {
+		upgrades_from = ct_rep_arsenal_3
+		desc = ct_rep_arsenal_4_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 1000
+		build_time = 1460
+		fort_level = 1.6
+		garrison_size = 0.6
+		levy_size = 0.2
+		galleys = 16
+		ai_creation_factor = 92
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_5 = {
+		upgrades_from = ct_rep_arsenal_4
+		desc = ct_rep_arsenal_5_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 1200
+		build_time = 1600
+		fort_level = 1.8
+		garrison_size = 0.7
+		levy_size = 0.22
+		galleys = 18
+		ai_creation_factor = 91
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_6 = {
+		upgrades_from = ct_rep_arsenal_5
+		desc = ct_rep_arsenal_6_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 1400
+		build_time = 1750
+		fort_level = 2
+		garrison_size = 0.8
+		levy_size = 0.24
+		galleys = 20
+		ai_creation_factor = 90
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_7 = {
+		upgrades_from = ct_rep_arsenal_6
+		desc = ct_rep_arsenal_7_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 1700
+		build_time = 1900
+		fort_level = 2.2
+		garrison_size = 0.9
+		levy_size = 0.26
+		galleys = 22
+		ai_creation_factor = 89
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_8 = {
+		upgrades_from = ct_rep_arsenal_7
+		desc = ct_rep_arsenal_8_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 2000
+		build_time = 2100
+		fort_level = 2.4
+		garrison_size = 1
+		levy_size = 0.28
+		galleys = 24
+		ai_creation_factor = 88
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_9 = {
+		upgrades_from = ct_rep_arsenal_8
+		desc = ct_rep_arsenal_9_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 2300
+		build_time = 2300
+		fort_level = 2.6
+		garrison_size = 1.1
+		levy_size = 0.3
+		galleys = 26
+		ai_creation_factor = 87
+		extra_tech_building_start = 0.2
+	}
+	ct_rep_arsenal_10 = {
+		upgrades_from = ct_rep_arsenal_9
+		desc = ct_rep_arsenal_10_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+				is_merchant_republic = yes
+			}
+		}
+		gold_cost = 2600
+		build_time = 2500
+		fort_level = 2.8
+		garrison_size = 1.2
+		levy_size = 0.32
+		galleys = 30
+		ai_creation_factor = 85
+		extra_tech_building_start = 0.2
+	}
+}

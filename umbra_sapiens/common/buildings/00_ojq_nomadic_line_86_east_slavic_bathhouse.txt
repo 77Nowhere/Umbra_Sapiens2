@@ -1,0 +1,182 @@
+nomad = {
+	ojq_east_slavic_steam_pit = {
+		desc = ojq_east_slavic_steam_pit_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 60
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		clan_sentiment = 1
+	}
+	ojq_east_slavic_hot_stone_hut = {
+		desc = ojq_east_slavic_hot_stone_hut_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 68
+		upgrades_from = ojq_east_slavic_steam_pit
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+		clan_sentiment = 1
+		supply_limit = 0.01
+	}
+	ojq_east_slavic_smoke_sauna = {
+		desc = ojq_east_slavic_smoke_sauna_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 75
+		upgrades_from = ojq_east_slavic_hot_stone_hut
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.081
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	ojq_east_slavic_birch_switch_room = {
+		desc = ojq_east_slavic_birch_switch_room_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 83
+		upgrades_from = ojq_east_slavic_smoke_sauna
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		garrison_size = 0.04
+	}
+	ojq_east_slavic_wooden_bath_pavilion = {
+		desc = ojq_east_slavic_wooden_bath_pavilion_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 88
+		upgrades_from = ojq_east_slavic_birch_switch_room
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		supply_limit = 0.02
+	}
+	ojq_east_slavic_family_banya = {
+		desc = ojq_east_slavic_family_banya_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 147
+		ai_creation_factor = 93
+		upgrades_from = ojq_east_slavic_wooden_bath_pavilion
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		garrison_size = 0.07
+		supply_limit = 0.03
+	}
+	ojq_east_slavic_community_bathhouse = {
+		desc = ojq_east_slavic_community_bathhouse_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 98
+		upgrades_from = ojq_east_slavic_family_banya
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		garrison_size = 0.12
+		supply_limit = 0.04
+	}
+	ojq_east_slavic_warmed_hall = {
+		desc = ojq_east_slavic_warmed_hall_desc
+		gold_cost = 5400
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 104
+		upgrades_from = ojq_east_slavic_community_bathhouse
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		garrison_size = 0.17
+		supply_limit = 0.06
+	}
+	ojq_east_slavic_heated_pavilion = {
+		desc = ojq_east_slavic_heated_pavilion_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 282
+		ai_creation_factor = 108
+		upgrades_from = ojq_east_slavic_warmed_hall
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		garrison_size = 0.23
+		supply_limit = 0.08
+	}
+	ojq_east_slavic_grand_slavic_banya = {
+		desc = ojq_east_slavic_grand_slavic_banya_desc
+		gold_cost = 22500
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 110
+		upgrades_from = ojq_east_slavic_heated_pavilion
+		potential = {
+			culture_group = east_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		garrison_size = 0.32
+		supply_limit = 0.11
+	}
+}

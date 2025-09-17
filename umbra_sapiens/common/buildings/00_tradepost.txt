@@ -1,0 +1,1224 @@
+trade_post = {
+	grand_mercantile_repository = {
+		desc = grand_mercantile_repository_desc
+		gold_cost = 40000
+		build_time = 4200
+		ai_creation_factor = 110
+		upgrades_from = dockside_transit_hub
+		prerequisites = { dockside_transit_hub }
+		port = yes
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 250
+		local_tax_modifier = 2.2
+		trade_route_value = 55
+		economy_techpoints = 0.5
+		monthly_character_prestige = 0.7
+		vassal_opinion = 5
+	}
+	banking_great_exchange_house = {
+		desc = banking_great_exchange_house_desc
+		gold_cost = 32000
+		build_time = 5000
+		ai_creation_factor = 115
+		upgrades_from = banking_bankers_guildhall
+		trigger = { TECH_TRADE_PRACTICES = 5 }
+		tradevalue = 448
+		local_tax_modifier = 5.12
+		city_tax_modifier = 1.6
+		economy_techpoints = 0.5
+		trade_route_value = 20
+		monthly_character_prestige = 0.5
+	}
+	elite_guard_barracks = {
+		desc = elite_guard_barracks_desc
+		gold_cost = 32000
+		build_time = 1600
+		ai_creation_factor = 106
+		upgrades_from = hired_blade_compound
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 6 }
+		tradevalue = 85
+		local_tax_modifier = 2.1
+		garrison_size = 1.6
+		military_techpoints = 0.5
+		city_tax_modifier = 0.56
+	}
+	grand_logistics_hub = {
+		desc = grand_logistics_hub_desc
+		gold_cost = 30000
+		build_time = 3200
+		ai_creation_factor = 125
+		upgrades_from = overland_trade_outpost
+		trigger = { TECH_TRADE_PRACTICES = 5 }
+		tradevalue = 256
+		trade_route_value = 128
+		local_tax_modifier = 4
+		economy_techpoints = 2
+		tech_growth_modifier_economy = 0.1
+		monthly_character_prestige = 0.25
+	}
+	dockside_transit_hub = {
+		desc = dockside_transit_hub_desc
+		gold_cost = 20000
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = secured_freight_facility
+		prerequisites = { secured_freight_facility }
+		port = yes
+		trigger = { TECH_NAVAL = 3 }
+		tradevalue = 130
+		local_tax_modifier = 1.1
+		trade_route_value = 30
+		economy_techpoints = 0.27
+		monthly_character_prestige = 0.3
+	}
+	grand_merchant_palace = {
+		desc = grand_merchant_palace_desc
+		gold_cost = 20000
+		build_time = 5000
+		ai_creation_factor = 115
+		upgrades_from = luxurious_suites
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		tradevalue = 240
+		local_tax_modifier = 1
+		economy_techpoints = 0.2
+		monthly_character_prestige = 0.5
+		vassal_opinion = 10
+	}
+	banking_bankers_guildhall = {
+		desc = banking_bankers_guildhall_desc
+		gold_cost = 18000
+		build_time = 3500
+		ai_creation_factor = 110
+		upgrades_from = banking_treasury_office
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		tradevalue = 224
+		local_tax_modifier = 2.56
+		city_tax_modifier = 0.8
+		economy_techpoints = 0.25
+		vassal_opinion = 5
+	}
+	hired_blade_compound = {
+		desc = hired_blade_compound_desc
+		gold_cost = 17000
+		build_time = 1200
+		ai_creation_factor = 102
+		upgrades_from = soldiers_garrison
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 }
+		tradevalue = 45
+		local_tax_modifier = 1.2
+		garrison_size = 0.9
+		military_techpoints = 0.25
+		city_tax_modifier = 0.3
+	}
+	great_commerce_arcade = {
+		desc = great_commerce_arcade_desc
+		gold_cost = 16000
+		build_time = 8000
+		ai_creation_factor = 110
+		upgrades_from = royal_charter_market
+		prerequisites = { royal_charter_market }
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 240
+		local_tax_modifier = 1
+		city_tax_modifier = 0.7
+		trade_route_value = 64
+		economy_techpoints = 0.22
+		monthly_character_prestige = 0.5
+	}
+	royal_port_complex = {
+		desc = royal_port_complex_desc
+		gold_cost = 15000
+		build_time = 1800
+		ai_creation_factor = 115
+		upgrades_from = sea_gate_marina
+		port = yes
+		trigger = { TECH_CONSTRUCTION = 4 TECH_TRADE_PRACTICES = 6 }
+		tradevalue = 100
+		local_tax_modifier = 1
+		trade_route_value = 40
+		economy_techpoints = 0.3
+		city_tax_modifier = 0.3
+		monthly_character_prestige = 0.4
+		vassal_opinion = 4
+	}
+	overland_trade_outpost = {
+		desc = overland_trade_outpost_desc
+		gold_cost = 14000
+		build_time = 2200
+		ai_creation_factor = 120
+		upgrades_from = guarded_caravanserai
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 128
+		trade_route_value = 64
+		local_tax_modifier = 2
+		economy_techpoints = 1
+		tech_growth_modifier_economy = 0.05
+	}
+	grand_embassy_forum = {
+		desc = grand_embassy_forum_desc
+		gold_cost = 12800
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = audience_palace
+		prerequisites = { audience_palace }
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 110
+		local_tax_modifier = 1.2
+		culture_techpoints = 0.5
+		economy_techpoints = 0.25
+		city_tax_modifier = 0.15
+		monthly_character_prestige = 0.35
+	}
+	luxurious_suites = {
+		desc = luxurious_suites_desc
+		gold_cost = 12000
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = embassy_residences
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 120
+		local_tax_modifier = 0.6
+		economy_techpoints = 0.15
+		monthly_character_wealth = 2
+	}
+	banking_treasury_office = {
+		desc = banking_treasury_office_desc
+		gold_cost = 12000
+		build_time = 2500
+		ai_creation_factor = 105
+		upgrades_from = banking_letters_of_credit_bureau
+		trigger = { TECH_CONSTRUCTION = 3 }
+		tradevalue = 112
+		local_tax_modifier = 1.28
+		city_tax_modifier = 0.4
+		trade_route_value = 8
+		garrison_size = 0.1
+	}
+	sovereign_customs_palace = {
+		desc = sovereign_customs_palace_desc
+		gold_cost = 12000
+		build_time = 3600
+		ai_creation_factor = 110
+		upgrades_from = export_import_hall
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		tradevalue = 300
+		local_tax_modifier = 1.8
+		city_tax_modifier = 0.8
+		economy_techpoints = 0.5
+		trade_route_value = 16
+		monthly_character_prestige = 0.25
+		vassal_opinion = 10
+	}
+	secured_freight_facility = {
+		desc = secured_freight_facility_desc
+		gold_cost = 11000
+		build_time = 2600
+		ai_creation_factor = 106
+		upgrades_from = customs_depot
+		prerequisites = { customs_depot }
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		tradevalue = 75
+		local_tax_modifier = 0.6
+		trade_route_value = 17
+		economy_techpoints = 0.18
+		garrison_size = 0.15
+	}
+	soldiers_garrison = {
+		desc = soldiers_garrison_desc
+		gold_cost = 8500
+		build_time = 900
+		ai_creation_factor = 98
+		upgrades_from = captains_lodge
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 }
+		tradevalue = 24
+		local_tax_modifier = 0.68
+		garrison_size = 0.5
+		military_techpoints = 0.12
+		city_tax_modifier = 0.18
+	}
+	export_import_hall = {
+		desc = export_import_hall_desc
+		gold_cost = 7500
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = tariff_registry
+		trigger = { TECH_TRADE_PRACTICES = 5 }
+		tradevalue = 144
+		local_tax_modifier = 1
+		city_tax_modifier = 0.4
+		economy_techpoints = 0.3
+		trade_route_value = 7.5
+		monthly_character_prestige = 0.1
+	}
+	exotic_goods_pavilion = {
+		desc = exotic_goods_pavilion_desc
+		gold_cost = 7000
+		build_time = 3500
+		ai_creation_factor = 96
+		upgrades_from = guild_market_hall
+		prerequisites = { guild_market_hall }
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 56
+		local_tax_modifier = 0.35
+		city_tax_modifier = 0.2
+		trade_route_value = 16
+		economy_techpoints = 0.15
+		culture_techpoints = 0.08
+	}
+	embassy_residences = {
+		desc = embassy_residences_desc
+		gold_cost = 7000
+		build_time = 2100
+		ai_creation_factor = 108
+		upgrades_from = guest_merchant_hall
+		trigger = { TECH_CONSTRUCTION = 3 }
+		tradevalue = 72
+		local_tax_modifier = 0.4
+		culture_techpoints = 0.1
+		vassal_opinion = 5
+	}
+	guarded_caravanserai = {
+		desc = guarded_caravanserai_desc
+		gold_cost = 7000
+		build_time = 1600
+		ai_creation_factor = 116
+		upgrades_from = horse_exchange_depot
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		tradevalue = 64
+		trade_route_value = 32
+		local_tax_modifier = 1.2
+		economy_techpoints = 0.64
+		garrison_size = 0.1
+	}
+	audience_palace = {
+		desc = audience_palace_desc
+		gold_cost = 6400
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = delegation_courtyard
+		prerequisites = { delegation_courtyard }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		tradevalue = 56
+		local_tax_modifier = 0.7
+		culture_techpoints = 0.33
+		city_tax_modifier = 0.1
+		monthly_character_prestige = 0.2
+	}
+	customs_depot = {
+		desc = customs_depot_desc
+		gold_cost = 6000
+		build_time = 2000
+		ai_creation_factor = 102
+		upgrades_from = vaulted_storage_hall
+		prerequisites = { vaulted_storage_hall }
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 40
+		local_tax_modifier = 0.35
+		trade_route_value = 10
+		economy_techpoints = 0.12
+		monthly_character_prestige = 0.15
+	}
+	banking_letters_of_credit_bureau = {
+		desc = banking_letters_of_credit_bureau_desc
+		gold_cost = 6000
+		build_time = 1800
+		ai_creation_factor = 100
+		upgrades_from = banking_merchant_bank
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 56
+		local_tax_modifier = 0.64
+		city_tax_modifier = 0.2
+		trade_route_value = 4
+	}
+	bmop_shadow_brokers_lair = {
+		desc = bmop_shadow_brokers_lair_desc
+		gold_cost = 6000
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = bmop_contraband_vault
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 48
+		trade_route_value = 20
+		local_tax_modifier = 0.25
+		economy_techpoints = 0.06
+	}
+	sea_gate_marina = {
+		desc = sea_gate_marina_desc
+		gold_cost = 6000
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = beacon_tower_docks
+		port = yes
+		trigger = { TECH_TRADE_PRACTICES = 5 }
+		tradevalue = 50
+		local_tax_modifier = 0.7
+		trade_route_value = 22
+		economy_techpoints = 0.2
+		city_tax_modifier = 0.2
+		vassal_opinion = 2
+	}
+	tariff_registry = {
+		desc = tariff_registry_desc
+		gold_cost = 5500
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = revenue_counting_room
+		trigger = { TECH_TRADE_PRACTICES = 4 }
+		tradevalue = 72
+		local_tax_modifier = 0.65
+		city_tax_modifier = 0.27
+		economy_techpoints = 0.2
+		tech_growth_modifier_economy = 0.04
+	}
+	captains_lodge = {
+		desc = captains_lodge_desc
+		gold_cost = 4200
+		build_time = 700
+		ai_creation_factor = 92
+		upgrades_from = mercenary_quarters
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 }
+		tradevalue = 13
+		local_tax_modifier = 0.34
+		military_techpoints = 0.05
+		city_tax_modifier = 0.1
+	}
+	guest_merchant_hall = {
+		desc = guest_merchant_hall_desc
+		gold_cost = 4200
+		build_time = 1500
+		ai_creation_factor = 104
+		upgrades_from = caravanserai
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 48
+		local_tax_modifier = 0.3
+		trade_route_value = 4
+		monthly_character_prestige = 0.1
+	}
+	bmop_contraband_vault = {
+		desc = bmop_contraband_vault_desc
+		gold_cost = 4000
+		build_time = 1000
+		ai_creation_factor = 95
+		upgrades_from = bmop_underground_bazaar
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 32
+		trade_route_value = 12
+		local_tax_modifier = 0.18
+		garrison_size = 0.12
+	}
+	horse_exchange_depot = {
+		desc = horse_exchange_depot_desc
+		gold_cost = 3500
+		build_time = 1100
+		ai_creation_factor = 112
+		upgrades_from = relay_station
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 32
+		trade_route_value = 16
+		local_tax_modifier = 0.64
+		economy_techpoints = 0.32
+		max_population_mult = 0.1
+	}
+	revenue_counting_room = {
+		desc = revenue_counting_room_desc
+		gold_cost = 3500
+		build_time = 1400
+		ai_creation_factor = 100
+		upgrades_from = customs_house
+		trigger = { TECH_CONSTRUCTION = 3 }
+		tradevalue = 36
+		local_tax_modifier = 0.42
+		city_tax_modifier = 0.17
+		economy_techpoints = 0.13
+		monthly_character_prestige = 0.05
+	}
+	guild_market_hall = {
+		desc = guild_market_hall_desc
+		gold_cost = 3400
+		build_time = 2000
+		ai_creation_factor = 88
+		upgrades_from = covered_marketplace
+		prerequisites = { covered_marketplace }
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 28
+		local_tax_modifier = 0.24
+		city_tax_modifier = 0.12
+		trade_route_value = 8
+		economy_techpoints = 0.1
+	}
+	banking_merchant_bank = {
+		desc = banking_merchant_bank_desc
+		gold_cost = 3200
+		build_time = 1300
+		ai_creation_factor = 95
+		upgrades_from = banking_coin_minting_workshop
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 28
+		local_tax_modifier = 0.32
+		city_tax_modifier = 0.1
+		economy_techpoints = 0.12
+	}
+	vaulted_storage_hall = {
+		desc = vaulted_storage_hall_desc
+		gold_cost = 3200
+		build_time = 1500
+		ai_creation_factor = 96
+		upgrades_from = granary_annex
+		prerequisites = { granary_annex }
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		tradevalue = 22
+		local_tax_modifier = 0.22
+		trade_route_value = 6.5
+		economy_techpoints = 0.07
+		garrison_size = 0.08
+	}
+	free_company_headquarters = {
+		desc = free_company_headquarters_desc
+		prestige_cost = 3200
+		build_time = 2500
+		ai_creation_factor = 110
+		upgrades_from = elite_guard_barracks
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 7 }
+		tradevalue = 170
+		local_tax_modifier = 4
+		garrison_size = 2.8
+		military_techpoints = 1
+		city_tax_modifier = 1
+		monthly_character_prestige = 0.35
+		vassal_opinion = 10
+	}
+	delegation_courtyard = {
+		desc = delegation_courtyard_desc
+		gold_cost = 3200
+		build_time = 1700
+		ai_creation_factor = 107
+		upgrades_from = diplomatic_academy
+		prerequisites = { diplomatic_academy }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 30
+		local_tax_modifier = 0.42
+		economy_techpoints = 0.16
+		vassal_opinion = 3
+	}
+	bmop_black_market_syndicate = {
+		desc = bmop_black_market_syndicate_desc
+		prestige_cost = 2500
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = bmop_ciphered_exchange
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 128
+		trade_route_value = 56
+		local_tax_modifier = 0.5
+		economy_techpoints = 0.18
+		vassal_opinion = 3
+		monthly_character_prestige = 0.2
+	}
+	caravanserai = {
+		desc = caravanserai_desc
+		gold_cost = 2500
+		build_time = 1000
+		ai_creation_factor = 98
+		upgrades_from = foreign_quarter
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 24
+		trade_route_value = 2
+		garrison_size = 0.05
+		economy_techpoints = 0.1
+	}
+	enclosed_harbor = {
+		desc = enclosed_harbor_desc
+		gold_cost = 2100
+		build_time = 720
+		ai_creation_factor = 97
+		upgrades_from = cargo_crane_wharf
+		port = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		tradevalue = 20
+		local_tax_modifier = 0.3
+		trade_route_value = 9
+		economy_techpoints = 0.1
+		garrison_size = 0.1
+	}
+	bmop_underground_bazaar = {
+		desc = bmop_underground_bazaar_desc
+		gold_cost = 2000
+		build_time = 750
+		ai_creation_factor = 90
+		upgrades_from = bmop_hidden_tunnel_network
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		tradevalue = 16
+		trade_route_value = 7
+		local_tax_modifier = 0.1
+		economy_techpoints = 0.03
+	}
+	mercenary_quarters = {
+		desc = mercenary_quarters_desc
+		gold_cost = 2000
+		build_time = 500
+		ai_creation_factor = 88
+		upgrades_from = militia_drill_yard
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		tradevalue = 7
+		local_tax_modifier = 0.16
+		garrison_size = 0.3
+		military_techpoints = 0.025
+	}
+	customs_house = {
+		desc = customs_house_desc
+		gold_cost = 2000
+		build_time = 1000
+		ai_creation_factor = 95
+		upgrades_from = excise_office
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 18
+		local_tax_modifier = 0.28
+		city_tax_modifier = 0.1
+		economy_techpoints = 0.07
+	}
+	festival_grounds = {
+		desc = festival_grounds_desc
+		prestige_cost = 1800
+		build_time = 3800
+		ai_creation_factor = 102
+		upgrades_from = exotic_goods_pavilion
+		prerequisites = { exotic_goods_pavilion }
+		trigger = { TECH_CONSTRUCTION = 3 }
+		tradevalue = 80
+		local_tax_modifier = 0.5
+		city_tax_modifier = 0.3
+		trade_route_value = 24
+		monthly_character_prestige = 0.25
+	}
+	relay_station = {
+		desc = relay_station_desc
+		gold_cost = 1800
+		build_time = 800
+		ai_creation_factor = 108
+		upgrades_from = freight_weighing_house
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 16
+		trade_route_value = 8
+		local_tax_modifier = 0.32
+		economy_techpoints = 0.16
+		global_movement_speed = 0.03
+	}
+	diplomatic_academy = {
+		desc = diplomatic_academy_desc
+		gold_cost = 1600
+		build_time = 1250
+		ai_creation_factor = 102
+		upgrades_from = treaty_drafting_chamber
+		prerequisites = { treaty_drafting_chamber }
+		trigger = { TECH_CONSTRUCTION = 2 }
+		tradevalue = 18
+		local_tax_modifier = 0.27
+		culture_techpoints = 0.22
+		tech_growth_modifier_culture = 0.06
+		monthly_character_prestige = 0.1
+	}
+	covered_marketplace = {
+		desc = covered_marketplace_desc
+		gold_cost = 1600
+		build_time = 1200
+		ai_creation_factor = 82
+		upgrades_from = arcaded_bazaar
+		prerequisites = { arcaded_bazaar }
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 14
+		local_tax_modifier = 0.14
+		city_tax_modifier = 0.06
+		trade_route_value = 4
+		economy_techpoints = 0.06
+	}
+	banking_coin_minting_workshop = {
+		desc = banking_coin_minting_workshop_desc
+		gold_cost = 1600
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = banking_ledger_office
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		tradevalue = 14
+		local_tax_modifier = 0.16
+		economy_techpoints = 0.06
+		trade_route_value = 1.5
+	}
+	granary_annex = {
+		desc = granary_annex_desc
+		gold_cost = 1500
+		build_time = 1100
+		ai_creation_factor = 90
+		upgrades_from = stone_warehouse
+		prerequisites = { stone_warehouse }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		tradevalue = 11
+		local_tax_modifier = 0.13
+		trade_route_value = 4
+		economy_techpoints = 0.03
+		global_winter_supply = 0.05
+	}
+	royal_charter_market = {
+		desc = royal_charter_market_desc
+		piety_cost = 1300
+		build_time = 4400
+		ai_creation_factor = 108
+		upgrades_from = festival_grounds
+		prerequisites = { festival_grounds }
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		tradevalue = 120
+		local_tax_modifier = 0.7
+		city_tax_modifier = 0.45
+		trade_route_value = 36
+		liege_prestige = 0.5
+	}
+	foreign_quarter = {
+		desc = foreign_quarter_desc
+		gold_cost = 1200
+		build_time = 600
+		ai_creation_factor = 92
+		upgrades_from = trade_guildhouse
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 12
+		local_tax_modifier = 0.2
+		culture_techpoints = 0.05
+	}
+	excise_office = {
+		desc = excise_office_desc
+		gold_cost = 1000
+		build_time = 720
+		ai_creation_factor = 90
+		upgrades_from = inspection_station
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		tradevalue = 9
+		local_tax_modifier = 0.16
+		city_tax_modifier = 0.06
+		economy_techpoints = 0.03
+	}
+	bmop_hidden_tunnel_network = {
+		desc = bmop_hidden_tunnel_network_desc
+		gold_cost = 1000
+		build_time = 500
+		ai_creation_factor = 85
+		upgrades_from = bmop_fenced_goods_cellar
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		tradevalue = 8
+		trade_route_value = 3.5
+		garrison_size = 0.1
+	}
+	bmop_ciphered_exchange = {
+		desc = bmop_ciphered_exchange_desc
+		prestige_cost = 1000
+		build_time = 1400
+		ai_creation_factor = 105
+		upgrades_from = bmop_shadow_brokers_lair
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		tradevalue = 64
+		trade_route_value = 28
+		local_tax_modifier = 0.3
+		economy_techpoints = 0.12
+		vassal_opinion = 2
+	}
+	freight_weighing_house = {
+		desc = freight_weighing_house_desc
+		gold_cost = 900
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = caravan_muster_point
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		tradevalue = 8
+		trade_route_value = 4
+		local_tax_modifier = 0.16
+		economy_techpoints = 0.08
+	}
+	militia_drill_yard = {
+		desc = militia_drill_yard_desc
+		gold_cost = 850
+		build_time = 340
+		ai_creation_factor = 82
+		upgrades_from = retainer_barracks
+		scouting = yes
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		tradevalue = 3.5
+		local_tax_modifier = 0.08
+		garrison_size = 0.18
+		military_techpoints = 0.01
+	}
+	treaty_drafting_chamber = {
+		desc = treaty_drafting_chamber_desc
+		gold_cost = 800
+		build_time = 900
+		ai_creation_factor = 96
+		upgrades_from = foreign_affairs_hall
+		prerequisites = { foreign_affairs_hall }
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		tradevalue = 11
+		local_tax_modifier = 0.18
+		culture_techpoints = 0.15
+		economy_techpoints = 0.08
+	}
+	banking_ledger_office = {
+		desc = banking_ledger_office_desc
+		gold_cost = 800
+		build_time = 650
+		ai_creation_factor = 85
+		upgrades_from = banking_secured_strongbox
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 7
+		local_tax_modifier = 0.08
+		economy_techpoints = 0.03
+	}
+	pier_network = {
+		desc = pier_network_desc
+		gold_cost = 750
+		build_time = 500
+		ai_creation_factor = 88
+		upgrades_from = harbormasters_post
+		port = yes
+		trigger = { TECH_CONSTRUCTION = 2 }
+		tradevalue = 7
+		local_tax_modifier = 0.1
+		trade_route_value = 3.5
+		economy_techpoints = 0.03
+	}
+	arcaded_bazaar = {
+		desc = arcaded_bazaar_desc
+		gold_cost = 750
+		build_time = 700
+		ai_creation_factor = 74
+		upgrades_from = permanent_market_stalls
+		prerequisites = { permanent_market_stalls }
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 7
+		local_tax_modifier = 0.07
+		city_tax_modifier = 0.03
+		trade_route_value = 2
+		economy_techpoints = 0.03
+	}
+	stone_warehouse = {
+		desc = stone_warehouse_desc
+		gold_cost = 700
+		build_time = 820
+		ai_creation_factor = 82
+		upgrades_from = timber_storehouse
+		prerequisites = { timber_storehouse }
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 5.5
+		local_tax_modifier = 0.07
+		trade_route_value = 2.5
+		garrison_size = 0.05
+	}
+	trade_guildhouse = {
+		desc = trade_guildhouse_desc
+		gold_cost = 600
+		build_time = 390
+		ai_creation_factor = 85
+		upgrades_from = merchant_hostel
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 6
+		local_tax_modifier = 0.1
+		economy_techpoints = 0.025
+	}
+	inspection_station = {
+		desc = inspection_station_desc
+		gold_cost = 550
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = tax_collectors_booth
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 4
+		local_tax_modifier = 0.08
+		city_tax_modifier = 0.03
+	}
+	caravan_muster_point = {
+		desc = caravan_muster_point_desc
+		gold_cost = 500
+		build_time = 420
+		ai_creation_factor = 92
+		upgrades_from = stable_yard
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 4
+		trade_route_value = 2
+		local_tax_modifier = 0.08
+		max_population_mult = 0.04
+	}
+	bmop_fenced_goods_cellar = {
+		desc = bmop_fenced_goods_cellar_desc
+		gold_cost = 500
+		build_time = 350
+		ai_creation_factor = 80
+		upgrades_from = bmop_smugglers_den
+		trigger = { TECH_CONSTRUCTION = 1 }
+		local_tax_modifier = 0.08
+		tradevalue = 4
+		trade_route_value = 2
+		garrison_size = 0.05
+	}
+	retainer_barracks = {
+		desc = retainer_barracks_desc
+		gold_cost = 360
+		build_time = 240
+		ai_creation_factor = 75
+		upgrades_from = guardhouse
+		scouting = yes
+		tradevalue = 2
+		local_tax_modifier = 0.04
+		garrison_size = 0.1
+	}
+	permanent_market_stalls = {
+		desc = permanent_market_stalls_desc
+		gold_cost = 350
+		build_time = 400
+		ai_creation_factor = 68
+		upgrades_from = stallholder_alley
+		prerequisites = { stallholder_alley }
+		tradevalue = 3.5
+		local_tax_modifier = 0.035
+		city_tax_modifier = 0.02
+		trade_route_value = 1
+	}
+	banking_secured_strongbox = {
+		desc = banking_secured_strongbox_desc
+		gold_cost = 350
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = banking_counting_room
+		tradevalue = 3.5
+		local_tax_modifier = 0.04
+		garrison_size = 0.02
+	}
+	stone_quay = {
+		desc = stone_quay_desc
+		gold_cost = 320
+		build_time = 350
+		ai_creation_factor = 80
+		upgrades_from = wooden_jetty
+		port = yes
+		tradevalue = 2
+		local_tax_modifier = 0.04
+		trade_route_value = 1
+		economy_techpoints = 0.015
+	}
+	timber_storehouse = {
+		desc = timber_storehouse_desc
+		gold_cost = 300
+		build_time = 500
+		ai_creation_factor = 74
+		upgrades_from = covered_market_shed
+		prerequisites = { covered_market_shed }
+		tradevalue = 2.8
+		local_tax_modifier = 0.035
+		trade_route_value = 1.2
+		economy_techpoints = 0.01
+	}
+	tax_collectors_booth = {
+		desc = tax_collectors_booth_desc
+		gold_cost = 300
+		build_time = 330
+		ai_creation_factor = 70
+		upgrades_from = guarded_checkpoint
+		tradevalue = 2
+		local_tax_modifier = 0.04
+		city_tax_modifier = 0.015
+	}
+	ambassadors_suite = {
+		desc = ambassadors_suite_desc
+		gold_cost = 250
+		build_time = 410
+		ai_creation_factor = 75
+		upgrades_from = envoy_reception_room
+		prerequisites = { envoy_reception_room }
+		tradevalue = 2.7
+		local_tax_modifier = 0.04
+		monthly_character_prestige = 0.05
+	}
+	bmop_smugglers_den = {
+		desc = bmop_smugglers_den_desc
+		gold_cost = 250
+		build_time = 220
+		ai_creation_factor = 75
+		upgrades_from = bmop_secret_storefront
+		local_tax_modifier = 0.04
+		tradevalue = 2
+		trade_route_value = 1
+	}
+	foreign_affairs_hall = {
+		desc = foreign_affairs_hall_desc
+		piety_cost = 250
+		build_time = 650
+		ai_creation_factor = 90
+		upgrades_from = translation_office
+		prerequisites = { translation_office }
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		tradevalue = 7.5
+		local_tax_modifier = 0.12
+		culture_techpoints = 0.1
+		vassal_opinion = 2
+	}
+	merchant_hostel = {
+		desc = merchant_hostel_desc
+		gold_cost = 250
+		build_time = 210
+		ai_creation_factor = 79
+		upgrades_from = travelers_inn
+		tradevalue = 3
+		local_tax_modifier = 0.05
+		trade_route_value = 0.5
+	}
+	stable_yard = {
+		desc = stable_yard_desc
+		gold_cost = 250
+		build_time = 320
+		ai_creation_factor = 80
+		upgrades_from = wagon_shed
+		tradevalue = 2
+		local_tax_modifier = 0.04
+		trade_route_value = 1
+		max_population_mult = 0.02
+	}
+	beacon_tower_docks = {
+		desc = beacon_tower_docks_desc
+		piety_cost = 220
+		build_time = 900
+		ai_creation_factor = 102
+		upgrades_from = enclosed_harbor
+		port = yes
+		trigger = { TECH_NAVAL = 2 }
+		tradevalue = 30
+		local_tax_modifier = 0.45
+		trade_route_value = 13.5
+		economy_techpoints = 0.15
+		garrison_size = 0.15
+	}
+	cargo_crane_wharf = {
+		desc = cargo_crane_wharf_desc
+		prestige_cost = 200
+		build_time = 600
+		ai_creation_factor = 92
+		upgrades_from = pier_network
+		port = yes
+		trigger = { TECH_TRADE_PRACTICES = 3 }
+		tradevalue = 12
+		local_tax_modifier = 0.18
+		trade_route_value = 5.5
+		economy_techpoints = 0.05
+		city_tax_modifier = 0.1
+	}
+	translation_office = {
+		desc = translation_office_desc
+		prestige_cost = 150
+		build_time = 500
+		ai_creation_factor = 82
+		upgrades_from = ambassadors_suite
+		prerequisites = { ambassadors_suite }
+		trigger = { TECH_CONSTRUCTION = 1 }
+		tradevalue = 4.5
+		local_tax_modifier = 0.07
+		culture_techpoints = 0.05
+	}
+	stallholder_alley = {
+		desc = stallholder_alley_desc
+		gold_cost = 150
+		build_time = 250
+		ai_creation_factor = 62
+		upgrades_from = open_trading_square
+		prerequisites = { open_trading_square }
+		tradevalue = 1.5
+		local_tax_modifier = 0.02
+		city_tax_modifier = 0.01
+	}
+	banking_counting_room = {
+		desc = banking_counting_room_desc
+		gold_cost = 150
+		build_time = 320
+		ai_creation_factor = 70
+		upgrades_from = banking_moneychangers_table
+		tradevalue = 1.5
+		local_tax_modifier = 0.02
+		economy_techpoints = 0.01
+	}
+	guardhouse = {
+		desc = guardhouse_desc
+		gold_cost = 150
+		build_time = 160
+		ai_creation_factor = 70
+		upgrades_from = watchmans_post
+		scouting = yes
+		tradevalue = 1
+		local_tax_modifier = 0.02
+		garrison_size = 0.05
+	}
+	guarded_checkpoint = {
+		desc = guarded_checkpoint_desc
+		gold_cost = 125
+		build_time = 220
+		ai_creation_factor = 65
+		upgrades_from = toll_gate
+		tradevalue = 1
+		local_tax_modifier = 0.025
+		garrison_size = 0.03
+	}
+	envoy_reception_room = {
+		desc = envoy_reception_room_desc
+		gold_cost = 120
+		build_time = 270
+		ai_creation_factor = 68
+		upgrades_from = letter_writers_kiosk
+		prerequisites = { letter_writers_kiosk }
+		tradevalue = 1.2
+		local_tax_modifier = 0.02
+		vassal_opinion = 1
+	}
+	wagon_shed = {
+		desc = wagon_shed_desc
+		gold_cost = 120
+		build_time = 250
+		ai_creation_factor = 70
+		upgrades_from = pack_animal_pen
+		tradevalue = 1
+		local_tax_modifier = 0.02
+		trade_route_value = 0.5
+	}
+	covered_market_shed = {
+		desc = covered_market_shed_desc
+		gold_cost = 120
+		build_time = 320
+		ai_creation_factor = 66
+		upgrades_from = open_goods_yard
+		prerequisites = { open_goods_yard }
+		tradevalue = 1.2
+		local_tax_modifier = 0.02
+		trade_route_value = 0.5
+	}
+	wooden_jetty = {
+		desc = wooden_jetty_desc
+		gold_cost = 120
+		build_time = 260
+		ai_creation_factor = 70
+		upgrades_from = rudimentary_berth
+		port = yes
+		tradevalue = 1
+		local_tax_modifier = 0.02
+		trade_route_value = 0.5
+	}
+	harbormasters_post = {
+		desc = harbormasters_post_desc
+		prestige_cost = 100
+		build_time = 420
+		ai_creation_factor = 85
+		upgrades_from = stone_quay
+		port = yes
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		tradevalue = 3.5
+		local_tax_modifier = 0.06
+		trade_route_value = 2
+		tech_growth_modifier = 0.01
+	}
+	bmop_secret_storefront = {
+		desc = bmop_secret_storefront_desc
+		gold_cost = 100
+		build_time = 150
+		ai_creation_factor = 70
+		upgrades_from = bmop_tavern_backroom
+		local_tax_modifier = 0.02
+		tradevalue = 1
+		trade_route_value = 0.5
+	}
+	travelers_inn = {
+		desc = travelers_inn_desc
+		gold_cost = 80
+		build_time = 120
+		ai_creation_factor = 72
+		upgrades_from = wayfarers_lean_to
+		tradevalue = 1.5
+		local_tax_modifier = 0.025
+		trade_route_value = 0.25
+	}
+	open_trading_square = {
+		desc = open_trading_square_desc
+		gold_cost = 65
+		build_time = 120
+		ai_creation_factor = 60
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	watchmans_post = {
+		desc = watchmans_post_desc
+		gold_cost = 60
+		build_time = 120
+		ai_creation_factor = 65
+		scouting = yes
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	letter_writers_kiosk = {
+		desc = letter_writers_kiosk_desc
+		gold_cost = 60
+		build_time = 180
+		ai_creation_factor = 62
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	pack_animal_pen = {
+		desc = pack_animal_pen_desc
+		gold_cost = 60
+		build_time = 180
+		ai_creation_factor = 62
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	rudimentary_berth = {
+		desc = rudimentary_berth_desc
+		gold_cost = 60
+		build_time = 180
+		ai_creation_factor = 65
+		port = yes
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	toll_gate = {
+		desc = toll_gate_desc
+		gold_cost = 50
+		build_time = 120
+		ai_creation_factor = 60
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	open_goods_yard = {
+		desc = open_goods_yard_desc
+		gold_cost = 50
+		build_time = 180
+		ai_creation_factor = 60
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	banking_moneychangers_table = {
+		desc = banking_moneychangers_table_desc
+		gold_cost = 50
+		build_time = 180
+		ai_creation_factor = 65
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	bmop_tavern_backroom = {
+		desc = bmop_tavern_backroom_desc
+		gold_cost = 40
+		build_time = 90
+		ai_creation_factor = 65
+		local_tax_modifier = 0.01
+		tradevalue = 0.5
+	}
+	wayfarers_lean_to = {
+		desc = wayfarers_lean_to_desc
+		gold_cost = 25
+		build_time = 60
+		ai_creation_factor = 65
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+}

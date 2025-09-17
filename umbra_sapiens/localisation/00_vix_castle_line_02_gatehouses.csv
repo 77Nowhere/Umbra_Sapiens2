@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ca_militia_barracks_1;Wooden Gateway;;;;;x
+ca_militia_barracks_1_desc;A rough, hastily constructed timber gateway with a crude palisade and watch post, suitable for frontier defense.;;;;;x
+ca_militia_barracks_2;Guarded Portal;;;;;x
+ca_militia_barracks_2_desc;A reinforced wooden gate flanked by simple guard huts, allowing for more organized watch and control of passage.;;;;;x
+ca_militia_barracks_3;Stone Gate;;;;;x
+ca_militia_barracks_3_desc;A sturdy stone gate replaces the old wood, with a small gatehouse atop, offering better protection and control.;;;;;x
+ca_militia_barracks_4;Drawbridge Entry;;;;;x
+ca_militia_barracks_4_desc;A stone gatehouse with a wooden drawbridge spanning a defensive ditch or moat, increasing security and tactical options.;;;;;x
+vix_portcullised_gatehouse;Portcullised Gatehouse;;;;;x
+vix_portcullised_gatehouse_desc;A formidable gatehouse equipped with a heavy iron portcullis and improved murder holes, providing superior defense.;;;;;x
+vix_flanking_towers;Flanking Towers;;;;;x
+vix_flanking_towers_desc;Large stone towers flank the gatehouse, allowing defenders to enfilade attackers and greatly strengthen the gates security.;;;;;x
+vix_murder_hole_passage;Murder Hole Passage;;;;;x
+vix_murder_hole_passage_desc;A fortified passage between double gates, lined with murder holes and arrow slits, offering devastating resistance to attackers.;;;;;x
+vix_reinforced_gatehouse;Reinforced Gatehouse;;;;;x
+vix_reinforced_gatehouse_desc;A multi-storied, heavily buttressed gatehouse with layered defenses and fortified living quarters for elite guards.;;;;;x
+vix_barbican_complex;Barbican Complex;;;;;x
+vix_barbican_complex_desc;A formidable outer barbican, with its own walls and towers, creating a deadly killing zone before the main gate.;;;;;x
+vix_fortified_gate_bastion;Fortified Gate Bastion;;;;;x
+vix_fortified_gate_bastion_desc;An immense, state-of-the-art gate bastion with multiple layers of defense, garrisoned by seasoned troops and bristling with deadly defenses.;;;;;x

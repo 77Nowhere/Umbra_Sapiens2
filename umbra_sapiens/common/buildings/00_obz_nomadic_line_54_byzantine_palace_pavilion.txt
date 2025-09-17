@@ -1,0 +1,177 @@
+nomad = {
+	obz_byzantine_nomad_curtained_tent = {
+		desc = obz_byzantine_nomad_curtained_tent_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	obz_byzantine_nomad_mosaic_floor_hut = {
+		desc = obz_byzantine_nomad_mosaic_floor_hut_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = obz_byzantine_nomad_curtained_tent
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.178
+	}
+	obz_byzantine_nomad_silk_draped_shelter = {
+		desc = obz_byzantine_nomad_silk_draped_shelter_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 75
+		upgrades_from = obz_byzantine_nomad_mosaic_floor_hut
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	obz_byzantine_nomad_columned_pavilion = {
+		desc = obz_byzantine_nomad_columned_pavilion_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 80
+		upgrades_from = obz_byzantine_nomad_silk_draped_shelter
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	obz_byzantine_nomad_gilded_portico = {
+		desc = obz_byzantine_nomad_gilded_portico_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = obz_byzantine_nomad_columned_pavilion
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.355
+	}
+	obz_byzantine_nomad_domed_chamber = {
+		desc = obz_byzantine_nomad_domed_chamber_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 90
+		upgrades_from = obz_byzantine_nomad_gilded_portico
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 160
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+	obz_byzantine_nomad_imperial_reception_hall = {
+		desc = obz_byzantine_nomad_imperial_reception_hall_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 95
+		upgrades_from = obz_byzantine_nomad_domed_chamber
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 320
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+	obz_byzantine_nomad_throne_room = {
+		desc = obz_byzantine_nomad_throne_room_desc
+		gold_cost = 22500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = obz_byzantine_nomad_imperial_reception_hall
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 640
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1.5
+	}
+	obz_byzantine_nomad_courtiers_gallery = {
+		desc = obz_byzantine_nomad_courtiers_gallery_desc
+		gold_cost = 45000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 105
+		upgrades_from = obz_byzantine_nomad_throne_room
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1200
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		tech_growth_modifier_cultural = 0.2
+	}
+	obz_byzantine_nomad_grand_palace = {
+		desc = obz_byzantine_nomad_grand_palace_desc
+		gold_cost = 90000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = obz_byzantine_nomad_courtiers_gallery
+		potential = {
+			culture_group = byzantine
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 2500
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1
+		tech_growth_modifier_cultural = 0.5
+	}
+}

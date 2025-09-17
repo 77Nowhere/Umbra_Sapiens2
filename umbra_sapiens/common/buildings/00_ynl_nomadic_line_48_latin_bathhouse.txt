@@ -1,0 +1,205 @@
+nomad = {
+	ynl_latin_bathhouse_cold_plunge_pool = {
+		desc = ynl_latin_bathhouse_cold_plunge_pool_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 60
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	ynl_latin_bathhouse_steam_tent = {
+		desc = ynl_latin_bathhouse_steam_tent_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 65
+		upgrades_from = ynl_latin_bathhouse_cold_plunge_pool
+		prerequisites = {
+			ynl_latin_bathhouse_cold_plunge_pool
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	ynl_latin_bathhouse_stone_tub_hut = {
+		desc = ynl_latin_bathhouse_stone_tub_hut_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = ynl_latin_bathhouse_steam_tent
+		prerequisites = {
+			ynl_latin_bathhouse_steam_tent
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	ynl_latin_bathhouse_heated_floor_room = {
+		desc = ynl_latin_bathhouse_heated_floor_room_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = ynl_latin_bathhouse_stone_tub_hut
+		prerequisites = {
+			ynl_latin_bathhouse_stone_tub_hut
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	ynl_latin_bathhouse_hot_spring_pavilion = {
+		desc = ynl_latin_bathhouse_hot_spring_pavilion_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 90
+		upgrades_from = ynl_latin_bathhouse_heated_floor_room
+		prerequisites = {
+			ynl_latin_bathhouse_heated_floor_room
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		supply_limit = 0.03
+	}
+	ynl_latin_bathhouse_warm_bath_hall = {
+		desc = ynl_latin_bathhouse_warm_bath_hall_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 863
+		ai_creation_factor = 98
+		upgrades_from = ynl_latin_bathhouse_hot_spring_pavilion
+		prerequisites = {
+			ynl_latin_bathhouse_hot_spring_pavilion
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		supply_limit = 0.06
+	}
+	ynl_latin_bathhouse_mosaic_chamber = {
+		desc = ynl_latin_bathhouse_mosaic_chamber_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 105
+		upgrades_from = ynl_latin_bathhouse_warm_bath_hall
+		prerequisites = {
+			ynl_latin_bathhouse_warm_bath_hall
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		supply_limit = 0.09
+	}
+	ynl_latin_bathhouse_frigidarium = {
+		desc = ynl_latin_bathhouse_frigidarium_desc
+		gold_cost = 4650
+		extra_tech_building_start = 999
+		build_time = 1650
+		ai_creation_factor = 108
+		upgrades_from = ynl_latin_bathhouse_mosaic_chamber
+		prerequisites = {
+			ynl_latin_bathhouse_mosaic_chamber
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.04
+		supply_limit = 0.12
+		land_morale = 0.02
+	}
+	ynl_latin_bathhouse_tepidarium = {
+		desc = ynl_latin_bathhouse_tepidarium_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 110
+		upgrades_from = ynl_latin_bathhouse_frigidarium
+		prerequisites = {
+			ynl_latin_bathhouse_frigidarium
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.04
+		supply_limit = 0.16
+		global_movement_speed = 0.03
+	}
+	ynl_latin_bathhouse_grand_bathhouse = {
+		desc = ynl_latin_bathhouse_grand_bathhouse_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = ynl_latin_bathhouse_tepidarium
+		prerequisites = {
+			ynl_latin_bathhouse_tepidarium
+		}
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		max_manpower_mult = 0.06
+		supply_limit = 0.22
+		global_movement_speed = 0.05
+	}
+}

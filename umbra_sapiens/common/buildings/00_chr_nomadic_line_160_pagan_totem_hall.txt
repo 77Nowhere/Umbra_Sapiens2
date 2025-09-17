@@ -1,0 +1,174 @@
+nomad = {
+	chr_wooden_totem = {
+		desc = chr_wooden_totem_desc
+		piety_cost = 38
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 60
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	chr_carved_idol = {
+		desc = chr_carved_idol_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 68
+		upgrades_from = chr_wooden_totem
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.12
+		vassal_opinion = 1
+	}
+	chr_totem_pavilion = {
+		desc = chr_totem_pavilion_desc
+		piety_cost = 188
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 75
+		upgrades_from = chr_carved_idol
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.22
+		max_population_mult = 0.005
+	}
+	chr_spirit_room = {
+		desc = chr_spirit_room_desc
+		piety_cost = 300
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 82
+		upgrades_from = chr_totem_pavilion
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.35
+		vassal_opinion = 2
+	}
+	chr_priests_chamber = {
+		desc = chr_priests_chamber_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 88
+		upgrades_from = chr_spirit_room
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.5
+		max_population_mult = 0.005
+	}
+	chr_sanctified_hall = {
+		desc = chr_sanctified_hall_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 94
+		upgrades_from = chr_priests_chamber
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.8
+		vassal_opinion = 3
+	}
+	chr_ancestor_hall = {
+		desc = chr_ancestor_hall_desc
+		piety_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 100
+		upgrades_from = chr_sanctified_hall
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		max_population_mult = 0.005
+		vassal_opinion = 4
+	}
+	chr_blessed_pavilion = {
+		desc = chr_blessed_pavilion_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 1163
+		ai_creation_factor = 104
+		upgrades_from = chr_ancestor_hall
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		max_population_mult = 0.005
+		vassal_opinion = 5
+	}
+	chr_totem_sanctuary = {
+		desc = chr_totem_sanctuary_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 108
+		upgrades_from = chr_blessed_pavilion
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		max_population_mult = 0.005
+		vassal_opinion = 7
+	}
+	chr_pagan_totem_hall = {
+		desc = chr_pagan_totem_hall_desc
+		piety_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = chr_totem_sanctuary
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		max_population_mult = 0.010
+		vassal_opinion = 10
+	}
+}

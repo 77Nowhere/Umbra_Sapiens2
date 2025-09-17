@@ -1,0 +1,172 @@
+nomad = {
+	nvv_baltic_wooden_palisade = {
+		desc = nvv_baltic_wooden_palisade_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.1
+		clan_sentiment = 1
+	}
+	nvv_baltic_earthen_rampart = {
+		desc = nvv_baltic_earthen_rampart_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 70
+		upgrades_from = nvv_baltic_wooden_palisade
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.15
+		max_population_mult = 0.005
+	}
+	nvv_baltic_hilltop_watch = {
+		desc = nvv_baltic_hilltop_watch_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 75
+		upgrades_from = nvv_baltic_earthen_rampart
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.2
+		global_movement_speed = 0.03
+	}
+	nvv_baltic_stone_reinforcement = {
+		desc = nvv_baltic_stone_reinforcement_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 80
+		upgrades_from = nvv_baltic_hilltop_watch
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.3
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	nvv_baltic_stockaded_gate = {
+		desc = nvv_baltic_stockaded_gate_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = nvv_baltic_stone_reinforcement
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.45
+		levy_size = 0.08
+		clan_sentiment = 1
+	}
+	nvv_baltic_timber_tower = {
+		desc = nvv_baltic_timber_tower_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 90
+		upgrades_from = nvv_baltic_stockaded_gate
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.6
+		archers_offensive = 0.06
+		global_movement_speed = 0.05
+	}
+	nvv_baltic_defended_hall = {
+		desc = nvv_baltic_defended_hall_desc
+		gold_cost = 2700
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 96
+		upgrades_from = nvv_baltic_timber_tower
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.8
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	nvv_baltic_chiefs_bastion = {
+		desc = nvv_baltic_chiefs_bastion_desc
+		gold_cost = 5400
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 102
+		upgrades_from = nvv_baltic_defended_hall
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 1.05
+		max_manpower_mult = 0.02
+		levy_size = 0.12
+		clan_sentiment = 1
+	}
+	nvv_baltic_high_watchfort = {
+		desc = nvv_baltic_high_watchfort_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 108
+		upgrades_from = nvv_baltic_chiefs_bastion
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 1.35
+		levy_size = 0.18
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	nvv_baltic_hillfort = {
+		desc = nvv_baltic_hillfort_desc
+		gold_cost = 21000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 115
+		upgrades_from = nvv_baltic_high_watchfort
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 1.7
+		levy_size = 0.25
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+}

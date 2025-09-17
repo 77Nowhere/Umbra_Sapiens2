@@ -1,0 +1,143 @@
+title_decisions = {
+	create_vassal_pl = {
+		#diplomacy_icon = GFX_create_vassal_dec_ic
+		potential = {
+			holder = FROM
+			FROM = {
+				AI = no
+			}
+			NOT = { tier = BARON }
+		}
+		allow = {
+			conditional_tooltip = {
+				limit = {
+					is_capital = yes
+				}
+			capital_holding = {
+				NOT = { is_capital = FROM }
+			}
+			}
+			can_be_given_away = yes
+			#is_allowed_holding_type = FROM
+			conditional_tooltip = {
+				limit = {
+					tier = COUNT
+				}
+				custom_tooltip = {
+				text = crvalidcounty
+				AND = {
+					tier = COUNT
+					OR = {
+						is_allowed_holding_type = FROM
+						any_de_jure_vassal_title = {
+							is_allowed_holding_type = FROM
+							can_be_given_away = yes
+							holder = FROM
+						}
+					}
+				}
+				}
+			}
+			conditional_tooltip = {
+				limit = {
+					NOT = { tier = COUNT }
+				}
+				custom_tooltip = {
+				text = crvalidcountywithin
+				any_de_jure_vassal_title = {
+					can_be_given_away = yes
+					is_allowed_holding_type = FROM
+					holder = FROM
+					tier = COUNT
+				}
+				}
+			}
+			NOT = { tier = FROM }
+			#FROM = {
+			#	NOT = { is_capital = liege }
+			#}
+		}
+		effect = {
+		hidden_tooltip = {
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				culture = FROM
+				religion = FROM
+				female = FROM
+			}
+			ROOT = {
+				any_de_jure_vassal_title = {
+					limit = {
+						holder = FROM
+					}
+					gain_title = new_character
+				}
+			}
+			new_character = {
+				gain_title = ROOT
+			}
+			ROOT = {
+				any_de_jure_vassal = {
+					liege = new_character
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_republic = yes
+					}
+				}
+				new_character = {
+					set_government_type = republic_government
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_feudal = yes
+					}
+				}
+				new_character = {
+					set_government_type = feudal_government
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_theocracy = yes
+					}
+				}
+				new_character = {
+					set_government_type = theocracy_government
+				}
+			}
+			if = {
+				limit = {
+					always = no
+					new_character = {
+						OR = {
+							AND = {
+								is_republic = yes
+								any_demesne_title = {
+										NOT = { holding_type = city }
+								}
+							}
+							AND = {
+								is_theocracy = yes
+								any_demesne_title = {
+										NOT = { holding_type = temple }
+								}
+							}
+						}
+					}
+				}
+				new_character = {
+					set_government_type = feudal_government
+				}	
+				}
+			}
+		}
+		}
+	}
+}

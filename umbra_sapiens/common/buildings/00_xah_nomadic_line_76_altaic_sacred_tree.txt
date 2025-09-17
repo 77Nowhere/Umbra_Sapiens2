@@ -1,0 +1,173 @@
+nomad = {
+	xah_altaic_sapling_stand = {
+		desc = xah_altaic_sapling_stand_desc
+		piety_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.2
+	}
+	xah_altaic_ancestor_marker = {
+		desc = xah_altaic_ancestor_marker_desc
+		piety_cost = 53
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = xah_altaic_sapling_stand
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 2
+		liege_piety = 0.4
+	}
+	xah_altaic_prayer_tree = {
+		desc = xah_altaic_prayer_tree_desc
+		piety_cost = 113
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 75
+		upgrades_from = xah_altaic_ancestor_marker
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.7
+		church_opinion = 2
+	}
+	xah_altaic_spirit_shelter = {
+		desc = xah_altaic_spirit_shelter_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 82
+		upgrades_from = xah_altaic_prayer_tree
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 3
+		liege_piety = 1.4
+	}
+	xah_altaic_idol_pavilion = {
+		desc = xah_altaic_idol_pavilion_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 88
+		upgrades_from = xah_altaic_spirit_shelter
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.6
+		church_opinion = 5
+	}
+	xah_altaic_holy_grove = {
+		desc = xah_altaic_holy_grove_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 93
+		upgrades_from = xah_altaic_idol_pavilion
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		church_opinion = 8
+	}
+	xah_altaic_priests_hut = {
+		desc = xah_altaic_priests_hut_desc
+		piety_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 98
+		upgrades_from = xah_altaic_holy_grove
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		church_opinion = 12
+	}
+	xah_altaic_diviners_hall = {
+		desc = xah_altaic_diviners_hall_desc
+		piety_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 104
+		upgrades_from = xah_altaic_priests_hut
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 16
+		vassal_opinion = 5
+	}
+	xah_altaic_sacred_canopy = {
+		desc = xah_altaic_sacred_canopy_desc
+		piety_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 110
+		upgrades_from = xah_altaic_diviners_hall
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 22
+		vassal_opinion = 8
+	}
+	xah_altaic_tree_sanctuary = {
+		desc = xah_altaic_tree_sanctuary_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 115
+		upgrades_from = xah_altaic_sacred_canopy
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 35
+		vassal_opinion = 12
+	}
+}

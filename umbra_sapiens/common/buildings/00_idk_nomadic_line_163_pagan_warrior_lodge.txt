@@ -1,0 +1,178 @@
+nomad = {
+	idk_warrior_patch = {
+		desc = idk_warrior_patch_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.011
+	}
+	idk_training_circle = {
+		desc = idk_training_circle_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 68
+		upgrades_from = idk_warrior_patch
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		levy_size = 0.04
+		clan_sentiment = 1
+	}
+	idk_weapons_pavilion = {
+		desc = idk_weapons_pavilion_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 76
+		upgrades_from = idk_training_circle
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		levy_size = 0.08
+		manpower_growth = 0.030
+	}
+	idk_battlefield_tent = {
+		desc = idk_battlefield_tent_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 84
+		upgrades_from = idk_weapons_pavilion
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		levy_size = 0.14
+		garrison_size = 0.08
+	}
+	idk_command_stand = {
+		desc = idk_command_stand_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 96
+		upgrades_from = idk_battlefield_tent
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		levy_size = 0.3
+		garrison_size = 0.16
+		clan_sentiment = 1
+	}
+	idk_muster_hall = {
+		desc = idk_muster_hall_desc
+		gold_cost = 1275
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 104
+		upgrades_from = idk_command_stand
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		levy_size = 0.6
+		garrison_size = 0.32
+		clan_sentiment = 1
+	}
+	idk_elite_ground = {
+		desc = idk_elite_ground_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = idk_muster_hall
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 1
+		manpower_growth = 0.060
+	}
+	idk_champions_pavilion = {
+		desc = idk_champions_pavilion_desc
+		gold_cost = 4950
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 115
+		upgrades_from = idk_elite_ground
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 2
+		clan_sentiment = 1
+	}
+	idk_chiefs_chamber = {
+		desc = idk_chiefs_chamber_desc
+		gold_cost = 9600
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 120
+		upgrades_from = idk_champions_pavilion
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		levy_size = 3.6
+		garrison_size = 0.5
+		clan_sentiment = 1
+	}
+	idk_pagan_warrior_lodge = {
+		desc = idk_pagan_warrior_lodge_desc
+		gold_cost = 19200
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 125
+		upgrades_from = idk_chiefs_chamber
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		levy_size = 7
+		garrison_size = 1
+		clan_sentiment = 1
+	}
+}

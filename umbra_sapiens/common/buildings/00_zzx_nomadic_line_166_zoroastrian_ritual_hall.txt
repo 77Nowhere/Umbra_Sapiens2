@@ -1,0 +1,172 @@
+nomad = {
+	zzx_zoroastrian_ritual_stand = {
+		desc = zzx_zoroastrian_ritual_stand_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.25
+		clan_sentiment = 1
+	}
+	zzx_zoroastrian_wicker_fence = {
+		desc = zzx_zoroastrian_wicker_fence_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 68
+		upgrades_from = zzx_zoroastrian_ritual_stand
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.5
+		clan_sentiment = 1
+	}
+	zzx_zoroastrian_shrine_patch = {
+		desc = zzx_zoroastrian_shrine_patch_desc
+		piety_cost = 188
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 75
+		upgrades_from = zzx_zoroastrian_wicker_fence
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+	}
+	zzx_zoroastrian_priests_shelter = {
+		desc = zzx_zoroastrian_priests_shelter_desc
+		piety_cost = 375
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = zzx_zoroastrian_shrine_patch
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	zzx_zoroastrian_spirit_pavilion = {
+		desc = zzx_zoroastrian_spirit_pavilion_desc
+		piety_cost = 713
+		extra_tech_building_start = 999
+		build_time = 282
+		ai_creation_factor = 85
+		upgrades_from = zzx_zoroastrian_priests_shelter
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	zzx_zoroastrian_sanctified_room = {
+		desc = zzx_zoroastrian_sanctified_room_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = zzx_zoroastrian_spirit_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	zzx_zoroastrian_blessed_chamber = {
+		desc = zzx_zoroastrian_blessed_chamber_desc
+		piety_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 95
+		upgrades_from = zzx_zoroastrian_sanctified_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 6
+		vassal_opinion = 3
+	}
+	zzx_zoroastrian_diviners_hall = {
+		desc = zzx_zoroastrian_diviners_hall_desc
+		piety_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 100
+		upgrades_from = zzx_zoroastrian_blessed_chamber
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 8
+		vassal_opinion = 4
+	}
+	zzx_zoroastrian_holy_room = {
+		desc = zzx_zoroastrian_holy_room_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 105
+		upgrades_from = zzx_zoroastrian_diviners_hall
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 10
+		vassal_opinion = 6
+	}
+	zzx_zoroastrian_ritual_hall = {
+		desc = zzx_zoroastrian_ritual_hall_desc
+		piety_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = zzx_zoroastrian_holy_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 15
+		vassal_opinion = 8
+	}
+}

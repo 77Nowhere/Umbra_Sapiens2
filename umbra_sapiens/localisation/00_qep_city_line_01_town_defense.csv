@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ct_wall_1;Wooden Palisade;;;;;x
+ct_wall_1_desc;A basic defensive perimeter of sharpened logs and earthworks, hastily constructed to keep out raiders and wild beasts.;;;;;x
+ct_wall_2;Reinforced Gate;;;;;x
+ct_wall_2_desc;A sturdier timber gatehouse with iron bracing and a small guard post, deterring thieves and hostile incursions.;;;;;x
+ct_wall_3;Guard Tower;;;;;x
+ct_wall_3_desc;A wooden watchtower overlooking the approach to the town, improving surveillance and response to threats.;;;;;x
+ct_wall_4;Stone Rampart;;;;;x
+ct_wall_4_desc;A formidable stone wall replaces the old palisade, greatly improving the citys defenses and deterring would-be attackers.;;;;;x
+ct_wall_5;Moat Ditch;;;;;x
+ct_wall_5_desc;A deep ditch and flooded moat dug around the ramparts, making direct assault and siege works much more difficult.;;;;;x
+qep_outer_bailey_city_defense_6;Outer Bailey;;;;;x
+qep_outer_bailey_city_defense_6_desc;A fortified outer courtyard with barracks, workshops, and additional defensive walls, increasing both security and urban capacity.;;;;;x
+qep_machicolated_walls_city_defense_7;Machicolated Walls;;;;;x
+qep_machicolated_walls_city_defense_7_desc;High stone walls with machicolations, allowing defenders to repel assailants from above with arrows and stones.;;;;;x
+qep_inner_curtain_city_defense_8;Inner Curtain;;;;;x
+qep_inner_curtain_city_defense_8_desc;A second, higher, and thicker inner wall, designed to resist even the most determined siege engines.;;;;;x
+qep_defensive_bastion_city_defense_9;Defensive Bastion;;;;;x
+qep_defensive_bastion_city_defense_9_desc;Massive stone bastions anchor the citys walls, bristling with arrow slits and platforms for siege engines.;;;;;x
+qep_fortified_citadel_city_defense_10;Fortified Citadel;;;;;x
+qep_fortified_citadel_city_defense_10_desc;The heart of the city boasts a mighty citadel, serving as the final refuge and command center in times of siege.;;;;;x

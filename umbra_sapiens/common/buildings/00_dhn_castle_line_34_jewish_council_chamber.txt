@@ -1,0 +1,169 @@
+castle = {
+	dhn_community_room = {
+		desc = dhn_community_room_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.01
+		vassal_opinion = 1
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_meeting_hall = {
+		desc = dhn_meeting_hall_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 62
+		upgrades_from = dhn_community_room
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		vassal_opinion = 2
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_rabbinic_chamber = {
+		desc = dhn_rabbinic_chamber_desc
+		prestige_cost = 60
+		extra_tech_building_start = 999
+		build_time = 370
+		ai_creation_factor = 62
+		upgrades_from = dhn_great_hall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		garrison_size = 0.02
+		local_tax_modifier = 0.01
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_judicial_chamber = {
+		desc = dhn_judicial_chamber_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 520
+		ai_creation_factor = 65
+		upgrades_from = dhn_rabbinic_chamber
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		garrison_size = 0.04
+		local_tax_modifier = 0.015
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_council_chamber = {
+		desc = dhn_council_chamber_desc
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 65
+		upgrades_from = dhn_meeting_hall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.04
+		vassal_opinion = 3
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_stone_assembly_room = {
+		desc = dhn_stone_assembly_room_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 75
+		upgrades_from = dhn_council_chamber
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.08
+		vassal_opinion = 4
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_elders_hall = {
+		desc = dhn_elders_hall_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 85
+		upgrades_from = dhn_stone_assembly_room
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.13
+		vassal_opinion = 6
+		tech_growth_modifier = 0.02
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_community_assembly = {
+		desc = dhn_community_assembly_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = dhn_elders_hall
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.22
+		vassal_opinion = 9
+		tech_growth_modifier = 0.04
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_great_hall = {
+		desc = dhn_great_hall_desc
+		gold_cost = 3500
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = dhn_community_assembly
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 0.34
+		vassal_opinion = 15
+		tech_growth_modifier = 0.08
+		liege_prestige = 0.5
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+	dhn_grand_council_hall = {
+		desc = dhn_grand_council_hall_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = dhn_judicial_chamber
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 0.43
+		garrison_size = 0.26
+		local_tax_modifier = 0.04
+		liege_prestige = 1
+		potential = {
+			religion_group = jewish_group
+		}
+	}
+}

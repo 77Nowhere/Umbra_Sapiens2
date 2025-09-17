@@ -1,0 +1,177 @@
+nomad = {
+	boe_latin_library_scroll_chest = {
+		desc = boe_latin_library_scroll_chest_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	boe_latin_library_scribes_desk = {
+		desc = boe_latin_library_scribes_desk_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = boe_latin_library_scroll_chest
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	boe_latin_library_reading_alcove = {
+		desc = boe_latin_library_reading_alcove_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 74
+		upgrades_from = boe_latin_library_scribes_desk
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.1
+	}
+	boe_latin_library_stone_study = {
+		desc = boe_latin_library_stone_study_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = boe_latin_library_reading_alcove
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.2
+	}
+	boe_latin_library_scriptorium = {
+		desc = boe_latin_library_scriptorium_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 85
+		upgrades_from = boe_latin_library_stone_study
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_prestige = 0.35
+		tech_growth_modifier_cultural = 0.04
+	}
+	boe_latin_library_book_nook = {
+		desc = boe_latin_library_book_nook_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = boe_latin_library_scriptorium
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_prestige = 0.6
+		tech_growth_modifier_cultural = 0.07
+	}
+	boe_latin_library_copyists_hall = {
+		desc = boe_latin_library_copyists_hall_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 96
+		upgrades_from = boe_latin_library_book_nook
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		liege_prestige = 1
+		tech_growth_modifier_cultural = 0.12
+	}
+	boe_latin_library_scholars_room = {
+		desc = boe_latin_library_scholars_room_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 100
+		upgrades_from = boe_latin_library_copyists_hall
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		tech_growth_modifier_cultural = 0.2
+	}
+	boe_latin_library_archivists_library = {
+		desc = boe_latin_library_archivists_library_desc
+		gold_cost = 22500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 105
+		upgrades_from = boe_latin_library_scholars_room
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		tech_growth_modifier_cultural = 0.32
+	}
+	boe_latin_library_grand_latin_library = {
+		desc = boe_latin_library_grand_latin_library_desc
+		gold_cost = 45000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = boe_latin_library_archivists_library
+		potential = {
+			culture_group = latin_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_prestige = 1
+		tech_growth_modifier_cultural = 0.5
+		vassal_opinion = 5
+	}
+}

@@ -1,0 +1,188 @@
+nomad = {
+	dmu_wild_vine_patch_nomad_iberian = {
+		desc = dmu_wild_vine_patch_nomad_iberian_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+		nomad_tax_modifier = 0.089
+	}
+	dmu_trellised_vine_nomad_iberian = {
+		desc = dmu_trellised_vine_nomad_iberian_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 70
+		upgrades_from = dmu_wild_vine_patch_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.021
+		nomad_tax_modifier = 0.178
+		clan_sentiment = 1
+	}
+	dmu_harvest_shelter_nomad_iberian = {
+		desc = dmu_harvest_shelter_nomad_iberian_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 75
+		upgrades_from = dmu_trellised_vine_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.031
+		clan_sentiment = 1
+	}
+	dmu_wine_press_hut_nomad_iberian = {
+		desc = dmu_wine_press_hut_nomad_iberian_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = dmu_harvest_shelter_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+		supply_limit = 0.03
+	}
+	dmu_aged_barrel_room_nomad_iberian = {
+		desc = dmu_aged_barrel_room_nomad_iberian_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 85
+		upgrades_from = dmu_wine_press_hut_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.753
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	dmu_walled_vineyard_nomad_iberian = {
+		desc = dmu_walled_vineyard_nomad_iberian_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 90
+		upgrades_from = dmu_aged_barrel_room_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		supply_limit = 0.08
+	}
+	dmu_merchants_winehouse_nomad_iberian = {
+		desc = dmu_merchants_winehouse_nomad_iberian_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 95
+		upgrades_from = dmu_walled_vineyard_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+		tradevalue = 1.513
+		liege_prestige = 0.15
+	}
+	dmu_vintners_pavilion_nomad_iberian = {
+		desc = dmu_vintners_pavilion_nomad_iberian_desc
+		gold_cost = 7350
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 100
+		upgrades_from = dmu_merchants_winehouse_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		liege_prestige = 0.25
+		tradevalue = 1.513
+	}
+	dmu_cellar_hall_nomad_iberian = {
+		desc = dmu_cellar_hall_nomad_iberian_desc
+		gold_cost = 14100
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 105
+		upgrades_from = dmu_vintners_pavilion_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.532
+		clan_sentiment = 1
+		tradevalue = 1.513
+		liege_prestige = 0.4
+	}
+	dmu_iberian_grand_winery_nomad_iberian = {
+		desc = dmu_iberian_grand_winery_nomad_iberian_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 3750
+		ai_creation_factor = 110
+		upgrades_from = dmu_cellar_hall_nomad_iberian
+		potential = {
+			culture_group = iberian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1024
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.665
+		clan_sentiment = 1
+		liege_prestige = 1
+		tradevalue = 1.513
+	}
+}

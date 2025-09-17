@@ -1,0 +1,188 @@
+nomad = {
+	cip_central_germanic_gathering_patch = {
+		desc = cip_central_germanic_gathering_patch_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	cip_central_germanic_council_circle = {
+		desc = cip_central_germanic_council_circle_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 72
+		upgrades_from = cip_central_germanic_gathering_patch
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.133
+	}
+	cip_central_germanic_speaking_stone = {
+		desc = cip_central_germanic_speaking_stone_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 80
+		upgrades_from = cip_central_germanic_council_circle
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		levy_size = 0.06
+	}
+	cip_central_germanic_delegate_tent = {
+		desc = cip_central_germanic_delegate_tent_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 173
+		ai_creation_factor = 86
+		upgrades_from = cip_central_germanic_speaking_stone
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		levy_size = 0.13
+		nomad_tax_modifier = 0.333
+	}
+	cip_central_germanic_elder_pavilion = {
+		desc = cip_central_germanic_elder_pavilion_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 93
+		upgrades_from = cip_central_germanic_delegate_tent
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		levy_size = 0.25
+		nomad_tax_modifier = 0.576
+	}
+	cip_central_germanic_law_stone = {
+		desc = cip_central_germanic_law_stone_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 100
+		upgrades_from = cip_central_germanic_elder_pavilion
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		levy_size = 0.38
+		nomad_tax_modifier = 0.421
+		vassal_opinion = 2
+	}
+	cip_central_germanic_moot_stand = {
+		desc = cip_central_germanic_moot_stand_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 105
+		upgrades_from = cip_central_germanic_law_stone
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		levy_size = 0.55
+		nomad_tax_modifier = 0.421
+		vassal_opinion = 3
+		retinuesize = 1
+	}
+	cip_central_germanic_judgement_hall = {
+		desc = cip_central_germanic_judgement_hall_desc
+		gold_cost = 9600
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 110
+		upgrades_from = cip_central_germanic_moot_stand
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 130
+		clan_sentiment = 1
+		levy_size = 0.85
+		nomad_tax_modifier = 0.443
+		vassal_opinion = 5
+		retinuesize = 2
+	}
+	cip_central_germanic_high_moot_pavilion = {
+		desc = cip_central_germanic_high_moot_pavilion_desc
+		gold_cost = 19200
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 115
+		upgrades_from = cip_central_germanic_judgement_hall
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 210
+		clan_sentiment = 1
+		levy_size = 1.3
+		nomad_tax_modifier = 0.421
+		vassal_opinion = 7
+		retinuesize = 3
+		liege_prestige = 0.25
+	}
+	cip_central_germanic_realm_assembly_hall = {
+		desc = cip_central_germanic_realm_assembly_hall_desc
+		gold_cost = 38400
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 120
+		upgrades_from = cip_central_germanic_high_moot_pavilion
+		potential = {
+			culture_group = germanic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 350
+		clan_sentiment = 1
+		levy_size = 1.85
+		nomad_tax_modifier = 0.443
+		vassal_opinion = 10
+		retinuesize = 4
+		liege_prestige = 0.5
+	}
+}

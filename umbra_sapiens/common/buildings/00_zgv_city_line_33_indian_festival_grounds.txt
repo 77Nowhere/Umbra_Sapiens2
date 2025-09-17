@@ -1,0 +1,145 @@
+city = {
+	zgv_festival_green_3 = {
+		desc = zgv_festival_green_3_desc
+		prestige_cost = 30
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 70
+		upgrades_from = zgv_dancers_platform_2
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.06
+		culture_techpoints = 0.04
+		city_tax_modifier = 0.015
+	}
+	zgv_village_stage_1 = {
+		desc = zgv_village_stage_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.015
+		culture_techpoints = 0.01
+	}
+	zgv_dancers_platform_2 = {
+		desc = zgv_dancers_platform_2_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		upgrades_from = zgv_village_stage_1
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		culture_techpoints = 0.025
+	}
+	zgv_floats_yard_6 = {
+		desc = zgv_floats_yard_6_desc
+		prestige_cost = 120
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 90
+		upgrades_from = zgv_celebration_court_5
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.36
+		culture_techpoints = 0.24
+		city_tax_modifier = 0.12
+	}
+	zgv_musicians_pavilion_4 = {
+		desc = zgv_musicians_pavilion_4_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 380
+		ai_creation_factor = 80
+		upgrades_from = zgv_festival_green_3
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.12
+		culture_techpoints = 0.08
+		city_tax_modifier = 0.035
+	}
+	zgv_celebration_court_5 = {
+		desc = zgv_celebration_court_5_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 85
+		upgrades_from = zgv_musicians_pavilion_4
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.24
+		culture_techpoints = 0.16
+		city_tax_modifier = 0.07
+	}
+	zgv_procession_lane_7 = {
+		desc = zgv_procession_lane_7_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1300
+		ai_creation_factor = 95
+		upgrades_from = zgv_floats_yard_6
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 0.48
+		city_tax_modifier = 0.18
+		culture_techpoints = 0.32
+		tradevalue = 2
+	}
+	zgv_market_ring_8 = {
+		desc = zgv_market_ring_8_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 100
+		upgrades_from = zgv_procession_lane_7
+		trigger = {
+			TECH_TRADE_PRACTICES = 5
+		}
+		local_tax_modifier = 0.65
+		city_tax_modifier = 0.32
+		tradevalue = 4
+		economy_techpoints = 0.15
+	}
+	zgv_feasting_pavilion_9 = {
+		desc = zgv_feasting_pavilion_9_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 1900
+		ai_creation_factor = 105
+		upgrades_from = zgv_market_ring_8
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 0.85
+		city_tax_modifier = 0.42
+		tradevalue = 7
+		economy_techpoints = 0.27
+		garrison_size = 0.12
+	}
+	zgv_grand_festival_grounds_10 = {
+		desc = zgv_grand_festival_grounds_10_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 110
+		upgrades_from = zgv_feasting_pavilion_9
+		trigger = {
+			TECH_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 1.3
+		city_tax_modifier = 0.7
+		tradevalue = 12
+		economy_techpoints = 0.42
+		garrison_size = 0.22
+	}
+}

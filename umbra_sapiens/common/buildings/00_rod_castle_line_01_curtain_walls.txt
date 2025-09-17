@@ -1,0 +1,155 @@
+castle = {
+	ca_wall_1 = {
+		desc = ca_wall_1_desc
+		gold_cost = 55
+		extra_tech_building_start = 1
+		build_time = 180
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.5
+		levy_size = 0.02
+		archers = 10
+	}
+	ca_wall_2 = {
+		desc = ca_wall_2_desc
+		prestige_cost = 80
+		extra_tech_building_start = 1.4
+		build_time = 420
+		ai_creation_factor = 75
+		upgrades_from = ca_wall_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		fort_level = 0.13
+		levy_size = 0.05
+		garrison_size = 0.06
+		archers = 10
+	}
+	ca_wall_3 = {
+		desc = ca_wall_3_desc
+		gold_cost = 120
+		extra_tech_building_start = 1.2
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = ca_wall_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		fort_level = 0.08
+		levy_size = 0.03
+		garrison_size = 0.04
+		archers = 10
+	}
+	ca_wall_4 = {
+		desc = ca_wall_4_desc
+		gold_cost = 350
+		extra_tech_building_start = 0.8
+		build_time = 700
+		ai_creation_factor = 80
+		upgrades_from = ca_wall_3
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.21
+		levy_size = 0.07
+		garrison_size = 0.09
+		archers = 10
+	}
+	ca_wall_5 = {
+		desc = ca_wall_5_desc
+		gold_cost = 800
+		extra_tech_building_start = 0.4
+		build_time = 1200
+		ai_creation_factor = 85
+		upgrades_from = ca_wall_4
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.34
+		levy_size = 0.11
+		garrison_size = 0.13
+		archers = 10
+	}
+	ca_wall_6 = {
+		desc = ca_wall_6_desc
+		gold_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 90
+		upgrades_from = ca_wall_5
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.5
+		levy_size = 0.14
+		garrison_size = 0.17
+		archers = 10
+	}
+	ca_wall_7 = {
+		desc = ca_wall_7_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 95
+		upgrades_from = ca_wall_6
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.67
+		levy_size = 0.21
+		garrison_size = 0.22
+		commander_limit = 1
+		archers = 10
+	}
+	ca_wall_8 = {
+		desc = ca_wall_8_desc
+		gold_cost = 5400
+		extra_tech_building_start = 999
+		build_time = 2600
+		ai_creation_factor = 100
+		upgrades_from = ca_wall_7
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.86
+		levy_size = 0.26
+		garrison_size = 0.3
+		heavy_infantry_defensive = 0.15
+		archers = 10
+	}
+	ca_wall_9 = {
+		desc = ca_wall_9_desc
+		gold_cost = 9200
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 105
+		upgrades_from = ca_wall_8
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.12
+		levy_size = 0.34
+		garrison_size = 0.41
+		heavy_infantry_defensive = 0.25
+		archers = 10
+	}
+	ca_wall_10 = {
+		desc = ca_wall_10_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 4800
+		ai_creation_factor = 110
+		upgrades_from = ca_wall_9
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 1.64
+		levy_size = 0.49
+		garrison_size = 0.6
+		heavy_infantry_defensive = 0.4
+		land_morale = 0.1
+		archers = 10
+	}
+}

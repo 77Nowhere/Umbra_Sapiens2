@@ -1,0 +1,200 @@
+nomad = {
+	zck_celtic_standing_stone = {
+		desc = zck_celtic_standing_stone_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 65
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	zck_celtic_mossy_boulder = {
+		desc = zck_celtic_mossy_boulder_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 68
+		upgrades_from = zck_celtic_standing_stone
+		prerequisites = {
+			zck_celtic_standing_stone
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_prestige = 0.1
+	}
+	zck_celtic_carved_slab = {
+		desc = zck_celtic_carved_slab_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 75
+		upgrades_from = zck_celtic_mossy_boulder
+		prerequisites = {
+			zck_celtic_mossy_boulder
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	zck_celtic_circle_of_stones = {
+		desc = zck_celtic_circle_of_stones_desc
+		gold_cost = 480
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 83
+		upgrades_from = zck_celtic_carved_slab
+		prerequisites = {
+			zck_celtic_carved_slab
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	zck_celtic_altar_stone = {
+		desc = zck_celtic_altar_stone_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 207
+		ai_creation_factor = 92
+		upgrades_from = zck_celtic_circle_of_stones
+		prerequisites = {
+			zck_celtic_circle_of_stones
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_piety = 0.5
+	}
+	zck_celtic_marked_menhir = {
+		desc = zck_celtic_marked_menhir_desc
+		prestige_cost = 900
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 98
+		upgrades_from = zck_celtic_altar_stone
+		prerequisites = {
+			zck_celtic_altar_stone
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		liege_prestige = 0.8
+	}
+	zck_celtic_sanctuary_circle = {
+		desc = zck_celtic_sanctuary_circle_desc
+		prestige_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 105
+		upgrades_from = zck_celtic_marked_menhir
+		prerequisites = {
+			zck_celtic_marked_menhir
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+	}
+	zck_celtic_priests_stone = {
+		desc = zck_celtic_priests_stone_desc
+		piety_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 108
+		upgrades_from = zck_celtic_sanctuary_circle
+		prerequisites = {
+			zck_celtic_sanctuary_circle
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		liege_piety = 1
+	}
+	zck_celtic_high_druidic_ring = {
+		desc = zck_celtic_high_druidic_ring_desc
+		prestige_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 110
+		upgrades_from = zck_celtic_priests_stone
+		prerequisites = {
+			zck_celtic_priests_stone
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		liege_prestige = 1.5
+	}
+	zck_celtic_stone_sanctuary = {
+		desc = zck_celtic_stone_sanctuary_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = zck_celtic_high_druidic_ring
+		prerequisites = {
+			zck_celtic_high_druidic_ring
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.0909.090975
+		max_manpower_mult = 0.04
+		liege_piety = 1
+		liege_prestige = 1
+	}
+}

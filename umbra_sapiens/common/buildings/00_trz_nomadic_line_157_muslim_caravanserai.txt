@@ -1,0 +1,173 @@
+nomad = {
+	trz_camel_post = {
+		desc = trz_camel_post_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	trz_merchants_tent = {
+		desc = trz_merchants_tent_desc
+		gold_cost = 94
+		extra_tech_building_start = 999
+		build_time = 154
+		ai_creation_factor = 68
+		upgrades_from = trz_camel_post
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.178
+		tradevalue = 1.513
+		max_population = 100
+	}
+	trz_pack_animal_shelter = {
+		desc = trz_pack_animal_shelter_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 72
+		upgrades_from = trz_merchants_tent
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		supply_limit = 0.06
+		max_population = 100
+	}
+	trz_walled_pavilion = {
+		desc = trz_walled_pavilion_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 78
+		upgrades_from = trz_pack_animal_shelter
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		garrison_size = 0.1
+		max_population = 100
+	}
+	trz_market_room = {
+		desc = trz_market_room_desc
+		gold_cost = 638
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 83
+		upgrades_from = trz_walled_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		max_population = 100
+	}
+	trz_trade_hall = {
+		desc = trz_trade_hall_desc
+		gold_cost = 1388
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 89
+		upgrades_from = trz_market_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		max_population = 100
+		global_movement_speed = 0.04
+	}
+	trz_camel_stable = {
+		desc = trz_camel_stable_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 95
+		upgrades_from = trz_trade_hall
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		supply_limit = 0.1
+		max_population = 100
+	}
+	trz_merchants_house = {
+		desc = trz_merchants_house_desc
+		gold_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 99
+		upgrades_from = trz_camel_stable
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		liege_prestige = 0.2
+	}
+	trz_storage_pavilion = {
+		desc = trz_storage_pavilion_desc
+		gold_cost = 6150
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 103
+		upgrades_from = trz_merchants_house
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+	}
+	trz_muslim_grand_caravanserai = {
+		desc = trz_muslim_grand_caravanserai_desc
+		gold_cost = 9375
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = trz_storage_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.015
+		tradevalue = 1.513
+		liege_piety = 0.25
+	}
+}

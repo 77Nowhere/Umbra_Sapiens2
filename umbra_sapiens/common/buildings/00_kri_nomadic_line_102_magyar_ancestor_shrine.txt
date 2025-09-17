@@ -1,0 +1,170 @@
+nomad = {
+	kri_magyar_ancestor_spirit_post = {
+		desc = kri_magyar_ancestor_spirit_post_desc
+		piety_cost = 27
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	kri_magyar_ancestor_prayer_stand = {
+		desc = kri_magyar_ancestor_prayer_stand_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 49
+		ai_creation_factor = 70
+		upgrades_from = kri_magyar_ancestor_spirit_post
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.13
+		vassal_opinion = 2
+	}
+	kri_magyar_ancestor_hut = {
+		desc = kri_magyar_ancestor_hut_desc
+		piety_cost = 128
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 75
+		upgrades_from = kri_magyar_ancestor_prayer_stand
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.25
+		vassal_opinion = 3
+	}
+	kri_magyar_ancestor_worship_pavilion = {
+		desc = kri_magyar_ancestor_worship_pavilion_desc
+		piety_cost = 270
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 80
+		upgrades_from = kri_magyar_ancestor_hut
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.45
+		vassal_opinion = 5
+	}
+	kri_magyar_ancestor_sanctified_room = {
+		desc = kri_magyar_ancestor_sanctified_room_desc
+		piety_cost = 563
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 85
+		upgrades_from = kri_magyar_ancestor_worship_pavilion
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.75
+		vassal_opinion = 7
+	}
+	kri_magyar_ancestor_priests_hall = {
+		desc = kri_magyar_ancestor_priests_hall_desc
+		piety_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = kri_magyar_ancestor_sanctified_room
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.2
+		vassal_opinion = 10
+	}
+	kri_magyar_ancestor_blessed_glade = {
+		desc = kri_magyar_ancestor_blessed_glade_desc
+		piety_cost = 2325
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 95
+		upgrades_from = kri_magyar_ancestor_priests_hall
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 15
+	}
+	kri_magyar_ancestor_diviners_chamber = {
+		desc = kri_magyar_ancestor_diviners_chamber_desc
+		piety_cost = 4650
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 100
+		upgrades_from = kri_magyar_ancestor_blessed_glade
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.2
+		vassal_opinion = 20
+	}
+	kri_magyar_ancestor_shrine_hall = {
+		desc = kri_magyar_ancestor_shrine_hall_desc
+		piety_cost = 9375
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 105
+		upgrades_from = kri_magyar_ancestor_diviners_chamber
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		vassal_opinion = 30
+	}
+	kri_magyar_ancestor_sanctuary = {
+		desc = kri_magyar_ancestor_sanctuary_desc
+		piety_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = kri_magyar_ancestor_shrine_hall
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		vassal_opinion = 50
+	}
+}

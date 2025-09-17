@@ -1,0 +1,205 @@
+nomad = {
+	wnu_finno_ugric_tether_post = {
+		desc = wnu_finno_ugric_tether_post_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	wnu_finno_ugric_herding_patch = {
+		desc = wnu_finno_ugric_herding_patch_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 65
+		upgrades_from = wnu_finno_ugric_tether_post
+		prerequisites = {
+			wnu_finno_ugric_tether_post
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		supply_limit = 0.03
+	}
+	wnu_finno_ugric_snow_shelter = {
+		desc = wnu_finno_ugric_snow_shelter_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 68
+		upgrades_from = wnu_finno_ugric_herding_patch
+		prerequisites = {
+			wnu_finno_ugric_herding_patch
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		global_winter_supply = 0.06
+	}
+	wnu_finno_ugric_reindeer_fold = {
+		desc = wnu_finno_ugric_reindeer_fold_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 70
+		upgrades_from = wnu_finno_ugric_snow_shelter
+		prerequisites = {
+			wnu_finno_ugric_snow_shelter
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_winter_supply = 0.12
+		supply_limit = 0.05
+	}
+	wnu_finno_ugric_fenced_pen = {
+		desc = wnu_finno_ugric_fenced_pen_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 76
+		upgrades_from = wnu_finno_ugric_reindeer_fold
+		prerequisites = {
+			wnu_finno_ugric_reindeer_fold
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		garrison_size = 0.1
+		supply_limit = 0.09
+	}
+	wnu_finno_ugric_breeders_hut = {
+		desc = wnu_finno_ugric_breeders_hut_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 80
+		upgrades_from = wnu_finno_ugric_fenced_pen
+		prerequisites = {
+			wnu_finno_ugric_fenced_pen
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		fertility = 0.28
+		garrison_size = 0.18
+	}
+	wnu_finno_ugric_reindeer_pavilion = {
+		desc = wnu_finno_ugric_reindeer_pavilion_desc
+		gold_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = wnu_finno_ugric_breeders_hut
+		prerequisites = {
+			wnu_finno_ugric_breeders_hut
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.38
+		garrison_size = 0.34
+		clan_sentiment = 1
+	}
+	wnu_finno_ugric_antler_hall = {
+		desc = wnu_finno_ugric_antler_hall_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 92
+		upgrades_from = wnu_finno_ugric_reindeer_pavilion
+		prerequisites = {
+			wnu_finno_ugric_reindeer_pavilion
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.34
+		clan_sentiment = 1
+		liege_prestige = 0.25
+	}
+	wnu_finno_ugric_winter_grazing_yard = {
+		desc = wnu_finno_ugric_winter_grazing_yard_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 100
+		upgrades_from = wnu_finno_ugric_antler_hall
+		prerequisites = {
+			wnu_finno_ugric_antler_hall
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.26
+		global_winter_supply = 0.3
+		supply_limit = 0.18
+	}
+	wnu_finno_ugric_reindeer_sanctuary = {
+		desc = wnu_finno_ugric_reindeer_sanctuary_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = wnu_finno_ugric_winter_grazing_yard
+		prerequisites = {
+			wnu_finno_ugric_winter_grazing_yard
+		}
+		potential = {
+			culture_group = finno_ugric
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.08
+		clan_sentiment = 1
+		liege_prestige = 0.75
+		fertility = 0.39
+	}
+}

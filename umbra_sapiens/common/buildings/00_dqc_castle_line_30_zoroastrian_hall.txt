@@ -1,0 +1,205 @@
+castle = {
+	dqc_meeting_chamber_zoroastrian = {
+		desc = dqc_meeting_chamber_zoroastrian_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.01
+		garrison_size = 0.02
+	}
+	dqc_wisemens_hall_zoroastrian = {
+		desc = dqc_wisemens_hall_zoroastrian_desc
+		prestige_cost = 70
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 75
+		upgrades_from = dqc_stone_assembly_room_zoroastrian
+		prerequisites = {
+			dqc_stone_assembly_room_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.04
+		garrison_size = 0.06
+		vassal_opinion = 1
+	}
+	dqc_stone_assembly_room_zoroastrian = {
+		desc = dqc_stone_assembly_room_zoroastrian_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 350
+		ai_creation_factor = 70
+		upgrades_from = dqc_meeting_chamber_zoroastrian
+		prerequisites = {
+			dqc_meeting_chamber_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		garrison_size = 0.04
+	}
+	dqc_council_chamber_zoroastrian = {
+		desc = dqc_council_chamber_zoroastrian_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 80
+		upgrades_from = dqc_wisemens_hall_zoroastrian
+		prerequisites = {
+			dqc_wisemens_hall_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.07
+		garrison_size = 0.12
+		vassal_opinion = 2
+	}
+	dqc_noble_gathering_hall_zoroastrian = {
+		desc = dqc_noble_gathering_hall_zoroastrian_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 85
+		upgrades_from = dqc_council_chamber_zoroastrian
+		prerequisites = {
+			dqc_council_chamber_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.13
+		garrison_size = 0.22
+		vassal_opinion = 3
+	}
+	dqc_firekeepers_hall_zoroastrian = {
+		desc = dqc_firekeepers_hall_zoroastrian_desc
+		piety_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 95
+		upgrades_from = dqc_royal_audience_chamber_zoroastrian
+		prerequisites = {
+			dqc_royal_audience_chamber_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		levy_size = 0.29
+		garrison_size = 0.48
+		vassal_opinion = 5
+		liege_prestige = 2
+	}
+	dqc_royal_audience_chamber_zoroastrian = {
+		desc = dqc_royal_audience_chamber_zoroastrian_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 90
+		upgrades_from = dqc_noble_gathering_hall_zoroastrian
+		prerequisites = {
+			dqc_noble_gathering_hall_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.22
+		garrison_size = 0.34
+		vassal_opinion = 4
+		liege_prestige = 1
+	}
+	dqc_assembly_house_zoroastrian = {
+		desc = dqc_assembly_house_zoroastrian_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 100
+		upgrades_from = dqc_firekeepers_hall_zoroastrian
+		prerequisites = {
+			dqc_firekeepers_hall_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		levy_size = 0.37
+		garrison_size = 0.56
+		vassal_opinion = 7
+		liege_prestige = 3
+		tech_growth_modifier = 0.1
+	}
+	dqc_royal_hall_zoroastrian = {
+		desc = dqc_royal_hall_zoroastrian_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 105
+		upgrades_from = dqc_assembly_house_zoroastrian
+		prerequisites = {
+			dqc_assembly_house_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		levy_size = 0.49
+		garrison_size = 0.77
+		vassal_opinion = 10
+		liege_prestige = 5
+		tax_income = 0.25
+	}
+	dqc_grand_audience_house_zoroastrian = {
+		desc = dqc_grand_audience_house_zoroastrian_desc
+		gold_cost = 7000
+		extra_tech_building_start = 999
+		build_time = 4200
+		ai_creation_factor = 110
+		upgrades_from = dqc_royal_hall_zoroastrian
+		prerequisites = {
+			dqc_royal_hall_zoroastrian
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		levy_size = 0.71
+		garrison_size = 1.15
+		vassal_opinion = 12
+		liege_prestige = 10
+		tax_income = 0.38
+		tech_growth_modifier = 0.15
+	}
+}

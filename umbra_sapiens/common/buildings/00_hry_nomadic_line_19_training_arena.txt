@@ -1,0 +1,181 @@
+nomad = {
+	hry_wrestling_patch = {
+		desc = hry_wrestling_patch_desc
+		gold_cost = 45
+		build_time = 38
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		population_growth = 0.011
+	}
+	hry_stick_fighting_ring = {
+		desc = hry_stick_fighting_ring_desc
+		gold_cost = 135
+		build_time = 68
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = hry_wrestling_patch
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.07
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	hry_mounted_games_yard = {
+		desc = hry_mounted_games_yard_desc
+		gold_cost = 525
+		build_time = 113
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = hry_stick_fighting_ring
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		light_cavalry_offensive = 0.09
+		global_movement_speed = 0.04
+		max_population_mult = 0.005
+	}
+	hry_duelists_pavilion = {
+		desc = hry_duelists_pavilion_desc
+		gold_cost = 1500
+		build_time = 188
+		extra_tech_building_start = 999
+		ai_creation_factor = 90
+		upgrades_from = hry_mounted_games_yard
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.13
+		max_manpower_mult = 0.02
+		liege_prestige = 0.2
+	}
+	hry_combat_circle = {
+		desc = hry_combat_circle_desc
+		gold_cost = 4500
+		build_time = 300
+		extra_tech_building_start = 999
+		ai_creation_factor = 95
+		upgrades_from = hry_duelists_pavilion
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.22
+		max_population_mult = 0.005
+		garrison_size = 0.12
+	}
+	hry_instructors_platform = {
+		desc = hry_instructors_platform_desc
+		gold_cost = 6000
+		build_time = 450
+		extra_tech_building_start = 999
+		ai_creation_factor = 100
+		upgrades_from = hry_combat_circle
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.35
+		max_manpower_mult = 0.02
+		tech_growth_modifier_military = 0.09
+		liege_prestige = 0.4
+	}
+	hry_apprentice_arena = {
+		desc = hry_apprentice_arena_desc
+		gold_cost = 7500
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 105
+		upgrades_from = hry_instructors_platform
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.55
+		max_population_mult = 0.005
+		commander_limit = 1
+		morale_of_armies = 0.05
+	}
+	hry_champions_ground = {
+		desc = hry_champions_ground_desc
+		gold_cost = 12000
+		build_time = 900
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = hry_apprentice_arena
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.85
+		max_manpower_mult = 0.02
+		liege_prestige = 0.8
+		retinuesize_perc = 0.15
+		morale_of_armies = 0.09
+	}
+	hry_strategists_hall = {
+		desc = hry_strategists_hall_desc
+		gold_cost = 15000
+		build_time = 1200
+		extra_tech_building_start = 999
+		ai_creation_factor = 115
+		upgrades_from = hry_champions_ground
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tech_growth_modifier_military = 0.22
+		levy_size = 1.3
+		commander_limit = 2
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		morale_of_armies = 0.13
+	}
+	hry_steppe_warrior_academy = {
+		desc = hry_steppe_warrior_academy_desc
+		gold_cost = 19500
+		build_time = 1500
+		extra_tech_building_start = 999
+		ai_creation_factor = 120
+		upgrades_from = hry_strategists_hall
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 2
+		max_manpower_mult = 0.04
+		tech_growth_modifier_military = 0.4
+		commander_limit = 3
+		liege_prestige = 1
+		morale_of_armies = 0.2
+		clan_sentiment = 1
+	}
+}

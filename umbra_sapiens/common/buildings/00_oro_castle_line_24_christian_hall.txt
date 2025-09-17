@@ -1,0 +1,220 @@
+castle = {
+	oro_parish_hall = {
+		desc = oro_parish_hall_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 65
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		tax_income = 0.10
+		liege_piety = 0.1
+	}
+	oro_stone_refectory = {
+		desc = oro_stone_refectory_desc
+		gold_cost = 100
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 68
+		upgrades_from = oro_parish_hall
+		prerequisites = {
+			oro_parish_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.04
+		tax_income = 0.20
+		garrison_size = 0.02
+		liege_piety = 0.2
+	}
+	oro_chapter_house = {
+		desc = oro_chapter_house_desc
+		gold_cost = 200
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 72
+		upgrades_from = oro_stone_refectory
+		prerequisites = {
+			oro_stone_refectory
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.06
+		tax_income = 0.40
+		garrison_size = 0.05
+		liege_piety = 0.3
+	}
+	oro_pilgrim_hostel = {
+		desc = oro_pilgrim_hostel_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = oro_chapter_house
+		prerequisites = {
+			oro_chapter_house
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		levy_size = 0.12
+		tax_income = 0.50
+		garrison_size = 0.09
+		liege_piety = 0.4
+	}
+	oro_canons_hall = {
+		desc = oro_canons_hall_desc
+		prestige_cost = 600
+		extra_tech_building_start = 999
+		build_time = 1360
+		ai_creation_factor = 110
+		upgrades_from = oro_abbey_hall
+		prerequisites = {
+			oro_abbey_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		levy_size = 0.71
+		tax_income = 0.56
+		garrison_size = 0.56
+		local_tax_modifier = 0.08
+		vassal_opinion = 1
+		liege_piety = 0.5
+	}
+	oro_priory_hall = {
+		desc = oro_priory_hall_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 90
+		upgrades_from = oro_pilgrim_hostel
+		prerequisites = {
+			oro_pilgrim_hostel
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		levy_size = 0.23
+		tax_income = 0.60
+		garrison_size = 0.17
+		local_tax_modifier = 0.02
+		liege_piety = 0.6
+	}
+	oro_collegiate_hall = {
+		desc = oro_collegiate_hall_desc
+		prestige_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 120
+		upgrades_from = oro_canons_hall
+		prerequisites = {
+			oro_canons_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 5
+		}
+		levy_size = 1.13
+		tax_income = 0.65
+		garrison_size = 0.85
+		local_tax_modifier = 0.12
+		vassal_opinion = 2
+		liege_prestige = 0.5
+		liege_piety = 0.7
+	}
+	oro_abbey_hall = {
+		desc = oro_abbey_hall_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 1080
+		ai_creation_factor = 100
+		upgrades_from = oro_priory_hall
+		prerequisites = {
+			oro_priory_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		levy_size = 0.46
+		tax_income = 0.70
+		garrison_size = 0.34
+		local_tax_modifier = 0.04
+		liege_piety = 0.8
+	}
+	oro_bishops_court = {
+		desc = oro_bishops_court_desc
+		piety_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 130
+		upgrades_from = oro_collegiate_hall
+		prerequisites = {
+			oro_collegiate_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
+		}
+		levy_size = 1.69
+		tax_income = 0.75
+		garrison_size = 1.28
+		local_tax_modifier = 0.18
+		vassal_opinion = 3
+		liege_prestige = 1
+		liege_piety = 0.9
+	}
+	oro_cathedral_hall = {
+		desc = oro_cathedral_hall_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 150
+		upgrades_from = oro_bishops_court
+		prerequisites = {
+			oro_bishops_court
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 7
+		}
+		levy_size = 2.81
+		tax_income = 0.80
+		garrison_size = 2.13
+		local_tax_modifier = 0.25
+		vassal_opinion = 5
+		liege_prestige = 2
+		liege_piety = 2
+	}
+}

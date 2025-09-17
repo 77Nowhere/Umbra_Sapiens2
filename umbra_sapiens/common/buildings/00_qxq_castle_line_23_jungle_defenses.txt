@@ -1,0 +1,173 @@
+castle = {
+	qxq_castle_jungle_cleared_camp = {
+		desc = qxq_castle_jungle_cleared_camp_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 45
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		levy_size = 0.02
+	}
+	qxq_castle_jungle_lookout = {
+		desc = qxq_castle_jungle_lookout_desc
+		prestige_cost = 80
+		extra_tech_building_start = 999
+		build_time = 410
+		ai_creation_factor = 55
+		upgrades_from = qxq_castle_jungle_bamboo_palisade
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		levy_reinforce_rate = 0.05
+		archers_offensive = 0.04
+	}
+	qxq_castle_jungle_bamboo_palisade = {
+		desc = qxq_castle_jungle_bamboo_palisade_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 50
+		upgrades_from = qxq_castle_jungle_cleared_camp
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.05
+	}
+	qxq_castle_jungle_stilted_hut = {
+		desc = qxq_castle_jungle_stilted_hut_desc
+		piety_cost = 175
+		extra_tech_building_start = 999
+		build_time = 870
+		ai_creation_factor = 65
+		upgrades_from = qxq_castle_jungle_raised_walkway
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.11
+		levy_size = 0.04
+		local_tax_modifier = 0.05
+	}
+	qxq_castle_jungle_cleared_outpost = {
+		desc = qxq_castle_jungle_cleared_outpost_desc
+		prestige_cost = 280
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 75
+		upgrades_from = qxq_castle_jungle_stockade
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.21
+		levy_size = 0.09
+		heavy_infantry_offensive = 0.08
+	}
+	qxq_castle_jungle_raised_walkway = {
+		desc = qxq_castle_jungle_raised_walkway_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 60
+		upgrades_from = qxq_castle_jungle_lookout
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.08
+		garrison_size = 0.12
+		archers_defensive = 0.06
+	}
+	qxq_castle_jungle_stockade = {
+		desc = qxq_castle_jungle_stockade_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 70
+		upgrades_from = qxq_castle_jungle_stilted_hut
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.19
+		garrison_size = 0.16
+		levy_size = 0.06
+	}
+	qxq_castle_jungle_redoubt = {
+		desc = qxq_castle_jungle_redoubt_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2300
+		ai_creation_factor = 80
+		upgrades_from = qxq_castle_jungle_cleared_outpost
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.28
+		garrison_size = 0.22
+		levy_reinforce_rate = 0.1
+		heavy_infantry_defensive = 0.12
+	}
+	qxq_castle_jungle_moated_compound = {
+		desc = qxq_castle_jungle_moated_compound_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 90
+		upgrades_from = qxq_castle_jungle_redoubt
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.37
+		garrison_size = 0.30
+		levy_size = 0.13
+		archers_defensive = 0.15
+	}
+	qxq_castle_jungle_rainforest_fortress = {
+		desc = qxq_castle_jungle_rainforest_fortress_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 110
+		upgrades_from = qxq_castle_jungle_moated_compound
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.54
+		garrison_size = 0.43
+		levy_size = 0.21
+		land_morale = 0.15
+		local_tax_modifier = 0.1
+	}
+}

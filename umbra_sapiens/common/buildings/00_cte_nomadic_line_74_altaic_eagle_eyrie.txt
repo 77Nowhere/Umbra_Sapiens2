@@ -1,0 +1,171 @@
+nomad = {
+	cte_altaic_perch_post = {
+		desc = cte_altaic_perch_post_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 60
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.021
+	}
+	cte_altaic_eagle_stand = {
+		desc = cte_altaic_eagle_stand_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 68
+		upgrades_from = cte_altaic_perch_post
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.041
+		liege_prestige = 0.1
+	}
+	cte_altaic_hunting_perch = {
+		desc = cte_altaic_hunting_perch_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = cte_altaic_eagle_stand
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		global_movement_speed = 0.03
+	}
+	cte_altaic_falconers_tent = {
+		desc = cte_altaic_falconers_tent_desc
+		prestige_cost = 525
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 95
+		upgrades_from = cte_altaic_training_platform
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	cte_altaic_training_platform = {
+		desc = cte_altaic_training_platform_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 88
+		upgrades_from = cte_altaic_hunting_perch
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	cte_altaic_eagle_pavilion = {
+		desc = cte_altaic_eagle_pavilion_desc
+		prestige_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 102
+		upgrades_from = cte_altaic_falconers_tent
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		liege_prestige = 0.25
+	}
+	cte_altaic_hunting_chamber = {
+		desc = cte_altaic_hunting_chamber_desc
+		prestige_cost = 3075
+		extra_tech_building_start = 999
+		build_time = 1088
+		ai_creation_factor = 108
+		upgrades_from = cte_altaic_eagle_pavilion
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.08
+	}
+	cte_altaic_master_eyrie = {
+		desc = cte_altaic_master_eyrie_desc
+		prestige_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 110
+		upgrades_from = cte_altaic_hunting_chamber
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		clan_sentiment = 1
+	}
+	cte_altaic_high_hunters_hall = {
+		desc = cte_altaic_high_hunters_hall_desc
+		prestige_cost = 12075
+		extra_tech_building_start = 999
+		build_time = 1688
+		ai_creation_factor = 110
+		upgrades_from = cte_altaic_master_eyrie
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		liege_prestige = 0.5
+	}
+	cte_altaic_eagle_sanctuary = {
+		desc = cte_altaic_eagle_sanctuary_desc
+		prestige_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = cte_altaic_high_hunters_hall
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		clan_sentiment = 1
+		liege_prestige = 1.1
+	}
+}

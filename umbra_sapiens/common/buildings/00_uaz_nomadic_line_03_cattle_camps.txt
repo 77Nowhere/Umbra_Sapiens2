@@ -1,0 +1,175 @@
+nomad = {
+	uaz_rough_paddock = {
+		desc = uaz_rough_paddock_desc
+		gold_cost = 53
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	uaz_cattle_byre = {
+		desc = uaz_cattle_byre_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = uaz_rough_paddock
+		prerequisites = {
+			uaz_rough_paddock
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.07
+	}
+	uaz_simple_stockade = {
+		desc = uaz_simple_stockade_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 75
+		upgrades_from = uaz_cattle_byre
+		prerequisites = {
+			uaz_cattle_byre
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		garrison_size = 0.12
+	}
+	uaz_grazing_range = {
+		desc = uaz_grazing_range_desc
+		gold_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = uaz_simple_stockade
+		prerequisites = {
+			uaz_simple_stockade
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.02
+		supply_limit = 0.16
+		nomad_tax_modifier = 0.355
+	}
+	uaz_skilled_herdsman_post = {
+		desc = uaz_skilled_herdsman_post_desc
+		gold_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 85
+		upgrades_from = uaz_grazing_range
+		prerequisites = {
+			uaz_grazing_range
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.04
+		supply_limit = 0.32
+		clan_sentiment = 1
+	}
+	uaz_branded_herd = {
+		desc = uaz_branded_herd_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 90
+		upgrades_from = uaz_skilled_herdsman_post
+		prerequisites = {
+			uaz_skilled_herdsman_post
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.10
+		global_movement_speed = 0.09
+		nomad_tax_modifier = 0.709
+	}
+	uaz_cattle_breeding_enclosure = {
+		desc = uaz_cattle_breeding_enclosure_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 95
+		upgrades_from = uaz_branded_herd
+		prerequisites = {
+			uaz_branded_herd
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_manpower_mult = 0.06
+		supply_limit = 0.45
+		clan_sentiment = 1
+	}
+	uaz_butchers_corral = {
+		desc = uaz_butchers_corral_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 100
+		upgrades_from = uaz_cattle_breeding_enclosure
+		prerequisites = {
+			uaz_cattle_breeding_enclosure
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		max_manpower_mult = 0.10
+		nomad_tax_modifier = 0.421
+		supply_limit = 0.7
+	}
+	uaz_fatstock_yard = {
+		desc = uaz_fatstock_yard_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 105
+		upgrades_from = uaz_butchers_corral
+		prerequisites = {
+			uaz_butchers_corral
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 220
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.421
+		supply_limit = 1.1
+	}
+	uaz_grand_steppe_stockade = {
+		desc = uaz_grand_steppe_stockade_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = uaz_fatstock_yard
+		prerequisites = {
+			uaz_fatstock_yard
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 350
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.399
+		garrison_size = 0.5
+		clan_sentiment = 1
+	}
+}

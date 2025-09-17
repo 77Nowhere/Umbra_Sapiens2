@@ -1,0 +1,172 @@
+nomad = {
+	zrd_iranian_fire_temple_ember_stand = {
+		desc = zrd_iranian_fire_temple_ember_stand_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 60
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.1
+		clan_sentiment = 1
+	}
+	zrd_iranian_fire_temple_torch_post = {
+		desc = zrd_iranian_fire_temple_torch_post_desc
+		piety_cost = 135
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 62
+		upgrades_from = zrd_iranian_fire_temple_ember_stand
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.18
+		clan_sentiment = 1
+		vassal_opinion = 2
+	}
+	zrd_iranian_fire_temple_fire_pit = {
+		desc = zrd_iranian_fire_temple_fire_pit_desc
+		piety_cost = 315
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 70
+		upgrades_from = zrd_iranian_fire_temple_torch_post
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.35
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	zrd_iranian_fire_temple_flame_pavilion = {
+		desc = zrd_iranian_fire_temple_flame_pavilion_desc
+		piety_cost = 675
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = zrd_iranian_fire_temple_fire_pit
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.6
+		clan_sentiment = 1
+		vassal_opinion = 3
+	}
+	zrd_iranian_fire_temple_priests_room = {
+		desc = zrd_iranian_fire_temple_priests_room_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = zrd_iranian_fire_temple_flame_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.1
+		clan_sentiment = 1
+		vassal_opinion = 4
+	}
+	zrd_iranian_fire_temple_altar_chamber = {
+		desc = zrd_iranian_fire_temple_altar_chamber_desc
+		piety_cost = 2850
+		extra_tech_building_start = 999
+		build_time = 507
+		ai_creation_factor = 85
+		upgrades_from = zrd_iranian_fire_temple_priests_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	zrd_iranian_fire_temple_sanctified_hall = {
+		desc = zrd_iranian_fire_temple_sanctified_hall_desc
+		piety_cost = 5700
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 90
+		upgrades_from = zrd_iranian_fire_temple_altar_chamber
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1.5
+		clan_sentiment = 1
+		vassal_opinion = 6
+	}
+	zrd_iranian_fire_temple_holy_fire_pavilion = {
+		desc = zrd_iranian_fire_temple_holy_fire_pavilion_desc
+		piety_cost = 11400
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 95
+		upgrades_from = zrd_iranian_fire_temple_sanctified_hall
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 10
+	}
+	zrd_iranian_fire_temple_blessed_sanctuary = {
+		desc = zrd_iranian_fire_temple_blessed_sanctuary_desc
+		piety_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 105
+		upgrades_from = zrd_iranian_fire_temple_holy_fire_pavilion
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 12
+		church_opinion = 14
+	}
+	zrd_iranian_grand_fire_temple = {
+		desc = zrd_iranian_grand_fire_temple_desc
+		piety_cost = 48750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = zrd_iranian_fire_temple_blessed_sanctuary
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 20
+		church_opinion = 25
+	}
+}

@@ -1,0 +1,201 @@
+city = {
+	acn_craft_guild_hut = {
+		desc = acn_craft_guild_hut_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.015
+		economy_techpoints = 0.01
+	}
+	acn_scribes_niche = {
+		desc = acn_scribes_niche_desc
+		potential = {
+			religion_group = indian_group
+		}
+		prestige_cost = 45
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 82
+		upgrades_from = acn_artisans_plaza
+		prerequisites = {
+			acn_artisans_plaza
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.21
+		economy_techpoints = 0.18
+		tradevalue = 5
+	}
+	acn_potters_court = {
+		desc = acn_potters_court_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 65
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 67
+		upgrades_from = acn_craft_guild_hut
+		prerequisites = {
+			acn_craft_guild_hut
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.03
+		economy_techpoints = 0.02
+	}
+	acn_weavers_lane = {
+		desc = acn_weavers_lane_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 95
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 70
+		upgrades_from = acn_potters_court
+		prerequisites = {
+			acn_potters_court
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.06
+		economy_techpoints = 0.04
+		tradevalue = 1
+	}
+	acn_merchants_yard = {
+		desc = acn_merchants_yard_desc
+		potential = {
+			religion_group = indian_group
+		}
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 92
+		upgrades_from = acn_scribes_niche
+		prerequisites = {
+			acn_scribes_niche
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.38
+		economy_techpoints = 0.32
+		tradevalue = 8
+		garrison_size = 0.06
+	}
+	acn_artisans_plaza = {
+		desc = acn_artisans_plaza_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 75
+		upgrades_from = acn_weavers_lane
+		prerequisites = {
+			acn_weavers_lane
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.12
+		economy_techpoints = 0.08
+		tradevalue = 3
+	}
+	acn_jewelers_row = {
+		desc = acn_jewelers_row_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 410
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 100
+		upgrades_from = acn_merchants_yard
+		prerequisites = {
+			acn_merchants_yard
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 0.65
+		tradevalue = 15
+		economy_techpoints = 0.65
+		garrison_size = 0.1
+	}
+	acn_guild_assembly = {
+		desc = acn_guild_assembly_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 850
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = acn_jewelers_row
+		prerequisites = {
+			acn_jewelers_row
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 1.15
+		tradevalue = 25
+		economy_techpoints = 1.1
+		garrison_size = 0.15
+	}
+	acn_market_enclosure = {
+		desc = acn_market_enclosure_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 108
+		upgrades_from = acn_guild_assembly
+		prerequisites = {
+			acn_guild_assembly
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 2.2
+		tradevalue = 50
+		economy_techpoints = 2.2
+		garrison_size = 0.25
+	}
+	acn_grand_urban_guild = {
+		desc = acn_grand_urban_guild_desc
+		potential = {
+			religion_group = indian_group
+		}
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 5500
+		ai_creation_factor = 110
+		upgrades_from = acn_market_enclosure
+		prerequisites = {
+			acn_market_enclosure
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 4
+		tradevalue = 110
+		economy_techpoints = 4
+		garrison_size = 0.45
+	}
+}

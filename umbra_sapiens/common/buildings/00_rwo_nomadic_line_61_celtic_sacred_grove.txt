@@ -1,0 +1,204 @@
+nomad = {
+	rwo_wicker_shrine = {
+		desc = rwo_wicker_shrine_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 70
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.25
+	}
+	rwo_druids_circle = {
+		desc = rwo_druids_circle_desc
+		piety_cost = 105
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 75
+		upgrades_from = rwo_wicker_shrine
+		prerequisites = {
+			rwo_wicker_shrine
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.5
+		vassal_opinion = 2
+	}
+	rwo_oak_shelter = {
+		desc = rwo_oak_shelter_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 80
+		upgrades_from = rwo_druids_circle
+		prerequisites = {
+			rwo_druids_circle
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 3
+	}
+	rwo_sacred_spring = {
+		desc = rwo_sacred_spring_desc
+		piety_cost = 488
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 85
+		upgrades_from = rwo_oak_shelter
+		prerequisites = {
+			rwo_oak_shelter
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		sex_appeal_opinion = 2
+	}
+	rwo_blessed_glade = {
+		desc = rwo_blessed_glade_desc
+		piety_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 90
+		upgrades_from = rwo_sacred_spring
+		prerequisites = {
+			rwo_sacred_spring
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.5
+		vassal_opinion = 6
+		church_opinion = 3
+	}
+	rwo_spirit_stand = {
+		desc = rwo_spirit_stand_desc
+		piety_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 95
+		upgrades_from = rwo_blessed_glade
+		prerequisites = {
+			rwo_blessed_glade
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 5
+		liege_piety = 1
+	}
+	rwo_sanctified_grove = {
+		desc = rwo_sanctified_grove_desc
+		piety_cost = 3900
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 100
+		upgrades_from = rwo_spirit_stand
+		prerequisites = {
+			rwo_spirit_stand
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 7
+		vassal_opinion = 10
+	}
+	rwo_druids_pavilion = {
+		desc = rwo_druids_pavilion_desc
+		piety_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = rwo_sanctified_grove
+		prerequisites = {
+			rwo_sanctified_grove
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 10
+		liege_piety = 1
+	}
+	rwo_holy_oak_hall = {
+		desc = rwo_holy_oak_hall_desc
+		piety_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = rwo_druids_pavilion
+		prerequisites = {
+			rwo_druids_pavilion
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		church_opinion = 15
+		vassal_opinion = 15
+	}
+	rwo_celtic_sacred_sanctuary = {
+		desc = rwo_celtic_sacred_sanctuary_desc
+		piety_cost = 22500
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 110
+		upgrades_from = rwo_holy_oak_hall
+		prerequisites = {
+			rwo_holy_oak_hall
+		}
+		potential = {
+			culture_group = celtic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_piety = 1
+		church_opinion = 25
+		vassal_opinion = 25
+		liege_piety = 1
+	}
+}

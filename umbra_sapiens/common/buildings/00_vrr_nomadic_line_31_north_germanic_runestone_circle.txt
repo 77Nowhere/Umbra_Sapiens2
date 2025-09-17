@@ -1,0 +1,186 @@
+nomad = {
+	vrr_carved_pebble_north_germanic_runestone_circle = {
+		desc = vrr_carved_pebble_north_germanic_runestone_circle_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 60
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	vrr_rune_stick_north_germanic_runestone_circle = {
+		desc = vrr_rune_stick_north_germanic_runestone_circle_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = vrr_carved_pebble_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.1
+		max_population = 100
+	}
+	vrr_wooden_rune_post_north_germanic_runestone_circle = {
+		desc = vrr_wooden_rune_post_north_germanic_runestone_circle_desc
+		gold_cost = 158
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 70
+		upgrades_from = vrr_rune_stick_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.18
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	vrr_stone_rune_marker_north_germanic_runestone_circle = {
+		desc = vrr_stone_rune_marker_north_germanic_runestone_circle_desc
+		gold_cost = 338
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 80
+		upgrades_from = vrr_wooden_rune_post_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.3
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	vrr_inscribed_boulder_north_germanic_runestone_circle = {
+		desc = vrr_inscribed_boulder_north_germanic_runestone_circle_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 85
+		upgrades_from = vrr_stone_rune_marker_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.55
+		max_population = 100
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	vrr_carved_standing_stone_north_germanic_runestone_circle = {
+		desc = vrr_carved_standing_stone_north_germanic_runestone_circle_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = vrr_inscribed_boulder_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 1
+		max_population = 100
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	vrr_runestone_circle_north_germanic_runestone_circle = {
+		desc = vrr_runestone_circle_north_germanic_runestone_circle_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 95
+		upgrades_from = vrr_carved_standing_stone_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 1.5
+		max_population = 100
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+	}
+	vrr_runemasters_shrine_north_germanic_runestone_circle = {
+		desc = vrr_runemasters_shrine_north_germanic_runestone_circle_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 100
+		upgrades_from = vrr_runestone_circle_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_prestige = 1.5
+		max_population = 100
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+	}
+	vrr_saga_stone_monument_north_germanic_runestone_circle = {
+		desc = vrr_saga_stone_monument_north_germanic_runestone_circle_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 105
+		upgrades_from = vrr_runemasters_shrine_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_prestige = 1
+		max_population = 200
+		max_population_mult = 0.025
+		max_manpower_mult = 0.02
+		liege_prestige = 1.5
+	}
+	vrr_high_runestone_sanctuary_north_germanic_runestone_circle = {
+		desc = vrr_high_runestone_sanctuary_north_germanic_runestone_circle_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = vrr_saga_stone_monument_north_germanic_runestone_circle
+		potential = {
+			culture_group = north_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 3
+		liege_prestige = 1
+		max_population = 350
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		liege_prestige = 1
+	}
+}

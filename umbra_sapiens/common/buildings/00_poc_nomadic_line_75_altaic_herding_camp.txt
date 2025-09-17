@@ -1,0 +1,213 @@
+nomad = {
+	poc_altaic_tethered_herd = {
+		desc = poc_altaic_tethered_herd_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	poc_altaic_grazing_patch = {
+		desc = poc_altaic_grazing_patch_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = poc_altaic_tethered_herd
+		prerequisites = {
+			poc_altaic_tethered_herd
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.031
+	}
+	poc_altaic_corral_hut = {
+		desc = poc_altaic_corral_hut_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 74
+		upgrades_from = poc_altaic_grazing_patch
+		prerequisites = {
+			poc_altaic_grazing_patch
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		population_growth = 0.072
+		nomad_tax_modifier = 0.222
+	}
+	poc_altaic_shepherds_tent = {
+		desc = poc_altaic_shepherds_tent_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 78
+		upgrades_from = poc_altaic_corral_hut
+		prerequisites = {
+			poc_altaic_corral_hut
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.015
+		population_growth = 0.151
+		clan_sentiment = 1
+	}
+	poc_altaic_herdsman_pavilion = {
+		desc = poc_altaic_herdsman_pavilion_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 83
+		upgrades_from = poc_altaic_shepherds_tent
+		prerequisites = {
+			poc_altaic_shepherds_tent
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 160
+		max_population_mult = 0.025
+		population_growth = 0.151
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.532
+	}
+	poc_altaic_livestock_pen = {
+		desc = poc_altaic_livestock_pen_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 89
+		upgrades_from = poc_altaic_herdsman_pavilion
+		prerequisites = {
+			poc_altaic_herdsman_pavilion
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 320
+		max_population_mult = 0.125
+		population_growth = 0.102
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+	}
+	poc_altaic_breeders_yard = {
+		desc = poc_altaic_breeders_yard_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 95
+		upgrades_from = poc_altaic_livestock_pen
+		prerequisites = {
+			poc_altaic_livestock_pen
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 640
+		max_population_mult = 0.125
+		population_growth = 0.102
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+	}
+	poc_altaic_chiefs_herd_hall = {
+		desc = poc_altaic_chiefs_herd_hall_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 100
+		upgrades_from = poc_altaic_breeders_yard
+		prerequisites = {
+			poc_altaic_breeders_yard
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1280
+		max_population_mult = 0.125
+		population_growth = 0.102
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+	poc_altaic_steppe_herd_pavilion = {
+		desc = poc_altaic_steppe_herd_pavilion_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 105
+		upgrades_from = poc_altaic_chiefs_herd_hall
+		prerequisites = {
+			poc_altaic_chiefs_herd_hall
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 2560
+		max_population_mult = 0.015
+		population_growth = 0.102
+		clan_sentiment = 1
+		liege_prestige = 1
+		nomad_tax_modifier = 0.421
+	}
+	poc_altaic_grand_herd_enclosure = {
+		desc = poc_altaic_grand_herd_enclosure_desc
+		gold_cost = 48000
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = poc_altaic_steppe_herd_pavilion
+		prerequisites = {
+			poc_altaic_steppe_herd_pavilion
+		}
+		potential = {
+			culture_group = altaic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 5120
+		max_population_mult = 0.130
+		population_growth = 0.102
+		clan_sentiment = 1
+		liege_prestige = 1
+		nomad_tax_modifier = 0.443
+	}
+}

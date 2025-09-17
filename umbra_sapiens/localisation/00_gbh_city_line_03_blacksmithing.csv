@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ct_guard_2;Forge Hut;;;;;x
+ct_guard_2_desc;A modest timber hut sheltering a small forge, allowing a resident smith to create nails, horseshoes, and simple tools for townsfolk.;;;;;x
+ct_guard_1;Anvil Shed;;;;;x
+ct_guard_1_desc;A humble, makeshift shelter of wood and earth, housing a single anvil for basic repairs and toolmaking at the city edge.;;;;;x
+ct_guard_3;Smithy Workshop;;;;;x
+ct_guard_3_desc;A permanent wattle-and-daub structure with a stone hearth and a water barrel, enabling regular production of tools, horseshoes, and basic fittings.;;;;;x
+ct_guard_4;Ironmongers Shop;;;;;x
+ct_guard_4_desc;A bustling city shop with a permanent forge, retail front, and apprentices, selling a wide variety of iron goods to merchants and citizens.;;;;;x
+ct_guard_5;Bladesmiths Forge;;;;;x
+ct_guard_5_desc;A specialized smithy with multiple forges and skilled craftsmen, producing quality blades, tools, and fittings for the city and trade.;;;;;x
+gbh_armorers_hall;Armorers Hall;;;;;x
+gbh_armorers_hall_desc;A prominent guild hall with reinforced workshops and living quarters, producing fine armor, weapons, and city defenses for both militia and trade.;;;;;x
+gbh_weaponworks;Weaponworks;;;;;x
+gbh_weaponworks_desc;A large walled compound with numerous forges, supply stores, and a small garrison, focused on mass producing armaments for the city guard and trade.;;;;;x
+gbh_metalsmith_guild;Metalsmith Guild;;;;;x
+gbh_metalsmith_guild_desc;A powerful and wealthy guild with chartered privileges, grand halls, and oversight of the citys smiths, boosting industry, trade, and civic pride.;;;;;x
+gbh_foundry_complex;Foundry Complex;;;;;x
+gbh_foundry_complex_desc;A sprawling industrial district of blast furnaces, workshops, and storehouses, processing ore and manufacturing advanced goods for city and export.;;;;;x
+gbh_master_smithy;Master Smithy;;;;;x
+gbh_master_smithy_desc;The grandest smithing institution in the realm: a fortified complex of master craftsmen, rare materials, and secret techniques, fueling city prosperity and prestige.;;;;;x

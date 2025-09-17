@@ -1,0 +1,178 @@
+nomad = {
+	khc_lowland_patch = {
+		desc = khc_lowland_patch_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 68
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		max_population = 100
+		nomad_tax_modifier = 0.178
+	}
+	khc_open_steppe_range = {
+		desc = khc_open_steppe_range_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 53
+		ai_creation_factor = 74
+		upgrades_from = khc_lowland_patch
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.072
+		max_population = 100
+		global_movement_speed = 0.03
+	}
+	khc_movable_pen = {
+		desc = khc_movable_pen_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 72
+		ai_creation_factor = 81
+		upgrades_from = khc_open_steppe_range
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		max_population_mult = 0.005
+		supply_limit = 0.03
+	}
+	khc_windshelter_hut = {
+		desc = khc_windshelter_hut_desc
+		gold_cost = 293
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 88
+		upgrades_from = khc_movable_pen
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population_mult = 0.005
+		global_winter_supply = 0.05
+	}
+	khc_steppe_corral = {
+		desc = khc_steppe_corral_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 117
+		ai_creation_factor = 93
+		upgrades_from = khc_windshelter_hut
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		max_population_mult = 0.005
+		supply_limit = 0.05
+		garrison_size = 0.1
+	}
+	khc_nomad_grazing_yard = {
+		desc = khc_nomad_grazing_yard_desc
+		gold_cost = 975
+		extra_tech_building_start = 999
+		build_time = 139
+		ai_creation_factor = 98
+		upgrades_from = khc_steppe_corral
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		max_population_mult = 0.010
+		supply_limit = 0.09
+		clan_sentiment = 1
+	}
+	khc_windbreak_pavilion = {
+		desc = khc_windbreak_pavilion_desc
+		gold_cost = 1575
+		extra_tech_building_start = 999
+		build_time = 177
+		ai_creation_factor = 102
+		upgrades_from = khc_nomad_grazing_yard
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.010
+		supply_limit = 0.14
+		global_winter_supply = 0.08
+	}
+	khc_wide_pasture = {
+		desc = khc_wide_pasture_desc
+		gold_cost = 2550
+		extra_tech_building_start = 999
+		build_time = 214
+		ai_creation_factor = 106
+		upgrades_from = khc_windbreak_pavilion
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.015
+		supply_limit = 0.19
+		garrison_size = 0.2
+	}
+	khc_steppe_herd_hall = {
+		desc = khc_steppe_herd_hall_desc
+		gold_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 267
+		ai_creation_factor = 108
+		upgrades_from = khc_wide_pasture
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		liege_prestige = 0.7
+	}
+	khc_great_steppe_pastures = {
+		desc = khc_great_steppe_pastures_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 110
+		upgrades_from = khc_steppe_herd_hall
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.025
+		supply_limit = 0.28
+		clan_sentiment = 1
+		liege_prestige = 1.2
+	}
+}

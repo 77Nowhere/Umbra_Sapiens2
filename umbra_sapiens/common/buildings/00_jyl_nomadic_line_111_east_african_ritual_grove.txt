@@ -1,0 +1,675 @@
+nomad = {
+	jyl_sacred_tree_1 = {
+		desc = jyl_sacred_tree_1_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 66
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.04
+	}
+	jyl_ritual_pavilion_1 = {
+		desc = jyl_ritual_pavilion_1_desc
+		piety_cost = 49
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 63
+		upgrades_from = jyl_spirit_hut_4
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	jyl_priests_room_1 = {
+		desc = jyl_priests_room_1_desc
+		piety_cost = 53
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 60
+		upgrades_from = jyl_ritual_pavilion_4
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.05
+		clan_sentiment = 1
+	}
+	jyl_spirit_hut_1 = {
+		desc = jyl_spirit_hut_1_desc
+		piety_cost = 57
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 67
+		upgrades_from = jyl_ancestor_shrine_4
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	jyl_stone_circle_1 = {
+		desc = jyl_stone_circle_1_desc
+		piety_cost = 60
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 61
+		upgrades_from = jyl_sacred_tree_4
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	jyl_ancestor_shrine_1 = {
+		desc = jyl_ancestor_shrine_1_desc
+		piety_cost = 68
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 69
+		upgrades_from = jyl_stone_circle_4
+		potential = {
+			culture_group = east_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.06
+	}
+	jyl_diviners_chamber_1 = {
+		desc = jyl_diviners_chamber_1_desc
+		piety_cost = 72
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = jyl_sanctified_grove_4
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.05
+		clan_sentiment = 1
+	}
+	jyl_sanctified_grove_1 = {
+		desc = jyl_sanctified_grove_1_desc
+		piety_cost = 75
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 71
+		upgrades_from = jyl_priests_room_4
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		fertility = 0.04
+	}
+	jyl_blessed_sanctuary_1 = {
+		desc = jyl_blessed_sanctuary_1_desc
+		piety_cost = 83
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 68
+		upgrades_from = jyl_diviners_chamber_4
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.06
+	}
+	jyl_east_african_ritual_grove_1 = {
+		desc = jyl_east_african_ritual_grove_1_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 73
+		upgrades_from = jyl_blessed_sanctuary_4
+		potential = {
+			culture_group = east_african_group
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	jyl_sacred_tree_2 = {
+		desc = jyl_sacred_tree_2_desc
+		piety_cost = 102
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 72
+		upgrades_from = jyl_sacred_tree_1
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+		vassal_opinion = 2
+	}
+	jyl_ritual_pavilion_2 = {
+		desc = jyl_ritual_pavilion_2_desc
+		piety_cost = 105
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 70
+		upgrades_from = jyl_ritual_pavilion_1
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		vassal_opinion = 2
+	}
+	jyl_priests_room_2 = {
+		desc = jyl_priests_room_2_desc
+		piety_cost = 117
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 68
+		upgrades_from = jyl_priests_room_1
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.12
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	jyl_spirit_hut_2 = {
+		desc = jyl_spirit_hut_2_desc
+		piety_cost = 128
+		extra_tech_building_start = 999
+		build_time = 139
+		ai_creation_factor = 74
+		upgrades_from = jyl_spirit_hut_1
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.11
+		church_opinion = 2
+	}
+	jyl_stone_circle_2 = {
+		desc = jyl_stone_circle_2_desc
+		piety_cost = 132
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 70
+		upgrades_from = jyl_stone_circle_1
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		fertility = 0.04
+	}
+	jyl_diviners_chamber_2 = {
+		desc = jyl_diviners_chamber_2_desc
+		piety_cost = 143
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 72
+		upgrades_from = jyl_diviners_chamber_1
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.13
+		clan_sentiment = 1
+		church_opinion = 2
+	}
+	jyl_ancestor_shrine_2 = {
+		desc = jyl_ancestor_shrine_2_desc
+		piety_cost = 150
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 75
+		upgrades_from = jyl_ancestor_shrine_1
+		potential = {
+			culture_group = east_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.13
+		vassal_opinion = 2
+	}
+	jyl_sanctified_grove_2 = {
+		desc = jyl_sanctified_grove_2_desc
+		piety_cost = 169
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 78
+		upgrades_from = jyl_sanctified_grove_1
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		fertility = 0.12
+		max_population_mult = 0.005
+	}
+	jyl_blessed_sanctuary_2 = {
+		desc = jyl_blessed_sanctuary_2_desc
+		piety_cost = 173
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 76
+		upgrades_from = jyl_blessed_sanctuary_1
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.13
+		church_opinion = 2
+	}
+	jyl_east_african_ritual_grove_2 = {
+		desc = jyl_east_african_ritual_grove_2_desc
+		piety_cost = 195
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 81
+		upgrades_from = jyl_east_african_ritual_grove_1
+		potential = {
+			culture_group = east_african_group
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		fertility = 0.04
+	}
+	jyl_sacred_tree_3 = {
+		desc = jyl_sacred_tree_3_desc
+		piety_cost = 225
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 84
+		upgrades_from = jyl_sacred_tree_2
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.18
+		vassal_opinion = 4
+	}
+	jyl_ritual_pavilion_3 = {
+		desc = jyl_ritual_pavilion_3_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 88
+		upgrades_from = jyl_ritual_pavilion_2
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		vassal_opinion = 4
+	}
+	jyl_priests_room_3 = {
+		desc = jyl_priests_room_3_desc
+		piety_cost = 240
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 83
+		upgrades_from = jyl_priests_room_2
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.24
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	jyl_spirit_hut_3 = {
+		desc = jyl_spirit_hut_3_desc
+		piety_cost = 255
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 86
+		upgrades_from = jyl_spirit_hut_2
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.22
+		church_opinion = 4
+	}
+	jyl_stone_circle_3 = {
+		desc = jyl_stone_circle_3_desc
+		piety_cost = 278
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 80
+		upgrades_from = jyl_stone_circle_2
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		fertility = 0.08
+	}
+	jyl_ancestor_shrine_3 = {
+		desc = jyl_ancestor_shrine_3_desc
+		piety_cost = 315
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 82
+		upgrades_from = jyl_ancestor_shrine_2
+		potential = {
+			culture_group = east_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.22
+		vassal_opinion = 4
+	}
+	jyl_diviners_chamber_3 = {
+		desc = jyl_diviners_chamber_3_desc
+		piety_cost = 315
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 85
+		upgrades_from = jyl_diviners_chamber_2
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.26
+		clan_sentiment = 1
+		church_opinion = 4
+	}
+	jyl_sanctified_grove_3 = {
+		desc = jyl_sanctified_grove_3_desc
+		piety_cost = 360
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 91
+		upgrades_from = jyl_sanctified_grove_2
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		fertility = 0.23
+		max_population_mult = 0.005
+	}
+	jyl_blessed_sanctuary_3 = {
+		desc = jyl_blessed_sanctuary_3_desc
+		piety_cost = 375
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 90
+		upgrades_from = jyl_blessed_sanctuary_2
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.25
+		church_opinion = 4
+	}
+	jyl_east_african_ritual_grove_3 = {
+		desc = jyl_east_african_ritual_grove_3_desc
+		piety_cost = 435
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 97
+		upgrades_from = jyl_east_african_ritual_grove_2
+		potential = {
+			culture_group = east_african_group
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		fertility = 0.12
+	}
+	jyl_sacred_tree_4 = {
+		desc = jyl_sacred_tree_4_desc
+		piety_cost = 563
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 98
+		upgrades_from = jyl_sacred_tree_3
+		potential = {
+			culture_group = east_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.35
+		vassal_opinion = 6
+	}
+	jyl_ritual_pavilion_4 = {
+		desc = jyl_ritual_pavilion_4_desc
+		piety_cost = 570
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 105
+		upgrades_from = jyl_ritual_pavilion_3
+		potential = {
+			terrain = steppe
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		vassal_opinion = 8
+	}
+	jyl_priests_room_4 = {
+		desc = jyl_priests_room_4_desc
+		piety_cost = 585
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 102
+		upgrades_from = jyl_priests_room_3
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.41
+		clan_sentiment = 1
+		church_opinion = 8
+	}
+	jyl_spirit_hut_4 = {
+		desc = jyl_spirit_hut_4_desc
+		piety_cost = 600
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 110
+		upgrades_from = jyl_spirit_hut_3
+		potential = {
+			religion_group = pagan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.38
+		church_opinion = 8
+	}
+	jyl_stone_circle_4 = {
+		desc = jyl_stone_circle_4_desc
+		piety_cost = 638
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 100
+		upgrades_from = jyl_stone_circle_3
+		potential = {
+			terrain = plains
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		fertility = 0.12
+	}
+	jyl_ancestor_shrine_4 = {
+		desc = jyl_ancestor_shrine_4_desc
+		piety_cost = 713
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 106
+		upgrades_from = jyl_ancestor_shrine_3
+		potential = {
+			culture_group = east_african_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.4
+		vassal_opinion = 8
+	}
+	jyl_diviners_chamber_4 = {
+		desc = jyl_diviners_chamber_4_desc
+		piety_cost = 765
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 104
+		upgrades_from = jyl_diviners_chamber_3
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.48
+		clan_sentiment = 1
+		church_opinion = 8
+	}
+	jyl_sanctified_grove_4 = {
+		desc = jyl_sanctified_grove_4_desc
+		piety_cost = 863
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 109
+		upgrades_from = jyl_sanctified_grove_3
+		potential = {
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		fertility = 0.45
+		max_population_mult = 0.005
+	}
+	jyl_blessed_sanctuary_4 = {
+		desc = jyl_blessed_sanctuary_4_desc
+		piety_cost = 975
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 108
+		upgrades_from = jyl_blessed_sanctuary_3
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.5
+		church_opinion = 8
+	}
+	jyl_east_african_ritual_grove_4 = {
+		desc = jyl_east_african_ritual_grove_4_desc
+		piety_cost = 1088
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = jyl_east_african_ritual_grove_3
+		potential = {
+			culture_group = east_african_group
+			terrain = jungle
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		fertility = 0.28
+	}
+}

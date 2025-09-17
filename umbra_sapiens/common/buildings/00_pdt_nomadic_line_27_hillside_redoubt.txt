@@ -1,0 +1,204 @@
+nomad = {
+	pdt_slope_shelter = {
+		desc = pdt_slope_shelter_desc
+		gold_cost = 45
+		build_time = 57
+		extra_tech_building_start = 999
+		ai_creation_factor = 60
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		supply_limit = 0.03
+	}
+	pdt_terraced_pen = {
+		desc = pdt_terraced_pen_desc
+		gold_cost = 135
+		build_time = 94
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		upgrades_from = pdt_slope_shelter
+		prerequisites = {
+			pdt_slope_shelter
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		max_population_mult = 0.005
+		population_growth = 0.031
+	}
+	pdt_hilltop_watch = {
+		desc = pdt_hilltop_watch_desc
+		gold_cost = 525
+		build_time = 150
+		extra_tech_building_start = 999
+		ai_creation_factor = 72
+		upgrades_from = pdt_terraced_pen
+		prerequisites = {
+			pdt_terraced_pen
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.07
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	pdt_reinforced_hill_camp = {
+		desc = pdt_reinforced_hill_camp_desc
+		gold_cost = 1500
+		build_time = 263
+		extra_tech_building_start = 999
+		ai_creation_factor = 83
+		upgrades_from = pdt_hilltop_watch
+		prerequisites = {
+			pdt_hilltop_watch
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		garrison_size = 0.22
+		max_manpower_mult = 0.02
+	}
+	pdt_embankment_pavilion = {
+		desc = pdt_embankment_pavilion_desc
+		gold_cost = 4500
+		build_time = 413
+		extra_tech_building_start = 999
+		ai_creation_factor = 92
+		upgrades_from = pdt_reinforced_hill_camp
+		prerequisites = {
+			pdt_reinforced_hill_camp
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		garrison_size = 0.32
+		clan_sentiment = 1
+	}
+	pdt_hillside_stockade = {
+		desc = pdt_hillside_stockade_desc
+		gold_cost = 7500
+		build_time = 600
+		extra_tech_building_start = 999
+		ai_creation_factor = 99
+		upgrades_from = pdt_embankment_pavilion
+		prerequisites = {
+			pdt_embankment_pavilion
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.5
+		max_manpower_mult = 0.02
+		levy_size = 0.18
+	}
+	pdt_raised_palisade = {
+		desc = pdt_raised_palisade_desc
+		gold_cost = 9750
+		build_time = 825
+		extra_tech_building_start = 999
+		ai_creation_factor = 105
+		upgrades_from = pdt_hillside_stockade
+		prerequisites = {
+			pdt_hillside_stockade
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.04
+		levy_size = 0.3
+		clan_sentiment = 1
+	}
+	pdt_lookout_ridge = {
+		desc = pdt_lookout_ridge_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = pdt_raised_palisade
+		prerequisites = {
+			pdt_raised_palisade
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.04
+		garrison_size = 1
+		global_movement_speed = 0.15
+	}
+	pdt_hillside_bastion = {
+		desc = pdt_hillside_bastion_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 115
+		upgrades_from = pdt_lookout_ridge
+		prerequisites = {
+			pdt_lookout_ridge
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.06
+		levy_size = 0.5
+		clan_sentiment = 1
+	}
+	pdt_hill_fortress = {
+		desc = pdt_hill_fortress_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 120
+		upgrades_from = pdt_hillside_bastion
+		prerequisites = {
+			pdt_hillside_bastion
+		}
+		potential = {
+			terrain = hills
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		garrison_size = 2
+		levy_size = 1
+		clan_sentiment = 1
+	}
+}

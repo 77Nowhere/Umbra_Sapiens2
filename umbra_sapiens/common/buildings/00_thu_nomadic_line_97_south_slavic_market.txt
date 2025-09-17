@@ -1,0 +1,213 @@
+nomad = {
+	thu_south_slavic_open_table = {
+		desc = thu_south_slavic_open_table_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.026
+		nomad_tax_modifier = 0.178
+	}
+	thu_south_slavic_barter_patch = {
+		desc = thu_south_slavic_barter_patch_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 68
+		upgrades_from = thu_south_slavic_open_table
+		prerequisites = {
+			thu_south_slavic_open_table
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.051
+		nomad_tax_modifier = 0.355
+		clan_sentiment = 1
+	}
+	thu_south_slavic_traders_tent = {
+		desc = thu_south_slavic_traders_tent_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 72
+		upgrades_from = thu_south_slavic_barter_patch
+		prerequisites = {
+			thu_south_slavic_barter_patch
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.665
+		max_population_mult = 0.005
+	}
+	thu_south_slavic_merchants_pavilion = {
+		desc = thu_south_slavic_merchants_pavilion_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 77
+		upgrades_from = thu_south_slavic_traders_tent
+		prerequisites = {
+			thu_south_slavic_traders_tent
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	thu_south_slavic_market_stand = {
+		desc = thu_south_slavic_market_stand_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 162
+		ai_creation_factor = 85
+		upgrades_from = thu_south_slavic_merchants_pavilion
+		prerequisites = {
+			thu_south_slavic_merchants_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	thu_south_slavic_exchange_room = {
+		desc = thu_south_slavic_exchange_room_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 90
+		upgrades_from = thu_south_slavic_market_stand
+		prerequisites = {
+			thu_south_slavic_market_stand
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	thu_south_slavic_market_hall = {
+		desc = thu_south_slavic_market_hall_desc
+		gold_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 95
+		upgrades_from = thu_south_slavic_exchange_room
+		prerequisites = {
+			thu_south_slavic_exchange_room
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.487
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	thu_south_slavic_guild_pavilion = {
+		desc = thu_south_slavic_guild_pavilion_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 102
+		upgrades_from = thu_south_slavic_market_hall
+		prerequisites = {
+			thu_south_slavic_market_hall
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.665
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	thu_south_slavic_grand_market_room = {
+		desc = thu_south_slavic_grand_market_room_desc
+		gold_cost = 4875
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 108
+		upgrades_from = thu_south_slavic_guild_pavilion
+		prerequisites = {
+			thu_south_slavic_guild_pavilion
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	thu_south_slavic_grand_market = {
+		desc = thu_south_slavic_grand_market_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 1013
+		ai_creation_factor = 115
+		upgrades_from = thu_south_slavic_grand_market_room
+		prerequisites = {
+			thu_south_slavic_grand_market_room
+		}
+		potential = {
+			culture_group = south_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		nomad_tax_modifier = 0.797
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+		retinuesize_perc = 0.1
+	}
+}

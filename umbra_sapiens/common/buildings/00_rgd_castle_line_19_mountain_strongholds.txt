@@ -1,0 +1,188 @@
+castle = {
+	rgd_rock_shelter = {
+		desc = rgd_rock_shelter_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.06
+		garrison_size = 0.03
+	}
+	rgd_cliff_hut = {
+		desc = rgd_cliff_hut_desc
+		prestige_cost = 45
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 62
+		upgrades_from = rgd_rock_shelter
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.05
+		levy_size = 0.02
+	}
+	rgd_stone_cabin = {
+		desc = rgd_stone_cabin_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 65
+		upgrades_from = rgd_cliff_hut
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.11
+		garrison_size = 0.07
+		levy_size = 0.03
+	}
+	rgd_terraced_outpost = {
+		desc = rgd_terraced_outpost_desc
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 390
+		ai_creation_factor = 70
+		upgrades_from = rgd_stone_cabin
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.19
+		garrison_size = 0.12
+		levy_size = 0.05
+		archers_defensive = 0.04
+	}
+	rgd_mountain_wall = {
+		desc = rgd_mountain_wall_desc
+		gold_cost = 420
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 80
+		upgrades_from = rgd_terraced_outpost
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.28
+		garrison_size = 0.17
+		levy_size = 0.08
+		archers_defensive = 0.07
+	}
+	rgd_crag_fort = {
+		desc = rgd_crag_fort_desc
+		prestige_cost = 650
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = rgd_mountain_wall
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.41
+		garrison_size = 0.26
+		levy_size = 0.12
+		archers_defensive = 0.12
+		heavy_infantry_defensive = 0.09
+	}
+	rgd_peak_tower = {
+		desc = rgd_peak_tower_desc
+		gold_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 100
+		upgrades_from = rgd_crag_fort
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.54
+		garrison_size = 0.37
+		levy_size = 0.15
+		archers_defensive = 0.18
+		land_morale = 0.05
+	}
+	rgd_citadel_perch = {
+		desc = rgd_citadel_perch_desc
+		piety_cost = 1600
+		extra_tech_building_start = 999
+		build_time = 2000
+		ai_creation_factor = 108
+		upgrades_from = rgd_mountain_bastion
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.73
+		garrison_size = 0.60
+		levy_size = 0.26
+		archers_defensive = 0.33
+		heavy_infantry_defensive = 0.24
+		land_morale = 0.1
+		vassal_opinion = 4
+	}
+	rgd_mountain_bastion = {
+		desc = rgd_mountain_bastion_desc
+		gold_cost = 2600
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 105
+		upgrades_from = rgd_peak_tower
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.93
+		garrison_size = 0.48
+		levy_size = 0.21
+		archers_defensive = 0.26
+		heavy_infantry_defensive = 0.17
+		levy_reinforce_rate = 0.12
+	}
+	rgd_eyrie_fortress = {
+		desc = rgd_eyrie_fortress_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = rgd_citadel_perch
+		potential = {
+			terrain = mountain
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.19
+		garrison_size = 0.85
+		levy_size = 0.36
+		archers_defensive = 0.45
+		heavy_infantry_defensive = 0.35
+		land_morale = 0.18
+		vassal_opinion = 8
+		liege_prestige = 0.5
+	}
+}

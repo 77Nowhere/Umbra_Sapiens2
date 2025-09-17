@@ -1,0 +1,178 @@
+nomad = {
+	knb_west_african_earthen_pit = {
+		desc = knb_west_african_earthen_pit_desc
+		gold_cost = 19
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 45
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.011
+	}
+	knb_west_african_woven_basket = {
+		desc = knb_west_african_woven_basket_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 48
+		upgrades_from = knb_west_african_earthen_pit
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.021
+		supply_limit = 0.05
+	}
+	knb_west_african_mudbrick_silo = {
+		desc = knb_west_african_mudbrick_silo_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 52
+		upgrades_from = knb_west_african_woven_basket
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		population_growth = 0.041
+		supply_limit = 0.12
+	}
+	knb_west_african_raised_granary = {
+		desc = knb_west_african_raised_granary_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 58
+		upgrades_from = knb_west_african_mudbrick_silo
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		population_growth = 0.091
+		supply_limit = 0.22
+		nomad_tax_modifier = 0.222
+	}
+	knb_west_african_guarded_storehouse = {
+		desc = knb_west_african_guarded_storehouse_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 80
+		upgrades_from = knb_west_african_raised_granary
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.151
+		supply_limit = 0.4
+		garrison_size = 0.15
+	}
+	knb_west_african_rodent_proof_hut = {
+		desc = knb_west_african_rodent_proof_hut_desc
+		gold_cost = 638
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 90
+		upgrades_from = knb_west_african_guarded_storehouse
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.131
+		supply_limit = 0.7
+		clan_sentiment = 1
+	}
+	knb_west_african_expanded_store = {
+		desc = knb_west_african_expanded_store_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 100
+		upgrades_from = knb_west_african_rodent_proof_hut
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		population_growth = 0.142
+		supply_limit = 1.2
+		nomad_tax_modifier = 0.532
+	}
+	knb_west_african_market_pavilion = {
+		desc = knb_west_african_market_pavilion_desc
+		gold_cost = 1575
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 105
+		upgrades_from = knb_west_african_expanded_store
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	knb_west_african_grain_exchange_hall = {
+		desc = knb_west_african_grain_exchange_hall_desc
+		gold_cost = 2325
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 108
+		upgrades_from = knb_west_african_market_pavilion
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	knb_west_african_millet_granary = {
+		desc = knb_west_african_millet_granary_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = knb_west_african_grain_exchange_hall
+		potential = {
+			culture_group = west_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		population_growth = 0.102
+		supply_limit = 2.2
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

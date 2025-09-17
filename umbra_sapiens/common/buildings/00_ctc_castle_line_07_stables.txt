@@ -1,0 +1,178 @@
+castle = {
+	ca_stable_1 = {
+		desc = ca_stable_1_desc
+		gold_cost = 35
+		extra_tech_building_start = 0.8
+		build_time = 200
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.15
+		garrison_size = 0.15
+		light_cavalry = 6
+		knights = 5
+		retinuesize = 50
+	}
+	ca_stable_2 = {
+		desc = ca_stable_2_desc
+		gold_cost = 60
+		extra_tech_building_start = 2.2
+		build_time = 300
+		ai_creation_factor = 68
+		upgrades_from = ca_stable_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		levy_size = 0.15
+		garrison_size = 0.15
+		light_cavalry_offensive = 0.03
+		tax_income = 0.05
+		light_cavalry = 8
+		knights = 9
+		retinuesize = 50
+	}
+	ca_stable_3 = {
+		desc = ca_stable_3_desc
+		gold_cost = 110
+		extra_tech_building_start = 1.6
+		build_time = 420
+		ai_creation_factor = 70
+		upgrades_from = ca_stable_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
+		}
+		levy_size = 0.05
+		light_cavalry_offensive = 0.06
+		garrison_size = 0.02
+		light_cavalry = 9
+		knights = 13
+		retinuesize = 50
+	}
+	ca_stable_4 = {
+		desc = ca_stable_4_desc
+		gold_cost = 230
+		extra_tech_building_start = 1.2
+		build_time = 620
+		ai_creation_factor = 74
+		upgrades_from = ca_stable_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+		}
+		levy_size = 0.09
+		light_cavalry_offensive = 0.12
+		garrison_size = 0.04
+		tax_income = 0.15
+		light_cavalry = 11
+		knights = 17
+		retinuesize = 50
+	}
+	ca_stable_5 = {
+		desc = ca_stable_5_desc
+		prestige_cost = 320
+		extra_tech_building_start = 0.8
+		build_time = 1040
+		ai_creation_factor = 81
+		upgrades_from = ctc_large_stable
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+		}
+		levy_size = 0.32
+		light_cavalry_offensive = 0.36
+		retinuesize_perc = 0.05
+		light_cavalry = 12
+		knights = 22
+		retinuesize = 50
+	}
+	ca_stable_6 = {
+		desc = ca_stable_6_desc
+		piety_cost = 340
+		extra_tech_building_start = 0.2
+		build_time = 1260
+		ai_creation_factor = 87
+		upgrades_from = ca_stable_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+		}
+		levy_size = 0.52
+		light_cavalry_offensive = 0.6
+		retinuesize_perc = 0.1
+		land_morale = 0.04
+		light_cavalry = 14
+		knights = 26
+		retinuesize = 50
+	}
+	ctc_large_stable = {
+		desc = ctc_large_stable_desc
+		gold_cost = 460
+		extra_tech_building_start = 999
+		build_time = 820
+		ai_creation_factor = 78
+		upgrades_from = ca_stable_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 5
+		}
+		levy_size = 0.17
+		light_cavalry_offensive = 0.22
+		garrison_size = 0.06
+		retinuesize = 1
+		light_cavalry = 15
+		knights = 30
+		retinuesize = 50
+	}
+	ctc_stud_farm = {
+		desc = ctc_stud_farm_desc
+		prestige_cost = 520
+		extra_tech_building_start = 999
+		build_time = 1480
+		ai_creation_factor = 93
+		upgrades_from = ca_stable_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
+		}
+		levy_size = 0.99
+		light_cavalry_offensive = 1
+		retinuesize_perc = 0.18
+		tax_income = 0.25
+		light_cavalry = 17
+		knights = 34
+		retinuesize = 50
+	}
+	ctc_armored_stall = {
+		desc = ctc_armored_stall_desc
+		prestige_cost = 850
+		extra_tech_building_start = 999
+		build_time = 1700
+		ai_creation_factor = 100
+		upgrades_from = ctc_stud_farm
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 7
+		}
+		levy_size = 1.69
+		light_cavalry_offensive = 1.8
+		garrison_size = 0.16
+		retinuesize = 5
+		light_cavalry = 18
+		knights = 39
+		retinuesize = 50
+	}
+	ctc_noble_stables = {
+		desc = ctc_noble_stables_desc
+		prestige_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 110
+		upgrades_from = ctc_armored_stall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 8
+		}
+		levy_size = 3.37
+		light_cavalry_offensive = 3.6
+		retinuesize_perc = 0.44
+		liege_prestige = 2
+		tax_income = 0.38
+		light_cavalry = 20
+		knights = 43
+		retinuesize = 50
+	}
+}

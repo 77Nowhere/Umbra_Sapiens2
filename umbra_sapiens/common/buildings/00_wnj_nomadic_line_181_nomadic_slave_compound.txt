@@ -1,0 +1,158 @@
+nomad = {
+	wnj_rope_pen = {
+		desc = wnj_rope_pen_desc
+		gold_cost = 42
+		extra_tech_building_start = 999
+		build_time = 57
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+	}
+	wnj_wicker_stockade = {
+		desc = wnj_wicker_stockade_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 70
+		upgrades_from = wnj_rope_pen
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.026
+		nomad_tax_modifier = 0.133
+	}
+	wnj_guarded_enclosure = {
+		desc = wnj_guarded_enclosure_desc
+		gold_cost = 225
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 80
+		upgrades_from = wnj_wicker_stockade
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.051
+		manpower_growth = 0.076
+		garrison_size = 0.1
+	}
+	wnj_work_hut = {
+		desc = wnj_work_hut_desc
+		gold_cost = 563
+		extra_tech_building_start = 999
+		build_time = 244
+		ai_creation_factor = 88
+		upgrades_from = wnj_guarded_enclosure
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 100
+		population_growth = 0.072
+		manpower_growth = 0.030
+	}
+	wnj_chain_yard = {
+		desc = wnj_chain_yard_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 94
+		upgrades_from = wnj_work_hut
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 100
+		population_growth = 0.121
+		manpower_growth = 0.030
+		nomad_tax_modifier = 0.178
+	}
+	wnj_drivers_pavilion = {
+		desc = wnj_drivers_pavilion_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 99
+		upgrades_from = wnj_chain_yard
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 100
+		max_manpower_mult = 0.02
+		population_growth = 0.102
+		clan_sentiment = -2
+	}
+	wnj_slave_market = {
+		desc = wnj_slave_market_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 105
+		upgrades_from = wnj_drivers_pavilion
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 130
+		max_manpower_mult = 0.02
+		population_growth = 0.102
+		nomad_tax_modifier = 0.355
+	}
+	wnj_overseers_hall = {
+		desc = wnj_overseers_hall_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1088
+		ai_creation_factor = 110
+		upgrades_from = wnj_slave_market
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 250
+		max_manpower_mult = 0.04
+		population_growth = 0.151
+		manpower_growth = 0.037
+		nomad_tax_modifier = 0.532
+	}
+	wnj_slave_barracks = {
+		desc = wnj_slave_barracks_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1538
+		ai_creation_factor = 115
+		upgrades_from = wnj_overseers_hall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 450
+		max_manpower_mult = 0.15
+		manpower_growth = 0.060
+		garrison_size = 0.25
+		nomad_tax_modifier = 0.709
+	}
+	wnj_nomad_slave_market = {
+		desc = wnj_nomad_slave_market_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 120
+		upgrades_from = wnj_slave_barracks
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.5
+		max_population = 900
+		max_manpower_mult = 0.22
+		manpower_growth = 0.090
+		population_growth = 0.102
+		nomad_tax_modifier = 0.421
+		clan_sentiment = -6
+	}
+}

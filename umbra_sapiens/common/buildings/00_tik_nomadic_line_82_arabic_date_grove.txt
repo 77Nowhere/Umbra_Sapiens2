@@ -1,0 +1,185 @@
+nomad = {
+	tik_wild_date_stand = {
+		desc = tik_wild_date_stand_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+	}
+	tik_young_palm_patch = {
+		desc = tik_young_palm_patch_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 70
+		upgrades_from = tik_wild_date_stand
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.021
+		nomad_tax_modifier = 0.045
+	}
+	tik_fenced_orchard = {
+		desc = tik_fenced_orchard_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 75
+		upgrades_from = tik_young_palm_patch
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.041
+		nomad_tax_modifier = 0.089
+		max_manpower_mult = 0.02
+	}
+	tik_date_press_hut = {
+		desc = tik_date_press_hut_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = tik_fenced_orchard
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.081
+		nomad_tax_modifier = 0.133
+		max_manpower_mult = 0.02
+	}
+	tik_expanded_grove = {
+		desc = tik_expanded_grove_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 248
+		ai_creation_factor = 85
+		upgrades_from = tik_date_press_hut
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.161
+		nomad_tax_modifier = 0.266
+		max_manpower_mult = 0.02
+	}
+	tik_walled_orchard = {
+		desc = tik_walled_orchard_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = tik_expanded_grove
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.121
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.532
+	}
+	tik_date_market_pavilion = {
+		desc = tik_date_market_pavilion_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = tik_walled_orchard
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.142
+		nomad_tax_modifier = 0.399
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	tik_syrup_hall = {
+		desc = tik_syrup_hall_desc
+		gold_cost = 12000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = tik_date_market_pavilion
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 128
+		population_growth = 0.181
+		nomad_tax_modifier = 0.421
+		max_manpower_mult = 0.02
+		liege_prestige = 0.15
+	}
+	tik_merchants_grove = {
+		desc = tik_merchants_grove_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 105
+		upgrades_from = tik_syrup_hall
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 256
+		population_growth = 0.161
+		nomad_tax_modifier = 0.399
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	tik_arabic_grand_date_estate = {
+		desc = tik_arabic_grand_date_estate_desc
+		gold_cost = 48000
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 110
+		upgrades_from = tik_merchants_grove
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 512
+		population_growth = 0.113
+		nomad_tax_modifier = 0.443
+		max_manpower_mult = 0.10
+		tradevalue = 1.513
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+}

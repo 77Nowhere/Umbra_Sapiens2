@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ca_wall_1;Palisade Fence;;;;;x
+ca_wall_1_desc;A rudimentary barrier of sharpened wooden stakes, hastily erected for basic protection on the frontier.;;;;;x
+ca_wall_2;Earthen Embankment;;;;;x
+ca_wall_2_desc;A broad, sloped earthwork topped with timber, offering improved defense and a base for future stonework.;;;;;x
+ca_wall_3;Timber Rampart;;;;;x
+ca_wall_3_desc;A reinforced wooden wall with walkways for defenders, providing greater resistance to attackers.;;;;;x
+ca_wall_4;Dry Stone Wall;;;;;x
+ca_wall_4_desc;A wall of carefully stacked stones set without mortar, robust against attackers and the elements.;;;;;x
+ca_wall_5;Mortared Stone Wall;;;;;x
+ca_wall_5_desc;A formidable stone barrier set with lime mortar, greatly increasing defensive strength and long-term durability.;;;;;x
+ca_wall_6;Crenellated Curtain;;;;;x
+ca_wall_6_desc;A high stone curtain wall with crenellations, allowing defenders to shelter and return fire effectively.;;;;;x
+ca_wall_7;Reinforced Battlements;;;;;x
+ca_wall_7_desc;Curtain walls strengthened with stone buttresses and improved battlements, providing superior defense and command points.;;;;;x
+ca_wall_8;Machicolated Walls;;;;;x
+ca_wall_8_desc;Curtain walls equipped with machicolations, allowing defenders to rain missiles and objects upon besiegers.;;;;;x
+ca_wall_9;Thickened Bulwark;;;;;x
+ca_wall_9_desc;Massively thick stone walls, layered for resistance against siege engines and undermining, forming a nearly impregnable bulwark.;;;;;x
+ca_wall_10;Star Bastion;;;;;x
+ca_wall_10_desc;A cutting-edge star-shaped bastion with angled walls, designed to resist cannon fire and maximize defensive firepower.;;;;;x

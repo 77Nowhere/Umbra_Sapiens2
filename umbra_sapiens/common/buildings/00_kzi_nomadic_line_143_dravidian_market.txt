@@ -1,0 +1,184 @@
+nomad = {
+	kzi_dravidian_market_open_table = {
+		desc = kzi_dravidian_market_open_table_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 70
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.133
+		max_population = 100
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_barter_patch = {
+		desc = kzi_dravidian_market_barter_patch_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 75
+		upgrades_from = kzi_dravidian_market_open_table
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.333
+		max_population = 100
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_traders_tent = {
+		desc = kzi_dravidian_market_traders_tent_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 80
+		upgrades_from = kzi_dravidian_market_barter_patch
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.576
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	kzi_dravidian_market_merchants_pavilion = {
+		desc = kzi_dravidian_market_merchants_pavilion_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 85
+		upgrades_from = kzi_dravidian_market_traders_tent
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_market_stand = {
+		desc = kzi_dravidian_market_market_stand_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 87
+		upgrades_from = kzi_dravidian_market_merchants_pavilion
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_population_mult = 0.005
+		tradevalue = 1.513
+	}
+	kzi_dravidian_market_exchange_room = {
+		desc = kzi_dravidian_market_exchange_room_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 90
+		upgrades_from = kzi_dravidian_market_market_stand
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_population_mult = 0.010
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_market_hall = {
+		desc = kzi_dravidian_market_market_hall_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 95
+		upgrades_from = kzi_dravidian_market_exchange_room
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		max_population = 100
+		max_population_mult = 0.010
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_guild_pavilion = {
+		desc = kzi_dravidian_market_guild_pavilion_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 100
+		upgrades_from = kzi_dravidian_market_market_hall
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.532
+		max_population = 110
+		max_population_mult = 0.015
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_grand_market_room = {
+		desc = kzi_dravidian_market_grand_market_room_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 105
+		upgrades_from = kzi_dravidian_market_guild_pavilion
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.797
+		max_population = 200
+		max_population_mult = 0.020
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	kzi_dravidian_market_dravidian_grand_market = {
+		desc = kzi_dravidian_market_dravidian_grand_market_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = kzi_dravidian_market_grand_market_room
+		potential = {
+			culture_group = dravidian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.797
+		max_population = 400
+		max_population_mult = 0.025
+		tradevalue = 1.513
+		clan_sentiment = 1
+		global_tradevalue = 5
+	}
+}

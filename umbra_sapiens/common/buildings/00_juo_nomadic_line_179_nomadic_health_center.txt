@@ -1,0 +1,187 @@
+nomad = {
+	juo_herbal_patch = {
+		desc = juo_herbal_patch_desc
+		gold_cost = 45
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 62
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.08
+		hospital_level = 0.7
+		fertility = 0.04
+		extra_tech_building_start = 999
+	}
+	juo_medicine_tent = {
+		desc = juo_medicine_tent_desc
+		gold_cost = 135
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 68
+		upgrades_from = juo_herbal_patch
+		prerequisites = {
+			juo_herbal_patch
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.16
+		hospital_level = 1.3
+		supply_limit = 0.06
+		extra_tech_building_start = 999
+	}
+	juo_basic_infirmary = {
+		desc = juo_basic_infirmary_desc
+		gold_cost = 375
+		build_time = 263
+		extra_tech_building_start = 999
+		ai_creation_factor = 76
+		upgrades_from = juo_medicine_tent
+		prerequisites = {
+			juo_medicine_tent
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.28
+		hospital_level = 2.2
+		fertility = 0.08
+		levy_reinforce_rate = 0.03
+		extra_tech_building_start = 999
+	}
+	juo_shamanic_shelter = {
+		desc = juo_shamanic_shelter_desc
+		gold_cost = 1125
+		build_time = 450
+		extra_tech_building_start = 999
+		ai_creation_factor = 84
+		upgrades_from = juo_basic_infirmary
+		prerequisites = {
+			juo_basic_infirmary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.42
+		hospital_level = 3.5
+		fertility = 0.12
+		clan_sentiment = 1
+		extra_tech_building_start = 999
+	}
+	juo_wound_care_pavilion = {
+		desc = juo_wound_care_pavilion_desc
+		gold_cost = 3000
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 92
+		upgrades_from = juo_shamanic_shelter
+		prerequisites = {
+			juo_shamanic_shelter
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.6
+		hospital_level = 5.5
+		levy_reinforce_rate = 0.07
+		supply_limit = 0.12
+		extra_tech_building_start = 999
+	}
+	juo_healers_hut = {
+		desc = juo_healers_hut_desc
+		gold_cost = 3750
+		build_time = 1013
+		extra_tech_building_start = 999
+		ai_creation_factor = 99
+		upgrades_from = juo_wound_care_pavilion
+		prerequisites = {
+			juo_wound_care_pavilion
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 0.85
+		hospital_level = 8
+		fertility = 0.20
+		tech_growth_modifier = 0.06
+		extra_tech_building_start = 999
+	}
+	juo_remedy_room = {
+		desc = juo_remedy_room_desc
+		gold_cost = 5250
+		build_time = 1500
+		extra_tech_building_start = 999
+		ai_creation_factor = 104
+		upgrades_from = juo_healers_hut
+		prerequisites = {
+			juo_healers_hut
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 1.2
+		hospital_level = 12
+		levy_reinforce_rate = 0.13
+		supply_limit = 0.18
+		extra_tech_building_start = 999
+	}
+	juo_expanded_infirmary = {
+		desc = juo_expanded_infirmary_desc
+		gold_cost = 6750
+		build_time = 2250
+		extra_tech_building_start = 999
+		ai_creation_factor = 109
+		upgrades_from = juo_remedy_room
+		prerequisites = {
+			juo_remedy_room
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 1.7
+		hospital_level = 18
+		fertility = 0.30
+		tech_growth_modifier = 0.12
+		extra_tech_building_start = 999
+	}
+	juo_recovery_hall = {
+		desc = juo_recovery_hall_desc
+		gold_cost = 18750
+		build_time = 3375
+		extra_tech_building_start = 999
+		ai_creation_factor = 115
+		upgrades_from = juo_expanded_infirmary
+		prerequisites = {
+			juo_expanded_infirmary
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 2.3
+		hospital_level = 25
+		levy_reinforce_rate = 0.2
+		supply_limit = 0.25
+		extra_tech_building_start = 999
+	}
+	juo_grand_steppe_hospital = {
+		desc = juo_grand_steppe_hospital_desc
+		gold_cost = 24000
+		build_time = 5250
+		extra_tech_building_start = 999
+		ai_creation_factor = 121
+		upgrades_from = juo_recovery_hall
+		prerequisites = {
+			juo_recovery_hall
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		disease_defence = 3.2
+		hospital_level = 40
+		fertility = 0.49
+		tech_growth_modifier = 0.2
+		clan_sentiment = 1
+		extra_tech_building_start = 999
+	}
+}

@@ -1,0 +1,179 @@
+nomad = {
+	mpe_signal_post = {
+		desc = mpe_signal_post_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.03
+		clan_sentiment = 1
+	}
+	mpe_runners_shelter = {
+		desc = mpe_runners_shelter_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 64
+		ai_creation_factor = 68
+		upgrades_from = mpe_signal_post
+		prerequisites = {
+			mpe_signal_post
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.05
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	mpe_relay_yurt = {
+		desc = mpe_relay_yurt_desc
+		gold_cost = 210
+		extra_tech_building_start = 999
+		build_time = 83
+		ai_creation_factor = 72
+		upgrades_from = mpe_runners_shelter
+		prerequisites = {
+			mpe_runners_shelter
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.09
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	mpe_message_stand = {
+		desc = mpe_message_stand_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 105
+		ai_creation_factor = 78
+		upgrades_from = mpe_relay_yurt
+		prerequisites = {
+			mpe_relay_yurt
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.13
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	mpe_flagstaff_station = {
+		desc = mpe_flagstaff_station_desc
+		gold_cost = 750
+		extra_tech_building_start = 999
+		build_time = 154
+		ai_creation_factor = 84
+		upgrades_from = mpe_message_stand
+		prerequisites = {
+			mpe_message_stand
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.18
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	mpe_mounted_courier_post = {
+		desc = mpe_mounted_courier_post_desc
+		gold_cost = 1725
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 92
+		upgrades_from = mpe_flagstaff_station
+		prerequisites = {
+			mpe_flagstaff_station
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.24
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	mpe_falcon_loft = {
+		desc = mpe_falcon_loft_desc
+		gold_cost = 3525
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 105
+		upgrades_from = mpe_mounted_courier_post
+		prerequisites = {
+			mpe_mounted_courier_post
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.32
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		liege_prestige = 0.3
+	}
+	mpe_swift_relay_camp = {
+		desc = mpe_swift_relay_camp_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 110
+		upgrades_from = mpe_falcon_loft
+		prerequisites = {
+			mpe_falcon_loft
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.4
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		liege_prestige = 0.7
+	}
+	mpe_fleet_rider_pavilion = {
+		desc = mpe_fleet_rider_pavilion_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 544
+		ai_creation_factor = 110
+		upgrades_from = mpe_swift_relay_camp
+		prerequisites = {
+			mpe_swift_relay_camp
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.52
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		liege_prestige = 1.2
+	}
+	mpe_imperial_courier_quarters = {
+		desc = imperial_courier_quarters_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 110
+		upgrades_from = mpe_fleet_rider_pavilion
+		prerequisites = {
+			mpe_fleet_rider_pavilion
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		global_movement_speed = 0.7
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		liege_prestige = 1.5
+	}
+}

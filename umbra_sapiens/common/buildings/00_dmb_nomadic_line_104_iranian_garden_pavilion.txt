@@ -1,0 +1,175 @@
+nomad = {
+	dmb_walled_garden_patch = {
+		desc = dmb_walled_garden_patch_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		max_population = 100
+	}
+	dmb_irrigated_bed = {
+		desc = dmb_irrigated_bed_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 68
+		upgrades_from = dmb_walled_garden_patch
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.081
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	dmb_fruit_pavilion = {
+		desc = dmb_fruit_pavilion_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 128
+		ai_creation_factor = 73
+		upgrades_from = dmb_irrigated_bed
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population = 100
+		fertility = 0.20
+	}
+	dmb_flower_stand = {
+		desc = dmb_flower_stand_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = dmb_fruit_pavilion
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	dmb_scented_room = {
+		desc = dmb_scented_room_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 88
+		upgrades_from = dmb_flower_stand
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.102
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		sex_appeal_opinion = 5
+	}
+	dmb_courtyard_hall = {
+		desc = dmb_courtyard_hall_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 95
+		upgrades_from = dmb_scented_room
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		demesne_size = 1
+	}
+	dmb_windcatcher_pavilion = {
+		desc = dmb_windcatcher_pavilion_desc
+		gold_cost = 4050
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 102
+		upgrades_from = dmb_courtyard_hall
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		supply_limit = 0.15
+	}
+	dmb_fountain_garden = {
+		desc = dmb_fountain_garden_desc
+		gold_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 106
+		upgrades_from = dmb_windcatcher_pavilion
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		supply_limit = 0.25
+		fertility = 0.29
+	}
+	dmb_rose_chamber = {
+		desc = dmb_rose_chamber_desc
+		gold_cost = 9750
+		extra_tech_building_start = 999
+		build_time = 1013
+		ai_creation_factor = 110
+		upgrades_from = dmb_fountain_garden
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		sex_appeal_opinion = 10
+		vassal_opinion = 4
+	}
+	dmb_iranian_paradise_pavilion = {
+		desc = dmb_iranian_paradise_pavilion_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = dmb_rose_chamber
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		supply_limit = 0.6
+		liege_prestige = 1
+		fertility = 0.39
+	}
+}

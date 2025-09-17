@@ -1,0 +1,178 @@
+city = {
+	ct_marketplace_1 = {
+		desc = ct_marketplace_1_desc
+		gold_cost = 60
+		extra_tech_building_start = 0.4
+		build_time = 220
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.04
+		tradevalue = 1
+	}
+	ct_marketplace_2 = {
+		desc = ct_marketplace_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 0.8
+		build_time = 300
+		ai_creation_factor = 70
+		upgrades_from = ct_marketplace_1
+		prerequisites = {
+			ct_marketplace_1
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		local_tax_modifier = 0.08
+		tradevalue = 2
+		economy_techpoints = 0.03
+	}
+	ct_marketplace_3 = {
+		desc = ct_marketplace_3_desc
+		gold_cost = 135
+		extra_tech_building_start = 0.8
+		build_time = 420
+		ai_creation_factor = 72
+		upgrades_from = ct_marketplace_2
+		prerequisites = {
+			ct_marketplace_2
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.16
+		tradevalue = 4
+		economy_techpoints = 0.06
+	}
+	ct_marketplace_4 = {
+		desc = ct_marketplace_4_desc
+		gold_cost = 270
+		extra_tech_building_start = 0.2
+		build_time = 650
+		ai_creation_factor = 80
+		upgrades_from = ct_marketplace_3
+		prerequisites = {
+			ct_marketplace_3
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 1
+		}
+		local_tax_modifier = 0.32
+		tradevalue = 8
+		economy_techpoints = 0.12
+		supply_limit = 0.06
+	}
+	ct_marketplace_5 = {
+		desc = ct_marketplace_5_desc
+		gold_cost = 540
+		extra_tech_building_start = 0.2
+		build_time = 900
+		ai_creation_factor = 87
+		upgrades_from = ct_marketplace_4
+		prerequisites = {
+			ct_marketplace_4
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 2
+		}
+		local_tax_modifier = 0.62
+		tradevalue = 14
+		economy_techpoints = 0.22
+		supply_limit = 0.11
+	}
+	ct_marketplace_6 = {
+		desc = ct_marketplace_6_desc
+		prestige_cost = 160
+		extra_tech_building_start = 0.2
+		build_time = 1000
+		ai_creation_factor = 92
+		upgrades_from = ct_marketplace_5
+		prerequisites = {
+			ct_marketplace_5
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 3
+		}
+		local_tax_modifier = 0.86
+		tradevalue = 20
+		economy_techpoints = 0.36
+		supply_limit = 0.17
+	}
+	kae_guild_market = {
+		desc = kae_guild_market_desc
+		piety_cost = 220
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 96
+		upgrades_from = ct_marketplace_6
+		prerequisites = {
+			ct_marketplace_6
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 1.18
+		tradevalue = 30
+		economy_techpoints = 0.5
+		supply_limit = 0.24
+		garrison_size = 0.1
+	}
+	kae_counting_house = {
+		desc = kae_counting_house_desc
+		gold_cost = 1250
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 100
+		upgrades_from = kae_guild_market
+		prerequisites = {
+			kae_guild_market
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 1.6
+		tradevalue = 44
+		economy_techpoints = 0.7
+		supply_limit = 0.3
+		garrison_size = 0.18
+	}
+	kae_exchange_square = {
+		desc = kae_exchange_square_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 105
+		upgrades_from = kae_counting_house
+		prerequisites = {
+			kae_counting_house
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 2.2
+		tradevalue = 66
+		economy_techpoints = 1
+		supply_limit = 0.4
+		garrison_size = 0.24
+	}
+	kae_grand_mercantile_quarter = {
+		desc = kae_grand_mercantile_quarter_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 110
+		upgrades_from = kae_exchange_square
+		prerequisites = {
+			kae_exchange_square
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 3
+		tradevalue = 100
+		economy_techpoints = 1.6
+		supply_limit = 0.55
+		garrison_size = 0.33
+	}
+}

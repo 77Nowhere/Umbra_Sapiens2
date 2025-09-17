@@ -1,0 +1,206 @@
+nomad = {
+	drw_reed_landing = {
+		desc = drw_reed_landing_desc
+		galleys = 10
+		gold_cost = 45
+		build_time = 30
+		ai_creation_factor = 62
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.222
+		extra_tech_building_start = 999
+	}
+	drw_boat_mooring = {
+		desc = drw_boat_mooring_desc
+		galleys = 15
+		gold_cost = 150
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = drw_reed_landing
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		nomad_tax_modifier = 0.532
+		supply_limit = 0.08
+		tradevalue = 1.513
+		extra_tech_building_start = 999
+	}
+	drw_wooden_dock = {
+		desc = drw_wooden_dock_desc
+		galleys = 20
+		gold_cost = 525
+		build_time = 132
+		ai_creation_factor = 76
+		upgrades_from = drw_boat_mooring
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		supply_limit = 0.15
+		tradevalue = 1.513
+		extra_tech_building_start = 999
+	}
+	drw_fishing_slipway = {
+		desc = drw_fishing_slipway_desc
+		galleys = 25
+		gold_cost = 1500
+		build_time = 225
+		ai_creation_factor = 83
+		upgrades_from = drw_wooden_dock
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		supply_limit = 0.22
+		tradevalue = 1.513
+		extra_tech_building_start = 999
+	}
+	drw_cargo_pavilion = {
+		desc = drw_cargo_pavilion_desc
+		galleys = 30
+		gold_cost = 4500
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = drw_fishing_slipway
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.797
+		extra_tech_building_start = 999
+	}
+	drw_trade_wharf = {
+		desc = drw_trade_wharf_desc
+		galleys = 35
+		gold_cost = 6750
+		build_time = 488
+		ai_creation_factor = 97
+		upgrades_from = drw_cargo_pavilion
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		nomad_tax_modifier = 0.443
+		supply_limit = 0.35
+		clan_sentiment = 1
+		extra_tech_building_start = 999
+	}
+	drw_market_jetty = {
+		desc = drw_market_jetty_desc
+		galleys = 40
+		gold_cost = 11250
+		build_time = 675
+		ai_creation_factor = 102
+		upgrades_from = drw_trade_wharf
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		supply_limit = 0.55
+		clan_sentiment = 1
+		extra_tech_building_start = 999
+	}
+	drw_harbormasters_hut = {
+		desc = drw_harbormasters_hut_desc
+		galleys = 45
+		gold_cost = 15000
+		build_time = 900
+		ai_creation_factor = 105
+		upgrades_from = drw_market_jetty
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.1
+		tradevalue = 1.513
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		extra_tech_building_start = 999
+	}
+	drw_caravan_port = {
+		desc = drw_caravan_port_desc
+		galleys = 50
+		gold_cost = 21000
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = drw_harbormasters_hut
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.38
+		tradevalue = 1.513
+		supply_limit = 1
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		extra_tech_building_start = 999
+	}
+	drw_great_steppe_riverport = {
+		desc = drw_great_steppe_riverport_desc
+		galleys = 55
+		gold_cost = 26250
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = drw_caravan_port
+		port = yes
+		potential = {
+			port = yes
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.399
+		extra_tech_building_start = 999
+	}
+}

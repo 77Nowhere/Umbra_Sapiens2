@@ -1,0 +1,207 @@
+nomad = {
+	csa_steam_pit_nomad_bathhouse_1 = {
+		desc = csa_steam_pit_nomad_bathhouse_1_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 60
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.021
+	}
+	csa_hot_stone_hut_nomad_bathhouse_2 = {
+		desc = csa_hot_stone_hut_nomad_bathhouse_2_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 65
+		upgrades_from = csa_steam_pit_nomad_bathhouse_1
+		prerequisites = {
+			csa_steam_pit_nomad_bathhouse_1
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.041
+		supply_limit = 0.03
+	}
+	csa_heated_pavilion_nomad_bathhouse_3 = {
+		desc = csa_heated_pavilion_nomad_bathhouse_3_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 124
+		ai_creation_factor = 70
+		upgrades_from = csa_hot_stone_hut_nomad_bathhouse_2
+		prerequisites = {
+			csa_hot_stone_hut_nomad_bathhouse_2
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.072
+		max_population_mult = 0.005
+	}
+	csa_bath_chamber_nomad_bathhouse_4 = {
+		desc = csa_bath_chamber_nomad_bathhouse_4_desc
+		gold_cost = 315
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 80
+		upgrades_from = csa_heated_pavilion_nomad_bathhouse_3
+		prerequisites = {
+			csa_heated_pavilion_nomad_bathhouse_3
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.121
+		max_population_mult = 0.005
+		supply_limit = 0.08
+	}
+	csa_changing_room_nomad_bathhouse_5 = {
+		desc = csa_changing_room_nomad_bathhouse_5_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 85
+		upgrades_from = csa_bath_chamber_nomad_bathhouse_4
+		prerequisites = {
+			csa_bath_chamber_nomad_bathhouse_4
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.181
+		max_population_mult = 0.005
+		supply_limit = 0.12
+	}
+	csa_warm_hall_nomad_bathhouse_6 = {
+		desc = csa_warm_hall_nomad_bathhouse_6_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 293
+		ai_creation_factor = 95
+		upgrades_from = csa_changing_room_nomad_bathhouse_5
+		prerequisites = {
+			csa_changing_room_nomad_bathhouse_5
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.181
+		max_population_mult = 0.010
+		supply_limit = 0.17
+	}
+	csa_scented_room_nomad_bathhouse_7 = {
+		desc = csa_scented_room_nomad_bathhouse_7_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 100
+		upgrades_from = csa_warm_hall_nomad_bathhouse_6
+		prerequisites = {
+			csa_warm_hall_nomad_bathhouse_6
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.192
+		max_population_mult = 0.010
+		fertility = 0.12
+	}
+	csa_family_bathhouse_nomad_bathhouse_8 = {
+		desc = csa_family_bathhouse_nomad_bathhouse_8_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 105
+		upgrades_from = csa_scented_room_nomad_bathhouse_7
+		prerequisites = {
+			csa_scented_room_nomad_bathhouse_7
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.142
+		max_population_mult = 0.010
+		supply_limit = 0.25
+		fertility = 0.15
+	}
+	csa_community_bath_hall_nomad_bathhouse_9 = {
+		desc = csa_community_bath_hall_nomad_bathhouse_9_desc
+		gold_cost = 9600
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = csa_family_bathhouse_nomad_bathhouse_8
+		prerequisites = {
+			csa_family_bathhouse_nomad_bathhouse_8
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.121
+		max_population_mult = 0.015
+		supply_limit = 0.36
+		fertility = 0.23
+	}
+	csa_iranian_grand_hammam_nomad_bathhouse_10 = {
+		desc = csa_iranian_grand_hammam_nomad_bathhouse_10_desc
+		gold_cost = 19200
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = csa_community_bath_hall_nomad_bathhouse_9
+		prerequisites = {
+			csa_community_bath_hall_nomad_bathhouse_9
+		}
+		potential = {
+			culture_group = iranian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.102
+		max_population_mult = 0.020
+		supply_limit = 0.5
+		fertility = 0.34
+	}
+}

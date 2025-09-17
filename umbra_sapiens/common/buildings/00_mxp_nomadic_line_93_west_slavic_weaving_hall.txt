@@ -1,0 +1,214 @@
+nomad = {
+	mxp_west_slavic_spindle_patch = {
+		desc = mxp_west_slavic_spindle_patch_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.031
+		nomad_tax_modifier = 0.045
+	}
+	mxp_west_slavic_weavers_tent = {
+		desc = mxp_west_slavic_weavers_tent_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 70
+		upgrades_from = mxp_west_slavic_spindle_patch
+		prerequisites = {
+			mxp_west_slavic_spindle_patch
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.051
+		nomad_tax_modifier = 0.089
+		clan_sentiment = 1
+	}
+	mxp_west_slavic_loom_hut = {
+		desc = mxp_west_slavic_loom_hut_desc
+		gold_cost = 188
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 75
+		upgrades_from = mxp_west_slavic_weavers_tent
+		prerequisites = {
+			mxp_west_slavic_weavers_tent
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.178
+		clan_sentiment = 1
+	}
+	mxp_west_slavic_patterned_room = {
+		desc = mxp_west_slavic_patterned_room_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 319
+		ai_creation_factor = 80
+		upgrades_from = mxp_west_slavic_loom_hut
+		prerequisites = {
+			mxp_west_slavic_loom_hut
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.355
+		clan_sentiment = 1
+	}
+	mxp_west_slavic_dye_pavilion = {
+		desc = mxp_west_slavic_dye_pavilion_desc
+		gold_cost = 825
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 85
+		upgrades_from = mxp_west_slavic_patterned_room
+		prerequisites = {
+			mxp_west_slavic_patterned_room
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.576
+		clan_sentiment = 1
+	}
+	mxp_west_slavic_textile_chamber = {
+		desc = mxp_west_slavic_textile_chamber_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 90
+		upgrades_from = mxp_west_slavic_dye_pavilion
+		prerequisites = {
+			mxp_west_slavic_dye_pavilion
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.842
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	mxp_west_slavic_fine_cloth_hall = {
+		desc = mxp_west_slavic_fine_cloth_hall_desc
+		gold_cost = 3375
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 97
+		upgrades_from = mxp_west_slavic_textile_chamber
+		prerequisites = {
+			mxp_west_slavic_textile_chamber
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.010
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	mxp_west_slavic_weavers_guildhall = {
+		desc = mxp_west_slavic_weavers_guildhall_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 1988
+		ai_creation_factor = 103
+		upgrades_from = mxp_west_slavic_fine_cloth_hall
+		prerequisites = {
+			mxp_west_slavic_fine_cloth_hall
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 150
+		max_population_mult = 0.015
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+	}
+	mxp_west_slavic_master_weavers_room = {
+		desc = mxp_west_slavic_master_weavers_room_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 107
+		upgrades_from = mxp_west_slavic_weavers_guildhall
+		prerequisites = {
+			mxp_west_slavic_weavers_guildhall
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 250
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		liege_prestige = 0.2
+	}
+	mxp_west_slavic_weaving_guild = {
+		desc = mxp_west_slavic_weaving_guild_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 4500
+		ai_creation_factor = 110
+		upgrades_from = mxp_west_slavic_master_weavers_room
+		prerequisites = {
+			mxp_west_slavic_master_weavers_room
+		}
+		potential = {
+			culture_group = west_slavic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 400
+		max_population_mult = 0.025
+		nomad_tax_modifier = 0.399
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		liege_prestige = 0.4
+	}
+}

@@ -1,0 +1,169 @@
+city = {
+	mjy_pack_animal_post = {
+		desc = mjy_pack_animal_post_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 22
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 0.5
+		supply_limit = 0.04
+	}
+	mjy_waystation = {
+		desc = mjy_waystation_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 30
+		upgrades_from = mjy_pack_animal_post
+		prerequisites = {
+			mjy_pack_animal_post
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 1.2
+		supply_limit = 0.08
+		local_tax_modifier = 0.01
+	}
+	mjy_customs_booth = {
+		desc = mjy_customs_booth_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 34
+		upgrades_from = mjy_waystation
+		prerequisites = {
+			mjy_waystation
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 2.5
+		local_tax_modifier = 0.03
+	}
+	mjy_trade_depot = {
+		desc = mjy_trade_depot_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 40
+		upgrades_from = mjy_customs_booth
+		prerequisites = {
+			mjy_customs_booth
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 1
+		}
+		tradevalue = 5
+		local_tax_modifier = 0.07
+		supply_limit = 0.15
+	}
+	mjy_wagon_yard = {
+		desc = mjy_wagon_yard_desc
+		prestige_cost = 320
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 46
+		upgrades_from = mjy_trading_house
+		prerequisites = {
+			mjy_trading_house
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 4
+		}
+		tradevalue = 38
+		local_tax_modifier = 0.4
+		supply_limit = 0.7
+	}
+	mjy_caravanserai = {
+		desc = mjy_caravanserai_desc
+		gold_cost = 420
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 46
+		upgrades_from = mjy_trade_depot
+		prerequisites = {
+			mjy_trade_depot
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 2
+		}
+		tradevalue = 10
+		local_tax_modifier = 0.13
+		supply_limit = 0.28
+	}
+	mjy_freight_warehouse = {
+		desc = mjy_freight_warehouse_desc
+		piety_cost = 480
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 38
+		upgrades_from = mjy_wagon_yard
+		prerequisites = {
+			mjy_wagon_yard
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 5
+		}
+		tradevalue = 65
+		local_tax_modifier = 0.66
+		supply_limit = 1
+		economy_techpoints = 0.1
+	}
+	mjy_trading_house = {
+		desc = mjy_trading_house_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 54
+		upgrades_from = mjy_caravanserai
+		prerequisites = {
+			mjy_caravanserai
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 3
+		}
+		tradevalue = 22
+		local_tax_modifier = 0.26
+		supply_limit = 0.5
+		economy_techpoints = 0.05
+	}
+	mjy_merchants_exchange = {
+		desc = mjy_merchants_exchange_desc
+		gold_cost = 3200
+		extra_tech_building_start = 999
+		build_time = 2500
+		ai_creation_factor = 60
+		upgrades_from = mjy_freight_warehouse
+		prerequisites = {
+			mjy_freight_warehouse
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 6
+		}
+		tradevalue = 120
+		local_tax_modifier = 1.1
+		economy_techpoints = 0.22
+	}
+	mjy_grand_trade_terminus = {
+		desc = mjy_grand_trade_terminus_desc
+		gold_cost = 6400
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 110
+		upgrades_from = mjy_merchants_exchange
+		prerequisites = {
+			mjy_merchants_exchange
+		}
+		trigger = {
+			TECH_TRADE_PRACTICES = 7
+		}
+		tradevalue = 250
+		local_tax_modifier = 2.1
+		economy_techpoints = 0.45
+		garrison_size = 0.2
+	}
+}

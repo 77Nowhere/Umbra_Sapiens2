@@ -1,0 +1,196 @@
+nomad = {
+	uzy_prayer_flag_post = {
+		desc = uzy_prayer_flag_post_desc
+		piety_cost = 57
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.25
+		clan_sentiment = 1
+	}
+	uzy_stone_marker = {
+		desc = uzy_stone_marker_desc
+		piety_cost = 113
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		upgrades_from = uzy_prayer_flag_post
+		prerequisites = {
+			uzy_prayer_flag_post
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 0.5
+		clan_sentiment = 1
+	}
+	uzy_walled_shrine = {
+		desc = uzy_walled_shrine_desc
+		piety_cost = 263
+		extra_tech_building_start = 999
+		build_time = 207
+		ai_creation_factor = 68
+		upgrades_from = uzy_stone_marker
+		prerequisites = {
+			uzy_stone_marker
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		vassal_opinion = 3
+	}
+	uzy_mani_pavilion = {
+		desc = uzy_mani_pavilion_desc
+		piety_cost = 525
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 72
+		upgrades_from = uzy_walled_shrine
+		prerequisites = {
+			uzy_walled_shrine
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 5
+	}
+	uzy_chanting_room = {
+		desc = uzy_chanting_room_desc
+		piety_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 79
+		upgrades_from = uzy_mani_pavilion
+		prerequisites = {
+			uzy_mani_pavilion
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 8
+	}
+	uzy_altar_hall = {
+		desc = uzy_altar_hall_desc
+		piety_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 86
+		upgrades_from = uzy_chanting_room
+		prerequisites = {
+			uzy_chanting_room
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 12
+	}
+	uzy_priests_chamber = {
+		desc = uzy_priests_chamber_desc
+		piety_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 1238
+		ai_creation_factor = 91
+		upgrades_from = uzy_altar_hall
+		prerequisites = {
+			uzy_altar_hall
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 14
+	}
+	uzy_diviners_room = {
+		desc = uzy_diviners_room_desc
+		piety_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 1688
+		ai_creation_factor = 97
+		upgrades_from = uzy_priests_chamber
+		prerequisites = {
+			uzy_priests_chamber
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 16
+	}
+	uzy_sanctified_sanctuary = {
+		desc = uzy_sanctified_sanctuary_desc
+		piety_cost = 6375
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 104
+		upgrades_from = uzy_diviners_room
+		prerequisites = {
+			uzy_diviners_room
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 1
+		church_opinion = 24
+	}
+	uzy_tibetan_prayer_hall = {
+		desc = uzy_tibetan_prayer_hall_desc
+		piety_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 3375
+		ai_creation_factor = 110
+		upgrades_from = uzy_sanctified_sanctuary
+		prerequisites = {
+			uzy_sanctified_sanctuary
+		}
+		potential = {
+			culture_group = tibetan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		liege_piety = 1
+		clan_sentiment = 2
+		church_opinion = 36
+	}
+}

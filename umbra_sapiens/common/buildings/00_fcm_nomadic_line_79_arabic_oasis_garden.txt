@@ -1,0 +1,172 @@
+nomad = {
+	fcm_arabic_oasis_palm_patch = {
+		desc = fcm_arabic_oasis_palm_patch_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.011
+		supply_limit = 0.05
+	}
+	fcm_arabic_oasis_irrigation_ditch = {
+		desc = fcm_arabic_oasis_irrigation_ditch_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 68
+		upgrades_from = fcm_arabic_oasis_palm_patch
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fertility = 0.10
+		population_growth = 0.021
+		supply_limit = 0.09
+	}
+	fcm_arabic_oasis_shaded_tent = {
+		desc = fcm_arabic_oasis_shaded_tent_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 72
+		upgrades_from = fcm_arabic_oasis_irrigation_ditch
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		population_growth = 0.031
+	}
+	fcm_arabic_oasis_water_channel = {
+		desc = fcm_arabic_oasis_water_channel_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 76
+		upgrades_from = fcm_arabic_oasis_shaded_tent
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.051
+		supply_limit = 0.15
+	}
+	fcm_arabic_oasis_fruit_grove = {
+		desc = fcm_arabic_oasis_fruit_grove_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 80
+		upgrades_from = fcm_arabic_oasis_water_channel
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.081
+		fertility = 0.23
+	}
+	fcm_arabic_oasis_scented_pavilion = {
+		desc = fcm_arabic_oasis_scented_pavilion_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 86
+		upgrades_from = fcm_arabic_oasis_fruit_grove
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.2
+		population_growth = 0.121
+	}
+	fcm_arabic_oasis_date_palm_hall = {
+		desc = fcm_arabic_oasis_date_palm_hall_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 92
+		upgrades_from = fcm_arabic_oasis_scented_pavilion
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_prestige = 0.4
+	}
+	fcm_arabic_oasis_waterwheel_stand = {
+		desc = fcm_arabic_oasis_waterwheel_stand_desc
+		gold_cost = 9600
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 100
+		upgrades_from = fcm_arabic_oasis_date_palm_hall
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		population_growth = 0.102
+		supply_limit = 0.3
+	}
+	fcm_arabic_oasis_fountain_oasis = {
+		desc = fcm_arabic_oasis_fountain_oasis_desc
+		gold_cost = 19200
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 106
+		upgrades_from = fcm_arabic_oasis_waterwheel_stand
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.797
+		liege_prestige = 0.8
+	}
+	fcm_arabic_oasis_paradise_garden = {
+		desc = fcm_arabic_oasis_paradise_garden_desc
+		gold_cost = 38400
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = fcm_arabic_oasis_fountain_oasis
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.421
+		liege_prestige = 1.6
+		fertility = 0.45
+	}
+}

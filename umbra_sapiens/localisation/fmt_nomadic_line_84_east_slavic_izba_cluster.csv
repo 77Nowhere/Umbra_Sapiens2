@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+fmt_log_shelter_izba_cluster;Log Shelter;;;;;x
+fmt_log_shelter_izba_cluster_desc;A simple log structure, hastily built from local timber. Provides basic shelter for a handful of families on the frontier.;;;;;x
+fmt_wooden_hut_izba_cluster;Wooden Hut;;;;;x
+fmt_wooden_hut_izba_cluster_desc;An insulated wooden hut, offering improved warmth and shelter. Attracts more settlers and allows for larger families.;;;;;x
+fmt_stone_stove_house_izba_cluster;Stone Stove House;;;;;x
+fmt_stone_stove_house_izba_cluster_desc;A sturdier wooden house with a central stone stove, providing warmth and a communal hearth for extended families.;;;;;x
+fmt_smoke_house_izba_cluster;Smoke House;;;;;x
+fmt_smoke_house_izba_cluster_desc;A communal smokehouse for preserving meat and fish, improving supplies for the growing settlement and supporting larger population.;;;;;x
+fmt_walled_yard_izba_cluster;Walled Yard;;;;;x
+fmt_walled_yard_izba_cluster_desc;A timber palisade enclosing communal yards, providing security and space for livestock, aiding in community defense and supply.;;;;;x
+fmt_village_court_izba_cluster;Village Court;;;;;x
+fmt_village_court_izba_cluster_desc;A central court for resolving disputes and holding gatherings, fostering unity and order among the clan.;;;;;x
+fmt_communal_hall_izba_cluster;Communal Hall;;;;;x
+fmt_communal_hall_izba_cluster_desc;A large timber hall for feasts, councils, and celebrations, strengthening bonds and coordination among the people.;;;;;x
+fmt_elders_chamber_izba_cluster;Elders Chamber;;;;;x
+fmt_elders_chamber_izba_cluster_desc;A fortified chamber for the clan elders, where leadership convenes to decide matters of war and peace, increasing unity and organization.;;;;;x
+fmt_village_assembly_hall_izba_cluster;Village Assembly Hall;;;;;x
+fmt_village_assembly_hall_izba_cluster_desc;A grand assembly hall for clan gatherings, legal proceedings, and strategic discussions, empowering the community and horde organization.;;;;;x
+fmt_slavic_grand_izba_izba_cluster;Slavic Grand Izba;;;;;x
+fmt_slavic_grand_izba_izba_cluster_desc;A monumental wooden palace, seat of the most powerful clan, symbol of unity and dominance. The heart of the Izba cluster.;;;;;x

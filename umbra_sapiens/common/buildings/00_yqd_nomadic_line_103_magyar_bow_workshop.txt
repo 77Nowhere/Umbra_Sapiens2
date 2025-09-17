@@ -1,0 +1,209 @@
+nomad = {
+	yqd_wooden_bow_stand = {
+		desc = yqd_wooden_bow_stand_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 60
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.031
+		archers_offensive = 0.03
+	}
+	yqd_bow_carver_hut = {
+		desc = yqd_bow_carver_hut_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		upgrades_from = yqd_wooden_bow_stand
+		prerequisites = {
+			yqd_wooden_bow_stand
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.061
+		archers_offensive = 0.06
+		max_manpower_mult = 0.02
+	}
+	yqd_arrowmakers_tent = {
+		desc = yqd_arrowmakers_tent_desc
+		gold_cost = 120
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 70
+		upgrades_from = yqd_bow_carver_hut
+		prerequisites = {
+			yqd_bow_carver_hut
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.111
+		archers_offensive = 0.12
+		max_manpower_mult = 0.02
+	}
+	yqd_composite_bow_pavilion = {
+		desc = yqd_composite_bow_pavilion_desc
+		gold_cost = 240
+		extra_tech_building_start = 999
+		build_time = 282
+		ai_creation_factor = 80
+		upgrades_from = yqd_arrowmakers_tent
+		prerequisites = {
+			yqd_arrowmakers_tent
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.2
+		max_manpower_mult = 0.02
+		levy_size = 0.08
+	}
+	yqd_fletchers_room = {
+		desc = yqd_fletchers_room_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 95
+		upgrades_from = yqd_composite_bow_pavilion
+		prerequisites = {
+			yqd_composite_bow_pavilion
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.32
+		max_manpower_mult = 0.02
+		levy_size = 0.15
+		clan_sentiment = 1
+	}
+	yqd_fine_bow_hall = {
+		desc = yqd_fine_bow_hall_desc
+		gold_cost = 1050
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 103
+		upgrades_from = yqd_fletchers_room
+		prerequisites = {
+			yqd_fletchers_room
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.5
+		max_manpower_mult = 0.04
+		levy_size = 0.22
+		clan_sentiment = 1
+		land_morale = 0.04
+	}
+	yqd_bowyers_chamber = {
+		desc = yqd_bowyers_chamber_desc
+		gold_cost = 2100
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 108
+		upgrades_from = yqd_fine_bow_hall
+		prerequisites = {
+			yqd_fine_bow_hall
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.7
+		max_manpower_mult = 0.04
+		levy_size = 0.29
+		clan_sentiment = 1
+		archers_defensive = 0.18
+	}
+	yqd_guild_pavilion = {
+		desc = yqd_guild_pavilion_desc
+		gold_cost = 4200
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 110
+		upgrades_from = yqd_bowyers_chamber
+		prerequisites = {
+			yqd_bowyers_chamber
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 1
+		max_manpower_mult = 0.06
+		levy_size = 0.4
+		clan_sentiment = 1
+		archers_morale = 0.15
+	}
+	yqd_champions_armory = {
+		desc = yqd_champions_armory_desc
+		gold_cost = 8400
+		extra_tech_building_start = 999
+		build_time = 1275
+		ai_creation_factor = 110
+		upgrades_from = yqd_guild_pavilion
+		prerequisites = {
+			yqd_guild_pavilion
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 1.3
+		max_manpower_mult = 0.18
+		levy_size = 0.6
+		clan_sentiment = 1
+		archers_morale = 0.25
+	}
+	yqd_magyar_bowyer_guild = {
+		desc = yqd_magyar_bowyer_guild_desc
+		gold_cost = 16800
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = yqd_champions_armory
+		prerequisites = {
+			yqd_champions_armory
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 1.8
+		max_manpower_mult = 0.06
+		levy_size = 0.8
+		clan_sentiment = 1
+		archers_morale = 0.35
+		global_movement_speed = 0.12
+	}
+}

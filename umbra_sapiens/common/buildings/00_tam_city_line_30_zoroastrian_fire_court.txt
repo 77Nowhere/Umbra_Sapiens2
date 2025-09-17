@@ -1,0 +1,215 @@
+city = {
+	tam_sacred_hearth = {
+		desc = tam_sacred_hearth_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 60
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.02
+		garrison_size = 0.05
+	}
+	tam_ceremonial_pit = {
+		desc = tam_ceremonial_pit_desc
+		prestige_cost = 60
+		extra_tech_building_start = 999
+		build_time = 500
+		ai_creation_factor = 70
+		upgrades_from = tam_fire_platform
+		prerequisites = {
+			tam_fire_platform
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.08
+		garrison_size = 0.15
+		tradevalue = 4
+		city_tax_modifier = 0.04
+	}
+	tam_fire_platform = {
+		desc = tam_fire_platform_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 400
+		ai_creation_factor = 65
+		upgrades_from = tam_sacred_hearth
+		prerequisites = {
+			tam_sacred_hearth
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		local_tax_modifier = 0.04
+		garrison_size = 0.1
+		tradevalue = 2
+	}
+	tam_ash_chamber = {
+		desc = tam_ash_chamber_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 80
+		upgrades_from = tam_ceremonial_pit
+		prerequisites = {
+			tam_ceremonial_pit
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		local_tax_modifier = 0.16
+		garrison_size = 0.3
+		tradevalue = 8
+		city_tax_modifier = 0.1
+	}
+	tam_embers_hall = {
+		desc = tam_embers_hall_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 90
+		upgrades_from = tam_ash_chamber
+		prerequisites = {
+			tam_ash_chamber
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		local_tax_modifier = 0.32
+		garrison_size = 0.6
+		tradevalue = 16
+		city_tax_modifier = 0.2
+		economy_techpoints = 0.15
+	}
+	tam_flame_sanctuary = {
+		desc = tam_flame_sanctuary_desc
+		gold_cost = 2200
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 100
+		upgrades_from = tam_embers_hall
+		prerequisites = {
+			tam_embers_hall
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		local_tax_modifier = 0.6
+		garrison_size = 1.25
+		tradevalue = 32
+		city_tax_modifier = 0.4
+		economy_techpoints = 0.3
+	}
+	tam_fire_chamber = {
+		desc = tam_fire_chamber_desc
+		gold_cost = 4400
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = tam_flame_sanctuary
+		prerequisites = {
+			tam_flame_sanctuary
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		local_tax_modifier = 1.2
+		garrison_size = 2.5
+		tradevalue = 64
+		city_tax_modifier = 0.8
+		economy_techpoints = 0.6
+		military_techpoints = 0.2
+	}
+	tam_guarded_atrium = {
+		desc = tam_guarded_atrium_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = tam_fire_chamber
+		prerequisites = {
+			tam_fire_chamber
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		local_tax_modifier = 2.4
+		garrison_size = 4
+		tradevalue = 120
+		city_tax_modifier = 1.5
+		economy_techpoints = 1
+		military_techpoints = 0.4
+	}
+	tam_sacred_fire_temple = {
+		desc = tam_sacred_fire_temple_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 4500
+		ai_creation_factor = 110
+		upgrades_from = tam_guarded_atrium
+		prerequisites = {
+			tam_guarded_atrium
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		local_tax_modifier = 4.8
+		garrison_size = 8
+		tradevalue = 250
+		city_tax_modifier = 3
+		economy_techpoints = 2
+		military_techpoints = 1
+	}
+	tam_grand_fire_court = {
+		desc = tam_grand_fire_court_desc
+		gold_cost = 32000
+		extra_tech_building_start = 999
+		build_time = 7000
+		ai_creation_factor = 110
+		upgrades_from = tam_sacred_fire_temple
+		prerequisites = {
+			tam_sacred_fire_temple
+		}
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		local_tax_modifier = 10
+		garrison_size = 15
+		tradevalue = 500
+		city_tax_modifier = 7
+		economy_techpoints = 4
+		military_techpoints = 2
+	}
+}

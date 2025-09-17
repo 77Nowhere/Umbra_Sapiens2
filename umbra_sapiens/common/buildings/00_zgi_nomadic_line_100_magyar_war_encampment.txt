@@ -1,0 +1,210 @@
+nomad = {
+	zgi_warrior_patch_1 = {
+		desc = zgi_warrior_patch_1_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		manpower_growth = 0.030
+		levy_size = 0.03
+	}
+	zgi_training_circle_2 = {
+		desc = zgi_training_circle_2_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 169
+		ai_creation_factor = 67
+		upgrades_from = zgi_warrior_patch_1
+		prerequisites = {
+			zgi_warrior_patch_1
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		manpower_growth = 0.030
+		levy_size = 0.06
+		max_manpower_mult = 0.02
+	}
+	zgi_mounted_drill_yard_3 = {
+		desc = zgi_mounted_drill_yard_3_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 70
+		upgrades_from = zgi_training_circle_2
+		prerequisites = {
+			zgi_training_circle_2
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.11
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.05
+	}
+	zgi_weapons_pavilion_4 = {
+		desc = zgi_weapons_pavilion_4_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 74
+		upgrades_from = zgi_mounted_drill_yard_3
+		prerequisites = {
+			zgi_mounted_drill_yard_3
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.2
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.1
+		manpower_growth = 0.030
+	}
+	zgi_command_stand_5 = {
+		desc = zgi_command_stand_5_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 80
+		upgrades_from = zgi_weapons_pavilion_4
+		prerequisites = {
+			zgi_weapons_pavilion_4
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.32
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.15
+		commander_limit = 1
+	}
+	zgi_battlefield_tent_6 = {
+		desc = zgi_battlefield_tent_6_desc
+		gold_cost = 1440
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 87
+		upgrades_from = zgi_command_stand_5
+		prerequisites = {
+			zgi_command_stand_5
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.48
+		max_manpower_mult = 0.02
+		light_cavalry_offensive = 0.2
+		commander_limit = 1
+		clan_sentiment = 1
+	}
+	zgi_muster_hall_7 = {
+		desc = zgi_muster_hall_7_desc
+		gold_cost = 2880
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 93
+		upgrades_from = zgi_battlefield_tent_6
+		prerequisites = {
+			zgi_battlefield_tent_6
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.65
+		max_manpower_mult = 0.04
+		light_cavalry_offensive = 0.25
+		commander_limit = 1
+		clan_sentiment = 1
+	}
+	zgi_elite_ground_8 = {
+		desc = zgi_elite_ground_8_desc
+		gold_cost = 5760
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 98
+		upgrades_from = zgi_muster_hall_7
+		prerequisites = {
+			zgi_muster_hall_7
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.85
+		max_manpower_mult = 0.04
+		light_cavalry_offensive = 0.35
+		commander_limit = 2
+		clan_sentiment = 1
+	}
+	zgi_champions_pavilion_9 = {
+		desc = zgi_champions_pavilion_9_desc
+		gold_cost = 11520
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 105
+		upgrades_from = zgi_elite_ground_8
+		prerequisites = {
+			zgi_elite_ground_8
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 1.1
+		max_manpower_mult = 0.06
+		light_cavalry_offensive = 0.45
+		commander_limit = 2
+		clan_sentiment = 1
+	}
+	zgi_magyar_war_camp_10 = {
+		desc = zgi_magyar_war_camp_10_desc
+		gold_cost = 23040
+		extra_tech_building_start = 999
+		build_time = 1313
+		ai_creation_factor = 110
+		upgrades_from = zgi_champions_pavilion_9
+		prerequisites = {
+			zgi_champions_pavilion_9
+		}
+		potential = {
+			culture_group = magyar
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 1.5
+		max_manpower_mult = 0.22
+		light_cavalry_offensive = 0.6
+		commander_limit = 3
+		clan_sentiment = 1
+		global_movement_speed = 0.1
+	}
+}

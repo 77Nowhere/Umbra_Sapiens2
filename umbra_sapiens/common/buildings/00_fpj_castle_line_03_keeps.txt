@@ -1,0 +1,209 @@
+castle = {
+	ca_keep_1 = {
+		desc = ca_keep_1_desc
+		gold_cost = 40
+		extra_tech_building_start = 1
+		build_time = 300
+		ai_creation_factor = 22
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.6
+		levy_size = 0.02
+		garrison_size = 0.04
+		retinuesize = 50
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_2 = {
+		desc = ca_keep_2_desc
+		gold_cost = 70
+		extra_tech_building_start = 2.2
+		build_time = 450
+		ai_creation_factor = 28
+		upgrades_from = ca_keep_1
+		prerequisites = {
+			ca_keep_1
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.15
+		levy_size = 0.04
+		garrison_size = 0.07
+		retinuesize = 100
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_3 = {
+		desc = ca_keep_3_desc
+		gold_cost = 120
+		extra_tech_building_start = 1.6
+		build_time = 700
+		ai_creation_factor = 33
+		upgrades_from = ca_keep_2
+		prerequisites = {
+			ca_keep_2
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.21
+		levy_size = 0.06
+		garrison_size = 0.1
+		retinuesize = 150
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_4 = {
+		desc = ca_keep_4_desc
+		gold_cost = 250
+		extra_tech_building_start = 1
+		build_time = 1100
+		ai_creation_factor = 44
+		upgrades_from = ca_keep_3
+		prerequisites = {
+			ca_keep_3
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.32
+		levy_size = 0.1
+		garrison_size = 0.16
+		heavy_infantry_offensive = 0.04
+		retinuesize = 175
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_5 = {
+		desc = ca_keep_5_desc
+		gold_cost = 500
+		extra_tech_building_start = 1
+		build_time = 1800
+		ai_creation_factor = 58
+		upgrades_from = ca_keep_4
+		prerequisites = {
+			ca_keep_4
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.47
+		levy_size = 0.17
+		garrison_size = 0.26
+		heavy_infantry_defensive = 0.08
+		retinuesize = 200
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_6 = {
+		desc = ca_keep_6_desc
+		gold_cost = 900
+		extra_tech_building_start = 0.2
+		build_time = 2600
+		ai_creation_factor = 65
+		upgrades_from = ca_keep_5
+		prerequisites = {
+			ca_keep_5
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.67
+		levy_size = 0.26
+		garrison_size = 0.46
+		heavy_infantry_morale = 0.07
+		retinuesize = 225
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_7 = {
+		desc = ca_keep_7_desc
+		prestige_cost = 1000
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 82
+		upgrades_from = ca_keep_6
+		prerequisites = {
+			ca_keep_6
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		fort_level = 0.86
+		levy_size = 0.37
+		garrison_size = 0.6
+		liege_prestige = 2
+		vassal_opinion = 4
+		retinuesize = 200
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_8 = {
+		desc = ca_keep_8_desc
+		piety_cost = 1500
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 94
+		upgrades_from = ca_keep_7
+		prerequisites = {
+			ca_keep_7
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 1.06
+		levy_size = 0.49
+		garrison_size = 0.81
+		heavy_infantry_offensive = 0.12
+		knights = 5
+		retinuesize = 200
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_9 = {
+		desc = ca_keep_9_desc
+		prestige_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 5000
+		ai_creation_factor = 105
+		upgrades_from = ca_keep_8
+		prerequisites = {
+			ca_keep_8
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 1.32
+		levy_size = 0.63
+		garrison_size = 1.02
+		liege_prestige = 5
+		vassal_opinion = 8
+		retinuesize = 100
+		archers = 10
+		light_infantry = 3
+	}
+	ca_keep_10 = {
+		desc = ca_keep_10_desc
+		piety_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 7000
+		ai_creation_factor = 110
+		upgrades_from = ca_keep_9
+		prerequisites = {
+			ca_keep_9
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 8
+		}
+		fort_level = 1.64
+		levy_size = 0.8
+		garrison_size = 1.28
+		retinuesize = 100
+		vassal_opinion = 12
+		liege_prestige = 10
+		archers = 10
+		light_infantry = 3
+	}
+}

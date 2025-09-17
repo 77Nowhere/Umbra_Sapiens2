@@ -1,0 +1,179 @@
+nomad = {
+	jgc_finno_ugric_bear_skull_post = {
+		desc = jgc_finno_ugric_bear_skull_post_desc
+		gold_cost = 30
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	jgc_finno_ugric_stone_altar = {
+		desc = jgc_finno_ugric_stone_altar_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 66
+		upgrades_from = jgc_finno_ugric_bear_skull_post
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	jgc_finno_ugric_bear_hide_tent = {
+		desc = jgc_finno_ugric_bear_hide_tent_desc
+		gold_cost = 132
+		extra_tech_building_start = 999
+		build_time = 124
+		ai_creation_factor = 70
+		upgrades_from = jgc_finno_ugric_stone_altar
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		liege_piety = 0.1
+	}
+	jgc_finno_ugric_bear_tooth_stand = {
+		desc = jgc_finno_ugric_bear_tooth_stand_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 75
+		upgrades_from = jgc_finno_ugric_bear_hide_tent
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_piety = 0.25
+	}
+	jgc_finno_ugric_shamanic_shelter = {
+		desc = jgc_finno_ugric_shamanic_shelter_desc
+		piety_cost = 338
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = jgc_finno_ugric_bear_tooth_stand
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		liege_piety = 0.5
+		vassal_opinion = 2
+	}
+	jgc_finno_ugric_bear_spirit_hall = {
+		desc = jgc_finno_ugric_bear_spirit_hall_desc
+		piety_cost = 675
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 86
+		upgrades_from = jgc_finno_ugric_shamanic_shelter
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.020
+		liege_piety = 1
+		vassal_opinion = 4
+	}
+	jgc_finno_ugric_totem_pavilion = {
+		desc = jgc_finno_ugric_totem_pavilion_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 94
+		upgrades_from = jgc_finno_ugric_bear_spirit_hall
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		liege_piety = 1
+		vassal_opinion = 6
+		church_opinion = 3
+	}
+	jgc_finno_ugric_bearkeepers_yurt = {
+		desc = jgc_finno_ugric_bearkeepers_yurt_desc
+		piety_cost = 2250
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 100
+		upgrades_from = jgc_finno_ugric_totem_pavilion
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.025
+		liege_piety = 1
+		vassal_opinion = 8
+		church_opinion = 5
+	}
+	jgc_finno_ugric_great_bear_shrine = {
+		desc = jgc_finno_ugric_great_bear_shrine_desc
+		piety_cost = 3750
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 106
+		upgrades_from = jgc_finno_ugric_bearkeepers_yurt
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.125
+		liege_piety = 1
+		vassal_opinion = 10
+		church_opinion = 6
+	}
+	jgc_finno_ugric_bear_sanctuary = {
+		desc = jgc_finno_ugric_bear_sanctuary_desc
+		piety_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 110
+		upgrades_from = jgc_finno_ugric_great_bear_shrine
+		potential = {
+			culture_group = finno_ugric_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.125
+		liege_piety = 1
+		vassal_opinion = 15
+		church_opinion = 10
+	}
+}

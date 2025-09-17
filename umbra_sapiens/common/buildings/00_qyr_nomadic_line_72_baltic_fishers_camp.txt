@@ -1,0 +1,186 @@
+nomad = {
+	qyr_baltic_reed_net_patch_1 = {
+		desc = qyr_baltic_reed_net_patch_1_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		nomad_tax_modifier = 0.133
+	}
+	qyr_baltic_fish_drying_stand_2 = {
+		desc = qyr_baltic_fish_drying_stand_2_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 98
+		ai_creation_factor = 68
+		upgrades_from = qyr_baltic_reed_net_patch_1
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+		supply_limit = 0.05
+	}
+	qyr_baltic_boat_shelter_3 = {
+		desc = qyr_baltic_boat_shelter_3_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 73
+		upgrades_from = qyr_baltic_fish_drying_stand_2
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		global_movement_speed = 0.02
+		supply_limit = 0.07
+	}
+	qyr_baltic_fish_rack_4 = {
+		desc = qyr_baltic_fish_rack_4_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 80
+		upgrades_from = qyr_baltic_boat_shelter_3
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+		supply_limit = 0.11
+	}
+	qyr_baltic_smokehouse_tent_5 = {
+		desc = qyr_baltic_smokehouse_tent_5_desc
+		gold_cost = 390
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 85
+		upgrades_from = qyr_baltic_fish_rack_4
+		potential = {
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.030
+		supply_limit = 0.16
+		clan_sentiment = 1
+	}
+	qyr_baltic_dock_pavilion_6 = {
+		desc = qyr_baltic_dock_pavilion_6_desc
+		gold_cost = 825
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 92
+		upgrades_from = qyr_baltic_smokehouse_tent_5
+		port = yes
+		potential = {
+			port = yes
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		supply_limit = 0.21
+	}
+	qyr_baltic_fishermans_hall_7 = {
+		desc = qyr_baltic_fishermans_hall_7_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 98
+		upgrades_from = qyr_baltic_dock_pavilion_6
+		port = yes
+		potential = {
+			port = yes
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		liege_prestige = 0.1
+	}
+	qyr_baltic_fish_market_8 = {
+		desc = qyr_baltic_fish_market_8_desc
+		gold_cost = 3300
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 104
+		upgrades_from = qyr_baltic_fishermans_hall_7
+		port = yes
+		potential = {
+			port = yes
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+	}
+	qyr_baltic_sea_pavilion_9 = {
+		desc = qyr_baltic_sea_pavilion_9_desc
+		gold_cost = 6750
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 108
+		upgrades_from = qyr_baltic_fish_market_8
+		port = yes
+		potential = {
+			port = yes
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		supply_limit = 0.3
+		liege_prestige = 0.2
+	}
+	qyr_baltic_harbor_10 = {
+		desc = qyr_baltic_harbor_10_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = qyr_baltic_sea_pavilion_9
+		port = yes
+		potential = {
+			port = yes
+			culture_group = baltic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.399
+		tradevalue = 1.513
+		supply_limit = 0.45
+	}
+}

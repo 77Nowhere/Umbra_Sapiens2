@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ca_town_1;Servant Hut;;;;;x
+ca_town_1_desc;A makeshift hut or lean-to for a handful of servants, hastily constructed from timber and thatch. Offers basic support for castle logistics.;;;;;x
+ca_town_2;Linen Room;;;;;x
+ca_town_2_desc;A small, secured storage area for linens and supplies, improving the efficiency and morale of castle staff.;;;;;x
+ca_town_3;Chamber Servants' Room;;;;;x
+ca_town_3_desc;A modest shared chamber for trusted castle servants, improving security and operational readiness.;;;;;x
+ca_town_4;Outer Quarters;;;;;x
+ca_town_4_desc;Simple timber barracks at the castles edge, providing expanded living space for servants and support staff.;;;;;x
+ca_town_5;Inner Quarters;;;;;x
+ca_town_5_desc;Sturdy stone-built quarters within the castle walls, offering safety and discipline for the expanded staff.;;;;;x
+ca_town_6;Expanded Servants' Hall;;;;;x
+ca_town_6_desc;A large, vaulted hall for the castles many servants, enabling swift response to emergencies and improved morale.;;;;;x
+szu_stewards_quarters;Stewards Quarters;;;;;x
+szu_stewards_quarters_desc;Lavish accommodations for the castle steward and senior staff. Enhances administrative efficiency and loyalty.;;;;;x
+szu_household_barracks;Household Barracks;;;;;x
+szu_household_barracks_desc;A fortified barracks for household guards and elite retainers, providing robust defense and a professional garrison.;;;;;x
+szu_staff_dormitory;Staff Dormitory;;;;;x
+szu_staff_dormitory_desc;A grand dormitory complex with secure entryways and ample amenities, ensuring excellent staff loyalty and rapid response to threats.;;;;;x
+szu_grand_servants_wing;Grand Servants' Wing;;;;;x
+szu_grand_servants_wing_desc;An expansive, multi-story complex housing the elite staff of the castle, complete with guardrooms and administrative offices. The heart of castle administration and defense.;;;;;x

@@ -1,0 +1,176 @@
+castle = {
+	ckf_scroll_room = {
+		desc = ckf_scroll_room_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.01
+		tax_income = 0.10
+	}
+	ckf_record_room = {
+		desc = ckf_record_room_desc
+		prestige_cost = 70
+		extra_tech_building_start = 999
+		build_time = 360
+		ai_creation_factor = 72
+		upgrades_from = ckf_manuscript_alcove
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.04
+		tax_income = 0.20
+		local_tax_modifier = 0.01
+	}
+	ckf_manuscript_alcove = {
+		desc = ckf_manuscript_alcove_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 68
+		upgrades_from = ckf_scroll_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		tax_income = 0.20
+		liege_prestige = 0.05
+	}
+	ckf_archive_chamber = {
+		desc = ckf_archive_chamber_desc
+		gold_cost = 250
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 83
+		upgrades_from = ckf_record_room
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.06
+		tax_income = 0.20
+		local_tax_modifier = 0.03
+	}
+	ckf_scholars_study = {
+		desc = ckf_scholars_study_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 700
+		ai_creation_factor = 91
+		upgrades_from = ckf_archive_chamber
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		levy_size = 0.11
+		tax_income = 0.30
+		local_tax_modifier = 0.06
+		tech_growth_modifier = 0.06
+	}
+	ckf_book_repository = {
+		desc = ckf_book_repository_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 96
+		upgrades_from = ckf_scholars_study
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		levy_size = 0.17
+		tax_income = 0.30
+		local_tax_modifier = 0.12
+		tech_growth_modifier = 0.12
+	}
+	ckf_community_archive = {
+		desc = ckf_community_archive_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 104
+		upgrades_from = ckf_book_repository
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		levy_size = 0.25
+		tax_income = 0.40
+		local_tax_modifier = 0.2
+		tech_growth_modifier = 0.2
+	}
+	ckf_council_library = {
+		desc = ckf_council_library_desc
+		gold_cost = 5000
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 110
+		upgrades_from = ckf_community_archive
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		levy_size = 0.34
+		tax_income = 0.40
+		local_tax_modifier = 0.3
+		tech_growth_modifier = 0.4
+	}
+	ckf_elders_archive = {
+		desc = ckf_elders_archive_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 2700
+		ai_creation_factor = 110
+		upgrades_from = ckf_council_library
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		levy_size = 0.49
+		tax_income = 0.40
+		local_tax_modifier = 0.4
+		tech_growth_modifier = 0.6
+	}
+	ckf_grand_archive = {
+		desc = ckf_grand_archive_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 4000
+		ai_creation_factor = 110
+		upgrades_from = ckf_elders_archive
+		potential = {
+			religion_group = jewish_group
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		levy_size = 0.74
+		tax_income = 0.50
+		local_tax_modifier = 0.55
+		tech_growth_modifier = 0.9
+	}
+}

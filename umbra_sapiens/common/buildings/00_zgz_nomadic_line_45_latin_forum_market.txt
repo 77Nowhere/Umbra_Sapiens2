@@ -1,0 +1,185 @@
+nomad = {
+	zgz_latin_forum_open_stall = {
+		desc = zgz_latin_forum_open_stall_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 62
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.011
+		nomad_tax_modifier = 0.133
+	}
+	zgz_latin_forum_barter_table = {
+		desc = zgz_latin_forum_barter_table_desc
+		gold_cost = 83
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		upgrades_from = zgz_latin_forum_open_stall
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.021
+		nomad_tax_modifier = 0.266
+		clan_sentiment = 1
+	}
+	zgz_latin_forum_merchants_booth = {
+		desc = zgz_latin_forum_merchants_booth_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 70
+		upgrades_from = zgz_latin_forum_barter_table
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.041
+		nomad_tax_modifier = 0.532
+		max_population_mult = 0.005
+	}
+	zgz_latin_forum_covered_market = {
+		desc = zgz_latin_forum_covered_market_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 78
+		upgrades_from = zgz_latin_forum_merchants_booth
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.072
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	zgz_latin_forum_trading_pavilion = {
+		desc = zgz_latin_forum_trading_pavilion_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 195
+		ai_creation_factor = 83
+		upgrades_from = zgz_latin_forum_covered_market
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.131
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.005
+		tradevalue = 1.513
+	}
+	zgz_latin_forum_forum_stand = {
+		desc = zgz_latin_forum_forum_stand_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 90
+		upgrades_from = zgz_latin_forum_trading_pavilion
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.121
+		nomad_tax_modifier = 0.399
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		tradevalue = 1.513
+	}
+	zgz_latin_forum_arcaded_market = {
+		desc = zgz_latin_forum_arcaded_market_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 98
+		upgrades_from = zgz_latin_forum_forum_stand
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.161
+		nomad_tax_modifier = 0.421
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		tradevalue = 1.513
+	}
+	zgz_latin_forum_forum_hall = {
+		desc = zgz_latin_forum_forum_hall_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 105
+		upgrades_from = zgz_latin_forum_arcaded_market
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.142
+		nomad_tax_modifier = 0.554
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		tradevalue = 1.513
+	}
+	zgz_latin_forum_merchant_guildhouse = {
+		desc = zgz_latin_forum_merchant_guildhouse_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 110
+		upgrades_from = zgz_latin_forum_forum_hall
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.181
+		nomad_tax_modifier = 0.797
+		max_population_mult = 0.020
+		clan_sentiment = 1
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+	}
+	zgz_latin_forum_grand_exchange = {
+		desc = zgz_latin_forum_grand_exchange_desc
+		gold_cost = 16500
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 110
+		upgrades_from = zgz_latin_forum_merchant_guildhouse
+		potential = {
+			culture_group = latin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		population_growth = 0.151
+		nomad_tax_modifier = 0.775
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.05
+	}
+}

@@ -1,0 +1,203 @@
+nomad = {
+	zir_ancestor_pole = {
+		desc = zir_ancestor_pole_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.05
+	}
+	zir_spirit_stand = {
+		desc = zir_spirit_stand_desc
+		gold_cost = 113
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = zir_ancestor_pole
+		prerequisites = {
+			zir_ancestor_pole
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.1
+		max_population_mult = 0.005
+	}
+	zir_totem_pavilion = {
+		desc = zir_totem_pavilion_desc
+		gold_cost = 244
+		extra_tech_building_start = 999
+		build_time = 102
+		ai_creation_factor = 75
+		upgrades_from = zir_spirit_stand
+		prerequisites = {
+			zir_spirit_stand
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.2
+		max_population_mult = 0.005
+	}
+	zir_priests_room = {
+		desc = zir_priests_room_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 80
+		upgrades_from = zir_totem_pavilion
+		prerequisites = {
+			zir_totem_pavilion
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.4
+		max_population_mult = 0.005
+	}
+	zir_blessed_hut = {
+		desc = zir_blessed_hut_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 203
+		ai_creation_factor = 85
+		upgrades_from = zir_priests_room
+		prerequisites = {
+			zir_priests_room
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.8
+		max_population_mult = 0.005
+		vassal_opinion = 2
+	}
+	zir_ritual_chamber = {
+		desc = zir_ritual_chamber_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 285
+		ai_creation_factor = 90
+		upgrades_from = zir_blessed_hut
+		prerequisites = {
+			zir_blessed_hut
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 1.6
+		max_population_mult = 0.010
+		vassal_opinion = 4
+	}
+	zir_sanctuary_pavilion = {
+		desc = zir_sanctuary_pavilion_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 95
+		upgrades_from = zir_ritual_chamber
+		prerequisites = {
+			zir_ritual_chamber
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 1.2
+		max_population_mult = 0.020
+		vassal_opinion = 8
+	}
+	zir_diviners_hall = {
+		desc = zir_diviners_hall_desc
+		gold_cost = 7125
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = zir_sanctuary_pavilion
+		prerequisites = {
+			zir_sanctuary_pavilion
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 2
+		liege_prestige = 1.4
+		max_population_mult = 0.025
+		vassal_opinion = 16
+	}
+	zir_holy_room = {
+		desc = zir_holy_room_desc
+		gold_cost = 13500
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 105
+		upgrades_from = zir_diviners_hall
+		prerequisites = {
+			zir_diviners_hall
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 3
+		liege_prestige = 1.8
+		max_population_mult = 0.025
+		vassal_opinion = 32
+	}
+	zir_central_african_ritual_hut = {
+		desc = zir_central_african_ritual_hut_desc
+		gold_cost = 26250
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = zir_holy_room
+		prerequisites = {
+			zir_holy_room
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 6
+		liege_prestige = 1
+		max_population_mult = 0.025
+		vassal_opinion = 64
+	}
+}

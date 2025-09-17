@@ -1,0 +1,212 @@
+nomad = {
+	ioc_central_african_earthen_pit = {
+		desc = ioc_central_african_earthen_pit_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 65
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.011
+	}
+	ioc_central_african_woven_basket = {
+		desc = ioc_central_african_woven_basket_desc
+		gold_cost = 57
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 70
+		upgrades_from = ioc_central_african_earthen_pit
+		prerequisites = {
+			ioc_central_african_earthen_pit
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.016
+		max_manpower_mult = 0.02
+	}
+	ioc_central_african_mudbrick_hut = {
+		desc = ioc_central_african_mudbrick_hut_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 80
+		upgrades_from = ioc_central_african_woven_basket
+		prerequisites = {
+			ioc_central_african_woven_basket
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		population_growth = 0.026
+		max_manpower_mult = 0.02
+		garrison_size = 0.03
+	}
+	ioc_central_african_thatched_silo = {
+		desc = ioc_central_african_thatched_silo_desc
+		gold_cost = 244
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 85
+		upgrades_from = ioc_central_african_mudbrick_hut
+		prerequisites = {
+			ioc_central_african_mudbrick_hut
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.041
+		max_manpower_mult = 0.02
+	}
+	ioc_central_african_rodent_proof_store = {
+		desc = ioc_central_african_rodent_proof_store_desc
+		gold_cost = 488
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 90
+		upgrades_from = ioc_central_african_thatched_silo
+		prerequisites = {
+			ioc_central_african_thatched_silo
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		max_population_mult = 0.005
+		population_growth = 0.072
+		max_manpower_mult = 0.02
+		garrison_size = 0.07
+	}
+	ioc_central_african_guarded_pavilion = {
+		desc = ioc_central_african_guarded_pavilion_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 638
+		ai_creation_factor = 93
+		upgrades_from = ioc_central_african_rodent_proof_store
+		prerequisites = {
+			ioc_central_african_rodent_proof_store
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 120
+		max_population_mult = 0.005
+		population_growth = 0.102
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	ioc_central_african_market_storehall = {
+		desc = ioc_central_african_market_storehall_desc
+		gold_cost = 1875
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 96
+		upgrades_from = ioc_central_african_guarded_pavilion
+		prerequisites = {
+			ioc_central_african_guarded_pavilion
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 170
+		max_population_mult = 0.005
+		population_growth = 0.142
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	ioc_central_african_expanded_granary = {
+		desc = ioc_central_african_expanded_granary_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 100
+		upgrades_from = ioc_central_african_market_storehall
+		prerequisites = {
+			ioc_central_african_market_storehall
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 250
+		max_population_mult = 0.010
+		population_growth = 0.181
+		max_manpower_mult = 0.02
+		garrison_size = 0.12
+	}
+	ioc_central_african_grain_exchange_hall = {
+		desc = ioc_central_african_grain_exchange_hall_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1238
+		ai_creation_factor = 105
+		upgrades_from = ioc_central_african_expanded_granary
+		prerequisites = {
+			ioc_central_african_expanded_granary
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 350
+		max_population_mult = 0.010
+		population_growth = 0.121
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.665
+	}
+	ioc_central_african_central_african_granary = {
+		desc = ioc_central_african_central_african_granary_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 1613
+		ai_creation_factor = 110
+		upgrades_from = ioc_central_african_grain_exchange_hall
+		prerequisites = {
+			ioc_central_african_grain_exchange_hall
+		}
+		potential = {
+			culture_group = central_african
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 550
+		max_population_mult = 0.015
+		population_growth = 0.102
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+}

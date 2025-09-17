@@ -1,0 +1,163 @@
+nomad = {
+	chn_archery_target_patch = {
+		desc = chn_archery_target_patch_desc
+		gold_cost = 38
+		build_time = 23
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.03
+		max_population_mult = 0.005
+	}
+	chn_archery_straw_bale_range = {
+		desc = chn_archery_straw_bale_range_desc
+		gold_cost = 113
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 67
+		upgrades_from = chn_archery_target_patch
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.07
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	chn_archery_basic_archery_lane = {
+		desc = chn_archery_basic_archery_lane_desc
+		gold_cost = 375
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 70
+		upgrades_from = chn_archery_straw_bale_range
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.15
+		archers_defensive = 0.05
+		max_population_mult = 0.005
+		light_cavalry_offensive = 0.03
+	}
+	chn_archery_horse_archer_field = {
+		desc = chn_archery_horse_archer_field_desc
+		gold_cost = 1125
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 75
+		upgrades_from = chn_archery_basic_archery_lane
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.25
+		archers_defensive = 0.09
+		light_cavalry_offensive = 0.08
+		max_manpower_mult = 0.02
+	}
+	chn_archery_advanced_target_range = {
+		desc = chn_archery_advanced_target_range_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 82
+		upgrades_from = chn_archery_horse_archer_field
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.4
+		archers_defensive = 0.13
+		max_population_mult = 0.005
+		levy_size = 0.07
+		tech_growth_modifier_military = 0.02
+	}
+	chn_archery_composite_bow_yard = {
+		desc = chn_archery_composite_bow_yard_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 90
+		upgrades_from = chn_archery_advanced_target_range
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 0.75
+		archers_defensive = 0.22
+		max_manpower_mult = 0.02
+		tech_growth_modifier_military = 0.04
+		liege_prestige = 0.1
+	}
+	chn_archery_expert_archer_track = {
+		desc = chn_archery_expert_archer_track_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = chn_archery_composite_bow_yard
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 1.2
+		archers_defensive = 0.32
+		light_cavalry_offensive = 0.18
+		max_population_mult = 0.005
+		global_movement_speed = 0.03
+		liege_prestige = 0.2
+	}
+	chn_archery_mounted_shooting_gallery = {
+		desc = chn_archery_mounted_shooting_gallery_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = chn_archery_expert_archer_track
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 2
+		archers_defensive = 0.45
+		light_cavalry_offensive = 0.35
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.06
+		clan_sentiment = 1
+		morale_of_armies = 0.03
+	}
+	chn_archery_sharpshooter_park = {
+		desc = chn_archery_sharpshooter_park_desc
+		gold_cost = 18750
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 105
+		upgrades_from = chn_archery_mounted_shooting_gallery
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 3
+		archers_defensive = 0.7
+		light_cavalry_offensive = 0.6
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		morale_of_armies = 0.06
+		liege_prestige = 0.5
+	}
+	chn_archery_master_archer_arena = {
+		desc = chn_archery_master_archer_arena_desc
+		gold_cost = 30000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = chn_archery_sharpshooter_park
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		archers_offensive = 5
+		archers_defensive = 1.5
+		light_cavalry_offensive = 1.5
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.1
+		clan_sentiment = 1
+		morale_of_armies = 0.1
+		liege_prestige = 1
+	}
+}

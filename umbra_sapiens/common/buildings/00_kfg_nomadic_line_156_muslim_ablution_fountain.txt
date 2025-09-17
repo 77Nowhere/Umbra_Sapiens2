@@ -1,0 +1,178 @@
+nomad = {
+	kfg_clay_basin = {
+		desc = kfg_clay_basin_desc
+		gold_cost = 27
+		extra_tech_building_start = 999
+		build_time = 27
+		ai_creation_factor = 65
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+	}
+	kfg_washing_stand = {
+		desc = kfg_washing_stand_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 42
+		ai_creation_factor = 68
+		upgrades_from = kfg_clay_basin
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	kfg_stone_fountain = {
+		desc = kfg_stone_fountain_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 72
+		upgrades_from = kfg_washing_stand
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	kfg_water_pavilion = {
+		desc = kfg_water_pavilion_desc
+		gold_cost = 270
+		extra_tech_building_start = 999
+		build_time = 132
+		ai_creation_factor = 76
+		upgrades_from = kfg_stone_fountain
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_piety = 0.12
+	}
+	kfg_clean_room = {
+		desc = kfg_clean_room_desc
+		piety_cost = 450
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 84
+		upgrades_from = kfg_water_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		liege_piety = 0.17
+		vassal_opinion = 2
+	}
+	kfg_sanctified_hall = {
+		desc = kfg_sanctified_hall_desc
+		piety_cost = 900
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 92
+		upgrades_from = kfg_clean_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_piety = 0.25
+		church_opinion = 5
+	}
+	kfg_ablution_chamber = {
+		desc = kfg_ablution_chamber_desc
+		piety_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 97
+		upgrades_from = kfg_sanctified_hall
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		clan_sentiment = 1
+		liege_piety = 0.35
+		vassal_opinion = 3
+	}
+	kfg_fountain_pavilion = {
+		desc = kfg_fountain_pavilion_desc
+		piety_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 103
+		upgrades_from = kfg_ablution_chamber
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		liege_piety = 0.5
+		church_opinion = 8
+	}
+	kfg_blessed_room = {
+		desc = kfg_blessed_room_desc
+		piety_cost = 4500
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 107
+		upgrades_from = kfg_fountain_pavilion
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		clan_sentiment = 1
+		liege_piety = 0.8
+		church_opinion = 12
+		vassal_opinion = 4
+	}
+	kfg_muslim_ablution_fountain = {
+		desc = kfg_muslim_ablution_fountain_desc
+		piety_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = kfg_blessed_room
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		clan_sentiment = 1
+		liege_piety = 1.2
+		church_opinion = 18
+		vassal_opinion = 6
+	}
+}

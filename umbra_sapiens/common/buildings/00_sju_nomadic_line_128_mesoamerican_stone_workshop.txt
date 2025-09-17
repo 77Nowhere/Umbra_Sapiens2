@@ -1,0 +1,209 @@
+nomad = {
+	sju_mesoamerican_stone_bench = {
+		desc = sju_mesoamerican_stone_bench_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		population_growth = 0.011
+	}
+	sju_mesoamerican_carvers_hut = {
+		desc = sju_mesoamerican_carvers_hut_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 72
+		upgrades_from = sju_mesoamerican_stone_bench
+		prerequisites = {
+			sju_mesoamerican_stone_bench
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.222
+	}
+	sju_mesoamerican_stone_cutter_room = {
+		desc = sju_mesoamerican_stone_cutter_room_desc
+		gold_cost = 300
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 78
+		upgrades_from = sju_mesoamerican_carvers_hut
+		prerequisites = {
+			sju_mesoamerican_carvers_hut
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.443
+	}
+	sju_mesoamerican_patterned_workshop = {
+		desc = sju_mesoamerican_patterned_workshop_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 263
+		ai_creation_factor = 86
+		upgrades_from = sju_mesoamerican_stone_cutter_room
+		prerequisites = {
+			sju_mesoamerican_stone_cutter_room
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.797
+		clan_sentiment = 1
+	}
+	sju_mesoamerican_fine_carving_pavilion = {
+		desc = sju_mesoamerican_fine_carving_pavilion_desc
+		gold_cost = 1575
+		extra_tech_building_start = 999
+		build_time = 413
+		ai_creation_factor = 92
+		upgrades_from = sju_mesoamerican_patterned_workshop
+		prerequisites = {
+			sju_mesoamerican_patterned_workshop
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+	}
+	sju_mesoamerican_master_carver_hall = {
+		desc = sju_mesoamerican_master_carver_hall_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 100
+		upgrades_from = sju_mesoamerican_fine_carving_pavilion
+		prerequisites = {
+			sju_mesoamerican_fine_carving_pavilion
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		liege_prestige = 0.5
+	}
+	sju_mesoamerican_artisans_chamber = {
+		desc = sju_mesoamerican_artisans_chamber_desc
+		gold_cost = 5625
+		extra_tech_building_start = 999
+		build_time = 938
+		ai_creation_factor = 105
+		upgrades_from = sju_mesoamerican_master_carver_hall
+		prerequisites = {
+			sju_mesoamerican_master_carver_hall
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+	sju_mesoamerican_guild_pavilion = {
+		desc = sju_mesoamerican_guild_pavilion_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = sju_mesoamerican_artisans_chamber
+		prerequisites = {
+			sju_mesoamerican_artisans_chamber
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.487
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+	sju_mesoamerican_grand_stone_hall = {
+		desc = sju_mesoamerican_grand_stone_hall_desc
+		gold_cost = 15000
+		extra_tech_building_start = 999
+		build_time = 1538
+		ai_creation_factor = 120
+		upgrades_from = sju_mesoamerican_guild_pavilion
+		prerequisites = {
+			sju_mesoamerican_guild_pavilion
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.26
+		nomad_tax_modifier = 0.709
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+	sju_mesoamerican_stone_guild = {
+		desc = sju_mesoamerican_stone_guild_desc
+		gold_cost = 24000
+		extra_tech_building_start = 999
+		build_time = 2063
+		ai_creation_factor = 130
+		upgrades_from = sju_mesoamerican_grand_stone_hall
+		prerequisites = {
+			sju_mesoamerican_grand_stone_hall
+		}
+		potential = {
+			culture_group = mesoamerican
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.18
+		nomad_tax_modifier = 0.642
+		clan_sentiment = 1
+		liege_prestige = 1
+	}
+}

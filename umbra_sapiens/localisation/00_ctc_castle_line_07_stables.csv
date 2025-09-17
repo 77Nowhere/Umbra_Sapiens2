@@ -1,0 +1,21 @@
+#Code;English;French;German;Spanish;Russian;x
+ca_stable_1;Tether Post;;;;;x
+ca_stable_1_desc;A crude line of wooden posts and rope, used for securing horses and pack animals near the castle walls. Provides only the most basic shelter and security for mounts.;;;;;x
+ca_stable_2;Wooden Stable;;;;;x
+ca_stable_2_desc;Simple wooden sheds built to shelter horses and provide basic fodder storage, improving the readiness of light cavalry and messengers.;;;;;x
+ca_stable_3;Stone Stable;;;;;x
+ca_stable_3_desc;Robust stables of stone and timber, with secure stalls and better feed. Allows for more horses and improved cavalry musters.;;;;;x
+ca_stable_4;Covered Stable;;;;;x
+ca_stable_4_desc;Enclosed, well-ventilated stables with sloped roofs, haylofts, and drainage, providing superior care and rapid readiness for horses.;;;;;x
+ca_stable_5;Horse Corral;;;;;x
+ca_stable_5_desc;A broad, fenced corral for breaking, training and exercising horses, improving cavalry readiness and the quality of mounts.;;;;;x
+ca_stable_6;Equerry;;;;;x
+ca_stable_6_desc;A dedicated equerry oversees horse breeding, training, and logistics, ensuring elite mounts for knights and officers.;;;;;x
+ctc_large_stable;Large Stable;;;;;x
+ctc_large_stable_desc;Expansive stables, with multiple wings and improved hay storage, able to support a sizeable remount herd and a permanent stablemaster.;;;;;x
+ctc_stud_farm;Stud Farm;;;;;x
+ctc_stud_farm_desc;A sprawling stud farm breeds and raises warhorses, greatly increasing both the quantity and quality of cavalry the castle can maintain.;;;;;x
+ctc_armored_stall;Armored Stall;;;;;x
+ctc_armored_stall_desc;Specialized stalls for the housing and care of destriers and armored chargers, allowing for the creation and support of heavily-armored cavalry.;;;;;x
+ctc_noble_stables;Noble Stables;;;;;x
+ctc_noble_stables_desc;Opulent, fortified stables reserved for the steeds of noblemen and knights. A symbol of prestige and martial power, granting unmatched cavalry muster and status.;;;;;x

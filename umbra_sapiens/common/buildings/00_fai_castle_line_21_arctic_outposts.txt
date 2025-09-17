@@ -1,0 +1,185 @@
+castle = {
+	fai_arctic_snow_shelter = {
+		desc = fai_arctic_snow_shelter_desc
+		gold_cost = 25
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 50
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.03
+	}
+	fai_arctic_fur_tent = {
+		desc = fai_arctic_fur_tent_desc
+		prestige_cost = 40
+		extra_tech_building_start = 999
+		build_time = 330
+		ai_creation_factor = 56
+		upgrades_from = fai_arctic_ice_hut
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.05
+		levy_size = 0.04
+	}
+	fai_arctic_ice_hut = {
+		desc = fai_arctic_ice_hut_desc
+		gold_cost = 50
+		extra_tech_building_start = 999
+		build_time = 220
+		ai_creation_factor = 54
+		upgrades_from = fai_arctic_snow_shelter
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		fort_level = 0.08
+		garrison_size = 0.03
+		levy_size = 0.02
+	}
+	fai_arctic_stone_igloo = {
+		desc = fai_arctic_stone_igloo_desc
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 80
+		upgrades_from = fai_arctic_windbreak_wall
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		fort_level = 0.21
+		garrison_size = 0.12
+		levy_size = 0.09
+		heavy_infantry_defensive = 0.05
+	}
+	fai_arctic_log_cabin = {
+		desc = fai_arctic_log_cabin_desc
+		gold_cost = 220
+		extra_tech_building_start = 999
+		build_time = 540
+		ai_creation_factor = 68
+		upgrades_from = fai_arctic_fur_tent
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		fort_level = 0.15
+		garrison_size = 0.07
+		levy_size = 0.05
+		light_infantry = 3
+	}
+	fai_arctic_windbreak_wall = {
+		desc = fai_arctic_windbreak_wall_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 800
+		ai_creation_factor = 75
+		upgrades_from = fai_arctic_log_cabin
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		fort_level = 0.15
+		garrison_size = 0.09
+		levy_size = 0.06
+		land_morale = 0.03
+		light_infantry = 3
+	}
+	fai_arctic_stockpile_shelter = {
+		desc = fai_arctic_stockpile_shelter_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 1400
+		ai_creation_factor = 88
+		upgrades_from = fai_arctic_stone_igloo
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		fort_level = 0.28
+		garrison_size = 0.16
+		levy_size = 0.12
+		tax_income = 0.25
+		light_infantry = 3
+	}
+	fai_arctic_blizzard_hall = {
+		desc = fai_arctic_blizzard_hall_desc
+		gold_cost = 1800
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 97
+		upgrades_from = fai_arctic_stockpile_shelter
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		fort_level = 0.41
+		garrison_size = 0.20
+		levy_size = 0.17
+		heavy_infantry_offensive = 0.08
+		local_tax_modifier = 0.1
+		light_infantry = 3
+	}
+	fai_arctic_frozen_bastion = {
+		desc = fai_arctic_frozen_bastion_desc
+		gold_cost = 3600
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = fai_arctic_blizzard_hall
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		}
+		fort_level = 0.54
+		garrison_size = 0.26
+		levy_size = 0.21
+		land_morale = 0.1
+		heavy_infantry_defensive = 0.1
+		light_infantry = 3
+	}
+	fai_arctic_arctic_citadel = {
+		desc = fai_arctic_arctic_citadel_desc
+		gold_cost = 7200
+		extra_tech_building_start = 999
+		build_time = 3400
+		ai_creation_factor = 110
+		upgrades_from = fai_arctic_frozen_bastion
+		potential = {
+			terrain = arctic
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 7
+		}
+		fort_level = 0.80
+		garrison_size = 0.39
+		levy_size = 0.29
+		heavy_infantry_offensive = 0.2
+		tax_income = 0.38
+		local_tax_modifier = 0.2
+		light_infantry = 3
+	}
+}

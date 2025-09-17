@@ -1,0 +1,1962 @@
+hospital = {
+	grand_bath_facility = {
+		desc = grand_bath_facility_desc
+		gold_cost = 28800
+		build_time = 1000
+		ai_creation_factor = 113
+		upgrades_from = steamed_bathhouse
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		hospital_level = 10
+		disease_defence = 0.188
+		health = 1
+		tech_growth_modifier = 0.22
+		local_tax_modifier = 0.15
+		monthly_character_prestige = 0.12
+		fertility = 0.005
+		prerequisites = {
+			steamed_bathhouse
+		}
+	}
+	grand_healing_garden = {
+		desc = grand_healing_garden_desc
+		gold_cost = 15000
+		build_time = 1300
+		ai_creation_factor = 111
+		upgrades_from = orchard_annex
+		prerequisites = {
+			orchard_annex
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		hospital_level = 25
+		disease_defence = 0.125
+		health = 0.75
+		tech_growth_modifier = 0.14
+		economy_techpoints = 0.2
+		monthly_character_prestige = 0.08
+		monthly_character_piety = 0.04
+		learning = 1
+		fertility = 0.005
+	}
+	steamed_bathhouse = {
+		desc = steamed_bathhouse_desc
+		gold_cost = 14400
+		build_time = 750
+		ai_creation_factor = 107
+		upgrades_from = indoor_bath_hall
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 7
+		disease_defence = 0.138
+		health = 0.6
+		tech_growth_modifier_economy = 0.18
+		local_tax_modifier = 0.1
+		fertility = 0.005
+		prerequisites = {
+			indoor_bath_hall
+		}
+	}
+	grand_provision_depot = {
+		desc = grand_provision_depot_desc
+		gold_cost = 13000
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = climate_controlled_store
+		prerequisites = {
+			climate_controlled_store
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		}
+		hospital_level = 13
+		disease_defence = 0.047
+		supply_limit = 1
+		tech_growth_modifier = 0.08
+		monthly_character_prestige = 0.4
+		fertility = 0.005
+	}
+	advanced_cookery = {
+		desc = advanced_cookery_desc
+		gold_cost = 10500
+		build_time = 3500
+		ai_creation_factor = 110
+		upgrades_from = ventilated_kitchen
+		prerequisites = {
+			ventilated_kitchen
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		hospital_level = 10
+		disease_defence = 0.113
+		tech_growth_modifier_economy = 0.05
+		monthly_character_prestige = 0.25
+		health = 0.08
+		fertility = 0.005
+	}
+	advanced_aqueduct_network = {
+		desc = advanced_aqueduct_network_desc
+		piety_cost = 9000
+		build_time = 1800
+		ai_creation_factor = 110
+		upgrades_from = multiple_well_system
+		prerequisites = {
+			multiple_well_system
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		hospital_level = 18
+		disease_defence = 0.060
+		supply_limit = 0.45
+		tech_growth_modifier = 0.08
+		monthly_character_piety = 0.1
+		learning = 1
+		fertility = 0.005
+	}
+	sanitary_patient_wing = {
+		desc = sanitary_patient_wing_desc
+		gold_cost = 8000
+		build_time = 1100
+		ai_creation_factor = 110
+		upgrades_from = spacious_infirmary_hall
+		prerequisites = {
+			spacious_infirmary_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		hospital_level = 12
+		disease_defence = 0.157
+		tech_growth_modifier = 0.25
+		health = 0.25
+		monthly_character_prestige = 0.15
+		fertility = 0.005
+	}
+	orchard_annex = {
+		desc = orchard_annex_desc
+		gold_cost = 7500
+		build_time = 850
+		ai_creation_factor = 108
+		upgrades_from = expanded_medicinal_garden
+		prerequisites = {
+			expanded_medicinal_garden
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		hospital_level = 15
+		disease_defence = 0.069
+		health = 0.48
+		economy_techpoints = 0.1
+		supply_limit = 0.18
+		monthly_character_prestige = 0.02
+		fertility = 0.005
+	}
+	sanitary_laundry_facility = {
+		desc = sanitary_laundry_facility_desc
+		gold_cost = 7200
+		build_time = 650
+		ai_creation_factor = 110
+		upgrades_from = mechanical_washing_shed
+		prerequisites = {
+			mechanical_washing_shed
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		hospital_level = 8
+		disease_defence = 0.079
+		supply_limit = 0.27
+		tech_growth_modifier = 0.11
+		monthly_character_prestige = 0.06
+		health = 0.05
+		fertility = 0.005
+	}
+	indoor_bath_hall = {
+		desc = indoor_bath_hall_desc
+		gold_cost = 7200
+		build_time = 600
+		ai_creation_factor = 101
+		upgrades_from = separate_bath_pools
+		prerequisites = {
+			separate_bath_pools
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		hospital_level = 5
+		disease_defence = 0.100
+		health = 0.42
+		tech_growth_modifier = 0.12
+		local_tax_modifier = 0.06
+		fertility = 0.005
+	}
+	climate_controlled_store = {
+		desc = climate_controlled_store_desc
+		gold_cost = 6500
+		build_time = 850
+		ai_creation_factor = 105
+		upgrades_from = expanded_storage_hall
+		prerequisites = {
+			expanded_storage_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		hospital_level = 9
+		disease_defence = 0.033
+		supply_limit = 0.65
+		tech_growth_modifier = 0.05
+		fertility = 0.005
+	}
+	spacious_kitchen_hall = {
+		desc = spacious_kitchen_hall_desc
+		gold_cost = 4800
+		build_time = 1500
+		ai_creation_factor = 99
+		upgrades_from = separate_pantry
+		prerequisites = {
+			separate_pantry
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		hospital_level = 5
+		disease_defence = 0.047
+		local_tax_modifier = 0.02
+		tech_growth_modifier = 0.025
+		fertility = 0.005
+	}
+	advanced_surgery_hall = {
+		desc = advanced_surgery_hall_desc
+		gold_cost = 4800
+		build_time = 750
+		ai_creation_factor = 108
+		upgrades_from = lighted_surgery_suite
+		prerequisites = {
+			lighted_surgery_suite
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		hospital_level = 5
+		disease_defence = 0.032
+		tech_growth_modifier = 0.08
+		health = 0.06
+		fertility = 0.005
+	}
+	pressurized_water_supply = {
+		desc = pressurized_water_supply_desc
+		gold_cost = 4500
+		build_time = 850
+		ai_creation_factor = 106
+		upgrades_from = filtered_water_room
+		prerequisites = {
+			filtered_water_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 8
+		disease_defence = 0.032
+		supply_limit = 0.24
+		tech_growth_modifier = 0.05
+		health = 0.01
+		fertility = 0.005
+	}
+	mechanical_washing_shed = {
+		desc = mechanical_washing_shed_desc
+		gold_cost = 4200
+		build_time = 475
+		ai_creation_factor = 103
+		upgrades_from = water_channel_laundry
+		prerequisites = {
+			water_channel_laundry
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 6
+		disease_defence = 0.057
+		supply_limit = 0.17
+		tech_growth_modifier = 0.07
+		economy_techpoints = 0.035
+		fertility = 0.005
+	}
+	expanded_medicinal_garden = {
+		desc = expanded_medicinal_garden_desc
+		gold_cost = 4200
+		build_time = 600
+		ai_creation_factor = 103
+		upgrades_from = stone_walled_garden
+		prerequisites = {
+			stone_walled_garden
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		hospital_level = 10
+		disease_defence = 0.050
+		health = 0.33
+		tech_growth_modifier = 0.06
+		local_tax_modifier = 0.05
+		fertility = 0.005
+	}
+	multiple_well_system = {
+		desc = multiple_well_system_desc
+		prestige_cost = 4000
+		build_time = 1200
+		ai_creation_factor = 108
+		upgrades_from = pressurized_water_supply
+		prerequisites = {
+			pressurized_water_supply
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		hospital_level = 12
+		disease_defence = 0.041
+		supply_limit = 0.32
+		monthly_character_prestige = 0.05
+		fertility = 0.005
+	}
+	spacious_infirmary_hall = {
+		desc = spacious_infirmary_hall_desc
+		gold_cost = 4000
+		build_time = 900
+		ai_creation_factor = 108
+		upgrades_from = ventilated_ward
+		prerequisites = {
+			ventilated_ward
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		hospital_level = 8
+		disease_defence = 0.094
+		tech_growth_modifier = 0.18
+		economy_techpoints = 0.05
+		fertility = 0.005
+	}
+	advanced_apothecary = {
+		desc = advanced_apothecary_desc
+		gold_cost = 4000
+		build_time = 2000
+		ai_creation_factor = 120
+		upgrades_from = pharmaceutical_hall
+		prerequisites = {
+			pharmaceutical_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		hospital_level = 20
+		disease_defence = 0.075
+		tech_growth_modifier = 0.5
+		economy_techpoints = 0.2
+		monthly_character_prestige = 0.12
+		health = 0.2
+		fertility = 0.005
+	}
+	separate_bath_pools = {
+		desc = separate_bath_pools_desc
+		gold_cost = 3600
+		build_time = 450
+		ai_creation_factor = 95
+		upgrades_from = stone_bathhouse
+		prerequisites = {
+			stone_bathhouse
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 4
+		disease_defence = 0.072
+		health = 0.3
+		tech_growth_modifier = 0.08
+		fertility = 0.005
+	}
+	separate_entrance_wing = {
+		desc = separate_entrance_wing_desc
+		gold_cost = 3200
+		build_time = 325
+		ai_creation_factor = 110
+		upgrades_from = airflow_chamber
+		prerequisites = {
+			airflow_chamber
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		hospital_level = 6
+		disease_defence = 0.163
+		health = 0.13
+		tech_growth_modifier = 0.06
+		local_tax_modifier = 0.03
+		fertility = 0.005
+	}
+	expanded_storage_hall = {
+		desc = expanded_storage_hall_desc
+		gold_cost = 3200
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = secured_supply_vault
+		prerequisites = {
+			secured_supply_vault
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		hospital_level = 7
+		disease_defence = 0.025
+		supply_limit = 0.45
+		tech_growth_modifier = 0.03
+		fertility = 0.005
+	}
+	stone_walled_garden = {
+		desc = stone_walled_garden_desc
+		gold_cost = 2600
+		build_time = 450
+		ai_creation_factor = 96
+		upgrades_from = timber_greenhouse
+		prerequisites = {
+			timber_greenhouse
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		hospital_level = 7
+		disease_defence = 0.035
+		health = 0.22
+		economy_techpoints = 0.05
+		supply_limit = 0.1
+		fertility = 0.005
+	}
+	pharmaceutical_hall = {
+		desc = pharmaceutical_hall_desc
+		gold_cost = 2500
+		build_time = 1600
+		ai_creation_factor = 113
+		upgrades_from = storied_pharmacy
+		prerequisites = {
+			storied_pharmacy
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 13
+		disease_defence = 0.054
+		tech_growth_modifier = 0.34
+		economy_techpoints = 0.12
+		monthly_character_prestige = 0.08
+		fertility = 0.005
+	}
+	lighted_surgery_suite = {
+		desc = lighted_surgery_suite_desc
+		gold_cost = 2400
+		build_time = 500
+		ai_creation_factor = 103
+		upgrades_from = sterile_cloth_storage
+		prerequisites = {
+			sterile_cloth_storage
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 4
+		disease_defence = 0.024
+		supply_limit = 0.07
+		economy_techpoints = 0.04
+		fertility = 0.005
+	}
+	oven_room = {
+		desc = oven_room_desc
+		gold_cost = 2300
+		build_time = 900
+		ai_creation_factor = 90
+		upgrades_from = enlarged_cookhouse
+		prerequisites = {
+			enlarged_cookhouse
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 3
+		disease_defence = 0.022
+		tech_growth_modifier_economy = 0.025
+		monthly_character_prestige = 0.05
+		fertility = 0.005
+	}
+	filtered_water_room = {
+		desc = filtered_water_room_desc
+		gold_cost = 2200
+		build_time = 600
+		ai_creation_factor = 101
+		upgrades_from = covered_water_reservoir
+		prerequisites = {
+			covered_water_reservoir
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 5
+		disease_defence = 0.023
+		supply_limit = 0.19
+		tech_growth_modifier_economy = 0.03
+		fertility = 0.005
+	}
+	water_channel_laundry = {
+		desc = water_channel_laundry_desc
+		gold_cost = 2200
+		build_time = 360
+		ai_creation_factor = 95
+		upgrades_from = expanded_washing_hall
+		prerequisites = {
+			expanded_washing_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 4
+		disease_defence = 0.039
+		supply_limit = 0.12
+		tech_growth_modifier = 0.04
+		fertility = 0.005
+	}
+	stone_bathhouse = {
+		desc = stone_bathhouse_desc
+		gold_cost = 1800
+		build_time = 300
+		ai_creation_factor = 89
+		upgrades_from = heated_bath_chamber
+		prerequisites = {
+			heated_bath_chamber
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 3
+		disease_defence = 0.054
+		health = 0.22
+		local_tax_modifier = 0.03
+		fertility = 0.005
+	}
+	airflow_chamber = {
+		desc = airflow_chamber_desc
+		gold_cost = 1800
+		build_time = 250
+		ai_creation_factor = 100
+		upgrades_from = sealed_quarters
+		prerequisites = {
+			sealed_quarters
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 4
+		disease_defence = 0.100
+		health = 0.09
+		tech_growth_modifier = 0.04
+		fertility = 0.005
+	}
+	heated_infirmary = {
+		desc = heated_infirmary_desc
+		gold_cost = 1600
+		build_time = 600
+		ai_creation_factor = 99
+		upgrades_from = expanded_ward
+		prerequisites = {
+			expanded_ward
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		hospital_level = 4
+		disease_defence = 0.032
+		tech_growth_modifier = 0.07
+		global_winter_supply = 0.05
+		fertility = 0.005
+	}
+	sanitized_quarantine_complex = {
+		desc = sanitized_quarantine_complex_desc
+		piety_cost = 1600
+		build_time = 600
+		ai_creation_factor = 110
+		upgrades_from = guarded_isolation_hall
+		prerequisites = {
+			guarded_isolation_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 18
+		disease_defence = 0.563
+		health = 0.33
+		tech_growth_modifier = 0.18
+		local_tax_modifier = 0.11
+		monthly_character_prestige = 0.05
+		monthly_character_piety = 0.04
+		fertility = 0.005
+	}
+	secured_supply_vault = {
+		desc = secured_supply_vault_desc
+		gold_cost = 1600
+		build_time = 475
+		ai_creation_factor = 95
+		upgrades_from = separate_grain_room
+		# prerequisites = {
+		# 	separate_grain_room
+		# }
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		hospital_level = 5
+		disease_defence = 0.020
+		supply_limit = 0.3
+		local_tax_modifier = 0.03
+		fertility = 0.005
+	}
+	water_basin_room = {
+		desc = water_basin_room_desc
+		gold_cost = 1500
+		build_time = 300
+		ai_creation_factor = 92
+		upgrades_from = stone_surgery_chamber
+		prerequisites = {
+			stone_surgery_chamber
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 2
+		disease_defence = 0.013
+		health = 0.03
+		fertility = 0.005
+	}
+	timber_greenhouse = {
+		desc = timber_greenhouse_desc
+		gold_cost = 1400
+		build_time = 350
+		ai_creation_factor = 89
+		upgrades_from = raised_garden_beds
+		prerequisites = {
+			raised_garden_beds
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 4
+		disease_defence = 0.023
+		health = 0.15
+		tech_growth_modifier = 0.03
+		local_tax_modifier = 0.02
+		fertility = 0.005
+	}
+	guarded_isolation_hall = {
+		desc = guarded_isolation_hall_desc
+		prestige_cost = 1400
+		build_time = 500
+		ai_creation_factor = 110
+		upgrades_from = multi_room_quarantine
+		prerequisites = {
+			multi_room_quarantine
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 4
+		}
+		hospital_level = 12
+		disease_defence = 0.375
+		health = 0.25
+		levy_size = 0.03
+		tech_growth_modifier = 0.12
+		fertility = 0.005
+	}
+	ventilated_kitchen = {
+		desc = ventilated_kitchen_desc
+		piety_cost = 1300
+		build_time = 2000
+		ai_creation_factor = 104
+		upgrades_from = spacious_kitchen_hall
+		# prerequisites = {
+		# 	spacious_kitchen_hall
+		# }
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		hospital_level = 7
+		disease_defence = 0.063
+		supply_limit = 0.25
+		monthly_character_prestige = 0.12
+		fertility = 0.005
+	}
+	expanded_washing_hall = {
+		desc = expanded_washing_hall_desc
+		gold_cost = 1200
+		build_time = 260
+		ai_creation_factor = 83
+		upgrades_from = stone_laundry
+		prerequisites = {
+			stone_laundry
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		hospital_level = 3
+		disease_defence = 0.028
+		supply_limit = 0.07
+		tech_growth_modifier_economy = 0.035
+		fertility = 0.005
+	}
+	covered_water_reservoir = {
+		desc = covered_water_reservoir_desc
+		gold_cost = 1100
+		build_time = 425
+		ai_creation_factor = 95
+		upgrades_from = aqueduct_channel
+		prerequisites = {
+			aqueduct_channel
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		hospital_level = 3
+		disease_defence = 0.016
+		supply_limit = 0.14
+		local_tax_modifier = 0.02
+		fertility = 0.005
+	}
+	enlarged_cookhouse = {
+		desc = enlarged_cookhouse_desc
+		gold_cost = 1100
+		build_time = 600
+		ai_creation_factor = 85
+		upgrades_from = stone_kitchen
+		prerequisites = {
+			stone_kitchen
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.014
+		supply_limit = 0.08
+		local_tax_modifier = 0.01
+		fertility = 0.005
+	}
+	stone_dispensary = {
+		desc = stone_dispensary_desc
+		gold_cost = 1100
+		build_time = 800
+		ai_creation_factor = 94
+		upgrades_from = herbal_drying_room
+		prerequisites = {
+			herbal_drying_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 4
+		disease_defence = 0.018
+		tech_growth_modifier = 0.09
+		local_tax_modifier = 0.01
+		fertility = 0.005
+	}
+	master_surgeons_theatre = {
+		desc = master_surgeons_theatre_desc
+		piety_cost = 900
+		build_time = 1100
+		ai_creation_factor = 112
+		upgrades_from = advanced_surgery_hall
+		prerequisites = {
+			advanced_surgery_hall
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		hospital_level = 8
+		disease_defence = 0.041
+		tech_growth_modifier = 0.13
+		monthly_character_prestige = 0.1
+		health = 0.1
+		fertility = 0.005
+	}
+	sealed_quarters = {
+		desc = sealed_quarters_desc
+		gold_cost = 900
+		build_time = 160
+		ai_creation_factor = 90
+		upgrades_from = stone_isolation_room
+		prerequisites = {
+			stone_isolation_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.057
+		health = 0.06
+		tech_growth_modifier = 0.02
+		fertility = 0.005
+	}
+	heated_bath_chamber = {
+		desc = heated_bath_chamber_desc
+		gold_cost = 900
+		build_time = 200
+		ai_creation_factor = 83
+		upgrades_from = timber_bathhouse
+		prerequisites = {
+			timber_bathhouse
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.035
+		health = 0.15
+		tech_growth_modifier_economy = 0.06
+		fertility = 0.005
+	}
+	separate_grain_room = {
+		desc = separate_grain_room_desc
+		gold_cost = 900
+		build_time = 350
+		ai_creation_factor = 90
+		upgrades_from = h_ventilated_storehouse
+		prerequisites = {
+			h_ventilated_storehouse
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		hospital_level = 3
+		disease_defence = 0.015
+		supply_limit = 0.2
+		tech_growth_modifier_economy = 0.05
+		fertility = 0.005
+	}
+	expanded_ward = {
+		desc = expanded_ward_desc
+		gold_cost = 800
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = stone_infirmary
+		prerequisites = {
+			stone_infirmary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.022
+		tech_growth_modifier = 0.05
+		health = 0.05
+		fertility = 0.005
+	}
+	multi_room_quarantine = {
+		desc = multi_room_quarantine_desc
+		prestige_cost = 700
+		build_time = 400
+		ai_creation_factor = 110
+		upgrades_from = separate_entrance_wing
+		prerequisites = {
+			separate_entrance_wing
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		hospital_level = 8
+		disease_defence = 0.250
+		health = 0.19
+		tech_growth_modifier = 0.09
+		local_tax_modifier = 0.07
+		fertility = 0.005
+	}
+	stone_surgery_chamber = {
+		desc = stone_surgery_chamber_desc
+		gold_cost = 700
+		build_time = 210
+		ai_creation_factor = 85
+		upgrades_from = basic_instrument_store
+		prerequisites = {
+			basic_instrument_store
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.009
+		supply_limit = 0.04
+		economy_techpoints = 0.02
+		fertility = 0.005
+	}
+	raised_garden_beds = {
+		desc = raised_garden_beds_desc
+		gold_cost = 700
+		build_time = 250
+		ai_creation_factor = 83
+		upgrades_from = irrigated_herb_patch
+		prerequisites = {
+			irrigated_herb_patch
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.014
+		health = 0.09
+		supply_limit = 0.07
+		economy_techpoints = 0.03
+		fertility = 0.005
+	}
+	stone_laundry = {
+		desc = stone_laundry_desc
+		gold_cost = 650
+		build_time = 200
+		ai_creation_factor = 72
+		upgrades_from = heated_drying_room
+		prerequisites = {
+			heated_drying_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		hospital_level = 2
+		disease_defence = 0.020
+		local_tax_modifier = 0.017
+		economy_techpoints = 0.02
+		fertility = 0.005
+	}
+	herbal_drying_room = {
+		desc = herbal_drying_room_desc
+		gold_cost = 600
+		build_time = 550
+		ai_creation_factor = 89
+		upgrades_from = apothecary_workshop
+		prerequisites = {
+			apothecary_workshop
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.010
+		health = 0.08
+		tech_growth_modifier = 0.06
+		fertility = 0.005
+	}
+	compounding_room = {
+		desc = compounding_room_desc
+		prestige_cost = 600
+		build_time = 1050
+		ai_creation_factor = 101
+		upgrades_from = stone_dispensary
+		prerequisites = {
+			stone_dispensary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 3
+		}
+		hospital_level = 6
+		disease_defence = 0.025
+		tech_growth_modifier = 0.14
+		economy_techpoints = 0.04
+		fertility = 0.005
+	}
+	separate_pantry = {
+		desc = separate_pantry_desc
+		prestige_cost = 550
+		build_time = 1050
+		ai_creation_factor = 94
+		upgrades_from = oven_room
+		prerequisites = {
+			oven_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 4
+		disease_defence = 0.032
+		supply_limit = 0.14
+		tech_growth_modifier = 0.02
+		fertility = 0.005
+	}
+	aqueduct_channel = {
+		desc = aqueduct_channel_desc
+		gold_cost = 520
+		build_time = 275
+		ai_creation_factor = 89
+		upgrades_from = bucket_pulley_well
+		prerequisites = {
+			bucket_pulley_well
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.010
+		supply_limit = 0.1
+		economy_techpoints = 0.01
+		fertility = 0.005
+	}
+	storied_pharmacy = {
+		desc = storied_pharmacy_desc
+		piety_cost = 500
+		build_time = 1300
+		ai_creation_factor = 107
+		upgrades_from = compounding_room
+		prerequisites = {
+			compounding_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		hospital_level = 9
+		disease_defence = 0.038
+		tech_growth_modifier = 0.22
+		local_tax_modifier = 0.03
+		monthly_character_prestige = 0.05
+		fertility = 0.005
+	}
+	stone_kitchen = {
+		desc = stone_kitchen_desc
+		gold_cost = 500
+		build_time = 350
+		ai_creation_factor = 80
+		upgrades_from = timber_kitchen
+		prerequisites = {
+			timber_kitchen
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.009
+		supply_limit = 0.04
+		tech_growth_modifier_economy = 0.015
+		fertility = 0.005
+	}
+	h_ventilated_storehouse = {
+		desc = h_ventilated_storehouse_desc
+		gold_cost = 500
+		build_time = 250
+		ai_creation_factor = 85
+		upgrades_from = stone_storeroom
+		prerequisites = {
+			stone_storeroom
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		hospital_level = 2
+		disease_defence = 0.010
+		tech_growth_modifier_economy = 0.03
+		supply_limit = 0.15
+		fertility = 0.005
+	}
+	timber_bathhouse = {
+		desc = timber_bathhouse_desc
+		gold_cost = 420
+		build_time = 130
+		ai_creation_factor = 78
+		upgrades_from = hot_water_tub
+		prerequisites = {
+			hot_water_tub
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.019
+		health = 0.08
+		tech_growth_modifier = 0.04
+		fertility = 0.005
+	}
+	stone_isolation_room = {
+		desc = stone_isolation_room_desc
+		gold_cost = 400
+		build_time = 110
+		ai_creation_factor = 80
+		upgrades_from = timber_isolation_room
+		prerequisites = {
+			timber_isolation_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.028
+		health = 0.03
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	ventilated_ward = {
+		desc = ventilated_ward_desc
+		piety_cost = 400
+		build_time = 750
+		ai_creation_factor = 105
+		upgrades_from = isolated_recovery_room
+		prerequisites = {
+			isolated_recovery_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		hospital_level = 6
+		disease_defence = 0.063
+		tech_growth_modifier = 0.13
+		health = 0.15
+		fertility = 0.005
+	}
+	sterile_cloth_storage = {
+		desc = sterile_cloth_storage_desc
+		prestige_cost = 400
+		build_time = 390
+		ai_creation_factor = 98
+		upgrades_from = water_basin_room
+		prerequisites = {
+			water_basin_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		hospital_level = 3
+		disease_defence = 0.019
+		tech_growth_modifier = 0.03
+		fertility = 0.005
+	}
+	basic_instrument_store = {
+		desc = basic_instrument_store_desc
+		gold_cost = 350
+		build_time = 143
+		ai_creation_factor = 78
+		upgrades_from = timber_surgery_room
+		prerequisites = {
+			timber_surgery_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	stone_infirmary = {
+		desc = stone_infirmary_desc
+		gold_cost = 350
+		build_time = 325
+		ai_creation_factor = 87
+		upgrades_from = timber_infirmary
+		prerequisites = {
+			timber_infirmary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.012
+		tech_growth_modifier = 0.025
+		supply_limit = 0.04
+		fertility = 0.005
+	}
+	irrigated_herb_patch = {
+		desc = irrigated_herb_patch_desc
+		gold_cost = 350
+		build_time = 170
+		ai_creation_factor = 77
+		upgrades_from = fenced_garden_plot
+		prerequisites = {
+			fenced_garden_plot
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.009
+		health = 0.05
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	apothecary_workshop = {
+		desc = apothecary_workshop_desc
+		gold_cost = 350
+		build_time = 400
+		ai_creation_factor = 81
+		upgrades_from = timber_dispensary
+		prerequisites = {
+			timber_dispensary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.006
+		tech_growth_modifier = 0.03
+		economy_techpoints = 0.01
+		fertility = 0.005
+	}
+	heated_drying_room = {
+		desc = heated_drying_room_desc
+		piety_cost = 320
+		build_time = 150
+		ai_creation_factor = 65
+		upgrades_from = soap_making_nook
+		prerequisites = {
+			soap_making_nook
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 2
+		}
+		hospital_level = 1
+		disease_defence = 0.012
+		supply_limit = 0.04
+		tech_growth_modifier = 0.018
+		fertility = 0.005
+	}
+	isolated_recovery_room = {
+		desc = isolated_recovery_room_desc
+		prestige_cost = 300
+		build_time = 650
+		ai_creation_factor = 102
+		upgrades_from = heated_infirmary
+		prerequisites = {
+			heated_infirmary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		hospital_level = 5
+		disease_defence = 0.044
+		tech_growth_modifier = 0.09
+		health = 0.1
+		fertility = 0.005
+	}
+	bucket_pulley_well = {
+		desc = bucket_pulley_well_desc
+		gold_cost = 260
+		build_time = 180
+		ai_creation_factor = 81
+		upgrades_from = stone_lined_well
+		prerequisites = {
+			stone_lined_well
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.06
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	stone_storeroom = {
+		desc = stone_storeroom_desc
+		gold_cost = 260
+		build_time = 165
+		ai_creation_factor = 80
+		upgrades_from = dry_goods_closet
+		prerequisites = {
+			dry_goods_closet
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.1
+		fertility = 0.005
+	}
+	timber_kitchen = {
+		desc = timber_kitchen_desc
+		gold_cost = 240
+		build_time = 175
+		ai_creation_factor = 73
+		upgrades_from = covered_hearth
+		prerequisites = {
+			covered_hearth
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	hot_water_tub = {
+		desc = hot_water_tub_desc
+		gold_cost = 210
+		build_time = 80
+		ai_creation_factor = 72
+		upgrades_from = wooden_bath_shed
+		prerequisites = {
+			wooden_bath_shed
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.010
+		health = 0.05
+		fertility = 0.005
+	}
+	soap_making_nook = {
+		desc = soap_making_nook_desc
+		prestige_cost = 180
+		build_time = 110
+		ai_creation_factor = 56
+		upgrades_from = timber_laundry_room
+		prerequisites = {
+			timber_laundry_room
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 1
+		}
+		hospital_level = 1
+		disease_defence = 0.008
+		tech_growth_modifier_economy = 0.025
+		fertility = 0.005
+	}
+	timber_surgery_room = {
+		desc = timber_surgery_room_desc
+		gold_cost = 175
+		build_time = 105
+		ai_creation_factor = 72
+		upgrades_from = curtained_surgery_area
+		prerequisites = {
+			curtained_surgery_area
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.02
+		fertility = 0.005
+	}
+	timber_dispensary = {
+		desc = timber_dispensary_desc
+		gold_cost = 170
+		build_time = 250
+		ai_creation_factor = 73
+		upgrades_from = simple_apothecary
+		prerequisites = {
+			simple_apothecary
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		health = 0.03
+		fertility = 0.005
+	}
+	timber_laundry_room = {
+		desc = timber_laundry_room_desc
+		gold_cost = 160
+		build_time = 80
+		ai_creation_factor = 48
+		upgrades_from = covered_washing_area
+		prerequisites = {
+			covered_washing_area
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		local_tax_modifier = 0.01
+		fertility = 0.005
+	}
+	timber_isolation_room = {
+		desc = timber_isolation_room_desc
+		gold_cost = 150
+		build_time = 75
+		ai_creation_factor = 70
+		upgrades_from = curtained_cubicle
+		prerequisites = {
+			curtained_cubicle
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.015
+		health = 0.01
+		fertility = 0.005
+	}
+	fenced_garden_plot = {
+		desc = fenced_garden_plot_desc
+		gold_cost = 150
+		build_time = 100
+		ai_creation_factor = 72
+		upgrades_from = enclosed_herb_bed
+		prerequisites = {
+			enclosed_herb_bed
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.03
+		fertility = 0.005
+	}
+	timber_infirmary = {
+		desc = timber_infirmary_desc
+		gold_cost = 150
+		build_time = 200
+		ai_creation_factor = 80
+		upgrades_from = sheltered_lean_to
+		prerequisites = {
+			sheltered_lean_to
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.008
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	dry_goods_closet = {
+		desc = dry_goods_closet_desc
+		gold_cost = 130
+		build_time = 100
+		ai_creation_factor = 70
+		upgrades_from = timber_storage_shed
+		prerequisites = {
+			timber_storage_shed
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		tech_growth_modifier_economy = 0.01
+		fertility = 0.005
+	}
+	stone_lined_well = {
+		desc = stone_lined_well_desc
+		gold_cost = 120
+		build_time = 125
+		ai_creation_factor = 73
+		upgrades_from = timber_well_cover
+		prerequisites = {
+			timber_well_cover
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.03
+		fertility = 0.005
+	}
+	covered_hearth = {
+		desc = covered_hearth_desc
+		gold_cost = 100
+		build_time = 100
+		ai_creation_factor = 68
+		upgrades_from = cookfire_pit
+		prerequisites = {
+			cookfire_pit
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.02
+		fertility = 0.005
+	}
+	covered_washing_area = {
+		desc = covered_washing_area_desc
+		gold_cost = 80
+		build_time = 60
+		ai_creation_factor = 34
+		upgrades_from = washing_basin
+		prerequisites = {
+			washing_basin
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	wooden_bath_shed = {
+		desc = wooden_bath_shed_desc
+		gold_cost = 75
+		build_time = 60
+		ai_creation_factor = 67
+		upgrades_from = washing_area
+		prerequisites = {
+			washing_area
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		health = 0.02
+		fertility = 0.005
+	}
+	simple_apothecary = {
+		desc = simple_apothecary_desc
+		gold_cost = 75
+		build_time = 175
+		ai_creation_factor = 67
+		upgrades_from = herbalists_corner
+		prerequisites = {
+			herbalists_corner
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		tech_growth_modifier = 0.01
+		fertility = 0.005
+	}
+	curtained_surgery_area = {
+		desc = curtained_surgery_area_desc
+		gold_cost = 75
+		build_time = 68
+		ai_creation_factor = 68
+		upgrades_from = wooden_procedure_table
+		prerequisites = {
+			wooden_procedure_table
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		health = 0.01
+		fertility = 0.005
+	}
+	sheltered_lean_to = {
+		desc = sheltered_lean_to_desc
+		gold_cost = 60
+		build_time = 125
+		ai_creation_factor = 70
+		upgrades_from = makeshift_sickbay
+		prerequisites = {
+			makeshift_sickbay
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.02
+		fertility = 0.005
+	}
+	timber_storage_shed = {
+		desc = timber_storage_shed_desc
+		gold_cost = 60
+		build_time = 75
+		ai_creation_factor = 65
+		upgrades_from = supply_nook
+		prerequisites = {
+			supply_nook
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.05
+		fertility = 0.005
+	}
+	enclosed_herb_bed = {
+		desc = enclosed_herb_bed_desc
+		gold_cost = 60
+		build_time = 60
+		ai_creation_factor = 68
+		upgrades_from = patch_of_herbs
+		prerequisites = {
+			patch_of_herbs
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		health = 0.02
+		fertility = 0.005
+	}
+	curtained_cubicle = {
+		desc = curtained_cubicle_desc
+		gold_cost = 60
+		build_time = 60
+		ai_creation_factor = 65
+		upgrades_from = screened_sickbed
+		prerequisites = {
+			screened_sickbed
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.007
+		supply_limit = 0.04
+		fertility = 0.005
+	}
+	cookfire_pit = {
+		desc = cookfire_pit_desc
+		gold_cost = 40
+		build_time = 60
+		ai_creation_factor = 65
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	timber_well_cover = {
+		desc = timber_well_cover_desc
+		gold_cost = 40
+		build_time = 90
+		ai_creation_factor = 68
+		upgrades_from = rainwater_barrel
+		prerequisites = {
+			rainwater_barrel
+		}
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		supply_limit = 0.01
+		fertility = 0.005
+	}
+	washing_basin = {
+		desc = washing_basin_desc
+		gold_cost = 40
+		build_time = 60
+		ai_creation_factor = 22
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	herbalists_corner = {
+		desc = herbalists_corner_desc
+		gold_cost = 35
+		build_time = 100
+		ai_creation_factor = 62
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		health = 0.01
+		fertility = 0.005
+	}
+	wooden_procedure_table = {
+		desc = wooden_procedure_table_desc
+		gold_cost = 30
+		build_time = 60
+		ai_creation_factor = 65
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	makeshift_sickbay = {
+		desc = makeshift_sickbay_desc
+		gold_cost = 25
+		build_time = 75
+		ai_creation_factor = 65
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	washing_area = {
+		desc = washing_area_desc
+		gold_cost = 25
+		build_time = 60
+		ai_creation_factor = 62
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	screened_sickbed = {
+		desc = screened_sickbed_desc
+		gold_cost = 25
+		build_time = 60
+		ai_creation_factor = 60
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	supply_nook = {
+		desc = supply_nook_desc
+		gold_cost = 25
+		build_time = 60
+		ai_creation_factor = 60
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	patch_of_herbs = {
+		desc = patch_of_herbs_desc
+		gold_cost = 25
+		build_time = 60
+		ai_creation_factor = 62
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+	rainwater_barrel = {
+		desc = rainwater_barrel_desc
+		gold_cost = 20
+		build_time = 60
+		ai_creation_factor = 65
+		potential = {
+			has_dlc = "Reapers"
+		}
+		hospital_level = 1
+		disease_defence = 0.005
+		fertility = 0.005
+	}
+}

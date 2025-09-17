@@ -1,0 +1,153 @@
+nomad = {
+	qez_open_market_blanket = {
+		desc = qez_open_market_blanket_desc
+		gold_cost = 45
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.266
+		max_population = 100
+	}
+	qez_barter_stall = {
+		desc = qez_barter_stall_desc
+		gold_cost = 135
+		build_time = 68
+		extra_tech_building_start = 999
+		ai_creation_factor = 70
+		upgrades_from = qez_open_market_blanket
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.576
+		max_population = 100
+		clan_sentiment = 1
+	}
+	qez_covered_goods_stand = {
+		desc = qez_covered_goods_stand_desc
+		gold_cost = 525
+		build_time = 113
+		extra_tech_building_start = 999
+		ai_creation_factor = 75
+		upgrades_from = qez_barter_stall
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	qez_pack_animal_station = {
+		desc = qez_pack_animal_station_desc
+		gold_cost = 1500
+		build_time = 188
+		extra_tech_building_start = 999
+		ai_creation_factor = 80
+		upgrades_from = qez_covered_goods_stand
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population = 100
+		supply_limit = 0.15
+	}
+	qez_merchants_tent = {
+		desc = qez_merchants_tent_desc
+		gold_cost = 4500
+		prestige_cost = 45
+		build_time = 300
+		extra_tech_building_start = 999
+		ai_creation_factor = 85
+		upgrades_from = qez_pack_animal_station
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	qez_exchange_pavilion = {
+		desc = qez_exchange_pavilion_desc
+		gold_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 90
+		upgrades_from = qez_merchants_tent
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	qez_trading_post = {
+		desc = qez_trading_post_desc
+		gold_cost = 7500
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 95
+		upgrades_from = qez_exchange_pavilion
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population = 140
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	qez_travelers_market = {
+		desc = qez_travelers_market_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 100
+		upgrades_from = qez_trading_post
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.665
+		max_population = 210
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	qez_grand_caravan_bazaar = {
+		desc = qez_grand_caravan_bazaar_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 105
+		upgrades_from = qez_travelers_market
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.532
+		max_population = 320
+		max_manpower_mult = 0.10
+		tradevalue = 1.513
+		supply_limit = 0.3
+		clan_sentiment = 1
+	}
+	qez_silk_road_emporium = {
+		desc = qez_silk_road_emporium_desc
+		extra_tech_building_start = 999
+		prestige_cost = 9000
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = qez_grand_caravan_bazaar
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.665
+		max_population = 500
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		supply_limit = 0.6
+		clan_sentiment = 1
+	}
+}

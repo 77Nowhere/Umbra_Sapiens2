@@ -1,0 +1,171 @@
+city = {
+	ct_university_1 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		gold_cost = 600
+		build_time = 1095
+		tech_growth_modifier = 0.1
+		economy_techpoints = 0.03
+		military_techpoints = 0.02
+		culture_techpoints = 0.02
+		liege_prestige = 0.2
+		liege_piety = 0.1
+		ai_creation_factor = 90
+		extra_tech_building_start = 1
+	}
+	ct_university_2 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		upgrades_from = ct_university_1
+		gold_cost = 750
+		build_time = 1460
+		tech_growth_modifier = 0.12
+		economy_techpoints = 0.04
+		military_techpoints = 0.03
+		culture_techpoints = 0.03
+		liege_prestige = 0.3
+		liege_piety = 0.15
+		ai_creation_factor = 88
+		extra_tech_building_start = 1.1
+	}
+	ct_university_3 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		upgrades_from = ct_university_2
+		gold_cost = 900
+		build_time = 1825
+		tech_growth_modifier = 0.14
+		economy_techpoints = 0.05
+		military_techpoints = 0.04
+		culture_techpoints = 0.04
+		liege_prestige = 0.4
+		liege_piety = 0.2
+		ai_creation_factor = 86
+		extra_tech_building_start = 1.2
+	}
+	ct_university_4 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		upgrades_from = ct_university_3
+		gold_cost = 1050
+		build_time = 2190
+		tech_growth_modifier = 0.16
+		economy_techpoints = 0.06
+		military_techpoints = 0.05
+		culture_techpoints = 0.05
+		liege_prestige = 0.5
+		liege_piety = 0.25
+		ai_creation_factor = 84
+		extra_tech_building_start = 1.3
+	}
+	ct_university_5 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		upgrades_from = ct_university_4
+		gold_cost = 1200
+		build_time = 2555
+		tech_growth_modifier = 0.18
+		economy_techpoints = 0.07
+		military_techpoints = 0.06
+		culture_techpoints = 0.06
+		liege_prestige = 0.6
+		liege_piety = 0.3
+		ai_creation_factor = 82
+		extra_tech_building_start = 1.4
+	}
+	ct_university_6 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		upgrades_from = ct_university_5
+		gold_cost = 1350
+		build_time = 2920
+		tech_growth_modifier = 0.2
+		economy_techpoints = 0.08
+		military_techpoints = 0.07
+		culture_techpoints = 0.07
+		liege_prestige = 0.7
+		liege_piety = 0.35
+		ai_creation_factor = 80
+		extra_tech_building_start = 1.5
+	}
+	ct_university_7 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		upgrades_from = ct_university_6
+		gold_cost = 1500
+		build_time = 3285
+		tech_growth_modifier = 0.22
+		economy_techpoints = 0.09
+		military_techpoints = 0.08
+		culture_techpoints = 0.08
+		liege_prestige = 0.8
+		liege_piety = 0.4
+		ai_creation_factor = 78
+		extra_tech_building_start = 1.6
+	}
+	ct_university_8 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		upgrades_from = ct_university_7
+		gold_cost = 1650
+		build_time = 3650
+		tech_growth_modifier = 0.24
+		economy_techpoints = 0.1
+		military_techpoints = 0.09
+		culture_techpoints = 0.09
+		liege_prestige = 0.9
+		liege_piety = 0.45
+		ai_creation_factor = 76
+		extra_tech_building_start = 1.7
+	}
+	ct_university_9 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		upgrades_from = ct_university_8
+		gold_cost = 1800
+		build_time = 4015
+		tech_growth_modifier = 0.26
+		economy_techpoints = 0.11
+		military_techpoints = 0.1
+		culture_techpoints = 0.1
+		liege_prestige = 1
+		liege_piety = 0.5
+		ai_creation_factor = 74
+		extra_tech_building_start = 1.8
+	}
+	ct_university_10 = {
+		desc = ct_university_1_desc
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 8
+		}
+		upgrades_from = ct_university_9
+		gold_cost = 2000
+		build_time = 4380
+		tech_growth_modifier = 0.3
+		economy_techpoints = 0.12
+		military_techpoints = 0.11
+		culture_techpoints = 0.11
+		liege_prestige = 1.2
+		liege_piety = 0.6
+		ai_creation_factor = 72
+		extra_tech_building_start = 2
+	}
+}

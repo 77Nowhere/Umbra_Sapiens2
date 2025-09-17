@@ -1,0 +1,181 @@
+nomad = {
+	yob_open_table_israelite_market = {
+		desc = yob_open_table_israelite_market_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.222
+		population_growth = 0.011
+	}
+	yob_barter_patch_israelite_market = {
+		desc = yob_barter_patch_israelite_market_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 68
+		upgrades_from = yob_open_table_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		population_growth = 0.021
+		clan_sentiment = 1
+	}
+	yob_traders_tent_israelite_market = {
+		desc = yob_traders_tent_israelite_market_desc
+		gold_cost = 165
+		extra_tech_building_start = 999
+		build_time = 135
+		ai_creation_factor = 72
+		upgrades_from = yob_barter_patch_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.709
+		population_growth = 0.031
+		clan_sentiment = 1
+	}
+	yob_merchants_pavilion_israelite_market = {
+		desc = yob_merchants_pavilion_israelite_market_desc
+		gold_cost = 330
+		extra_tech_building_start = 999
+		build_time = 270
+		ai_creation_factor = 78
+		upgrades_from = yob_traders_tent_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		population_growth = 0.061
+		clan_sentiment = 1
+	}
+	yob_market_stand_israelite_market = {
+		desc = yob_market_stand_israelite_market_desc
+		gold_cost = 600
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 85
+		upgrades_from = yob_merchants_pavilion_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	yob_exchange_room_israelite_market = {
+		desc = yob_exchange_room_israelite_market_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 89
+		upgrades_from = yob_market_stand_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.399
+		population_growth = 0.142
+		clan_sentiment = 1
+		max_population_mult = 0.005
+	}
+	yob_market_hall_israelite_market = {
+		desc = yob_market_hall_israelite_market_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 95
+		upgrades_from = yob_exchange_room_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.576
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	yob_guild_pavilion_israelite_market = {
+		desc = yob_guild_pavilion_israelite_market_desc
+		gold_cost = 4800
+		extra_tech_building_start = 999
+		build_time = 825
+		ai_creation_factor = 99
+		upgrades_from = yob_market_hall_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.642
+		population_growth = 0.181
+		clan_sentiment = 1
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	yob_grand_market_room_israelite_market = {
+		desc = yob_grand_market_room_israelite_market_desc
+		gold_cost = 9000
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 104
+		upgrades_from = yob_guild_pavilion_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		population_growth = 0.102
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+	}
+	yob_israelite_grand_market = {
+		desc = yob_israelite_grand_market_desc
+		gold_cost = 18000
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 110
+		upgrades_from = yob_grand_market_room_israelite_market
+		potential = {
+			culture_group = israelite
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.665
+		population_growth = 0.151
+		clan_sentiment = 1
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+}

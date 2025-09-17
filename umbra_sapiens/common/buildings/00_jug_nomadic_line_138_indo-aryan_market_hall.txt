@@ -1,0 +1,183 @@
+nomad = {
+	jug_indo_aryan_open_table = {
+		desc = jug_indo_aryan_open_table_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 34
+		ai_creation_factor = 65
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.133
+		max_population = 100
+	}
+	jug_indo_aryan_barter_patch = {
+		desc = jug_indo_aryan_barter_patch_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 70
+		upgrades_from = jug_indo_aryan_open_table
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.266
+		max_population = 100
+		clan_sentiment = 1
+	}
+	jug_indo_aryan_traders_tent = {
+		desc = jug_indo_aryan_traders_tent_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 75
+		upgrades_from = jug_indo_aryan_barter_patch
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.532
+		max_population = 100
+		max_manpower_mult = 0.02
+	}
+	jug_indo_aryan_merchants_pavilion = {
+		desc = jug_indo_aryan_merchants_pavilion_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 80
+		upgrades_from = jug_indo_aryan_traders_tent
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		max_population = 100
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	jug_indo_aryan_market_stand = {
+		desc = jug_indo_aryan_market_stand_desc
+		gold_cost = 360
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 85
+		upgrades_from = jug_indo_aryan_merchants_pavilion
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population = 100
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+	}
+	jug_indo_aryan_exchange_room = {
+		desc = jug_indo_aryan_exchange_room_desc
+		gold_cost = 720
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 92
+		upgrades_from = jug_indo_aryan_market_stand
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population = 100
+		max_manpower_mult = 0.02
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	jug_indo_aryan_market_hall = {
+		desc = jug_indo_aryan_market_hall_desc
+		gold_cost = 1440
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 98
+		upgrades_from = jug_indo_aryan_exchange_room
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.864
+		max_population = 100
+		max_manpower_mult = 0.04
+		tradevalue = 1.513
+		liege_prestige = 1
+	}
+	jug_indo_aryan_guild_pavilion = {
+		desc = jug_indo_aryan_guild_pavilion_desc
+		gold_cost = 2880
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 102
+		upgrades_from = jug_indo_aryan_market_hall
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.819
+		max_population = 128
+		max_manpower_mult = 0.06
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	jug_indo_aryan_grand_market_room = {
+		desc = jug_indo_aryan_grand_market_room_desc
+		gold_cost = 5760
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 106
+		upgrades_from = jug_indo_aryan_guild_pavilion
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.753
+		max_population = 256
+		max_manpower_mult = 0.40
+		tradevalue = 1.513
+		retinuesize = 2
+	}
+	jug_indo_aryan_grand_market = {
+		desc = jug_indo_aryan_grand_market_desc
+		gold_cost = 11520
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = jug_indo_aryan_grand_market_room
+		potential = {
+			culture_group = indo_aryan_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population = 512
+		max_manpower_mult = 0.36
+		tradevalue = 1.513
+		retinuesize = 4
+		clan_sentiment = 1
+	}
+}

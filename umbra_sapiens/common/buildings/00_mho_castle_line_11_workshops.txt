@@ -1,0 +1,176 @@
+castle = {
+	mho_castle_tinker_shed = {
+		desc = mho_castle_tinker_shed_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.02
+		garrison_size = 0.02
+		siege_defense = 0.02
+		build_cost_modifier = -0.02
+	}
+	mho_castle_craftsmans_hut = {
+		desc = mho_castle_craftsmans_hut_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 65
+		upgrades_from = mho_castle_tinker_shed
+		prerequisites = {
+			mho_castle_tinker_shed
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.03
+		garrison_size = 0.04
+	}
+	mho_castle_carpenters_shop = {
+		desc = mho_castle_carpenters_shop_desc
+		gold_cost = 95
+		extra_tech_building_start = 999
+		build_time = 340
+		ai_creation_factor = 70
+		upgrades_from = mho_castle_craftsmans_hut
+		prerequisites = {
+			mho_castle_craftsmans_hut
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		levy_size = 0.05
+		garrison_size = 0.06
+	}
+	mho_castle_masons_yard = {
+		desc = mho_castle_masons_yard_desc
+		gold_cost = 230
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 75
+		upgrades_from = mho_castle_carpenters_shop
+		prerequisites = {
+			mho_castle_carpenters_shop
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		levy_size = 0.09
+		garrison_size = 0.11
+		local_tax_modifier = 0.06
+	}
+	mho_castle_artisan_hall = {
+		desc = mho_castle_artisan_hall_desc
+		prestige_cost = 240
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 90
+		upgrades_from = mho_castle_toolmaker_workshop
+		prerequisites = {
+			mho_castle_toolmaker_workshop
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 4
+		}
+		levy_size = 0.49
+		garrison_size = 0.6
+		heavy_infantry_offensive = 0.13
+		local_tax_modifier = 0.14
+		liege_prestige = 0.5
+	}
+	mho_castle_smiths_forge = {
+		desc = mho_castle_smiths_forge_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 650
+		ai_creation_factor = 80
+		upgrades_from = mho_castle_masons_yard
+		prerequisites = {
+			mho_castle_masons_yard
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}
+		levy_size = 0.17
+		garrison_size = 0.17
+		heavy_infantry_offensive = 0.06
+	}
+	mho_castle_guild_workshop = {
+		desc = mho_castle_guild_workshop_desc
+		prestige_cost = 520
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 100
+		upgrades_from = mho_castle_artisan_hall
+		prerequisites = {
+			mho_castle_artisan_hall
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 5
+		}
+		levy_size = 0.8
+		garrison_size = 0.9
+		heavy_infantry_offensive = 0.21
+		local_tax_modifier = 0.2
+		tech_growth_modifier = 0.1
+	}
+	mho_castle_engineer_atelier = {
+		desc = mho_castle_engineer_atelier_desc
+		piety_cost = 950
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = mho_castle_masters_workshop
+		prerequisites = {
+			mho_castle_masters_workshop
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 7
+		}
+		levy_size = 1.97
+		garrison_size = 2.21
+		heavy_infantry_offensive = 0.5
+		local_tax_modifier = 0.4
+		tech_growth_modifier = 0.25
+	}
+	mho_castle_toolmaker_workshop = {
+		desc = mho_castle_toolmaker_workshop_desc
+		gold_cost = 1000
+		extra_tech_building_start = 999
+		build_time = 1000
+		ai_creation_factor = 85
+		upgrades_from = mho_castle_smiths_forge
+		prerequisites = {
+			mho_castle_smiths_forge
+		}
+		trigger = {
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}
+		levy_size = 0.32
+		garrison_size = 0.34
+		heavy_infantry_offensive = 0.1
+		tax_income = 0.6
+	}
+	mho_castle_masters_workshop = {
+		desc = mho_castle_masters_workshop_desc
+		prestige_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = mho_castle_guild_workshop
+		prerequisites = {
+			mho_castle_guild_workshop
+		}
+		trigger = {
+			TECH_CONSTRUCTION = 6
+		}
+		levy_size = 1.3
+		garrison_size = 1.49
+		heavy_infantry_offensive = 0.33
+		local_tax_modifier = 0.28
+		tech_growth_modifier = 0.18
+	}
+}

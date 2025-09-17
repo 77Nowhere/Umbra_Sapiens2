@@ -1,0 +1,175 @@
+nomad = {
+	hip_clay_lamp_stand = {
+		desc = hip_clay_lamp_stand_desc
+		gold_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+	}
+	hip_oil_lamp_hut = {
+		desc = hip_oil_lamp_hut_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 68
+		upgrades_from = hip_clay_lamp_stand
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	hip_butter_lamp_pavilion = {
+		desc = hip_butter_lamp_pavilion_desc
+		gold_cost = 203
+		extra_tech_building_start = 999
+		build_time = 139
+		ai_creation_factor = 72
+		upgrades_from = hip_oil_lamp_hut
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	hip_wick_room = {
+		desc = hip_wick_room_desc
+		gold_cost = 405
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 77
+		upgrades_from = hip_butter_lamp_pavilion
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_population_mult = 0.005
+	}
+	hip_sanctified_hall = {
+		desc = hip_sanctified_hall_desc
+		piety_cost = 638
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 92
+		upgrades_from = hip_expanded_pavilion
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		vassal_opinion = 5
+		liege_piety = 0.3
+	}
+	hip_expanded_pavilion = {
+		desc = hip_expanded_pavilion_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 85
+		upgrades_from = hip_wick_room
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population = 100
+		max_population_mult = 0.005
+		liege_piety = 0.1
+	}
+	hip_priests_chamber = {
+		desc = hip_priests_chamber_desc
+		piety_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 563
+		ai_creation_factor = 98
+		upgrades_from = hip_sanctified_hall
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 8
+		liege_piety = 0.6
+	}
+	hip_blessed_room = {
+		desc = hip_blessed_room_desc
+		piety_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 104
+		upgrades_from = hip_priests_chamber
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 12
+		liege_piety = 1
+		church_opinion = 10
+	}
+	hip_holy_lamp_hall = {
+		desc = hip_holy_lamp_hall_desc
+		piety_cost = 6000
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 109
+		upgrades_from = hip_blessed_room
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 16
+		liege_piety = 1
+		church_opinion = 16
+	}
+	hip_tibetan_lamp_sanctuary = {
+		desc = hip_tibetan_lamp_sanctuary_desc
+		piety_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 110
+		upgrades_from = hip_holy_lamp_hall
+		potential = {
+			religion_group = buddhist_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		vassal_opinion = 25
+		church_opinion = 25
+		liege_piety = 1
+	}
+}

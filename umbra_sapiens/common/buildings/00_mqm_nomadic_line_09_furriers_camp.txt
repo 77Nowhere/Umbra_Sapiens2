@@ -1,0 +1,182 @@
+nomad = {
+	mqm_skinning_rack = {
+		desc = mqm_skinning_rack_desc
+		gold_cost = 45
+		build_time = 45
+		extra_tech_building_start = 999
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		manpower_growth = 0.060
+		nomad_tax_modifier = 0.178
+	}
+	mqm_basic_fur_tent = {
+		desc = mqm_basic_fur_tent_desc
+		gold_cost = 135
+		build_time = 75
+		extra_tech_building_start = 999
+		ai_creation_factor = 68
+		upgrades_from = mqm_skinning_rack
+		prerequisites = {
+			mqm_skinning_rack
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.05
+		nomad_tax_modifier = 0.333
+	}
+	mqm_tanning_shelter = {
+		desc = mqm_tanning_shelter_desc
+		gold_cost = 525
+		build_time = 132
+		extra_tech_building_start = 999
+		ai_creation_factor = 75
+		upgrades_from = mqm_basic_fur_tent
+		prerequisites = {
+			mqm_basic_fur_tent
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		supply_limit = 0.12
+		nomad_tax_modifier = 0.532
+		clan_sentiment = 1
+	}
+	mqm_cured_hide_depot = {
+		desc = mqm_cured_hide_depot_desc
+		gold_cost = 1500
+		build_time = 225
+		extra_tech_building_start = 999
+		ai_creation_factor = 83
+		upgrades_from = mqm_tanning_shelter
+		prerequisites = {
+			mqm_tanning_shelter
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.797
+		garrison_size = 0.15
+	}
+	mqm_furriers_pavilion = {
+		desc = mqm_furriers_pavilion_desc
+		gold_cost = 3000
+		build_time = 338
+		extra_tech_building_start = 999
+		ai_creation_factor = 92
+		upgrades_from = mqm_cured_hide_depot
+		prerequisites = {
+			mqm_cured_hide_depot
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.443
+		liege_prestige = 0.4
+	}
+	mqm_embellished_tannery = {
+		desc = mqm_embellished_tannery_desc
+		gold_cost = 3750
+		build_time = 488
+		extra_tech_building_start = 999
+		ai_creation_factor = 98
+		upgrades_from = mqm_furriers_pavilion
+		prerequisites = {
+			mqm_furriers_pavilion
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.399
+		liege_prestige = 0.8
+	}
+	mqm_specialist_trappers_yurt = {
+		desc = mqm_specialist_trappers_yurt_desc
+		prestige_cost = 450
+		build_time = 675
+		extra_tech_building_start = 999
+		ai_creation_factor = 104
+		upgrades_from = mqm_embellished_tannery
+		prerequisites = {
+			mqm_embellished_tannery
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		liege_prestige = 1.5
+		supply_limit = 0.25
+	}
+	mqm_luxury_fur_cabin = {
+		desc = mqm_luxury_fur_cabin_desc
+		prestige_cost = 1350
+		build_time = 938
+		extra_tech_building_start = 999
+		ai_creation_factor = 108
+		upgrades_from = mqm_specialist_trappers_yurt
+		prerequisites = {
+			mqm_specialist_trappers_yurt
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.443
+		liege_prestige = 1.5
+		clan_sentiment = 1
+	}
+	mqm_steppe_fur_market = {
+		desc = mqm_steppe_fur_market_desc
+		prestige_cost = 3750
+		build_time = 1313
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = mqm_luxury_fur_cabin
+		prerequisites = {
+			mqm_luxury_fur_cabin
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.15
+		nomad_tax_modifier = 0.665
+		liege_prestige = 1.5
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	mqm_royal_furriers_guild = {
+		desc = mqm_royal_furriers_guild_desc
+		prestige_cost = 9000
+		build_time = 1875
+		extra_tech_building_start = 999
+		ai_creation_factor = 110
+		upgrades_from = mqm_steppe_fur_market
+		prerequisites = {
+			mqm_steppe_fur_market
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.06
+		nomad_tax_modifier = 0.532
+		liege_prestige = 1
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

@@ -1,0 +1,174 @@
+castle = {
+	hqp_zoroastrian_archive_scroll_nook = {
+		desc = hqp_zoroastrian_archive_scroll_nook_desc
+		gold_cost = 35
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.10
+		levy_size = 0.01
+	}
+	hqp_zoroastrian_archive_scriptorium = {
+		desc = hqp_zoroastrian_archive_scriptorium_desc
+		gold_cost = 55
+		extra_tech_building_start = 999
+		build_time = 240
+		ai_creation_factor = 65
+		upgrades_from = hqp_zoroastrian_archive_scroll_nook
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.20
+		levy_size = 0.01
+		garrison_size = 0.01
+	}
+	hqp_zoroastrian_archive_manuscript_room = {
+		desc = hqp_zoroastrian_archive_manuscript_room_desc
+		gold_cost = 90
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 68
+		upgrades_from = hqp_zoroastrian_archive_scriptorium
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		tax_income = 0.30
+		levy_size = 0.02
+		garrison_size = 0.02
+	}
+	hqp_zoroastrian_archive_archive_chamber = {
+		desc = hqp_zoroastrian_archive_archive_chamber_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 72
+		upgrades_from = hqp_zoroastrian_archive_manuscript_room
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 1
+		}
+		tax_income = 0.40
+		levy_size = 0.03
+		garrison_size = 0.04
+	}
+	hqp_zoroastrian_archive_keepers_vault = {
+		desc = hqp_zoroastrian_archive_keepers_vault_desc
+		gold_cost = 350
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 76
+		upgrades_from = hqp_zoroastrian_archive_archive_chamber
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 2
+		}
+		tax_income = 0.50
+		levy_size = 0.06
+		garrison_size = 0.07
+	}
+	hqp_zoroastrian_archive_wisemens_library = {
+		desc = hqp_zoroastrian_archive_wisemens_library_desc
+		prestige_cost = 375
+		extra_tech_building_start = 999
+		build_time = 1350
+		ai_creation_factor = 95
+		upgrades_from = hqp_zoroastrian_archive_royal_archive
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 4
+		}
+		levy_size = 0.17
+		garrison_size = 0.17
+		tax_income = 0.56
+		tech_growth_modifier = 0.07
+	}
+	hqp_zoroastrian_archive_royal_archive = {
+		desc = hqp_zoroastrian_archive_royal_archive_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1080
+		ai_creation_factor = 83
+		upgrades_from = hqp_zoroastrian_archive_keepers_vault
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 3
+		}
+		tax_income = 0.60
+		levy_size = 0.11
+		garrison_size = 0.13
+	}
+	hqp_zoroastrian_archive_scholars_repository = {
+		desc = hqp_zoroastrian_archive_scholars_repository_desc
+		prestige_cost = 700
+		extra_tech_building_start = 999
+		build_time = 1800
+		ai_creation_factor = 98
+		upgrades_from = hqp_zoroastrian_archive_wisemens_library
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 5
+		}
+		levy_size = 0.23
+		garrison_size = 0.23
+		tax_income = 0.65
+		tech_growth_modifier = 0.12
+	}
+	hqp_zoroastrian_archive_palace_archive = {
+		desc = hqp_zoroastrian_archive_palace_archive_desc
+		prestige_cost = 1400
+		extra_tech_building_start = 999
+		build_time = 2400
+		ai_creation_factor = 105
+		upgrades_from = hqp_zoroastrian_archive_scholars_repository
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 6
+		}
+		levy_size = 0.34
+		garrison_size = 0.30
+		tax_income = 0.70
+		tech_growth_modifier = 0.19
+	}
+	hqp_zoroastrian_archive_grand_library = {
+		desc = hqp_zoroastrian_archive_grand_library_desc
+		piety_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 3200
+		ai_creation_factor = 110
+		upgrades_from = hqp_zoroastrian_archive_palace_archive
+		potential = {
+			religion_group = zoroastrian_group
+		}
+		trigger = {
+			TECH_FORTIFICATION_CONSTRUCTION = 7
+		}
+		levy_size = 0.51
+		garrison_size = 0.48
+		tax_income = 0.75
+		tech_growth_modifier = 0.32
+	}
+}

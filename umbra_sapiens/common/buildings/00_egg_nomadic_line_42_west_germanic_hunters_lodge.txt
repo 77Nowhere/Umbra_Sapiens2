@@ -1,0 +1,181 @@
+nomad = {
+	egg_west_germanic_hunters_trap_set = {
+		desc = egg_west_germanic_hunters_trap_set_desc
+		gold_cost = 34
+		extra_tech_building_start = 999
+		build_time = 75
+		ai_creation_factor = 62
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		nomad_tax_modifier = 0.045
+	}
+	egg_west_germanic_hunters_blind = {
+		desc = egg_west_germanic_hunters_blind_desc
+		gold_cost = 68
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 65
+		upgrades_from = egg_west_germanic_hunters_trap_set
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.067
+	}
+	egg_west_germanic_hunters_game_rack = {
+		desc = egg_west_germanic_hunters_game_rack_desc
+		gold_cost = 135
+		extra_tech_building_start = 999
+		build_time = 162
+		ai_creation_factor = 69
+		upgrades_from = egg_west_germanic_hunters_blind
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.111
+	}
+	egg_west_germanic_hunters_trackers_tent = {
+		desc = egg_west_germanic_hunters_trackers_tent_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 74
+		upgrades_from = egg_west_germanic_hunters_game_rack
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.03
+		clan_sentiment = 1
+	}
+	egg_west_germanic_hunters_hunting_pavilion = {
+		desc = egg_west_germanic_hunters_hunting_pavilion_desc
+		gold_cost = 525
+		extra_tech_building_start = 999
+		build_time = 357
+		ai_creation_factor = 80
+		upgrades_from = egg_west_germanic_hunters_trackers_tent
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.02
+		global_movement_speed = 0.06
+		clan_sentiment = 1
+	}
+	egg_west_germanic_hunters_fletchers_cabin = {
+		desc = egg_west_germanic_hunters_fletchers_cabin_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 88
+		upgrades_from = egg_west_germanic_hunters_hunting_pavilion
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.020
+		max_manpower_mult = 0.04
+		archers_offensive = 0.1
+		clan_sentiment = 1
+	}
+	egg_west_germanic_hunters_bowyers_workshop = {
+		desc = egg_west_germanic_hunters_bowyers_workshop_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 92
+		upgrades_from = egg_west_germanic_hunters_fletchers_cabin
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.04
+		archers_offensive = 0.19
+		archers_defensive = 0.09
+	}
+	egg_west_germanic_hunters_master_hunters_lodge = {
+		desc = egg_west_germanic_hunters_master_hunters_lodge_desc
+		gold_cost = 3000
+		extra_tech_building_start = 999
+		build_time = 788
+		ai_creation_factor = 100
+		upgrades_from = egg_west_germanic_hunters_bowyers_workshop
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.10
+		archers_offensive = 0.3
+		archers_defensive = 0.16
+		land_morale = 0.05
+	}
+	egg_west_germanic_hunters_gamekeepers_hall = {
+		desc = egg_west_germanic_hunters_gamekeepers_hall_desc
+		gold_cost = 5625
+		extra_tech_building_start = 999
+		build_time = 1050
+		ai_creation_factor = 105
+		upgrades_from = egg_west_germanic_hunters_master_hunters_lodge
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.025
+		max_manpower_mult = 0.34
+		archers_offensive = 0.46
+		archers_defensive = 0.23
+		clan_sentiment = 1
+	}
+	egg_west_germanic_hunters_grand_hunters_pavilion = {
+		desc = egg_west_germanic_hunters_grand_hunters_pavilion_desc
+		gold_cost = 11250
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = egg_west_germanic_hunters_gamekeepers_hall
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.125
+		max_manpower_mult = 0.30
+		archers_offensive = 0.7
+		archers_defensive = 0.4
+		clan_sentiment = 1
+		land_morale = 0.1
+	}
+}

@@ -1,0 +1,201 @@
+#Code;English;French;German;Spanish;Russian;x
+royal_donjon;Royal Donjon;;;;;x
+royal_donjon_desc;The fortress is crowned with a mighty stone donjon, symbol of royal power, with broad quarters, high towers, and command of the realm.;;;;;x
+bailey_citadel;Bailey Citadel;;;;;x
+bailey_citadel_desc;A grand inner bailey is constructed, with thickest walls and elite garrison quarters, offering unmatched last-resort defense.;;;;;x
+command_post;Command Post;;;;;x
+command_post_desc;A fortress-within-a-fortress, with war rooms, signal towers, and master-at-arms, serving as the nerve center of the entire garrison.;;;;;x
+marksman_bastion;Marksman's Bastion;;;;;x
+marksman_bastion_desc;The pinnacle of medieval archery defense: vast stone bastions with internal galleries, murder holes, advanced firing angles, and space for elite marksmen to dominate the battlefield.;;;;;x
+master_engineers_forge;Master Engineer's Forge;;;;;x
+master_engineers_forge_desc;A legendary forge and command center where only the most skilled engineers craft and innovate the most formidable siege engines, unrivaled in both defense and attack.;;;;;x
+veterans_quarters;Veterans' Quarters;;;;;x
+veterans_quarters_desc;Luxurious apartments and strategic rooms for veteran warriors, commanders, and their retainers, granting superior command and fortitude.;;;;;x
+fortress_keep;Fortress Keep;;;;;x
+fortress_keep_desc;The entire complex is upgraded to a true fortress: multi-layered walls, bastions, and a central citadel command hall.;;;;;x
+grand_gatehouse;Grand Gatehouse;;;;;x
+grand_gatehouse_desc;The ultimate in medieval gate fortification: a towering, multi-tiered stone gatehouse complex with advanced defensive mechanisms, murder holes, multiple drawbridges, and living quarters for elite guards.;;;;;x
+crossfire_platform;Crossfire Platform;;;;;x
+crossfire_platform_desc;Large, interconnected wall platforms allowing multiple units of archers to coordinate deadly crossfire on all approaches, maximizing the defensive reach of the fort.;;;;;x
+advanced_siege_works;Advanced Siege Works;;;;;x
+advanced_siege_works_desc;A sprawling, fortified complex dedicated to the mass production, repair, and innovation of siege machinery. Greatly increases the fort's ability to withstand and inflict sieges.;;;;;x
+armored_garrison;Armored Garrison;;;;;x
+armored_garrison_desc;A heavily reinforced barracks with stone vaults and armories, housing elite soldiers and advanced siege defenses.;;;;;x
+round_keep;Round Keep;;;;;x
+round_keep_desc;The main keep is rebuilt in a round design, eliminating blind spots and improving resistance to undermining and siege engines.;;;;;x
+fortified_entrance;Fortified Entrance;;;;;x
+fortified_entrance_desc;A massive, stone-reinforced entrance with reinforced towers, improved parapets, and layered portcullises, creating a nearly impenetrable gateway.;;;;;x
+shooting_turret;Shooting Turret;;;;;x
+shooting_turret_desc;Specialized round or polygonal turrets projecting from the wall, supporting enfilade fire and offering archers protected vantage points at corners and gates.;;;;;x
+siege_engine_hall;Siege Engine Hall;;;;;x
+siege_engine_hall_desc;A grand hall of stone where master engineers oversee the production and deployment of a variety of siege engines, greatly empowering both defense and offense.;;;;;x
+drill_yard;Drill Yard;;;;;x
+drill_yard_desc;A fortified training ground within the barracks complex, where soldiers hone their skills under the watch of experienced officers.;;;;;x
+barbican_entry;Barbican Entry;;;;;x
+barbican_entry_desc;A strong outer barbican with towers, walls, and secondary gates, providing another obstacle before reaching the main gate.;;;;;x
+sentinel_keep;Sentinel Keep;;;;;x
+sentinel_keep_desc;A fortress-scale watchtower complex with curtain walls, drawbridge, and integrated barracks. Garrisoned by elite archers and officers, it forms the ultimate bulwark and command hub against any threat.;;;;;x
+square_keep;Square Keep;;;;;x
+square_keep_desc;A massive square stone keep rises at the center, housing nobles and officers, and providing command over the entire fortress.;;;;;x
+covered_gallery;Covered Gallery;;;;;x
+covered_gallery_desc;Fully enclosed wooden and stone passageways atop the walls, sheltering archers from incoming missiles while allowing concentrated volleys in defense.;;;;;x
+observation_tower;Observation Tower;;;;;x
+observation_tower_desc;A masterwork tower with high vantage points, telescopic sighting devices, and permanent staff of scouts and cartographers, ensuring unmatched intelligence gathering and defense coordination.;;;;;x
+trebuchet_workshop;Trebuchet Workshop;;;;;x
+trebuchet_workshop_desc;A stone and timber hall where the most advanced siege engines, such as trebuchets, are constructed and tested. Represents a leap in siege warfare.;;;;;x
+double_gatehouse;Double Gatehouse;;;;;x
+double_gatehouse_desc;A pair of gatehouses with a killing ground between them, forcing attackers to breach two separate sets of gates under concentrated missile fire.;;;;;x
+troop_dormitory;Troop Dormitory;;;;;x
+troop_dormitory_desc;A multi-story stone building with dedicated training yards and improved facilities, housing a large force and enabling swift reinforcement.;;;;;x
+beacon_tower;Beacon Tower;;;;;x
+beacon_tower_desc;The realms primary signal point, this tall stone tower is crowned with massive beacon fires visible for leagues. Extra garrison and messengers guarantee the alarm spreads instantly.;;;;;x
+moated_keep;Moated Keep;;;;;x
+moated_keep_desc;A deep moat is dug around the walls, with drawbridges and reinforced towers, deterring all but the most determined attackers.;;;;;x
+fortress_warehouse;Fortress Warehouse;;;;;x
+fortress_warehouse_desc;A sprawling stone warehouse integrated into the fort's walls, with vast storage, secure vaults, and storehouses for both supplies and equipment.;;;;;x
+drawbridge_gate;Drawbridge Gate;;;;;x
+drawbridge_gate_desc;The entrance is fortified with a counterweighted drawbridge spanning a ditch or moat, greatly increasing the fortress' ability to repel direct assault.;;;;;x
+defended_parapet;Defended Parapet;;;;;x
+defended_parapet_desc;A reinforced, elevated parapet lined with murder holes and arrow loops, allowing for relentless defensive fire and greater protection for elite archers.;;;;;x
+catapult_yard;Catapult Yard;;;;;x
+catapult_yard_desc;A walled yard dedicated to the construction and maintenance of catapults. Greatly enhances siege attack and defensive strength.;;;;;x
+high_watchtower;High Watchtower;;;;;x
+high_watchtower_desc;A towering stone structure rising above the landscape, with reinforced battlements, advanced signaling, and ballista emplacements. Houses elite sentries and provides unrivaled visibility.;;;;;x
+barracks_hall;Barracks Hall;;;;;x
+barracks_hall_desc;A spacious stone barracks, complete with armory, sleeping quarters, and a mess hall for the garrison.;;;;;x
+ceremonial_courtyard_1;Ceremonial Courtyard;;;;;x
+ceremonial_courtyard_1_desc;A magnificent stone-paved court adorned with banners and statues, used for rallies, knightings, and the spectacle of lordly rule.;;;;;x
+stockade_redoubt;Stockade Redoubt;;;;;x
+stockade_redoubt_desc;A formidable redoubt, its thick timbered walls layered with stone and earth, designed for last stands. Bristling with arrow slits and reinforced gates, it dominates the landscape.;;;;;x
+gatehouse_keep;Gatehouse Keep;;;;;x
+gatehouse_keep_desc;A fortified gatehouse with murder holes, portcullis, and barracks is built into the curtain wall, vastly improving entry defense.;;;;;x
+murder_hole_gatehouse;Murder Hole Gatehouse;;;;;x
+murder_hole_gatehouse_desc;A stone gatehouse equipped with murder holes and arrow slits, allowing defenders to pour missiles and boiling oil upon attackers beneath the gate arch.;;;;;x
+quartermaster_depot;Quartermaster Depot;;;;;x
+quartermaster_depot_desc;A large, organized depot with dedicated staff, detailed ledgers, and disciplined rationing, maximizing readiness and minimizing waste.;;;;;x
+ballista_shed;Ballista Shed;;;;;x
+ballista_shed_desc;A reinforced shed for the assembly and storage of ballistae, enabling defenders to deploy powerful bolt-throwers during sieges.;;;;;x
+enclosed_watchtower;Enclosed Watchtower;;;;;x
+enclosed_watchtower_desc;A stone watchtower surrounded by a defensive wall and moat, with improved living quarters and stores, ensuring the garrison can hold out during extended sieges.;;;;;x
+machicolation_wall;Machicolation Wall;;;;;x
+machicolation_wall_desc;Stone galleries with floor openings (machicolations) overhanging the walls, enabling defenders to rain arrows and missiles directly onto besiegers below.;;;;;x
+cold_storage;Cold Storage;;;;;x
+cold_storage_desc;A stone-built, well-ventilated cold storage house with clever insulation, safeguarding vast reserves for years and ensuring the fort's survival in siege or famine.;;;;;x
+great_hall_court_1;Great Hall Court;;;;;x
+great_hall_court_1_desc;A grand courtyard adjoining the lord's hall, where retinues gather and feasts are held. The very heart of the stronghold's power.;;;;;x
+timber_curtain;Timber Curtain;;;;;x
+timber_curtain_desc;A continuous timber wall with integrated towers and fighting platforms, rivalling early stone fortifications in defensive power.;;;;;x
+drawbridge_moat;Drawbridge Moat;;;;;x
+drawbridge_moat_desc;A formidable moat equipped with a sturdy drawbridge, allowing defenders to control access while maximizing protection.;;;;;x
+garrison_lodge;Garrison Lodge;;;;;x
+garrison_lodge_desc;A fortified timber lodge with stone foundations, serving as a central barracks for trained soldiers and a stockade for defense.;;;;;x
+curtain_wall;Curtain Wall;;;;;x
+curtain_wall_desc;Thick stone curtain walls are added, linking towers and enclosing the keep with a defensive perimeter and small gate.;;;;;x
+portcullis_gate;Portcullis Gate;;;;;x
+portcullis_gate_desc;A heavy wooden portcullis, iron-reinforced, installed to stop attackers and withstand battering, with improved defensive platforms and loopholes.;;;;;x
+siege_supplies;Siege Supplies;;;;;x
+siege_supplies_desc;A stone and timber magazine storing siege rations, pitch, and repair materials, essential for enduring long blockades or assaults.;;;;;x
+earthwork_rampart;Earthwork Rampart;;;;;x
+earthwork_rampart_desc;A massive defensive bank of packed earth, fronted by ditches and topped with a wooden wall, offering strong resistance to scaling or ramming.;;;;;x
+assembly_plaza_1;Assembly Plaza;;;;;x
+assembly_plaza_1_desc;A broad, stone-paved space for mustering levies, making proclamations, and holding public ceremonies. Authority is displayed here.;;;;;x
+weapon_workshop;Weapon Workshop;;;;;x
+weapon_workshop_desc;A timber-framed structure with forges and anvils, producing weapons, shields, and basic siege implements. Attracts skilled craftsmen and allows the outfitting of more defenders.;;;;;x
+stone_battlement;Stone Battlement;;;;;x
+stone_battlement_desc;A permanent stone parapet with crenellations, offering superior cover and firing positions for archers and defenders atop the walls.;;;;;x
+smokehouse;Smokehouse;;;;;x
+smokehouse_desc;A sturdy wooden smokehouse for curing meats and fish, greatly extending their shelf life and securing long-term provisions.;;;;;x
+stone_watchtower;Stone Watchtower;;;;;x
+stone_watchtower_desc;A solid stone tower with arrow slits, offering far greater durability and protection. Features a permanent guardroom and a small storeroom.;;;;;x
+fortified_palisade;Fortified Palisade;;;;;x
+fortified_palisade_desc;Massive wooden works with earth embankments, stone-reinforced gates, and fire-hardened walls. A true stronghold, formidable even to seasoned attackers.;;;;;x
+stone_lined_moat;Stone-Lined Moat;;;;;x
+stone_lined_moat_desc;A moat reinforced with cut stone, highly resistant to sapping and collapse.;;;;;x
+paved_courtyard_1;Paved Courtyard;;;;;x
+paved_courtyard_1_desc;The central ground is laid with stone, allowing troops and supplies to move swiftly and giving the fort an air of permanence.;;;;;x
+guardhouse;Guardhouse;;;;;x
+guardhouse_desc;A sturdy timber guardhouse with watch posts, providing improved security, discipline, and organization for the garrison.;;;;;x
+inner_moat;Inner Moat;;;;;x
+inner_moat_desc;A secondary moat within the fortification, creating another barrier for attackers who breach the outer defenses.;;;;;x
+stone_tower;Stone Tower;;;;;x
+stone_tower_desc;A sturdy stone-built tower replaces wood, providing a real refuge and vantage. Rudimentary kitchens and storerooms appear within.;;;;;x
+water_filled_moat;Water-Filled Moat;;;;;x
+water_filled_moat_desc;A deep moat filled with water, greatly hindering siege equipment and dissuading attackers.;;;;;x
+patrol_tower;Patrol Tower;;;;;x
+patrol_tower_desc;A tall stone tower with attached stables and barracks, supporting mounted patrols and rapid response to threats. Enhanced observation posts for round-the-clock vigilance.;;;;;x
+guarded_gatehouse;Guarded Gatehouse;;;;;x
+guarded_gatehouse_desc;A timber gatehouse with watch platforms and a small guardroom, allowing defenders to keep vigilant watch over entry.;;;;;x
+defensive_moat;Defensive Moat;;;;;x
+defensive_moat_desc;A wide, dry defensive moat carved around the fort, making direct assault difficult.;;;;;x
+armory_store;Armory Store;;;;;x
+armory_store_desc;A secure wooden armory for storing weapons and armor, enabling quick arming of militia in times of need.;;;;;x
+double_palisade;Double Palisade;;;;;x
+double_palisade_desc;Two layers of strong wooden walls, with a killing ground between. Attackers must breach two barriers under fire from defenders.;;;;;x
+flooded_ditch;Flooded Ditch;;;;;x
+flooded_ditch_desc;A wide, water-filled ditch drawn from nearby rivers or wells, impeding infantry and cavalry assaults.;;;;;x
+engineers_hut;Engineer's Hut;;;;;x
+engineers_hut_desc;A wooden hut for skilled engineers to draft plans and coordinate construction. Enables the building of simple engines and provides a modest boost to siege capabilities.;;;;;x
+wooden_hoarding;Wooden Hoarding;;;;;x
+wooden_hoarding_desc;Temporary wooden structures projecting from the top of the wall, shielding defenders and allowing them to fire directly down on attackers.;;;;;x
+root_cellar;Root Cellar;;;;;x
+root_cellar_desc;A partially sunken stone-lined cellar, cool and insulated, to preserve root vegetables and perishable supplies through harsh seasons.;;;;;x
+wooden_watchtower;Wooden Watchtower;;;;;x
+wooden_watchtower_desc;A tall timber tower with a sheltered platform, providing improved sightlines and a protected place for lookouts. Guards quarters and basic armory included.;;;;;x
+lined_moat;Lined Moat;;;;;x
+lined_moat_desc;A moat reinforced with timber or stone lining to prevent collapse and increase durability.;;;;;x
+signal_tower;Signal Tower;;;;;x
+signal_tower_desc;A fortified stone tower equipped with brazier platforms and signaling horns to relay warnings swiftly across the realm. Garrison rotates to maintain constant vigilance.;;;;;x
+garden_court_1;Garden Court;;;;;x
+garden_court_1_desc;A small plot is cultivated in the courtyard, providing fresh produce and a measure of tranquility amid the hardships of frontier life.;;;;;x
+watchtower_palisade;Watchtower Palisade;;;;;x
+watchtower_palisade_desc;Timber towers rise above the walls, granting defenders superior sightlines. Communication and coordination greatly improve.;;;;;x
+guarded_palisade;Guarded Palisade;;;;;x
+guarded_palisade_desc;A manned wooden wall with simple walkways. Sentries and lookout posts allow for early warning and swift response to threats.;;;;;x
+barracks_shed;Barracks Shed;;;;;x
+barracks_shed_desc;An expanded log structure with makeshift bunks, offering better shelter and storage for weapons and supplies.;;;;;x
+provision_depot;Provision Depot;;;;;x
+provision_depot_desc;A fortified supply yard with guarded sheds and ration stores, ensuring reliable distribution of food and water for the fort's defenders.;;;;;x
+earthen_trench;Earthen Trench;;;;;x
+earthen_trench_desc;A deeper and more structured earthwork, offering improved defense and providing cover for defenders.;;;;;x
+reinforced_gate;Reinforced Gate;;;;;x
+reinforced_gate_desc;The gate is strengthened with additional timber and rudimentary iron fittings, offering improved resistance to attacks.;;;;;x
+workshop_tent;Workshop Tent;;;;;x
+workshop_tent_desc;A sturdy canvas tent where basic siege components and tools are assembled. Offers primitive shelter to craftsmen and helps organize the labor force.;;;;;x
+motte_tower;Motte Tower;;;;;x
+motte_tower_desc;A rough timber watchtower atop an earthen motte, surrounded by makeshift fortifications, tents, and simple palisades.;;;;;x
+chapel_court_1;Chapel Court;;;;;x
+chapel_court_1_desc;A modest courtyard with a makeshift wooden shrine, where prayers are offered for protection and morale.;;;;;x
+ditch_and_palisade;Ditch and Palisade;;;;;x
+ditch_and_palisade_desc;A defensive ditch dug before the palisade slows attackers and exposes them to missile fire. The wall is further heightened and strengthened.;;;;;x
+firing_platform;Firing Platform;;;;;x
+firing_platform_desc;A simple raised wooden platform behind the walls, providing archers better sightlines and angles for defending the fort.;;;;;x
+granary_store;Granary Store;;;;;x
+granary_store_desc;A rudimentary granary of raised wood platforms, providing safer and larger storage for harvested grains and dried foods.;;;;;x
+training_square_1;Training Square;;;;;x
+training_square_1_desc;A patch of trampled earth and makeshift dummies where local levies drill with spear and shield. The beginnings of organized defense.;;;;;x
+spiked_ditch;Spiked Ditch;;;;;x
+spiked_ditch_desc;A shallow ditch filled with sharpened stakes, designed to injure and slow attackers.;;;;;x
+lookout_post;Lookout Post;;;;;x
+lookout_post_desc;A rough wooden platform atop earth mounds, manned by a handful of sentries with tents and a fire pit. Offers basic warning of approaching enemies.;;;;;x
+well_house_1;Well House;;;;;x
+well_house_1_desc;A timber shack covers the newly dug well, providing vital water for the garrison and livestock. Defenders may now withstand longer sieges.;;;;;x
+reinforced_palisade;Reinforced Palisade;;;;;x
+reinforced_palisade_desc;Sturdier wooden stakes, set deeper and bound together, form this wall. It offers improved defense and withstands basic assaults and fire.;;;;;x
+stable_yard_1;Stable Yard;;;;;x
+stable_yard_1_desc;A simple, fenced enclosure where horses are tethered and basic feed is stored. Essential for rapid movement and scouting in rough territory.;;;;;x
+shallow_ditch;Shallow Ditch;;;;;x
+shallow_ditch_desc;A simple defensive ditch dug by hand, offering rudimentary protection and slowing attackers.;;;;;x
+militia_hut;Militia Hut;;;;;x
+militia_hut_desc;A rough shelter built from timber and turf, providing the most basic protection and gathering point for a handful of local defenders.;;;;;x
+arrow_slit_wall;Arrow Slit Wall;;;;;x
+arrow_slit_wall_desc;A makeshift palisade reinforced with basic wooden arrow slits, allowing defenders to fire from relative safety. Represents the first steps in organized fortification on the frontier.;;;;;x
+tool_shed;Tool Shed;;;;;x
+tool_shed_desc;A makeshift shelter built from logs and earth, serving as storage for basic tools and a workbench for simple repairs. Essential for the first steps of fortification.;;;;;x
+simple_gate;Simple Gate;;;;;x
+simple_gate_desc;A basic wooden gate, hastily erected from logs and earth, serving as the first line of defense for new settlements.;;;;;x
+courtyard_clearing_1;Courtyard Clearing;;;;;x
+courtyard_clearing_1_desc;A rough, hastily cleared patch of earth in the heart of the fort. Here, tents are pitched and basic supplies are stored, serving as the first mustering ground for defenders.;;;;;x
+food_shed;Food Shed;;;;;x
+food_shed_desc;A makeshift shelter of timber and thatch for basic food storage, hastily built by settlers to keep supplies dry and safe from animals.;;;;;x
+wooden_fence;Wooden Fence;;;;;x
+wooden_fence_desc;A hastily erected barrier of sharpened logs and brambles, marking the edge of settled territory and providing the most basic protection against wild beasts and opportunistic raiders.;;;;;x

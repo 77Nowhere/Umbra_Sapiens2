@@ -1,0 +1,207 @@
+nomad = {
+	rwq_camel_tether_post = {
+		desc = rwq_camel_tether_post_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 62
+		potential = {
+			culture_group = arabic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+	}
+	rwq_desert_tent = {
+		desc = rwq_desert_tent_desc
+		gold_cost = 64
+		extra_tech_building_start = 999
+		build_time = 90
+		ai_creation_factor = 64
+		upgrades_from = rwq_camel_tether_post
+		prerequisites = {
+			rwq_camel_tether_post
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		supply_limit = 0.1
+		max_population_mult = 0.005
+	}
+	rwq_pack_animal_shelter = {
+		desc = rwq_pack_animal_shelter_desc
+		gold_cost = 128
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = rwq_desert_tent
+		prerequisites = {
+			rwq_desert_tent
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		supply_limit = 0.12
+		horde_maintenence_cost = -0.01
+	}
+	rwq_traders_pavilion = {
+		desc = rwq_traders_pavilion_desc
+		gold_cost = 248
+		extra_tech_building_start = 999
+		build_time = 150
+		ai_creation_factor = 77
+		upgrades_from = rwq_pack_animal_shelter
+		prerequisites = {
+			rwq_pack_animal_shelter
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		max_population_mult = 0.005
+		tradevalue = 1.513
+	}
+	rwq_walled_camp = {
+		desc = rwq_walled_camp_desc
+		gold_cost = 495
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 82
+		upgrades_from = rwq_traders_pavilion
+		prerequisites = {
+			rwq_traders_pavilion
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.18
+		supply_limit = 0.2
+		clan_sentiment = 1
+	}
+	rwq_merchants_hall = {
+		desc = rwq_merchants_hall_desc
+		gold_cost = 990
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 88
+		upgrades_from = rwq_walled_camp
+		prerequisites = {
+			rwq_walled_camp
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+	rwq_camel_stable = {
+		desc = rwq_camel_stable_desc
+		gold_cost = 1980
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 94
+		upgrades_from = rwq_merchants_hall
+		prerequisites = {
+			rwq_merchants_hall
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_manpower_mult = 0.02
+		horde_maintenence_cost = -0.03
+		supply_limit = 0.35
+	}
+	rwq_market_pavilion = {
+		desc = rwq_market_pavilion_desc
+		gold_cost = 3960
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 100
+		upgrades_from = rwq_camel_stable
+		prerequisites = {
+			rwq_camel_stable
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		max_population_mult = 0.010
+	}
+	rwq_trade_storage_room = {
+		desc = rwq_trade_storage_room_desc
+		gold_cost = 7920
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 105
+		upgrades_from = rwq_market_pavilion
+		prerequisites = {
+			rwq_market_pavilion
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		nomad_tax_modifier = 0.443
+		tradevalue = 1.513
+		max_manpower_mult = 0.02
+	}
+	rwq_arabic_grand_caravanserai = {
+		desc = rwq_arabic_grand_caravanserai_desc
+		gold_cost = 15840
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = rwq_trade_storage_room
+		prerequisites = {
+			rwq_trade_storage_room
+		}
+		potential = {
+			culture_group = arabic
+		}
+		is_nomadic = yes
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.015
+		max_manpower_mult = 0.04
+		nomad_tax_modifier = 0.421
+		tradevalue = 1.513
+		clan_sentiment = 1
+	}
+}

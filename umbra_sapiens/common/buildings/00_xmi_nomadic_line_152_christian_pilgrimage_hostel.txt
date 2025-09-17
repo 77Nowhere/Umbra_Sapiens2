@@ -1,0 +1,212 @@
+nomad = {
+	xmi_wayfarers_hut = {
+		desc = xmi_wayfarers_hut_desc
+		gold_cost = 23
+		extra_tech_building_start = 999
+		build_time = 45
+		ai_creation_factor = 65
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+	}
+	xmi_pilgrims_shelter = {
+		desc = xmi_pilgrims_shelter_desc
+		gold_cost = 60
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 70
+		upgrades_from = xmi_wayfarers_hut
+		prerequisites = {
+			xmi_wayfarers_hut
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	xmi_rest_chamber = {
+		desc = xmi_rest_chamber_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 94
+		ai_creation_factor = 75
+		upgrades_from = xmi_pilgrims_shelter
+		prerequisites = {
+			xmi_pilgrims_shelter
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	xmi_guarded_pavilion = {
+		desc = xmi_guarded_pavilion_desc
+		gold_cost = 338
+		extra_tech_building_start = 999
+		build_time = 143
+		ai_creation_factor = 80
+		upgrades_from = xmi_rest_chamber
+		prerequisites = {
+			xmi_rest_chamber
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.2
+		garrison_size = 0.06
+	}
+	xmi_hospitality_room = {
+		desc = xmi_hospitality_room_desc
+		gold_cost = 675
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 90
+		upgrades_from = xmi_guarded_pavilion
+		prerequisites = {
+			xmi_guarded_pavilion
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		liege_piety = 0.4
+		supply_limit = 0.05
+	}
+	xmi_guesthouse = {
+		desc = xmi_guesthouse_desc
+		gold_cost = 1350
+		extra_tech_building_start = 999
+		build_time = 282
+		ai_creation_factor = 95
+		upgrades_from = xmi_hospitality_room
+		prerequisites = {
+			xmi_hospitality_room
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 140
+		clan_sentiment = 1
+		liege_piety = 0.7
+		supply_limit = 0.09
+		church_opinion = 2
+	}
+	xmi_sanctuary_hall = {
+		desc = xmi_sanctuary_hall_desc
+		gold_cost = 2625
+		extra_tech_building_start = 999
+		build_time = 375
+		ai_creation_factor = 100
+		upgrades_from = xmi_guesthouse
+		prerequisites = {
+			xmi_guesthouse
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 260
+		clan_sentiment = 1
+		liege_piety = 1.2
+		supply_limit = 0.16
+		church_opinion = 4
+	}
+	xmi_refuge_pavilion = {
+		desc = xmi_refuge_pavilion_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 525
+		ai_creation_factor = 105
+		upgrades_from = xmi_sanctuary_hall
+		prerequisites = {
+			xmi_sanctuary_hall
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 520
+		clan_sentiment = 1
+		liege_piety = 1
+		supply_limit = 0.25
+		church_opinion = 7
+		garrison_size = 0.18
+	}
+	xmi_grand_pilgrims_hostel = {
+		desc = xmi_grand_pilgrims_hostel_desc
+		gold_cost = 10500
+		extra_tech_building_start = 999
+		build_time = 750
+		ai_creation_factor = 110
+		upgrades_from = xmi_refuge_pavilion
+		prerequisites = {
+			xmi_refuge_pavilion
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 1050
+		clan_sentiment = 1
+		liege_piety = 1
+		supply_limit = 0.45
+		church_opinion = 12
+		garrison_size = 0.32
+	}
+	xmi_christian_pilgrim_hostel = {
+		desc = xmi_christian_pilgrim_hostel_desc
+		gold_cost = 21000
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 110
+		upgrades_from = xmi_grand_pilgrims_hostel
+		prerequisites = {
+			xmi_grand_pilgrims_hostel
+		}
+		potential = {
+			religion_group = christian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 2100
+		clan_sentiment = 2
+		liege_piety = 1
+		supply_limit = 0.9
+		church_opinion = 24
+		garrison_size = 0.65
+	}
+}

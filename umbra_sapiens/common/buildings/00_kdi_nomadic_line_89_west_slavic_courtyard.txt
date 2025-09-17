@@ -1,0 +1,200 @@
+nomad = {
+	kdi_west_slavic_log_fence = {
+		desc = kdi_west_slavic_log_fence_desc
+		gold_cost = 38
+		extra_tech_building_start = 999
+		build_time = 79
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.1
+		supply_limit = 0.05
+	}
+	kdi_west_slavic_wooden_gate = {
+		desc = kdi_west_slavic_wooden_gate_desc
+		gold_cost = 75
+		extra_tech_building_start = 999
+		build_time = 117
+		ai_creation_factor = 70
+		upgrades_from = kdi_west_slavic_log_fence
+		prerequisites = {
+			kdi_west_slavic_log_fence
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		garrison_size = 0.18
+		supply_limit = 0.1
+		clan_sentiment = 1
+	}
+	kdi_west_slavic_thatched_pavilion = {
+		desc = kdi_west_slavic_thatched_pavilion_desc
+		gold_cost = 150
+		extra_tech_building_start = 999
+		build_time = 158
+		ai_creation_factor = 80
+		upgrades_from = kdi_west_slavic_wooden_gate
+		prerequisites = {
+			kdi_west_slavic_wooden_gate
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		clan_sentiment = 1
+		nomad_tax_modifier = 0.222
+	}
+	kdi_west_slavic_stone_hearth = {
+		desc = kdi_west_slavic_stone_hearth_desc
+		gold_cost = 263
+		extra_tech_building_start = 999
+		build_time = 225
+		ai_creation_factor = 90
+		upgrades_from = kdi_west_slavic_thatched_pavilion
+		prerequisites = {
+			kdi_west_slavic_thatched_pavilion
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population = 100
+		supply_limit = 0.15
+		liege_prestige = 0.1
+	}
+	kdi_west_slavic_inner_yard = {
+		desc = kdi_west_slavic_inner_yard_desc
+		gold_cost = 450
+		extra_tech_building_start = 999
+		build_time = 338
+		ai_creation_factor = 95
+		upgrades_from = kdi_west_slavic_stone_hearth
+		prerequisites = {
+			kdi_west_slavic_stone_hearth
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		nomad_tax_modifier = 0.355
+	}
+	kdi_west_slavic_family_shelter = {
+		desc = kdi_west_slavic_family_shelter_desc
+		gold_cost = 900
+		extra_tech_building_start = 999
+		build_time = 488
+		ai_creation_factor = 105
+		upgrades_from = kdi_west_slavic_inner_yard
+		prerequisites = {
+			kdi_west_slavic_inner_yard
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.005
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+	}
+	kdi_west_slavic_village_square = {
+		desc = kdi_west_slavic_village_square_desc
+		gold_cost = 1650
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 110
+		upgrades_from = kdi_west_slavic_family_shelter
+		prerequisites = {
+			kdi_west_slavic_family_shelter
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_prestige = 0.25
+		culture_techpoints = 0.1
+	}
+	kdi_west_slavic_elders_room = {
+		desc = kdi_west_slavic_elders_room_desc
+		gold_cost = 2400
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 115
+		upgrades_from = kdi_west_slavic_village_square
+		prerequisites = {
+			kdi_west_slavic_village_square
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_manpower_mult = 0.02
+		liege_prestige = 0.3
+	}
+	kdi_west_slavic_community_hall = {
+		desc = kdi_west_slavic_community_hall_desc
+		gold_cost = 3150
+		extra_tech_building_start = 999
+		build_time = 1125
+		ai_creation_factor = 120
+		upgrades_from = kdi_west_slavic_elders_room
+		prerequisites = {
+			kdi_west_slavic_elders_room
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		max_population_mult = 0.010
+		culture_techpoints = 0.2
+		liege_prestige = 0.4
+	}
+	kdi_west_slavic_courtyard = {
+		desc = kdi_west_slavic_courtyard_desc
+		gold_cost = 5250
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 130
+		upgrades_from = kdi_west_slavic_community_hall
+		prerequisites = {
+			kdi_west_slavic_community_hall
+		}
+		potential = {
+			culture_group = west_slavic_group
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		max_population_mult = 0.010
+		max_manpower_mult = 0.02
+		clan_sentiment = 1
+		liege_prestige = 0.6
+		garrison_size = 0.3
+	}
+}

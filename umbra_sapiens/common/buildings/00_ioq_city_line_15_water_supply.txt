@@ -1,0 +1,159 @@
+city = {
+	ioq_wellspring = {
+		desc = ioq_wellspring_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 120
+		ai_creation_factor = 65
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		supply_limit = 0.08
+		local_tax_modifier = 0.03
+		health = 0.01
+	}
+	ioq_rain_cistern = {
+		desc = ioq_rain_cistern_desc
+		prestige_cost = 55
+		extra_tech_building_start = 999
+		build_time = 210
+		ai_creation_factor = 75
+		upgrades_from = ioq_public_well
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		supply_limit = 0.23
+		local_tax_modifier = 0.1
+		tradevalue = 0.5
+		health = 0.02
+	}
+	ioq_public_well = {
+		desc = ioq_public_well_desc
+		gold_cost = 70
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 70
+		upgrades_from = ioq_wellspring
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		supply_limit = 0.15
+		local_tax_modifier = 0.06
+		garrison_size = 0.03
+		health = 0.03
+	}
+	ioq_draw_well = {
+		desc = ioq_draw_well_desc
+		gold_cost = 180
+		extra_tech_building_start = 999
+		build_time = 330
+		ai_creation_factor = 80
+		upgrades_from = ioq_rain_cistern
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		supply_limit = 0.36
+		local_tax_modifier = 0.18
+		garrison_size = 0.08
+		tradevalue = 1.2
+		health = 0.04
+	}
+	ioq_stone_aqueduct = {
+		desc = ioq_stone_aqueduct_desc
+		piety_cost = 200
+		extra_tech_building_start = 999
+		build_time = 600
+		ai_creation_factor = 92
+		upgrades_from = ioq_timber_aqueduct
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		supply_limit = 0.85
+		local_tax_modifier = 0.47
+		tradevalue = 4
+		economy_techpoints = 0.18
+		health = 0.05
+	}
+	ioq_timber_aqueduct = {
+		desc = ioq_timber_aqueduct_desc
+		gold_cost = 320
+		extra_tech_building_start = 999
+		build_time = 440
+		ai_creation_factor = 86
+		upgrades_from = ioq_draw_well
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		supply_limit = 0.55
+		local_tax_modifier = 0.29
+		tradevalue = 2.2
+		economy_techpoints = 0.08
+		health = 0.06
+	}
+	ioq_water_tower = {
+		desc = ioq_water_tower_desc
+		gold_cost = 700
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 97
+		upgrades_from = ioq_stone_aqueduct
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		supply_limit = 1.25
+		local_tax_modifier = 0.65
+		tradevalue = 7
+		economy_techpoints = 0.32
+		health = 0.07
+	}
+	ioq_reservoir = {
+		desc = ioq_reservoir_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 102
+		upgrades_from = ioq_water_tower
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		supply_limit = 1.8
+		local_tax_modifier = 0.88
+		tradevalue = 13
+		economy_techpoints = 0.52
+		health = 0.08
+	}
+	ioq_urban_fountain = {
+		desc = ioq_urban_fountain_desc
+		gold_cost = 2000
+		extra_tech_building_start = 999
+		build_time = 1600
+		ai_creation_factor = 106
+		upgrades_from = ioq_reservoir
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		supply_limit = 2.6
+		local_tax_modifier = 1.1
+		tradevalue = 20
+		economy_techpoints = 0.8
+		liege_prestige = 0.5
+		health = 0.09
+	}
+	ioq_pumping_station = {
+		desc = ioq_pumping_station_desc
+		gold_cost = 4000
+		extra_tech_building_start = 999
+		build_time = 2200
+		ai_creation_factor = 110
+		upgrades_from = ioq_urban_fountain
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		supply_limit = 3.7
+		local_tax_modifier = 1.55
+		tradevalue = 34
+		economy_techpoints = 1.4
+		liege_prestige = 1
+		health = 0.1
+	}
+}

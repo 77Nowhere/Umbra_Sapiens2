@@ -1,0 +1,202 @@
+city = {
+	ade_travelers_compound = {
+		desc = ade_travelers_compound_desc
+		gold_cost = 40
+		extra_tech_building_start = 999
+		build_time = 180
+		ai_creation_factor = 60
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 0.5
+		local_tax_modifier = 0.01
+	}
+	ade_water_cistern = {
+		desc = ade_water_cistern_desc
+		prestige_cost = 45
+		extra_tech_building_start = 999
+		build_time = 320
+		ai_creation_factor = 70
+		upgrades_from = ade_resting_court
+		prerequisites = {
+			ade_resting_court
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 2.5
+		local_tax_modifier = 0.04
+		supply_limit = 0.04
+	}
+	ade_resting_court = {
+		desc = ade_resting_court_desc
+		gold_cost = 80
+		extra_tech_building_start = 999
+		build_time = 260
+		ai_creation_factor = 65
+		upgrades_from = ade_travelers_compound
+		prerequisites = {
+			ade_travelers_compound
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 0
+		}
+		tradevalue = 1.2
+		local_tax_modifier = 0.02
+		garrison_size = 0.03
+	}
+	ade_guest_house = {
+		desc = ade_guest_house_desc
+		piety_cost = 120
+		extra_tech_building_start = 999
+		build_time = 900
+		ai_creation_factor = 105
+		upgrades_from = ade_caravan_stable
+		prerequisites = {
+			ade_caravan_stable
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 3
+		}
+		tradevalue = 21
+		local_tax_modifier = 0.33
+		garrison_size = 0.22
+		economy_techpoints = 0.05
+	}
+	ade_horse_shelter = {
+		desc = ade_horse_shelter_desc
+		gold_cost = 210
+		extra_tech_building_start = 999
+		build_time = 480
+		ai_creation_factor = 80
+		upgrades_from = ade_water_cistern
+		prerequisites = {
+			ade_water_cistern
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 1
+		}
+		tradevalue = 5
+		local_tax_modifier = 0.08
+		garrison_size = 0.07
+	}
+	ade_caravan_stable = {
+		desc = ade_caravan_stable_desc
+		gold_cost = 500
+		extra_tech_building_start = 999
+		build_time = 720
+		ai_creation_factor = 95
+		upgrades_from = ade_horse_shelter
+		prerequisites = {
+			ade_horse_shelter
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 2
+		}
+		tradevalue = 10
+		local_tax_modifier = 0.17
+		garrison_size = 0.13
+	}
+	ade_merchants_court = {
+		desc = ade_merchants_court_desc
+		gold_cost = 1200
+		extra_tech_building_start = 999
+		build_time = 1200
+		ai_creation_factor = 110
+		upgrades_from = ade_guest_house
+		prerequisites = {
+			ade_guest_house
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 4
+		}
+		tradevalue = 42
+		local_tax_modifier = 0.6
+		garrison_size = 0.33
+		economy_techpoints = 0.1
+	}
+	ade_bazaar_plaza = {
+		desc = ade_bazaar_plaza_desc
+		gold_cost = 2500
+		extra_tech_building_start = 999
+		build_time = 1500
+		ai_creation_factor = 110
+		upgrades_from = ade_merchants_court
+		prerequisites = {
+			ade_merchants_court
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 5
+		}
+		tradevalue = 90
+		local_tax_modifier = 1.2
+		garrison_size = 0.5
+		economy_techpoints = 0.2
+	}
+	ade_inner_caravanserai = {
+		desc = ade_inner_caravanserai_desc
+		gold_cost = 5200
+		extra_tech_building_start = 999
+		build_time = 2100
+		ai_creation_factor = 110
+		upgrades_from = ade_bazaar_plaza
+		prerequisites = {
+			ade_bazaar_plaza
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 6
+		}
+		tradevalue = 180
+		local_tax_modifier = 2
+		garrison_size = 0.75
+		economy_techpoints = 0.35
+	}
+	ade_grand_caravanserai = {
+		desc = ade_grand_caravanserai_desc
+		gold_cost = 10000
+		extra_tech_building_start = 999
+		build_time = 3000
+		ai_creation_factor = 110
+		upgrades_from = ade_inner_caravanserai
+		prerequisites = {
+			ade_inner_caravanserai
+		}
+		potential = {
+			religion_group = muslim
+		}
+		trigger = {
+			TECH_CITY_CONSTRUCTION = 7
+		}
+		tradevalue = 360
+		local_tax_modifier = 3.5
+		garrison_size = 1.5
+		economy_techpoints = 0.6
+	}
+}

@@ -1,0 +1,196 @@
+nomad = {
+	oha_wicker_idol_stand = {
+		desc = oha_wicker_idol_stand_desc
+		piety_cost = 45
+		extra_tech_building_start = 999
+		build_time = 68
+		ai_creation_factor = 65
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.05
+	}
+	oha_offering_patch = {
+		desc = oha_offering_patch_desc
+		piety_cost = 90
+		extra_tech_building_start = 999
+		build_time = 113
+		ai_creation_factor = 70
+		upgrades_from = oha_wicker_idol_stand
+		prerequisites = {
+			oha_wicker_idol_stand
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.1
+	}
+	oha_sacrifice_table = {
+		desc = oha_sacrifice_table_desc
+		piety_cost = 180
+		extra_tech_building_start = 999
+		build_time = 188
+		ai_creation_factor = 75
+		upgrades_from = oha_offering_patch
+		prerequisites = {
+			oha_offering_patch
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.15
+		vassal_opinion = 2
+	}
+	oha_spirit_grove = {
+		desc = oha_spirit_grove_desc
+		piety_cost = 360
+		extra_tech_building_start = 999
+		build_time = 300
+		ai_creation_factor = 80
+		upgrades_from = oha_sacrifice_table
+		prerequisites = {
+			oha_sacrifice_table
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.25
+		vassal_opinion = 3
+	}
+	oha_priests_pavilion = {
+		desc = oha_priests_pavilion_desc
+		piety_cost = 720
+		extra_tech_building_start = 999
+		build_time = 450
+		ai_creation_factor = 85
+		upgrades_from = oha_spirit_grove
+		prerequisites = {
+			oha_spirit_grove
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.4
+		vassal_opinion = 4
+	}
+	oha_blessed_oak_hut = {
+		desc = oha_blessed_oak_hut_desc
+		piety_cost = 1440
+		extra_tech_building_start = 999
+		build_time = 675
+		ai_creation_factor = 90
+		upgrades_from = oha_priests_pavilion
+		prerequisites = {
+			oha_priests_pavilion
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.6
+		vassal_opinion = 5
+	}
+	oha_sacred_fire_ring = {
+		desc = oha_sacred_fire_ring_desc
+		piety_cost = 2880
+		extra_tech_building_start = 999
+		build_time = 975
+		ai_creation_factor = 95
+		upgrades_from = oha_blessed_oak_hut
+		prerequisites = {
+			oha_blessed_oak_hut
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 0.9
+		vassal_opinion = 7
+	}
+	oha_diviners_chamber = {
+		desc = oha_diviners_chamber_desc
+		piety_cost = 5760
+		extra_tech_building_start = 999
+		build_time = 1238
+		ai_creation_factor = 100
+		upgrades_from = oha_sacred_fire_ring
+		prerequisites = {
+			oha_sacred_fire_ring
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1.25
+		vassal_opinion = 9
+	}
+	oha_shrine_hall = {
+		desc = oha_shrine_hall_desc
+		piety_cost = 11520
+		extra_tech_building_start = 999
+		build_time = 1575
+		ai_creation_factor = 105
+		upgrades_from = oha_diviners_chamber
+		prerequisites = {
+			oha_diviners_chamber
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 12
+	}
+	oha_sanctuary_of_the_spirits = {
+		desc = oha_sanctuary_of_the_spirits_desc
+		piety_cost = 23040
+		extra_tech_building_start = 999
+		build_time = 2250
+		ai_creation_factor = 110
+		upgrades_from = oha_shrine_hall
+		prerequisites = {
+			oha_shrine_hall
+		}
+		potential = {
+			culture_group = west_germanic
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
+		}
+		clan_sentiment = 1
+		liege_piety = 1
+		vassal_opinion = 18
+	}
+}
