@@ -186,10 +186,10 @@ k_new_spain_adj;Spanish;;;;;;;;;;;;;x
 KIEV;Kiev;;;;;;;;;;;;;x
 FRANCE;France;;;;;;;;;;;;;x
 SPAIN;Spain;;;;;;;;;;;;;x
-MOSTCHRISTIANKING;Most Christian King;;;;;;;;;;;;;x
-MOSTCHRISTIANQUEEN;Most Christian Queen;;;;;;;;;;;;;x
-MOSTCATHOLICKING;Most Catholic King;;;;;;;;;;;;;x
-MOSTCATHOLICQUEEN;Most Catholic Queen;;;;;;;;;;;;;x
+MOSTCHRISTIANKING;Empereur;;;;;;;;;;;;;x
+MOSTCHRISTIANQUEEN;Empress;;;;;;;;;;;;;x
+MOSTCATHOLICKING;Imperador;;;;;;;;;;;;;x
+MOSTCATHOLICQUEEN;Imperadrix;;;;;;;;;;;;;x
 APOSTOLICKING;Apostolic King;;;;;;;;;;;;;x
 APOSTOLICQUEEN;Apostolic Queen;;;;;;;;;;;;;x
 create_philippines_spanish;Create the Viceroyalty of the Philippines;;;;;;;;;;;;;x
