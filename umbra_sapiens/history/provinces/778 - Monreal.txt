@@ -20,7 +20,10 @@ b_sela = temple
 
 # Misc
 culture = levantine_arabic
-religion = sunni
+religion = orthodox
 
 # History
+
+865.1.1 = { religion = sunni } 
+
 1187.1.1 = { b_hurmniz = city }

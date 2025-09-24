@@ -17,7 +17,7 @@ b_alemaya = city
 
 # Misc
 culture = ethiopian
-religion = sunni
+religion = miaphysite
 
 # History
 

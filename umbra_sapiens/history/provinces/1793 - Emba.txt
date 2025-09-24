@@ -9,7 +9,7 @@ b_emba = tribal
 
 # Misc
 culture = turkish
-religion = tengri_pagan
+religion = zoroastrian
 
 # History
 

@@ -16,6 +16,8 @@ b_nafta = city
 
 # Misc
 culture = maghreb_arabic
-religion = sunni
+religion = catholic
 
 # History
+
+830.1.1 = { religion = sunni }

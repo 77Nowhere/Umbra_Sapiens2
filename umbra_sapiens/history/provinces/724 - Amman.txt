@@ -18,6 +18,8 @@ b_salt = city
 
 # Misc
 culture = bedouin_arabic
-religion = sunni
+religion = orthodox
 
 # History
+
+865.1.1 = { religion = sunni } 

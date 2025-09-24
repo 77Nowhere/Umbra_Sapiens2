@@ -17,9 +17,11 @@ b_jarash = temple
 
 # Misc
 culture = levantine_arabic
-religion = sunni
+religion = orthodox
 
 # History
+
+865.1.1 = { religion = sunni } 
 
 
 1110.1.1 = {

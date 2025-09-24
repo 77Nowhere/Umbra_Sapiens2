@@ -20,7 +20,7 @@ b_taji = city
 
 #Misc
 culture = levantine_arabic
-religion = sunni
+religion = nestorian
 
 # History
 #Continuous development of the House of Wisdom is here reflected by the gradual increase in stage
@@ -87,6 +87,7 @@ religion = sunni
 
 1066.1.1 = {
 	b_latifiya = castle
+	religion = sunni
 }
 
 1258.2.20= { remove_settlement = b_taji }

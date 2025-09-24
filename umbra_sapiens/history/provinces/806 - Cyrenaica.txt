@@ -18,7 +18,7 @@ b_altamimi = castle
 
 # Misc
 culture = maghreb_arabic
-religion = sunni
+religion = miaphysite
 
 # History
 

@@ -17,7 +17,7 @@ b_piukchieng = city
 
 # Misc
 culture = han
-religion = taoist
+religion = manichean
 
 # History
 

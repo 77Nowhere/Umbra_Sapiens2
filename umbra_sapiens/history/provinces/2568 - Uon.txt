@@ -17,7 +17,7 @@ b_jyungzjengdungh = temple
 
 # Misc
 culture = han
-religion = taoist
+religion = manichean
 
 # History
 

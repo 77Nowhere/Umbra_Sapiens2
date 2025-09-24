@@ -16,6 +16,6 @@ b_rimba_melintang = temple
 
 # Misc
 culture = malay
-religion = buddhist
+religion = manichean
 
 # History

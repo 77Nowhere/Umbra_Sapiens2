@@ -7,7 +7,7 @@ title = c_turkestan
 max_settlements = 3
 b_akdzulpas = tribal
 
-#b_sapak = temple
+b_sapak = temple
 
 #b_aralkum = castle
 #b_kosskul = castle
@@ -17,7 +17,8 @@ b_akdzulpas = tribal
 
 # Misc
 culture = turkish
-religion = tengri_pagan
+religion = zoroastrian
+
 
 # History
 

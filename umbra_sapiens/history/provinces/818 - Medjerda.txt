@@ -17,6 +17,8 @@ b_siliana = temple
 
 # Misc
 culture = maghreb_arabic
-religion = sunni
+religion = catholic
 
 # History
+
+890.1.1 = { religion = sunni }

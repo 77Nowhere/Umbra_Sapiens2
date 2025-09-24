@@ -6,7 +6,7 @@ max_settlements = 2
 
 b_ayagoz = tribal
 
-#b_akzhar = city
+b_akzhar = city
 #b_ayagoz = temple
 
 #b_taskesken
@@ -14,7 +14,7 @@ b_ayagoz = tribal
 
 # Misc
 culture = kirghiz
-religion = tengri_pagan
+religion = manichean
 
 # History
 

@@ -1,21 +1,17 @@
 # County Title
 title = c_gilgit
-
 # Settlements
 max_settlements = 4
-
 b_gilgit = castle
 b_danyor = city
 b_chitral = temple
+# Misc
+culture = panjabi # Shina culture
+religion = khurmazta
+1344.1.1 = { religion = sunni } 
+################################################################################
 # b_minawar =
 # b_pahot =
 # b_chatorkhand =
 # b_barjangle =
-
-# Misc
-culture = panjabi #Shina culture
-religion = buddhist
-
-1344.1.1={
-	religion = sunni
-}
+################################################################################

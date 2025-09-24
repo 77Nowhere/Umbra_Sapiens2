@@ -17,7 +17,7 @@ b_tulmaytath = castle
 
 # Misc
 culture = maghreb_arabic
-religion = sunni
+religion = miaphysite
 
 # History
 

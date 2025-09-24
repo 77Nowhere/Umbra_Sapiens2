@@ -6,8 +6,8 @@ max_settlements = 2
 
 b_balkhash = tribal
 
-#b_gulshat = city
-#b_shashubay = temple
+b_gulshat = city
+b_shashubay = temple
 
 #b_akshatau
 #b_karazhal
@@ -16,7 +16,7 @@ b_balkhash = tribal
 
 # Misc
 culture = cuman
-religion = tengri_pagan
+religion = manichean
 
 # History
 

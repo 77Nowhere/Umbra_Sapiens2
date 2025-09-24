@@ -14,9 +14,6 @@ b_piqan = temple
 
 # Misc
 culture = tocharian
-religion = buddhist
+religion = manichean
 
 # History
-900.1.1 = {
-	culture = uyghur
-}#Qocho Kingdom

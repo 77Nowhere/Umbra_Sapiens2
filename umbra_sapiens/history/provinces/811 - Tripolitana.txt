@@ -17,7 +17,7 @@ b_baniwaled = city
 
 # Misc
 culture = maghreb_arabic
-religion = sunni
+religion = catholic
 
 # History
 

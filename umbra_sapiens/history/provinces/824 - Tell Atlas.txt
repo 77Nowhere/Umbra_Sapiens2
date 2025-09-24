@@ -17,8 +17,10 @@ b_ikjan = city
 
 # Misc
 culture = maghreb_arabic
-religion = ibadi
+religion = catholic
 
 # History
+
+820.1.1 = { religion = ibadi }
 909.1.1 = { religion = sunni }
 1187.1.1 = { b_mechreck = castle }

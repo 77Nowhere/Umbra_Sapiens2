@@ -11,7 +11,8 @@ b_yangikent = city
 
 # Misc
 culture = turkish
-religion = tengri_pagan
+religion = zoroastrian
+
 
 # History
 

@@ -17,7 +17,10 @@ b_qastal = castle
 
 # Misc
 culture = levantine_arabic
-religion = sunni
+religion = orthodox
 
 # History
+
+865.1.1 = { religion = sunni } 
+
 1192.1.1 = { remove_settlement = b_qastal }

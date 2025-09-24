@@ -10,7 +10,7 @@ b_paraetonium = city
 
 # Misc
 culture = egyptian_arabic
-religion = sunni
+religion = miaphysite
 
 # History
 

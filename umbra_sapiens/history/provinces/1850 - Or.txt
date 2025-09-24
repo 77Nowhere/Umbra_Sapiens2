@@ -9,7 +9,7 @@ b_or = tribal
 
 # Misc
 culture = cuman
-religion = tengri_pagan
+religion = manichean
 terrain = steppe
 
 # History
