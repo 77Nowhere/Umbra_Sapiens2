@@ -15,12 +15,13 @@ b_ayamonte = city
 
 #Misc
 culture = visigothic
-religion = sunni
+religion = catholic
 
 # History
 
 934.1.1 = {
 	culture = andalusian_arabic
+	religion = sunni
 }
 
 1279.1.1 = {
