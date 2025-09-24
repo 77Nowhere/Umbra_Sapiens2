@@ -1,5 +1,6 @@
 name="Umbra Sapiens 0.17d Istanbul (Not Constantinople)"
 path="mod/umbra_sapiens"
+replace_path="history/provinces"
 dependencies=
 {
 	Umbra Spherae-Reborn 
